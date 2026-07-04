@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 22: Crisis & Emergency Communication - Crisis & Clarity English</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--pink: #EC4899;
+--pink-bright: #DB2777;
+--pink-soft: #FCE7F3;
+--pink-deep: #9D174D;
+--blue: #3B82F6;
+--blue-bright: #2563EB;
+--blue-soft: #DBEAFE;
+--blue-deep: #1E40AF;
+--rose: #F43F5E;
+--sky: #0EA5E9;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+font-family: 'Inter', sans-serif;
+background: linear-gradient(135deg, #FCE7F3 0%, #DBEAFE 25%, #FCE7F3 50%, #DBEAFE 75%, #FCE7F3 100%);
+background-attachment: fixed;
+color: var(--text-primary);
+font-size: 15px;
+line-height: 1.6;
+min-height: 100vh;
+position: relative;
+overflow-x: hidden;
+}
+body::before {
+content: '';
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: 
+radial-gradient(circle at 15% 25%, rgba(236, 72, 153, 0.35) 0%, transparent 40%),
+radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.35) 0%, transparent 40%),
+radial-gradient(circle at 50% 85%, rgba(244, 63, 94, 0.3) 0%, transparent 40%),
+radial-gradient(circle at 30% 60%, rgba(14, 165, 233, 0.3) 0%, transparent 40%);
+pointer-events: none;
+z-index: 0;
+animation: aurora 20s ease-in-out infinite;
+}
+@keyframes aurora {
+0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+33% { transform: scale(1.15) rotate(120deg); opacity: 1; }
+66% { transform: scale(0.95) rotate(240deg); opacity: 0.85; }
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 24px;
+position: relative;
+z-index: 2;
+}
+.top-nav {
+background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(30px);
+padding: 12px 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.top-nav .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-back {
+font-family: 'Fraunces', serif;
+font-size: 1rem;
+font-weight: 600;
+color: var(--text-primary);
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.nav-back i { --ph-color: var(--pink-bright); }
+.week-indicator {
+font-size: 13px;
+color: var(--text-muted);
+font-weight: 500;
+}
+.week-header {
+padding: 48px 0 32px;
+text-align: center;
+}
+.breadcrumb {
+font-size: 14px;
+color: var(--text-muted);
+margin-bottom: 16px;
+}
+.breadcrumb a {
+color: var(--text-secondary);
+text-decoration: none;
+}
+.week-icon-large { font-size: 3.5rem; margin-bottom: 16px; }
+.week-icon-large i { --ph-color: var(--pink-bright); }
+.week-title {
+font-family: 'Fraunces', serif;
+font-size: 3.5rem;
+font-weight: 600;
+margin-bottom: 16px;
+background: linear-gradient(135deg, var(--pink-bright), var(--blue-bright));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.week-description {
+font-size: 16px;
+color: var(--text-secondary);
+max-width: 700px;
+margin: 0 auto 24px;
+line-height: 1.7;
+}
+.week-quote {
+background: rgba(255, 255, 255, 0.9);
+padding: 16px 24px;
+border-radius: var(--radius-md);
+border-left: 4px solid var(--pink-bright);
+font-style: italic;
+color: var(--text-secondary);
+margin: 24px auto;
+max-width: 650px;
+}
+.week-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+margin-top: 24px;
+}
+.week-tag {
+background: rgba(255, 255, 255, 0.9);
+padding: 8px 16px;
+border-radius: 20px;
+font-size: 13px;
+font-weight: 500;
+color: var(--text-secondary);
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.week-tag i { --ph-color: var(--pink-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; text-align: center; }
+.section-title {
+font-family: 'Fraunces', serif;
+font-size: 2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+}
+.section-title i { --ph-color: var(--pink-bright); }
+.section-desc {
+font-size: 15px;
+color: var(--text-secondary);
+max-width: 600px;
+margin: 0 auto;
+}
+.philosophy-section {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+.philosophy-box {
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: var(--radius-md);
+padding: 24px;
+border-left: 4px solid var(--pink-bright);
+margin-bottom: 24px;
+}
+.philosophy-title {
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.philosophy-title i { --ph-color: var(--pink-bright); }
+.principles-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 16px;
+margin-top: 24px;
+}
+.principle-card {
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-md);
+padding: 20px;
+border-left: 4px solid var(--blue-bright);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.principle-number {
+font-size: 12px;
+font-weight: 700;
+color: var(--blue-deep);
+background: var(--blue-soft);
+padding: 4px 10px;
+border-radius: 10px;
+display: inline-block;
+margin-bottom: 10px;
+}
+.principle-title {
+font-family: 'Fraunces', serif;
+font-size: 1.1rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 6px;
+}
+.principle-desc {
+font-size: 13px;
+color: var(--text-secondary);
+line-height: 1.5;
+}
+.comparison-section {
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-md);
+padding: 28px;
+margin-top: 24px;
+}
+.comparison-title {
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+font-weight: 600;
+margin-bottom: 20px;
+}
+.comparison-item {
+padding: 16px;
+border-radius: var(--radius-sm);
+margin-bottom: 16px;
+border-left: 4px solid;
+}
+.comparison-item.negative { background: rgba(245, 101, 101, 0.1); border-left-color: #F56565; }
+.comparison-item.positive { background: rgba(72, 187, 120, 0.1); border-left-color: #48BB78; }
+.comparison-label {
+font-size: 13px;
+font-weight: 600;
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.comparison-text {
+font-size: 14px;
+color: var(--text-secondary);
+line-height: 1.7;
+font-style: italic;
+}
+.lang-coverage {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+.lang-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+margin-top: 24px;
+}
+.lang-item {
+background: rgba(255, 255, 255, 0.9);
+padding: 20px;
+border-radius: var(--radius-md);
+border-left: 4px solid var(--pink-bright);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.lang-label {
+font-size: 12px;
+font-weight: 700;
+color: var(--pink-deep);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.lang-label i { --ph-color: var(--pink-bright); }
+.lang-value {
+font-size: 14px;
+color: var(--text-secondary);
+line-height: 1.5;
+}
+.days-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+gap: 24px;
+margin: 32px 0;
+}
+.day-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 28px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+border-top: 4px solid var(--pink-bright);
+text-decoration: none;
+color: inherit;
+display: block;
+transition: all 0.4s ease;
+}
+.day-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(236, 72, 153, 0.2);
+}
+.day-label {
+background: linear-gradient(135deg, var(--pink-soft), var(--blue-soft));
+color: var(--pink-deep);
+padding: 6px 12px;
+border-radius: 12px;
+font-size: 12px;
+font-weight: 600;
+display: inline-block;
+margin-bottom: 16px;
+}
+.day-icon { margin-bottom: 16px; }
+.day-icon i { font-size: 2rem; --ph-color: var(--pink-bright); }
+.day-title {
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+font-weight: 600;
+margin-bottom: 8px;
+color: var(--text-primary);
+}
+.day-subtitle {
+font-size: 13px;
+color: var(--text-secondary);
+margin-bottom: 20px;
+line-height: 1.5;
+}
+.day-focus {
+margin-top: 16px;
+padding-top: 16px;
+border-top: 1px solid rgba(252, 231, 243, 0.5);
+}
+.focus-title {
+font-size: 11px;
+font-weight: 700;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.8px;
+margin-bottom: 12px;
+}
+.focus-list { list-style: none; }
+.focus-list li {
+padding: 6px 0;
+padding-left: 20px;
+position: relative;
+font-size: 13px;
+color: var(--text-secondary);
+border-bottom: 1px dashed rgba(252, 231, 243, 0.5);
+}
+.focus-list li:last-child { border-bottom: none; }
+.focus-list li::before {
+content: '→';
+position: absolute;
+left: 0;
+color: var(--pink-bright);
+font-weight: 600;
+}
+.day-time {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+margin-top: 16px;
+padding: 6px 12px;
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: 12px;
+font-size: 12px;
+color: var(--pink-deep);
+font-weight: 600;
+border: 1px solid rgba(236, 72, 153, 0.2);
+}
+.day-time i { --ph-color: var(--pink-bright); }
+.milestone-card {
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+border: 2px solid var(--pink-bright);
+text-align: center;
+}
+.milestone-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.milestone-icon i { --ph-color: var(--pink-bright); }
+.milestone-title {
+font-family: 'Fraunces', serif;
+font-size: 2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 12px;
+}
+.milestone-subtitle {
+font-size: 15px;
+color: var(--text-secondary);
+margin-bottom: 28px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.6;
+}
+.milestone-skills {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 14px;
+margin-top: 24px;
+text-align: left;
+}
+.milestone-skill {
+background: rgba(255, 255, 255, 0.85);
+padding: 16px 18px;
+border-radius: var(--radius-sm);
+font-size: 14px;
+color: var(--text-secondary);
+display: flex;
+align-items: center;
+gap: 12px;
+line-height: 1.5;
+}
+.milestone-skill i {
+--ph-color: var(--pink-bright);
+font-size: 1.3rem;
+flex-shrink: 0;
+}
+.quiz-section {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+.quiz-question {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 16px 20px;
+margin-bottom: 12px;
+border-left: 4px solid var(--pink-bright);
+}
+.quiz-question h4 {
+font-family: 'Fraunces', serif;
+font-size: 1.05rem;
+margin-bottom: 10px;
+color: var(--text-primary);
+line-height: 1.3;
+}
+.quiz-options { 
+display: flex; 
+flex-direction: column; 
+gap: 6px; 
+}
+.quiz-option {
+padding: 10px 12px;
+background: rgba(255, 255, 255, 0.95);
+border: 2px solid rgba(252, 231, 243, 0.5);
+border-radius: var(--radius-sm);
+cursor: pointer;
+transition: all 0.3s ease;
+font-size: 13.5px;
+color: var(--text-secondary);
+line-height: 1.3;
+}
+.quiz-option:hover { 
+border-color: var(--pink-bright); 
+background: rgba(252, 231, 243, 0.2); 
+}
+.quiz-option.selected { 
+border-color: var(--pink-bright); 
+background: rgba(252, 231, 243, 0.3); 
+}
+.quiz-option.correct { 
+border-color: #48BB78; 
+background: rgba(72, 187, 120, 0.15); 
+}
+.quiz-option.incorrect { 
+border-color: #F56565; 
+background: rgba(245, 101, 101, 0.15); 
+}
+.check-btn {
+background: linear-gradient(135deg, var(--pink-bright), var(--blue-bright));
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 24px;
+font-weight: 600;
+cursor: pointer;
+margin-top: 16px;
+box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+}
+.week-navigation {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+margin: 48px 0;
+}
+.nav-card {
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(252, 231, 243, 0.5));
+border-radius: var(--radius-md);
+padding: 24px;
+text-decoration: none;
+color: inherit;
+transition: all 0.3s ease;
+border: 1px solid rgba(255, 255, 255, 0.9);
+position: relative;
+overflow: hidden;
+}
+.nav-card::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--pink-bright), var(--blue-bright));
+}
+.nav-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 24px rgba(236, 72, 153, 0.25);
+}
+.nav-label {
+font-size: 12px;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 6px;
+}
+.nav-title {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+}
+.cta-section { margin: 56px 0; text-align: center; }
+.cta-card {
+background: rgba(255, 255, 255, 0.7);
+backdrop-filter: blur(30px) saturate(180%);
+padding: 56px 36px;
+border-radius: var(--radius-xl);
+text-align: center;
+border: 1px solid rgba(255, 255, 255, 0.8);
+box-shadow: 0 12px 40px rgba(150, 130, 200, 0.2);
+position: relative;
+overflow: hidden;
+}
+.cta-title {
+font-family: 'Fraunces', serif;
+font-size: 2.2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+position: relative;
+z-index: 1;
+background: linear-gradient(135deg, var(--text-primary), var(--lavender-deep));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.cta-desc {
+font-size: 15px;
+color: var(--text-secondary);
+margin-bottom: 32px;
+max-width: 550px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.7;
+position: relative;
+z-index: 1;
+}
+.cta-button {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+background: linear-gradient(135deg, var(--lavender-bright) 0%, var(--sky-bright) 50%, var(--blush-bright) 100%);
+background-size: 200% 200%;
+color: white;
+padding: 16px 36px;
+border-radius: 36px;
+font-weight: 600;
+font-size: 15px;
+text-decoration: none;
+transition: all 0.4s ease;
+box-shadow: 0 8px 24px rgba(155, 133, 212, 0.4);
+position: relative;
+z-index: 1;
+animation: buttonGradient 4s ease infinite;
+}
+@keyframes buttonGradient {
+0%, 100% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+}
+.cta-button:hover {
+transform: translateY(-3px) scale(1.02);
+box-shadow: 0 12px 32px rgba(155, 133, 212, 0.5);
+}
+.cta-button i { font-size: 1.2rem; }
+.footer {
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(30px) saturate(180%);
+color: var(--text-primary);
+padding: 40px 0 28px;
+text-align: center;
+margin-top: 56px;
+border-top: 1px solid rgba(255, 255, 255, 0.7);
+position: relative;
+z-index: 2;
+}
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; filter: drop-shadow(0 4px 10px rgba(150, 130, 200, 0.3)); }
+.footer-title {
+font-family: 'Fraunces', serif;
+font-size: 1.2rem;
+margin-bottom: 6px;
+font-weight: 600;
+background: linear-gradient(135deg, var(--text-primary), var(--lavender-deep));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.footer-tagline { color: var(--text-muted); font-size: 13px; font-weight: 400; }
+@media (max-width: 768px) {
+.week-title { font-size: 2.5rem; }
+.days-grid { grid-template-columns: 1fr; }
+.milestone-skills { grid-template-columns: 1fr; }
+.week-navigation { grid-template-columns: 1fr; }
+.principles-grid { grid-template-columns: 1fr; }
+.lang-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="index.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Back to Roadmap</a>
+<div class="week-indicator">Week 22 · Phase 4</div>
+</div>
+</nav>
+
+<header class="week-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a>
+ › 
+<a href="index.html#phase-4">Phase 4</a>
+ › Week 22
+</div>
+<div class="week-icon-large"><i class="ph-duotone ph-siren"></i></div>
+<h1 class="week-title">Crisis & Emergency Communication</h1>
+<p class="week-description">When everything goes wrong at once, clarity saves lives — and relationships. This week teaches you the language of crisis: how to give calm instructions under pressure, report facts accurately, coordinate responses, and debrief afterward with care. The words you choose in a crisis define whether people panic or pull together.</p>
+<div class="week-quote">"In a crisis, people don't need perfect words — they need clear ones. Calm. Specific. Direct. That's the language of leadership when everything falls apart."</div>
+<div class="week-tags">
+<div class="week-tag"><i class="ph-duotone ph-house"></i>80% Life Communication</div>
+<div class="week-tag"><i class="ph-duotone ph-briefcase"></i>20% Professional</div>
+<div class="week-tag"><i class="ph-duotone ph-clock"></i>7 Days · 60 min/day</div>
+<div class="week-tag"><i class="ph-duotone ph-siren"></i>Crisis & Clarity English</div>
+</div>
+</div>
+</header>
+
+<section class="section">
+<div class="container">
+
+<div class="philosophy-section">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i>Why This Week Matters</h2>
+<div class="philosophy-box">
+<div class="philosophy-title"><i class="ph-duotone ph-brain"></i>Crisis Reveals Communication Habits</div>
+<p>When stress hits, we revert to our default communication patterns. If your default is vague, emotional, or passive, a crisis will amplify those weaknesses. This week builds the muscle memory for calm, clear, directive communication — so when it matters most, your words become anchors, not accelerants.</p>
+</div>
+<div class="principles-grid">
+<div class="principle-card">
+<div class="principle-number">Principle 1</div>
+<div class="principle-title">Calm Before Clear Before Complete</div>
+<div class="principle-desc">Your tone sets the emotional temperature. Calm first, then clear facts, then full details. Order matters.</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 2</div>
+<div class="principle-title">Use Imperatives with Care</div>
+<div class="principle-desc">"Call 911" works. "Please, if you could possibly call 911" doesn't. Crisis language needs directness, softened by tone.</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 3</div>
+<div class="principle-title">Name What You Know, Name What You Don't</div>
+<div class="principle-desc">"The fire is in the kitchen. I don't know if anyone is upstairs." Honesty about unknowns builds trust.</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 4</div>
+<div class="principle-title">Debrief With Humanity, Not Just Data</div>
+<div class="principle-desc">After the crisis, people need to process emotions, not just review facts. Hold space for both.</div>
+</div>
+</div>
+
+<div class="comparison-section">
+<div class="comparison-title">Before vs. After This Week</div>
+<div class="comparison-item negative">
+<div class="comparison-label"><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Before: Panic or Freeze</div>
+<div class="comparison-text">"Oh my god, what do we do?! I don't know! Somebody help!" (Emotional, unclear, paralyzing) · Or: [frozen silence]</div>
+</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-check-circle" style="--ph-color: #48BB78;"></i> After: Calm, Clear, Coordinated</div>
+<div class="comparison-text">"Listen to me. The fire is in the kitchen. Sarah, call 911. Tom, grab the kids and go to the front yard. I'll get the dog. We'll meet outside. Go now."</div>
+</div>
+</div>
+</div>
+
+<div class="lang-coverage">
+<h2 class="section-title"><i class="ph-duotone ph-sparkle"></i>Language Coverage</h2>
+<p class="section-desc">This week's linguistic focus — the grammar, vocabulary, and discourse patterns you'll master.</p>
+<div class="lang-grid">
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-code"></i> Grammar</div>
+<div class="lang-value">Imperatives for instructions ("Call 911", "Stay here"), present simple for facts, modals for urgency ("must", "need to")</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-book-bookmark"></i> Vocabulary</div>
+<div class="lang-value">Emergency, crisis, instruction, panic, coordinate, debrief, protocol, incident, response, evacuate</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-chat-circle-text"></i> Discourse</div>
+<div class="lang-value">Emergency protocols, fact-reporting sequences, debriefing structures, action-item language</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-speaker-high"></i> Pronunciation</div>
+<div class="lang-value">Clear, firm articulation; calm, controlled tone; strategic pauses; steady pacing</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-arrows-left-right"></i> Register</div>
+<div class="lang-value">Authoritative in crisis vs supportive in debrief vs calm in coordination</div>
+</div>
+</div>
+</div>
+
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i>7-Day Plan</h2>
+<p class="section-desc">Each day builds on the previous one. Start with Day 148 and follow the path.</p>
+
+<div class="days-grid">
+
+<a href="week-22-day-148.html" class="day-card">
+<div class="day-label">Day 148</div>
+<div class="day-icon"><i class="ph-duotone ph-megaphone"></i></div>
+<h3 class="day-title">Giving Clear, Calm Instructions Under Pressure</h3>
+<p class="day-subtitle">The language of directive leadership — when every word must count.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Imperatives softened by tone, not words</li>
+<li>Short, specific, sequential instructions</li>
+<li>Calming through clarity, not comfort</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-22-day-149.html" class="day-card">
+<div class="day-label">Day 149</div>
+<div class="day-icon"><i class="ph-duotone ph-hand-heart"></i></div>
+<h3 class="day-title">Calming Others and Managing Panic</h3>
+<p class="day-subtitle">The language that turns fear into focus.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Acknowledging fear without amplifying it</li>
+<li>Grounding phrases ("Breathe. Look at me.")</li>
+<li>Redirecting attention to actionable steps</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-22-day-150.html" class="day-card">
+<div class="day-label">Day 150</div>
+<div class="day-icon"><i class="ph-duotone ph-clipboard-text"></i></div>
+<h3 class="day-title">Reporting Facts Accurately and Concisely</h3>
+<p class="day-subtitle">What happened, what you know, what you don't.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Present simple for facts, present perfect for recent events</li>
+<li>Naming unknowns honestly ("I don't know yet")</li>
+<li>Avoiding speculation and assumptions</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-22-day-151.html" class="day-card">
+<div class="day-label">Day 151</div>
+<div class="day-icon"><i class="ph-duotone ph-users-three"></i></div>
+<h3 class="day-title">Making Urgent Decisions Collaboratively</h3>
+<p class="day-subtitle">When there's no time to debate — but everyone needs to be heard.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>"We need to decide now. Options are X or Y."</li>
+<li>Assigning decision authority clearly</li>
+<li>Building quick consensus without sacrificing input</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-22-day-152.html" class="day-card">
+<div class="day-label">Day 152</div>
+<div class="day-icon"><i class="ph-duotone ph-broadcast"></i></div>
+<h3 class="day-title">Coordinating Emergency Responses</h3>
+<p class="day-subtitle">The language of organized action when chaos hits.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Role assignment language ("You handle X, I'll handle Y")</li>
+<li>Check-in protocols and status updates</li>
+<li>Coordinating with emergency services</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-22-day-153.html" class="day-card">
+<div class="day-label">Day 153</div>
+<div class="day-icon"><i class="ph-duotone ph-chat-centered-dots"></i></div>
+<h3 class="day-title">Debriefing and Processing After a Crisis</h3>
+<p class="day-subtitle">The conversation that helps everyone heal and learn.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Fact review vs emotional processing</li>
+<li>Asking "How are you?" and meaning it</li>
+<li>Identifying lessons without blame</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-22-day-154.html" class="day-card">
+<div class="day-label">Day 154</div>
+<div class="day-icon"><i class="ph-duotone ph-check-circle"></i></div>
+<h3 class="day-title">Reality Task: Create an Emergency Communication Plan</h3>
+<p class="day-subtitle">Apply everything — build a plan your family or team can use when it matters.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Identify likely crisis scenarios for your context</li>
+<li>Draft clear communication protocols</li>
+<li>Practice the plan with those who'd use it</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+</div>
+
+<div class="milestone-card">
+<div class="milestone-icon"><i class="ph-duotone ph-trophy"></i></div>
+<h2 class="milestone-title">Week 22 Milestone</h2>
+<p class="milestone-subtitle">By the end of this week, you can remain the calmest person in the room during a crisis — giving clear instructions, managing emotions, and making swift, effective decisions under pressure.</p>
+<div class="milestone-skills">
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Give clear, calm instructions under pressure</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Calm others and manage panic</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Report facts accurately and concisely</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Make urgent decisions collaboratively</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Coordinate emergency responses</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Debrief and process after a crisis</div>
+</div>
+</div>
+
+<div class="quiz-section">
+<h2 class="section-title"><i class="ph-duotone ph-pencil-simple"></i>Quick Self-Check</h2>
+<p class="section-desc">Before you start, test your intuition about crisis communication.</p>
+
+<div class="quiz-question">
+<h4>1. Your child has fallen and may have broken their arm. What's the most effective first response?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Oh my god, are you okay?! Don't move! Oh no, this is terrible!"</div>
+<div class="quiz-option" data-correct="true">B. "I'm here. Don't move your arm. I'm going to call for help. Look at me — breathe. We'll get this handled."</div>
+<div class="quiz-option" data-correct="false">C. "It's probably fine. Let's just wait and see."</div>
+</div>
+</div>
+
+<div class="quiz-question">
+<h4>2. There's a fire alarm in your office building. What's the clearest instruction to give a panicked colleague?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "We should probably, like, maybe leave? I'm not sure what to do."</div>
+<div class="quiz-option" data-correct="false">B. "EVERYONE GET OUT NOW!!! RUN!!!"</div>
+<div class="quiz-option" data-correct="true">C. "Listen to me. Leave your things. Walk calmly to the east exit. I'll walk with you. Let's go."</div>
+</div>
+</div>
+
+<div class="quiz-question">
+<h4>3. After a family emergency has passed, your partner is silent. What's the most supportive thing to say?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Well, at least it's over now. Let's move on."</div>
+<div class="quiz-option" data-correct="false">B. "You should talk about how you feel. It's not healthy to bottle it up."</div>
+<div class="quiz-option" data-correct="true">C. "I'm here. You don't have to talk. But when you're ready, I want to hear how that felt for you."</div>
+</div>
+</div>
+
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+
+<div class="week-navigation">
+<a href="week-21.html" class="nav-card">
+<div class="nav-label">← Previous Week</div>
+<div class="nav-title">Week 21: Navigating Life Transitions</div>
+</a>
+<a href="week-23.html" class="nav-card">
+<div class="nav-label">Next Week →</div>
+<div class="nav-title">Week 23: Mentorship & Passing Down Wisdom</div>
+</a>
+</div>
+
+<div class="cta-section">
+<div class="cta-card">
+<h2 class="cta-title">Ready to Lead Through Crisis?</h2>
+<p class="cta-desc">Begin with Day 148 and follow the path. Each day builds on the previous one. You are not just learning English — you are learning to be the calm voice when everything falls apart.</p>
+<a href="week-22-day-148.html" class="cta-button">
+<i class="ph-duotone ph-rocket-launch"></i>
+Start Week 22 · Day 148
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 22 · Crisis & Emergency Communication · Crisis & Clarity English</div>
+</div>
+</footer>
+
+<script>
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') {
+option.classList.add('correct');
+} else if (option.classList.contains('selected')) {
+option.classList.add('incorrect');
+}
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+</script>
+
+</body>
+</html>

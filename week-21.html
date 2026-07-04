@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 21: Navigating Life Transitions - Transition & Change English</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--pink: #EC4899;
+--pink-bright: #DB2777;
+--pink-soft: #FCE7F3;
+--pink-deep: #9D174D;
+--blue: #3B82F6;
+--blue-bright: #2563EB;
+--blue-soft: #DBEAFE;
+--blue-deep: #1E40AF;
+--rose: #F43F5E;
+--sky: #0EA5E9;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+font-family: 'Inter', sans-serif;
+background: linear-gradient(135deg, #FCE7F3 0%, #DBEAFE 25%, #FCE7F3 50%, #DBEAFE 75%, #FCE7F3 100%);
+background-attachment: fixed;
+color: var(--text-primary);
+font-size: 15px;
+line-height: 1.6;
+min-height: 100vh;
+position: relative;
+overflow-x: hidden;
+}
+
+body::before {
+content: '';
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: 
+radial-gradient(circle at 15% 25%, rgba(236, 72, 153, 0.35) 0%, transparent 40%),
+radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.35) 0%, transparent 40%),
+radial-gradient(circle at 50% 85%, rgba(244, 63, 94, 0.3) 0%, transparent 40%),
+radial-gradient(circle at 30% 60%, rgba(14, 165, 233, 0.3) 0%, transparent 40%);
+pointer-events: none;
+z-index: 0;
+animation: aurora 20s ease-in-out infinite;
+}
+
+@keyframes aurora {
+0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+33% { transform: scale(1.15) rotate(120deg); opacity: 1; }
+66% { transform: scale(0.95) rotate(240deg); opacity: 0.85; }
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 24px;
+position: relative;
+z-index: 2;
+}
+
+.top-nav {
+background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(30px);
+padding: 12px 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.top-nav .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-back {
+font-family: 'Fraunces', serif;
+font-size: 1rem;
+font-weight: 600;
+color: var(--text-primary);
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.nav-back i { --ph-color: var(--pink-bright); }
+
+.week-indicator {
+font-size: 13px;
+color: var(--text-muted);
+font-weight: 500;
+}
+
+.week-header {
+padding: 48px 0 32px;
+text-align: center;
+}
+
+.breadcrumb {
+font-size: 14px;
+color: var(--text-muted);
+margin-bottom: 16px;
+}
+
+.breadcrumb a {
+color: var(--text-secondary);
+text-decoration: none;
+}
+
+.week-icon-large { font-size: 3.5rem; margin-bottom: 16px; }
+.week-icon-large i { --ph-color: var(--pink-bright); }
+
+.week-title {
+font-family: 'Fraunces', serif;
+font-size: 3.5rem;
+font-weight: 600;
+margin-bottom: 16px;
+background: linear-gradient(135deg, var(--pink-bright), var(--blue-bright));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.week-description {
+font-size: 16px;
+color: var(--text-secondary);
+max-width: 700px;
+margin: 0 auto 24px;
+line-height: 1.7;
+}
+
+.week-quote {
+background: rgba(255, 255, 255, 0.9);
+padding: 16px 24px;
+border-radius: var(--radius-md);
+border-left: 4px solid var(--pink-bright);
+font-style: italic;
+color: var(--text-secondary);
+margin: 24px auto;
+max-width: 650px;
+}
+
+.week-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+margin-top: 24px;
+}
+
+.week-tag {
+background: rgba(255, 255, 255, 0.9);
+padding: 8px 16px;
+border-radius: 20px;
+font-size: 13px;
+font-weight: 500;
+color: var(--text-secondary);
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.week-tag i { --ph-color: var(--pink-bright); }
+
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; text-align: center; }
+
+.section-title {
+font-family: 'Fraunces', serif;
+font-size: 2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+}
+
+.section-title i { --ph-color: var(--pink-bright); }
+
+.section-desc {
+font-size: 15px;
+color: var(--text-secondary);
+max-width: 600px;
+margin: 0 auto;
+}
+
+.philosophy-section {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+
+.philosophy-box {
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: var(--radius-md);
+padding: 24px;
+border-left: 4px solid var(--pink-bright);
+margin-bottom: 24px;
+}
+
+.philosophy-title {
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.philosophy-title i { --ph-color: var(--pink-bright); }
+
+.principles-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 16px;
+margin-top: 24px;
+}
+
+.principle-card {
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-md);
+padding: 20px;
+border-left: 4px solid var(--blue-bright);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.principle-number {
+font-size: 12px;
+font-weight: 700;
+color: var(--blue-deep);
+background: var(--blue-soft);
+padding: 4px 10px;
+border-radius: 10px;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.principle-title {
+font-family: 'Fraunces', serif;
+font-size: 1.1rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 6px;
+}
+
+.principle-desc {
+font-size: 13px;
+color: var(--text-secondary);
+line-height: 1.5;
+}
+
+.comparison-section {
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-md);
+padding: 28px;
+margin-top: 24px;
+}
+
+.comparison-title {
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+.comparison-item {
+padding: 16px;
+border-radius: var(--radius-sm);
+margin-bottom: 16px;
+border-left: 4px solid;
+}
+
+.comparison-item.negative { background: rgba(245, 101, 101, 0.1); border-left-color: #F56565; }
+.comparison-item.positive { background: rgba(72, 187, 120, 0.1); border-left-color: #48BB78; }
+
+.comparison-label {
+font-size: 13px;
+font-weight: 600;
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.comparison-text {
+font-size: 14px;
+color: var(--text-secondary);
+line-height: 1.7;
+font-style: italic;
+}
+
+.lang-coverage {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+
+.lang-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+margin-top: 24px;
+}
+
+.lang-item {
+background: rgba(255, 255, 255, 0.9);
+padding: 20px;
+border-radius: var(--radius-md);
+border-left: 4px solid var(--pink-bright);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lang-label {
+font-size: 12px;
+font-weight: 700;
+color: var(--pink-deep);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.lang-label i { --ph-color: var(--pink-bright); }
+
+.lang-value {
+font-size: 14px;
+color: var(--text-secondary);
+line-height: 1.5;
+}
+
+.days-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+gap: 24px;
+margin: 32px 0;
+}
+
+.day-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 28px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+border-top: 4px solid var(--pink-bright);
+text-decoration: none;
+color: inherit;
+display: block;
+transition: all 0.4s ease;
+}
+
+.day-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(236, 72, 153, 0.2);
+}
+
+.day-label {
+background: linear-gradient(135deg, var(--pink-soft), var(--blue-soft));
+color: var(--pink-deep);
+padding: 6px 12px;
+border-radius: 12px;
+font-size: 12px;
+font-weight: 600;
+display: inline-block;
+margin-bottom: 16px;
+}
+
+.day-icon { margin-bottom: 16px; }
+.day-icon i { font-size: 2rem; --ph-color: var(--pink-bright); }
+
+.day-title {
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+font-weight: 600;
+margin-bottom: 8px;
+color: var(--text-primary);
+}
+
+.day-subtitle {
+font-size: 13px;
+color: var(--text-secondary);
+margin-bottom: 20px;
+line-height: 1.5;
+}
+
+.day-focus {
+margin-top: 16px;
+padding-top: 16px;
+border-top: 1px solid rgba(252, 231, 243, 0.5);
+}
+
+.focus-title {
+font-size: 11px;
+font-weight: 700;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.8px;
+margin-bottom: 12px;
+}
+
+.focus-list { list-style: none; }
+
+.focus-list li {
+padding: 6px 0;
+padding-left: 20px;
+position: relative;
+font-size: 13px;
+color: var(--text-secondary);
+border-bottom: 1px dashed rgba(252, 231, 243, 0.5);
+}
+
+.focus-list li:last-child { border-bottom: none; }
+
+.focus-list li::before {
+content: '→';
+position: absolute;
+left: 0;
+color: var(--pink-bright);
+font-weight: 600;
+}
+
+.day-time {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+margin-top: 16px;
+padding: 6px 12px;
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: 12px;
+font-size: 12px;
+color: var(--pink-deep);
+font-weight: 600;
+border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.day-time i { --ph-color: var(--pink-bright); }
+
+.milestone-card {
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+border: 2px solid var(--pink-bright);
+text-align: center;
+}
+
+.milestone-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.milestone-icon i { --ph-color: var(--pink-bright); }
+
+.milestone-title {
+font-family: 'Fraunces', serif;
+font-size: 2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 12px;
+}
+
+.milestone-subtitle {
+font-size: 15px;
+color: var(--text-secondary);
+margin-bottom: 28px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.6;
+}
+
+.milestone-skills {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 14px;
+margin-top: 24px;
+text-align: left;
+}
+
+.milestone-skill {
+background: rgba(255, 255, 255, 0.85);
+padding: 16px 18px;
+border-radius: var(--radius-sm);
+font-size: 14px;
+color: var(--text-secondary);
+display: flex;
+align-items: center;
+gap: 12px;
+line-height: 1.5;
+}
+
+.milestone-skill i {
+--ph-color: var(--pink-bright);
+font-size: 1.3rem;
+flex-shrink: 0;
+}
+
+.quiz-section {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+
+.quiz-question {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 16px 20px;
+margin-bottom: 12px;
+border-left: 4px solid var(--pink-bright);
+}
+
+.quiz-question h4 {
+font-family: 'Fraunces', serif;
+font-size: 1.05rem;
+margin-bottom: 10px;
+color: var(--text-primary);
+line-height: 1.3;
+}
+
+.quiz-options { 
+display: flex; 
+flex-direction: column; 
+gap: 6px; 
+}
+
+.quiz-option {
+padding: 10px 12px;
+background: rgba(255, 255, 255, 0.95);
+border: 2px solid rgba(252, 231, 243, 0.5);
+border-radius: var(--radius-sm);
+cursor: pointer;
+transition: all 0.3s ease;
+font-size: 13.5px;
+color: var(--text-secondary);
+line-height: 1.3;
+}
+
+.quiz-option:hover { 
+border-color: var(--pink-bright); 
+background: rgba(252, 231, 243, 0.2); 
+}
+
+.check-btn {
+background: linear-gradient(135deg, var(--pink-bright), var(--blue-bright));
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 24px;
+font-weight: 600;
+cursor: pointer;
+margin-top: 16px;
+box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+}
+
+.week-navigation {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+margin: 48px 0;
+}
+
+.nav-card {
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(252, 231, 243, 0.5));
+border-radius: var(--radius-md);
+padding: 24px;
+text-decoration: none;
+color: inherit;
+transition: all 0.3s ease;
+border: 1px solid rgba(255, 255, 255, 0.9);
+position: relative;
+overflow: hidden;
+}
+
+.nav-card::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--pink-bright), var(--blue-bright));
+}
+
+.nav-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 24px rgba(236, 72, 153, 0.25);
+}
+
+.nav-label {
+font-size: 12px;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 6px;
+}
+
+.nav-title {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+}
+
+.cta-container { text-align: center; margin: 48px 0; }
+
+.cta-button {
+display: inline-flex;
+align-items: center;
+gap: 12px;
+background: linear-gradient(135deg, var(--pink-bright), var(--blue-bright));
+color: white;
+padding: 18px 36px;
+border-radius: 36px;
+font-weight: 600;
+font-size: 16px;
+text-decoration: none;
+transition: all 0.4s ease;
+box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4);
+}
+
+.cta-button:hover {
+transform: translateY(-3px) scale(1.02);
+box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5);
+}
+
+.footer {
+background: rgba(255, 255, 255, 0.7);
+padding: 40px 0 28px;
+text-align: center;
+margin-top: 56px;
+border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+
+@media (max-width: 768px) {
+.week-title { font-size: 2.5rem; }
+.days-grid { grid-template-columns: 1fr; }
+.milestone-skills { grid-template-columns: 1fr; }
+.week-navigation { grid-template-columns: 1fr; }
+.principles-grid { grid-template-columns: 1fr; }
+.lang-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="index.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Back to Roadmap</a>
+<div class="week-indicator">Week 21 · Phase 4</div>
+</div>
+</nav>
+
+<header class="week-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a>
+ › 
+<a href="index.html#phase-4">Phase 4</a>
+ › Week 21
+</div>
+<div class="week-icon-large"><i class="ph-duotone ph-arrows-left-right"></i></div>
+<h1 class="week-title">Navigating Life Transitions</h1>
+<p class="week-description">Life's biggest moments aren't the events themselves — they're the conversations that surround them. This week teaches you the language of transition: how to announce change, manage uncertainty, seek support, and reframe challenges — whether you're changing careers, moving cities, or helping loved ones through their own transformations.</p>
+<div class="week-quote">"The most courageous thing you can say in a moment of change isn't 'I'm fine' — it's 'I'm scared, but I'm ready.' And sometimes it's 'I'm not ready, but I need to do this anyway.' Both take the same language: honesty wrapped in courage."</div>
+<div class="week-tags">
+<div class="week-tag"><i class="ph-duotone ph-house"></i>75% Life Communication</div>
+<div class="week-tag"><i class="ph-duotone ph-briefcase"></i>25% Professional</div>
+<div class="week-tag"><i class="ph-duotone ph-clock"></i>7 Days · 60 min/day</div>
+<div class="week-tag"><i class="ph-duotone ph-arrows-left-right"></i>Transition & Change English</div>
+</div>
+</div>
+</header>
+
+<section class="section">
+<div class="container">
+
+<div class="philosophy-section">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i>Why This Week Matters</h2>
+<div class="philosophy-box">
+<div class="philosophy-title"><i class="ph-duotone ph-brain"></i>Transitions Require a Different Kind of Language</div>
+<p>Most communication skills are about clarity and persuasion. But transitions demand something rarer: the ability to hold two truths at once — grief for what's ending and hope for what's beginning. This week builds the linguistic muscle for that delicate balance, so you can navigate change without losing yourself or the people you love in the process.</p>
+</div>
+<div class="principles-grid">
+<div class="principle-card">
+<div class="principle-number">Principle 1</div>
+<div class="principle-title">Name the Change Before You Explain It</div>
+<div class="principle-desc">Start with "This is what's happening" before diving into "Here's what it means." People need context before they can process impact.</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 2</div>
+<div class="principle-title">Hold Space for Mixed Emotions</div>
+<div class="principle-desc">Transitions are rarely purely good or bad. Learn language that honors complexity: "I'm excited AND scared. Both are true."</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 3</div>
+<div class="principle-title">Ask Before You Assume</div>
+<div class="principle-desc">"What do you need from me right now?" beats "Here's what you should do." Support begins with listening, not fixing.</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 4</div>
+<div class="principle-title">Reframe Without Minimizing</div>
+<div class="principle-desc">"This is an opportunity" can sound dismissive. Try "This is hard, and I believe we'll grow from it." Same truth, more humanity.</div>
+</div>
+</div>
+
+<div class="comparison-section">
+<div class="comparison-title">Before vs. After This Week</div>
+<div class="comparison-item negative">
+<div class="comparison-label"><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Before: Overwhelmed or Dismissive</div>
+<div class="comparison-text">"I got the new job! Everything's going to be amazing!" (Minimizes fear) · "I'm moving across the country next month. Deal with it." (No space for others' feelings) · "It's fine. I'm fine." (Shuts down support)</div>
+</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-check-circle" style="--ph-color: #48BB78;"></i> After: Honest, Grounded, Connected</div>
+<div class="comparison-text">"I got the job. I'm thrilled AND terrified. Can we talk about what this means for us?" · "I'm moving next month. I know this is a lot — how are you feeling about it?" · "I'm not fine yet, but I'm working on it. Thank you for asking."</div>
+</div>
+</div>
+</div>
+
+<div class="lang-coverage">
+<h2 class="section-title"><i class="ph-duotone ph-sparkle"></i>Language Coverage</h2>
+<p class="section-desc">This week's linguistic focus — the grammar, vocabulary, and discourse patterns you'll master.</p>
+<div class="lang-grid">
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-code"></i> Grammar</div>
+<div class="lang-value">Future forms for planning ("We'll be moving..."), modals for uncertainty ("might", "could", "may"), conditionals for reframing ("If we look at it this way...")</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-book-bookmark"></i> Vocabulary</div>
+<div class="lang-value">Transition, change, uncertainty, support, opportunity, resilience, announcement, collaboration, reframing, adjustment</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-chat-circle-text"></i> Discourse</div>
+<div class="lang-value">Announcement structures, collaborative planning language, reframing phrases, support-seeking expressions</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-speaker-high"></i> Pronunciation</div>
+<div class="lang-value">Calm, reassuring tone; hopeful intonation; strategic pauses for emotional weight</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-arrows-left-right"></i> Register</div>
+<div class="lang-value">Intimate and vulnerable with family vs professional and measured with colleagues vs supportive with friends</div>
+</div>
+</div>
+</div>
+
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i>7-Day Plan</h2>
+<p class="section-desc">Each day builds on the previous one. Start with Day 141 and follow the path.</p>
+
+<div class="days-grid">
+
+<a href="week-21-day-141.html" class="day-card">
+<div class="day-label">Day 141</div>
+<div class="day-icon"><i class="ph-duotone ph-megaphone"></i></div>
+<h3 class="day-title">Announcing Major Life Changes to Loved Ones</h3>
+<p class="day-subtitle">The delicate art of sharing big news — with clarity, context, and care.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Structuring the announcement: What → Why → What's next</li>
+<li>Choosing the right time and setting</li>
+<li>Anticipating emotional reactions</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-21-day-142.html" class="day-card">
+<div class="day-label">Day 142</div>
+<div class="day-icon"><i class="ph-duotone ph-cloud"></i></div>
+<h3 class="day-title">Managing Uncertainty and Anxiety in Conversation</h3>
+<p class="day-subtitle">How to talk about the unknown without spiraling into fear.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Language for uncertainty ("I don't know yet, but...")</li>
+<li>Modals of possibility vs certainty</li>
+<li>Grounding phrases for anxious moments</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-21-day-143.html" class="day-card">
+<div class="day-label">Day 143</div>
+<div class="day-icon"><i class="ph-duotone ph-hand-heart"></i></div>
+<h3 class="day-title">Seeking and Accepting Support Gracefully</h3>
+<p class="day-subtitle">The courage to say "I need help" — and the wisdom to receive it.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Specific support requests vs vague asks</li>
+<li>Language for receiving without guilt</li>
+<li>Setting boundaries while accepting help</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-21-day-144.html" class="day-card">
+<div class="day-label">Day 144</div>
+<div class="day-icon"><i class="ph-duotone ph-users-three"></i></div>
+<h3 class="day-title">Planning Next Steps Collaboratively</h3>
+<p class="day-subtitle">Moving from announcement to action — together.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Collaborative planning language ("Let's figure out...")</li>
+<li>Future forms for shared commitments</li>
+<li>Checking in on progress without pressure</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-21-day-145.html" class="day-card">
+<div class="day-label">Day 145</div>
+<div class="day-icon"><i class="ph-duotone ph-arrows-clockwise"></i></div>
+<h3 class="day-title">Reframing Challenges as Opportunities</h3>
+<p class="day-subtitle">The language that turns obstacles into growth — without toxic positivity.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Honest reframing ("This is hard, AND we'll learn")</li>
+<li>Avoiding dismissive optimism</li>
+<li>Conditional reframing structures</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-21-day-146.html" class="day-card">
+<div class="day-label">Day 146</div>
+<div class="day-icon"><i class="ph-duotone ph-heart"></i></div>
+<h3 class="day-title">Supporting Others Through Their Transitions</h3>
+<p class="day-subtitle">Being present for someone else's big change — even when it affects you too.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Active listening during others' transitions</li>
+<li>Validating without fixing</li>
+<li>Managing your own feelings while supporting</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-21-day-147.html" class="day-card">
+<div class="day-label">Day 147</div>
+<div class="day-icon"><i class="ph-duotone ph-check-circle"></i></div>
+<h3 class="day-title">Reality Task: Check in with Someone in Transition</h3>
+<p class="day-subtitle">Apply everything — reach out to someone navigating change and offer real support.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Identify someone in your life going through transition</li>
+<li>Use this week's language to check in meaningfully</li>
+<li>Reflect on how your presence affected them</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+</div>
+
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-scene"></i>Life & Business Scenarios</h2>
+<p class="section-desc">Real situations you'll practice throughout this week.</p>
+</div>
+
+<div class="comparison-section">
+<div class="comparison-title">Life Scenarios (75%)</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-briefcase" style="--ph-color: #48BB78;"></i>Telling Your Family You're Changing Careers</div>
+<div class="comparison-text">Announcing a major career pivot to family who may not understand — balancing excitement with their concerns, and holding space for mixed reactions.</div>
+</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-briefcase" style="--ph-color: #48BB78;"></i>Discussing a Move to a New City with Your Partner</div>
+<div class="comparison-text">Navigating a relocation conversation where one person is excited and the other is hesitant — finding common ground without dismissing either perspective.</div>
+</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-briefcase" style="--ph-color: #48BB78;"></i>Helping Aging Parents Transition to Assisted Living</div>
+<div class="comparison-text">The hardest conversation: helping parents accept they need more support — with dignity, patience, and love, even when they resist.</div>
+</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-briefcase" style="--ph-color: #48BB78;"></i>Supporting a Friend Going Through a Divorce</div>
+<div class="comparison-text">Being present for someone whose life is unraveling — knowing when to listen, when to distract, and when to simply show up.</div>
+</div>
+</div>
+
+<div class="comparison-section">
+<div class="comparison-title">Business Scenarios (25%)</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-briefcase" style="--ph-color: #48BB78;"></i>Announcing a Major Organizational Restructuring</div>
+<div class="comparison-text">Communicating layoffs, role changes, or mergers to a team — with honesty about what's happening, clarity about what's next, and humanity throughout.</div>
+</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-briefcase" style="--ph-color: #48BB78;"></i>Guiding a Team Through a Merger or Acquisition</div>
+<div class="comparison-text">Leading people through the uncertainty of organizational change — managing fear, maintaining morale, and keeping everyone focused on what matters.</div>
+</div>
+</div>
+
+<div class="milestone-card">
+<div class="milestone-icon"><i class="ph-duotone ph-trophy"></i></div>
+<h2 class="milestone-title">Week 21 Milestone</h2>
+<p class="milestone-subtitle">By the end of this week, you can navigate life's biggest transitions — whether personal or professional — with emotional maturity, clear communication, and a focus on the future.</p>
+<div class="milestone-skills">
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Announce major life changes with clarity and care</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Manage uncertainty and anxiety in conversation</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Seek and accept support gracefully</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Plan next steps collaboratively</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Reframe challenges as opportunities</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Support others through their transitions</div>
+</div>
+</div>
+
+<div class="quiz-section">
+<h2 class="section-title"><i class="ph-duotone ph-pencil-simple"></i>Quick Self-Check</h2>
+<p class="section-desc">Before you start, test your intuition about transition communication.</p>
+
+<div class="quiz-question">
+<h4>1. You just got offered your dream job in another country. How do you tell your partner?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "I got the job! We're moving! Isn't this amazing?!"</div>
+<div class="quiz-option" data-correct="true">B. "I got the job offer. I'm thrilled AND scared. This is a huge decision for both of us — can we talk about what this means for our life together?"</div>
+<div class="quiz-option" data-correct="false">C. Wait until everything is finalized, then tell them it's happening.</div>
+</div>
+</div>
+
+<div class="quiz-question">
+<h4>2. Your aging parent needs to move to assisted living, but they're resisting. What's the most compassionate approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "You can't live alone anymore. It's not safe. We've decided."</div>
+<div class="quiz-option" data-correct="false">B. "Don't worry about it. We'll figure something else out."</div>
+<div class="quiz-option" data-correct="true">C. "I know this is scary, and I understand why you don't want to think about it. Can we talk about what would make this feel less overwhelming?"</div>
+</div>
+</div>
+
+<div class="quiz-question">
+<h4>3. Your best friend is going through a painful divorce. What's the most supportive thing to say?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Everything happens for a reason. You'll find someone better!"</div>
+<div class="quiz-option" data-correct="false">B. "Here's what you should do next..."</div>
+<div class="quiz-option" data-correct="true">C. "I'm so sorry you're going through this. I don't have the answers, but I'm here. What do you need from me right now?"</div>
+</div>
+</div>
+
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+
+<div class="week-navigation">
+<a href="week-20.html" class="nav-card">
+<div class="nav-label">← Previous Week</div>
+<div class="nav-title">Week 20: Discussing What Matters</div>
+</a>
+<a href="week-22.html" class="nav-card">
+<div class="nav-label">Next Week →</div>
+<div class="nav-title">Week 22: Crisis & Emergency Communication</div>
+</a>
+</div>
+
+<div class="cta-container">
+<a href="week-21-day-141.html" class="cta-button">
+<i class="ph-duotone ph-rocket-launch"></i>
+Start Week 21 · Day 141
+</a>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 21 · Navigating Life Transitions · Transition & Change English</div>
+</div>
+</footer>
+
+<script>
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') {
+option.classList.add('correct');
+} else if (option.classList.contains('selected')) {
+option.classList.add('incorrect');
+}
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+</script>
+
+</body>
+</html>

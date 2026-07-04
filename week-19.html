@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 19: Making Sense of the News - Critical Analysis English</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--pink: #EC4899;
+--pink-bright: #DB2777;
+--pink-soft: #FCE7F3;
+--pink-deep: #9D174D;
+--blue: #3B82F6;
+--blue-bright: #2563EB;
+--blue-soft: #DBEAFE;
+--blue-deep: #1E40AF;
+--rose: #F43F5E;
+--sky: #0EA5E9;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+font-family: 'Inter', sans-serif;
+background: linear-gradient(135deg, #FCE7F3 0%, #DBEAFE 25%, #FCE7F3 50%, #DBEAFE 75%, #FCE7F3 100%);
+background-attachment: fixed;
+color: var(--text-primary);
+font-size: 15px;
+line-height: 1.6;
+min-height: 100vh;
+position: relative;
+overflow-x: hidden;
+}
+body::before {
+content: '';
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: 
+radial-gradient(circle at 15% 25%, rgba(236, 72, 153, 0.35) 0%, transparent 40%),
+radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.35) 0%, transparent 40%),
+radial-gradient(circle at 50% 85%, rgba(244, 63, 94, 0.3) 0%, transparent 40%),
+radial-gradient(circle at 30% 60%, rgba(14, 165, 233, 0.3) 0%, transparent 40%);
+pointer-events: none;
+z-index: 0;
+animation: aurora 20s ease-in-out infinite;
+}
+@keyframes aurora {
+0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+33% { transform: scale(1.15) rotate(120deg); opacity: 1; }
+66% { transform: scale(0.95) rotate(240deg); opacity: 0.85; }
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav {
+background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(30px);
+padding: 12px 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back {
+font-family: 'Fraunces', serif;
+font-size: 1rem;
+font-weight: 600;
+color: var(--text-primary);
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.nav-back i { --ph-color: var(--pink-bright); }
+.week-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.week-header { padding: 48px 0 32px; text-align: center; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.week-icon-large { font-size: 3.5rem; margin-bottom: 16px; }
+.week-icon-large i { --ph-color: var(--pink-bright); }
+.week-title {
+font-family: 'Fraunces', serif;
+font-size: 3.5rem;
+font-weight: 600;
+margin-bottom: 16px;
+background: linear-gradient(135deg, var(--pink-bright), var(--blue-bright));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.week-description {
+font-size: 16px;
+color: var(--text-secondary);
+max-width: 700px;
+margin: 0 auto 24px;
+line-height: 1.7;
+}
+.week-quote {
+background: rgba(255, 255, 255, 0.9);
+padding: 16px 24px;
+border-radius: var(--radius-md);
+border-left: 4px solid var(--pink-bright);
+font-style: italic;
+color: var(--text-secondary);
+margin: 24px auto;
+max-width: 650px;
+}
+.week-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+margin-top: 24px;
+}
+.week-tag {
+background: rgba(255, 255, 255, 0.9);
+padding: 8px 16px;
+border-radius: 20px;
+font-size: 13px;
+font-weight: 500;
+color: var(--text-secondary);
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.week-tag i { --ph-color: var(--pink-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; text-align: center; }
+.section-title {
+font-family: 'Fraunces', serif;
+font-size: 2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+}
+.section-title i { --ph-color: var(--pink-bright); }
+.section-desc {
+font-size: 15px;
+color: var(--text-secondary);
+max-width: 600px;
+margin: 0 auto;
+}
+.philosophy-section {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+.philosophy-box {
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: var(--radius-md);
+padding: 24px;
+border-left: 4px solid var(--pink-bright);
+margin-bottom: 24px;
+}
+.philosophy-title {
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.philosophy-title i { --ph-color: var(--pink-bright); }
+.principles-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 16px;
+margin-top: 24px;
+}
+.principle-card {
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-md);
+padding: 20px;
+border-left: 4px solid var(--blue-bright);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.principle-number {
+font-size: 12px;
+font-weight: 700;
+color: var(--blue-deep);
+background: var(--blue-soft);
+padding: 4px 10px;
+border-radius: 10px;
+display: inline-block;
+margin-bottom: 10px;
+}
+.principle-title {
+font-family: 'Fraunces', serif;
+font-size: 1.1rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 6px;
+}
+.principle-desc {
+font-size: 13px;
+color: var(--text-secondary);
+line-height: 1.5;
+}
+.comparison-section {
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-md);
+padding: 28px;
+margin-top: 24px;
+}
+.comparison-title {
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+font-weight: 600;
+margin-bottom: 20px;
+}
+.comparison-item {
+padding: 16px;
+border-radius: var(--radius-sm);
+margin-bottom: 16px;
+border-left: 4px solid;
+}
+.comparison-item.negative { background: rgba(245, 101, 101, 0.1); border-left-color: #F56565; }
+.comparison-item.positive { background: rgba(72, 187, 120, 0.1); border-left-color: #48BB78; }
+.comparison-label {
+font-size: 13px;
+font-weight: 600;
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.comparison-text {
+font-size: 14px;
+color: var(--text-secondary);
+line-height: 1.7;
+font-style: italic;
+}
+.lang-coverage {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+.lang-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+margin-top: 24px;
+}
+.lang-item {
+background: rgba(255, 255, 255, 0.9);
+padding: 20px;
+border-radius: var(--radius-md);
+border-left: 4px solid var(--pink-bright);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.lang-label {
+font-size: 12px;
+font-weight: 700;
+color: var(--pink-deep);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.lang-label i { --ph-color: var(--pink-bright); }
+.lang-value {
+font-size: 14px;
+color: var(--text-secondary);
+line-height: 1.5;
+}
+.days-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+gap: 24px;
+margin: 32px 0;
+}
+.day-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 28px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+border-top: 4px solid var(--pink-bright);
+text-decoration: none;
+color: inherit;
+display: block;
+transition: all 0.4s ease;
+}
+.day-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(236, 72, 153, 0.2);
+}
+.day-label {
+background: linear-gradient(135deg, var(--pink-soft), var(--blue-soft));
+color: var(--pink-deep);
+padding: 6px 12px;
+border-radius: 12px;
+font-size: 12px;
+font-weight: 600;
+display: inline-block;
+margin-bottom: 16px;
+}
+.day-icon { margin-bottom: 16px; }
+.day-icon i { font-size: 2rem; --ph-color: var(--pink-bright); }
+.day-title {
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+font-weight: 600;
+margin-bottom: 8px;
+color: var(--text-primary);
+}
+.day-subtitle {
+font-size: 13px;
+color: var(--text-secondary);
+margin-bottom: 20px;
+line-height: 1.5;
+}
+.day-focus {
+margin-top: 16px;
+padding-top: 16px;
+border-top: 1px solid rgba(252, 231, 243, 0.5);
+}
+.focus-title {
+font-size: 11px;
+font-weight: 700;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.8px;
+margin-bottom: 12px;
+}
+.focus-list { list-style: none; }
+.focus-list li {
+padding: 6px 0;
+padding-left: 20px;
+position: relative;
+font-size: 13px;
+color: var(--text-secondary);
+border-bottom: 1px dashed rgba(252, 231, 243, 0.5);
+}
+.focus-list li:last-child { border-bottom: none; }
+.focus-list li::before {
+content: '→';
+position: absolute;
+left: 0;
+color: var(--pink-bright);
+font-weight: 600;
+}
+.day-time {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+margin-top: 16px;
+padding: 6px 12px;
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: 12px;
+font-size: 12px;
+color: var(--pink-deep);
+font-weight: 600;
+border: 1px solid rgba(236, 72, 153, 0.2);
+}
+.day-time i { --ph-color: var(--pink-bright); }
+.milestone-card {
+background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+border: 2px solid var(--pink-bright);
+text-align: center;
+}
+.milestone-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.milestone-icon i { --ph-color: var(--pink-bright); }
+.milestone-title {
+font-family: 'Fraunces', serif;
+font-size: 2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 12px;
+}
+.milestone-subtitle {
+font-size: 15px;
+color: var(--text-secondary);
+margin-bottom: 28px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.6;
+}
+.milestone-skills {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 14px;
+margin-top: 24px;
+text-align: left;
+}
+.milestone-skill {
+background: rgba(255, 255, 255, 0.85);
+padding: 16px 18px;
+border-radius: var(--radius-sm);
+font-size: 14px;
+color: var(--text-secondary);
+display: flex;
+align-items: center;
+gap: 12px;
+line-height: 1.5;
+}
+.milestone-skill i {
+--ph-color: var(--pink-bright);
+font-size: 1.3rem;
+flex-shrink: 0;
+}
+.quiz-section {
+background: rgba(255, 255, 255, 0.85);
+border-radius: var(--radius-lg);
+padding: 40px;
+margin: 40px 0;
+}
+.quiz-question {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 16px 20px;
+margin-bottom: 12px;
+border-left: 4px solid var(--pink-bright);
+}
+.quiz-question h4 {
+font-family: 'Fraunces', serif;
+font-size: 1.05rem;
+margin-bottom: 10px;
+color: var(--text-primary);
+line-height: 1.3;
+}
+.quiz-options { 
+display: flex; 
+flex-direction: column; 
+gap: 6px; 
+}
+.quiz-option {
+padding: 10px 12px;
+background: rgba(255, 255, 255, 0.95);
+border: 2px solid rgba(252, 231, 243, 0.5);
+border-radius: var(--radius-sm);
+cursor: pointer;
+transition: all 0.3s ease;
+font-size: 13.5px;
+color: var(--text-secondary);
+line-height: 1.3;
+}
+.quiz-option:hover { 
+border-color: var(--pink-bright); 
+background: rgba(252, 231, 243, 0.2); 
+}
+.quiz-option.selected { 
+border-color: var(--pink-bright); 
+background: rgba(252, 231, 243, 0.3); 
+}
+.quiz-option.correct { 
+border-color: #48BB78; 
+background: rgba(72, 187, 120, 0.15); 
+}
+.quiz-option.incorrect { 
+border-color: #F56565; 
+background: rgba(245, 101, 101, 0.15); 
+}
+.check-btn {
+background: linear-gradient(135deg, var(--pink-bright), var(--blue-bright));
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 24px;
+font-weight: 600;
+cursor: pointer;
+margin-top: 16px;
+box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+}
+.week-navigation {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+margin: 48px 0;
+}
+.nav-card {
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(252, 231, 243, 0.5));
+border-radius: var(--radius-md);
+padding: 24px;
+text-decoration: none;
+color: inherit;
+transition: all 0.3s ease;
+border: 1px solid rgba(255, 255, 255, 0.9);
+position: relative;
+overflow: hidden;
+}
+.nav-card::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--pink-bright), var(--blue-bright));
+}
+.nav-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 24px rgba(236, 72, 153, 0.25);
+}
+.nav-label {
+font-size: 12px;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 6px;
+}
+.nav-title {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+}
+.cta-section { margin: 56px 0; text-align: center; }
+.cta-card {
+background: rgba(255, 255, 255, 0.7);
+backdrop-filter: blur(30px) saturate(180%);
+padding: 56px 36px;
+border-radius: var(--radius-xl);
+text-align: center;
+border: 1px solid rgba(255, 255, 255, 0.8);
+box-shadow: 0 12px 40px rgba(150, 130, 200, 0.2);
+position: relative;
+overflow: hidden;
+}
+.cta-title {
+font-family: 'Fraunces', serif;
+font-size: 2.2rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+position: relative;
+z-index: 1;
+background: linear-gradient(135deg, var(--text-primary), var(--lavender-deep));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.cta-desc {
+font-size: 15px;
+color: var(--text-secondary);
+margin-bottom: 32px;
+max-width: 550px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.7;
+position: relative;
+z-index: 1;
+}
+.cta-button {
+display: inline-flex;
+align-items: center;
+gap: 12px;
+background: linear-gradient(135deg, var(--lavender-bright) 0%, var(--sky-bright) 50%, var(--blush-bright) 100%);
+background-size: 200% 200%;
+color: white;
+padding: 16px 36px;
+border-radius: 36px;
+font-weight: 600;
+font-size: 15px;
+text-decoration: none;
+transition: all 0.4s ease;
+box-shadow: 0 8px 24px rgba(155, 133, 212, 0.4);
+position: relative;
+z-index: 1;
+animation: buttonGradient 4s ease infinite;
+}
+@keyframes buttonGradient {
+0%, 100% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+}
+.cta-button:hover {
+transform: translateY(-3px) scale(1.02);
+box-shadow: 0 12px 32px rgba(155, 133, 212, 0.5);
+}
+.cta-button i { font-size: 1.2rem; }
+.footer {
+background: rgba(255, 255, 255, 0.7);
+padding: 40px 0 28px;
+text-align: center;
+margin-top: 56px;
+border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.week-title { font-size: 2.5rem; }
+.days-grid { grid-template-columns: 1fr; }
+.milestone-skills { grid-template-columns: 1fr; }
+.week-navigation { grid-template-columns: 1fr; }
+.principles-grid { grid-template-columns: 1fr; }
+.lang-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="index.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Back to Roadmap</a>
+<div class="week-indicator">Week 19 · Phase 4</div>
+</div>
+</nav>
+
+<header class="week-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a>
+ › 
+<a href="index.html#phase-4">Phase 4</a>
+ › Week 19
+</div>
+<div class="week-icon-large"><i class="ph-duotone ph-newspaper-clipping"></i></div>
+<h1 class="week-title">Making Sense of the News</h1>
+<p class="week-description">We live in an age of information overload — and misinformation. This week teaches you the language of critical analysis: how to share news responsibly, question sources intelligently, express opinions with evidence, and disagree thoughtfully without turning conversations into arguments.</p>
+<div class="week-quote">"The most valuable skill in the information age isn't knowing what's true — it's knowing how to talk about what might not be."</div>
+<div class="week-tags">
+<div class="week-tag"><i class="ph-duotone ph-house"></i>85% Life Communication</div>
+<div class="week-tag"><i class="ph-duotone ph-briefcase"></i>15% Professional</div>
+<div class="week-tag"><i class="ph-duotone ph-clock"></i>7 Days · 60 min/day</div>
+<div class="week-tag"><i class="ph-duotone ph-newspaper-clipping"></i>Critical Analysis English</div>
+</div>
+</div>
+</header>
+
+<section class="section">
+<div class="container">
+
+<div class="philosophy-section">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i>Why This Week Matters</h2>
+<div class="philosophy-box">
+<div class="philosophy-title"><i class="ph-duotone ph-brain"></i>Critical Thinking Is a Communication Skill</div>
+<p>Most people can read the news — but few can discuss it well. They either share everything uncritically, or dismiss everything as fake. This week builds the middle ground: the language of thoughtful engagement with information, where you can question without cynicism and disagree without hostility.</p>
+</div>
+<div class="principles-grid">
+<div class="principle-card">
+<div class="principle-number">Principle 1</div>
+<div class="principle-title">Separate Fact from Opinion</div>
+<div class="principle-desc">"The article says..." vs "I think..." — learn to signal clearly when you're reporting vs interpreting.</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 2</div>
+<div class="principle-title">Check Sources Before Sharing</div>
+<div class="principle-desc">"I saw this somewhere" isn't enough. Learn to say "According to [source]..." and "I haven't verified this yet."</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 3</div>
+<div class="principle-title">Express Opinions with Evidence</div>
+<div class="principle-desc">Move beyond "I feel like..." to "Here's what I've observed..." — backing opinions with specifics.</div>
+</div>
+<div class="principle-card">
+<div class="principle-number">Principle 4</div>
+<div class="principle-title">Disagree Without Dismissing</div>
+<div class="principle-desc">"I see it differently because..." beats "You're wrong." Learn to hold space for multiple perspectives.</div>
+</div>
+</div>
+
+<div class="comparison-section">
+<div class="comparison-title">Before vs. After This Week</div>
+<div class="comparison-item negative">
+<div class="comparison-label"><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Before: Reactive & Polarized</div>
+<div class="comparison-text">"Did you see this?? It's crazy!" (shares without context) · "That's fake news." (dismisses without evidence) · "You clearly don't understand." (shuts down conversation)</div>
+</div>
+<div class="comparison-item positive">
+<div class="comparison-label"><i class="ph-duotone ph-check-circle" style="--ph-color: #48BB78;"></i> After: Thoughtful & Nuanced</div>
+<div class="comparison-text">"I came across this article from [source] — I haven't fully verified it, but it raises an interesting point about..." · "I see it differently, and here's why..." · "That's a fair point. Can you tell me more about where you're coming from?"</div>
+</div>
+</div>
+</div>
+
+<div class="lang-coverage">
+<h2 class="section-title"><i class="ph-duotone ph-sparkle"></i>Language Coverage</h2>
+<p class="section-desc">This week's linguistic focus — the grammar, vocabulary, and discourse patterns you'll master.</p>
+<div class="lang-grid">
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-code"></i> Grammar</div>
+<div class="lang-value">Hedging for opinions ("It seems that...", "It could be argued that..."), attribution structures ("According to...", "The report suggests..."), conditionals for analysis ("If this is true, then...")</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-book-bookmark"></i> Vocabulary</div>
+<div class="lang-value">Source, evidence, bias, misinformation, sensationalism, perspective, credible, verify, claim, narrative, discourse</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-chat-circle-text"></i> Discourse</div>
+<div class="lang-value">Critical analysis, respectful disagreement, evidence-based argument, source attribution, balanced discussion</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-speaker-high"></i> Pronunciation</div>
+<div class="lang-value">Measured tone, stress on key evidence, calm intonation, strategic pauses for emphasis</div>
+</div>
+<div class="lang-item">
+<div class="lang-label"><i class="ph-duotone ph-arrows-left-right"></i> Register</div>
+<div class="lang-value">Family dinner vs professional discussion vs public debate — adjusting depth and formality</div>
+</div>
+</div>
+</div>
+
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i>7-Day Plan</h2>
+<p class="section-desc">Each day builds on the previous one. Start with Day 127 and follow the path.</p>
+
+<div class="days-grid">
+
+<a href="week-19-day-127.html" class="day-card">
+<div class="day-label">Day 127</div>
+<div class="day-icon"><i class="ph-duotone ph-share-network"></i></div>
+<h3 class="day-title">Sharing News Without Sensationalism</h3>
+<p class="day-subtitle">How to share information responsibly — with context, not clickbait energy.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Attributing sources clearly ("According to...")</li>
+<li>Adding context before sharing</li>
+<li>Avoiding emotional exaggeration</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-19-day-128.html" class="day-card">
+<div class="day-label">Day 128</div>
+<div class="day-icon"><i class="ph-duotone ph-magnifying-glass"></i></div>
+<h3 class="day-title">Asking Critical Questions About Sources</h3>
+<p class="day-subtitle">The language of healthy skepticism — questioning without cynicism.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>"Who wrote this, and what's their angle?"</li>
+<li>"What evidence supports this claim?"</li>
+<li>"What's missing from this story?"</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-19-day-129.html" class="day-card">
+<div class="day-label">Day 129</div>
+<div class="day-icon"><i class="ph-duotone ph-chat-centered-text"></i></div>
+<h3 class="day-title">Expressing Opinions with Evidence</h3>
+<p class="day-subtitle">Moving from "I feel like..." to "Here's what I've observed..."</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Backing opinions with specifics</li>
+<li>Using hedging appropriately ("It seems...", "It appears...")</li>
+<li>Distinguishing fact from interpretation</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-19-day-130.html" class="day-card">
+<div class="day-label">Day 130</div>
+<div class="day-icon"><i class="ph-duotone ph-shield-warning"></i></div>
+<h3 class="day-title">Handling Misinformation Respectfully</h3>
+<p class="day-subtitle">Correcting false information without shaming the person sharing it.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>"I've seen something different from [source]..."</li>
+<li>Preserving dignity while correcting</li>
+<li>Knowing when to disengage</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-19-day-131.html" class="day-card">
+<div class="day-label">Day 131</div>
+<div class="day-icon"><i class="ph-duotone ph-heart"></i></div>
+<h3 class="day-title">Discussing Sensitive Topics Thoughtfully</h3>
+<p class="day-subtitle">Navigating politics, religion, and other hot-button topics with grace.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Setting conversational boundaries</li>
+<li>Using "I" statements for sensitive topics</li>
+<li>Knowing when to pause the conversation</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-19-day-132.html" class="day-card">
+<div class="day-label">Day 132</div>
+<div class="day-icon"><i class="ph-duotone ph-scales"></i></div>
+<h3 class="day-title">Navigating Political Disagreements</h3>
+<p class="day-subtitle">How to disagree with someone you care about — without losing the relationship.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>"I see it differently because..."</li>
+<li>Finding common ground first</li>
+<li>Separating the person from the position</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+<a href="week-19-day-133.html" class="day-card">
+<div class="day-label">Day 133</div>
+<div class="day-icon"><i class="ph-duotone ph-check-circle"></i></div>
+<h3 class="day-title">Reality Task: Check an Opposing News Source</h3>
+<p class="day-subtitle">Apply everything — find a story from a source you disagree with, and analyze it fairly.</p>
+<div class="day-focus">
+<div class="focus-title">Day Focus</div>
+<ul class="focus-list">
+<li>Choose a topic you have strong opinions about</li>
+<li>Read coverage from an opposing source</li>
+<li>Write a balanced summary of both perspectives</li>
+</ul>
+</div>
+<div class="day-time"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+</a>
+
+</div>
+
+<div class="milestone-card">
+<div class="milestone-icon"><i class="ph-duotone ph-trophy"></i></div>
+<h2 class="milestone-title">Week 19 Milestone</h2>
+<p class="milestone-subtitle">By the end of this week, you can discuss news and social issues intelligently — asking critical questions, sharing informed opinions, and handling disagreements thoughtfully.</p>
+<div class="milestone-skills">
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Share news without sensationalism</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Ask critical questions about sources</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Express opinions with evidence</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Handle misinformation respectfully</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Discuss sensitive topics thoughtfully</div>
+<div class="milestone-skill"><i class="ph-duotone ph-check-circle"></i>Navigate political disagreements</div>
+</div>
+</div>
+
+<div class="quiz-section">
+<h2 class="section-title"><i class="ph-duotone ph-pencil-simple"></i>Quick Self-Check</h2>
+<p class="section-desc">Before you start, test your intuition about critical news discussion.</p>
+
+<div class="quiz-question">
+<h4>1. A family member shares a sensational news story on the group chat. What's the most thoughtful response?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "That's fake news. Stop sharing this stuff."</div>
+<div class="quiz-option" data-correct="true">B. "Interesting — I saw a different take on this from [source]. I haven't fully verified either yet, but it's worth looking at both sides."</div>
+<div class="quiz-option" data-correct="false">C. Ignore it completely.</div>
+</div>
+</div>
+
+<div class="quiz-question">
+<h4>2. Your colleague shares a strong political opinion you disagree with. How do you respond?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "You're clearly misinformed."</div>
+<div class="quiz-option" data-correct="false">B. Nod and change the subject immediately.</div>
+<div class="quiz-option" data-correct="true">C. "I see it differently, and here's why... But I'm curious — what led you to that view?"</div>
+</div>
+</div>
+
+<div class="quiz-question">
+<h4>3. You're not sure if a viral story is true. What's the responsible thing to say?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. Share it anyway — "let people decide for themselves."</div>
+<div class="quiz-option" data-correct="true">B. "I came across this but I haven't verified the source yet — I'd hold off on sharing until we know more."</div>
+<div class="quiz-option" data-correct="false">C. "This is definitely true, I saw it on three different sites."</div>
+</div>
+</div>
+
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+
+<div class="week-navigation">
+<a href="week-18.html" class="nav-card">
+<div class="nav-label">← Previous Week</div>
+<div class="nav-title">Week 18: Building Community Connections</div>
+</a>
+<a href="week-20.html" class="nav-card">
+<div class="nav-label">Next Week →</div>
+<div class="nav-title">Week 20: Discussing What Matters</div>
+</a>
+</div>
+
+<div class="cta-section">
+<div class="cta-card">
+<h2 class="cta-title">Ready to Start?</h2>
+<p class="cta-desc">Begin with Day 127 and follow the path. Each day builds on the previous one. You are not just learning English — you are becoming a more thoughtful communicator in the information age.</p>
+<a href="week-19-day-127.html" class="cta-button">
+<i class="ph-duotone ph-rocket-launch"></i>
+Start Week 19 · Day 127
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 19 · Making Sense of the News · Critical Analysis English</div>
+</div>
+</footer>
+
+<script>
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') {
+option.classList.add('correct');
+} else if (option.classList.contains('selected')) {
+option.classList.add('incorrect');
+}
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+</script>
+
+</body>
+</html>

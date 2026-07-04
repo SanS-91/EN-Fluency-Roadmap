@@ -1,0 +1,3505 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Day 4: Listening Deep Dive | Professional Fluency Roadmap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #7BC8E8;
+            --primary-light: #A8DCF0;
+            --primary-soft: #E0F2FA;
+            --secondary: #88D8B0;
+            --secondary-soft: #E8F8F0;
+            --accent: #F9D4B8;
+            --accent-soft: #FFF5EB;
+            --warm: #F9D4B8;
+            --warm-soft: #FFF5EB;
+            
+            --bg: #FAFBFC;
+            --text-primary: #2D3748;
+            --text-secondary: #4A5568;
+            --text-muted: #718096;
+            --border: #E2E8F0;
+            --border-light: #EDF2F7;
+            
+            --life: #48BB78;
+            --life-bg: #F0FFF4;
+            --life-dark: #2F855A;
+            --biz: #4299E1;
+            --biz-bg: #EBF8FF;
+            --biz-dark: #2B6CB0;
+            --success: #48BB78;
+            --error: #F56565;
+            --warning: #ED8936;
+            
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+            --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            font-size: 15px;
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ========== TOP NAV ========== */
+        .top-nav {
+            background: white;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .top-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-back {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .nav-back:hover { color: var(--primary); }
+        
+        .nav-progress {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        
+        .mini-progress {
+            width: 100px;
+            height: 6px;
+            background: var(--border-light);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .mini-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+        }
+        
+        /* ========== DAY TABS ========== */
+        .day-tabs {
+            background: white;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 55px;
+            z-index: 99;
+        }
+        
+        .day-tabs-scroll {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 2px;
+        }
+        
+        .day-tabs-scroll::-webkit-scrollbar { height: 3px; }
+        .day-tabs-scroll::-webkit-scrollbar-track { background: var(--border-light); }
+        .day-tabs-scroll::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
+        
+        .day-tab {
+            padding: 9px 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+        
+        .day-tab:hover {
+            background: var(--primary-soft);
+            border-color: var(--primary);
+        }
+        
+        .day-tab.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+        
+        /* ========== HEADER ========== */
+        .day-header {
+            background: linear-gradient(135deg, var(--secondary-soft) 0%, var(--primary-soft) 100%);
+            padding: 48px 0 40px;
+            position: relative;
+        }
+        
+        .day-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(136,216,176,0.2) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(123,200,232,0.15) 0%, transparent 40%);
+        }
+        
+        .day-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            position: relative;
+        }
+        
+        .day-breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        
+        .day-breadcrumb a:hover { color: var(--primary); }
+        
+        .day-title {
+            font-family: 'Fraunces', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            line-height: 1.2;
+            position: relative;
+        }
+        
+        .day-subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            line-height: 1.55;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .day-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            position: relative;
+        }
+        
+        .meta-tag {
+            background: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        
+        /* ========== SECTIONS ========== */
+        .section {
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin: 20px 0;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+        }
+        
+        .section-warm { background: linear-gradient(135deg, #FFFFFF 0%, var(--warm-soft) 100%); border-color: #FDE8D4; }
+        .section-mint { background: linear-gradient(135deg, #FFFFFF 0%, var(--secondary-soft) 100%); border-color: #C6F6D5; }
+        .section-sky { background: linear-gradient(135deg, #FFFFFF 0%, var(--primary-soft) 100%); border-color: #BEE3F8; }
+        .section-blue { background: linear-gradient(135deg, #FFFFFF 0%, #E0F2FA 100%); border-color: #BEE3F8; }
+        .section-purple { background: linear-gradient(135deg, #FFFFFF 0%, #F5F0FF 100%); border-color: #E8DDF5; }
+        .section-green { background: linear-gradient(135deg, #FFFFFF 0%, var(--life-bg) 100%); border-color: #C6F6D5; }
+        .section-accent { background: linear-gradient(135deg, #FFFFFF 0%, var(--accent-soft) 100%); border-color: #FDE8D4; }
+        .section-sg { background: linear-gradient(135deg, #FFFFFF 0%, #F5F0FF 100%); border-color: #E8DDF5; }
+        
+        .section-title {
+            font-family: 'Fraunces', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-icon { font-size: 1.5rem; }
+        
+        .section-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.55;
+            margin-bottom: 20px;
+        }
+        
+        /* ========== PHILOSOPHY BOX ========== */
+        .philosophy-box {
+            background: linear-gradient(135deg, var(--primary-soft), var(--secondary-soft));
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--primary);
+            margin-bottom: 16px;
+        }
+        
+        .philosophy-box h4 {
+            font-family: 'Fraunces', serif;
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        
+        .philosophy-box p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+        
+        .philosophy-box strong { color: var(--biz-dark); }
+        
+        /* ========== PROBLEM BOX ========== */
+        .problem-box {
+            background: #FED7D7;
+            padding: 18px 20px;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--error);
+            margin-bottom: 16px;
+        }
+        
+        .problem-box h4 {
+            font-family: 'Fraunces', serif;
+            font-size: 15px;
+            color: #9B2C2C;
+            margin-bottom: 10px;
+        }
+        
+        .problem-box .comparison {
+            background: white;
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        
+        .problem-box .comparison .you-hear {
+            color: #9B2C2C;
+        }
+        
+        .problem-box .comparison .native-say {
+            color: var(--life-dark);
+        }
+        
+        .problem-box ul {
+            list-style: none;
+            margin-top: 8px;
+        }
+        
+        .problem-box li {
+            padding: 4px 0;
+            padding-left: 24px;
+            position: relative;
+            font-size: 13px;
+            color: #9B2C2C;
+            line-height: 1.5;
+        }
+        
+        .problem-box li::before {
+            content: '❌';
+            position: absolute;
+            left: 0;
+            font-size: 12px;
+        }
+        
+        /* ========== SOLUTION BOX ========== */
+        .solution-box {
+            background: var(--life-bg);
+            padding: 18px 20px;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--life);
+            margin-bottom: 16px;
+        }
+        
+        .solution-box h4 {
+            font-family: 'Fraunces', serif;
+            font-size: 15px;
+            color: var(--life-dark);
+            margin-bottom: 10px;
+        }
+        
+        .solution-box .comparison {
+            background: white;
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            color: var(--life-dark);
+        }
+        
+        .solution-box ul {
+            list-style: none;
+            margin-top: 8px;
+        }
+        
+        .solution-box li {
+            padding: 4px 0;
+            padding-left: 24px;
+            position: relative;
+            font-size: 13px;
+            color: var(--life-dark);
+            line-height: 1.5;
+        }
+        
+        .solution-box li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            font-size: 12px;
+        }
+        
+        /* ========== PLAN GRID ========== */
+        .plan-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+        
+        .plan-block {
+            background: white;
+            padding: 18px 14px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .plan-block-icon { font-size: 1.6rem; margin-bottom: 6px; }
+        
+        .plan-block-title {
+            font-family: 'Fraunces', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        
+        .plan-block-time {
+            display: inline-block;
+            background: var(--primary-soft);
+            color: var(--biz-dark);
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        
+        .plan-block-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+        
+        /* ========== PATTERN CARD ========== */
+        .pattern-card {
+            background: white;
+            padding: 22px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            margin-bottom: 16px;
+            transition: all 0.3s;
+        }
+        
+        .pattern-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .pattern-header {
+            font-family: 'Fraunces', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .pattern-number {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .pattern-phonetic {
+            color: var(--text-muted);
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+        
+        .pattern-meta {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .freq-badge, .register-badge {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        
+        .freq-badge {
+            background: var(--warm-soft);
+            color: #744210;
+        }
+        
+        .register-badge {
+            background: var(--primary-soft);
+            color: var(--biz-dark);
+        }
+        
+        .pattern-meaning {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .pattern-why {
+            background: var(--primary-soft);
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 12px;
+            color: var(--biz-dark);
+            border-left: 3px solid var(--primary);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        .pattern-why strong { color: var(--biz-dark); }
+        
+        .examples-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 14px 0 8px;
+        }
+        
+        .example-item {
+            background: var(--bg);
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--primary);
+            position: relative;
+        }
+        
+        .example-context {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            display: block;
+            color: var(--biz-dark);
+        }
+        
+        .example-ipa {
+            display: block;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--text-muted);
+            margin: 4px 0;
+        }
+        
+        .audio-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            margin-left: 8px;
+        }
+        
+        .audio-btn:hover {
+            background: var(--primary-light);
+            transform: scale(1.1);
+        }
+        
+        .context-note {
+            background: var(--warm-soft);
+            padding: 12px 14px;
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--warning);
+            margin-top: 12px;
+            font-size: 12px;
+            color: #744210;
+            line-height: 1.5;
+        }
+        
+        .context-note strong { color: #744210; }
+        
+        .mistake-box {
+            background: #FED7D7;
+            padding: 12px 14px;
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--error);
+            margin-top: 12px;
+            font-size: 12px;
+            color: #9B2C2C;
+            line-height: 1.5;
+        }
+        
+        .alternatives-box {
+            background: var(--life-bg);
+            padding: 12px 14px;
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--life);
+            margin-top: 10px;
+            font-size: 12px;
+            color: var(--life-dark);
+            line-height: 1.5;
+        }
+        
+        .alternatives-box strong { display: block; margin-bottom: 4px; }
+        
+        /* ========== TABLES ========== */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            font-size: 13px;
+        }
+        
+        .data-table th {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .data-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-secondary);
+            vertical-align: top;
+            line-height: 1.5;
+        }
+        
+        .data-table tr:last-child td { border-bottom: none; }
+        .data-table tr:hover { background: var(--bg); }
+        
+        .data-table code {
+            background: var(--primary-soft);
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--biz-dark);
+        }
+        
+        /* ========== SPEED TABS ========== */
+        .speed-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .speed-tab {
+            padding: 8px 16px;
+            background: white;
+            border: 1.5px solid var(--border);
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text-secondary);
+        }
+        
+        .speed-tab:hover {
+            border-color: var(--primary);
+        }
+        
+        .speed-tab.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+        
+        .speed-content {
+            display: none;
+        }
+        
+        .speed-content.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .speed-box {
+            background: white;
+            padding: 16px 18px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        
+        /* ========== TRANSCRIPT ========== */
+        .transcript-box {
+            background: white;
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+        }
+        
+        .transcript-line {
+            padding: 10px 0;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            font-size: 14px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .transcript-line:last-child { border-bottom: none; }
+        
+        .speaker {
+            font-weight: 600;
+            margin-right: 6px;
+        }
+        
+        .speaker.minh { color: var(--life-dark); }
+        .speaker.jake { color: var(--biz-dark); }
+        .speaker.david { color: #553C9A; }
+        
+        .annotation {
+            color: var(--primary);
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 500;
+        }
+        
+        .highlight-link {
+            background: var(--primary-soft);
+            padding: 1px 4px;
+            border-radius: 3px;
+            color: var(--biz-dark);
+            font-weight: 600;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .highlight-red {
+            background: #FED7D7;
+            padding: 1px 4px;
+            border-radius: 3px;
+            color: #9B2C2C;
+            font-weight: 600;
+            border-bottom: 2px solid var(--error);
+        }
+        
+        .highlight-green {
+            background: var(--life-bg);
+            padding: 1px 4px;
+            border-radius: 3px;
+            color: var(--life-dark);
+            font-weight: 600;
+            border-bottom: 2px solid var(--life);
+        }
+        
+        .highlight-purple {
+            background: #F5F0FF;
+            padding: 1px 4px;
+            border-radius: 3px;
+            color: #553C9A;
+            font-weight: 600;
+            border-bottom: 2px solid #B794D6;
+        }
+        
+        /* ========== AUDIO PLAYER ========== */
+        .audio-player {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 18px 20px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+            color: white;
+        }
+        
+        .play-btn {
+            background: white;
+            color: var(--primary);
+            border: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            flex-shrink: 0;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .play-btn:hover { transform: scale(1.1); }
+        
+        .audio-info { flex: 1; }
+        
+        .audio-label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .audio-meta {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        .speed-control {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .speed-control:hover { background: rgba(255,255,255,0.3); }
+        
+        /* ========== ACCENT COMPARISON ========== */
+        .accent-compare {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0;
+        }
+        
+        .accent-col {
+            padding: 16px;
+            border-radius: var(--radius-md);
+            border: 1.5px solid;
+        }
+        
+        .accent-col.us {
+            background: var(--primary-soft);
+            border-color: var(--primary);
+        }
+        
+        .accent-col.sg {
+            background: #F5F0FF;
+            border-color: #B794D6;
+        }
+        
+        .accent-col h5 {
+            font-family: 'Fraunces', serif;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .accent-col.us h5 { color: var(--biz-dark); }
+        .accent-col.sg h5 { color: #553C9A; }
+        
+        .accent-col ul {
+            list-style: none;
+        }
+        
+        .accent-col li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        
+        .accent-col.us li { color: var(--biz-dark); }
+        .accent-col.sg li { color: #553C9A; }
+        
+        .accent-col.us li::before {
+            content: '🇺🇸';
+            position: absolute;
+            left: 0;
+            font-size: 11px;
+        }
+        
+        .accent-col.sg li::before {
+            content: '🇸🇬';
+            position: absolute;
+            left: 0;
+            font-size: 11px;
+        }
+        
+        /* ========== TIP BOX ========== */
+        .tip-box {
+            background: var(--primary-soft);
+            padding: 14px 16px;
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--primary);
+            font-size: 13px;
+            color: var(--biz-dark);
+            line-height: 1.55;
+            margin-top: 14px;
+        }
+        
+        .tip-box strong { color: var(--biz-dark); }
+        
+        /* ========== SHADOWING STEPS ========== */
+        .shadow-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin: 16px 0;
+        }
+        
+        .shadow-step {
+            background: white;
+            padding: 16px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .shadow-step-num {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            margin: 0 auto 10px;
+        }
+        
+        .shadow-step-title {
+            font-family: 'Fraunces', serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+        
+        .shadow-step-desc {
+            font-size: 11px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+        
+        /* ========== SENTENCE PRACTICE ========== */
+        .sentence-card {
+            background: white;
+            padding: 16px 18px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .sentence-original {
+            font-family: 'Fraunces', serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+        
+        .sentence-ipa {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        
+        .sentence-focus {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        /* ========== SCENARIOS ========== */
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .scenario-card {
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border: 1.5px solid;
+        }
+        
+        .scenario-card.listen {
+            background: var(--primary-soft);
+            border-color: var(--primary);
+        }
+        
+        .scenario-card.speak {
+            background: var(--life-bg);
+            border-color: var(--life);
+        }
+        
+        .scenario-card.challenge {
+            background: linear-gradient(135deg, var(--warm-soft), var(--accent-soft));
+            border-color: var(--warning);
+        }
+        
+        .scenario-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            color: white;
+        }
+        
+        .scenario-card.listen .scenario-badge { background: var(--primary); }
+        .scenario-card.speak .scenario-badge { background: var(--life); }
+        .scenario-card.challenge .scenario-badge { background: var(--warning); }
+        
+        .scenario-card h4 {
+            font-family: 'Fraunces', serif;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .scenario-card.listen h4 { color: var(--biz-dark); }
+        .scenario-card.speak h4 { color: var(--life-dark); }
+        .scenario-card.challenge h4 { color: #744210; }
+        
+        .scenario-card p {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        
+        .scenario-card.listen p { color: var(--biz-dark); }
+        .scenario-card.speak p { color: var(--life-dark); }
+        .scenario-card.challenge p { color: #744210; }
+        
+        .scenario-requirements {
+            background: white;
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        
+        .scenario-card.listen .scenario-requirements { color: var(--biz-dark); }
+        .scenario-card.speak .scenario-requirements { color: var(--life-dark); }
+        .scenario-card.challenge .scenario-requirements { color: #744210; }
+        
+        .record-btn {
+            background: white;
+            border: 1.5px solid;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .scenario-card.listen .record-btn { border-color: var(--primary); color: var(--biz-dark); }
+        .scenario-card.speak .record-btn { border-color: var(--life); color: var(--life-dark); }
+        .scenario-card.challenge .record-btn { border-color: var(--warning); color: #744210; }
+        
+        .record-btn:hover { transform: translateY(-2px); }
+        .scenario-card.listen .record-btn:hover { background: var(--primary); color: white; }
+        .scenario-card.speak .record-btn:hover { background: var(--life); color: white; }
+        .scenario-card.challenge .record-btn:hover { background: var(--warning); color: white; }
+        
+        /* ========== FLASHCARD ========== */
+        .flashcard-wrap {
+            max-width: 520px;
+            margin: 0 auto 20px;
+        }
+        
+        .flashcard {
+            perspective: 1000px;
+            height: 320px;
+            cursor: pointer;
+        }
+        
+        .flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flashcard-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: var(--radius-md);
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            overflow-y: auto;
+        }
+        
+        .flashcard-front {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .flashcard-front .card-pattern {
+            font-family: 'Fraunces', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        
+        .flashcard-front .card-hint {
+            font-size: 12px;
+            opacity: 0.85;
+        }
+        
+        .flashcard-back {
+            background: white;
+            transform: rotateY(180deg);
+            border: 2px solid var(--primary);
+            text-align: left;
+        }
+        
+        .flashcard-back .card-definition {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .flashcard-back .card-examples {
+            font-size: 12px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        
+        .flashcard-back .card-examples div {
+            padding: 6px 10px;
+            background: var(--bg);
+            border-radius: var(--radius-sm);
+            margin-bottom: 4px;
+            border-left: 3px solid var(--primary);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .flashcard-back .card-rule {
+            font-size: 12px;
+            color: var(--biz-dark);
+            line-height: 1.5;
+            padding: 8px 10px;
+            background: var(--primary-soft);
+            border-radius: var(--radius-sm);
+        }
+        
+        .flashcard-back .card-tip {
+            font-size: 11px;
+            color: var(--life-dark);
+            margin-top: 8px;
+            padding: 6px 10px;
+            background: var(--life-bg);
+            border-radius: var(--radius-sm);
+        }
+        
+        .flashcard-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .fc-btn {
+            background: white;
+            border: 1.5px solid var(--border);
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 13px;
+            transition: all 0.2s;
+            color: var(--text-secondary);
+        }
+        
+        .fc-btn:hover:not(:disabled) {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .fc-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        
+        .card-counter {
+            font-weight: 600;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        /* ========== QUIZ ========== */
+        .quiz-item {
+            background: white;
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            margin-bottom: 14px;
+        }
+        
+        .quiz-question {
+            font-family: 'Fraunces', serif;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 14px;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+        
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .quiz-option {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 12px 14px;
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        
+        .quiz-option:hover {
+            border-color: var(--primary);
+            background: var(--primary-soft);
+        }
+        
+        .quiz-option.correct {
+            border-color: var(--success);
+            background: var(--life-bg);
+            color: var(--life-dark);
+        }
+        
+        .quiz-option.wrong {
+            border-color: var(--error);
+            background: #FED7D7;
+            color: #9B2C2C;
+        }
+        
+        .quiz-option input {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--primary);
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        
+        .quiz-feedback {
+            margin-top: 10px;
+            padding: 10px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 500;
+            display: none;
+            line-height: 1.5;
+        }
+        
+        .quiz-feedback.show { display: block; }
+        
+        .quiz-feedback.correct {
+            background: var(--life-bg);
+            color: var(--life-dark);
+            border-left: 3px solid var(--life);
+        }
+        
+        .quiz-feedback.wrong {
+            background: #FED7D7;
+            color: #9B2C2C;
+            border-left: 3px solid var(--error);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .score-box {
+            background: white;
+            padding: 20px;
+            border-radius: var(--radius-md);
+            margin-top: 16px;
+            text-align: center;
+            border: 1px solid var(--border);
+            display: none;
+        }
+        
+        .score-box.show { display: block; }
+        
+        .score-value {
+            font-family: 'Fraunces', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        
+        .score-msg {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        
+        .score-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border-light);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .score-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            transition: width 0.8s;
+        }
+        
+        /* ========== NAV ========== */
+        .nav-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 28px;
+        }
+        
+        .nav-btn {
+            background: white;
+            padding: 16px;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1.5px solid var(--border);
+            transition: all 0.3s;
+        }
+        
+        .nav-btn:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        .nav-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 3px;
+        }
+        
+        .nav-title {
+            font-family: 'Fraunces', serif;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .complete-btn {
+            display: block;
+            margin: 28px auto 0;
+            background: linear-gradient(135deg, var(--life) 0%, #38A169 100%);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .complete-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        /* ========== MASCOT ========== */
+        .mascot {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        
+        .mascot-fox {
+            width: 70px;
+            height: 70px;
+            filter: drop-shadow(0 8px 16px rgba(123,200,232,0.3));
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        
+        .mascot-speech {
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            background: white;
+            padding: 8px 14px;
+            border-radius: 14px 14px 4px 14px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-primary);
+            box-shadow: var(--shadow-md);
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: all 0.3s;
+            pointer-events: none;
+            margin-bottom: 6px;
+        }
+        
+        .mascot:hover .mascot-speech {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 40px 0 28px;
+            text-align: center;
+            margin-top: 56px;
+        }
+        
+        .footer-fox { font-size: 2rem; margin-bottom: 8px; }
+        
+        .footer-title {
+            font-family: 'Fraunces', serif;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+        
+        .footer-tagline {
+            opacity: 0.7;
+            font-size: 13px;
+        }
+        
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            body { font-size: 14px; }
+            
+            .day-title { font-size: 1.6rem; }
+            .day-header { padding: 36px 0 32px; }
+            
+            .plan-grid { grid-template-columns: 1fr 1fr; }
+            .scenario-grid { grid-template-columns: 1fr; }
+            .accent-compare { grid-template-columns: 1fr; }
+            .shadow-steps { grid-template-columns: 1fr 1fr; }
+            .nav-buttons { grid-template-columns: 1fr; }
+            
+            .data-table { font-size: 12px; }
+            .data-table th, .data-table td { padding: 8px 10px; }
+            
+            .section { padding: 24px 18px; }
+            
+            .mascot { bottom: 16px; right: 16px; }
+            .mascot-fox { width: 56px; height: 56px; }
+            .mascot-speech { display: none; }
+        }
+        
+        @media (max-width: 480px) {
+            .plan-grid { grid-template-columns: 1fr; }
+            .shadow-steps { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Top Nav -->
+    <nav class="top-nav">
+        <div class="container">
+            <a href="week-01.html" class="nav-back">← Week 1 Hub</a>
+            <div class="nav-progress">
+                <span>Day 4 / 7</span>
+                <div class="mini-progress">
+                    <div class="mini-progress-bar" style="width: 56%"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Day Tabs -->
+    <nav class="day-tabs">
+        <div class="container">
+            <div class="day-tabs-scroll">
+                <a href="week-01.html" class="day-tab">Overview</a>
+                <a href="week-01-day-1.html" class="day-tab">Day 1</a>
+                <a href="week-01-day-2.html" class="day-tab">Day 2</a>
+                <a href="week-01-day-3.html" class="day-tab">Day 3</a>
+                <a href="week-01-day-4.html" class="day-tab active">Day 4</a>
+                <a href="week-01-day-5.html" class="day-tab">Day 5</a>
+                <a href="week-01-day-6.html" class="day-tab">Day 6</a>
+                <a href="week-01-day-7.html" class="day-tab">Day 7</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header class="day-header">
+        <div class="container">
+            <div class="day-breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <a href="week-01.html">Week 1</a>
+                <span>›</span>
+                <span>Day 4</span>
+            </div>
+            <h1 class="day-title">🎧 Listening Deep Dive</h1>
+            <p class="day-subtitle">B2 nghe <strong>TỪ</strong>. C1 nghe <strong>DÒNG CHẢY</strong>. Hôm nay bạn sẽ decode 6 loại connected speech mà native speakers dùng hàng ngày — và tại sao bạn nghe không hiểu.</p>
+            <div class="day-meta">
+                <span class="meta-tag">🎧 Connected Speech</span>
+                <span class="meta-tag">⏱️ 60 minutes</span>
+                <span class="meta-tag">📚 6 patterns</span>
+                <span class="meta-tag">🇺🇸 US + 🇸🇬 SG Accent</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container" style="padding: 28px 20px;">
+        
+        <!-- Philosophy + Problem -->
+        <section class="section section-warm">
+            <h2 class="section-title"><span class="section-icon">💡</span> Today's Philosophy</h2>
+            
+            <div class="philosophy-box">
+                <h4>🎧 B2 listens to WORDS. C1 listens to FLOW.</h4>
+                <p>Bạn đã học 1000+ từ. Grammar tốt. Nhưng khi nghe native nói: ✅ Nghe từng từ riêng: OK. ❌ Nghe cả câu: "Hả? Gì vậy?". Lý do: Native speakers KHÔNG nói từng từ riêng. Họ nói thành <strong>DÒNG CHẢY</strong>.</p>
+            </div>
+            
+            <!-- Problem -->
+            <div class="problem-box">
+                <h4>❌ Tại sao bạn nghe không hiểu native speakers?</h4>
+                <div class="comparison">
+                    <div class="you-hear"><strong>Bạn nghe (expected):</strong> "I - want - to - go - to - the - store"</div>
+                    <div class="native-say"><strong>Native nói (actual):</strong> "I wanna go t'tha store"<br>/aɪ wɑnə ɡoʊ t̬ə ðə stɔːr/</div>
+                </div>
+                <p><strong>6 thứ khiến B2 không hiểu C1 speakers:</strong></p>
+                <ul>
+                    <li><strong>Linking</strong> - Words nối lại với nhau</li>
+                    <li><strong>Intrusion</strong> - Thêm âm không có trong spelling</li>
+                    <li><strong>Elision</strong> - Mất âm</li>
+                    <li><strong>Assimilation</strong> - Âm thay đổi khi gặp âm khác</li>
+                    <li><strong>Reduction</strong> - Weak forms (to → /tə/, for → /fər/)</li>
+                    <li><strong>Contractions/Slang</strong> - gonna, wanna, gotta</li>
+                </ul>
+            </div>
+            
+            <!-- Solution -->
+            <div class="solution-box">
+                <h4>✅ C1 listeners làm gì khác?</h4>
+                <div class="comparison">
+                    <strong>"I've been meaning to call you"</strong><br>
+                    → Nghe như: "I'vebin meanin tə call ya"<br>
+                    → /aɪvbɪn miːnɪn tə kɔːl jə/
+                </div>
+                <p><strong>C1 listener biết:</strong></p>
+                <ul>
+                    <li>"I've been" → /aɪvbɪn/ (linking + reduction)</li>
+                    <li>"meaning to" → /miːnɪn tə/ (elision + reduction)</li>
+                    <li>"call you" → /kɔːl jə/ (assimilation)</li>
+                </ul>
+            </div>
+            
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 20px 0 12px; color: var(--text-primary);">📋 Today's Plan (60 min)</h3>
+            
+            <div class="plan-grid">
+                <div class="plan-block">
+                    <div class="plan-block-icon">📚</div>
+                    <div class="plan-block-title">6 Patterns</div>
+                    <div class="plan-block-time">15 min</div>
+                    <div class="plan-block-desc">Connected speech patterns</div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-block-icon">🎧</div>
+                    <div class="plan-block-title">Listening</div>
+                    <div class="plan-block-time">20 min</div>
+                    <div class="plan-block-desc">Annotated transcript + 3 speeds</div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-block-icon">🗣️</div>
+                    <div class="plan-block-title">Shadowing</div>
+                    <div class="plan-block-time">15 min</div>
+                    <div class="plan-block-desc">US + Singapore accent</div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-block-icon">🎴</div>
+                    <div class="plan-block-title">Review</div>
+                    <div class="plan-block-time">10 min</div>
+                    <div class="plan-block-desc">Flashcards + 7-question quiz</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 6 Connected Speech Patterns -->
+        <section class="section section-sky">
+            <h2 class="section-title"><span class="section-icon">📚</span> 6 Connected Speech Patterns</h2>
+            <p class="section-desc">Mỗi pattern là 1 "mã" mà native speakers dùng để nói nhanh. Master 6 patterns này = decode được 90% natural speech. Click 🔊 để nghe ví dụ.</p>
+            
+            <!-- Pattern 1: Linking -->
+            <div class="pattern-card">
+                <div class="pattern-header">
+                    <div class="pattern-number">1</div>
+                    <div>Linking (Consonant → Vowel)</div>
+                </div>
+                <div class="pattern-phonetic">Khi phụ âm cuối từ nối với nguyên âm đầu từ sau</div>
+                <div class="pattern-meta">
+                    <span class="freq-badge">⭐⭐⭐⭐⭐ Cực kỳ cao</span>
+                    <span class="register-badge">Xảy ra MỖI CÂU</span>
+                </div>
+                <p class="pattern-meaning">2 từ riêng → 1 dòng chảy. Nền tảng của TẤT CẢ connected speech.</p>
+                <div class="pattern-why">
+                    <strong>Why quan trọng?</strong> Xảy ra 90% trong tự nhiên. Nếu không nhận ra, bạn sẽ "miss" words. Là nền tảng của tất cả connected speech.
+                </div>
+                
+                <div class="examples-label">Examples</div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'I am based in Saigon')">🔊</button>
+                    <span class="example-context">"based in" → /beɪst‿ɪn/</span>
+                    <span class="example-ipa">Chậm: "based... in" → Nhanh: "basedin"</span>
+                    Trong câu: "I'm <strong>based in</strong> Saigon" → /aɪm <strong>beɪst‿ɪn</strong> seɪɡɒn/
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Nice to meet you')">🔊</button>
+                    <span class="example-context">"meet you" → /miːtʃuː/</span>
+                    <span class="example-ipa">t + y = ch sound → "meetchu"</span>
+                    Trong câu: "Nice to <strong>meet you</strong>" → /naɪs tə <strong>miːtʃuː</strong>/
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Pick it up')">🔊</button>
+                    <span class="example-context">"pick it up" → /pɪkɪt‿ʌp/</span>
+                    <span class="example-ipa">k nối với i, t nối với u → "pickitup"</span>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>💡 C1 Listening Tip:</strong> Khi nghe không rõ 1 từ, NGHĨ đến linking. Có thể từ đó đang nối với từ trước/sau. Nghe thành chunks: "basedin", "meetchu", "pickitup".
+                </div>
+            </div>
+            
+            <!-- Pattern 2: Intrusion -->
+            <div class="pattern-card">
+                <div class="pattern-header">
+                    <div class="pattern-number">2</div>
+                    <div>Intrusion (Thêm /j/ hoặc /w/)</div>
+                </div>
+                <div class="pattern-phonetic">/j/ hoặc /w/ xuất hiện giữa 2 nguyên âm</div>
+                <div class="pattern-meta">
+                    <span class="freq-badge">⭐⭐⭐⭐ Rất cao</span>
+                    <span class="register-badge">Bridge sounds</span>
+                </div>
+                <p class="pattern-meaning">Thêm "bridge sound" để 2 vowels không chạm nhau. Nghe như có "thêm từ" không có trong transcript.</p>
+                <div class="pattern-why">
+                    <strong>Why quan trọng?</strong> Native speakers tự động thêm /j/ hoặc /w/ khi 2 vowels gặp nhau. Nếu không biết, bạn sẽ nghe "thêm từ" không có trong transcript.
+                </div>
+                
+                <div class="examples-label">Examples</div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Go out')">🔊</button>
+                    <span class="example-context">"go out" → /ɡoʊ<strong>w</strong>aʊt/</span>
+                    <span class="example-ipa">Thêm /w/ giữa o và ou → "go-W-out"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'See it')">🔊</button>
+                    <span class="example-context">"see it" → /siː<strong>j</strong>ɪt/</span>
+                    <span class="example-ipa">Thêm /j/ giữa ee và i → "see-Y-it"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Do it')">🔊</button>
+                    <span class="example-context">"do it" → /duː<strong>w</strong>ɪt/</span>
+                    <span class="example-ipa">Thêm /w/ → "do-W-it"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'I am')">🔊</button>
+                    <span class="example-context">"I am" → /aɪ<strong>j</strong>æm/</span>
+                    <span class="example-ipa">Thêm /j/ → "I-Y-am"</span>
+                </div>
+                
+                <div class="context-note">
+                    <strong>💡 Rules:</strong><br>
+                    • Sau vowels /iː/, /eɪ/, /aɪ/, /ɔɪ/, /e/ → thêm <strong>/j/</strong><br>
+                    • Sau vowels /uː/, /oʊ/, /aʊ/ → thêm <strong>/w/</strong>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>💡 C1 Listening Tip:</strong> Khi nghe "thêm âm lạ" giữa 2 từ, đó là intrusion. Không phải từ mới.
+                </div>
+            </div>
+            
+            <!-- Pattern 3: Elision -->
+            <div class="pattern-card">
+                <div class="pattern-header">
+                    <div class="pattern-number">3</div>
+                    <div>Elision (Mất âm)</div>
+                </div>
+                <div class="pattern-phonetic">Âm biến mất, đặc biệt là /t/ và /d/</div>
+                <div class="pattern-meta">
+                    <span class="freq-badge">⭐⭐⭐⭐⭐ Cực kỳ cao</span>
+                    <span class="register-badge">/t/ và /d/ biến mất nhiều</span>
+                </div>
+                <p class="pattern-meaning">Âm không cần thiết bị "bỏ qua" để nói nhanh hơn. Nếu chờ nghe /t/, bạn sẽ miss word đó.</p>
+                <div class="pattern-why">
+                    <strong>Why quan trọng?</strong> /t/ và /d/ biến mất RẤT NHIỀU trong natural speech. Nếu chờ nghe /t/, bạn sẽ miss word đó.
+                </div>
+                
+                <div class="examples-label">Examples</div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Next day')">🔊</button>
+                    <span class="example-context">"next day" → /neks deɪ/</span>
+                    <span class="example-ipa">Mất /t/ ở "next" → "nex day"</span>
+                    /t/ nằm giữa 2 phụ âm khác (/s/ và /d/) → biến mất
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Good morning')">🔊</button>
+                    <span class="example-context">"good morning" → /ɡʊ mɔːrnɪŋ/</span>
+                    <span class="example-ipa">Mất /d/ → "goo morning"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Probably')">🔊</button>
+                    <span class="example-context">"probably" → /prɒbli/</span>
+                    <span class="example-ipa">Mất /ə/ → "probly"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'History')">🔊</button>
+                    <span class="example-context">"history" → /hɪstri/</span>
+                    <span class="example-ipa">Mất /ə/ → "histry"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Chocolate')">🔊</button>
+                    <span class="example-context">"chocolate" → /tʃɒklət/</span>
+                    <span class="example-ipa">Mất âm giữa → "choclate"</span>
+                </div>
+                
+                <div class="context-note">
+                    <strong>💡 Rule:</strong> Âm /t/, /d/ thường biến mất khi nằm giữa 2 phụ âm khác hoặc ở cuối cluster phụ âm phức tạp.
+                </div>
+                
+                <div class="tip-box">
+                    <strong>💡 C1 Listening Tip:</strong> Nếu nghe "thiếu âm", đừng panic. Đó là elision. Context sẽ giúp bạn fill in.
+                </div>
+            </div>
+            
+            <!-- Pattern 4: Assimilation -->
+            <div class="pattern-card">
+                <div class="pattern-header">
+                    <div class="pattern-number">4</div>
+                    <div>Assimilation (Âm thay đổi)</div>
+                </div>
+                <div class="pattern-phonetic">Âm thay đổi khi gặp âm khác</div>
+                <div class="pattern-meta">
+                    <span class="freq-badge">⭐⭐⭐⭐ Rất cao</span>
+                    <span class="register-badge">Đặc biệt với "you" (/j/)</span>
+                </div>
+                <p class="pattern-meaning">2 âm "hòa quyện" thành âm mới. Khi /t/, /d/, /s/, /z/ gặp /j/ → tạo âm mới.</p>
+                <div class="pattern-why">
+                    <strong>Why quan trọng?</strong> Đặc biệt phổ biến với "you" (/j/). Khi nghe "you" mà âm trước nghe LẠ, đó là assimilation.
+                </div>
+                
+                <div class="examples-label">4 Assimilation Rules</div>
+                <table class="data-table" style="margin: 10px 0;">
+                    <thead>
+                        <tr>
+                            <th>Âm 1</th>
+                            <th>+ /j/ (you)</th>
+                            <th>= Âm mới</th>
+                            <th>Ví dụ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>/t/</code></td>
+                            <td>+ /j/</td>
+                            <td><code>/tʃ/</code> (ch)</td>
+                            <td>"don't you" → /doʊn<strong>tʃ</strong>uː/ "don't-chu"</td>
+                        </tr>
+                        <tr>
+                            <td><code>/d/</code></td>
+                            <td>+ /j/</td>
+                            <td><code>/dʒ/</code> (j)</td>
+                            <td>"did you" → /dɪ<strong>dʒ</strong>uː/ "did-ju"</td>
+                        </tr>
+                        <tr>
+                            <td><code>/s/</code></td>
+                            <td>+ /j/</td>
+                            <td><code>/ʃ/</code> (sh)</td>
+                            <td>"miss you" → /mɪ<strong>ʃ</strong>uː/ "miss-shu"</td>
+                        </tr>
+                        <tr>
+                            <td><code>/z/</code></td>
+                            <td>+ /j/</td>
+                            <td><code>/ʒ/</code> (zh)</td>
+                            <td>"was you" → /wɒ<strong>ʒ</strong>uː/ "was-zhu"</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="examples-label">Examples</div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Did you')">🔊</button>
+                    <span class="example-context">"did you" → /dɪdʒuː/</span>
+                    <span class="example-ipa">d + y = j sound → "did-ju"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Would you')">🔊</button>
+                    <span class="example-context">"would you" → /wʊdʒuː/</span>
+                    <span class="example-ipa">d + y = j → "would-ju"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Don\'t you')">🔊</button>
+                    <span class="example-context">"don't you" → /doʊntʃuː/</span>
+                    <span class="example-ipa">t + y = ch → "don't-chu"</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'Guess what')">🔊</button>
+                    <span class="example-context">"guess what" → /ɡeʃwɒt/</span>
+                    <span class="example-ipa">s + w = sh → "gessh-wat"</span>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>💡 C1 Listening Tip:</strong> Khi nghe "you" mà âm trước nghe LẠ, đó là assimilation. "Did you" → "did-ju", KHÔNG phải "did" + "you" riêng.
+                </div>
+            </div>
+            
+            <!-- Pattern 5: Reduction -->
+            <div class="pattern-card">
+                <div class="pattern-header">
+                    <div class="pattern-number">5</div>
+                    <div>Reduction (Weak Forms)</div>
+                </div>
+                <div class="pattern-phonetic">Từ chức năng phát âm yếu đi</div>
+                <div class="pattern-meta">
+                    <span class="freq-badge">⭐⭐⭐⭐⭐ CỰC KỲ CAO</span>
+                    <span class="register-badge">Function words bị "nuốt"</span>
+                </div>
+                <p class="pattern-meaning">Những từ nhỏ (to, for, and, of, the, a, have) bị "nuốt" đi. Chiếm 50%+ câu nhưng gần như không nghe thấy.</p>
+                <div class="pattern-why">
+                    <strong>Why quan trọng?</strong> Function words chiếm 50%+ câu. Khi bị reduce, bạn gần như KHÔNG NGHE thấy chúng. Nhưng chúng VẪN CÓ trong câu.
+                </div>
+                
+                <div class="examples-label">Weak Forms Table</div>
+                <table class="data-table" style="margin: 10px 0;">
+                    <thead>
+                        <tr>
+                            <th>Strong form</th>
+                            <th>Weak form</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>to</strong> /tuː/</td>
+                            <td><code>tə</code> /tə/</td>
+                            <td>"I want <strong>tə</strong> go"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>for</strong> /fɔːr/</td>
+                            <td><code>fər</code> /fər/</td>
+                            <td>"This is <strong>fər</strong> you"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>and</strong> /ænd/</td>
+                            <td><code>ən</code> hoặc <code>n</code></td>
+                            <td>"You <strong>n</strong> me"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>of</strong> /ɒv/</td>
+                            <td><code>əv</code> /əv/</td>
+                            <td>"cup <strong>əv</strong> tea"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>have</strong> /hæv/</td>
+                            <td><code>həv</code> hoặc <code>əv</code></td>
+                            <td>"I <strong>əv</strong> been"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>are</strong> /ɑːr/</td>
+                            <td><code>ər</code> /ər/</td>
+                            <td>"They <strong>ər</strong> here"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>can</strong> /kæn/</td>
+                            <td><code>kən</code> /kən/</td>
+                            <td>"I <strong>kən</strong> do it"</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="examples-label">Trong câu thực tế</div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'I have been meaning to call you')">🔊</button>
+                    <span class="example-context">"I have been meaning to call you"</span>
+                    <span class="example-ipa">Strong: /aɪ hæv biːn miːnɪŋ tuː kɔːl juː/</span>
+                    <span class="example-ipa">Weak: /aɪ <strong>əv</strong> biːn miːnɪŋ <strong>tə</strong> kɔːl <strong>jə</strong>/</span>
+                    Nghe thực tế: <strong>"I'vebin meanin tə call ya"</strong>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'What are you going to do?')">🔊</button>
+                    <span class="example-context">"What are you going to do?"</span>
+                    <span class="example-ipa">Strong: /wɒt ɑːr juː ɡoʊɪŋ tuː duː/</span>
+                    <span class="example-ipa">Weak: /wɒt <strong>ər</strong> juː ɡoʊɪŋ <strong>tə</strong> duː/</span>
+                    Nghe thực tế: <strong>"Whatcha gonna do?"</strong>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>💡 C1 Listening Tip:</strong> Đừng cố nghe TỪ. Nghe <strong>RHYTHM</strong>. Function words là "nhịp nền", content words là "nhịp chính".
+                </div>
+            </div>
+            
+            <!-- Pattern 6: Contractions & Slang -->
+            <div class="pattern-card">
+                <div class="pattern-header">
+                    <div class="pattern-number">6</div>
+                    <div>Contractions & Slang</div>
+                </div>
+                <div class="pattern-phonetic">Từ bị rút ngắn cực mạnh</div>
+                <div class="pattern-meta">
+                    <span class="freq-badge">⭐⭐⭐⭐⭐ Cực kỳ cao</span>
+                    <span class="register-badge">Casual speech</span>
+                </div>
+                <p class="pattern-meaning">"going to" → "gonna", "want to" → "wanna". Native speakers dùng RẤT NHIỀU trong casual speech.</p>
+                <div class="pattern-why">
+                    <strong>Why quan trọng?</strong> Nếu không biết, bạn sẽ miss hoàn toàn. Casual speech = nhiều contractions. Formal speech = ít hơn.
+                </div>
+                
+                <div class="examples-label">Common Contractions</div>
+                <table class="data-table" style="margin: 10px 0;">
+                    <thead>
+                        <tr>
+                            <th>Full form</th>
+                            <th>Casual form</th>
+                            <th>IPA</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>going to</td>
+                            <td><strong>gonna</strong></td>
+                            <td><code>/ˈɡɒnə/</code></td>
+                            <td>"I'm <strong>gonna</strong> go"</td>
+                        </tr>
+                        <tr>
+                            <td>want to</td>
+                            <td><strong>wanna</strong></td>
+                            <td><code>/ˈwɒnə/</code></td>
+                            <td>"I <strong>wanna</strong> help"</td>
+                        </tr>
+                        <tr>
+                            <td>got to</td>
+                            <td><strong>gotta</strong></td>
+                            <td><code>/ˈɡɒtə/</code></td>
+                            <td>"I <strong>gotta</strong> go"</td>
+                        </tr>
+                        <tr>
+                            <td>have to</td>
+                            <td><strong>hafta</strong></td>
+                            <td><code>/ˈhæftə/</code></td>
+                            <td>"I <strong>hafta</strong> leave"</td>
+                        </tr>
+                        <tr>
+                            <td>let me</td>
+                            <td><strong>lemme</strong></td>
+                            <td><code>/ˈlɛmi/</code></td>
+                            <td>"<strong>Lemme</strong> see"</td>
+                        </tr>
+                        <tr>
+                            <td>give me</td>
+                            <td><strong>gimme</strong></td>
+                            <td><code>/ˈɡɪmi/</code></td>
+                            <td>"<strong>Gimme</strong> a sec"</td>
+                        </tr>
+                        <tr>
+                            <td>don't know</td>
+                            <td><strong>dunno</strong></td>
+                            <td><code>/dəˈnoʊ/</code></td>
+                            <td>"I <strong>dunno</strong>"</td>
+                        </tr>
+                        <tr>
+                            <td>kind of</td>
+                            <td><strong>kinda</strong></td>
+                            <td><code>/ˈkaɪndə/</code></td>
+                            <td>"<strong>Kinda</strong> busy"</td>
+                        </tr>
+                        <tr>
+                            <td>sort of</td>
+                            <td><strong>sorta</strong></td>
+                            <td><code>/ˈsɔːrtə/</code></td>
+                            <td>"<strong>Sorta</strong> weird"</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="examples-label">Trong câu thực tế</div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'I\'m gonna go grab a coffee, wanna come?')">🔊</button>
+                    <span class="example-context">"I'm gonna go grab a coffee, wanna come?"</span>
+                    <span class="example-ipa">/aɪm ˈɡɒnə ɡoʊ ɡræb ə ˈkɒfi ˈwɒnə kʌm/</span>
+                </div>
+                <div class="example-item">
+                    <button class="audio-btn" onclick="playAudio(this, 'I gotta go, lemme check my schedule')">🔊</button>
+                    <span class="example-context">"I gotta go, lemme check my schedule"</span>
+                    <span class="example-ipa">/aɪ ˈɡɒtə ɡoʊ ˈlɛmi tʃɛk maɪ ˈʃɛdjuːl/</span>
+                </div>
+                
+                <div class="context-note">
+                    <strong>⚠️ Register Note:</strong><br>
+                    ✅ Dùng "gonna, wanna, gotta" trong <strong>CASUAL</strong> speech<br>
+                    ❌ KHÔNG dùng trong formal writing hay presentations<br>
+                    ⚠️ Trong semi-formal: có thể dùng nhưng hạn chế
+                </div>
+            </div>
+        </section>
+        
+        <!-- Listening Section -->
+        <section class="section section-blue">
+            <h2 class="section-title"><span class="section-icon">🎧</span> Listening: Annotated Transcript</h2>
+            <p class="section-desc">Minh nói chuyện với bạn Mỹ (Jake) ở bar. Conversation casual, tốc độ nhanh, nhiều connected speech. Nghe ở 3 tốc độ khác nhau để thấy sự khác biệt.</p>
+            
+            <!-- Audio Player -->
+            <div class="audio-player">
+                <button class="play-btn" id="mainPlayBtn" onclick="playFullTranscript(this)">▶</button>
+                <div class="audio-info">
+                    <div class="audio-label">Minh & Jake at the Bar</div>
+                    <div class="audio-meta">🇺🇸 US Accent · ~1 min · Casual conversation</div>
+                </div>
+                <button class="speed-control" onclick="changeSpeed(this)">1.0x</button>
+            </div>
+            
+            <!-- Speed Tabs -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 20px 0 12px; color: var(--text-primary);">🎵 Nghe ở 3 tốc độ</h3>
+            
+            <div class="speed-tabs">
+                <button class="speed-tab active" onclick="switchSpeed('slow', this)">🐢 Slow (0.75x)</button>
+                <button class="speed-tab" onclick="switchSpeed('normal', this)">🚶 Normal (1.0x)</button>
+                <button class="speed-tab" onclick="switchSpeed('fast', this)">🏃 Fast (1.25x)</button>
+            </div>
+            
+            <div class="speed-content active" id="speed-slow">
+                <div class="speed-box">
+                    "Hi Jake, good to see you. I've been meaning to call you. Actually, I've got some interesting news. I'm going to switch jobs next month. Want to hear about it?"
+                </div>
+                <p style="font-size: 12px; color: var(--text-muted); font-style: italic;">🎯 Dễ nghe, từng từ rõ ràng. Dành cho người mới bắt đầu.</p>
+            </div>
+            
+            <div class="speed-content" id="speed-normal">
+                <div class="speed-box">
+                    "Hi Jake, good <span class="highlight-link">t'see</span> ya. <span class="highlight-link">I'vebin</span> meaning <span class="highlight-red">tə</span> call ya. Actually, <span class="highlight-link">I'vegotta</span> some interesting news. I'm <span class="highlight-green">gonna</span> switch jobs <span class="highlight-red">nex</span> month. <span class="highlight-green">Wanna</span> hear about it?"
+                </div>
+                <p style="font-size: 12px; color: var(--text-muted); font-style: italic;">
+                    <span class="highlight-link">Linking</span> · 
+                    <span class="highlight-red">Reduction/Elision</span> · 
+                    <span class="highlight-green">Slang</span>
+                </p>
+            </div>
+            
+            <div class="speed-content" id="speed-fast">
+                <div class="speed-box">
+                    "Hi Jake, good-t'see-ya. I'vebin-meanin-tə-call-ya. Actually-I'vegotta-some-intrestin-news. I'm-gonna-switch-jobs-nex-month. Wanna-hear-about-it?"
+                </div>
+                <p style="font-size: 12px; color: var(--text-muted); font-style: italic;">🎯 Tốc độ native thực tế. Tất cả words nối thành 1 dòng chảy.</p>
+            </div>
+            
+            <!-- Full Annotated Transcript -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 24px 0 12px; color: var(--text-primary);">📄 Full Annotated Transcript</h3>
+            
+            <div class="transcript-box">
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Hi Jake, good <span class="highlight-link">t'see</span> ya. <span class="annotation">[Linking: good + to + see → good-t'see]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker jake">Jake:</span> Hey Minh! Long time no see. <span class="highlight-link">How've</span> you been? <span class="annotation">[Contraction: How have → How've /haʊv/]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> <span class="highlight-link">I'vebin</span> meaning <span class="highlight-red">tə</span> call ya. <span class="annotation">[Linking + Reduction: I've been → I'vebin /aɪvbɪn/, to → tə]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker jake">Jake:</span> No worries. <span class="highlight-purple">Whatcha</span> been up to? <span class="annotation">[Assimilation: What have you → Whatcha /wɒtʃə/]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Actually, <span class="highlight-link">I'vegotta</span> some interesting news. <span class="annotation">[Slang: got to → gotta /ˈɡɒtə/]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker jake">Jake:</span> Oh yeah? <span class="highlight-green">Lemme</span> hear. <span class="annotation">[Slang: let me → lemme /ˈlɛmi/]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> I'm <span class="highlight-green">gonna</span> switch jobs <span class="highlight-red">nex</span> month. <span class="annotation">[Slang: going to → gonna /ˈɡɒnə/, Elision: next → nex /nɛks/]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker jake">Jake:</span> No way! <span class="highlight-link">Whereat</span>? <span class="annotation">[Linking: Where + at → Whereat /wɛræt/]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> <span class="highlight-link">Ata</span> new fund in Singapore. <span class="annotation">[Linking: At + a → Ata /ætə/, in → nối với fund]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker jake">Jake:</span> That's awesome! <span class="highlight-purple">D'you</span> want <span class="highlight-red">tə</span> grab dinner <span class="highlight-red">n</span> celebrate? <span class="annotation">[Assimilation: Do you → D'you /dʒuː/, Reduction: to → tə, and → n]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Yeah, I'd <span class="highlight-link">love ta</span>. <span class="highlight-green">Wanna</span> go <span class="highlight-link">t'that</span> new place on Nguyen Hue? <span class="annotation">[Linking: love + to → love ta, wanna, that + new → t'that]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker jake">Jake:</span> Sounds good. <span class="highlight-link">I'll</span> text you the details. <span class="annotation">[Contraction: I will → I'll /aɪl/]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Perfect. <span class="highlight-link">Talk t'ya</span> later. <span class="annotation">[Linking: Talk + to + you → Talk-t'ya /tɔːktəjə/]</span>
+                </div>
+            </div>
+            
+            <!-- Pattern Analysis -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 24px 0 12px; color: var(--text-primary);">📊 Pattern Analysis</h3>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Pattern</th>
+                        <th>Số lần</th>
+                        <th>Examples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Linking</strong></td>
+                        <td>8 lần</td>
+                        <td>good-t'see, I'vebin, Whereat, Ata, t'that, Talk-t'ya</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reduction</strong></td>
+                        <td>6 lần</td>
+                        <td>to → tə, and → n, have → əv</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Assimilation</strong></td>
+                        <td>2 lần</td>
+                        <td>What have you → Whatcha, Do you → D'you</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Elision</strong></td>
+                        <td>1 lần</td>
+                        <td>next → nex</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contractions/Slang</strong></td>
+                        <td>5 lần</td>
+                        <td>gonna, gotta, lemme, wanna, I'll</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="tip-box">
+                <strong>💡 C1 Insight:</strong> <strong>22 connected speech features trong 12 dòng!</strong> Trung bình: gần 2 features/dòng. Nếu không nhận ra, bạn sẽ miss 50% nội dung.
+            </div>
+        </section>
+        
+        <!-- Singapore Accent Section -->
+        <section class="section section-sg">
+            <h2 class="section-title"><span class="section-icon">🇸🇬</span> Singapore Accent</h2>
+            <p class="section-desc">Roadmap cam kết US + Singapore accent. Singapore English có đặc trưng riêng. May mắn: Singapore accent DỄ NGHE hơn US accent cho người Việt.</p>
+            
+            <!-- Comparison -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 0 0 12px; color: var(--text-primary);">🆚 US vs Singapore: Key Differences</h3>
+            
+            <div class="accent-compare">
+                <div class="accent-col us">
+                    <h5>🇺🇸 US English</h5>
+                    <ul>
+                        <li><strong>"th" sound:</strong> /θ/ và /ð/ rõ</li>
+                        <li><strong>Final consonants:</strong> Phát âm đầy đủ</li>
+                        <li><strong>Intonation:</strong> Lên xuống nhiều</li>
+                        <li><strong>Speed:</strong> 140-160 WPM</li>
+                        <li><strong>Particles:</strong> Không có</li>
+                        <li><strong>Grammar:</strong> Standard</li>
+                        <li><strong>Connected speech:</strong> Rất nhiều</li>
+                    </ul>
+                </div>
+                <div class="accent-col sg">
+                    <h5>🇸🇬 Singapore English</h5>
+                    <ul>
+                        <li><strong>"th" sound:</strong> /t/ và /d/ (think → /tɪŋ/)</li>
+                        <li><strong>Final consonants:</strong> Thường bỏ qua</li>
+                        <li><strong>Intonation:</strong> Đều hơn, cao hơn</li>
+                        <li><strong>Speed:</strong> 130-150 WPM (chậm hơn)</li>
+                        <li><strong>Particles:</strong> "lah", "lor", "leh", "meh"</li>
+                        <li><strong>Grammar:</strong> Nhiều shortcuts</li>
+                        <li><strong>Connected speech:</strong> Ít hơn US, rõ hơn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Singapore Features -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 20px 0 12px; color: var(--text-primary);">🎤 Đặc trưng Singapore Accent</h3>
+            
+            <div class="pattern-card" style="border-left-color: #B794D6;">
+                <div class="pattern-header" style="color: #553C9A;">
+                    <div class="pattern-number" style="background: linear-gradient(135deg, #B794D6, #805AD5);">1</div>
+                    <div>"th" → /t/ hoặc /d/</div>
+                </div>
+                <div class="example-item" style="border-left-color: #B794D6;">
+                    "think" → /tɪŋ/ (không phải /θɪŋk/)<br>
+                    "this" → /dɪs/ (không phải /ðɪs/)<br>
+                    "three" → /triː/<br>
+                    <strong>Ví dụ:</strong> "I think this is the best" → "I <strong>tink dis</strong> is <strong>de</strong> best"
+                </div>
+            </div>
+            
+            <div class="pattern-card" style="border-left-color: #B794D6;">
+                <div class="pattern-header" style="color: #553C9A;">
+                    <div class="pattern-number" style="background: linear-gradient(135deg, #B794D6, #805AD5);">2</div>
+                    <div>Discourse Particles: "lah", "lor", "leh", "meh"</div>
+                </div>
+                <table class="data-table" style="margin: 10px 0;">
+                    <thead>
+                        <tr>
+                            <th>Particle</th>
+                            <th>Nghĩa</th>
+                            <th>Ví dụ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>lah</strong></td>
+                            <td>Affirmation, reassurance</td>
+                            <td>"Can <strong>lah</strong>!" = "It's okay!" / "Don't worry!"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>lor</strong></td>
+                            <td>Resignation, "that's how it is"</td>
+                            <td>"Really <strong>lor</strong>." = "That's just how it is."</td>
+                        </tr>
+                        <tr>
+                            <td><strong>leh</strong></td>
+                            <td>Emphasis, complaint</td>
+                            <td>"So expensive <strong>leh</strong>." = "It's so expensive!"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>meh</strong></td>
+                            <td>Questioning, surprise</td>
+                            <td>"Is it <strong>meh</strong>?" = "Is it really?"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pattern-card" style="border-left-color: #B794D6;">
+                <div class="pattern-header" style="color: #553C9A;">
+                    <div class="pattern-number" style="background: linear-gradient(135deg, #B794D6, #805AD5);">3</div>
+                    <div>Grammar Shortcuts</div>
+                </div>
+                <div class="example-item" style="border-left-color: #B794D6;">
+                    <strong>Bỏ "to be":</strong> "He very tall" (thay vì "He is very tall")<br>
+                    <strong>Bỏ articles:</strong> "I go school" (thay vì "I go to the school")<br>
+                    <strong>Reduplication:</strong> "walk walk" = "stroll", "try try" = "experiment"<br>
+                    <strong>"got" thay cho "have":</strong> "I got meeting" = "I have a meeting"
+                </div>
+            </div>
+            
+            <!-- Singapore Transcript -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 24px 0 12px; color: var(--text-primary);">📄 Singapore Transcript: Minh & David</h3>
+            
+            <div class="audio-player" style="background: linear-gradient(135deg, #B794D6, #805AD5);">
+                <button class="play-btn" style="color: #B794D6;" onclick="playSingaporeTranscript(this)">▶</button>
+                <div class="audio-info">
+                    <div class="audio-label">Minh & David at Conference</div>
+                    <div class="audio-meta">🇸🇬 Singapore Accent · ~1 min</div>
+                </div>
+            </div>
+            
+            <div class="transcript-box">
+                <div class="transcript-line">
+                    <span class="speaker david">David:</span> Eh, Minh, you can already speak English very well <span class="highlight-purple">lah</span>. <span class="annotation">[Discourse particle: "lah" = affirmation]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Thanks David. Actually, I gotta improve more. My presentation still <span class="highlight-purple">sian</span>. <span class="annotation">["sian" = boring/tired (Singapore slang)]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker david">David:</span> Aiya, don't say that <span class="highlight-purple">lor</span>. Your English already very solid. You from Vietnam <span class="highlight-purple">meh</span>? <span class="annotation">["Aiya" = exclamation, "lor" = resignation, "meh" = questioning]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Yes, from Ho Chi Minh City. You're based in Singapore right?
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker david">David:</span> Yup, born and bred here. But I study in US before, so my English quite Americanized. Sometimes my colleagues also confused, they think I American <span class="highlight-purple">leh</span>. <span class="annotation">["Yup" = yes, "leh" = emphasis]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Haha, I can see that. Your accent quite neutral.
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker david">David:</span> Thanks. Actually, I gotta go now, <span class="highlight-purple">got meeting</span> in 5 minutes. But we can continue later lah. You want grab lunch tomorrow? <span class="annotation">[Grammar shortcut: "got meeting" = "have a meeting", "want" = "do you want"]</span>
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker minh">Minh:</span> Sure! Let me give you my card.
+                </div>
+                <div class="transcript-line">
+                    <span class="speaker david">David:</span> Good, good. I text you later leh. Nice meeting you, Minh!
+                </div>
+            </div>
+            
+            <div class="tip-box">
+                <strong>💡 C1 Tip:</strong> Singapore accent DỄ NGHE hơn US accent cho người Việt vì:
+                <ul style="margin-top: 8px; padding-left: 20px;">
+                    <li>Tốc độ chậm hơn</li>
+                    <li>Ít connected speech hơn</li>
+                    <li>Phát âm rõ hơn (ironically!)</li>
+                    <li>Nhiều từ giống Vietnamese culture</li>
+                </ul>
+                <br>
+                <strong>⚠️ Khi làm việc với Singapore partners:</strong> Họ sẽ hiểu bạn dễ hơn US. Nhưng vẫn cần biết discourse particles. Grammar của họ khác standard → đừng "correct" họ!
+            </div>
+        </section>
+        
+        <!-- Shadowing Section -->
+        <section class="section section-green">
+            <h2 class="section-title"><span class="section-icon">🗣️</span> Shadowing Technique</h2>
+            <p class="section-desc">Shadowing = nghe và nhại lại THEO audio, chậm hơn 0.5 giây. Bắt chước intonation, rhythm, linking. Đây là cách TỐT NHẤT để cải thiện listening + pronunciation cùng lúc.</p>
+            
+            <!-- 4 Steps -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 0 0 12px; color: var(--text-primary);">📋 4-Step Shadowing Process</h3>
+            
+            <div class="shadow-steps">
+                <div class="shadow-step">
+                    <div class="shadow-step-num">1</div>
+                    <div class="shadow-step-title">Listen</div>
+                    <div class="shadow-step-desc">Nghe 1 câu, không nhìn transcript. Bắt "rhythm" và "melody".</div>
+                </div>
+                <div class="shadow-step">
+                    <div class="shadow-step-num">2</div>
+                    <div class="shadow-step-title">Read + Listen</div>
+                    <div class="shadow-step-desc">Nhìn transcript. Note các connected speech features. Nghe lại.</div>
+                </div>
+                <div class="shadow-step">
+                    <div class="shadow-step-num">3</div>
+                    <div class="shadow-step-title">Shadow</div>
+                    <div class="shadow-step-desc">Phát audio. Nói THEO audio, chậm hơn 0.5 giây. Bắt chước intonation.</div>
+                </div>
+                <div class="shadow-step">
+                    <div class="shadow-step-num">4</div>
+                    <div class="shadow-step-title">Record</div>
+                    <div class="shadow-step-desc">Record giọng mình. So sánh với original. Identify gaps.</div>
+                </div>
+            </div>
+            
+            <!-- Practice Sentences -->
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin: 24px 0 12px; color: var(--text-primary);">🎯 5 Shadowing Sentences</h3>
+            <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 12px;">Mỗi sentence focus vào 1 pattern. Record, listen back, repeat 3 lần.</p>
+            
+            <div class="sentence-card">
+                <div class="sentence-original">1. "I'm based in Saigon"</div>
+                <div class="sentence-ipa">/aɪm beɪst‿ɪn seɪɡɒn/</div>
+                <div class="sentence-focus">🎯 Focus: <strong>Linking</strong> - "based in" → "basedin"</div>
+                <button class="audio-btn" style="float: right; margin-top: -40px;" onclick="playAudio(this, 'I am based in Saigon')">🔊</button>
+            </div>
+            
+            <div class="sentence-card">
+                <div class="sentence-original">2. "I have been meaning to call you"</div>
+                <div class="sentence-ipa">/aɪvbɪn miːnɪŋ tə kɔːl jə/</div>
+                <div class="sentence-focus">🎯 Focus: <strong>Reduction</strong> - "have been" → "I'vebin", "to" → "tə"</div>
+                <button class="audio-btn" style="float: right; margin-top: -40px;" onclick="playAudio(this, 'I have been meaning to call you')">🔊</button>
+            </div>
+            
+            <div class="sentence-card">
+                <div class="sentence-original">3. "What are you going to do?"</div>
+                <div class="sentence-ipa">/wɒtʃə ɡɒnə duː/</div>
+                <div class="sentence-focus">🎯 Focus: <strong>Assimilation</strong> - "What are you" → "Whatcha", "going to" → "gonna"</div>
+                <button class="audio-btn" style="float: right; margin-top: -40px;" onclick="playAudio(this, 'What are you going to do?')">🔊</button>
+            </div>
+            
+            <div class="sentence-card">
+                <div class="sentence-original">4. "I'll probably go next week"</div>
+                <div class="sentence-ipa">/aɪl prɒbli ɡoʊ nex wiːk/</div>
+                <div class="sentence-focus">🎯 Focus: <strong>Elision</strong> - "probably" → "probly", "next" → "nex"</div>
+                <button class="audio-btn" style="float: right; margin-top: -40px;" onclick="playAudio(this, 'I will probably go next week')">🔊</button>
+            </div>
+            
+            <div class="sentence-card">
+                <div class="sentence-original">5. "I've gotta go, lemme check my schedule"</div>
+                <div class="sentence-ipa">/aɪv ˈɡɒtə ɡoʊ ˈlɛmi tʃɛk maɪ ˈʃɛdjuːl/</div>
+                <div class="sentence-focus">🎯 Focus: <strong>All features</strong> - "I've gotta" + "lemme"</div>
+                <button class="audio-btn" style="float: right; margin-top: -40px;" onclick="playAudio(this, 'I have got to go, let me check my schedule')">🔊</button>
+            </div>
+        </section>
+        
+        <!-- Speaking Practice -->
+        <section class="section section-purple">
+            <h2 class="section-title"><span class="section-icon">🗣️</span> Speaking: 4 Scenarios</h2>
+            <p class="section-desc">Progression từ shadowing US accent → Singapore accent → speed challenge → real podcast. Record và listen back để self-assess.</p>
+            
+            <div class="scenario-grid">
+                <div class="scenario-card speak">
+                    <span class="scenario-badge">🇺🇸 US Casual - 2 min</span>
+                    <h4>Scenario 1: Shadowing US Casual</h4>
+                    <p>Shadow theo transcript Minh-Jake ở bar. Focus vào linking, reductions.</p>
+                    <div class="scenario-requirements">
+                        <strong>Yêu cầu C1:</strong>
+                        <ul style="margin-top: 6px; padding-left: 16px;">
+                            <li>Nhại lại CHÍNH XÁC connected speech</li>
+                            <li>Focus vào linking, reductions</li>
+                            <li>Tốc độ: bắt đầu 0.75x → tăng lên 1.0x</li>
+                            <li>Record lại, so sánh với original</li>
+                        </ul>
+                    </div>
+                    <button class="record-btn" onclick="showRecordingTips('us')">🎙️ Record (2 min)</button>
+                </div>
+                
+                <div class="scenario-card speak">
+                    <span class="scenario-badge">🇸🇬 Singapore - 2 min</span>
+                    <h4>Scenario 2: Shadowing Singapore Accent</h4>
+                    <p>Shadow theo transcript Minh-David. Focus vào intonation, discourse particles.</p>
+                    <div class="scenario-requirements">
+                        <strong>Yêu cầu C1:</strong>
+                        <ul style="margin-top: 6px; padding-left: 16px;">
+                            <li>Nhại lại Singapore intonation (cao, đều)</li>
+                            <li>Dùng discourse particles: "lah", "lor", "leh"</li>
+                            <li>Grammar shortcuts: "got meeting", "want grab lunch"</li>
+                            <li>Record lại, so sánh</li>
+                        </ul>
+                    </div>
+                    <button class="record-btn" onclick="showRecordingTips('sg')">🎙️ Record (2 min)</button>
+                </div>
+                
+                <div class="scenario-card listen">
+                    <span class="scenario-badge">🎯 Speed Challenge - 3 min</span>
+                    <h4>Scenario 3: Speed Challenge</h4>
+                    <p>Nghe transcript ở 3 tốc độ (0.75x → 1.0x → 1.25x). Target comprehension %.</p>
+                    <div class="scenario-requirements">
+                        <strong>Target comprehension:</strong>
+                        <ul style="margin-top: 6px; padding-left: 16px;">
+                            <li>0.75x: Hiểu 100%</li>
+                            <li>1.0x: Hiểu 95%+</li>
+                            <li>1.25x: Hiểu 85%+</li>
+                            <li>Nếu &lt; target, nghe lại ở tốc độ chậm hơn</li>
+                        </ul>
+                    </div>
+                    <button class="record-btn" onclick="showRecordingTips('speed')">🎧 Start Challenge (3 min)</button>
+                </div>
+                
+                <div class="scenario-card challenge">
+                    <span class="scenario-badge">🔥 Real Podcast - 5 min</span>
+                    <h4>Scenario 4: Real Podcast Challenge</h4>
+                    <p>Nghe 1 đoạn podcast thật (5 phút) ở tốc độ native. Không nhìn transcript.</p>
+                    <div class="scenario-requirements">
+                        <strong>Yêu cầu C1:</strong>
+                        <ul style="margin-top: 6px; padding-left: 16px;">
+                            <li>Không nhìn transcript</li>
+                            <li>Note lại: bao nhiêu % hiểu được</li>
+                            <li>Identify: connected speech features nghe được</li>
+                            <li>Listen lại với transcript để check</li>
+                        </ul>
+                    </div>
+                    <button class="record-btn" onclick="showRecordingTips('podcast')">🎧 Start Challenge (5 min)</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Flashcards -->
+        <section class="section section-accent">
+            <h2 class="section-title"><span class="section-icon">🎴</span> Flashcard Review: 6 Patterns</h2>
+            <p class="section-desc">Mỗi flashcard là 1 connected speech pattern. Mặt trước: pattern name. Mặt sau: definition + examples + rule + tip.</p>
+            
+            <div class="flashcard-wrap">
+                <div class="flashcard" onclick="flipCard()">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-face flashcard-front">
+                            <div class="card-pattern" id="fc-pattern">Linking (C-V)</div>
+                            <div class="card-hint">Tap to reveal details →</div>
+                        </div>
+                        <div class="flashcard-face flashcard-back">
+                            <div class="card-definition" id="fc-definition">Phụ âm cuối từ + Nguyên âm đầu từ sau → nối lại thành 1 dòng chảy</div>
+                            <div class="card-examples" id="fc-examples">
+                                <div>"based in" → /beɪst‿ɪn/</div>
+                                <div>"meet you" → /miːtʃuː/</div>
+                                <div>"pick it up" → /pɪkɪt‿ʌp/</div>
+                            </div>
+                            <div class="card-rule" id="fc-rule">💡 Rule: Khi 1 từ kết thúc bằng phụ âm và từ sau bắt đầu bằng nguyên âm, 2 âm nối lại thành 1 dòng chảy.</div>
+                            <div class="card-tip" id="fc-tip">💡 Tip: Nghe thành chunks, không phải từng từ riêng.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-controls">
+                    <button class="fc-btn" id="prevBtn" onclick="prevCard()" disabled>← Prev</button>
+                    <span class="card-counter" id="fc-counter">1 / 6</span>
+                    <button class="fc-btn" id="nextBtn" onclick="nextCard()">Next →</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quiz -->
+        <section class="section section-sky">
+            <h2 class="section-title"><span class="section-icon">✍️</span> Quiz: Connected Speech</h2>
+            <p class="section-desc">7 câu hỏi về 6 patterns. Chọn đáp án ĐÚNG NHẤT.</p>
+            
+            <div class="quiz-item" data-correct="b">
+                <div class="quiz-question">1. Bạn nghe: "Nice to meetchu". Transcript đúng là:</div>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="q1" value="a">
+                        <span>A. "Nice to meet chew"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q1" value="b">
+                        <span>B. "Nice to meet you"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q1" value="c">
+                        <span>C. "Nice to met you"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q1" value="d">
+                        <span>D. "Nice to me che you"</span>
+                    </label>
+                </div>
+                <div class="quiz-feedback" id="fb-q1"></div>
+            </div>
+            
+            <div class="quiz-item" data-correct="a">
+                <div class="quiz-question">2. Bạn nghe: "I'vebin meanin tə call ya". Câu gốc là:</div>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="q2" value="a">
+                        <span>A. "I have been meaning to call you"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q2" value="b">
+                        <span>B. "I've been meaning call ya"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q2" value="c">
+                        <span>C. "I've been meaning to call ya"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q2" value="d">
+                        <span>D. "I have meaning to call you"</span>
+                    </label>
+                </div>
+                <div class="quiz-feedback" id="fb-q2"></div>
+            </div>
+            
+            <div class="quiz-item" data-correct="b">
+                <div class="quiz-question">3. "Did you" khi nói nhanh sẽ nghe như:</div>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="q3" value="a">
+                        <span>A. "Did-you" (2 từ riêng)</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q3" value="b">
+                        <span>B. "Did-ju" /dɪdʒuː/</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q3" value="c">
+                        <span>C. "Did-chu" /dɪtʃuː/</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q3" value="d">
+                        <span>D. "Di-ju"</span>
+                    </label>
+                </div>
+                <div class="quiz-feedback" id="fb-q3"></div>
+            </div>
+            
+            <div class="quiz-item" data-correct="c">
+                <div class="quiz-question">4. Bạn nghe: "I'll go nex week". Từ gốc của "nex" là:</div>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="q4" value="a">
+                        <span>A. "Nex" (từ đúng)</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q4" value="b">
+                        <span>B. "Neck"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q4" value="c">
+                        <span>C. "Next"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q4" value="d">
+                        <span>D. "Nest"</span>
+                    </label>
+                </div>
+                <div class="quiz-feedback" id="fb-q4"></div>
+            </div>
+            
+            <div class="quiz-item" data-correct="a">
+                <div class="quiz-question">5. "I'm gonna grab a coffee" nghĩa là:</div>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="q5" value="a">
+                        <span>A. "I'm going to grab a coffee"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q5" value="b">
+                        <span>B. "I'm gone a grab a coffee"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q5" value="c">
+                        <span>C. "I'm gun-na grab a coffee"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q5" value="d">
+                        <span>D. "I'm going grab coffee"</span>
+                    </label>
+                </div>
+                <div class="quiz-feedback" id="fb-q5"></div>
+            </div>
+            
+            <div class="quiz-item" data-correct="b">
+                <div class="quiz-question">6. Câu "Can lah!" trong Singapore English nghĩa là:</div>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="q6" value="a">
+                        <span>A. "It's a can"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q6" value="b">
+                        <span>B. "It's okay / Don't worry"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q6" value="c">
+                        <span>C. "Can you?"</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q6" value="d">
+                        <span>D. "I can't"</span>
+                    </label>
+                </div>
+                <div class="quiz-feedback" id="fb-q6"></div>
+            </div>
+            
+            <div class="quiz-item" data-correct="c">
+                <div class="quiz-question">7. Ở tốc độ 1.25x (fast native), bạn nên hiểu được bao nhiêu %?</div>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="q7" value="a">
+                        <span>A. 100%</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q7" value="b">
+                        <span>B. 95%+</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q7" value="c">
+                        <span>C. 85%+</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="q7" value="d">
+                        <span>D. 70%+</span>
+                    </label>
+                </div>
+                <div class="quiz-feedback" id="fb-q7"></div>
+            </div>
+            
+            <button class="submit-btn" onclick="checkQuiz()">✅ Check Answers</button>
+            
+            <div class="score-box" id="scoreBox">
+                <div class="score-value" id="scoreValue">0/7</div>
+                <div class="score-msg" id="scoreMsg">Keep practicing!</div>
+                <div class="score-bar">
+                    <div class="score-fill" id="scoreFill" style="width: 0%"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Navigation -->
+        <div class="nav-buttons">
+            <a href="week-01.html" class="nav-btn">
+                <div class="nav-label">← Back to</div>
+                <div class="nav-title">Week 1 Hub</div>
+            </a>
+            <a href="week-01-day-5.html" class="nav-btn">
+                <div class="nav-label">Next Day →</div>
+                <div class="nav-title">Day 5: Speaking Intensive</div>
+            </a>
+        </div>
+        
+        <button class="complete-btn" onclick="completeDay()">✅ Mark Day 4 Complete & Continue to Day 5</button>
+        
+    </div>
+    
+    <!-- Mascot -->
+    <div class="mascot">
+        <svg class="mascot-fox" viewBox="0 0 200 200">
+            <ellipse cx="100" cy="140" rx="65" ry="55" fill="#7BC8E8"/>
+            <ellipse cx="100" cy="145" rx="45" ry="40" fill="#FFD4B8"/>
+            <circle cx="100" cy="85" r="50" fill="#7BC8E8"/>
+            <ellipse cx="70" cy="50" rx="18" ry="28" fill="#7BC8E8" transform="rotate(-20 70 50)"/>
+            <ellipse cx="130" cy="50" rx="18" ry="28" fill="#7BC8E8" transform="rotate(20 130 50)"/>
+            <ellipse cx="70" cy="50" rx="10" ry="16" fill="#FFD4B8" transform="rotate(-20 70 50)"/>
+            <ellipse cx="130" cy="50" rx="10" ry="16" fill="#FFD4B8" transform="rotate(20 130 50)"/>
+            <ellipse cx="100" cy="95" rx="35" ry="30" fill="#FFF5E6"/>
+            <circle cx="82" cy="82" r="8" fill="#2D3748"/>
+            <circle cx="118" cy="82" r="8" fill="#2D3748"/>
+            <circle cx="84" cy="80" r="3" fill="#FFF"/>
+            <circle cx="120" cy="80" r="3" fill="#FFF"/>
+            <ellipse cx="68" cy="95" rx="10" ry="6" fill="#FFB5A7" opacity="0.6"/>
+            <ellipse cx="132" cy="95" rx="10" ry="6" fill="#FFB5A7" opacity="0.6"/>
+            <ellipse cx="100" cy="98" rx="5" ry="4" fill="#2D3748"/>
+            <path d="M 88 108 Q 100 116 112 108" stroke="#2D3748" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M 155 130 Q 185 120 180 100 Q 175 85 160 90 Q 150 93 152 105" fill="#7BC8E8"/>
+            <ellipse cx="155" cy="115" rx="14" ry="12" fill="#FFD4B8"/>
+            <!-- Headphones for listening day -->
+            <path d="M 60 75 Q 55 60 70 55" stroke="#2D3748" stroke-width="3" fill="none"/>
+            <path d="M 140 75 Q 145 60 130 55" stroke="#2D3748" stroke-width="3" fill="none"/>
+            <ellipse cx="58" cy="80" rx="6" ry="8" fill="#2D3748"/>
+            <ellipse cx="142" cy="80" rx="6" ry="8" fill="#2D3748"/>
+            <rect x="65" y="150" width="28" height="20" fill="#B8C5E8" rx="3"/>
+            <line x1="79" y1="150" x2="79" y2="170" stroke="#2D3748" stroke-width="1.5"/>
+        </svg>
+        <div class="mascot-speech">Listen closely! 🎧</div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-fox">🦊</div>
+            <div class="footer-title">Professional Fluency Roadmap</div>
+            <div class="footer-tagline">Week 1 · Day 4 · Listening Deep Dive</div>
+        </div>
+    </footer>
+    
+    <script>
+        // ========== AUDIO TTS ==========
+        let audioSpeed = 1.0;
+        
+        function playAudio(btn, text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = audioSpeed;
+                
+                const voices = window.speechSynthesis.getVoices();
+                const usVoice = voices.find(v => v.lang === 'en-US') || voices[0];
+                if (usVoice) u.voice = usVoice;
+                
+                window.speechSynthesis.speak(u);
+            }
+        }
+        
+        function playFullTranscript(btn) {
+            const text = `Hi Jake, good to see you. How have you been? I have been good. I have been meaning to call you. No worries. What have you been up to? Actually, I have got to some interesting news. Let me hear. I am going to switch jobs next month. No way! Where at? At a new fund in Singapore. That is awesome! Do you want to grab dinner and celebrate? Yeah, I would love to. Want to go to that new place on Nguyen Hue? Sounds good. I will text you the details. Perfect. Talk to you later.`;
+            
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = audioSpeed;
+                
+                const voices = window.speechSynthesis.getVoices();
+                const usVoice = voices.find(v => v.lang === 'en-US') || voices[0];
+                if (usVoice) u.voice = usVoice;
+                
+                window.speechSynthesis.speak(u);
+            }
+        }
+        
+        function playSingaporeTranscript(btn) {
+            const text = `Eh, Minh, you can already speak English very well lah. Thanks David. Actually, I gotta improve more. My presentation still sian. Aiya, don't say that lor. Your English already very solid. You from Vietnam meh? Yes, from Ho Chi Minh City. You're based in Singapore right? Yup, born and bred here. But I study in US before, so my English quite Americanized. Sometimes my colleagues also confused, they think I American leh. Haha, I can see that. Your accent quite neutral. Thanks. Actually, I gotta go now, got meeting in 5 minutes. But we can continue later lah. You want grab lunch tomorrow? Sure! Let me give you my card. Good, good. I text you later leh. Nice meeting you, Minh!`;
+            
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = audioSpeed * 0.9; // slightly slower for SG accent
+                u.pitch = 1.1; // slightly higher pitch
+                
+                const voices = window.speechSynthesis.getVoices();
+                const usVoice = voices.find(v => v.lang === 'en-US') || voices[0];
+                if (usVoice) u.voice = usVoice;
+                
+                window.speechSynthesis.speak(u);
+            }
+        }
+        
+        function changeSpeed(btn) {
+            const speeds = [0.75, 1.0, 1.25];
+            const current = speeds.indexOf(audioSpeed);
+            audioSpeed = speeds[(current + 1) % speeds.length];
+            btn.textContent = audioSpeed + 'x';
+        }
+        
+        // ========== SPEED TABS ==========
+        function switchSpeed(speed, btn) {
+            document.querySelectorAll('.speed-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.speed-content').forEach(c => c.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('speed-' + speed).classList.add('active');
+        }
+        
+        // ========== FLASHCARDS ==========
+        const flashcards = [
+            { 
+                pattern: "Linking (C-V)",
+                definition: "Phụ âm cuối từ + Nguyên âm đầu từ sau → nối lại thành 1 dòng chảy",
+                examples: [
+                    '"based in" → /beɪst‿ɪn/',
+                    '"meet you" → /miːtʃuː/',
+                    '"pick it up" → /pɪkɪt‿ʌp/'
+                ],
+                rule: "💡 Rule: Khi 1 từ kết thúc bằng phụ âm và từ sau bắt đầu bằng nguyên âm, 2 âm nối lại thành 1 dòng chảy.",
+                tip: "💡 Tip: Nghe thành chunks, không phải từng từ riêng."
+            },
+            { 
+                pattern: "Intrusion (/j/, /w/)",
+                definition: "Thêm 'bridge sound' /j/ hoặc /w/ giữa 2 nguyên âm để chúng không chạm nhau",
+                examples: [
+                    '"go out" → /ɡoʊw aʊt/ (thêm /w/)',
+                    '"see it" → /siːj ɪt/ (thêm /j/)',
+                    '"I am" → /aɪj æm/ (thêm /j/)'
+                ],
+                rule: "💡 Rule: Sau /iː/, /eɪ/, /aɪ/, /ɔɪ/, /e/ → thêm /j/. Sau /uː/, /oʊ/, /aʊ/ → thêm /w/.",
+                tip: "💡 Tip: Khi nghe 'thêm âm lạ' giữa 2 từ, đó là intrusion. Không phải từ mới."
+            },
+            { 
+                pattern: "Elision (Mất âm)",
+                definition: "Âm biến mất, đặc biệt là /t/ và /d/ khi nằm giữa 2 phụ âm khác",
+                examples: [
+                    '"next day" → /neks deɪ/ (mất /t/)',
+                    '"good morning" → /ɡʊ mɔːrnɪŋ/ (mất /d/)',
+                    '"probably" → /prɒbli/ (mất /ə/)'
+                ],
+                rule: "💡 Rule: Âm /t/, /d/ thường biến mất khi nằm giữa 2 phụ âm khác hoặc ở cuối cluster phụ âm phức tạp.",
+                tip: "💡 Tip: Nếu nghe 'thiếu âm', đừng panic. Đó là elision. Context sẽ giúp bạn fill in."
+            },
+            { 
+                pattern: "Assimilation (Âm thay đổi)",
+                definition: "Âm thay đổi khi gặp âm khác. Đặc biệt phổ biến với 'you' (/j/)",
+                examples: [
+                    '"did you" → /dɪdʒuː/ (d + y = j)',
+                    '"don\'t you" → /doʊntʃuː/ (t + y = ch)',
+                    '"miss you" → /mɪʃuː/ (s + y = sh)'
+                ],
+                rule: "💡 Rule: /t/+/j/=/tʃ/, /d/+/j/=/dʒ/, /s/+/j/=/ʃ/, /z/+/j/=/ʒ/",
+                tip: "💡 Tip: Khi nghe 'you' mà âm trước nghe LẠ, đó là assimilation."
+            },
+            { 
+                pattern: "Reduction (Weak Forms)",
+                definition: "Từ chức năng (to, for, and, of, have, are, can) phát âm yếu đi",
+                examples: [
+                    '"to" /tuː/ → /tə/',
+                    '"and" /ænd/ → /ən/ hoặc /n/',
+                    '"have" /hæv/ → /həv/ hoặc /əv/'
+                ],
+                rule: "💡 Rule: Function words chiếm 50%+ câu nhưng khi bị reduce, gần như không nghe thấy.",
+                tip: "💡 Tip: Đừng cố nghe TỪ. Nghe RHYTHM. Function words là 'nhịp nền', content words là 'nhịp chính'."
+            },
+            { 
+                pattern: "Contractions & Slang",
+                definition: "Từ bị rút ngắn cực mạnh: going to → gonna, want to → wanna",
+                examples: [
+                    '"going to" → "gonna" /ˈɡɒnə/',
+                    '"want to" → "wanna" /ˈwɒnə/',
+                    '"got to" → "gotta" /ˈɡɒtə/',
+                    '"let me" → "lemme" /ˈlɛmi/'
+                ],
+                rule: "💡 Rule: Casual speech = nhiều contractions. Formal speech = ít hơn.",
+                tip: "💡 Tip: ✅ Dùng trong CASUAL speech. ❌ KHÔNG dùng trong formal writing."
+            }
+        ];
+        
+        let currentCard = 0;
+        
+        function renderCard() {
+            const card = flashcards[currentCard];
+            document.getElementById('fc-pattern').textContent = card.pattern;
+            document.getElementById('fc-definition').textContent = card.definition;
+            
+            const examplesEl = document.getElementById('fc-examples');
+            examplesEl.innerHTML = card.examples.map(ex => `<div>${ex}</div>`).join('');
+            
+            document.getElementById('fc-rule').textContent = card.rule;
+            document.getElementById('fc-tip').textContent = card.tip;
+            document.getElementById('fc-counter').textContent = `${currentCard + 1} / ${flashcards.length}`;
+            document.querySelector('.flashcard').classList.remove('flipped');
+            
+            document.getElementById('prevBtn').disabled = currentCard === 0;
+            document.getElementById('nextBtn').disabled = currentCard === flashcards.length - 1;
+        }
+        
+        function flipCard() {
+            document.querySelector('.flashcard').classList.toggle('flipped');
+        }
+        
+        function nextCard() {
+            if (currentCard < flashcards.length - 1) {
+                currentCard++;
+                renderCard();
+            }
+        }
+        
+        function prevCard() {
+            if (currentCard > 0) {
+                currentCard--;
+                renderCard();
+            }
+        }
+        
+        // ========== QUIZ ==========
+        const answers = { q1: 'b', q2: 'a', q3: 'b', q4: 'c', q5: 'a', q6: 'b', q7: 'c' };
+        const explanations = {
+            q1: '"meet you" → /miːtʃuː/ (t + y = ch sound). Đây là assimilation, không phải từ "chew".',
+            q2: '"I\'ve been" → /aɪvbɪn/ (linking), "meaning to" → /miːnɪŋ tə/ (elision + reduction), "call you" → /kɔːl jə/ (assimilation).',
+            q3: '/d/ + /j/ = /dʒ/ (j sound). Assimilation rule: d + you = d-ju.',
+            q4: '"next" → /nɛks/ (mất /t/ vì nằm giữa 2 phụ âm). Đây là elision.',
+            q5: '"gonna" = "going to" (casual contraction). Rất phổ biến trong spoken English.',
+            q6: '"lah" là discourse particle, thêm emphasis. "Can lah!" = "It\'s okay!" / "Don\'t worry!"',
+            q7: '0.75x: 100% (slow, clear). 1.0x: 95%+ (normal native). 1.25x: 85%+ (fast native). Nếu < 85% ở 1.25x, cần luyện thêm shadowing.'
+        };
+        
+        function checkQuiz() {
+            let score = 0;
+            const total = Object.keys(answers).length;
+            let allAnswered = true;
+            
+            for (let [q, correct] of Object.entries(answers)) {
+                const selected = document.querySelector(`input[name="${q}"]:checked`);
+                const fb = document.getElementById(`fb-${q}`);
+                const item = document.querySelector(`input[name="${q}"]`).closest('.quiz-item');
+                const options = item.querySelectorAll('.quiz-option');
+                
+                if (!selected) {
+                    allAnswered = false;
+                    fb.className = 'quiz-feedback wrong show';
+                    fb.textContent = '⚠️ Please select an answer first.';
+                    continue;
+                }
+                
+                options.forEach(opt => opt.classList.remove('selected', 'correct', 'wrong'));
+                
+                if (selected.value === correct) {
+                    score++;
+                    selected.closest('.quiz-option').classList.add('correct');
+                    fb.className = 'quiz-feedback correct show';
+                    fb.innerHTML = '✅ <strong>Correct!</strong> ' + explanations[q];
+                } else {
+                    selected.closest('.quiz-option').classList.add('wrong');
+                    options.forEach(opt => {
+                        const input = opt.querySelector('input');
+                        if (input.value === correct) opt.classList.add('correct');
+                    });
+                    fb.className = 'quiz-feedback wrong show';
+                    fb.innerHTML = '❌ <strong>Not quite.</strong> ' + explanations[q];
+                }
+            }
+            
+            if (!allAnswered) return;
+            
+            const scoreBox = document.getElementById('scoreBox');
+            const scoreValue = document.getElementById('scoreValue');
+            const scoreMsg = document.getElementById('scoreMsg');
+            const scoreFill = document.getElementById('scoreFill');
+            
+            scoreBox.classList.add('show');
+            scoreValue.textContent = `${score}/${total}`;
+            scoreFill.style.width = (score / total * 100) + '%';
+            
+            if (score === total) {
+                scoreMsg.textContent = '🎉 Perfect! You can decode connected speech like a C1 listener!';
+            } else if (score >= total * 0.8) {
+                scoreMsg.textContent = '👍 Great job! Review the patterns you missed and try again.';
+            } else if (score >= total * 0.6) {
+                scoreMsg.textContent = '📚 Good effort! Re-read the 6 patterns carefully.';
+            } else {
+                scoreMsg.textContent = '💪 Keep going! Review the patterns and retry.';
+            }
+            
+            scoreBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        // ========== RECORDING TIPS ==========
+        function showRecordingTips(scenario) {
+            const tips = {
+                us: `🇺🇸 TIPS FOR US CASUAL SHADOWING:
+
+• Focus vào 6 connected speech patterns:
+  - Linking: "based in" → "basedin"
+  - Reduction: "to" → "tə", "and" → "n"
+  - Assimilation: "did you" → "did-ju"
+  - Elision: "next" → "nex"
+  - Slang: "gonna", "wanna", "gotta"
+
+• Tốc độ:
+  - Bắt đầu: 0.75x (slow, clear)
+  - Tăng dần: 1.0x (normal)
+  - Challenge: 1.25x (fast native)
+
+💡 Mẹo: Record 2 phút. Listen back. Count: bao nhiêu connected speech features bạn nhại được?`,
+
+                sg: `🇸🇬 TIPS FOR SINGAPORE SHADOWING:
+
+• Intonation:
+  - Cao hơn, đều hơn US
+  - Ít lên xuống hơn
+  - "Flat" hơn với người Mỹ
+
+• Discourse particles:
+  - "lah" = affirmation/reassurance
+  - "lor" = resignation
+  - "leh" = emphasis/complaint
+  - "meh" = questioning/surprise
+
+• Grammar shortcuts:
+  - "got meeting" = "have a meeting"
+  - "want grab lunch" = "do you want to grab lunch"
+  - Bỏ "to be": "He very tall"
+
+💡 Mẹo: Singapore accent DỄ hơn US cho người Việt. Focus vào particles.`,
+
+                speed: `🎯 TIPS FOR SPEED CHALLENGE:
+
+Target comprehension:
+• 0.75x (slow): 100%
+• 1.0x (normal): 95%+
+• 1.25x (fast): 85%+
+
+Strategy:
+1. Nghe 0.75x trước, note % hiểu
+2. Nếu < 100%, nghe lại đến khi đạt
+3. Tăng lên 1.0x, note % hiểu
+4. Nếu < 95%, quay lại 0.75x
+5. Cuối cùng thử 1.25x
+
+💡 Mẹo: Nếu < 85% ở 1.25x, cần luyện shadowing thêm 1 tuần trước khi tăng tốc.`,
+
+                podcast: `🔥 TIPS FOR REAL PODCAST CHALLENGE:
+
+Recommended podcasts (US accent):
+• "The Daily" - NY Times (news, 20 min)
+• "How I Built This" - NPR (business, 45 min)
+• "Freakonomics Radio" (economics, 40 min)
+• "The Joe Rogan Experience" (casual, long)
+
+Recommended podcasts (Singapore):
+• "The Usual Place" (culture, 30 min)
+• "Talking Cock" (comedy, 45 min)
+
+Strategy:
+1. Chọn 5-minute segment
+2. Nghe KHÔNG transcript
+3. Note: % hiểu + connected speech features
+4. Nghe LẠI với transcript
+5. So sánh: bao nhiêu features bạn miss?
+
+💡 Mẹo: Làm 3 lần/tuần. Sau 4 tuần, bạn sẽ hiểu 90%+ native speech.`
+            };
+            
+            alert(tips[scenario]);
+        }
+        
+        // ========== COMPLETE DAY ==========
+        function completeDay() {
+            const completed = JSON.parse(localStorage.getItem('week1Days') || '[]');
+            
+            if (!completed.includes(4)) {
+                completed.push(4);
+                localStorage.setItem('week1Days', JSON.stringify(completed));
+                
+                if (completed.length === 7) {
+                    const completedWeeks = JSON.parse(localStorage.getItem('completedWeekList') || '[]');
+                    if (!completedWeeks.includes(1)) {
+                        completedWeeks.push(1);
+                        localStorage.setItem('completedWeekList', JSON.stringify(completedWeeks));
+                        localStorage.setItem('completedWeeks', completedWeeks.length);
+                    }
+                    alert('🎉 AMAZING! Week 1 completed! You can now decode native speech like a pro! 🦊');
+                } else {
+                    alert(`✅ Day 4 completed! ${7 - completed.length} days left in Week 1. Keep going! 🦊`);
+                }
+                
+                location.href = 'week-01-day-5.html';
+            } else {
+                if (confirm('✅ Day 4 already completed! Go to Day 5?')) {
+                    location.href = 'week-01-day-5.html';
+                }
+            }
+        }
+        
+        // ========== INIT ==========
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCard();
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.getVoices();
+            }
+        });
+    </script>
+<!-- ========== AUDIO SETTINGS PANEL ========== -->
+<div id="audioSettingsPanel" style="
+    position: fixed;
+    bottom: 110px;
+    right: 24px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    width: 320px;
+    z-index: 999;
+    display: none;
+    border: 1px solid #E2E8F0;
+    font-family: 'Inter', sans-serif;
+">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-family: 'Fraunces', serif; font-size: 16px; margin: 0;">🎤 Audio Settings</h3>
+        <button onclick="toggleAudioSettings()" style="background: none; border: none; font-size: 20px; cursor: pointer; color: #718096;">×</button>
+    </div>
+    
+    <!-- Voice Selection -->
+    <div style="margin-bottom: 16px;">
+        <label style="display: block; font-size: 12px; font-weight: 600; color: #4A5568; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            Voice Quality
+        </label>
+        <select id="voiceSelect" style="
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            font-size: 13px;
+            background: white;
+            cursor: pointer;
+        ">
+            <option>Loading voices...</option>
+        </select>
+        <div id="voiceQuality" style="font-size: 11px; color: #718096; margin-top: 4px;"></div>
+    </div>
+    
+    <!-- Rate Control -->
+    <div style="margin-bottom: 16px;">
+        <label style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: #4A5568; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            <span>Speed</span>
+            <span id="rateValue" style="color: #805AD5;">0.9x</span>
+        </label>
+        <input type="range" id="rateSlider" min="0.5" max="1.5" step="0.05" value="0.9" style="width: 100%; accent-color: #805AD5;">
+        <div style="display: flex; justify-content: space-between; font-size: 10px; color: #A0AEC0; margin-top: 2px;">
+            <span>Slow</span>
+            <span>Normal</span>
+            <span>Fast</span>
+        </div>
+    </div>
+    
+    <!-- Pitch Control -->
+    <div style="margin-bottom: 16px;">
+        <label style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: #4A5568; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            <span>Pitch</span>
+            <span id="pitchValue" style="color: #805AD5;">1.05</span>
+        </label>
+        <input type="range" id="pitchSlider" min="0.5" max="1.5" step="0.05" value="1.05" style="width: 100%; accent-color: #805AD5;">
+        <div style="display: flex; justify-content: space-between; font-size: 10px; color: #A0AEC0; margin-top: 2px;">
+            <span>Low</span>
+            <span>Normal</span>
+            <span>High</span>
+        </div>
+    </div>
+    
+    <!-- Test Button -->
+    <button onclick="testVoice()" style="
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(135deg, #805AD5, #B794D6);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        margin-bottom: 8px;
+    ">🔊 Test Voice</button>
+    
+    <!-- Save Button -->
+    <button onclick="saveAudioSettings()" style="
+        width: 100%;
+        padding: 10px;
+        background: #48BB78;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+    ">💾 Save Settings</button>
+    
+    <!-- Help Text -->
+    <div style="margin-top: 12px; padding: 10px; background: #F7FAFC; border-radius: 8px; font-size: 11px; color: #718096; line-height: 1.5;">
+        💡 <strong>Tip:</strong> For best quality, choose voices with "Google" or "Neural" in the name. Chrome has the best voices.
+    </div>
+</div>
+
+<!-- Settings Toggle Button -->
+<button onclick="toggleAudioSettings()" style="
+    position: fixed;
+    bottom: 110px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #805AD5, #B794D6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(128,90,213,0.3);
+    font-size: 20px;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    🎤
+</button>
+
+<script>
+// ========== ENHANCED AUDIO SYSTEM ==========
+
+// Audio settings
+let audioSettings = {
+    voiceURI: null,
+    rate: 0.9,
+    pitch: 1.05,
+    volume: 1.0
+};
+
+// Load saved settings
+function loadAudioSettings() {
+    const saved = localStorage.getItem('audioSettings');
+    if (saved) {
+        audioSettings = JSON.parse(saved);
+        document.getElementById('rateSlider').value = audioSettings.rate;
+        document.getElementById('pitchSlider').value = audioSettings.pitch;
+        document.getElementById('rateValue').textContent = audioSettings.rate + 'x';
+        document.getElementById('pitchValue').textContent = audioSettings.pitch;
+    }
+}
+
+// Save settings
+function saveAudioSettings() {
+    audioSettings.rate = parseFloat(document.getElementById('rateSlider').value);
+    audioSettings.pitch = parseFloat(document.getElementById('pitchSlider').value);
+    
+    const voiceSelect = document.getElementById('voiceSelect');
+    if (voiceSelect.value) {
+        audioSettings.voiceURI = voiceSelect.value;
+    }
+    
+    localStorage.setItem('audioSettings', JSON.stringify(audioSettings));
+    
+    // Show success message
+    const btn = event.target;
+    const originalText = btn.textContent;
+    btn.textContent = '✅ Saved!';
+    btn.style.background = '#38A169';
+    setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '#48BB78';
+    }, 1500);
+}
+
+// Toggle settings panel
+function toggleAudioSettings() {
+    const panel = document.getElementById('audioSettingsPanel');
+    panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+}
+
+// Rate slider update
+document.getElementById('rateSlider').addEventListener('input', function() {
+    document.getElementById('rateValue').textContent = this.value + 'x';
+    audioSettings.rate = parseFloat(this.value);
+});
+
+// Pitch slider update
+document.getElementById('pitchSlider').addEventListener('input', function() {
+    document.getElementById('pitchValue').textContent = this.value;
+    audioSettings.pitch = parseFloat(this.value);
+});
+
+// Voice quality rating
+function getVoiceQuality(voice) {
+    const name = voice.name.toLowerCase();
+    
+    // Best quality voices
+    if (name.includes('neural') || name.includes('wavenet') || name.includes('natural')) {
+        return { rating: 3, label: '⭐⭐⭐ Excellent', color: '#48BB78' };
+    }
+    if (name.includes('google') && name.includes('us')) {
+        return { rating: 3, label: '⭐⭐⭐ Excellent', color: '#48BB78' };
+    }
+    if (name.includes('microsoft') && (name.includes('aria') || name.includes('jenny') || name.includes('guy'))) {
+        return { rating: 3, label: '⭐⭐⭐ Excellent', color: '#48BB78' };
+    }
+    
+    // Good quality voices
+    if (name.includes('google') || name.includes('microsoft')) {
+        return { rating: 2, label: '⭐⭐ Good', color: '#ECC94B' };
+    }
+    if (name.includes('samantha') || name.includes('daniel') || name.includes('karen')) {
+        return { rating: 2, label: '⭐⭐ Good', color: '#ECC94B' };
+    }
+    
+    // Basic quality
+    return { rating: 1, label: '⭐ Basic', color: '#A0AEC0' };
+}
+
+// Populate voice list
+function populateVoices() {
+    const voices = speechSynthesis.getVoices();
+    const voiceSelect = document.getElementById('voiceSelect');
+    
+    // Filter US English voices
+    const usVoices = voices.filter(v => v.lang === 'en-US' || v.lang.startsWith('en-US'));
+    
+    // Sort by quality
+    usVoices.sort((a, b) => {
+        const qa = getVoiceQuality(a).rating;
+        const qb = getVoiceQuality(b).rating;
+        return qb - qa;
+    });
+    
+    voiceSelect.innerHTML = '';
+    
+    if (usVoices.length === 0) {
+        voiceSelect.innerHTML = '<option>No US English voices found</option>';
+        return;
+    }
+    
+    usVoices.forEach((voice, index) => {
+        const quality = getVoiceQuality(voice);
+        const option = document.createElement('option');
+        option.value = voice.voiceURI;
+        option.textContent = `${quality.label} - ${voice.name}`;
+        option.style.color = quality.color;
+        
+        if (audioSettings.voiceURI === voice.voiceURI || (index === 0 && !audioSettings.voiceURI)) {
+            option.selected = true;
+            document.getElementById('voiceQuality').innerHTML = 
+                `<span style="color: ${quality.color}">Quality: ${quality.label}</span>`;
+        }
+        
+        voiceSelect.appendChild(option);
+    });
+    
+    // Update quality display on change
+    voiceSelect.addEventListener('change', function() {
+        const selectedVoice = usVoices.find(v => v.voiceURI === this.value);
+        if (selectedVoice) {
+            const quality = getVoiceQuality(selectedVoice);
+            document.getElementById('voiceQuality').innerHTML = 
+                `<span style="color: ${quality.color}">Quality: ${quality.label}</span>`;
+        }
+    });
+}
+
+// Text preprocessing for more natural speech
+function preprocessText(text) {
+    // Add natural pauses
+    text = text.replace(/\.\.\./g, ', ... ');
+    text = text.replace(/([.!?])\s+/g, '$1 ... ');
+    
+    // Add emphasis pauses for important phrases
+    text = text.replace(/actually,/gi, 'actually, ... ');
+    text = text.replace(/mostly/gi, 'mostly, ... ');
+    text = text.replace(/but sometimes/gi, ', but sometimes, ... ');
+    
+    // Normalize contractions for better pronunciation
+    text = text.replace(/I'm/g, 'I am');
+    text = text.replace(/I've/g, 'I have');
+    text = text.replace(/don't/g, 'do not');
+    text = text.replace(/it's/g, 'it is');
+    
+    return text;
+}
+
+// Enhanced playAudio function
+function playAudio(btn, text) {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        
+        // Preprocess text for natural speech
+        const processedText = preprocessText(text);
+        
+        const utterance = new SpeechSynthesisUtterance(processedText);
+        utterance.lang = 'en-US';
+        utterance.rate = audioSettings.rate;
+        utterance.pitch = audioSettings.pitch;
+        utterance.volume = audioSettings.volume;
+        
+        // Find selected voice
+        const voices = speechSynthesis.getVoices();
+        if (audioSettings.voiceURI) {
+            const selectedVoice = voices.find(v => v.voiceURI === audioSettings.voiceURI);
+            if (selectedVoice) {
+                utterance.voice = selectedVoice;
+            }
+        } else {
+            // Fallback: find best US voice
+            const usVoice = voices.find(v => v.lang === 'en-US' && 
+                (v.name.includes('Google') || v.name.includes('Neural') || v.name.includes('Natural')));
+            if (usVoice) utterance.voice = usVoice;
+        }
+        
+        // Visual feedback
+        if (btn) {
+            btn.classList.add('playing');
+            utterance.onend = () => btn.classList.remove('playing');
+            utterance.onerror = () => btn.classList.remove('playing');
+        }
+        
+        window.speechSynthesis.speak(utterance);
+    } else {
+        alert('Text-to-Speech not supported in your browser. Please use Chrome or Edge for best experience.');
+    }
+}
+
+// Test voice function
+function testVoice() {
+    const testText = "Hi there! This is a test of your selected voice. How does it sound?";
+    playAudio(null, testText);
+}
+
+// Initialize audio system
+function initAudioSystem() {
+    loadAudioSettings();
+    
+    // Load voices (async in some browsers)
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = populateVoices;
+    }
+    populateVoices();
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', initAudioSystem);
+</script>
+</body>
+</html>

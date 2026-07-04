@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 8 Day 54: Difficult Decisions | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #065F46;
+--primary-bright: #047857;
+--primary-soft: #D1FAE5;
+--primary-deep: #064E3B;
+--primary-light: #10B981;
+--highlight-gold: #D97706;
+--highlight-green: #059669;
+--highlight-blue: #2563EB;
+--highlight-purple: #7C3AED;
+--highlight-orange: #DC2626;
+--green: #10B981;
+--green-soft: #D1FAE5;
+--green-deep: #065F46;
+--blue: #3B82F6;
+--blue-soft: #DBEAFE;
+--blue-deep: #1E40AF;
+--purple: #8B5CF6;
+--purple-soft: #F3E8FF;
+--purple-deep: #6B21A8;
+--orange: #F97316;
+--orange-soft: #FFEDD5;
+--orange-deep: #9A3412;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #FAFAFA; color: var(--text-primary); font-size: 15px; line-height: 1.5; min-height: 100vh; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* Navigation & Header */
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 10px; }
+.progress-bar { width: 80px; height: 6px; background: rgba(0, 0, 0, 0.08); border-radius: 3px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-bright)); border-radius: 3px; width: 9%; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(6, 95, 70, 0.3); }
+.day-header { background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 50%, #A7F3D0 100%); padding: 48px 0 40px; position: relative; }
+.day-header::after { content: '️'; position: absolute; top: 40px; right: 40px; font-size: 4rem; opacity: 0.3; }
+.breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 2rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); max-width: 700px; margin-bottom: 20px; line-height: 1.5; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+
+/* Content Layout */
+.content-area { background: #FAFAFA; padding: 40px 0; }
+.section { margin: 40px 0; }
+.section-header { margin-bottom: 28px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.section-title i { --ph-color: var(--primary-bright); }
+.section-desc { font-size: 14px; color: var(--text-secondary); max-width: 700px; line-height: 1.5; }
+
+/* Cards & Boxes */
+.c1-insight { background: linear-gradient(135deg, rgba(209, 250, 229, 0.6), rgba(167, 243, 208, 0.25)); border-radius: var(--radius-md); padding: 24px 28px; margin-bottom: 28px; border-left: 4px solid var(--primary); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 500; color: var(--primary-deep); line-height: 1.5; }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); border: 1px solid rgba(6, 95, 70, 0.2); }
+.philosophy-box { background: #ECFDF5; border-radius: var(--radius-md); padding: 20px; border-left: 4px solid var(--highlight-gold); margin-bottom: 20px; }
+.philosophy-title { font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.philosophy-title i { --ph-color: var(--highlight-gold); }
+.philosophy-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+.philosophy-box strong { color: var(--primary-deep); }
+.plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: rgba(209, 250, 229, 0.5); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+
+/* Loop & Lenses */
+.loop-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); margin-bottom: 24px; }
+.loop-step { display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start; }
+.loop-step:last-child { margin-bottom: 0; }
+.loop-number { flex-shrink: 0; width: 36px; height: 36px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 16px; }
+.loop-content h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--text-primary); margin-bottom: 4px; }
+.loop-content p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+.lens-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 28px; margin-bottom: 24px; border-left: 4px solid var(--primary); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.lens-header { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; }
+.lens-number { flex-shrink: 0; width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; }
+.lens-content { flex: 1; }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.lens-question { font-size: 14px; color: var(--primary-deep); font-style: italic; margin-bottom: 16px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.lens-rating { font-size: 12px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 12px; color: var(--text-muted); background: rgba(209, 250, 229, 0.5); padding: 4px 10px; border-radius: 12px; }
+.lens-subsection { margin-bottom: 16px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 4px 0; padding-left: 20px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.register-table { background: rgba(248, 250, 252, 0.8); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 16px; }
+.register-table h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 12px; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+.register-row { display: grid; grid-template-columns: 100px 1fr; gap: 12px; padding: 10px 12px; background: rgba(255, 255, 255, 0.9); border-radius: var(--radius-sm); margin-bottom: 8px; align-items: center; }
+.register-row:last-child { margin-bottom: 0; }
+.register-tag { font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 8px; text-align: center; }
+.register-tag.casual { background: var(--green-soft); color: var(--green-deep); }
+.register-tag.neutral { background: var(--blue-soft); color: var(--blue-deep); }
+.register-tag.professional { background: var(--primary-soft); color: var(--primary-deep); }
+.register-tag.formal { background: var(--orange-soft); color: var(--orange-deep); }
+.register-phrase { font-size: 13px; color: var(--text-secondary); font-style: italic; }
+.audio-btn-small { width: 28px; height: 28px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; border-radius: 50%; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s ease; flex-shrink: 0; margin-left: 8px; }
+.audio-btn-small:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(6, 95, 70, 0.3); }
+.audio-btn-small i { --ph-color: white; font-size: 14px; }
+.tradeoff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.tradeoff-box { padding: 12px; border-radius: var(--radius-sm); font-size: 13px; }
+.tradeoff-box.gain { background: rgba(16, 185, 129, 0.05); border-left: 3px solid var(--highlight-green); }
+.tradeoff-box.lose { background: rgba(245, 101, 101, 0.05); border-left: 3px solid #F56565; }
+.tradeoff-box strong { display: block; margin-bottom: 4px; font-size: 11px; text-transform: uppercase; }
+.tradeoff-box.gain strong { color: var(--green-deep); }
+.tradeoff-box.lose strong { color: #C53030; }
+.reflection-box { background: rgba(6, 95, 70, 0.05); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); font-style: italic; color: var(--primary-deep); font-size: 14px; }
+
+/* Integration Framework */
+.integration-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 28px; margin-bottom: 24px; border-left: 4px solid var(--highlight-purple); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.integration-step { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(124, 58, 237, 0.1); }
+.integration-step:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.integration-step h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.integration-step p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+
+/* Mistakes & Decoder */
+.mistakes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 20px; }
+.mistake-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 20px; border-left: 4px solid var(--highlight-orange); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.mistake-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--green-deep); border-left: 3px solid var(--highlight-green); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-purple); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.decoder-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.table-container { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid rgba(0, 0, 0, 0.06); }
+.decoder-table { width: 100%; border-collapse: collapse; min-width: 900px; }
+.decoder-table th { background: rgba(209, 250, 229, 0.5); padding: 12px; text-align: left; font-size: 11px; font-weight: 700; color: var(--primary-deep); border-bottom: 2px solid rgba(6, 95, 70, 0.2); }
+.decoder-table td { padding: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); font-size: 12px; color: var(--text-secondary); vertical-align: top; line-height: 1.4; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); min-width: 110px; }
+
+/* Reading & Executive Breakdown (Grid Layout) */
+.reading-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-blue); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.reading-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.scenario-box { background: #F8FAFC; border: 1px solid rgba(0, 0, 0, 0.06); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 16px; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.executive-breakdown { background: rgba(124, 58, 237, 0.05); border-radius: var(--radius-md); padding: 20px; margin: 20px 0; border-left: 4px solid var(--highlight-purple); }
+.executive-breakdown h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--purple-deep); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.breakdown-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.breakdown-item { background: rgba(255, 255, 255, 0.8); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-purple); box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+.breakdown-item .sentence { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+.breakdown-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.breakdown-item .analysis strong { color: var(--purple-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.if-change-box { background: rgba(217, 119, 6, 0.08); padding: 16px; border-radius: var(--radius-sm); margin: 16px 0; border-left: 3px solid var(--highlight-gold); }
+.if-change-box h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--highlight-gold); margin-bottom: 12px; }
+.if-change-box .change { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 8px; }
+.if-change-box .change strong { color: var(--primary-deep); }
+
+/* Micro Writing */
+.micro-writing-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-green); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.micro-writing-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.rewrite-item { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+.rewrite-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.rewrite-task { font-size: 13px; color: #C53030; font-weight: 600; margin-bottom: 8px; }
+.sentence-function-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.sentence-function { background: rgba(59, 130, 246, 0.05); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-blue); }
+.sentence-function .sentence { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.sentence-function .function { font-size: 12px; color: var(--blue-deep); font-weight: 600; }
+.before-after-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.before-after { padding: 12px; border-radius: var(--radius-sm); }
+.before-after.normal { background: rgba(245, 101, 101, 0.05); border-left: 3px solid #F56565; }
+.before-after.executive { background: rgba(16, 185, 129, 0.05); border-left: 3px solid var(--highlight-green); }
+.before-after .label { font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.before-after.normal .label { color: #C53030; }
+.before-after.executive .label { color: var(--green-deep); }
+.before-after .text { font-size: 13px; color: var(--text-secondary); font-style: italic; margin-bottom: 4px; }
+.before-after .explanation { font-size: 12px; color: var(--text-muted); }
+
+/* Vocab */
+.vocab-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-purple); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.vocab-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.vocab-item { padding: 12px; background: rgba(243, 232, 255, 0.3); border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-purple); }
+.vocab-item strong { display: block; font-size: 13px; color: var(--purple-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--highlight-green); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+
+/* Dialogues */
+.story-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--primary); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.story-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; margin-bottom: 8px; color: var(--text-primary); display: flex; align-items: center; gap: 10px; }
+.story-context { font-size: 12px; color: var(--text-muted); margin-bottom: 14px; font-style: italic; padding: 10px 14px; background: rgba(209, 250, 229, 0.3); border-radius: var(--radius-sm); }
+.story-dialogue { background: rgba(209, 250, 229, 0.2); padding: 18px; border-radius: var(--radius-sm); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(6, 95, 70, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.presence { background: var(--highlight-blue); }
+.move-highlight.negotiation { background: var(--highlight-purple); }
+.move-highlight.leadership { background: var(--highlight-green); }
+.story-audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.story-audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.story-play-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.story-play-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(6, 95, 70, 0.3); }
+.story-stop-btn { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.story-stop-btn:hover { background: rgba(245, 101, 101, 0.2); }
+.story-analysis { background: rgba(209, 250, 229, 0.3); border-radius: var(--radius-sm); padding: 16px; }
+.story-analysis h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.story-analysis ul { list-style: none; }
+.story-analysis li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.story-analysis li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.decision-point { background: rgba(217, 119, 6, 0.08); padding: 14px; border-radius: var(--radius-sm); margin-top: 12px; border-left: 3px solid var(--highlight-gold); }
+.decision-point strong { color: var(--highlight-gold); display: block; margin-bottom: 6px; font-size: 12px; text-transform: uppercase; }
+.decision-point p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 6px; }
+
+/* Listening Deep Dive (Grid Layout) */
+.listening-deep-dive { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-green); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.listening-deep-dive h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.listening-section { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(5, 150, 105, 0.1); }
+.listening-section:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.listening-section h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.listening-section h4 i { --ph-color: var(--highlight-green); }
+.transcript-box { background: rgba(209, 250, 229, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 12px; }
+.transcript-box .key-phrase { font-weight: 600; color: var(--green-deep); background: rgba(16, 185, 129, 0.1); padding: 2px 6px; border-radius: 4px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.8); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-green); box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--highlight-green); font-weight: 600; display: block; margin: 4px 0; }
+.deep-dive-item .analysis strong { color: var(--green-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+.language-notes-box { background: rgba(59, 130, 246, 0.05); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-blue); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-purple); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.listening-strategy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.listening-strategy-box { background: rgba(217, 119, 6, 0.08); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-gold); }
+.listening-strategy-box .pass { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.listening-strategy-box .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.shadowing-box { background: rgba(249, 115, 22, 0.05); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-orange); }
+.shadowing-box .instruction { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 8px; }
+.shadowing-box .instruction strong { color: var(--orange-deep); }
+.listening-question { background: rgba(209, 250, 229, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 12px; }
+.listening-question p { font-size: 13px; color: var(--text-primary); font-weight: 600; margin-bottom: 8px; }
+.listening-answer { font-size: 12px; color: var(--green-deep); font-style: italic; }
+
+/* Grammar & Pronunciation */
+.grammar-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-gold); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.grammar-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.grammar-table { width: 100%; border-collapse: collapse; }
+.grammar-table th { background: rgba(253, 243, 199, 0.5); padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 700; color: var(--highlight-gold); border-bottom: 2px solid rgba(217, 119, 6, 0.2); }
+.grammar-table td { padding: 10px 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); font-size: 13px; color: var(--text-secondary); vertical-align: top; }
+.grammar-table td:first-child { font-weight: 600; color: var(--text-primary); min-width: 140px; }
+.pronunciation-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-purple); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.pronunciation-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.pronunciation-item { padding: 12px; background: rgba(243, 232, 255, 0.3); border-radius: var(--radius-sm); margin-bottom: 10px; border-left: 3px solid var(--highlight-purple); }
+.pronunciation-item strong { font-size: 13px; color: var(--purple-deep); display: block; margin-bottom: 4px; }
+.pronunciation-item span { font-size: 13px; color: var(--text-secondary); }
+
+/* Speaking Scenarios */
+.scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+.scenario-card { border-radius: var(--radius-md); padding: 20px; border: 2px solid; font-size: 13px; }
+.scenario-card.casual { background: rgba(209, 250, 229, 0.3); border-color: var(--green); }
+.scenario-card.professional { background: rgba(219, 234, 254, 0.3); border-color: var(--blue); }
+.scenario-card.mixed { background: rgba(243, 232, 255, 0.3); border-color: var(--purple); }
+.scenario-card.challenge { background: rgba(255, 237, 213, 0.3); border-color: var(--orange); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.casual .scenario-badge { background: var(--green); }
+.scenario-card.professional .scenario-badge { background: var(--blue); }
+.scenario-card.mixed .scenario-badge { background: var(--purple); }
+.scenario-card.challenge .scenario-badge { background: var(--orange); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.pushback-step { margin-bottom: 12px; padding: 12px; border-radius: var(--radius-sm); font-size: 13px; }
+.pushback-step.r1 { background: rgba(59, 130, 246, 0.05); border-left: 3px solid var(--highlight-blue); }
+.pushback-step.pb { background: rgba(245, 101, 101, 0.05); border-left: 3px solid #F56565; }
+.pushback-step.r2 { background: rgba(16, 185, 129, 0.05); border-left: 3px solid var(--highlight-green); }
+.pushback-step.alt { background: rgba(249, 115, 22, 0.05); border-left: 3px solid var(--highlight-orange); }
+.pushback-step.mistake { background: rgba(220, 38, 38, 0.05); border-left: 3px solid #DC2626; }
+.pushback-step strong { display: block; margin-bottom: 4px; font-size: 11px; text-transform: uppercase; }
+.pushback-step.r1 strong { color: var(--blue-deep); }
+.pushback-step.pb strong { color: #C53030; }
+.pushback-step.r2 strong { color: var(--green-deep); }
+.pushback-step.alt strong { color: var(--orange-deep); }
+.pushback-step.mistake strong { color: #991B1B; }
+
+/* Tasks & Mastery */
+.task-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 16px; position: relative; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); border-left: 4px solid; }
+.task-card.easy { border-left-color: #10B981; }
+.task-card.standard { border-left-color: var(--primary); }
+.task-card.challenge { border-left-color: #EF4444; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: #D1FAE5; color: #065F46; }
+.task-card.standard .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.challenge .task-level { background: #FEE2E2; color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(209, 250, 229, 0.3); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(209, 250, 229, 0.3); border-radius: var(--radius-sm); }
+.mastery-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; border: 2px solid var(--primary); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.mastery-card h2 { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+.mastery-item { display: flex; align-items: flex-start; gap: 12px; padding: 14px; background: rgba(209, 250, 229, 0.2); border-radius: var(--radius-sm); margin-bottom: 10px; }
+.mastery-item input[type="checkbox"] { width: 20px; height: 20px; border: 2px solid var(--primary); border-radius: 4px; cursor: pointer; accent-color: var(--primary); flex-shrink: 0; margin-top: 2px; }
+.mastery-item label { font-size: 14px; color: var(--text-secondary); cursor: pointer; line-height: 1.5; }
+.continuity-box { background: rgba(6, 95, 70, 0.08); padding: 16px; border-radius: var(--radius-sm); margin-top: 16px; border-left: 3px solid var(--primary); }
+.continuity-box strong { color: var(--primary-deep); display: block; margin-bottom: 6px; }
+
+/* Flashcards & Quiz */
+.flashcard-container { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; text-align: center; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.flashcard { background: linear-gradient(135deg, rgba(209, 250, 229, 0.5), rgba(167, 243, 208, 0.3)); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(6, 95, 70, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.8); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.flashcard-tip strong { color: var(--primary-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.9); border: 1px solid rgba(6, 95, 70, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.quiz-question { background: rgba(248, 250, 252, 0.8); border-radius: var(--radius-md); padding: 18px; margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.9); border: 2px solid rgba(209, 250, 229, 0.5); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(209, 250, 229, 0.2); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(6, 95, 70, 0.3); }
+
+/* Navigation & Footer */
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.06); position: relative; overflow: hidden; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-bright)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(6, 95, 70, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(6, 95, 70, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(6, 95, 70, 0.5); }
+.complete-btn i { font-size: 1.2rem; }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); padding: 32px 0 24px; text-align: center; margin-top: 48px; border-top: 1px solid rgba(0, 0, 0, 0.08); }
+.footer-fox { font-size: 2rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+
+@media (max-width: 768px) {
+.day-title { font-size: 1.8rem; }
+.day-tabs-container { top: 52px; }
+.day-navigation { grid-template-columns: 1fr; }
+.tradeoff-grid { grid-template-columns: 1fr; }
+.sentence-function-grid { grid-template-columns: 1fr; }
+.before-after-grid { grid-template-columns: 1fr; }
+.listening-strategy-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-08.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i><span>Week 8 Hub</span></a>
+<div class="day-indicator">Day 54 / 56<div class="progress-bar"><div class="progress-fill"></div></div></div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-08.html" class="day-tab">Overview</a>
+<a href="week-08-day-50.html" class="day-tab">Day 50</a>
+<a href="week-08-day-51.html" class="day-tab">Day 51</a>
+<a href="week-08-day-52.html" class="day-tab">Day 52</a>
+<a href="week-08-day-53.html" class="day-tab">Day 53</a>
+<a href="week-08-day-54.html" class="day-tab active">Day 54</a>
+<a href="week-08-day-55.html" class="day-tab">Day 55</a>
+<a href="week-08-day-56.html" class="day-tab">Day 56</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb"><a href="index.html">Home</a> › <a href="week-08.html">Week 8</a> › Day 54</div>
+<div class="day-title-row"><span class="day-icon-inline">⚖️</span><h1 class="day-title">Difficult Decisions</h1></div>
+<p class="day-subtitle">Day 50-53 taught you the competencies. Today, you learn <strong>how to integrate them into a decision sequence</strong> that works in real executive situations. <strong>B2 managers fear difficult decisions. C1 executives have a framework for them.</strong></p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-scales"></i> Decision Sequence</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-lightning"></i> Integration Framework</div>
+<div class="meta-tag"><i class="ph-duotone ph-trophy"></i> Day 5 of 7</div>
+</div>
+</div>
+</header>
+
+<div class="content-area">
+<div class="container">
+
+<div class="c1-insight">
+<div class="label">💡 C1 Insight</div>
+<div class="insight">
+<strong>B2 Manager:</strong> Avoids difficult decisions (paralysis) OR makes them impulsively (reactionary). No clear sequence.<br><br>
+<strong>C1 Executive:</strong> Has a framework for difficult decisions. Knows when to decide, when to delay, and the sequence to execute with care.<br><br>
+<em>"B2 managers fear difficult decisions. C1 executives have a framework for them. The difference isn't courage — it's process."</em>
+</div>
+</div>
+
+<section class="section">
+<div class="philosophy-section">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i>Today's Philosophy</h2>
+<div class="philosophy-box">
+<div class="philosophy-title"><i class="ph-duotone ph-brain"></i>Difficult Decisions = Process + Integration</div>
+<p>
+<strong>"Difficult decisions aren't about having all the answers. It's about having a process that gives you enough confidence to act while acknowledging what you don't know."</strong>
+<br><br>
+Every difficult decision requires you to make five decisions simultaneously:
+<br>• <strong>Timing Decision:</strong> Should I decide now or delay?
+<br>• <strong>Authority Decision:</strong> Should I decide alone or consult?
+<br>• <strong>Transparency Decision:</strong> How much should I share about my reasoning?
+<br>• <strong>Communication Decision:</strong> How do I announce this decision?
+<br>• <strong>Follow-up Decision:</strong> How do I ensure execution and learning?
+<br><br>
+<span style="color: var(--primary); font-weight: 600;">Important:</span> Day 50-53 taught you the competencies. Day 54 teaches you <strong>how to integrate them into a decision sequence</strong> that works in real executive situations.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="philosophy-section">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i>Today's Plan (90 min)</h2>
+<div class="plan-grid">
+<div class="plan-card"><div class="plan-icon">🧠</div><div class="plan-title">Decision Sequence</div><div class="plan-time">5 min</div><div class="plan-desc">Assess → Decide → Communicate → Follow-up</div></div>
+<div class="plan-card"><div class="plan-icon">👁️</div><div class="plan-title">5 Lenses</div><div class="plan-time">25 min</div><div class="plan-desc">Decision Areas</div></div>
+<div class="plan-card"><div class="plan-icon">🔄</div><div class="plan-title">Integration</div><div class="plan-time">10 min</div><div class="plan-desc">Presence + Negotiation + Leadership</div></div>
+<div class="plan-card"><div class="plan-icon">⚠️</div><div class="plan-title">Mistakes</div><div class="plan-time">3 min</div><div class="plan-desc">Common traps</div></div>
+<div class="plan-card"><div class="plan-icon">🔍</div><div class="plan-title">Decoder</div><div class="plan-time">10 min</div><div class="plan-desc">8 Situations</div></div>
+<div class="plan-card"><div class="plan-icon"></div><div class="plan-title">Reading</div><div class="plan-time">18 min</div><div class="plan-desc">2 Cases + Executive Breakdown</div></div>
+<div class="plan-card"><div class="plan-icon"></div><div class="plan-title">Dialogues</div><div class="plan-time">15 min</div><div class="plan-desc">2 Long Scenarios</div></div>
+<div class="plan-card"><div class="plan-icon">🎧</div><div class="plan-title">Listening</div><div class="plan-time">12 min</div><div class="plan-desc">Deep Dive (8 steps)</div></div>
+<div class="plan-card"><div class="plan-icon">🗣️</div><div class="plan-title">Speaking</div><div class="plan-time">10 min</div><div class="plan-desc">Pushback Rounds</div></div>
+<div class="plan-card"><div class="plan-icon">🎴</div><div class="plan-title">Review</div><div class="plan-time">7 min</div><div class="plan-desc">Grammar + Quiz</div></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i>The Decision Sequence</h2>
+<p class="section-desc">The 4-step executive decision process that integrates all competencies.</p>
+</div>
+<div class="loop-card">
+<div class="loop-step"><div class="loop-number">1</div><div class="loop-content"><h4>ASSESS (Gather information)</h4><p>What do we know? What don't we know? What are the options and trade-offs? <strong>(Ground in reality)</strong></p></div></div>
+<div class="loop-step"><div class="loop-number">2</div><div class="loop-content"><h4>DECIDE (Make the choice)</h4><p>Which option aligns with our values and goals? What am I willing to sacrifice? <strong>(Strategic choice)</strong></p></div></div>
+<div class="loop-step"><div class="loop-number">3</div><div class="loop-content"><h4>COMMUNICATE (Announce with care)</h4><p>How do I frame this? What reasoning should I share? How do I handle pushback? <strong>(The dual mandate)</strong></p></div></div>
+<div class="loop-step"><div class="loop-number">4</div><div class="loop-content"><h4>FOLLOW-UP (Ensure execution)</h4><p>How do I ensure implementation? What metrics tell us if it's working? What did we learn? <strong>(Action)</strong></p></div></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i>5 Decision Lenses</h2>
+<p class="section-desc">Every difficult decision requires five decisions. These are your 5 lenses: <strong>Timing, Authority, Transparency, Communication, and Follow-up</strong>.</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-header">
+<div class="lens-number">1</div>
+<div class="lens-content">
+<div class="lens-title">Timing (Decide Now vs Delay)</div>
+<div class="lens-question">"Should I make this decision now, or do I need more information?"</div>
+<div class="lens-meta"><span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span><span class="lens-context">The Timing Decision</span><button class="audio-btn-small" onclick="playAudio('Should I make this decision now, or do I need more information?')"><i class="ph-duotone ph-speaker-high"></i></button></div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-magnifying-glass"></i> Decision Cue</h4>
+<ul><li>High stakes + low information → Delay (gather more data).</li><li>High stakes + enough information → Decide now.</li><li>Low stakes → Decide quickly (don't overthink).</li></ul>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-house"></i> Life Example</h4><p>Buying a house. <strong>Decision:</strong> If you've done research and found the right one, decide now. If you're still exploring, delay.</p></div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4><p>Launching a new product. <strong>Decision:</strong> If market research is solid, launch. If there are major unknowns, delay.</p></div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression</h4>
+<div class="register-row"><div><span class="register-tag casual">🏠 Casual</span></div><div class="register-phrase">"Let me think about it" / "I need to decide now"</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"I need more data before committing."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"I need more data before committing" / "We have enough information to proceed."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"Further due diligence is required before finalizing this decision."</div></div>
+</div>
+<div class="tradeoff-grid">
+<div class="tradeoff-box gain"><strong>Gain (Decide now)</strong>Momentum, clarity, confidence.</div>
+<div class="tradeoff-box lose"><strong>Lose (Decide now)</strong>May miss critical information.</div>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4><p>Waiting for perfect information (paralysis) OR deciding too quickly (impulsive).</p></div>
+<div class="reflection-box"><strong>Reflection:</strong> Am I delaying because I need more data, or because I'm afraid to decide?</div>
+</div>
+
+<div class="lens-card">
+<div class="lens-header">
+<div class="lens-number">2</div>
+<div class="lens-content">
+<div class="lens-title">Authority (Decide Alone vs Consult)</div>
+<div class="lens-question">"Should I make this decision alone, or do I need input?"</div>
+<div class="lens-meta"><span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span><span class="lens-context">The Authority Decision</span><button class="audio-btn-small" onclick="playAudio('Should I make this decision alone, or do I need input?')"><i class="ph-duotone ph-speaker-high"></i></button></div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-magnifying-glass"></i> Decision Cue</h4>
+<ul><li>Time pressure + clear expertise → Decide alone.</li><li>Complex problem + diverse perspectives → Consult.</li><li>High impact on others → Consult (for buy-in, not permission).</li></ul>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-house"></i> Life Example</h4><p>Planning a family vacation. <strong>Decision:</strong> If you know what everyone wants, decide alone. If preferences conflict, consult.</p></div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4><p>Hiring a new team member. <strong>Decision:</strong> If you have clear criteria, decide alone. If team dynamics matter, consult the team.</p></div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression</h4>
+<div class="register-row"><div><span class="register-tag casual"> Casual</span></div><div class="register-phrase">"I'll decide" / "Let me ask everyone"</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"I want to gather input before deciding."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"I'll make the final call" / "I want to gather input before deciding."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"I will solicit stakeholder feedback prior to rendering a final decision."</div></div>
+</div>
+<div class="tradeoff-grid">
+<div class="tradeoff-box gain"><strong>Gain (Decide alone)</strong>Speed, clarity, ownership.</div>
+<div class="tradeoff-box lose"><strong>Lose (Decide alone)</strong>May miss perspectives, lower buy-in.</div>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4><p>Consulting when you should decide (abdication) OR deciding alone when you should consult (autocracy).</p></div>
+<div class="reflection-box"><strong>Reflection:</strong> Am I consulting to get better input, or to avoid taking responsibility?</div>
+</div>
+
+<div class="lens-card">
+<div class="lens-header">
+<div class="lens-number">3</div>
+<div class="lens-content">
+<div class="lens-title">Transparency (Share Reasoning vs Keep Private)</div>
+<div class="lens-question">"How much of my reasoning should I share with others?"</div>
+<div class="lens-meta"><span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span><span class="lens-context">The Transparency Decision</span><button class="audio-btn-small" onclick="playAudio('How much of my reasoning should I share with others?')"><i class="ph-duotone ph-speaker-high"></i></button></div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-magnifying-glass"></i> Decision Cue</h4>
+<ul><li>High trust + complex decision → Share reasoning (builds understanding).</li><li>Low trust + sensitive decision → Share limited reasoning (protects privacy).</li><li>Medium trust → Share key reasoning, not all details.</li></ul>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-house"></i> Life Example</h4><p>Telling kids about a family move. <strong>Decision:</strong> Share the main reasons (job opportunity), not all the financial stress.</p></div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4><p>Announcing a layoff. <strong>Decision:</strong> Share the strategic reasoning (market conditions), not all the board discussions.</p></div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression</h4>
+<div class="register-row"><div><span class="register-tag casual">🏠 Casual</span></div><div class="register-phrase">"Here's why I decided" / "It's complicated"</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"Here's the strategic reasoning behind this."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"Here's the strategic reasoning" / "There are factors I can't share."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"While I can share the strategic rationale, certain deliberations must remain confidential."</div></div>
+</div>
+<div class="tradeoff-grid">
+<div class="tradeoff-box gain"><strong>Gain (Share reasoning)</strong>Builds trust, understanding, buy-in.</div>
+<div class="tradeoff-box lose"><strong>Lose (Share reasoning)</strong>May create debate, vulnerability.</div>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4><p>Over-sharing (creates debate) OR under-sharing (creates suspicion).</p></div>
+<div class="reflection-box"><strong>Reflection:</strong> Am I sharing this to build trust, or to justify myself?</div>
+</div>
+
+<div class="lens-card">
+<div class="lens-header">
+<div class="lens-number">4</div>
+<div class="lens-content">
+<div class="lens-title">Communication (Announce with Care)</div>
+<div class="lens-question">"How do I announce this decision to minimize resistance and maximize understanding?"</div>
+<div class="lens-meta"><span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span><span class="lens-context">The Communication Decision</span><button class="audio-btn-small" onclick="playAudio('How do I announce this decision to minimize resistance?')"><i class="ph-duotone ph-speaker-high"></i></button></div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-magnifying-glass"></i> Decision Cue</h4>
+<ul><li>High impact + high resistance → Announce with Presence (calm, clear, empathetic).</li><li>Medium impact → Announce with Negotiation (explain trade-offs, invite questions).</li><li>Low impact → Announce with Leadership (direct, confident).</li></ul>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-house"></i> Life Example</h4><p>Telling family about budget cuts. <strong>Decision:</strong> Announce with empathy, explain the reasoning, invite questions.</p></div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4><p>Announcing a strategy pivot. <strong>Decision:</strong> Announce with Presence (calm authority), explain trade-offs, invite questions.</p></div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression</h4>
+<div class="register-row"><div><span class="register-tag casual"> Casual</span></div><div class="register-phrase">"Here's what we're doing" / "Let me explain why"</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"I want to address your concerns about this decision."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"Here's the decision and the reasoning" / "I want to address your concerns."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"I am announcing this decision with full transparency regarding our strategic rationale."</div></div>
+</div>
+<div class="tradeoff-grid">
+<div class="tradeoff-box gain"><strong>Gain (Announce with care)</strong>Builds trust, reduces resistance.</div>
+<div class="tradeoff-box lose"><strong>Lose (Announce with care)</strong>Takes more time, emotional energy.</div>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4><p>Announcing coldly (creates resistance) OR over-explaining (creates debate).</p></div>
+<div class="reflection-box"><strong>Reflection:</strong> Am I announcing this to inform them, or to defend myself?</div>
+</div>
+
+<div class="lens-card">
+<div class="lens-header">
+<div class="lens-number">5</div>
+<div class="lens-content">
+<div class="lens-title">Follow-up (Ensure Execution & Learning)</div>
+<div class="lens-question">"How do I ensure this decision is implemented and what did we learn?"</div>
+<div class="lens-meta"><span class="lens-rating">⭐⭐⭐⭐ High</span><span class="lens-context">The Follow-up Decision</span><button class="audio-btn-small" onclick="playAudio('How do I ensure this decision is implemented?')"><i class="ph-duotone ph-speaker-high"></i></button></div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-magnifying-glass"></i> Decision Cue</h4>
+<ul><li>Complex decision → Set metrics, check-ins, feedback loops.</li><li>Simple decision → Monitor informally, learn from results.</li><li>High-stakes decision → Create accountability, celebrate wins, learn from failures.</li></ul>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-house"></i> Life Example</h4><p>Implementing a new family routine. <strong>Decision:</strong> Check in after 2 weeks, adjust if needed, celebrate what works.</p></div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4><p>Launching a new process. <strong>Decision:</strong> Set KPIs, weekly check-ins, retrospective after 3 months.</p></div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression</h4>
+<div class="register-row"><div><span class="register-tag casual"> Casual</span></div><div class="register-phrase">"Let's see how it goes" / "We'll adjust if needed"</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"We'll review this in 30 days."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"Here are the metrics we'll track" / "We'll review in 30 days."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"We will establish KPIs and conduct a formal retrospective in Q3."</div></div>
+</div>
+<div class="tradeoff-grid">
+<div class="tradeoff-box gain"><strong>Gain (Follow-up)</strong>Ensures execution, creates learning.</div>
+<div class="tradeoff-box lose"><strong>Lose (Follow-up)</strong>Takes time, may feel micromanaging.</div>
+</div>
+<div class="lens-subsection"><h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4><p>No follow-up (decision fails) OR over-follow-up (micromanagement).</p></div>
+<div class="reflection-box"><strong>Reflection:</strong> Am I following up to ensure success, or because I don't trust them to execute?</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i>Integration Framework: Presence + Negotiation + Leadership in Decisions</h2>
+<p class="section-desc">How to apply the 3 competencies to difficult decisions.</p>
+</div>
+<div class="integration-card">
+<div class="integration-step">
+<h4><i class="ph-duotone ph-shield-check" style="--ph-color: var(--highlight-blue);"></i> PRESENCE (During Assessment & Communication)</h4>
+<p><strong>Assessment:</strong> Stay calm, gather information without panic.<br>
+<strong>Communication:</strong> Announce with calm authority, acknowledge emotions.<br>
+<strong>Language:</strong> "I understand this is difficult. Here's what we know..."</p>
+</div>
+<div class="integration-step">
+<h4><i class="ph-duotone ph-handshake" style="--ph-color: var(--highlight-purple);"></i> NEGOTIATION (During Decision & Follow-up)</h4>
+<p><strong>Decision:</strong> Weigh trade-offs, find win-win where possible.<br>
+<strong>Follow-up:</strong> Address concerns, adjust if needed.<br>
+<strong>Language:</strong> "Here are the trade-offs. What would work for everyone?"</p>
+</div>
+<div class="integration-step">
+<h4><i class="ph-duotone ph-crown" style="--ph-color: var(--highlight-green);"></i> LEADERSHIP (During Communication & Follow-up)</h4>
+<p><strong>Communication:</strong> Provide direction, inspire confidence.<br>
+<strong>Follow-up:</strong> Ensure execution, celebrate wins, learn from failures.<br>
+<strong>Language:</strong> "Here's the path forward. I believe in this decision."</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning-circle"></i>3 Common Mistakes</h2>
+<p class="section-desc">Traps that destroy difficult decision-making.</p>
+</div>
+<div class="mistakes-grid">
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 1: Analysis Paralysis</h4>
+<div class="mistake-wrong">❌ Waiting for perfect information before deciding.</div>
+<div class="mistake-right">✅ Making the best decision with available information, being transparent about uncertainty.</div>
+<div class="mistake-why">Why: In uncertainty, a good decision now is better than a perfect decision too late.</div>
+</div>
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 2: Autocratic Decision-Making</h4>
+<div class="mistake-wrong">❌ Deciding alone without consulting those affected.</div>
+<div class="mistake-right">✅ Deciding with input from key stakeholders, even if you make the final call.</div>
+<div class="mistake-why">Why: Decisions made without input face resistance. Decisions made with input face collaboration.</div>
+</div>
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 3: Cold Announcement</h4>
+<div class="mistake-wrong">❌ Announcing decisions without empathy or reasoning.</div>
+<div class="mistake-right">✅ Announcing with Presence (calm, clear, empathetic), explaining reasoning, inviting questions.</div>
+<div class="mistake-why">Why: Cold announcements create resistance. Warm announcements create understanding.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i>The Difficult Decisions Decoder (8 Situations)</h2>
+<p class="section-desc">Situation → 3 Choices → Executive Choice → Trade-off → When B is better.</p>
+</div>
+<div class="decoder-card">
+<h3>🔍 The Decision Decoder</h3>
+<div class="table-container">
+<table class="decoder-table">
+<thead><tr><th>Situation</th><th>Option A (B2 Default)</th><th>Option B (Safe)</th><th>Option C (Executive)</th><th>Trade-off of C</th><th>When B is better?</th></tr></thead>
+<tbody>
+<tr><td><strong>1. Business: Should we acquire a competitor?</strong></td><td>Decide immediately (FOMO).</td><td>Delay indefinitely (fear).</td><td>Assess for 30 days, consult key stakeholders, decide with clear criteria.</td><td>Takes time, may lose opportunity.</td><td>When market is moving fast.</td></tr>
+<tr><td><strong>2. Business: Should we lay off 10% of staff?</strong></td><td>Avoid the decision (hope).</td><td>Lay off immediately (panic).</td><td>Assess options (furlough, pay cuts, layoffs), consult HR/legal, communicate with empathy.</td><td>Emotionally difficult, takes time.</td><td>When cash flow is critical.</td></tr>
+<tr><td><strong>3. Business: Should we pivot our strategy?</strong></td><td>Stick to current strategy (sunk cost).</td><td>Pivot immediately (reactionary).</td><td>Assess market data, consult team, pilot new strategy, decide based on results.</td><td>Takes time, may miss window.</td><td>When market is collapsing.</td></tr>
+<tr><td><strong>4. Life: Should we have another child?</strong></td><td>Decide based on emotion.</td><td>Delay indefinitely (fear).</td><td>Assess financial/emotional readiness, consult partner deeply, decide with clear values.</td><td>Emotionally complex, takes time.</td><td>When biological clock is urgent.</td></tr>
+<tr><td><strong>5. Life: Should we move to another city?</strong></td><td>Decide based on one factor (job).</td><td>Stay put (comfort).</td><td>Assess all factors (job, schools, cost of living, relationships), visit city, decide together.</td><td>Takes time, creates uncertainty.</td><td>When current situation is unbearable.</td></tr>
+<tr><td><strong>6. Life: Should I change careers?</strong></td><td>Stay in current career (safety).</td><td>Quit immediately (impulsive).</td><td>Assess skills/market, consult mentors, build transition plan, decide with timeline.</td><td>Takes time, creates uncertainty.</td><td>When current job is toxic.</td></tr>
+<tr><td><strong>7. Business: Should we invest in new technology?</strong></td><td>Invest immediately (hype).</td><td>Don't invest (fear).</td><td>Assess ROI, pilot with small team, decide based on results.</td><td>Takes time, may miss trend.</td><td>When technology is proven.</td></tr>
+<tr><td><strong>8. Life: Should I end this relationship?</strong></td><td>Stay (fear of being alone).</td><td>Leave immediately (impulsive).</td><td>Assess compatibility/values, consult therapist, decide with clear criteria.</td><td>Emotionally difficult, takes time.</td><td>When relationship is abusive.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-envelope-simple"></i>Reading Box (2 Deep Cases + Executive Breakdown)</h2>
+<p class="section-desc">Analyze the trade-offs in complex Business and Life situations. Then dive deep into executive thinking.</p>
+</div>
+
+<div class="reading-card">
+<h3>📧 Case 1: Business - The Layoff Decision</h3>
+<div class="scenario-box">
+<strong>Context:</strong> Your company is losing money. You need to cut costs by 20%. Options: lay off 10% of staff, cut everyone's pay by 20%, or furlough everyone for 2 months. You need to decide and communicate.
+<br><br>
+<strong>Your Decision Sequence:</strong>
+1. <strong>Assess:</strong> Analyze financial data, understand impact of each option on morale/productivity.
+2. <strong>Decide:</strong> Choose furlough (preserves jobs, shares burden equally).
+3. <strong>Communicate:</strong> Announce with Presence (calm, empathetic), explain reasoning, invite questions.
+4. <strong>Follow-up:</strong> Set check-ins, monitor morale, adjust if needed.
+<br><br>
+<strong>Integration Framework:</strong>
+- <strong>Presence:</strong> "I understand this is difficult news. Here's what we know about our financial situation..."
+- <strong>Negotiation:</strong> "Here are the trade-offs of each option. Furlough preserves jobs while sharing the burden..."
+- <strong>Leadership:</strong> "Here's the path forward. I believe this gives us the best chance to recover together."
+</div>
+
+<div class="executive-breakdown">
+<h4>🎯 EXECUTIVE BREAKDOWN (Deep Analysis)</h4>
+<div class="breakdown-grid">
+<div class="breakdown-item">
+<div class="sentence">"I understand this is difficult news."</div>
+<div class="analysis">
+<strong>🎯 Communication Goal:</strong> Acknowledge emotion.
+<strong>🧠 Hidden Message:</strong> "I'm not here to pretend this is easy. I see your pain."
+<strong>⚖️ Trade-off:</strong> Takes 5 seconds, but prevents 30 minutes of defensiveness.
+<strong> Better Alternative?</strong> "Here's what we're doing." (Faster, but creates immediate resistance).
+<strong>⭐ Why This Wins:</strong> Validates emotion before action. Shows empathy.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="sentence">"Here's what we know about our financial situation."</div>
+<div class="analysis">
+<strong>🎯 Communication Goal:</strong> Provide transparency.
+<strong>🧠 Hidden Message:</strong> "I'm not hiding anything. Here are the facts."
+<strong>⚖️ Trade-off:</strong> May create anxiety, but builds trust.
+<strong> Better Alternative?</strong> "We need to cut costs." (Faster, but creates suspicion).
+<strong>⭐ Why This Wins:</strong> Transparency builds trust. Facts reduce speculation.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="sentence">"Here are the trade-offs of each option."</div>
+<div class="analysis">
+<strong>🎯 Communication Goal:</strong> Show complexity.
+<strong>🧠 Hidden Message:</strong> "This isn't easy. I've thought through all the options."
+<strong>⚖️ Trade-off:</strong> May create debate, but shows thoroughness.
+<strong>🔄 Better Alternative?</strong> "We chose furlough." (Faster, but creates resistance).
+<strong>⭐ Why This Wins:</strong> Shows you've done the work. Invites understanding.
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="reading-card">
+<h3> Case 2: Life - The Career Change Decision</h3>
+<div class="scenario-box">
+<strong>Context:</strong> You're unhappy in your current job but have a mortgage and family. You're considering a career change but it's risky. You need to decide and communicate to your family.
+<br><br>
+<strong>Your Decision Sequence:</strong>
+1. <strong>Assess:</strong> Analyze skills/market, understand financial impact, consult mentors.
+2. <strong>Decide:</strong> Choose to start transition (build skills on side, then switch in 6 months).
+3. <strong>Communicate:</strong> Announce with Presence (calm, clear), explain reasoning, invite questions.
+4. <strong>Follow-up:</strong> Set milestones, check in with family, adjust if needed.
+<br><br>
+<strong>Integration Framework:</strong>
+- <strong>Presence:</strong> "I need to talk to you about something important. I've been thinking about my career."
+- <strong>Negotiation:</strong> "Here's my plan: I'll build new skills on the side for 6 months, then switch. This minimizes financial risk."
+- <strong>Leadership:</strong> "I believe this is the right decision for our family's long-term happiness."
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pencil-simple"></i>Micro Writing: Normal → Executive + Sentence Function</h2>
+<p class="section-desc">Transform everyday communication into executive-level communication. Understand the function of each sentence.</p>
+</div>
+<div class="micro-writing-card">
+<h3>✍️ Normal → Executive Rewrite</h3>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Normal (Business - Layoff): "We need to cut costs. We're laying off 10% of staff."</div>
+<div class="sentence-function-grid">
+<div class="sentence-function"><div class="sentence">"I understand this is difficult news."</div><div class="function">→ Function: Acknowledge emotion</div></div>
+<div class="sentence-function"><div class="sentence">"Here's what we know about our financial situation."</div><div class="function">→ Function: Provide transparency</div></div>
+<div class="sentence-function"><div class="sentence">"We've assessed three options..."</div><div class="function">→ Function: Show complexity</div></div>
+<div class="sentence-function"><div class="sentence">"We've chosen furlough because..."</div><div class="function">→ Function: Explain reasoning</div></div>
+</div>
+</div>
+<div class="rewrite-item">
+<div class="rewrite-task">📝 Before / After Analysis</div>
+<div class="before-after-grid">
+<div class="before-after normal"><div class="label">Normal</div><div class="text">"We have some problems."</div><div class="explanation">Emotion, vague</div></div>
+<div class="before-after executive"><div class="label">Executive</div><div class="text">"Here's where we are today."</div><div class="explanation">Facts, grounding</div></div>
+</div>
+<div class="before-after-grid" style="margin-top: 12px;">
+<div class="before-after normal"><div class="label">Normal</div><div class="text">"We might fail."</div><div class="explanation">Exaggeration, panic</div></div>
+<div class="before-after executive"><div class="label">Executive</div><div class="text">"We are facing significant risks."</div><div class="explanation">Measured, realistic</div></div>
+</div>
+<div class="reflection-box" style="margin-top: 12px;"><strong>Executive doesn't exaggerate. Executive doesn't hide.</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i>Executive Vocabulary Box (Executive Lexicon)</h2>
+<p class="section-desc">Words that carry executive weight during difficult decisions. Use them to assess, consult, and decide.</p>
+</div>
+<div class="vocab-card">
+<h3>📝 The Executive Lexicon</h3>
+<div class="vocab-grid">
+<div class="vocab-item"><strong>assess</strong><span class="ipa">/əˈses/</span> <span class="pos">(verb)</span><div class="meaning">Đánh giá, phân tích</div><div class="example">"We need to assess all options before deciding."</div></div>
+<div class="vocab-item"><strong>consult</strong><span class="ipa">/kənˈsʌlt/</span> <span class="pos">(verb)</span><div class="meaning">Tham khảo ý kiến</div><div class="example">"I want to consult the team before making this decision."</div></div>
+<div class="vocab-item"><strong>trade-off</strong><span class="ipa">/ˈtreɪd ɒf/</span> <span class="pos">(noun)</span><div class="meaning">Sự đánh đổi</div><div class="example">"Every decision has trade-offs."</div></div>
+<div class="vocab-item"><strong>stakeholder</strong><span class="ipa">/ˈsteɪk.həʊl.dər/</span> <span class="pos">(noun)</span><div class="meaning">Bên liên quan</div><div class="example">"We need to consider all stakeholders."</div></div>
+<div class="vocab-item"><strong>accountability</strong><span class="ipa">/əˌkaʊn.təˈbɪl.ə.ti/</span> <span class="pos">(noun)</span><div class="meaning">Trách nhiệm giải trình</div><div class="example">"I take full accountability for this decision."</div></div>
+<div class="vocab-item"><strong>milestone</strong><span class="ipa">/ˈmaɪl.stəʊn/</span> <span class="pos">(noun)</span><div class="meaning">Cột mốc</div><div class="example">"Let's set milestones to track progress."</div></div>
+<div class="vocab-item"><strong>retrospective</strong><span class="ipa">/ret.rəˈspek.tv/</span> <span class="pos">(noun)</span><div class="meaning">Nhìn lại, đánh giá</div><div class="example">"We'll do a retrospective in 3 months."</div></div>
+<div class="vocab-item"><strong>pilot</strong><span class="ipa">/paɪ.lət/</span> <span class="pos">(verb/noun)</span><div class="meaning">Thử nghiệm</div><div class="example">"Let's pilot this with a small team first."</div></div>
+<div class="vocab-item"><strong>criteria</strong><span class="ipa">/kraɪˈtɪə.ri.ə/</span> <span class="pos">(noun)</span><div class="meaning">Tiêu chí</div><div class="example">"What are the criteria for this decision?"</div></div>
+<div class="vocab-item"><strong>contingency</strong><span class="ipa">/kəntɪn.dʒən.si/</span> <span class="pos">(noun)</span><div class="meaning">Kế hoạch dự phòng</div><div class="example">"We need a contingency plan if this doesn't work."</div></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats-circle"></i>Integrated Dialogues (Long Format - 14+ turns)</h2>
+<p class="section-desc">See how executives make strategic communication decisions in real life. Notice the resistance and the recalibration.</p>
+</div>
+
+<div class="story-card">
+<h3>💼 Dialogue 1: The Layoff Decision (Business)</h3>
+<div class="story-context">Context: CEO needs to announce furlough decision to the company.</div>
+<div class="story-audio-controls">
+<button class="story-audio-btn story-play-btn" onclick="playDialogue('d1')"><i class="ph-duotone ph-speaker-high"></i> Nghe</button>
+<button class="story-audio-btn story-stop-btn" onclick="stopSpeaking()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="story-dialogue" id="d1-dialogue">
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"Thank you all for joining. I understand this is difficult news." <span class="move-highlight presence">Presence</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee 1:</div><div class="dialogue-text">"What's happening?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"Here's what we know about our financial situation. We've been losing money for 6 months. We need to cut costs by 20% to survive." <span class="move-highlight negotiation">Negotiation</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee 2:</div><div class="dialogue-text">"Are you laying people off?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"We've assessed three options: layoffs, pay cuts, and furlough. Each has trade-offs." <span class="move-highlight leadership">Leadership</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee 1:</div><div class="dialogue-text">"What did you choose?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"We've chosen furlough because it preserves jobs while sharing the burden equally. Everyone will take 2 months unpaid, starting next month." <span class="move-highlight leadership">Leadership</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee 2:</div><div class="dialogue-text">"That's not fair! Some of us can't afford that!"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"I hear you. This is incredibly difficult. Here's what we're doing to help: we're setting up a hardship fund, and we're working with banks to defer mortgage payments." <span class="move-highlight presence">Presence</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee 1:</div><div class="dialogue-text">"What if this doesn't work?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"That's a fair question. Here's our contingency plan: if we don't recover in 6 months, we'll reassess. But I believe this gives us the best chance to survive together." <span class="move-highlight leadership">Leadership</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee 2:</div><div class="dialogue-text">"How will we know if it's working?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"Here are the metrics we'll track: revenue, cash flow, and customer retention. We'll update you monthly." <span class="move-highlight negotiation">Negotiation</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee 1:</div><div class="dialogue-text">"Can we ask questions?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">CEO:</div><div class="dialogue-text">"Absolutely. I want to hear your concerns. What's on your mind?" <span class="move-highlight presence">Presence</span></div></div>
+</div>
+<div class="decision-point">
+<strong>Decision Point Analysis</strong>
+<p><strong>Decision:</strong> Combined Presence (acknowledge emotion) + Negotiation (explain trade-offs) + Leadership (provide direction).</p>
+<p><strong>Alternative Decision:</strong> Announce coldly: "We're cutting costs. Period." (Risk: Creates immediate resistance and panic).</p>
+<p><strong>Why this decision?</strong> Presence reduces panic. Negotiation builds understanding. Leadership provides confidence.</p>
+<p><strong>Resistance handled:</strong> Employee 2 pushed back with "That's not fair!" Leader recalibrated by providing concrete support (hardship fund).</p>
+</div>
+</div>
+
+<div class="story-card">
+<h3>🏠 Dialogue 2: The Career Change Decision (Life)</h3>
+<div class="story-context">Context: You need to tell your spouse about your decision to change careers.</div>
+<div class="story-audio-controls">
+<button class="story-audio-btn story-play-btn" onclick="playDialogue('d2')"><i class="ph-duotone ph-speaker-high"></i> Nghe</button>
+<button class="story-audio-btn story-stop-btn" onclick="stopSpeaking()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="story-dialogue" id="d2-dialogue">
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"I need to talk to you about something important. I've been thinking about my career." <span class="move-highlight presence">Presence</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Spouse:</div><div class="dialogue-text">"What's going on?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"I'm unhappy in my current job. I've been assessing my options for 3 months." <span class="move-highlight negotiation">Negotiation</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Spouse:</div><div class="dialogue-text">"What are you thinking?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"I'm considering a career change. But I know this is risky with our mortgage and the kids." <span class="move-highlight negotiation">Negotiation</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Spouse:</div><div class="dialogue-text">"How risky are we talking?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"Here's my plan: I'll build new skills on the side for 6 months, then switch. This minimizes financial risk." <span class="move-highlight leadership">Leadership</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Spouse:</div><div class="dialogue-text">"What if it doesn't work?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"That's a fair concern. Here's my contingency plan: if I don't find a new job in 6 months, I'll stay in my current role. But I believe this gives us the best chance for long-term happiness." <span class="move-highlight negotiation">Negotiation</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Spouse:</div><div class="dialogue-text">"How will this affect our finances?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"Here's the financial impact: I'll keep my current salary for 6 months while building skills. Then there may be a temporary pay cut of 10-20%. But long-term, I expect to earn more." <span class="move-highlight negotiation">Negotiation</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Spouse:</div><div class="dialogue-text">"I'm scared."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"I hear you. This is scary for me too. But I believe this is the right decision for our family's long-term happiness." <span class="move-highlight presence">Presence</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Spouse:</div><div class="dialogue-text">"Can we talk about this more?"</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"Absolutely. I want to hear all your concerns. What's on your mind?" <span class="move-highlight presence">Presence</span></div></div>
+</div>
+<div class="decision-point">
+<strong>Decision Point Analysis</strong>
+<p><strong>Decision:</strong> Presence (set the stage) + Negotiation (explain trade-offs) + Leadership (provide direction).</p>
+<p><strong>Alternative Decision:</strong> "I'm quitting my job tomorrow." (Risk: Creates immediate panic and resistance).</p>
+<p><strong>Why this decision?</strong> Presence creates safety. Negotiation shows you've thought it through. Leadership provides confidence.</p>
+<p><strong>Resistance handled:</strong> Spouse said "I'm scared." Leader recalibrated by acknowledging the fear and reaffirming the long-term vision.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i>Listening Deep Dive (8 Steps)</h2>
+<p class="section-desc">Transform passive comprehension into active communication analysis.</p>
+</div>
+<div class="listening-deep-dive">
+<h3>🎧 Audio</h3>
+<p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;"><strong>Business Context:</strong> Listen to Dialogue 1 (The Layoff Decision)<br><strong>Life Context:</strong> Listen to Dialogue 2 (The Career Change Decision)</p>
+
+<div class="listening-section">
+<h4><i class="ph-duotone ph-file-text"></i>  Transcript</h4>
+<div class="transcript-box">
+<p><strong>Business Dialogue Key Phrases:</strong></p>
+<p>• <span class="key-phrase">"I understand this is difficult news."</span></p>
+<p>• <span class="key-phrase">"Here's what we know about our financial situation."</span></p>
+<p>• <span class="key-phrase">"We've assessed three options..."</span></p>
+<p>• <span class="key-phrase">"Here's our contingency plan..."</span></p>
+<p style="margin-top: 12px;"><strong>Life Dialogue Key Phrases:</strong></p>
+<p>• <span class="key-phrase">"I've been assessing my options for 3 months."</span></p>
+<p>• <span class="key-phrase">"Here's my plan..."</span></p>
+<p>• <span class="key-phrase">"Here's my contingency plan..."</span></p>
+<p>• <span class="key-phrase">"I believe this is the right decision..."</span></p>
+</div>
+</div>
+
+<div class="listening-section">
+<h4><i class="ph-duotone ph-magnifying-glass"></i> 🔍 Listening Deep Dive ⭐</h4>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"I understand this is difficult news."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "Here's what we're doing." (cold)
+<span class="arrow">↓</span> Not: "I'm sorry about this." (weak)
+<span class="arrow">↓</span> Strategic choice: <strong>Acknowledge emotion before action</strong>
+<span class="arrow">↓</span> Effect: Reduces defensiveness, creates psychological safety
+<span class="arrow">↓</span> Leadership signal: "I see your pain. I'm not here to pretend this is easy."
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"We've assessed three options..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "We chose furlough." (imposing)
+<span class="arrow">↓</span> Not: "We need to cut costs." (vague)
+<span class="arrow">↓</span> Strategic choice: <strong>Show complexity and thoroughness</strong>
+<span class="arrow">↓</span> Effect: Builds trust, invites understanding
+<span class="arrow">↓</span> Leadership signal: "I've done the work. This isn't a rash decision."
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Here's our contingency plan..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "I hope this works." (uncertain)
+<span class="arrow">↓</span> Not: "This will definitely work." (overconfident)
+<span class="arrow">↓</span> Strategic choice: <strong>Provide confidence with realism</strong>
+<span class="arrow">↓</span> Effect: Reduces anxiety, builds confidence
+<span class="arrow">↓</span> Leadership signal: "I've thought this through. We're prepared."
+</div>
+</div>
+</div>
+</div>
+
+<div class="listening-section">
+<h4><i class="ph-duotone ph-chat-text"></i> 💬 Executive Language Notes</h4>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"I understand this is difficult news."</div>
+<div class="note">• <strong>Sắc thái:</strong> Empathetic, calm</div>
+<div class="note">• <strong>Leadership framing:</strong> Establishes you as a leader who cares</div>
+<div class="note">• <strong>Alternative:</strong> "I know this is hard." (more casual)</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Here's what we know..."</div>
+<div class="note">• <strong>Sắc thái:</strong> Transparent, factual</div>
+<div class="note">• <strong>Leadership framing:</strong> Shows you're not hiding anything</div>
+<div class="note">• <strong>Alternative:</strong> "Let me explain..." (more formal)</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"I believe in this decision."</div>
+<div class="note">• <strong>Sắc thái:</strong> Confident, inspiring</div>
+<div class="note">• <strong>Leadership framing:</strong> Shows conviction without arrogance</div>
+<div class="note">• <strong>Alternative:</strong> "I'm confident this will work." (more assertive)</div>
+</div>
+</div>
+</div>
+
+<div class="listening-section">
+<h4><i class="ph-duotone ph-microphone-stage"></i>  Pronunciation Deep Dive</h4>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">"I understand this is difficult news."</div>
+<div class="detail">• <strong>Stress:</strong> "understand" and "difficult"</div>
+<div class="detail">• <strong>Pause:</strong> After "news" (let it sink in)</div>
+<div class="detail">• <strong>Pitch:</strong> Warm, empathetic (not flat)</div>
+<div class="detail">• <strong>Why:</strong> Shows you genuinely care about their feelings</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">"We've assessed three options..."</div>
+<div class="detail">• <strong>Stress:</strong> "assessed" and "three"</div>
+<div class="detail">• <strong>Pause:</strong> Before "options" (creates anticipation)</div>
+<div class="detail">• <strong>Pitch:</strong> Falling on "assessed" (grounding), rising on "three" (inviting)</div>
+<div class="detail">• <strong>Why:</strong> Signals this is a thoughtful decision</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">"I believe in this decision."</div>
+<div class="detail">• <strong>Stress:</strong> "believe" and "decision"</div>
+<div class="detail">• <strong>Pause:</strong> After "decision" (let it land)</div>
+<div class="detail">• <strong>Pitch:</strong> Falling (confident, grounded)</div>
+<div class="detail">• <strong>Why:</strong> Shows conviction without arrogance</div>
+</div>
+</div>
+</div>
+
+<div class="listening-section">
+<h4><i class="ph-duotone ph-brain"></i> 🧠 Executive Listening Strategy</h4>
+<div class="listening-strategy-grid">
+<div class="listening-strategy-box">
+<div class="pass"><strong>Lần 1: Nghe Emotion</strong></div>
+<div class="detail">• <strong>Focus:</strong> Tone, energy, emotional state</div>
+<div class="detail">• <strong>Question:</strong> "How is the leader handling the emotional weight?"</div>
+<div class="detail">• <strong>Signal:</strong> High empathy → Presence is strong</div>
+</div>
+<div class="listening-strategy-box">
+<div class="pass"><strong>Lần 2: Nghe Decision</strong></div>
+<div class="detail">• <strong>Focus:</strong> Key decisions, reasoning, trade-offs</div>
+<div class="detail">• <strong>Question:</strong> "What decision was made and why?"</div>
+<div class="detail">• <strong>Signal:</strong> Clear reasoning → Negotiation is strong</div>
+</div>
+<div class="listening-strategy-box">
+<div class="pass"><strong>Lần 3: Nghe Structure</strong></div>
+<div class="detail">• <strong>Focus:</strong> Framework, sequence, accountability</div>
+<div class="detail">• <strong>Question:</strong> "What's the process for implementation?"</div>
+<div class="detail">• <strong>Signal:</strong> Clear structure → Leadership is strong</div>
+</div>
+</div>
+</div>
+
+<div class="listening-section">
+<h4><i class="ph-duotone ph-user-sound"></i> 🗣️ Shadowing Challenge</h4>
+<div class="shadowing-box">
+<div class="instruction"><strong>Copy the leadership rhythm, not just the words:</strong></div>
+<div class="instruction">1. Listen to: "I understand this is difficult news. Here's what we know..."</div>
+<div class="instruction">2. Shadow: Match the warm, empathetic tone</div>
+<div class="instruction">3. Focus: Stress on "understand" and "know"</div>
+<div class="instruction">4. Practice: Say it 3 times, each time focusing on different emotional quality</div>
+</div>
+</div>
+
+<div class="listening-section">
+<h4><i class="ph-duotone ph-check-circle"></i> ✅ Outcome-based Questions</h4>
+<div class="listening-question">
+<p>1. Why did the CEO say "I understand this is difficult news" instead of "Here's what we're doing"?</p>
+<div class="listening-answer">✅ To create psychological safety. Acknowledging their pain reduces defensiveness and opens them to hearing the actual decision.</div>
+</div>
+<div class="listening-question">
+<p>2. What was the strategic goal of explaining the three options before announcing the decision?</p>
+<div class="listening-answer">✅ To show complexity and thoroughness. It builds trust by showing you've done the work, not just made a rash decision.</div>
+</div>
+<div class="listening-question">
+<p>3. How did the leader handle the pushback when employees said "That's not fair!"?</p>
+<div class="listening-answer">✅ Recalibrated by providing concrete support (hardship fund, mortgage deferral). This addressed the emotional concern with practical solutions.</div>
+</div>
+<div class="listening-question">
+<p>4. What was the trade-off of being transparent about the financial situation?</p>
+<div class="listening-answer">✅ It may create short-term anxiety, but it builds long-term trust. Facts reduce speculation and rumors.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-code"></i>Strategic Grammar in Context</h2>
+<p class="section-desc">Grammar as a tool for difficult decisions. Each pattern serves a strategic goal.</p>
+</div>
+<div class="grammar-card">
+<h3>📝 Strategic Grammar Toolkit</h3>
+<div class="table-container">
+<table class="grammar-table">
+<thead><tr><th>Strategic Goal</th><th>Language Pattern</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Acknowledge emotion</strong></td><td>"I understand this is..." / "I know this is..."</td><td>"I understand this is difficult news."</td></tr>
+<tr><td><strong>Provide transparency</strong></td><td>"Here's what we know..." / "Let me explain..."</td><td>"Here's what we know about our financial situation."</td></tr>
+<tr><td><strong>Show complexity</strong></td><td>"We've assessed X options..." / "There are trade-offs..."</td><td>"We've assessed three options: layoffs, pay cuts, and furlough."</td></tr>
+<tr><td><strong>Explain reasoning</strong></td><td>"We chose X because..." / "The reasoning is..."</td><td>"We chose furlough because it preserves jobs while sharing the burden."</td></tr>
+<tr><td><strong>Provide contingency</strong></td><td>"Here's our contingency plan..." / "If X happens, we'll..."</td><td>"Here's our contingency plan: if we don't recover in 6 months, we'll reassess."</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-microphone-stage"></i>Pronunciation Focus</h2>
+<p class="section-desc">The weight of sound in difficult decisions. How you deliver the message matters as much as the message itself.</p>
+</div>
+<div class="pronunciation-card">
+<h3> Strategic Pronunciation</h3>
+<div class="pronunciation-item"><strong>1. Warm Tone for Acknowledgment</strong><span>"I understand this is difficult news." (Warm, empathetic, not robotic)</span></div>
+<div class="pronunciation-item"><strong>2. Stress on Key Words</strong><span>"We've <strong>assessed</strong> <strong>three</strong> options..." (Stress shows thoroughness)</span></div>
+<div class="pronunciation-item"><strong>3. Pause for Impact</strong><span>"We chose furlough... (pause) ...because it preserves jobs." (Pause lets reasoning sink in)</span></div>
+<div class="pronunciation-item"><strong>4. Falling Intonation for Confidence</strong><span>"I believe in this decision. ↘" (Falling = confident, grounded)</span></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i>Speaking: 4 Scenarios (with Pushback + Alternative + Common Mistake)</h2>
+<p class="section-desc">Each scenario has Round 1, Pushback, Round 2, Alternative Response, and Common Mistake.</p>
+</div>
+<div class="scenario-grid">
+<div class="scenario-card professional">
+<span class="scenario-badge">🔵 Professional - The Layoff Decision</span>
+<h3>Scenario 1: Announcing Furlough</h3>
+<p class="scenario-context">You need to announce a furlough decision to your company. Employees are anxious.</p>
+<div class="pushback-step r1"><strong>Round 1 (Presence + Negotiation):</strong>"I understand this is difficult news. Here's what we know about our financial situation. We've assessed three options..."</div>
+<div class="pushback-step pb"><strong>Pushback:</strong>"That's not fair! Some of us can't afford that!"</div>
+<div class="pushback-step r2"><strong>Round 2 (Presence + Leadership):</strong>"I hear you. This is incredibly difficult. Here's what we're doing to help..."</div>
+<div class="pushback-step alt"><strong>Alternative Response:</strong>"We need to cut costs. Period." (Only if time is critical and you can't explain)</div>
+<div class="pushback-step mistake"><strong>Common Mistake:</strong>Announcing coldly without empathy. This creates resistance.</div>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">🟢 Casual - The Career Change Decision</span>
+<h3>Scenario 2: Telling Spouse About Career Change</h3>
+<p class="scenario-context">You need to tell your spouse about your decision to change careers. They are worried about finances.</p>
+<div class="pushback-step r1"><strong>Round 1 (Presence + Negotiation):</strong>"I need to talk to you about something important. I've been assessing my options..."</div>
+<div class="pushback-step pb"><strong>Pushback:</strong>"I'm scared."</div>
+<div class="pushback-step r2"><strong>Round 2 (Presence + Leadership):</strong>"I hear you. This is scary for me too. But I believe this is the right decision..."</div>
+<div class="pushback-step alt"><strong>Alternative Response:</strong>"I'm doing this whether you like it or not." (Only if relationship is already broken)</div>
+<div class="pushback-step mistake"><strong>Common Mistake:</strong>Deciding alone without consulting your partner. This creates resentment.</div>
+</div>
+<div class="scenario-card mixed">
+<span class="scenario-badge">🟣 Professional - The Strategy Pivot</span>
+<h3>Scenario 3: Pivoting Company Strategy</h3>
+<p class="scenario-context">You need to announce a major strategy pivot. The team has invested heavily in the current direction.</p>
+<div class="pushback-step r1"><strong>Round 1 (Presence + Negotiation):</strong>"I understand this is a big change. Here's what we know about the market..."</div>
+<div class="pushback-step pb"><strong>Pushback:</strong>"We've invested so much in the current strategy!"</div>
+<div class="pushback-step r2"><strong>Round 2 (Presence + Leadership):</strong>"I hear you. The sunk cost is real. But here's why we need to pivot..."</div>
+<div class="pushback-step alt"><strong>Alternative Response:</strong>"The market has changed. We're pivoting. Deal with it." (Only if time is critical)</div>
+<div class="pushback-step mistake"><strong>Common Mistake:</strong>Not acknowledging the sunk cost. This creates resistance.</div>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">🟠 Challenge - Double Decision</span>
+<h3>Scenario 4: Morning & Afternoon</h3>
+<p class="scenario-context"><strong>Morning:</strong> Announce furlough decision to company. <strong>Afternoon:</strong> Tell spouse about career change.</p>
+<div class="pushback-step r1"><strong>Morning (Business - Presence + Negotiation + Leadership):</strong>"I understand this is difficult news. Here's what we know... We've assessed three options..."</div>
+<div class="pushback-step r2"><strong>Afternoon (Life - Presence + Negotiation + Leadership):</strong>"I need to talk to you about something important. I've been assessing my options... Here's my plan..."</div>
+<div class="pushback-step alt"><strong>Reflection:</strong>How did your tone, pace, and word choice change between the two? Business = structured, transparent. Life = emotional, intimate.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i>Reality Task: The Difficult Decisions Audit</h2>
+<p class="section-desc">Focus on Judgement, not patterns. Track your decisions and trade-offs.</p>
+</div>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 The Decision Audit</h3>
+<div class="task-time">⏱️ 15 minutes</div>
+<p class="task-desc">Identify 1 difficult decision in your life or work. Apply the 4-step sequence (Assess → Decide → Communicate → Follow-up). What decisions are you making? Note the trade-offs.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul><li>Identify the difficult decision</li><li>Apply the 4-step sequence</li><li>What decisions are you making?</li><li>Note the trade-offs</li></ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>✍️ The Decision Communication</h3>
+<div class="task-time">⏱️ 30 minutes</div>
+<p class="task-desc">Write a communication announcing a difficult decision. Use the Integration Framework (Presence + Negotiation + Leadership). Get feedback on your tone and clarity.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul><li>Choose a difficult decision scenario</li><li>Use all 3 competencies in the communication</li><li>Get feedback on your tone and clarity</li><li>Note what worked and what didn't</li></ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Written communication with feedback notes</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Decision</h3>
+<div class="task-time">⏱️ 60 minutes</div>
+<p class="task-desc">This week, make an actual difficult decision. Use the 4-step sequence in real-time. Note what worked, what didn't, and what you learned about your default style.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul><li>Identify an actual difficult decision</li><li>Apply the 4-step sequence in real-time</li><li>Use the Integration Framework</li><li>Note what worked, what didn't</li><li>What did you learn about your default style?</li></ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-trophy"></i>Difficult Decisions Mastery</h2>
+<p class="section-desc">Check all that apply. Be honest with yourself.</p>
+</div>
+<div class="mastery-card">
+<h2>🎯 Mastery Checklist</h2>
+<div class="mastery-item"><input type="checkbox" id="mastery1"><label for="mastery1">I assess options thoroughly before deciding</label></div>
+<div class="mastery-item"><input type="checkbox" id="mastery2"><label for="mastery2">I consult key stakeholders when appropriate</label></div>
+<div class="mastery-item"><input type="checkbox" id="mastery3"><label for="mastery3">I communicate decisions with empathy and clarity</label></div>
+<div class="mastery-item"><input type="checkbox" id="mastery4"><label for="mastery4">I provide contingency plans</label></div>
+<div class="mastery-item"><input type="checkbox" id="mastery5"><label for="mastery5">I follow up to ensure execution and learning</label></div>
+<div class="continuity-box">
+<strong>Continuity Check:</strong>
+If you can consistently apply the 4-step decision sequence (Assess → Decide → Communicate → Follow-up) with the Integration Framework (Presence + Negotiation + Leadership), you are ready for Day 55: One Week in the Life.
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i>Flashcard Review</h2>
+<p class="section-desc">5 flashcards with strategic decisions. Front: Situation. Back: Decision Loop.</p>
+</div>
+<div class="flashcard-container">
+<div class="flashcard" onclick="this.querySelector('.flashcard-front').style.display='none'; this.querySelector('.flashcard-back').classList.add('active');">
+<div class="flashcard-front">
+<p>Situation: You need to announce a difficult decision to your team</p>
+<button>Tap to reveal Decision Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> Announce coldly without empathy.<br><br><strong>Executive Decision:</strong> Acknowledge emotion → Provide transparency → Explain reasoning → Invite questions.<br><br><strong>Trade-off:</strong> Takes more time upfront, but builds trust and reduces resistance.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In difficult decisions, presence builds trust. Negotiation uncovers real needs. Leadership creates confidence.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button><span>1 / 5</span><button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="quiz-section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pencil-simple"></i>Quiz: Difficult Decisions</h2>
+<p class="section-desc">9 situational questions. 6 Judgement + 2 Trade-off + 1 Vocabulary.</p>
+</div>
+<div class="quiz-question">
+<h4>1. (Judgement) You need to decide whether to acquire a competitor. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Decide immediately (FOMO).</div>
+<div class="quiz-option">B. Delay indefinitely (fear).</div>
+<div class="quiz-option">C. Assess for 30 days, consult key stakeholders, decide with clear criteria.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) You need to announce layoffs. Best opening?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "We're laying off 10% of staff."</div>
+<div class="quiz-option">B. "I understand this is difficult news. Here's what we know about our financial situation..."</div>
+<div class="quiz-option">C. "We need to cut costs."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) An employee says "That's not fair!" after you announce a decision. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "It is fair. We've thought this through."</div>
+<div class="quiz-option">B. "I hear you. This is incredibly difficult. Here's what we're doing to help..."</div>
+<div class="quiz-option">C. "Deal with it."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) You're considering a career change. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Quit immediately (impulsive).</div>
+<div class="quiz-option">B. Stay in current job (safety).</div>
+<div class="quiz-option">C. Assess skills/market, consult mentors, build transition plan, decide with timeline.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) You need to decide whether to invest in new technology. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Invest immediately (hype).</div>
+<div class="quiz-option">B. Don't invest (fear).</div>
+<div class="quiz-option">C. Assess ROI, pilot with small team, decide based on results.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Your spouse is scared about your career change. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Don't be scared. This will work."</div>
+<div class="quiz-option">B. "I hear you. This is scary for me too. But I believe this is the right decision..."</div>
+<div class="quiz-option">C. "I'm doing this whether you like it or not."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of being transparent about your reasoning?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. You build trust but may create debate.</div>
+<div class="quiz-option">B. You save time but create suspicion.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of consulting stakeholders before deciding?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. You get input but it takes more time.</div>
+<div class="quiz-option">B. You decide faster but face resistance.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which word means "to evaluate or analyze carefully"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Consult</div>
+<div class="quiz-option">B. Assess</div>
+<div class="quiz-option">C. Pilot</div>
+</div>
+</div>
+<button class="check-btn"><i class="ph-duotone ph-check"></i>Check Answers</button>
+</section>
+
+<div class="day-navigation">
+<a href="week-08-day-53.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 53: Conflict Resolution</div>
+</a>
+<a href="week-08-day-55.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 55: One Week in the Life</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn" onclick="markComplete()">
+<i class="ph-duotone ph-check-circle"></i>
+<span>Mark Day 54 Complete & Continue to Day 55</span>
+</button>
+<div class="complete-message">B2 managers fear difficult decisions. C1 executives have a framework for them. ⚖️</div>
+</div>
+
+</div>
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 8 · Day 54 · Difficult Decisions</div>
+</div>
+</footer>
+
+<script>
+let voices = [];
+let selectedVoice = null;
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+selectedVoice = voices.find(v => v.name.includes('Google US English')) || voices.find(v => v.name === 'Microsoft Zira' && v.lang === 'en-US') || voices.find(v => v.name === 'Microsoft David' && v.lang === 'en-US') || voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang.includes('en'));
+}
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+setTimeout(loadVoices, 500);
+setTimeout(loadVoices, 1000);
+function playAudio(text) {
+if (!('speechSynthesis' in window)) { alert('Trình duyệt không hỗ trợ phát âm thanh'); return; }
+speechSynthesis.cancel();
+setTimeout(() => {
+const utterance = new SpeechSynthesisUtterance(text);
+utterance.lang = 'en-US'; utterance.rate = 0.95; utterance.pitch = 1.05; utterance.volume = 1.0;
+if (selectedVoice) { utterance.voice = selectedVoice; }
+speechSynthesis.speak(utterance);
+}, 100);
+}
+function stopSpeaking() { if ('speechSynthesis' in window) { speechSynthesis.cancel(); } }
+function playDialogue(id) {
+const dialogues = {
+'d1': `CEO: Thank you all for joining. I understand this is difficult news. Employee 1: What's happening? CEO: Here's what we know about our financial situation. We've been losing money for 6 months. We need to cut costs by 20% to survive. Employee 2: Are you laying people off? CEO: We've assessed three options: layoffs, pay cuts, and furlough. Each has trade-offs. Employee 1: What did you choose? CEO: We've chosen furlough because it preserves jobs while sharing the burden equally. Everyone will take 2 months unpaid, starting next month. Employee 2: That's not fair! Some of us can't afford that! CEO: I hear you. This is incredibly difficult. Here's what we're doing to help: we're setting up a hardship fund, and we're working with banks to defer mortgage payments. Employee 1: What if this doesn't work? CEO: That's a fair question. Here's our contingency plan: if we don't recover in 6 months, we'll reassess. But I believe this gives us the best chance to survive together. Employee 2: How will we know if it's working? CEO: Here are the metrics we'll track: revenue, cash flow, and customer retention. We'll update you monthly. Employee 1: Can we ask questions? CEO: Absolutely. I want to hear your concerns. What's on your mind?`,
+'d2': `You: I need to talk to you about something important. I've been thinking about my career. Spouse: What's going on? You: I'm unhappy in my current job. I've been assessing my options for 3 months. Spouse: What are you thinking? You: I'm considering a career change. But I know this is risky with our mortgage and the kids. Spouse: How risky are we talking? You: Here's my plan: I'll build new skills on the side for 6 months, then switch. This minimizes financial risk. Spouse: What if it doesn't work? You: That's a fair concern. Here's my contingency plan: if I don't find a new job in 6 months, I'll stay in my current role. But I believe this gives us the best chance for long-term happiness. Spouse: How will this affect our finances? You: Here's the financial impact: I'll keep my current salary for 6 months while building skills. Then there may be a temporary pay cut of 10-20%. But long-term, I expect to earn more. Spouse: I'm scared. You: I hear you. This is scary for me too. But I believe this is the right decision for our family's long-term happiness. Spouse: Can we talk about this more? You: Absolutely. I want to hear all your concerns. What's on your mind?`
+};
+if (dialogues[id]) playAudio(dialogues[id]);
+}
+function markComplete() {
+const completed = JSON.parse(localStorage.getItem('completedDays') || '[]');
+if (!completed.includes('day-54')) { completed.push('day-54'); localStorage.setItem('completedDays', JSON.stringify(completed)); }
+const btn = document.querySelector('.complete-btn');
+btn.innerHTML = '<i class="ph-duotone ph-confetti"></i><span> Day 54 Complete! Well done!</span>';
+btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+btn.style.boxShadow = '0 8px 28px rgba(16, 185, 129, 0.4)';
+const msg = document.querySelector('.complete-message');
+msg.textContent = 'B2 managers fear difficult decisions. C1 executives have a framework for them. ⚖️';
+}
+window.addEventListener('DOMContentLoaded', () => {
+const completed = JSON.parse(localStorage.getItem('completedDays') || '[]');
+if (completed.includes('day-54')) {
+const btn = document.querySelector('.complete-btn');
+btn.innerHTML = '<i class="ph-duotone ph-check-circle"></i><span>✅ Day 54 Completed</span>';
+btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+}
+});
+</script>
+</body>
+</html>

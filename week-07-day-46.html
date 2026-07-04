@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 7 Day 46: Recognition & Appreciation | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #D97706;
+--primary-bright: #B45309;
+--primary-soft: #FEF3C7;
+--primary-deep: #92400E;
+--primary-light: #F59E0B;
+--highlight-gold: #D97706;
+--highlight-green: #059669;
+--highlight-blue: #2563EB;
+--highlight-purple: #7C3AED;
+--highlight-orange: #DC2626;
+--green: #10B981;
+--green-soft: #D1FAE5;
+--green-deep: #065F46;
+--blue: #3B82F6;
+--blue-soft: #DBEAFE;
+--blue-deep: #1E40AF;
+--purple: #8B5CF6;
+--purple-soft: #F3E8FF;
+--purple-deep: #6B21A8;
+--orange: #F97316;
+--orange-soft: #FFEDD5;
+--orange-deep: #9A3412;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+font-family: 'Inter', sans-serif;
+background: #FAFAFA;
+color: var(--text-primary);
+font-size: 15px;
+line-height: 1.3;
+min-height: 100vh;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+.top-nav {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(30px);
+padding: 12px 0;
+border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+position: sticky; top: 0; z-index: 100;
+}
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back {
+font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600;
+color: var(--text-primary); text-decoration: none;
+display: flex; align-items: center; gap: 8px;
+}
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator {
+font-size: 13px; color: var(--text-muted); font-weight: 500;
+display: flex; align-items: center; gap: 10px;
+}
+.progress-bar { width: 80px; height: 6px; background: rgba(0, 0, 0, 0.08); border-radius: 3px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-bright)); border-radius: 3px; width: 7%; }
+
+.day-tabs-container {
+background: rgba(255, 255, 255, 0.95);
+border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+position: sticky; top: 57px; z-index: 99; padding: 12px 0;
+}
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab {
+padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 20px; text-decoration: none; color: var(--text-secondary);
+font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease;
+}
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active {
+background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+color: white; border: none; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+}
+
+.day-header {
+background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FDE68A 100%);
+padding: 48px 0 40px; position: relative;
+}
+.day-header::after { content: '🏆'; position: absolute; top: 40px; right: 40px; font-size: 4rem; opacity: 0.3; }
+.breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 2rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); max-width: 700px; margin-bottom: 20px; line-height: 1.3; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag {
+background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px;
+font-size: 13px; font-weight: 500; color: var(--text-secondary);
+display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.meta-tag i { --ph-color: var(--primary-bright); }
+
+.content-area { background: #FAFAFA; padding: 40px 0; }
+.section { margin: 40px 0; }
+.section-header { margin-bottom: 28px; }
+.section-title {
+font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600;
+color: var(--text-primary); margin-bottom: 8px;
+display: flex; align-items: center; gap: 10px;
+}
+.section-title i { --ph-color: var(--primary-bright); }
+.section-desc { font-size: 14px; color: var(--text-secondary); max-width: 700px; line-height: 1.3; }
+
+.c1-insight {
+background: linear-gradient(135deg, rgba(254, 243, 199, 0.6), rgba(253, 230, 138, 0.25));
+border-radius: var(--radius-md);
+padding: 24px 28px;
+margin-bottom: 28px;
+border-left: 4px solid var(--primary);
+text-align: center;
+}
+.c1-insight .label {
+font-size: 10px; font-weight: 700; color: var(--primary-deep);
+text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;
+}
+.c1-insight .insight {
+font-family: 'Fraunces', serif;
+font-size: 1rem;
+font-weight: 500;
+color: var(--primary-deep);
+font-style: italic;
+line-height: 1.4;
+}
+
+.philosophy-section {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-lg);
+padding: 32px;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+border: 1px solid rgba(217, 119, 6, 0.2);
+}
+.philosophy-box {
+background: #FFFBEB;
+border-radius: var(--radius-md);
+padding: 20px;
+border-left: 4px solid var(--highlight-gold);
+margin-bottom: 20px;
+}
+.philosophy-title {
+font-weight: 600; color: var(--text-primary);
+margin-bottom: 8px; display: flex; align-items: center; gap: 8px; font-size: 14px;
+}
+.philosophy-title i { --ph-color: var(--highlight-gold); }
+.philosophy-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.3; }
+.philosophy-box strong { color: var(--primary-deep); }
+
+.plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 20px; }
+.plan-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 16px; text-align: center;
+border: 1px solid rgba(0, 0, 0, 0.06);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time {
+font-size: 11px; color: var(--primary-bright); font-weight: 600;
+margin-bottom: 4px; background: rgba(254, 243, 199, 0.5);
+padding: 2px 8px; border-radius: 10px; display: inline-block;
+}
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+
+.pattern-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 28px; margin-bottom: 20px;
+border-left: 4px solid var(--primary);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.pattern-header { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 14px; }
+.pattern-number {
+flex-shrink: 0; width: 40px; height: 40px;
+background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+color: white; border-radius: 50%;
+display: flex; align-items: center; justify-content: center;
+font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px;
+box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+}
+.pattern-content { flex: 1; }
+.pattern-text {
+font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600;
+color: var(--text-primary); margin-bottom: 6px; line-height: 1.3;
+}
+.pattern-ipa {
+font-size: 12px; color: var(--highlight-green);
+font-family: 'SF Mono', 'Menlo', monospace;
+font-style: italic;
+margin-bottom: 8px;
+}
+.pattern-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.pattern-rating { font-size: 12px; color: var(--primary-bright); font-weight: 600; }
+.pattern-context {
+font-size: 12px; color: var(--text-muted);
+background: rgba(254, 243, 199, 0.5); padding: 4px 10px; border-radius: 12px;
+}
+.pattern-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.3; margin-bottom: 14px; }
+
+.register-table {
+background: rgba(248, 250, 252, 0.8);
+border-radius: var(--radius-sm);
+padding: 16px; margin-bottom: 14px;
+}
+.register-table h4 {
+font-family: 'Fraunces', serif; font-size: 0.95rem;
+margin-bottom: 12px; color: var(--text-primary);
+display: flex; align-items: center; gap: 8px;
+}
+.register-row {
+display: grid;
+grid-template-columns: 100px 1fr auto;
+gap: 12px;
+padding: 10px 12px;
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-sm);
+margin-bottom: 8px;
+align-items: center;
+}
+.register-row:last-child { margin-bottom: 0; }
+.register-tag {
+font-size: 11px; font-weight: 700;
+padding: 4px 8px; border-radius: 8px;
+text-align: center;
+}
+.register-tag.casual { background: var(--green-soft); color: var(--green-deep); }
+.register-tag.neutral { background: var(--blue-soft); color: var(--blue-deep); }
+.register-tag.professional { background: var(--primary-soft); color: var(--primary-deep); }
+.register-tag.formal { background: var(--orange-soft); color: var(--orange-deep); }
+.register-phrase {
+font-size: 13px; color: var(--text-secondary);
+font-style: italic;
+}
+.register-context {
+font-size: 11px; color: var(--text-muted);
+margin-top: 2px;
+}
+.audio-btn-small {
+width: 28px; height: 28px;
+background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+color: white; border: none; border-radius: 50%;
+cursor: pointer; display: flex; align-items: center; justify-content: center;
+transition: all 0.3s ease;
+flex-shrink: 0;
+}
+.audio-btn-small:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3); }
+.audio-btn-small i { --ph-color: white; font-size: 14px; }
+
+.usage-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px;
+margin-bottom: 14px;
+}
+.usage-box {
+padding: 12px;
+border-radius: var(--radius-sm);
+font-size: 13px;
+}
+.usage-box.when { background: rgba(16, 185, 129, 0.08); border-left: 3px solid var(--highlight-green); }
+.usage-box.avoid { background: rgba(245, 101, 101, 0.08); border-left: 3px solid #F56565; }
+.usage-box strong { display: block; margin-bottom: 6px; font-size: 12px; }
+.usage-box.when strong { color: var(--green-deep); }
+.usage-box.avoid strong { color: #C53030; }
+.usage-box ul { list-style: none; padding: 0; }
+.usage-box li { padding: 2px 0; padding-left: 16px; position: relative; color: var(--text-secondary); }
+.usage-box.when li::before { content: '✔'; position: absolute; left: 0; color: var(--highlight-green); font-weight: 700; }
+.usage-box.avoid li::before { content: '✘'; position: absolute; left: 0; color: #F56565; font-weight: 700; }
+
+.compare-box {
+background: rgba(248, 250, 252, 0.8);
+border-radius: var(--radius-sm);
+padding: 14px; margin-bottom: 14px;
+border-left: 3px solid var(--highlight-orange);
+}
+.compare-box h5 {
+font-size: 11px; font-weight: 700; color: var(--highlight-orange);
+text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+}
+.compare-level {
+padding: 8px 12px;
+border-radius: var(--radius-sm);
+margin-bottom: 6px;
+font-size: 13px;
+border-left: 3px solid;
+}
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--highlight-green); }
+.compare-level strong { display: block; margin-bottom: 4px; font-size: 12px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--green-deep); }
+.compare-level p { font-size: 13px; color: var(--text-secondary); font-style: italic; }
+
+.mistakes-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 16px;
+margin-top: 20px;
+}
+.mistake-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 20px;
+border-left: 4px solid var(--highlight-orange);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.mistake-card h4 {
+font-family: 'Fraunces', serif; font-size: 1.05rem;
+color: var(--text-primary); margin-bottom: 10px;
+display: flex; align-items: center; gap: 8px;
+}
+.mistake-wrong {
+background: rgba(245, 101, 101, 0.08);
+padding: 10px; border-radius: var(--radius-sm);
+margin-bottom: 8px; font-size: 13px; color: #C53030;
+border-left: 3px solid #F56565;
+}
+.mistake-right {
+background: rgba(16, 185, 129, 0.08);
+padding: 10px; border-radius: var(--radius-sm);
+margin-bottom: 8px; font-size: 13px; color: var(--green-deep);
+border-left: 3px solid var(--highlight-green);
+}
+.mistake-why {
+font-size: 12px; color: var(--text-secondary); font-style: italic;
+}
+
+.decoder-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-bottom: 20px;
+border-left: 4px solid var(--highlight-purple);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.decoder-card h3 {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.decoder-table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 14px;
+}
+.decoder-table th {
+background: rgba(243, 232, 255, 0.5);
+padding: 10px 12px;
+text-align: left;
+font-size: 12px;
+font-weight: 600;
+color: var(--purple-deep);
+border-bottom: 2px solid rgba(139, 92, 246, 0.2);
+}
+.decoder-table td {
+padding: 10px 12px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+font-size: 13px;
+color: var(--text-secondary);
+}
+.decoder-table td:last-child { font-weight: 600; color: var(--purple-deep); }
+
+.comparison-table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 14px;
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.comparison-table th {
+background: rgba(254, 243, 199, 0.5);
+padding: 12px;
+text-align: left;
+font-size: 12px;
+font-weight: 600;
+color: var(--primary-deep);
+border-bottom: 2px solid rgba(217, 119, 6, 0.2);
+}
+.comparison-table td {
+padding: 12px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+font-size: 13px;
+color: var(--text-secondary);
+}
+.comparison-table td:first-child { font-weight: 600; color: var(--text-primary); }
+
+.reading-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-bottom: 20px;
+border-left: 4px solid var(--highlight-blue);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.reading-card h3 {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.email-box {
+background: #F8FAFC;
+border: 1px solid rgba(0, 0, 0, 0.06);
+border-radius: var(--radius-sm);
+padding: 16px;
+margin-bottom: 16px;
+font-size: 13px;
+color: var(--text-secondary);
+line-height: 1.4;
+}
+.reading-questions {
+background: rgba(219, 234, 254, 0.3);
+padding: 16px;
+border-radius: var(--radius-sm);
+}
+.reading-questions h4 {
+font-size: 13px; font-weight: 700; color: var(--blue-deep);
+margin-bottom: 10px;
+}
+
+.micro-writing-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-bottom: 20px;
+border-left: 4px solid var(--highlight-green);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.micro-writing-card h3 {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.rewrite-item {
+margin-bottom: 16px;
+padding-bottom: 16px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.rewrite-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.rewrite-task {
+font-size: 13px; color: #C53030; font-weight: 600;
+margin-bottom: 8px;
+}
+.rewrite-progression {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+}
+.rewrite-level {
+padding: 10px;
+border-radius: var(--radius-sm);
+font-size: 12px;
+}
+.rewrite-level.weak { background: rgba(245, 101, 101, 0.08); border-left: 3px solid #F56565; }
+.rewrite-level.better { background: rgba(251, 146, 60, 0.08); border-left: 3px solid var(--highlight-orange); }
+.rewrite-level.professional { background: rgba(16, 185, 129, 0.08); border-left: 3px solid var(--highlight-green); }
+.rewrite-level strong { display: block; margin-bottom: 4px; font-size: 11px; text-transform: uppercase; }
+.rewrite-level.weak strong { color: #C53030; }
+.rewrite-level.better strong { color: var(--orange-deep); }
+.rewrite-level.professional strong { color: var(--green-deep); }
+.rewrite-why {
+margin-top: 8px;
+padding: 8px;
+background: rgba(217, 119, 6, 0.08);
+border-radius: var(--radius-sm);
+font-size: 12px;
+color: var(--primary-deep);
+font-style: italic;
+}
+
+.story-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px; margin-bottom: 20px;
+border-left: 4px solid var(--primary);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.story-card h3 {
+font-family: 'Fraunces', serif; font-size: 1.15rem;
+margin-bottom: 8px; color: var(--text-primary);
+display: flex; align-items: center; gap: 10px;
+}
+.story-context {
+font-size: 12px; color: var(--text-muted);
+margin-bottom: 14px; font-style: italic;
+padding: 10px 14px;
+background: rgba(254, 243, 199, 0.3);
+border-radius: var(--radius-sm);
+}
+.story-dialogue {
+background: rgba(254, 243, 199, 0.2);
+padding: 18px; border-radius: var(--radius-sm);
+margin-bottom: 14px;
+border-left: 3px solid var(--primary);
+}
+.dialogue-turn {
+margin-bottom: 12px;
+padding-bottom: 12px;
+border-bottom: 1px solid rgba(217, 119, 6, 0.1);
+}
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker {
+font-size: 12px; font-weight: 700;
+color: var(--primary-deep);
+margin-bottom: 4px;
+}
+.dialogue-text {
+font-size: 13px; color: var(--text-secondary);
+line-height: 1.3;
+}
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight {
+display: inline-block;
+padding: 2px 8px;
+border-radius: 10px;
+font-size: 11px;
+font-weight: 700;
+margin-left: 8px;
+color: white;
+}
+.move-highlight.action { background: var(--highlight-blue); }
+.move-highlight.impact { background: var(--highlight-green); }
+.move-highlight.struggle { background: var(--highlight-orange); }
+.move-highlight.identity { background: var(--highlight-purple); }
+.move-highlight.reflection { background: var(--primary); }
+.story-audio-controls { 
+display: flex; 
+gap: 10px; 
+margin-bottom: 14px; 
+}
+.story-audio-btn {
+padding: 10px 20px; 
+border-radius: 20px;
+font-size: 13px; 
+font-weight: 600; 
+cursor: pointer;
+display: inline-flex; 
+align-items: center; 
+gap: 8px;
+border: none; 
+transition: all 0.3s ease;
+}
+.story-play-btn {
+background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+color: white;
+}
+.story-play-btn:hover { 
+transform: translateY(-2px); 
+box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3); 
+}
+.story-stop-btn {
+background: rgba(245, 101, 101, 0.1); 
+color: #DC2626;
+border: 1px solid rgba(220, 38, 38, 0.2);
+}
+.story-stop-btn:hover { 
+background: rgba(245, 101, 101, 0.2); 
+}
+.story-analysis {
+background: rgba(254, 243, 199, 0.3);
+border-radius: var(--radius-sm);
+padding: 16px;
+}
+.story-analysis h4 {
+font-family: 'Fraunces', serif; font-size: 0.95rem;
+margin-bottom: 10px; color: var(--text-primary);
+}
+.story-analysis ul { list-style: none; }
+.story-analysis li {
+padding: 4px 0; padding-left: 20px; position: relative;
+font-size: 13px; color: var(--text-secondary); line-height: 1.3;
+}
+.story-analysis li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+
+.listening-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-bottom: 20px;
+border-left: 4px solid var(--highlight-green);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.listening-card h3 {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.listening-question {
+margin-bottom: 12px;
+padding: 12px;
+background: rgba(209, 250, 229, 0.3);
+border-radius: var(--radius-sm);
+}
+.listening-question p {
+font-size: 13px; color: var(--text-primary); font-weight: 600; margin-bottom: 8px;
+}
+.listening-answer {
+font-size: 12px; color: var(--green-deep); font-style: italic;
+}
+
+.grammar-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-bottom: 20px;
+border-left: 4px solid var(--highlight-gold);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.grammar-card h3 {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.grammar-item {
+margin-bottom: 12px;
+padding: 12px;
+background: rgba(254, 243, 199, 0.3);
+border-radius: var(--radius-sm);
+}
+.grammar-item strong {
+font-size: 13px; color: var(--primary-deep); display: block; margin-bottom: 4px;
+}
+.grammar-item span {
+font-size: 13px; color: var(--text-secondary);
+}
+
+.vocab-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-bottom: 20px;
+border-left: 4px solid var(--highlight-blue);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.vocab-card h3 {
+font-family: 'Fraunces', serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 14px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.vocab-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 12px;
+}
+.vocab-item {
+padding: 12px;
+background: rgba(219, 234, 254, 0.3);
+border-radius: var(--radius-sm);
+border-left: 3px solid var(--highlight-blue);
+}
+.vocab-item strong {
+display: block; font-size: 13px; color: var(--blue-deep); margin-bottom: 4px;
+}
+.vocab-item span {
+font-size: 12px; color: var(--text-secondary);
+}
+
+.pronunciation-table {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 20px; margin-bottom: 16px;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.pronunciation-table h3 {
+font-family: 'Fraunces', serif; font-size: 1rem;
+margin-bottom: 14px; color: var(--text-primary);
+display: flex; align-items: center; gap: 8px;
+}
+.pronunciation-table table { width: 100%; border-collapse: collapse; }
+.pronunciation-table th {
+background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+color: white; padding: 10px 12px; text-align: left;
+font-size: 12px; font-weight: 600;
+}
+.pronunciation-table td {
+padding: 10px 12px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+font-size: 13px; color: var(--text-secondary);
+}
+.pronunciation-table td.ipa-cell {
+color: var(--highlight-green);
+font-family: 'SF Mono', 'Menlo', monospace;
+font-style: italic;
+font-weight: 500;
+}
+.pronunciation-table tr:last-child td { border-bottom: none; }
+
+.intonation-item {
+background: rgba(255, 255, 255, 0.95);
+padding: 14px 18px;
+border-radius: var(--radius-sm);
+margin-bottom: 10px;
+font-size: 13px; color: var(--text-secondary);
+border-left: 3px solid var(--primary);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+line-height: 1.3;
+}
+.intonation-item .phrase {
+font-family: 'Fraunces', serif; font-weight: 600;
+color: var(--text-primary); display: block; margin-bottom: 6px;
+}
+.intonation-item .pattern-label {
+color: var(--highlight-green); font-weight: 600;
+font-family: 'SF Mono', monospace;
+display: inline-block;
+margin-right: 8px;
+}
+.intonation-item .context-tip {
+color: var(--text-muted); font-size: 12px; font-style: italic;
+margin-top: 6px; display: block;
+}
+
+.scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+.scenario-card { 
+border-radius: var(--radius-md); 
+padding: 20px; 
+border: 2px solid;
+font-size: 13px;
+}
+.scenario-card.casual { background: rgba(209, 250, 229, 0.3); border-color: var(--green); }
+.scenario-card.professional { background: rgba(219, 234, 254, 0.3); border-color: var(--blue); }
+.scenario-card.mixed { background: rgba(243, 232, 255, 0.3); border-color: var(--purple); }
+.scenario-card.challenge { background: rgba(255, 237, 213, 0.3); border-color: var(--orange); }
+.scenario-badge {
+display: inline-block; padding: 4px 12px; border-radius: 12px;
+font-size: 11px; font-weight: 700; text-transform: uppercase;
+letter-spacing: 0.5px; margin-bottom: 10px; color: white;
+}
+.scenario-card.casual .scenario-badge { background: var(--green); }
+.scenario-card.professional .scenario-badge { background: var(--blue); }
+.scenario-card.mixed .scenario-badge { background: var(--purple); }
+.scenario-card.challenge .scenario-badge { background: var(--orange); }
+.scenario-card h3 { 
+font-family: 'Fraunces', serif; 
+font-size: 13px; 
+font-weight: 600;
+margin-bottom: 8px; 
+color: var(--text-primary); 
+}
+.scenario-context { 
+font-size: 13px; 
+color: var(--text-secondary); 
+margin-bottom: 12px; 
+line-height: 1.3; 
+}
+.scenario-requirements { 
+background: rgba(255, 255, 255, 0.8); 
+border-radius: var(--radius-sm); 
+padding: 12px; 
+margin-bottom: 12px; 
+}
+.scenario-requirements h4 { 
+font-size: 12px; 
+font-weight: 600; 
+color: var(--text-primary); 
+margin-bottom: 6px; 
+}
+.scenario-requirements ul { list-style: none; }
+.scenario-requirements li { 
+padding: 3px 0; 
+padding-left: 18px; 
+position: relative; 
+font-size: 13px; 
+color: var(--text-secondary); 
+line-height: 1.3; 
+}
+.scenario-requirements li::before { content: '•'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-response {
+background: rgba(255, 255, 255, 0.9);
+border-radius: var(--radius-sm);
+padding: 12px;
+margin-bottom: 12px;
+border-left: 3px solid var(--highlight-green);
+}
+.model-response strong {
+color: var(--highlight-green);
+display: block;
+margin-bottom: 4px;
+font-size: 12px;
+}
+.model-response p {
+font-size: 13px;
+color: var(--text-secondary);
+line-height: 1.3;
+font-style: italic;
+}
+
+.task-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.task-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-md);
+padding: 24px; margin-bottom: 16px;
+position: relative; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+border-left: 4px solid;
+}
+.task-card.easy { border-left-color: #10B981; }
+.task-card.standard { border-left-color: var(--primary); }
+.task-card.challenge { border-left-color: #EF4444; }
+.task-level {
+position: absolute; top: 16px; right: 16px;
+font-size: 11px; font-weight: 700; padding: 4px 12px;
+border-radius: 12px; letter-spacing: 0.5px;
+}
+.task-card.easy .task-level { background: #D1FAE5; color: #065F46; }
+.task-card.standard .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.challenge .task-level { background: #FEE2E2; color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.3; margin-bottom: 14px; }
+.task-requirements { background: rgba(254, 243, 199, 0.3); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.3; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(254, 243, 199, 0.3); border-radius: var(--radius-sm); }
+
+.mastery-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-lg);
+padding: 32px; border: 2px solid var(--primary);
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.mastery-card h2 {
+font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600;
+color: var(--text-primary); margin-bottom: 20px;
+display: flex; align-items: center; gap: 10px;
+}
+.mastery-item {
+display: flex; align-items: flex-start; gap: 12px;
+padding: 14px; background: rgba(254, 243, 199, 0.2);
+border-radius: var(--radius-sm); margin-bottom: 10px;
+}
+.mastery-item input[type="checkbox"] {
+width: 20px; height: 20px; border: 2px solid var(--primary);
+border-radius: 4px; cursor: pointer; accent-color: var(--primary);
+flex-shrink: 0; margin-top: 2px;
+}
+.mastery-item label { font-size: 14px; color: var(--text-secondary); cursor: pointer; line-height: 1.3; }
+
+.success-card {
+background: rgba(209, 250, 229, 0.5);
+border-radius: var(--radius-lg);
+padding: 32px; border: 2px solid var(--green);
+margin-top: 20px;
+}
+.success-card h2 {
+font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600;
+color: var(--green-deep); margin-bottom: 16px;
+display: flex; align-items: center; gap: 10px;
+}
+.success-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; font-size: 14px; color: var(--green-deep); line-height: 1.3; }
+.success-item i { --ph-color: var(--green); font-size: 18px; }
+
+.tips-card {
+background: #FFF7ED;
+border-radius: var(--radius-lg);
+padding: 32px; border: 2px solid var(--orange);
+margin-top: 20px;
+}
+.tips-card h2 {
+font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600;
+color: var(--orange-deep); margin-bottom: 16px;
+display: flex; align-items: center; gap: 10px;
+}
+.tip-item { padding: 8px 0; font-size: 14px; color: var(--orange-deep); display: flex; align-items: flex-start; gap: 10px; line-height: 1.3; }
+.tip-item i { --ph-color: var(--orange); font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+.tip-item strong { color: var(--orange-deep); }
+
+.flashcard-container {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius-lg);
+padding: 32px; text-align: center;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.flashcard {
+background: linear-gradient(135deg, rgba(254, 243, 199, 0.5), rgba(253, 230, 138, 0.3));
+border-radius: var(--radius-md);
+padding: 32px; margin-bottom: 16px; min-height: 180px;
+display: flex; flex-direction: column;
+justify-content: center; align-items: center;
+cursor: pointer; transition: all 0.4s ease;
+}
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(217, 119, 6, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.3; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.8); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.3; }
+.flashcard-tip strong { color: var(--primary-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.9); border: 1px solid rgba(217, 119, 6, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+
+.quiz-section { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.quiz-question { background: rgba(248, 250, 252, 0.8); border-radius: var(--radius-md); padding: 18px; margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.9); border: 2px solid rgba(254, 243, 199, 0.5); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.3; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(254, 243, 199, 0.2); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3); }
+
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.06); position: relative; overflow: hidden; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-bright)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(217, 119, 6, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(217, 119, 6, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(217, 119, 6, 0.5); }
+.complete-btn i { font-size: 1.2rem; }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+
+.footer { background: rgba(255, 255, 255, 0.95); padding: 32px 0 24px; text-align: center; margin-top: 48px; border-top: 1px solid rgba(0, 0, 0, 0.08); }
+.footer-fox { font-size: 2rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+
+@media (max-width: 768px) {
+.day-title { font-size: 1.8rem; }
+.day-tabs-container { top: 52px; }
+.day-navigation { grid-template-columns: 1fr; }
+.pattern-header { flex-direction: column; }
+.scenario-grid { grid-template-columns: 1fr; }
+.usage-grid { grid-template-columns: 1fr; }
+.rewrite-progression { grid-template-columns: 1fr; }
+.register-row { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-07.html" class="nav-back">
+<i class="ph-duotone ph-arrow-left"></i>
+<span>Week 7 Hub</span>
+</a>
+<div class="day-indicator">
+Day 46 / 49
+<div class="progress-bar"><div class="progress-fill"></div></div>
+</div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-07.html" class="day-tab">Overview</a>
+<a href="week-07-day-43.html" class="day-tab">Day 43</a>
+<a href="week-07-day-44.html" class="day-tab">Day 44</a>
+<a href="week-07-day-45.html" class="day-tab">Day 45</a>
+<a href="week-07-day-46.html" class="day-tab active">Day 46</a>
+<a href="week-07-day-47.html" class="day-tab">Day 47</a>
+<a href="week-07-day-48.html" class="day-tab">Day 48</a>
+<a href="week-07-day-49.html" class="day-tab">Day 49</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-07.html">Week 7</a> › Day 46
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🏆</span>
+<h1 class="day-title">Recognition & Appreciation</h1>
+</div>
+<p class="day-subtitle">Day 45 taught you to listen. Today, you use what you heard to <strong>recognize others specifically</strong>. <strong>B2 leaders praise to be nice. C1 leaders recognize to build culture.</strong></p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-medal"></i> Recognition</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 60 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-lightning"></i> 5 Communication Moves</div>
+<div class="meta-tag"><i class="ph-duotone ph-trophy"></i> Day 4 of 7</div>
+</div>
+</div>
+</header>
+
+<div class="content-area">
+<div class="container">
+
+<div class="c1-insight">
+<div class="label">💡 C1 Insight</div>
+<div class="insight">
+<div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 12px; flex-wrap: wrap;">
+<div>
+<div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">B2 Leader</div>
+<div style="font-size: 14px;">"Good job!" / "Great work!" (Generic praise, no impact).</div>
+</div>
+<div>
+<div style="font-size: 12px; color: var(--primary-deep); margin-bottom: 4px;">C1 Leader</div>
+<div style="font-size: 14px;">"The way you stayed calm during that crisis saved the deal. That's the leadership this team needs." (Specific, impactful, ties to identity).</div>
+</div>
+</div>
+"B2 leaders praise to be nice. C1 leaders recognize to build culture. The difference is specificity and sincerity."
+</div>
+</div>
+
+<section class="section">
+<div class="philosophy-section">
+<h2 class="section-title">
+<i class="ph-duotone ph-lightbulb"></i>
+Today's Philosophy
+</h2>
+<div class="philosophy-box">
+<div class="philosophy-title">
+<i class="ph-duotone ph-brain"></i>
+From Praise to Recognition
+</div>
+<p>
+Praise is saying "good job" because you want to be nice. Recognition is saying "here is why your specific action matters" because you want to build culture.
+<br><br>
+When you recognize correctly, the listener doesn't just feel happy — they feel <strong>seen, valued, and empowered</strong>. They understand their own strengths better and want to leverage them.
+<br><br>
+<span style="color: var(--primary); font-weight: 600;">Important:</span> Empty praise (generic compliments) is worse than no praise. It makes people feel manipulated or think you aren't paying attention. Recognition must be <strong>specific, sincere, and strategic</strong>.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="philosophy-section">
+<h2 class="section-title">
+<i class="ph-duotone ph-calendar-check"></i>
+Today's Plan (60 min)
+</h2>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">5 Moves</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Recognition moves</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common mistakes</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔍</div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Praise vs Recognition</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Read & Write</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">Reading + Micro</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎭</div>
+<div class="plan-title">Stories</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Dialogues + Listen</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🗣️</div>
+<div class="plan-title">Speaking</div>
+<div class="plan-time">13 min</div>
+<div class="plan-desc">4 scenarios</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎴</div>
+<div class="plan-title">Review</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">Grammar + Quiz</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-lightning"></i>
+5 Communication Moves (Recognition)
+</h2>
+<p class="section-desc">5 moves to recognize people specifically and sincerely. Click 🔊 to listen.</p>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-header">
+<div class="pattern-number">1</div>
+<div class="pattern-content">
+<div class="pattern-text">Name the Specific Action</div>
+<div class="pattern-ipa">Core idea: "The way you [specific action]..."</div>
+<div class="pattern-meta">
+<div class="pattern-rating">⭐⭐⭐⭐⭐ Very High</div>
+<div class="pattern-context">Always start here</div>
+</div>
+</div>
+</div>
+<div class="pattern-desc">Recognition must never be generic. Name exactly what they did that impressed you.</div>
+<div class="register-table">
+<h4>Register Progression 🔊</h4>
+<div class="register-row">
+<div><span class="register-tag casual">🏠 Casual</span></div>
+<div>
+<div class="register-phrase">"I noticed how you [specific thing]..."</div>
+<div class="register-context">Personal conversations</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('I noticed how you...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag neutral">☕ Neutral</span></div>
+<div>
+<div class="register-phrase">"The way you handled [situation]..."</div>
+<div class="register-context">Team discussions</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('The way you handled...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag professional">💼 Professional</span></div>
+<div>
+<div class="register-phrase">"The way you [specific behavior] was remarkable because..."</div>
+<div class="register-context">Colleagues, Managers</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('The way you... was remarkable because...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag formal">📋 More Formal</span></div>
+<div>
+<div class="register-phrase">"Your specific contribution to [project] demonstrated..."</div>
+<div class="register-context">Senior leaders</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('Your specific contribution to... demonstrated...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+</div>
+<div class="usage-grid">
+<div class="usage-box when">
+<strong>💡 When to use:</strong>
+<ul>
+<li>Always. Recognition is never generic.</li>
+<li>When you want to reinforce a specific behavior</li>
+<li>To show you were paying close attention</li>
+</ul>
+</div>
+<div class="usage-box avoid">
+<strong>❌ Avoid when:</strong>
+<ul>
+<li>You can't name the specific action (wait until you can)</li>
+<li>It sounds like you're reading from a script</li>
+</ul>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "Good job on the presentation."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "The way you opened with that customer story immediately grabbed everyone's attention."</div>
+</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-header">
+<div class="pattern-number">2</div>
+<div class="pattern-content">
+<div class="pattern-text">Connect to Impact</div>
+<div class="pattern-ipa">Core idea: "...which resulted in [specific impact]."</div>
+<div class="pattern-meta">
+<div class="pattern-rating">⭐⭐⭐⭐⭐ Very High</div>
+<div class="pattern-context">Giving weight to the action</div>
+</div>
+</div>
+</div>
+<div class="pattern-desc">Impact gives recognition its weight. It shows why the action mattered.</div>
+<div class="register-table">
+<h4>Register Progression 🔊</h4>
+<div class="register-row">
+<div><span class="register-tag casual">🏠 Casual</span></div>
+<div>
+<div class="register-phrase">"...and that really helped us..."</div>
+<div class="register-context">Personal conversations</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('...and that really helped us...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag neutral">☕ Neutral</span></div>
+<div>
+<div class="register-phrase">"...which made a real difference for..."</div>
+<div class="register-context">Team discussions</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('...which made a real difference for...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag professional">💼 Professional</span></div>
+<div>
+<div class="register-phrase">"...which had a direct impact on [specific outcome]."</div>
+<div class="register-context">Colleagues, Managers</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('...which had a direct impact on...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag formal">📋 More Formal</span></div>
+<div>
+<div class="register-phrase">"...which directly contributed to our strategic objective of..."</div>
+<div class="register-context">Senior leaders</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('...which directly contributed to our strategic objective of...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+</div>
+<div class="usage-grid">
+<div class="usage-box when">
+<strong>💡 When to use:</strong>
+<ul>
+<li>Immediately after naming the action</li>
+<li>To show the ripple effect of their behavior</li>
+<li>To connect individual work to team success</li>
+</ul>
+</div>
+<div class="usage-box avoid">
+<strong>❌ Avoid when:</strong>
+<ul>
+<li>The impact is unclear or exaggerated</li>
+<li>It sounds like you're taking credit for their work</li>
+</ul>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "Thanks for your hard work."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "Your extra hours on the proposal directly led to us winning the contract."</div>
+</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-header">
+<div class="pattern-number">3</div>
+<div class="pattern-content">
+<div class="pattern-text">Acknowledge the Struggle</div>
+<div class="pattern-ipa">Core idea: "I know that wasn't easy because..."</div>
+<div class="pattern-meta">
+<div class="pattern-rating">⭐⭐⭐⭐⭐ Very High</div>
+<div class="pattern-context">Recognizing effort, not just success</div>
+</div>
+</div>
+</div>
+<div class="pattern-desc">Effort recognition is often more powerful than success recognition. It shows you see the journey, not just the destination.</div>
+<div class="register-table">
+<h4>Register Progression 🔊</h4>
+<div class="register-row">
+<div><span class="register-tag casual">🏠 Casual</span></div>
+<div>
+<div class="register-phrase">"I know you had a lot on your plate..."</div>
+<div class="register-context">Personal conversations</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('I know you had a lot on your plate...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag neutral">☕ Neutral</span></div>
+<div>
+<div class="register-phrase">"I know this wasn't easy, especially when..."</div>
+<div class="register-context">Team discussions</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('I know this wasn\'t easy, especially when...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag professional">💼 Professional</span></div>
+<div>
+<div class="register-phrase">"I recognize the challenges you faced, especially..."</div>
+<div class="register-context">Colleagues, Managers</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('I recognize the challenges you faced, especially...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag formal">📋 More Formal</span></div>
+<div>
+<div class="register-phrase">"I want to acknowledge the significant obstacles you navigated..."</div>
+<div class="register-context">Senior leaders</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('I want to acknowledge the significant obstacles you navigated...')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+</div>
+<div class="usage-grid">
+<div class="usage-box when">
+<strong>💡 When to use:</strong>
+<ul>
+<li>When someone overcame a significant challenge</li>
+<li>When the result wasn't perfect but the effort was outstanding</li>
+<li>To reinforce resilience and persistence</li>
+</ul>
+</div>
+<div class="usage-box avoid">
+<strong>❌ Avoid when:</strong>
+<ul>
+<li>It sounds like you're making excuses for poor results</li>
+<li>The struggle wasn't real or significant</li>
+</ul>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "Congrats on the success."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "I know the last three months were incredibly tough, and the way you pushed through showed real resilience."</div>
+</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-header">
+<div class="pattern-number">4</div>
+<div class="pattern-content">
+<div class="pattern-text">Tie to Identity</div>
+<div class="pattern-ipa">Core idea: "That's who you are as a [leader/team member/friend]."</div>
+<div class="pattern-meta">
+<div class="pattern-rating">⭐⭐⭐⭐⭐ Very High</div>
+<div class="pattern-context">The highest level of recognition</div>
+</div>
+</div>
+</div>
+<div class="pattern-desc">Turn a behavior into an identity. This is the most powerful form of recognition because it shapes how they see themselves.</div>
+<div class="register-table">
+<h4>Register Progression 🔊</h4>
+<div class="register-row">
+<div><span class="register-tag casual">🏠 Casual</span></div>
+<div>
+<div class="register-phrase">"That's just how you are."</div>
+<div class="register-context">Personal conversations</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('That\'s just how you are.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag neutral">☕ Neutral</span></div>
+<div>
+<div class="register-phrase">"That's the kind of teammate you are."</div>
+<div class="register-context">Team discussions</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('That\'s the kind of teammate you are.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag professional">💼 Professional</span></div>
+<div>
+<div class="register-phrase">"That's the kind of leadership this team needs."</div>
+<div class="register-context">Colleagues, Managers</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('That\'s the kind of leadership this team needs.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag formal">📋 More Formal</span></div>
+<div>
+<div class="register-phrase">"This exemplifies the core values of our organization."</div>
+<div class="register-context">Senior leaders</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('This exemplifies the core values of our organization.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+</div>
+<div class="usage-grid">
+<div class="usage-box when">
+<strong>💡 When to use:</strong>
+<ul>
+<li>When you want to reinforce a behavior long-term</li>
+<li>After a major achievement or display of character</li>
+<li>To build someone's professional or personal identity</li>
+</ul>
+</div>
+<div class="usage-box avoid">
+<strong>❌ Avoid when:</strong>
+<ul>
+<li>You don't truly believe it (insincerity is obvious)</li>
+<li>It puts too much pressure on them to always be "that person"</li>
+</ul>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "You're a great team player."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "The way you stepped up when Sarah was sick shows the kind of teammate you are — someone who puts the group first."</div>
+</div>
+</div>
+
+<div class="pattern-card">
+<div class="pattern-header">
+<div class="pattern-number">5</div>
+<div class="pattern-content">
+<div class="pattern-text">Invite Reflection</div>
+<div class="pattern-ipa">Core idea: "How did that feel for you?"</div>
+<div class="pattern-meta">
+<div class="pattern-rating">⭐⭐⭐⭐ High</div>
+<div class="pattern-context">Turning recognition into coaching</div>
+</div>
+</div>
+</div>
+<div class="pattern-desc">After recognizing them, invite them to reflect. This turns a compliment into a coaching moment that deepens their self-awareness.</div>
+<div class="register-table">
+<h4>Register Progression 🔊</h4>
+<div class="register-row">
+<div><span class="register-tag casual">🏠 Casual</span></div>
+<div>
+<div class="register-phrase">"What was that like for you?"</div>
+<div class="register-context">Personal conversations</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('What was that like for you?')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag neutral">☕ Neutral</span></div>
+<div>
+<div class="register-phrase">"How did that feel when it came together?"</div>
+<div class="register-context">Team discussions</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('How did that feel when it came together?')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag professional">💼 Professional</span></div>
+<div>
+<div class="register-phrase">"What did you take away from that experience?"</div>
+<div class="register-context">Colleagues, Managers</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('What did you take away from that experience?')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-row">
+<div><span class="register-tag formal">📋 More Formal</span></div>
+<div>
+<div class="register-phrase">"What insights did you gain from leading that initiative?"</div>
+<div class="register-context">Senior leaders</div>
+</div>
+<button class="audio-btn-small" onclick="playAudio('What insights did you gain from leading that initiative?')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+</div>
+<div class="usage-grid">
+<div class="usage-box when">
+<strong>💡 When to use:</strong>
+<ul>
+<li>After a significant achievement or learning moment</li>
+<li>To help them internalize their own success</li>
+<li>To transition from recognition to future growth</li>
+</ul>
+</div>
+<div class="usage-box avoid">
+<strong>❌ Avoid when:</strong>
+<ul>
+<li>They are exhausted and just need a simple "thank you"</li>
+<li>It feels like an interrogation instead of an invitation</li>
+</ul>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "Good job. Moving on."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "That was a powerful moment. What did you learn about yourself in that situation?"</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-warning-circle"></i>
+Common Mistakes
+</h2>
+<p class="section-desc">3 common mistakes when recognizing people. Avoid these to keep appreciation authentic.</p>
+</div>
+<div class="mistakes-grid">
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 1: Generic praise that feels empty</h4>
+<div class="mistake-wrong">❌ "Great job!" / "You're awesome!" (No content, sounds like auto-pilot)</div>
+<div class="mistake-right">✅ "The way you handled that difficult client call showed real patience and skill." (Specific, sincere)</div>
+<div class="mistake-why">Empty praise trains people to ignore your compliments. Specific recognition builds trust.</div>
+</div>
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 2: Only recognizing success, not effort</h4>
+<div class="mistake-wrong">❌ Only praising when results are good. Ignoring those who tried hard but missed the target.</div>
+<div class="mistake-right">✅ "I know this project didn't go as planned, but the way you persisted and learned from every setback is exactly what I want to see on this team."</div>
+<div class="mistake-why">If you only recognize success, people will avoid risks. If you recognize effort and learning, people will innovate.</div>
+</div>
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 3: Public recognition for private struggles (or vice versa)</h4>
+<div class="mistake-wrong">❌ Praising someone publicly for a sensitive personal issue. Or ignoring a chance to publicly recognize a major win.</div>
+<div class="mistake-right">✅ Read the room. Some people love public recognition, some prefer private. Ask or observe.</div>
+<div class="mistake-why">Misplaced recognition can embarrass people instead of empowering them.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-magnifying-glass"></i>
+The Recognition Decoder (Signature Section)
+</h2>
+<p class="section-desc">Praise (B2) vs Recognition (C1) vs Deep Recognition (C1+). Learn to shift your level.</p>
+</div>
+<div class="decoder-card">
+<h3>🔍 The Recognition Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr><th>Level</th><th>What it looks like</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Praise (B2)</strong></td><td>Generic, surface-level</td><td>"Good job!" "You're awesome!"</td></tr>
+<tr><td><strong>Recognition (C1)</strong></td><td>Specific, connects to impact</td><td>"The way you opened with that story grabbed everyone's attention."</td></tr>
+<tr><td><strong>Deep Recognition (C1+)</strong></td><td>Ties to identity, invites reflection</td><td>"That's the kind of leader you are. What did you learn about yourself?"</td></tr>
+</tbody>
+</table>
+<p style="font-size: 13px; font-weight: 700; color: var(--primary-deep); margin: 16px 0 10px 0;">When to use each type:</p>
+<table class="decoder-table">
+<thead>
+<tr><th>Situation</th><th>Best Level</th><th>Why</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Quick acknowledgment</strong></td><td>Recognition (C1)</td><td>Specific but brief</td></tr>
+<tr><td><strong>Major achievement</strong></td><td>Deep Recognition (C1+)</td><td>Build identity</td></tr>
+<tr><td><strong>Effort during failure</strong></td><td>Deep Recognition (C1+)</td><td>Reinforce resilience</td></tr>
+<tr><td><strong>Daily interactions</strong></td><td>Recognition (C1)</td><td>Maintain momentum</td></tr>
+</tbody>
+</table>
+<p style="font-size: 13px; color: var(--text-secondary); margin-top: 10px;">
+<strong>💡 How to use:</strong> 1. Notice when you are using generic praise. 2. Pause. 3. Shift to specific recognition. 4. Watch the person's energy change.
+</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-arrows-left-right"></i>
+Casual ↔ Professional Comparison
+</h2>
+<p class="section-desc">Same moves, different registers. Match the register to the context.</p>
+</div>
+<div class="decoder-card" style="border-left-color: var(--highlight-blue);">
+<h3>🔄 Register Comparison</h3>
+<table class="comparison-table">
+<thead>
+<tr><th>Situation</th><th>🏠 Casual (Life/Family)</th><th>💼 Professional (Business)</th></tr>
+</thead>
+<tbody>
+<tr><td>Name Action</td><td>"I noticed how you [specific thing]..."</td><td>"The way you [specific behavior] was remarkable..."</td></tr>
+<tr><td>Connect Impact</td><td>"...and that really helped us..."</td><td>"...which had a direct impact on [outcome]."</td></tr>
+<tr><td>Acknowledge Struggle</td><td>"I know you had a lot on your plate..."</td><td>"I recognize the challenges you faced, especially..."</td></tr>
+<tr><td>Tie Identity</td><td>"That's just how you are."</td><td>"That's the kind of leader you are."</td></tr>
+<tr><td>Invite Reflection</td><td>"What was that like for you?"</td><td>"What did you take away from that experience?"</td></tr>
+</tbody>
+</table>
+<p style="font-size: 13px; color: var(--text-secondary); margin-top: 10px;">
+<strong>💡 Tip:</strong> Casual uses emotional, personal language. Professional uses structured, impact-focused language. Match the register to the context.
+</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-envelope-simple"></i>
+Reading Box: The Email That Missed the Mark
+</h2>
+<p class="section-desc">Read this recognition email from a manager. Pause and analyze what's missing before reading the model answer.</p>
+</div>
+<div class="reading-card">
+<h3>📧 The Generic Praise Email</h3>
+<div class="email-box">
+<strong>Subject:</strong> Great work on the Q3 project!<br><br>
+Hi team,<br><br>
+I wanted to say great job on the Q3 project! You all worked really hard and the results were fantastic. Keep up the good work!<br><br>
+Best,<br>
+Sarah
+</div>
+<div class="reading-questions">
+<h4>🤔 Your Turn: Pause and Analyze</h4>
+<p style="margin-bottom: 10px;">Before reading the answer, ask yourself:</p>
+<p style="font-size: 13px; color: var(--text-secondary); margin-left: 20px; margin-bottom: 10px;">1. What's wrong with Sarah's recognition email?<br>2. How would a C1 leader rewrite it?</p>
+<p style="margin-top: 16px; font-size: 13px; font-weight: 700; color: var(--blue-deep); margin-bottom: 10px;">✅ Model Answer:</p>
+<p style="font-size: 12px; color: var(--text-secondary); margin-left: 20px;">1. <strong>What's wrong:</strong> Sarah's email is generic praise — "great job", "worked really hard", "fantastic results". It doesn't name specific actions, doesn't connect to impact, doesn't acknowledge struggles, and doesn't tie to identity. It feels like a form letter.<br>2. <strong>C1 Rewrite:</strong> "Hi team, I want to recognize three specific things from Q3: First, the way Alex stayed late to fix the data pipeline saved us from a major client issue. Second, Maria's creative approach to the marketing campaign directly resulted in 40% more leads. Third, the entire team's willingness to adapt when the timeline changed showed incredible resilience. These aren't just good results — they show the kind of team you are: resourceful, creative, and adaptable. What are you most proud of from this quarter?"</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-pencil-simple"></i>
+Micro Writing: Rewrite Generic Praise to Specific Recognition
+</h2>
+<p class="section-desc">Rewrite these generic praises into specific recognition. Explain WHY your version is better.</p>
+</div>
+<div class="micro-writing-card">
+<h3>✍️ Generic Praise → Specific Recognition</h3>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Generic Praise (Business): "Good job on the presentation!"</div>
+<div class="rewrite-progression">
+<div class="rewrite-level weak"><strong>Weak</strong>"Nice presentation."</div>
+<div class="rewrite-level better"><strong>Better</strong>"You did a great job presenting the data."</div>
+<div class="rewrite-level professional"><strong>Specific Recognition</strong>"The way you opened with that customer success story immediately grabbed the board's attention, and the data visualization made the ROI crystal clear. That's the kind of strategic communication we need more of."</div>
+</div>
+<div class="rewrite-why"><strong>WHY:</strong> The specific version names the action (opening story, data viz), connects to impact (grabbed attention, clear ROI), and ties to identity (strategic communication). The generic version could apply to any presentation.</div>
+</div>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Generic Praise (Life): "You're such a good friend!"</div>
+<div class="rewrite-progression">
+<div class="rewrite-level weak"><strong>Weak</strong>"Thanks for being a good friend."</div>
+<div class="rewrite-level better"><strong>Better</strong>"I really appreciate your friendship."</div>
+<div class="rewrite-level professional"><strong>Specific Recognition</strong>"The way you showed up at my house at 10 PM when I was going through that tough time, without me even asking, showed me what real friendship looks like. That's who you are."</div>
+</div>
+<div class="rewrite-why"><strong>WHY:</strong> The specific version names the action (showed up at 10 PM), acknowledges the struggle (tough time), and ties to identity (real friendship, that's who you are). The generic version is forgettable.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-chats-circle"></i>
+Integrated Dialogues
+</h2>
+<p class="section-desc">See how C1 leaders recognize people in real conversations. Notice the difference between recognizing success and recognizing effort.</p>
+</div>
+
+<div class="story-card">
+<h3>🏠 Dialogue 1: Recognizing a Child's Effort (Not Just Success)</h3>
+<div class="story-context">Context: Your 10-year-old son just failed a piano competition. He is very upset. You need to recognize his effort, not his success.</div>
+<div class="story-audio-controls">
+<button class="story-audio-btn story-play-btn" onclick="playDialogue('life')">
+<i class="ph-duotone ph-speaker-high"></i> Nghe cả đoạn
+</button>
+<button class="story-audio-btn story-stop-btn" onclick="stopSpeaking()">
+<i class="ph-duotone ph-stop"></i> Dừng
+</button>
+</div>
+<div class="story-dialogue" id="life-dialogue">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Son:</div>
+<div class="dialogue-text">"I failed the piano competition. I practiced so hard and it wasn't enough."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I know how disappointed you are. <strong>The way you practiced every single day for three months</strong>, even when you didn't feel like it, <strong>showed incredible discipline.</strong>" <span class="move-highlight action">Name Action</span> <span class="move-highlight identity">Tie Identity</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Son:</div>
+<div class="dialogue-text">"But I still lost."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>I know that wasn't easy.</strong> You could have given up, but you didn't. <strong>That's who you are</strong> — someone who keeps going even when it's hard." <span class="move-highlight struggle">Acknowledge Struggle</span> <span class="move-highlight identity">Tie Identity</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Son:</div>
+<div class="dialogue-text">"I don't know if I want to keep playing."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>What did you learn about yourself</strong> during those three months of practice?" <span class="move-highlight reflection">Invite Reflection</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Son:</div>
+<div class="dialogue-text">"I learned I can do hard things if I stick with them."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"That's the most important lesson. <strong>The discipline you built</strong> will help you in everything you do, not just piano." <span class="move-highlight impact">Connect Impact</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Son:</div>
+<div class="dialogue-text">"I guess you're right."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'm proud of you. Not for winning or losing, but for <strong>showing up every day</strong>. That's real courage."</div>
+</div>
+</div>
+<div class="story-analysis">
+<h4>Analysis — Deep Recognition:</h4>
+<ul>
+<li><strong>Name Action:</strong> "The way you practiced every single day..."</li>
+<li><strong>Acknowledge Struggle:</strong> "I know that wasn't easy..."</li>
+<li><strong>Tie Identity:</strong> "That's who you are..."</li>
+<li><strong>Invite Reflection:</strong> "What did you learn about yourself..."</li>
+<li><strong>Connect Impact:</strong> "The discipline you built will help you..."</li>
+<li><strong>Register:</strong> Casual throughout (parent-child)</li>
+<li><strong>10 turns</strong> natural flow, all 5 moves used naturally</li>
+<li><strong>Key insight:</strong> Recognized effort and character, not the competition result.</li>
+</ul>
+</div>
+</div>
+
+<div class="story-card">
+<h3>💼 Dialogue 2: Recognizing a Team Member's Leadership</h3>
+<div class="story-context">Context: A team member just led a difficult meeting in your absence. You need to recognize their specific leadership.</div>
+<div class="story-audio-controls">
+<button class="story-audio-btn story-play-btn" onclick="playDialogue('business')">
+<i class="ph-duotone ph-speaker-high"></i> Nghe cả đoạn
+</button>
+<button class="story-audio-btn story-stop-btn" onclick="stopSpeaking()">
+<i class="ph-duotone ph-stop"></i> Dừng
+</button>
+</div>
+<div class="story-dialogue" id="business-dialogue">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Thanks for stepping in during yesterday's meeting. <strong>The way you calmed the room</strong> when the client started raising their voice <strong>was masterful.</strong>" <span class="move-highlight action">Name Action</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member:</div>
+<div class="dialogue-text">"I was pretty nervous, honestly."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>I know that wasn't easy.</strong> Stepping into that kind of tension takes real courage. <strong>The fact that you stayed calm and reframed the conversation</strong> directly led to us keeping the account." <span class="move-highlight struggle">Acknowledge Struggle</span> <span class="move-highlight impact">Connect Impact</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member:</div>
+<div class="dialogue-text">"I just tried to listen and find common ground."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>That's exactly the kind of leader you are</strong> — someone who can de-escalate and find solutions under pressure. <strong>That's rare and valuable.</strong>" <span class="move-highlight identity">Tie Identity</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member:</div>
+<div class="dialogue-text">"Thanks. I never thought of it that way."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>What did you learn about yourself</strong> in that moment?" <span class="move-highlight reflection">Invite Reflection</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member:</div>
+<div class="dialogue-text">"I learned I can handle more pressure than I thought."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"That's a powerful insight. <strong>I want you to lead the next client meeting.</strong> You're ready."</div>
+</div>
+</div>
+<div class="story-analysis">
+<h4>Analysis — Deep Recognition:</h4>
+<ul>
+<li><strong>Name Action:</strong> "The way you calmed the room..."</li>
+<li><strong>Acknowledge Struggle:</strong> "I know that wasn't easy..."</li>
+<li><strong>Connect Impact:</strong> "...directly led to us keeping the account."</li>
+<li><strong>Tie Identity:</strong> "That's exactly the kind of leader you are..."</li>
+<li><strong>Invite Reflection:</strong> "What did you learn about yourself..."</li>
+<li><strong>Register:</strong> Professional (manager-team member)</li>
+<li><strong>9 turns</strong> natural flow, all 5 moves used naturally</li>
+<li><strong>Key insight:</strong> Turned recognition into a coaching moment and a new opportunity.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-headphones"></i>
+Listening Task
+</h2>
+<p class="section-desc">Listen to Dialogue 2 again. Answer these outcome-based questions.</p>
+</div>
+<div class="listening-card">
+<h3>🎧 Listening Comprehension</h3>
+<div class="listening-question">
+<p>1. Which sentence made the team member feel truly seen?</p>
+<div class="listening-answer">✅ "The fact that you stayed calm and reframed the conversation directly led to us keeping the account." (It connected their specific action to a tangible business impact).</div>
+</div>
+<div class="listening-question">
+<p>2. Why did the leader say "I know that wasn't easy" instead of just "Good job"?</p>
+<div class="listening-answer">✅ To acknowledge the struggle. Recognizing the difficulty makes the recognition feel more sincere and shows the leader understands the full context.</div>
+</div>
+<div class="listening-question">
+<p>3. What changed the team member's self-perception from "I was nervous" to "I can handle pressure"?</p>
+<div class="listening-answer">✅ The leader tied the action to identity ("That's exactly the kind of leader you are") and then invited reflection ("What did you learn about yourself?"). This helped the team member internalize their own capability.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-code"></i>
+Grammar in Context
+</h2>
+<p class="section-desc">Why we use these specific structures when recognizing people.</p>
+</div>
+<div class="grammar-card">
+<h3>📝 Grammar for Recognition</h3>
+<div class="grammar-item">
+<strong>1. Cleft Sentences for Emphasis ("What impressed me was...")</strong>
+<span>We use "What impressed me was [action]" or "The thing that stood out was [behavior]" to highlight the specific action. It creates emphasis and shows you were paying close attention.</span>
+</div>
+<div class="grammar-item">
+<strong>2. "The way you..." structure</strong>
+<span>"The way you [action] showed [quality]." This is the most natural and powerful way to name a specific action in English. It's specific, observant, and sincere.</span>
+</div>
+<div class="grammar-item">
+<strong>3. Past Perfect for Context ("You had been working...")</strong>
+<span>"You had been working on this for months, and the result showed." We use past perfect to acknowledge the journey and effort that led to the moment, not just the final outcome.</span>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-microphone-stage"></i>
+Pronunciation Focus
+</h2>
+<p class="section-desc">Recognition phrases pronunciation and intonation patterns.</p>
+</div>
+<div class="pronunciation-table">
+<h3>🔤 Recognition Phrases</h3>
+<table>
+<thead>
+<tr><th>Phrase</th><th>IPA</th><th>Note</th></tr>
+</thead>
+<tbody>
+<tr><td>The way you</td><td class="ipa-cell">/ðə weɪ juː/</td><td>Smooth linking</td></tr>
+<tr><td>What impressed me was</td><td class="ipa-cell">/wʌt ɪmˈprɛst miː wʌz/</td><td>Stress on "impressed"</td></tr>
+<tr><td>I know that wasn't easy</td><td class="ipa-cell">/aɪ noʊ æt wʌznt ˈiːzi/</td><td>Warm, empathetic tone</td></tr>
+<tr><td>That's who you are</td><td class="ipa-cell">/ðæts huː juː ɑr/</td><td>Heavy stress on "who" and "are"</td></tr>
+<tr><td>What did you learn</td><td class="ipa-cell">/wʌt dɪd juː lɜːrn/</td><td>Rising intonation (question)</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section-header" style="margin-top: 24px;">
+<h3 style="font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--text-primary);">🎵 Intonation Patterns — When & Why</h3>
+</div>
+<div class="intonation-item">
+<span class="phrase">"The way you [action]..."</span>
+<span class="pattern-label">↘ Falling with warmth</span>
+<span class="context-tip"><strong>Context:</strong> Used when naming the action. Falling tone = sincere, grounded. Add warmth to your voice. <strong>Avoid:</strong> Flat or robotic (sounds like a performance review).</span>
+</div>
+<div class="intonation-item">
+<span class="phrase">"That's who you are."</span>
+<span class="pattern-label">↘ Falling with pause</span>
+<span class="context-tip"><strong>Context:</strong> Used when tying to identity. Pause for 1 second after the sentence. Let the identity sink in. <strong>Avoid:</strong> Rushing through it (kills the impact).</span>
+</div>
+<div class="intonation-item">
+<span class="phrase">"What did you learn about yourself?"</span>
+<span class="pattern-label">↗ Rising</span>
+<span class="context-tip"><strong>Context:</strong> Used when inviting reflection. Rising tone = genuine curiosity, open question. <strong>Avoid:</strong> Falling (sounds like a test).</span>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-chats"></i>
+Speaking: 4 Scenarios
+</h2>
+<p class="section-desc">Practice recognizing people in different contexts. Focus on the communication goal, not just using moves.</p>
+</div>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">🟢 Casual - 3-4 min</span>
+<h3>Scenario 1: Recognizing a Friend's Support</h3>
+<p class="scenario-context">Your friend just stood by you during a difficult time. Recognize their support specifically.</p>
+<div class="model-response">
+<strong>💡 Communication Goal:</strong> Name action + Acknowledge struggle + Tie identity.
+<strong>📖 Possible Response:</strong> "The way you showed up at my house at 10 PM when I was going through that tough time, without me even asking, showed me what real friendship looks like. I know you had your own stuff going on, but you prioritized me. That's who you are."
+</div>
+<div class="scenario-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Name the specific action they took</li>
+<li>Acknowledge the struggle or sacrifice</li>
+<li>Tie it to their identity as a friend</li>
+</ul>
+</div>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">🔵 Neutral - 3-4 min</span>
+<h3>Scenario 2: Recognizing a Team Member's Initiative</h3>
+<p class="scenario-context">A team member just proposed and implemented an improvement without being asked. Recognize their initiative.</p>
+<div class="model-response">
+<strong>💡 Communication Goal:</strong> Name action + Connect impact + Tie identity.
+<strong>📖 Possible Response:</strong> "The way you took initiative on the new filing system was remarkable. You didn't wait to be asked; you saw a problem and fixed it. That directly saved the team 5 hours a week. That's the kind of proactive mindset we need more of."
+</div>
+<div class="scenario-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Name the specific initiative they took</li>
+<li>Connect it to a tangible impact</li>
+<li>Tie it to their professional identity</li>
+</ul>
+</div>
+</div>
+<div class="scenario-card mixed">
+<span class="scenario-badge">🟣 Professional - 4-5 min</span>
+<h3>Scenario 3: Recognizing Effort After Failure</h3>
+<p class="scenario-context">Your team just lost a major deal. They are very upset. Recognize their effort and learning, not the result.</p>
+<div class="model-response">
+<strong>💡 Communication Goal:</strong> Acknowledge struggle + Tie identity + Invite reflection.
+<strong>📖 Possible Response:</strong> "I know this wasn't the outcome we wanted, but the way you persisted through those last three weeks of negotiations showed incredible resilience. You could have given up, but you didn't. That's the kind of team you are. What did you learn about our process from this experience?"
+</div>
+<div class="scenario-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Acknowledge the disappointment and the struggle</li>
+<li>Recognize the effort and resilience</li>
+<li>Tie it to the team's identity</li>
+<li>Invite reflection on learning</li>
+</ul>
+</div>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">🟠 Challenge - 5 min</span>
+<h3>Scenario 4: The Double Recognition Challenge</h3>
+<p class="scenario-context">Morning: Recognize your child for their effort in studying (not their grades). Afternoon: Recognize a colleague for their leadership during a crisis.</p>
+<div class="model-response">
+<strong>💡 Communication Goal:</strong> Shift register. Life = emotional support. Business = professional growth.
+<strong>📖 Possible Response (Life):</strong> "The way you studied for two hours every night this week, even when you were tired, showed real discipline. I know it wasn't easy, but you stuck with it. That's who you are — someone who does hard things. How did that feel for you?"
+<strong>📖 Possible Response (Business):</strong> "The way you calmed the client down during that escalation was masterful. I know that wasn't easy, but your ability to de-escalate and find common ground directly saved the account. That's the kind of leadership this team needs. What did you take away from that experience?"
+</div>
+<div class="scenario-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Shift register flexibly</li>
+<li>Life = effort, discipline, character. Business = impact, leadership, growth.</li>
+<li>Use all 5 moves in both</li>
+<li>Make it specific and sincere in both</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-target"></i>
+Reality Task - Choose Your Level</h2>
+<p class="section-desc">Real-world practice. Apply specific recognition to actual situations this week.</p>
+</div>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 Recognition Email Practice</h3>
+<div class="task-time">⏱️ 15 minutes</div>
+<p class="task-desc">Write 1 specific recognition email to your team or a family member. Use all 5 moves.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Name the specific action</li>
+<li>Connect to impact</li>
+<li>Tie to identity</li>
+<li>Write down the flow</li>
+</ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Written email</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎙️ Record 2 Recognition Conversations</h3>
+<div class="task-time">⏱️ 30 minutes</div>
+<p class="task-desc">Record 2 short speeches (2 min) about recognition. 1 for family (effort), 1 for team (leadership).</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>1 Life scenario (casual register)</li>
+<li>1 Business scenario (professional register)</li>
+<li>Use the 5 moves naturally</li>
+<li>Focus on specificity and sincerity</li>
+</ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> 2 audio recordings</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎥 The Real Recognition Challenge</h3>
+<div class="task-time">⏱️ 60 minutes</div>
+<p class="task-desc">This week, recognize at least 1 person specifically every day. Note their reaction and how it felt for you.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Recognize at least 1 person per day</li>
+<li>Use all 5 moves naturally</li>
+<li>Did they light up? Note their reaction</li>
+<li>Reflect on what worked/didn't work</li>
+</ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Reflection notes</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="mastery-card">
+<h2>🎯 Recognition Mastery</h2>
+<div class="mastery-item">
+<input type="checkbox" id="mastery1">
+<label for="mastery1">People feel truly seen and valued</label>
+</div>
+<div class="mastery-item">
+<input type="checkbox" id="mastery2">
+<label for="mastery2">Specific behaviors are reinforced</label>
+</div>
+<div class="mastery-item">
+<input type="checkbox" id="mastery3">
+<label for="mastery3">Culture of appreciation is built</label>
+</div>
+<div class="mastery-item">
+<input type="checkbox" id="mastery4">
+<label for="mastery4">People understand their own strengths better</label>
+</div>
+<div class="mastery-item">
+<input type="checkbox" id="mastery5">
+<label for="mastery5">Trust and loyalty deepen</label>
+</div>
+</div>
+
+<div class="success-card">
+<h2><i class="ph-duotone ph-check-circle"></i> Communication Outcomes</h2>
+<div class="success-item">
+<i class="ph-duotone ph-check"></i>
+<span>You name specific actions, not generic praise</span>
+</div>
+<div class="success-item">
+<i class="ph-duotone ph-check"></i>
+<span>You connect actions to tangible impact</span>
+</div>
+<div class="success-item">
+<i class="ph-duotone ph-check"></i>
+<span>You acknowledge struggle, not just success</span>
+</div>
+<div class="success-item">
+<i class="ph-duotone ph-check"></i>
+<span>You tie behaviors to identity</span>
+</div>
+<div class="success-item">
+<i class="ph-duotone ph-check"></i>
+<span>You invite reflection to deepen self-awareness</span>
+</div>
+</div>
+
+<div class="tips-card">
+<h2><i class="ph-duotone ph-lightbulb"></i> Pro Tips</h2>
+<div class="tip-item">
+<i class="ph-duotone ph-lightbulb"></i>
+<span><strong>Name the action:</strong> "The way you [action]..." before "Good job."</span>
+</div>
+<div class="tip-item">
+<i class="ph-duotone ph-lightbulb"></i>
+<span><strong>Connect impact:</strong> "...which resulted in [impact]" before "Thanks."</span>
+</div>
+<div class="tip-item">
+<i class="ph-duotone ph-lightbulb"></i>
+<span><strong>Acknowledge struggle:</strong> "I know that wasn't easy..." before "Congrats."</span>
+</div>
+<div class="tip-item">
+<i class="ph-duotone ph-lightbulb"></i>
+<span><strong>Tie identity:</strong> "That's who you are..." before "You're great."</span>
+</div>
+<div class="tip-item">
+<i class="ph-duotone ph-lightbulb"></i>
+<span><strong>Invite reflection:</strong> "What did you learn?" before "Moving on."</span>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-cards"></i>
+Flashcard Review
+</h2>
+<p class="section-desc">5 flashcards with recognition moves. Front: situation. Back: best move.</p>
+</div>
+<div class="flashcard-container">
+<div class="flashcard" onclick="this.querySelector('.flashcard-front').style.display='none'; this.querySelector('.flashcard-back').classList.add('active');">
+<div class="flashcard-front">
+<p>Stage: Someone just overcame a major challenge</p>
+<button>Tap to reveal best move →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Move 3: Acknowledge the Struggle</strong><br><br>"I know that wasn't easy because..."</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> Always recognize the journey, not just the destination. Effort recognition is often more powerful than success recognition.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="quiz-section">
+<div class="section-header">
+<h2 class="section-title">
+<i class="ph-duotone ph-pencil-simple"></i>
+Quiz: Recognition & Appreciation
+</h2>
+<p class="section-desc">9 situational questions. Choose the BEST response.</p>
+</div>
+<div class="quiz-question">
+<h4>1. (Judgement) A team member just stayed late to fix a critical bug. Best recognition?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Good job!"</div>
+<div class="quiz-option">B. "Thanks for your hard work."</div>
+<div class="quiz-option">C. "The way you stayed late to fix that bug saved us from a major client issue. That's the kind of dedication this team needs."</div>
+<div class="quiz-option">D. "You're awesome."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Your child studied hard but failed a test. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Don't worry, you'll do better next time."</div>
+<div class="quiz-option">B. "The way you studied every night showed real discipline. I know that wasn't easy, but you didn't give up. That's who you are."</div>
+<div class="quiz-option">C. "Maybe you should study more."</div>
+<div class="quiz-option">D. "It's just one test."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) A colleague just led a difficult meeting in your absence. Best recognition?</h4>
+<div class="quiz-options">
+<div class="quiz-options">
+<div class="quiz-option">A. "Nice meeting."</div>
+<div class="quiz-option">B. "The way you calmed the room when the client raised their voice was masterful. That directly led to us keeping the account."</div>
+<div class="quiz-option">C. "Thanks for stepping in."</div>
+<div class="quiz-option">D. "You're a good leader."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Which sentence shows "Deep Recognition (C1+)"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Good job!"</div>
+<div class="quiz-option">B. "The way you handled that was great."</div>
+<div class="quiz-option">C. "That's the kind of leader you are. What did you learn about yourself?"</div>
+<div class="quiz-option">D. "Thanks for your effort."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) A team member is upset after losing a major deal. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "We'll get them next time."</div>
+<div class="quiz-option">B. "I know this wasn't the outcome we wanted, but the way you persisted showed incredible resilience. That's the kind of team you are. What did you learn from this?"</div>
+<div class="quiz-option">C. "Don't be upset."</div>
+<div class="quiz-option">D. "It wasn't your fault."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Life) Your friend just supported you through a tough time. Best recognition?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Thanks for being a good friend."</div>
+<div class="quiz-option">B. "The way you showed up at 10 PM when I was struggling showed me what real friendship looks like. That's who you are."</div>
+<div class="quiz-option">C. "I appreciate it."</div>
+<div class="quiz-option">D. "You're the best."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Business) A team member just proposed an improvement without being asked. Best recognition?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Good idea."</div>
+<div class="quiz-option">B. "The way you took initiative on the filing system saved the team 5 hours a week. That's the kind of proactive mindset we need."</div>
+<div class="quiz-option">C. "Thanks for the suggestion."</div>
+<div class="quiz-option">D. "Nice work."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Judgement) Which response is "Generic Praise (B2)"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "The way you opened with that story grabbed everyone's attention."</div>
+<div class="quiz-option">B. "Your extra hours on the proposal directly led to us winning the contract."</div>
+<div class="quiz-option">C. "Great job!"</div>
+<div class="quiz-option">D. "That's the kind of leader you are."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Judgement) Which response shows "Recognition (C1)"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "You're awesome."</div>
+<div class="quiz-option">B. "Good job on the presentation."</div>
+<div class="quiz-option">C. "The way you handled that difficult client call showed real patience and skill."</div>
+<div class="quiz-option">D. "Thanks for your hard work."</div>
+</div>
+</div>
+<button class="check-btn">
+<i class="ph-duotone ph-check"></i>
+Check Answers
+</button>
+</section>
+
+<div class="day-navigation">
+<a href="week-07-day-45.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 45: Active Listening & Powerful Questions</div>
+</a>
+<a href="week-07-day-47.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 47: Difficult Conversations</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn" onclick="markComplete()">
+<i class="ph-duotone ph-check-circle"></i>
+<span>Mark Day 46 Complete & Continue to Day 47</span>
+</button>
+<div class="complete-message">B2 leaders praise to be nice. C1 leaders recognize to build culture. 🏆</div>
+</div>
+
+</div>
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 7 · Day 46 · Recognition & Appreciation</div>
+</div>
+</footer>
+
+<script>
+let voices = [];
+let selectedVoice = null;
+
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+selectedVoice =
+voices.find(v => v.name.includes('Google US English')) ||
+voices.find(v => v.name === 'Microsoft Zira' && v.lang === 'en-US') ||
+voices.find(v => v.name === 'Microsoft David' && v.lang === 'en-US') ||
+voices.find(v => v.lang === 'en-US') ||
+voices.find(v => v.lang.includes('en'));
+console.log('Selected voice:', selectedVoice?.name);
+}
+
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+speechSynthesis.onvoiceschanged = loadVoices;
+}
+setTimeout(loadVoices, 500);
+setTimeout(loadVoices, 1000);
+
+function playAudio(text) {
+if (!('speechSynthesis' in window)) {
+alert('Trình duyệt không hỗ trợ phát âm thanh');
+return;
+}
+speechSynthesis.cancel();
+setTimeout(() => {
+const utterance = new SpeechSynthesisUtterance(text);
+utterance.lang = 'en-US';
+utterance.rate = 0.95;
+utterance.pitch = 1.05;
+utterance.volume = 1.0;
+if (selectedVoice) {
+utterance.voice = selectedVoice;
+}
+speechSynthesis.speak(utterance);
+}, 100);
+}
+
+function stopSpeaking() {
+if ('speechSynthesis' in window) {
+speechSynthesis.cancel();
+}
+}
+
+function playDialogue(type) {
+if (type === 'life') {
+const lifeText = `Son: I failed the piano competition. I practiced so hard and it wasn't enough. You: I know how disappointed you are. The way you practiced every single day for three months, even when you didn't feel like it, showed incredible discipline. Son: But I still lost. You: I know that wasn't easy. You could have given up, but you didn't. That's who you are — someone who keeps going even when it's hard. Son: I don't know if I want to keep playing. You: What did you learn about yourself during those three months of practice? Son: I learned I can do hard things if I stick with them. You: That's the most important lesson. The discipline you built will help you in everything you do, not just piano. Son: I guess you're right. You: I'm proud of you. Not for winning or losing, but for showing up every day. That's real courage.`;
+playAudio(lifeText);
+} else if (type === 'business') {
+const businessText = `You: Thanks for stepping in during yesterday's meeting. The way you calmed the room when the client started raising their voice was masterful. Team Member: I was pretty nervous, honestly. You: I know that wasn't easy. Stepping into that kind of tension takes real courage. The fact that you stayed calm and reframed the conversation directly led to us keeping the account. Team Member: I just tried to listen and find common ground. You: That's exactly the kind of leader you are — someone who can de-escalate and find solutions under pressure. That's rare and valuable. Team Member: Thanks. I never thought of it that way. You: What did you learn about yourself in that moment? Team Member: I learned I can handle more pressure than I thought. You: That's a powerful insight. I want you to lead the next client meeting. You're ready.`;
+playAudio(businessText);
+}
+}
+
+function markComplete() {
+const completed = JSON.parse(localStorage.getItem('completedDays') || '[]');
+if (!completed.includes('day-46')) {
+completed.push('day-46');
+localStorage.setItem('completedDays', JSON.stringify(completed));
+}
+const btn = document.querySelector('.complete-btn');
+btn.innerHTML = '<i class="ph-duotone ph-confetti"></i><span>🎉 Day 46 Complete! Well done!</span>';
+btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+btn.style.boxShadow = '0 8px 28px rgba(16, 185, 129, 0.4)';
+const msg = document.querySelector('.complete-message');
+msg.textContent = 'B2 leaders praise to be nice. C1 leaders recognize to build culture. 🏆';
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+const completed = JSON.parse(localStorage.getItem('completedDays') || '[]');
+if (completed.includes('day-46')) {
+const btn = document.querySelector('.complete-btn');
+btn.innerHTML = '<i class="ph-duotone ph-check-circle"></i><span>✅ Day 46 Completed</span>';
+btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+}
+});
+</script>
+</body>
+</html>

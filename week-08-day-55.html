@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 8 Day 55: Integration Communication Moves | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #334155; --primary-bright: #1E293B; --primary-soft: #F1F5F9; --primary-deep: #0F172A; --primary-light: #475569;
+--highlight-gold: #D97706; --highlight-green: #059669; --highlight-blue: #2563EB; --highlight-purple: #7C3AED; --highlight-orange: #DC2626;
+--green: #10B981; --green-soft: #D1FAE5; --green-deep: #065F46; --blue: #3B82F6; --blue-soft: #DBEAFE; --blue-deep: #1E40AF;
+--purple: #8B5CF6; --purple-soft: #F3E8FF; --purple-deep: #6B21A8; --orange: #F97316; --orange-soft: #FFEDD5; --orange-deep: #9A3412;
+--text-primary: #1E293B; --text-secondary: #334155; --text-muted: #64748B;
+--radius-sm: 12px; --radius-md: 18px; --radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #FAFAFA; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* Navigation & Header */
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 10px; }
+.progress-bar { width: 80px; height: 6px; background: rgba(0, 0, 0, 0.08); border-radius: 3px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--primary-bright)); border-radius: 3px; width: 93%; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(51, 65, 85, 0.3); }
+.day-header { background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 50%, #E2E8F0 100%); padding: 48px 0 40px; position: relative; }
+.day-header::after { content: '🔄'; position: absolute; top: 40px; right: 40px; font-size: 4rem; opacity: 0.3; }
+.breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 2rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); max-width: 700px; margin-bottom: 20px; line-height: 1.5; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+
+/* Content Layout */
+.content-area { background: #FAFAFA; padding: 40px 0; }
+.section { margin: 40px 0; }
+.section-header { margin-bottom: 28px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.section-title i { --ph-color: var(--primary-bright); }
+.section-desc { font-size: 14px; color: var(--text-secondary); max-width: 700px; line-height: 1.5; }
+
+/* Cards & Boxes */
+.c1-insight { background: linear-gradient(135deg, rgba(241, 245, 249, 0.6), rgba(226, 232, 240, 0.25)); border-radius: var(--radius-md); padding: 24px 28px; margin-bottom: 28px; border-left: 4px solid var(--primary); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 500; color: var(--primary-deep); line-height: 1.5; }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); border: 1px solid rgba(51, 65, 85, 0.2); }
+.philosophy-box { background: #F8FAFC; border-radius: var(--radius-md); padding: 20px; border-left: 4px solid var(--highlight-gold); margin-bottom: 20px; }
+.philosophy-title { font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.philosophy-title i { --ph-color: var(--highlight-gold); }
+.philosophy-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+.philosophy-box strong { color: var(--primary-deep); }
+.plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: rgba(241, 245, 249, 0.5); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+
+/* Moves Grid */
+.moves-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 20px; }
+.move-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.move-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.move-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.move-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.move-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.move-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.move-context { font-size: 11px; color: var(--text-muted); background: rgba(241, 245, 249, 0.5); padding: 3px 8px; border-radius: 10px; }
+.register-table { background: rgba(248, 250, 252, 0.8); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 12px; }
+.register-table h4 { font-family: 'Fraunces', serif; font-size: 0.9rem; margin-bottom: 10px; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+.register-row { display: grid; grid-template-columns: 90px 1fr; gap: 10px; padding: 8px 10px; background: rgba(255, 255, 255, 0.9); border-radius: var(--radius-sm); margin-bottom: 6px; align-items: center; }
+.register-row:last-child { margin-bottom: 0; }
+.register-tag { font-size: 10px; font-weight: 700; padding: 3px 6px; border-radius: 6px; text-align: center; }
+.register-tag.casual { background: var(--green-soft); color: var(--green-deep); }
+.register-tag.neutral { background: var(--blue-soft); color: var(--blue-deep); }
+.register-tag.professional { background: var(--primary-soft); color: var(--primary-deep); }
+.register-tag.formal { background: var(--orange-soft); color: var(--orange-deep); }
+.register-phrase { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.audio-btn-small { width: 26px; height: 26px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; border-radius: 50%; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s ease; flex-shrink: 0; margin-left: 6px; }
+.audio-btn-small:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(51, 65, 85, 0.3); }
+.audio-btn-small i { --ph-color: white; font-size: 13px; }
+.move-subsection { margin-bottom: 12px; }
+.move-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.move-subsection h4 i { --ph-color: var(--primary-bright); }
+.move-subsection p, .move-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.move-subsection ul { list-style: none; padding-left: 0; }
+.move-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.move-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.compare-box { background: rgba(248, 250, 252, 0.8); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--highlight-orange); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--highlight-orange); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--highlight-green); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--green-deep); }
+
+/* Mistakes Grid */
+.mistakes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 20px; }
+.mistake-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 20px; border-left: 4px solid var(--highlight-orange); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.mistake-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--green-deep); border-left: 3px solid var(--highlight-green); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+
+/* Decoder */
+.decoder-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-purple); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.decoder-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.decoder-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.decoder-item { background: rgba(241, 245, 249, 0.5); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); }
+.decoder-item h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--text-primary); margin-bottom: 8px; }
+.decoder-item p { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.comparison-table { width: 100%; border-collapse: collapse; margin-bottom: 14px; background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.comparison-table th { background: rgba(241, 245, 249, 0.5); padding: 12px; text-align: left; font-size: 12px; font-weight: 600; color: var(--primary-deep); border-bottom: 2px solid rgba(51, 65, 85, 0.2); }
+.comparison-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); font-size: 13px; color: var(--text-secondary); }
+.comparison-table td:first-child { font-weight: 600; color: var(--text-primary); }
+
+/* Reading & Micro Writing */
+.reading-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-blue); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.reading-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.scenario-box { background: #F8FAFC; border: 1px solid rgba(0, 0, 0, 0.06); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 16px; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.executive-breakdown { background: rgba(124, 58, 237, 0.05); border-radius: var(--radius-md); padding: 20px; margin: 20px 0; border-left: 4px solid var(--highlight-purple); }
+.executive-breakdown h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--purple-deep); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.breakdown-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.breakdown-item { background: rgba(255, 255, 255, 0.8); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-purple); box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+.breakdown-item .sentence { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+.breakdown-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.breakdown-item .analysis strong { color: var(--purple-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.micro-writing-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-green); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.micro-writing-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.rewrite-item { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+.rewrite-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.rewrite-task { font-size: 13px; color: #C53030; font-weight: 600; margin-bottom: 12px; }
+.sentence-function-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.sentence-function { background: rgba(59, 130, 246, 0.05); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-blue); }
+.sentence-function .sentence { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.sentence-function .function { font-size: 12px; color: var(--blue-deep); font-weight: 600; }
+.before-after-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.before-after { padding: 12px; border-radius: var(--radius-sm); }
+.before-after.normal { background: rgba(245, 101, 101, 0.05); border-left: 3px solid #F56565; }
+.before-after.executive { background: rgba(16, 185, 129, 0.05); border-left: 3px solid var(--highlight-green); }
+.before-after .label { font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.before-after.normal .label { color: #C53030; }
+.before-after.executive .label { color: var(--green-deep); }
+.before-after .text { font-size: 13px; color: var(--text-secondary); font-style: italic; margin-bottom: 4px; }
+.before-after .explanation { font-size: 12px; color: var(--text-muted); }
+
+/* Vocab */
+.vocab-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-purple); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.vocab-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.vocab-item { padding: 12px; background: rgba(243, 232, 255, 0.3); border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-purple); }
+.vocab-item strong { display: block; font-size: 13px; color: var(--purple-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--highlight-green); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+
+/* Dialogues */
+.story-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--primary); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.story-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; margin-bottom: 8px; color: var(--text-primary); display: flex; align-items: center; gap: 10px; }
+.story-context { font-size: 12px; color: var(--text-muted); margin-bottom: 14px; font-style: italic; padding: 10px 14px; background: rgba(241, 245, 249, 0.3); border-radius: var(--radius-sm); }
+.story-dialogue { background: rgba(241, 245, 249, 0.2); padding: 18px; border-radius: var(--radius-sm); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(51, 65, 85, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--highlight-blue); }
+.move-highlight.move2 { background: var(--highlight-purple); }
+.move-highlight.move3 { background: var(--highlight-green); }
+.move-highlight.move4 { background: var(--highlight-orange); }
+.move-highlight.move5 { background: var(--primary); }
+.story-audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.story-audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.story-play-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.story-play-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(51, 65, 85, 0.3); }
+.story-stop-btn { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.story-stop-btn:hover { background: rgba(245, 101, 101, 0.2); }
+.story-analysis { background: rgba(241, 245, 249, 0.3); border-radius: var(--radius-sm); padding: 16px; }
+.story-analysis h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.story-analysis ul { list-style: none; }
+.story-analysis li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.story-analysis li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+
+/* Listening */
+.listening-deep-dive { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-green); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.listening-deep-dive h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.listening-step { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(5, 150, 105, 0.1); }
+.listening-step:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.listening-step h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.listening-step h4 i { --ph-color: var(--highlight-green); }
+.step-badge { background: var(--highlight-green); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-right: 8px; }
+.transcript-box { background: rgba(209, 250, 229, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 12px; }
+.transcript-box .key-phrase { font-weight: 600; color: var(--green-deep); background: rgba(16, 185, 129, 0.1); padding: 2px 6px; border-radius: 4px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.8); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-green); box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--highlight-green); font-weight: 600; display: block; margin: 4px 0; }
+.deep-dive-item .analysis strong { color: var(--green-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+.language-notes-box { background: rgba(59, 130, 246, 0.05); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-blue); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-purple); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.listening-strategy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.listening-strategy-box { background: rgba(217, 119, 6, 0.08); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-gold); }
+.listening-strategy-box .pass { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.listening-strategy-box .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.shadowing-box { background: rgba(249, 115, 22, 0.05); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-orange); }
+.shadowing-box .instruction { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 8px; }
+.shadowing-box .instruction strong { color: var(--orange-deep); }
+.listening-question { background: rgba(209, 250, 229, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 12px; }
+.listening-question p { font-size: 13px; color: var(--text-primary); font-weight: 600; margin-bottom: 8px; }
+.listening-answer { font-size: 12px; color: var(--green-deep); font-style: italic; }
+
+/* Grammar */
+.grammar-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 20px; border-left: 4px solid var(--highlight-gold); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.grammar-card h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.grammar-item { margin-bottom: 12px; padding: 12px; background: rgba(253, 243, 199, 0.3); border-radius: var(--radius-sm); border-left: 3px solid var(--highlight-gold); }
+.grammar-item strong { font-size: 13px; color: var(--orange-deep); display: block; margin-bottom: 4px; }
+.grammar-item span { font-size: 13px; color: var(--text-secondary); }
+
+/* Speaking Scenarios */
+.scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+.scenario-card { border-radius: var(--radius-md); padding: 20px; border: 2px solid; font-size: 13px; }
+.scenario-card.casual { background: rgba(209, 250, 229, 0.3); border-color: var(--green); }
+.scenario-card.neutral { background: rgba(219, 234, 254, 0.3); border-color: var(--blue); }
+.scenario-card.professional { background: rgba(243, 232, 255, 0.3); border-color: var(--purple); }
+.scenario-card.challenge { background: rgba(255, 237, 213, 0.3); border-color: var(--orange); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.casual .scenario-badge { background: var(--green); }
+.scenario-card.neutral .scenario-badge { background: var(--blue); }
+.scenario-card.professional .scenario-badge { background: var(--purple); }
+.scenario-card.challenge .scenario-badge { background: var(--orange); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-goal { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-bottom: 8px; background: rgba(255,255,255,0.5); padding: 6px 10px; border-radius: 6px; }
+.scenario-response { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; font-style: italic; background: rgba(255,255,255,0.5); padding: 10px; border-radius: 6px; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); }
+.scenario-req strong { color: var(--primary-deep); }
+
+/* Tasks */
+.task-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 24px; margin-bottom: 16px; position: relative; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); border-left: 4px solid; }
+.task-card.easy { border-left-color: #10B981; }
+.task-card.standard { border-left-color: var(--primary); }
+.task-card.challenge { border-left-color: #EF4444; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: #D1FAE5; color: #065F46; }
+.task-card.standard .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.challenge .task-level { background: #FEE2E2; color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(241, 245, 249, 0.3); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-example { background: rgba(59, 130, 246, 0.05); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; border-left: 3px solid var(--highlight-blue); }
+.task-example h4 { font-size: 12px; font-weight: 600; color: var(--blue-deep); margin-bottom: 8px; }
+.task-example p { font-size: 12px; color: var(--text-secondary); line-height: 1.5; font-style: italic; }
+.task-criteria { background: rgba(217, 119, 6, 0.08); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; border-left: 3px solid var(--highlight-gold); }
+.task-criteria h4 { font-size: 12px; font-weight: 600; color: var(--orange-deep); margin-bottom: 8px; }
+.task-criteria ul { list-style: none; }
+.task-criteria li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+.task-criteria li::before { content: '★'; position: absolute; left: 0; color: var(--highlight-gold); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(241, 245, 249, 0.3); border-radius: var(--radius-sm); }
+
+/* Mastery Grid */
+.mastery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.2s; }
+.mastery-card:hover { transform: translateY(-2px); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.mastery-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+/* Flashcards & Quiz */
+.flashcard-container { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; text-align: center; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); margin-bottom: 32px; }
+.flashcard { background: linear-gradient(135deg, rgba(241, 245, 249, 0.5), rgba(226, 232, 240, 0.3)); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(51, 65, 85, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.8); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.flashcard-tip strong { color: var(--primary-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.9); border: 1px solid rgba(51, 65, 85, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+
+.quiz-section { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.quiz-question { background: rgba(248, 250, 252, 0.8); border-radius: var(--radius-md); padding: 18px; margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.9); border: 2px solid rgba(241, 245, 249, 0.5); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(241, 245, 249, 0.2); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(51, 65, 85, 0.3); }
+
+/* Navigation & Footer */
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.06); position: relative; overflow: hidden; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-bright)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(51, 65, 85, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(51, 65, 85, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(51, 65, 85, 0.5); }
+.complete-btn i { font-size: 1.2rem; }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+
+.footer { background: rgba(255, 255, 255, 0.95); padding: 32px 0 24px; text-align: center; margin-top: 48px; border-top: 1px solid rgba(0, 0, 0, 0.08); }
+.footer-fox { font-size: 2rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+
+@media (max-width: 768px) {
+.day-title { font-size: 1.8rem; }
+.day-tabs-container { top: 52px; }
+.day-navigation { grid-template-columns: 1fr; }
+.moves-grid { grid-template-columns: 1fr; }
+.mistakes-grid { grid-template-columns: 1fr; }
+.decoder-grid { grid-template-columns: 1fr; }
+.sentence-function-grid { grid-template-columns: 1fr; }
+.before-after-grid { grid-template-columns: 1fr; }
+.listening-strategy-grid { grid-template-columns: 1fr; }
+.scenario-grid { grid-template-columns: 1fr; }
+.task-grid { grid-template-columns: 1fr; }
+.mastery-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-08.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i><span>Week 8 Hub</span></a>
+<div class="day-indicator">Day 55 / 56<div class="progress-bar"><div class="progress-fill"></div></div></div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-08.html" class="day-tab">Overview</a>
+<a href="week-08-day-50.html" class="day-tab">Day 50</a>
+<a href="week-08-day-51.html" class="day-tab">Day 51</a>
+<a href="week-08-day-52.html" class="day-tab">Day 52</a>
+<a href="week-08-day-53.html" class="day-tab">Day 53</a>
+<a href="week-08-day-54.html" class="day-tab">Day 54</a>
+<a href="week-08-day-55.html" class="day-tab active">Day 55</a>
+<a href="week-08-day-56.html" class="day-tab">Day 56</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb"><a href="index.html">Home</a> › <a href="week-08.html">Week 8</a> › Day 55</div>
+<div class="day-title-row"><span class="day-icon-inline">🔄</span><h1 class="day-title">Integration Communication Moves</h1></div>
+<p class="day-subtitle">Day 50-54 taught you the competencies. Today, you learn to <strong>switch between them seamlessly</strong> using transition phrases. B2 managers switch mechanically. C1 executives flow naturally.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-arrows-merge"></i> Integration Moves</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-lightning"></i> 5 Transition Moves</div>
+<div class="meta-tag"><i class="ph-duotone ph-trophy"></i> Day 6 of 7</div>
+</div>
+</div>
+</header>
+
+<div class="content-area">
+<div class="container">
+
+<div class="c1-insight">
+<div class="label">💡 C1 Insight</div>
+<div class="insight">
+<strong>B2 Manager:</strong> Consciously thinks "Now I need to use Presence... now Strategy." (Mechanical, robotic switching).<br><br>
+<strong>C1 Executive:</strong> Uses transition phrases to switch competencies naturally. Integration becomes instinct, not calculation.<br><br>
+<em>"B2 managers think about which skill to use. C1 executives use transition phrases that make the switch feel natural. The difference isn't knowledge — it's linguistic fluency."</em>
+</div>
+</div>
+
+<section class="section">
+<div class="philosophy-section">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i>Today's Philosophy</h2>
+<div class="philosophy-box">
+<div class="philosophy-title"><i class="ph-duotone ph-brain"></i>From Mechanical Switching to Natural Flow</div>
+<p>
+Mechanical switching is when you consciously think "Now I need to use Presence." Natural flow is when you use a transition phrase like "Now that we've acknowledged..." and the switch happens automatically.
+<br><br>
+Most leaders struggle with integration because they don't have the <strong>linguistic tools</strong> to bridge between competencies. C1 leaders have a toolkit of transition phrases that make integration feel effortless.
+<br><br>
+<span style="color: var(--primary); font-weight: 600;">Important:</span> Integration is not about using all skills at once. It's about having the language to move smoothly from one competency to another, like a dancer transitioning between moves.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="philosophy-section">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i>Today's Plan (90 min)</h2>
+<div class="plan-grid">
+<div class="plan-card"><div class="plan-icon">📚</div><div class="plan-title">5 Moves</div><div class="plan-time">12 min</div><div class="plan-desc">Transition phrases</div></div>
+<div class="plan-card"><div class="plan-icon">⚠️</div><div class="plan-title">Mistakes</div><div class="plan-time">3 min</div><div class="plan-desc">Mechanical traps</div></div>
+<div class="plan-card"><div class="plan-icon">🔍</div><div class="plan-title">Decoder</div><div class="plan-time">5 min</div><div class="plan-desc">Mechanical vs Natural</div></div>
+<div class="plan-card"><div class="plan-icon">🔄</div><div class="plan-title">Compare</div><div class="plan-time">3 min</div><div class="plan-desc">Casual ↔ Pro</div></div>
+<div class="plan-card"><div class="plan-icon">📖</div><div class="plan-title">Read & Write</div><div class="plan-time">18 min</div><div class="plan-desc">Breakdown + Function</div></div>
+<div class="plan-card"><div class="plan-icon">🎭</div><div class="plan-title">Stories</div><div class="plan-time">12 min</div><div class="plan-desc">Dialogues + Listen</div></div>
+<div class="plan-card"><div class="plan-icon">🗣️</div><div class="plan-title">Speaking</div><div class="plan-time">13 min</div><div class="plan-desc">4 scenarios</div></div>
+<div class="plan-card"><div class="plan-icon">🎴</div><div class="plan-title">Review</div><div class="plan-time">8 min</div><div class="plan-desc">Grammar + Quiz</div></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-list-numbers"></i>5 Communication Moves (Integration)</h2>
+<p class="section-desc">5 moves to switch between competencies naturally. Click 🔊 to listen.</p>
+</div>
+
+<div class="moves-grid">
+<div class="move-card">
+<div class="move-number">1</div>
+<div class="move-title">The Acknowledgment Bridge</div>
+<div class="move-core">Core idea: "Now that we've acknowledged..."</div>
+<div class="move-meta">
+<span class="move-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="move-context">Closing emotion, opening action</span>
+<button class="audio-btn-small" onclick="playAudio('Now that we have acknowledged the challenges, let us focus on solutions.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression 🔊</h4>
+<div class="register-row"><div><span class="register-tag casual">🏠 Casual</span></div><div class="register-phrase">"Okay, I hear you. Now let's figure this out..."</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"I understand. Now that we've talked about that, let's look at next steps."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"Now that we've acknowledged the challenges, let's focus on solutions."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"Having addressed the concerns raised, we can now proceed to strategic planning."</div></div>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-check-circle"></i> When to use:</h4>
+<ul><li>After listening deeply (Presence) and before setting direction (Strategy)</li><li>When you need to close an emotional conversation and move to action</li><li>To show you've processed their feelings before moving forward</li></ul>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-x-circle"></i> Avoid when:</h4>
+<ul><li>They're still processing emotion (too early to bridge)</li><li>It sounds like you're rushing them ("Okay, now let's move on")</li></ul>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "Anyway, let's get started."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "Now that we've acknowledged last week, let's focus on this week."</div>
+</div>
+</div>
+
+<div class="move-card">
+<div class="move-number">2</div>
+<div class="move-title">The Perspective Shift</div>
+<div class="move-core">Core idea: "Having heard both perspectives..."</div>
+<div class="move-meta">
+<span class="move-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="move-context">Conflict to Decision</span>
+<button class="audio-btn-small" onclick="playAudio('Having heard both perspectives, here is what I have decided.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression 🔊</h4>
+<div class="register-row"><div><span class="register-tag casual">🏠 Casual</span></div><div class="register-phrase">"I've heard both of you. Here's what I think..."</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"Having listened to both sides, here's my take..."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"Having heard both perspectives, here's what I've decided..."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"After considering all viewpoints presented, the decision is..."</div></div>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-check-circle"></i> When to use:</h4>
+<ul><li>After a conflict discussion and before announcing a decision</li><li>To show you've weighed all options before deciding</li><li>When you need to move from exploration to commitment</li></ul>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-x-circle"></i> Avoid when:</h4>
+<ul><li>You haven't actually listened to both sides (insincere)</li><li>It's not a decision moment yet (too early)</li></ul>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "I hear both of you. Here's what we're going to do."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "Having heard both perspectives, here's what I've decided and why."</div>
+</div>
+</div>
+
+<div class="move-card">
+<div class="move-number">3</div>
+<div class="move-title">The Forward Motion</div>
+<div class="move-core">Core idea: "Moving forward from here..."</div>
+<div class="move-meta">
+<span class="move-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="move-context">Uncertainty to Leadership</span>
+<button class="audio-btn-small" onclick="playAudio('Moving forward from here, our priority is client retention.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression 🔊</h4>
+<div class="register-row"><div><span class="register-tag casual">🏠 Casual</span></div><div class="register-phrase">"From here on out, let's focus on..."</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"Moving forward, here's what we're going to do..."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"Moving forward from here, our priority is..."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"Going forward, our strategic focus will be..."</div></div>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-check-circle"></i> When to use:</h4>
+<ul><li>After discussing uncertainty and before setting direction</li><li>When you need to shift from problem analysis to action planning</li><li>To create momentum after a period of ambiguity</li></ul>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-x-circle"></i> Avoid when:</h4>
+<ul><li>People are still in problem-solving mode (too early to move forward)</li><li>It sounds like you're dismissing the problems ("Let's just move on")</li></ul>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "Let's move on."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "Moving forward from here, our priority is client retention."</div>
+</div>
+</div>
+
+<div class="move-card">
+<div class="move-number">4</div>
+<div class="move-title">The Register Shift</div>
+<div class="move-core">Core idea: (Changing tone from Business to Life or vice versa)</div>
+<div class="move-meta">
+<span class="move-rating">⭐⭐⭐⭐ High</span>
+<span class="move-context">Context switching</span>
+<button class="audio-btn-small" onclick="playAudio('I recognize the complexity. Let us analyze the options.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression 🔊</h4>
+<div class="register-row"><div><span class="register-tag casual">🏠 Casual</span></div><div class="register-phrase">"I know this is hard. I'm here for you."</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"I understand this is challenging. Let's work through it together."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"I recognize the complexity. Let's analyze the options."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"I acknowledge the multifaceted nature of this situation. A systematic approach is warranted."</div></div>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-check-circle"></i> When to use:</h4>
+<ul><li>When transitioning from work mode to home mode (or vice versa)</li><li>When the same person needs different tones in different contexts</li><li>To show emotional intelligence and adaptability</li></ul>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-x-circle"></i> Avoid when:</h4>
+<ul><li>You use business language with family ("Let's analyze our relationship")</li><li>You use casual language in formal settings ("Yeah, that's cool")</li></ul>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> Using the same tone for everyone.</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "I hear you" (Life) vs "I understand your concern" (Business).</div>
+</div>
+</div>
+
+<div class="move-card">
+<div class="move-number">5</div>
+<div class="move-title">The Reflective Close</div>
+<div class="move-core">Core idea: "From this experience, what I'm taking away is..."</div>
+<div class="move-meta">
+<span class="move-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="move-context">Closing with learning</span>
+<button class="audio-btn-small" onclick="playAudio('From this experience, what I am taking away is the importance of early communication.')"><i class="ph-duotone ph-speaker-high"></i></button>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-speaker-high"></i> Register Progression 🔊</h4>
+<div class="register-row"><div><span class="register-tag casual">🏠 Casual</span></div><div class="register-phrase">"What I learned from this is..."</div></div>
+<div class="register-row"><div><span class="register-tag neutral">☕ Neutral</span></div><div class="register-phrase">"Looking back, the key takeaway is..."</div></div>
+<div class="register-row"><div><span class="register-tag professional">💼 Professional</span></div><div class="register-phrase">"From this experience, what I'm taking away is..."</div></div>
+<div class="register-row"><div><span class="register-tag formal">📋 Formal</span></div><div class="register-phrase">"The lessons learned from this initiative include..."</div></div>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-check-circle"></i> When to use:</h4>
+<ul><li>At the end of a difficult week or project</li><li>To show growth and learning from challenges</li><li>To close a conversation with insight, not just action items</li></ul>
+</div>
+<div class="move-subsection">
+<h4><i class="ph-duotone ph-x-circle"></i> Avoid when:</h4>
+<ul><li>It's too soon to reflect (people are still in the moment)</li><li>It sounds like you're lecturing ("Here's what you should learn")</li></ul>
+</div>
+<div class="compare-box">
+<h5>⚠️ Weak → Strong</h5>
+<div class="compare-level weak"><strong>❌ Weak:</strong> "Well, that's done. Let's move on."</div>
+<div class="compare-level strong"><strong>✅ Strong:</strong> "From this experience, what I'm taking away is the importance of early communication."</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning-circle"></i>3 Common Mistakes</h2>
+<p class="section-desc">Traps that destroy natural integration.</p>
+</div>
+<div class="mistakes-grid">
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 1: Mechanical switching</h4>
+<div class="mistake-wrong">❌ "Now I will use Presence. [Presence mode] Now I will use Strategy. [Strategy mode]"</div>
+<div class="mistake-right">✅ Use transition phrases to make the switch feel natural.</div>
+<div class="mistake-why">Why: Mechanical switching feels robotic and breaks trust. Natural flow feels human and builds confidence.</div>
+</div>
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 2: Using phrases without meaning them</h4>
+<div class="mistake-wrong">❌ "Now that we've acknowledged..." (when you haven't actually listened).</div>
+<div class="mistake-right">✅ Only use transition phrases when you've genuinely completed the previous phase.</div>
+<div class="mistake-why">Why: Insincere transitions are worse than no transitions. People sense when you're faking it.</div>
+</div>
+<div class="mistake-card">
+<h4><i class="ph-duotone ph-x-circle" style="--ph-color: #F56565;"></i> Mistake 3: Rushing the transition</h4>
+<div class="mistake-wrong">❌ "Okay, I hear you. Now let's move on." (30 seconds of Presence, then Strategy).</div>
+<div class="mistake-right">✅ Give each phase enough time. Presence needs 3-5 minutes minimum.</div>
+<div class="mistake-why">Why: Rushing transitions makes people feel unheard and creates resistance.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i>The Integration Decoder (Signature Section)</h2>
+<p class="section-desc">Mechanical Switching (B2) vs Natural Flow (C1) vs Unconscious Competence (C1+).</p>
+</div>
+<div class="decoder-card">
+<h3>🔍 The Integration Decoder</h3>
+<div class="decoder-grid">
+<div class="decoder-item">
+<h4>Mechanical (B2)</h4>
+<p><strong>What it looks like:</strong> Consciously thinking "Now I need to use X skill"</p>
+<p><strong>Example:</strong> (Internal monologue) "Okay, they're upset. I should use Presence now. [Presence mode]"</p>
+</div>
+<div class="decoder-item">
+<h4>Natural Flow (C1)</h4>
+<p><strong>What it looks like:</strong> Using transition phrases to switch smoothly</p>
+<p><strong>Example:</strong> "Now that we've acknowledged the challenges, let's focus on solutions."</p>
+</div>
+<div class="decoder-item">
+<h4>Unconscious Competence (C1+)</h4>
+<p><strong>What it looks like:</strong> Switching without thinking, like a dancer</p>
+<p><strong>Example:</strong> (No transition phrase needed — the flow is automatic)</p>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1rem; color: var(--text-primary); margin: 16px 0 8px 0;">Common Mechanical Phrases vs Natural Alternatives:</h4>
+<table class="comparison-table">
+<thead><tr><th>Mechanical (B2)</th><th>Natural (C1)</th></tr></thead>
+<tbody>
+<tr><td>"Okay, let's move on."</td><td>"Now that we've acknowledged that, let's look forward."</td></tr>
+<tr><td>"I've heard both sides. Here's my decision."</td><td>"Having heard both perspectives, here's what I've decided."</td></tr>
+<tr><td>"Let's stop talking about problems and focus on solutions."</td><td>"Moving forward from here, our priority is..."</td></tr>
+<tr><td>"Well, that's done."</td><td>"From this experience, what I'm taking away is..."</td></tr>
+</tbody>
+</table>
+<div style="margin-top: 16px; padding: 16px; background: rgba(51, 65, 85, 0.05); border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary);">
+<strong style="color: var(--primary-deep);">💡 How to use:</strong> 1. Notice when you are using mechanical phrases. 2. Pause. 3. Shift to a natural transition phrase. 4. Watch the conversation flow more smoothly.
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-left-right"></i>Casual ↔ Professional Comparison</h2>
+<p class="section-desc">Same moves, different registers. Match the register to the context.</p>
+</div>
+<div class="decoder-card" style="border-left-color: var(--highlight-blue);">
+<h3>🔄 Register Comparison</h3>
+<table class="comparison-table">
+<thead><tr><th>Situation</th><th>🏠 Casual (Life/Family)</th><th>💼 Professional (Business)</th></tr></thead>
+<tbody>
+<tr><td><strong>Acknowledgment Bridge</strong></td><td>"Okay, I hear you. Now let's figure this out..."</td><td>"Now that we've acknowledged the challenges, let's focus on solutions."</td></tr>
+<tr><td><strong>Perspective Shift</strong></td><td>"I've heard both of you. Here's what I think..."</td><td>"Having heard both perspectives, here's what I've decided..."</td></tr>
+<tr><td><strong>Forward Motion</strong></td><td>"From here on out, let's focus on..."</td><td>"Moving forward from here, our priority is..."</td></tr>
+<tr><td><strong>Register Shift</strong></td><td>"I know this is hard. I'm here for you."</td><td>"I recognize the complexity. Let's analyze the options."</td></tr>
+<tr><td><strong>Reflective Close</strong></td><td>"What I learned from this is..."</td><td>"From this experience, what I'm taking away is..."</td></tr>
+</tbody>
+</table>
+<div style="margin-top: 16px; padding: 16px; background: rgba(59, 130, 246, 0.05); border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary);">
+<strong style="color: var(--blue-deep);">💡 Tip:</strong> Casual uses emotional, relational language. Professional uses structured, strategic language. Match the register to the context.
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-envelope-simple"></i>Reading Box: Executive Breakdown (2 Cases)</h2>
+<p class="section-desc">Deep analysis of transition phrases. 1 Business + 1 Life.</p>
+</div>
+
+<div class="reading-card">
+<h3>💼 Case 1: Business - The CEO's Acknowledgment</h3>
+<div class="scenario-box">
+<strong>Context:</strong> Team demoralized after a tough week. CEO shifts from Presence to Strategy.
+<br><br>
+<strong>CEO says:</strong> "I know last week was tough. I want to acknowledge that. <strong>Now that we've acknowledged last week</strong>, let's focus on this week. Here are our 3 strategic priorities..."
+</div>
+<div class="executive-breakdown">
+<h4>🎯 Executive Breakdown</h4>
+<div class="breakdown-grid">
+<div class="breakdown-item">
+<div class="sentence">"Now that we've acknowledged last week..."</div>
+<div class="analysis">
+<strong>🎯 Communication Goal:</strong> Close the emotional phase and open the action phase.
+<strong>🧠 Hidden Message:</strong> "I have processed your feelings. I am not rushing you, but we must move forward."
+<strong>⚖️ Trade-off:</strong> Takes 10 seconds, but prevents 30 minutes of resistance later.
+<strong>🔄 Better Alternative?</strong> "Anyway, let's get started." (Faster, but feels dismissive and breaks trust).
+<strong>⭐ Why This Wins:</strong> Validates the past before opening the future. Creates psychological safety for the strategy.
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="reading-card">
+<h3>🏠 Case 2: Life - The Parent's Perspective Shift</h3>
+<div class="scenario-box">
+<strong>Context:</strong> Teenager upset about math grades. Parent shifts from Listening to Strategy.
+<br><br>
+<strong>Parent says:</strong> "I hear you. I know you're feeling stupid. <strong>Having heard that</strong>, let's figure out what support looks like. What kind of help would actually work for you?"
+</div>
+<div class="executive-breakdown">
+<h4>🎯 Executive Breakdown</h4>
+<div class="breakdown-grid">
+<div class="breakdown-item">
+<div class="sentence">"Having heard that, let's figure out..."</div>
+<div class="analysis">
+<strong>🎯 Communication Goal:</strong> Transition from emotional validation to collaborative problem-solving.
+<strong>🧠 Hidden Message:</strong> "Your feelings are valid. Now let's use that understanding to fix the root cause."
+<strong>⚖️ Trade-off:</strong> Might feel like you're moving too fast if the teen isn't ready.
+<strong>🔄 Better Alternative?</strong> "Don't worry, you'll do better next time." (Dismissive, skips the problem-solving phase entirely).
+<strong>⭐ Why This Wins:</strong> Honors the emotion while empowering the teen to co-create the solution.
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pencil-simple"></i>Micro Writing: Sentence Function & Before/After</h2>
+<p class="section-desc">Analyze what sentences DO, then rewrite them for natural flow.</p>
+</div>
+<div class="micro-writing-card">
+<h3>✍️ Sentence Function & Before/After Analysis</h3>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Original: "Okay, I hear you. Now let's move on to the strategy."</div>
+<div class="sentence-function-grid">
+<div class="sentence-function">
+<div class="sentence">"Okay, I hear you."</div>
+<div class="function">→ Function: Dismissive Acknowledgment (Closes the loop too fast)</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"Now let's move on..."</div>
+<div class="function">→ Function: Mechanical Switch (Forces action without safety)</div>
+</div>
+</div>
+<div class="before-after-grid">
+<div class="before-after normal">
+<div class="label">Before (Mechanical)</div>
+<div class="text">"Okay, I hear you. Now let's move on to the strategy."</div>
+<div class="explanation">Feels rushed. Team feels unheard.</div>
+</div>
+<div class="before-after executive">
+<div class="label">After (Natural Flow)</div>
+<div class="text">"<strong>Now that we've acknowledged the challenges</strong>, let's focus on solutions."</div>
+<div class="explanation">Uses Acknowledgment Bridge. Validates past, opens future.</div>
+</div>
+</div>
+</div>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Original: "I've heard both of you. Here's what we're going to do."</div>
+<div class="sentence-function-grid">
+<div class="sentence-function">
+<div class="sentence">"I've heard both of you."</div>
+<div class="function">→ Function: Passive Listening (Doesn't prove understanding)</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"Here's what we're going to do."</div>
+<div class="function">→ Function: Autocratic Decision (Imposes solution)</div>
+</div>
+</div>
+<div class="before-after-grid">
+<div class="before-after normal">
+<div class="label">Before (Mechanical)</div>
+<div class="text">"I've heard both of you. Here's what we're going to do."</div>
+<div class="explanation">Feels autocratic. Creates resistance.</div>
+</div>
+<div class="before-after executive">
+<div class="label">After (Natural Flow)</div>
+<div class="text">"<strong>Having heard both perspectives</strong>, here's what I've decided and why."</div>
+<div class="explanation">Uses Perspective Shift. Shows genuine listening before deciding.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i>Executive Vocabulary Box (Week 8 Lexicon)</h2>
+<p class="section-desc">10 verbs of integration — vocabulary đặc trưng của Week 8.</p>
+</div>
+<div class="vocab-card">
+<h3>📝 The Week 8 Lexicon</h3>
+<div class="vocab-grid">
+<div class="vocab-item"><strong>pivot</strong><span class="ipa">/ˈpɪv.ət/</span> <span class="pos">(verb)</span><div class="meaning">Đổi hướng, giữ vision</div><div class="example">"We need to pivot our approach."</div></div>
+<div class="vocab-item"><strong>transition</strong><span class="ipa">/trænˈzɪʃ.ən/</span> <span class="pos">(verb)</span><div class="meaning">Chuyển đổi mượt</div><div class="example">"Let me transition to our next priority."</div></div>
+<div class="vocab-item"><strong>align</strong><span class="ipa">/əˈlaɪn/</span> <span class="pos">(verb)</span><div class="meaning">Căn chỉnh</div><div class="example">"Let's align on our priorities first."</div></div>
+<div class="vocab-item"><strong>recalibrate</strong><span class="ipa">/ˌriːˈkæl.ɪ.bret/</span> <span class="pos">(verb)</span><div class="meaning">Hiệu chỉnh lại</div><div class="example">"We need to recalibrate our approach."</div></div>
+<div class="vocab-item"><strong>stabilize</strong><span class="ipa">/ˈsteɪ.bɪ.laɪz/</span> <span class="pos">(verb)</span><div class="meaning">Ổn định</div><div class="example">"First, stabilize the situation, then act."</div></div>
+<div class="vocab-item"><strong>de-escalate</strong><span class="ipa">/diːˈes.kə.leɪt/</span> <span class="pos">(verb)</span><div class="meaning">Giảm căng thẳng</div><div class="example">"Let's de-escalate before discussing."</div></div>
+<div class="vocab-item"><strong>commit</strong><span class="ipa">/kəˈmɪt/</span> <span class="pos">(verb)</span><div class="meaning">Cam kết</div><div class="example">"What can you commit to?"</div></div>
+<div class="vocab-item"><strong>frame</strong><span class="ipa">/freɪm/</span> <span class="pos">(verb)</span><div class="meaning">Định khung</div><div class="example">"Let me frame this decision for you."</div></div>
+<div class="vocab-item"><strong>shift</strong><span class="ipa">/ʃɪft/</span> <span class="pos">(verb)</span><div class="meaning">Chuyển</div><div class="example">"Let's shift from problem to solution."</div></div>
+<div class="vocab-item"><strong>integrate</strong><span class="ipa">/ˈɪn.t.ɡreɪt/</span> <span class="pos">(verb)</span><div class="meaning">Tích hợp</div><div class="example">"Integrate all perspectives into one plan."</div></div>
+</div>
+<div style="margin-top: 16px; padding: 16px; background: rgba(51, 65, 85, 0.05); border-radius: var(--radius-sm);">
+<strong style="color: var(--primary-deep);">Executive Chunks (Week 8 signatures):</strong>
+<ul style="list-style: none; padding: 0; margin-top: 8px; font-size: 13px; color: var(--text-secondary);">
+<li style="padding: 4px 0;">→ "Now that we've acknowledged..."</li>
+<li style="padding: 4px 0;">→ "Here's what we know... Here's what we don't know..."</li>
+<li style="padding: 4px 0;">→ "Having heard both perspectives..."</li>
+<li style="padding: 4px 0;">→ "Moving forward from here..."</li>
+<li style="padding: 4px 0;">→ "Let me transition to..."</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats-circle"></i>Integrated Dialogues</h2>
+<p class="section-desc">See how C1 leaders use transition phrases in real conversations. Notice the natural flow.</p>
+</div>
+
+<div class="story-card">
+<h3>💼 Dialogue 1: Employee's Real Fear (Business)</h3>
+<div class="story-context">Context: A high-performing employee suddenly says "I think I need to move on." You need to listen, then guide.</div>
+<div class="story-audio-controls">
+<button class="story-audio-btn story-play-btn" onclick="playDialogue('d1')"><i class="ph-duotone ph-speaker-high"></i> Nghe</button>
+<button class="story-audio-btn story-stop-btn" onclick="stopSpeaking()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="story-dialogue" id="d1-dialogue">
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee:</div><div class="dialogue-text">"I think I need to move on. I've been thinking about it for a while."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"I appreciate you sharing that. <strong>Help me understand what's really going on here.</strong>" <span class="move-highlight move1">Listen Unsaid</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee:</div><div class="dialogue-text">"I just feel like I'm not growing. I've been doing the same work for two years."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"<strong>If I understand correctly</strong>, the core issue is growth, not the work itself. Is that right?" <span class="move-highlight move2">Reflect Back</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee:</div><div class="dialogue-text">"Yeah. And I see people getting promoted who haven't been here as long."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"(Pause 3 seconds)" <span class="move-highlight move4">Hold Silence</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee:</div><div class="dialogue-text">"Honestly, I'm scared I'm stuck. That I've peaked here."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"That's a really important thing to share. <strong>What would success look like</strong> for you in the next year?" <span class="move-highlight move3">Powerful Q</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee:</div><div class="dialogue-text">"I want to lead a project. I want to feel like I'm building something."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"<strong>Let me make sure I've captured this correctly</strong>: You're not looking to leave the company; you're looking for a new challenge and ownership. Is that accurate?" <span class="move-highlight move5">Summarize</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Employee:</div><div class="dialogue-text">"Yeah. That's exactly it."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"Thank you for trusting me with this. <strong>Having heard your perspective</strong>, here's what I'm thinking: You're not looking to leave; you're looking for a new challenge. <strong>Moving forward from here</strong>, let's explore what that could look like here." <span class="move-highlight move2">Perspective Shift → Forward Motion</span></div></div>
+</div>
+<div class="story-analysis">
+<h4>Analysis — Integration Switching:</h4>
+<ul>
+<li><strong>Listen Unsaid:</strong> "Help me understand what's really going on here."</li>
+<li><strong>Reflect Back:</strong> "If I understand correctly, the core issue is growth..."</li>
+<li><strong>Hold Silence:</strong> (Pause 3 seconds) (Allowed the real fear to surface: "I'm scared I'm stuck").</li>
+<li><strong>Perspective Shift:</strong> "Having heard your perspective..." (Showed genuine listening before deciding).</li>
+<li><strong>Forward Motion:</strong> "Moving forward from here..." (Created momentum after uncertainty).</li>
+<li><strong>Register:</strong> Professional (manager-employee)</li>
+</ul>
+</div>
+</div>
+
+<div class="story-card">
+<h3>🏠 Dialogue 2: Teenager's Hidden Struggle (Life)</h3>
+<div class="story-context">Context: Your 16-year-old daughter says "I don't want to go to school anymore." You need to listen, then guide.</div>
+<div class="story-audio-controls">
+<button class="story-audio-btn story-play-btn" onclick="playDialogue('d2')"><i class="ph-duotone ph-speaker-high"></i> Nghe</button>
+<button class="story-audio-btn story-stop-btn" onclick="stopSpeaking()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="story-dialogue" id="d2-dialogue">
+<div class="dialogue-turn"><div class="dialogue-speaker">Daughter:</div><div class="dialogue-text">"Dad, I don't want to go to school anymore. It's pointless."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"That's a strong statement. <strong>What's behind that?</strong>" <span class="move-highlight move1">Listen Unsaid</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Daughter:</div><div class="dialogue-text">"I just... I don't see the point. None of this matters."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"<strong>So what I'm hearing is</strong> you're feeling disconnected from what you're learning. Is that right?" <span class="move-highlight move2">Reflect Back</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Daughter:</div><div class="dialogue-text">"Yeah. And everyone else seems to have it figured out except me."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"(Pause 3 seconds)" <span class="move-highlight move4">Hold Silence</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Daughter:</div><div class="dialogue-text">"Actually, I've been struggling with math for months. I'm too embarrassed to ask for help."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"Thank you for telling me. <strong>What would success look like</strong> for you in math class?" <span class="move-highlight move3">Powerful Q</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Daughter:</div><div class="dialogue-text">"I just want to not feel stupid anymore."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"<strong>So what matters most to you</strong> is feeling capable, not getting good grades. Is that right?" <span class="move-highlight move5">Summarize</span></div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">Daughter:</div><div class="dialogue-text">"Yeah. That's it."</div></div>
+<div class="dialogue-turn"><div class="dialogue-speaker">You:</div><div class="dialogue-text">"I hear you. <strong>Now that we've acknowledged that</strong>, let's figure this out together. What kind of support would actually help?" <span class="move-highlight move1">Ack Bridge → Strategy</span></div></div>
+</div>
+<div class="story-analysis">
+<h4>Analysis — Integration Switching:</h4>
+<ul>
+<li><strong>Listen Unsaid:</strong> "What's behind that?" (Moved past the surface complaint).</li>
+<li><strong>Reflect Back:</strong> "So what I'm hearing is..." (Made her feel heard).</li>
+<li><strong>Hold Silence:</strong> (Pause 3 seconds) (Gave her space to reveal the real issue: math struggle).</li>
+<li><strong>Acknowledgment Bridge:</strong> "Now that we've acknowledged that..." (Closed the emotional phase, opened the action phase).</li>
+<li><strong>Register:</strong> Casual throughout (parent-teenager)</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i>Listening Deep Dive (8-Step Standard)</h2>
+<p class="section-desc">Transform passive comprehension into active transition analysis.</p>
+</div>
+<div class="listening-deep-dive">
+<h3>🎧 Audio</h3>
+<p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;"><strong>Business Dialogue + Life Dialogue</strong> (2 contexts)</p>
+
+<div class="listening-step">
+<h4><span class="step-badge">Step 1</span><i class="ph-duotone ph-file-text"></i> 📄 Transcript (Key Transition Phrases)</h4>
+<div class="transcript-box">
+<p><strong>Business Dialogue Key Phrases:</strong></p>
+<p>• <span class="key-phrase">"Having heard your perspective..."</span></p>
+<p>• <span class="key-phrase">"Moving forward from here..."</span></p>
+<p style="margin-top: 12px;"><strong>Life Dialogue Key Phrases:</strong></p>
+<p>• <span class="key-phrase">"So what I'm hearing is..."</span></p>
+<p>• <span class="key-phrase">"Now that we've acknowledged that..."</span></p>
+</div>
+</div>
+
+<div class="listening-step">
+<h4><span class="step-badge">Step 2</span><i class="ph-duotone ph-magnifying-glass"></i> 🔍 Deep Dive Analysis ⭐</h4>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"Having heard your perspective, here's what I'm thinking..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "I've heard you. Here's my decision." (Autocratic)
+<span class="arrow">↓</span> Strategic choice: <strong>Validate listening before deciding</strong>
+<span class="arrow">↓</span> Effect: Makes the employee feel understood, not dictated to.
+<span class="arrow">↓</span> Leadership signal: "I value your input before I make my call."
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Moving forward from here, let's explore..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "Let's move on." (Dismissive)
+<span class="arrow">↓</span> Strategic choice: <strong>Create momentum with inclusivity</strong>
+<span class="arrow">↓</span> Effect: Shifts from past problems to future possibilities.
+<span class="arrow">↓</span> Leadership signal: "We are partners in solving this."
+</div>
+</div>
+</div>
+</div>
+
+<div class="listening-step">
+<h4><span class="step-badge">Step 3</span><i class="ph-duotone ph-chat-text"></i> 💬 Language Notes (Transition Phrases)</h4>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"Having heard..."</div>
+<div class="note">• <strong>Function:</strong> Signals completion of listening phase.</div>
+<div class="note">• <strong>Why it works:</strong> Uses perfect participle to show past action affecting present decision.</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Moving forward..."</div>
+<div class="note">• <strong>Function:</strong> Signals shift to action phase.</div>
+<div class="note">• <strong>Why it works:</strong> Uses gerund to create sense of ongoing momentum.</div>
+</div>
+</div>
+</div>
+
+<div class="listening-step">
+<h4><span class="step-badge">Step 4</span><i class="ph-duotone ph-microphone-stage"></i> 🎵 Pronunciation Deep Dive</h4>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">"Having heard your perspective..."</div>
+<div class="detail">• <strong>Stress:</strong> "heard" and "perspective"</div>
+<div class="detail">• <strong>Pause:</strong> After "perspective" (signal shift coming)</div>
+<div class="detail">• <strong>Pitch:</strong> Falling (signal completion of listening)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">"Moving forward from here..."</div>
+<div class="detail">• <strong>Stress:</strong> "forward"</div>
+<div class="detail">• <strong>Pause:</strong> After "here" (creates anticipation)</div>
+<div class="detail">• <strong>Pitch:</strong> Rising then falling (invites attention, then grounds)</div>
+</div>
+</div>
+</div>
+
+<div class="listening-step">
+<h4><span class="step-badge">Step 5</span><i class="ph-duotone ph-brain"></i> 🧠 Listening Strategy (3-Pass)</h4>
+<div class="listening-strategy-grid">
+<div class="listening-strategy-box">
+<div class="pass"><strong>Pass 1: Identify Moves</strong></div>
+<div class="detail">• <strong>Focus:</strong> Which transition phrase is used?</div>
+<div class="detail">• <strong>Question:</strong> "Is this Ack Bridge or Perspective Shift?"</div>
+</div>
+<div class="listening-strategy-box">
+<div class="pass"><strong>Pass 2: Analyze Timing</strong></div>
+<div class="detail">• <strong>Focus:</strong> When does the leader switch?</div>
+<div class="detail">• <strong>Question:</strong> "Was it too early, too late, or perfect?"</div>
+</div>
+<div class="listening-strategy-box">
+<div class="pass"><strong>Pass 3: Evaluate Impact</strong></div>
+<div class="detail">• <strong>Focus:</strong> How did the listener react?</div>
+<div class="detail">• <strong>Question:</strong> "Did the switch create safety or resistance?"</div>
+</div>
+</div>
+</div>
+
+<div class="listening-step">
+<h4><span class="step-badge">Step 6</span><i class="ph-duotone ph-user-sound"></i> 🗣️ Shadowing Challenge</h4>
+<div class="shadowing-box">
+<div class="instruction"><strong>Copy the transition rhythm:</strong></div>
+<div class="instruction">1. Listen to: "Having heard your perspective, here's what I'm thinking..."</div>
+<div class="instruction">2. Shadow: Match the pause after "perspective", stress on "heard"</div>
+<div class="instruction">3. Focus: Falling intonation on "perspective" signals completion</div>
+<div class="instruction">4. Practice: 3 times, focusing on sincere, grounded tone</div>
+</div>
+</div>
+
+<div class="listening-step">
+<h4><span class="step-badge">Step 7</span><i class="ph-duotone ph-check-circle"></i> ✅ Outcome Questions</h4>
+<div class="listening-question">
+<p>1. Why did the leader use "Having heard your perspective" instead of "I've heard you"?</p>
+<div class="listening-answer">✅ "Having heard" uses perfect participle to show the listening is complete and informs the decision. "I've heard you" sounds passive and dismissive.</div>
+</div>
+<div class="listening-question">
+<p>2. What was the strategic goal of "Moving forward from here"?</p>
+<div class="listening-answer">✅ To create momentum and shift from past problems to future possibilities, while keeping the employee as a partner ("let's explore").</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-code"></i>Strategic Grammar in Context</h2>
+<p class="section-desc">Sequencing Language — Week 8 Signature Patterns.</p>
+</div>
+<div class="grammar-card">
+<h3>📝 Sequencing Language</h3>
+<div class="grammar-item">
+<strong>1. Perfect Participles for Transition ("Having heard...")</strong>
+<span>We use "Having + past participle" to show completion before the next action. "Having heard both perspectives, here's what I've decided." It creates a natural bridge between listening and deciding.</span>
+</div>
+<div class="grammar-item">
+<strong>2. "Now that..." for Acknowledgment ("Now that we've acknowledged...")</strong>
+<span>We use "Now that + present perfect" to close one phase and open another. "Now that we've acknowledged the challenges, let's focus on solutions." It shows you've processed the past before moving to the future.</span>
+</div>
+<div class="grammar-item">
+<strong>3. Gerunds for Forward Motion ("Moving forward...")</strong>
+<span>We use gerunds (-ing form) to create momentum. "Moving forward from here, our priority is..." It creates a sense of action and progress.</span>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-microphone-stage"></i>Pronunciation Focus: Transition Delivery (Card Grid)</h2>
+<p class="section-desc">The weight of sound in transitions. How you deliver the shift matters as much as the words.</p>
+</div>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-pause-circle" style="--ph-color: var(--highlight-purple);"></i> 1. Pause Before Transition</h4>
+<p>"I understand this is difficult news... <strong>[pause 2s]</strong> ...Now let me share what we're doing."</p>
+<p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Pause creates psychological space. Rush = emotional bypass.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-trend-down" style="--ph-color: var(--highlight-purple);"></i> 2. Pitch Drop on Completion</h4>
+<p>"Now that we've <strong>acknowledged↘</strong> last week..."</p>
+<p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Falling pitch signals phase completion. Rising = uncertainty.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-font-weight" style="--ph-color: var(--highlight-purple);"></i> 3. Stress on Transition Verb</h4>
+<p>"Let me <strong>transition</strong> to our next priority."</p>
+<p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Stress "transition" = intentional shift. Weak stress = accidental.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-heart" style="--ph-color: var(--highlight-purple);"></i> 4. Warm Tone for Shift</h4>
+<p>"I hear your concern... <strong>[warm pause]</strong> ...Here's what we're doing."</p>
+<p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Warm tone before, professional after. Sudden shift = robotic.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i>Speaking: 4 Scenarios</h2>
+<p class="section-desc">Practice using transition phrases in different contexts. Focus on natural flow.</p>
+</div>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">🟢 Casual - 3-4 min</span>
+<h3>Scenario 1: Friend in Crisis</h3>
+<p class="scenario-context">Your friend just went through a divorce. They say "I'm fine" but look upset. Listen, then guide.</p>
+<div class="scenario-goal">💡 Goal: Listen for unsaid & use Acknowledgment Bridge.</div>
+<div class="scenario-response">📖 <strong>Response:</strong> "You say you're okay, but something feels off. ... (Pause) ... I'm here. What's really going on? ... <strong>Now that we've acknowledged that</strong>, let's figure out what support looks like."</div>
+<div class="scenario-req"><strong>Reqs:</strong> Notice mismatch. Ask gently. Hold silence. Use Ack Bridge.</div>
+</div>
+<div class="scenario-card neutral">
+<span class="scenario-badge">🔵 Neutral - 3-4 min</span>
+<h3>Scenario 2: Employee Wants to Quit</h3>
+<p class="scenario-context">High-performing employee says they want to leave. Listen, then guide.</p>
+<div class="scenario-goal">💡 Goal: Reflect back & use Perspective Shift.</div>
+<div class="scenario-response">📖 <strong>Response:</strong> "I appreciate you telling me. Help me understand what's really going on. ... If I understand correctly, the core issue is growth... <strong>Having heard your perspective</strong>, here's what I'm thinking: You're looking for a new challenge."</div>
+<div class="scenario-req"><strong>Reqs:</strong> Acknowledge courage. Ask what's real. Reflect core issue. Use Perspective Shift.</div>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">🟣 Professional - 4-5 min</span>
+<h3>Scenario 3: Team Conflict</h3>
+<p class="scenario-context">Two team members arguing about approach. Listen to both, then decide.</p>
+<div class="scenario-goal">💡 Goal: Summarize & use Forward Motion.</div>
+<div class="scenario-response">📖 <strong>Response:</strong> "Let me make sure I'm hearing both. Sarah, speed. Mike, quality. ... <strong>Having heard both perspectives</strong>, here's what I've decided: Quality first. <strong>Moving forward from here</strong>, our focus is getting it right."</div>
+<div class="scenario-req"><strong>Reqs:</strong> Reflect both accurately. Find underlying values. Use Perspective Shift + Forward Motion.</div>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">🟠 Challenge - 5 min</span>
+<h3>Scenario 4: Double Integration</h3>
+<p class="scenario-context"><strong>Morning:</strong> Child school pressure (Casual). <strong>Afternoon:</strong> Colleague burnout (Professional).</p>
+<div class="scenario-goal">💡 Goal: Shift register. Life = safety. Business = growth.</div>
+<div class="scenario-response">📖 <strong>Life:</strong> "You say school is fine, but something feels off. ... <strong>Now that we've acknowledged that</strong>, let's figure out support. <strong>From this experience</strong>, I'm taking away the importance of checking in."<br><br>📖 <strong>Business:</strong> "I appreciate you sharing. Help me understand... <strong>Having heard your perspective</strong>, the core issue is workload. <strong>Moving forward</strong>, let's explore balance."</div>
+<div class="scenario-req"><strong>Reqs:</strong> Shift register flexibly. Use transition phrases in both. Make it sincere.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i>Reality Task - Choose Your Level</h2>
+<p class="section-desc">Real-world practice. Apply integration phrases to actual situations this week.</p>
+</div>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 Transition Phrase Challenge</h3>
+<div class="task-time">⏱️ 15 minutes</div>
+<p class="task-desc">Have a conversation using at least 2 transition phrases. Note the result.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul><li>Use "Now that we've acknowledged..." once</li><li>Use "Having heard..." or "Moving forward..." once</li><li>Write down what happened</li><li>Did it flow more naturally?</li></ul>
+</div>
+<div class="task-example">
+<h4>💡 Example Answer:</h4>
+<p>"I used 'Now that we've acknowledged the delay' in my team meeting. Instead of just saying 'Okay, let's move on', the team seemed to relax and actually engage with the new plan."</p>
+</div>
+<div class="task-criteria">
+<h4>★ Evaluation Criteria:</h4>
+<ul><li>Did you use the phrases naturally?</li><li>Did the conversation flow better?</li><li>Did people respond positively?</li></ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Written reflection (100 words)</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎙️ Record 2 Integration Conversations</h3>
+<div class="task-time">⏱️ 30 minutes</div>
+<p class="task-desc">Record 2 short speeches (2 min) about integration. 1 family, 1 work.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul><li>1 Life scenario (casual register)</li><li>1 Business scenario (professional register)</li><li>Use at least 3 transition phrases naturally</li><li>Focus on flow, not mechanical switching</li></ul>
+</div>
+<div class="task-example">
+<h4>💡 Example Answer:</h4>
+<p>Life: "I know you're upset about the grades. <strong>Now that we've talked about how you feel</strong>, let's look at a study plan." Business: "<strong>Having heard your concerns about the timeline</strong>, I've decided we will extend the deadline by one week."</p>
+</div>
+<div class="task-criteria">
+<h4>★ Evaluation Criteria:</h4>
+<ul><li>Clear register shift between Life and Business?</li><li>Transition phrases used correctly?</li><li>Tone matches the context?</li></ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> 2 audio recordings</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎥 Real Integration Challenge</h3>
+<div class="task-time">⏱️ 60 minutes</div>
+<p class="task-desc">This week, use at least 1 transition phrase per meeting. Note reactions.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul><li>Use at least 1 transition phrase per meeting</li><li>Notice if conversation flows more naturally</li><li>Did people respond better? Note reaction</li><li>Reflect on what worked/didn't</li></ul>
+</div>
+<div class="task-example">
+<h4>💡 Example Answer:</h4>
+<p>"In the budget meeting, instead of saying 'Let's cut costs', I said '<strong>Moving forward from here</strong>, our priority is efficiency'. The team seemed less defensive and more collaborative."</p>
+</div>
+<div class="task-criteria">
+<h4>★ Evaluation Criteria:</h4>
+<ul><li>Consistent use of phrases?</li><li>Observed positive change in team dynamics?</li><li>Deep reflection on personal style?</li></ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Reflection notes (300 words)</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-trophy"></i>Integration Mastery (Card Grid)</h2>
+<p class="section-desc">Check all that apply. Be honest with yourself.</p>
+</div>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-square" style="--ph-color: var(--primary);"></i> Read the Room</h4>
+<p>I can identify which competencies are needed (usually 2-3) in 3 seconds.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-square" style="--ph-color: var(--primary);"></i> Choose Sequence</h4>
+<p>I know which competency comes first and which comes second.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-square" style="--ph-color: var(--primary);"></i> Natural Switching</h4>
+<p>I use transition phrases to switch smoothly, not mechanically.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-square" style="--ph-color: var(--primary);"></i> Reflect & Learn</h4>
+<p>I reflect on my transitions and learn from what worked/didn't.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-square" style="--ph-color: var(--primary);"></i> Unconscious Competence</h4>
+<p>Integration is becoming instinct. I don't calculate, I just flow.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i>Flashcard Review</h2>
+<p class="section-desc">5 flashcards with integration moves. Front: situation. Back: best transition phrase.</p>
+</div>
+<div class="flashcard-container">
+<div class="flashcard" onclick="this.querySelector('.flashcard-front').style.display='none'; this.querySelector('.flashcard-back').classList.add('active');">
+<div class="flashcard-front">
+<p>Situation: Someone just shared a difficult problem. You need to move to solutions.</p>
+<button>Tap to reveal best move →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Move 1: Acknowledgment Bridge</strong><br><br>"<strong>Now that we've acknowledged that</strong>, let's figure out what support looks like."</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> Always close the emotional phase before opening the action phase. "Now that we've acknowledged..." bridges the two.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button><span>1 / 5</span><button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="quiz-section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pencil-simple"></i>Quiz: Integration Communication Moves</h2>
+<p class="section-desc">9 situational questions. Choose the BEST transition phrase.</p>
+</div>
+<div class="quiz-question">
+<h4>1. (Judgement) An employee just shared they're burnt out. You need to move to solutions. Best transition?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Okay, let's figure out what to do."</div>
+<div class="quiz-option">B. "<strong>Now that we've acknowledged that</strong>, let's explore what support looks like."</div>
+<div class="quiz-option">C. "Let's move on to solutions."</div>
+<div class="quiz-option">D. "I understand. What's next?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Two team members just argued. You need to make a decision. Best transition?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "I've heard both of you. Here's what we're going to do."</div>
+<div class="quiz-option">B. "Okay, let's decide."</div>
+<div class="quiz-option">C. "<strong>Having heard both perspectives</strong>, here's what I've decided and why."</div>
+<div class="quiz-option">D. "Let's move forward."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) You just discussed market uncertainty. You need to set direction. Best transition?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Let's stop talking about problems and focus on solutions."</div>
+<div class="quiz-option">B. "<strong>Moving forward from here</strong>, our priority is..."</div>
+<div class="quiz-option">C. "Let's move on."</div>
+<div class="quiz-option">D. "Here's what we're going to do."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Which phrase shows "Natural Flow (C1)"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Okay, let's move on."</div>
+<div class="quiz-option">B. "Now I will use Presence. [Presence mode]"</div>
+<div class="quiz-option">C. "<strong>Now that we've acknowledged the challenges</strong>, let's focus on solutions."</div>
+<div class="quiz-option">D. "I've heard both sides. Here's my decision."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) At the end of a difficult week, best way to close?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Well, that's done. Let's move on."</div>
+<div class="quiz-option">B. "<strong>From this experience, what I'm taking away is</strong> the importance of early communication."</div>
+<div class="quiz-option">C. "Thanks everyone. See you Monday."</div>
+<div class="quiz-option">D. "Let's learn from this and move forward."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Life) Your teenager just shared they're struggling with math. Best transition to solutions?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Okay, let's get a tutor."</div>
+<div class="quiz-option">B. "<strong>Now that we've acknowledged that</strong>, let's figure out what support looks like."</div>
+<div class="quiz-option">C. "Let's move on to solutions."</div>
+<div class="quiz-option">D. "I understand. What's next?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Business) A colleague just shared they're thinking about leaving. Best transition to exploration?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Let's talk about how to keep you."</div>
+<div class="quiz-option">B. "<strong>Having heard your perspective</strong>, here's what I'm thinking: You're not looking to leave; you're looking for a new challenge."</div>
+<div class="quiz-option">C. "Let's move forward."</div>
+<div class="quiz-option">D. "I understand. What's next?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Judgement) Which phrase is an example of "Mechanical Switching (B2)"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Now that we've acknowledged..."</div>
+<div class="quiz-option">B. "Having heard both perspectives..."</div>
+<div class="quiz-option">C. "Okay, let's move on."</div>
+<div class="quiz-option">D. "Moving forward from here..."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Judgement) Which phrase shows "Forward Motion"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Now that we've acknowledged..."</div>
+<div class="quiz-option">B. "Having heard both perspectives..."</div>
+<div class="quiz-option">C. "From this experience..."</div>
+<div class="quiz-option">D. "<strong>Moving forward from here</strong>, our priority is..."</div>
+</div>
+</div>
+<button class="check-btn"><i class="ph-duotone ph-check"></i>Check Answers</button>
+</section>
+
+<div class="day-navigation">
+<a href="week-08-day-54.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 54: Difficult Decisions</div>
+</a>
+<a href="week-08-day-56.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 56: Communication Playbook</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn" onclick="markComplete()">
+<i class="ph-duotone ph-check-circle"></i>
+<span>Mark Day 55 Complete & Continue to Day 56</span>
+</button>
+<div class="complete-message">B2 managers know the skills. C1 executives know when to switch between them. 🔄</div>
+</div>
+
+</div>
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 8 · Day 55 · Integration Communication Moves</div>
+</div>
+</footer>
+
+<script>
+let voices = [];
+let selectedVoice = null;
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+selectedVoice = voices.find(v => v.name.includes('Google US English')) || voices.find(v => v.name === 'Microsoft Zira' && v.lang === 'en-US') || voices.find(v => v.name === 'Microsoft David' && v.lang === 'en-US') || voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang.includes('en'));
+}
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+setTimeout(loadVoices, 500);
+setTimeout(loadVoices, 1000);
+function playAudio(text) {
+if (!('speechSynthesis' in window)) { alert('Trình duyệt không hỗ trợ phát âm thanh'); return; }
+speechSynthesis.cancel();
+setTimeout(() => {
+const utterance = new SpeechSynthesisUtterance(text);
+utterance.lang = 'en-US'; utterance.rate = 0.95; utterance.pitch = 1.05; utterance.volume = 1.0;
+if (selectedVoice) { utterance.voice = selectedVoice; }
+speechSynthesis.speak(utterance);
+}, 100);
+}
+function stopSpeaking() { if ('speechSynthesis' in window) { speechSynthesis.cancel(); } }
+function playDialogue(id) {
+const dialogues = {
+'d1': `Employee: I think I need to move on. I've been thinking about it for a while. You: I appreciate you sharing that. Help me understand what's really going on here. Employee: I just feel like I'm not growing. I've been doing the same work for two years. You: If I understand correctly, the core issue is growth, not the work itself. Is that right? Employee: Yeah. And I see people getting promoted who haven't been here as long. You: (Pause 3 seconds). Employee: Honestly, I'm scared I'm stuck. That I've peaked here. You: That's a really important thing to share. What would success look like for you in the next year? Employee: I want to lead a project. I want to feel like I'm building something. You: Let me make sure I've captured this correctly: You're not looking to leave the company; you're looking for a new challenge and ownership. Is that accurate? Employee: Yeah. That's exactly it. You: Thank you for trusting me with this. Having heard your perspective, here's what I'm thinking: You're not looking to leave; you're looking for a new challenge. Moving forward from here, let's explore what that could look like here.`,
+'d2': `Daughter: Dad, I don't want to go to school anymore. It's pointless. You: That's a strong statement. What's behind that? Daughter: I just... I don't see the point. None of this matters. You: So what I'm hearing is you're feeling disconnected from what you're learning. Is that right? Daughter: Yeah. And everyone else seems to have it figured out except me. You: (Pause 3 seconds). Daughter: Actually, I've been struggling with math for months. I'm too embarrassed to ask for help. You: Thank you for telling me. What would success look like for you in math class? Daughter: I just want to not feel stupid anymore. You: So what matters most to you is feeling capable, not getting good grades. Is that right? Daughter: Yeah. That's it. You: I hear you. Now that we've acknowledged that, let's figure this out together. What kind of support would actually help?`
+};
+if (dialogues[id]) playAudio(dialogues[id]);
+}
+function markComplete() {
+const completed = JSON.parse(localStorage.getItem('completedDays') || '[]');
+if (!completed.includes('day-55')) { completed.push('day-55'); localStorage.setItem('completedDays', JSON.stringify(completed)); }
+const btn = document.querySelector('.complete-btn');
+btn.innerHTML = '<i class="ph-duotone ph-confetti"></i><span>🎉 Day 55 Complete! Well done!</span>';
+btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+btn.style.boxShadow = '0 8px 28px rgba(16, 185, 129, 0.4)';
+const msg = document.querySelector('.complete-message');
+msg.textContent = 'B2 managers know the skills. C1 executives know when to switch between them. 🔄';
+}
+window.addEventListener('DOMContentLoaded', () => {
+const completed = JSON.parse(localStorage.getItem('completedDays') || '[]');
+if (completed.includes('day-55')) {
+const btn = document.querySelector('.complete-btn');
+btn.innerHTML = '<i class="ph-duotone ph-check-circle"></i><span>✅ Day 55 Completed</span>';
+btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+}
+});
+</script>
+</body>
+</html>

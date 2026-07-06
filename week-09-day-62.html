@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 9 Day 60: Talking About Salary and Compensation | Professional Fluency Roadmap</title>
+<title>Week 9 Day 62: Negotiating Terms and Conditions | Professional Fluency Roadmap</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
 <style>
@@ -179,7 +179,9 @@ overflow-x: hidden;
 .vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
 .vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; }
 .dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
-.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
 .dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
 .audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
 .audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
@@ -187,9 +189,6 @@ overflow-x: hidden;
 .audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3); }
 .audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
 .audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
-.audio-btn-small { width: 26px; height: 26px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; border-radius: 50%; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s ease; flex-shrink: 0; margin-left: 6px; }
-.audio-btn-small:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3); }
-.audio-btn-small.playing { background: linear-gradient(135deg, #DC2626, #B91C1C); }
 .dialogue-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
 .dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(99, 102, 241, 0.1); }
 .dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
@@ -322,6 +321,7 @@ overflow-x: hidden;
 .sentence-function-grid { grid-template-columns: 1fr; }
 .vocab-grid { grid-template-columns: 1fr; }
 .reading-grid { grid-template-columns: 1fr; }
+.dialogue-grid { grid-template-columns: 1fr; }
 .quiz-grid { grid-template-columns: 1fr; }
 .mistakes-grid { grid-template-columns: 1fr; }
 .decoder-table { font-size: 11px; }
@@ -334,7 +334,7 @@ overflow-x: hidden;
 <nav class="top-nav">
 <div class="container">
 <a href="week-09.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 9 Hub</a>
-<div class="day-indicator">Day 60 / 63</div>
+<div class="day-indicator">Day 62 / 63</div>
 </div>
 </nav>
 
@@ -345,9 +345,9 @@ overflow-x: hidden;
 <a href="week-09-day-57.html" class="day-tab">Day 57</a>
 <a href="week-09-day-58.html" class="day-tab">Day 58</a>
 <a href="week-09-day-59.html" class="day-tab">Day 59</a>
-<a href="week-09-day-60.html" class="day-tab active">Day 60</a>
+<a href="week-09-day-60.html" class="day-tab">Day 60</a>
 <a href="week-09-day-61.html" class="day-tab">Day 61</a>
-<a href="week-09-day-62.html" class="day-tab">Day 62</a>
+<a href="week-09-day-62.html" class="day-tab active">Day 62</a>
 <a href="week-09-day-63.html" class="day-tab">Day 63</a>
 </div>
 </div>
@@ -356,21 +356,17 @@ overflow-x: hidden;
 <header class="day-header">
 <div class="container">
 <div class="breadcrumb">
-<a href="index.html">Home</a>
- › 
-<a href="week-09.html">Week 9</a>
- › Day 60
-            
+<a href="index.html">Home</a> › <a href="week-09.html">Week 9</a> › Day 62
 </div>
 <div class="day-title-row">
-<span class="day-icon-inline">💰</span>
-<h1 class="day-title">Talking About Salary and Compensation</h1>
+<span class="day-icon-inline"></span>
+<h1 class="day-title">Negotiating Terms and Conditions</h1>
 </div>
-<p class="day-subtitle">Day 57 taught you how to open money conversations safely. Day 58 taught you how to discuss budgets openly. Day 59 taught you how to handle borrow/lend requests. Today, you learn <strong>the English language to talk about salary</strong> — using diplomatic openings, evidence-based value presentation, and polite negotiation. B2 speakers avoid salary conversations or say "I want more money." C1 speakers have the language to discuss compensation with confidence and diplomacy.</p>
+<p class="day-subtitle">Day 57-61 taught you the competencies. Today, you learn how to integrate them into a negotiation sequence that works in real situations. B2 negotiators accept the first offer or walk away. C1 negotiators have a framework for negotiating terms that work for everyone.</p>
 <div class="day-meta">
-<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Opening + Value + Negotiation</div>
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Opening + Listening + Exploring + Agreeing</div>
 <div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
-<div class="meta-tag"><i class="ph-duotone ph-target"></i> Integration Framework Day 4 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Integration Framework Day 6 of 7</div>
 <div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
 </div>
 </div>
@@ -380,27 +376,27 @@ overflow-x: hidden;
 
 <div class="c1-insight">
 <div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
-<div class="insight"><strong>B2 Speaker:</strong> Avoids salary conversations (fear of conflict) OR says "I want more money" (too direct, no evidence). Struggles to explain value clearly or negotiate without sounding defensive.<br><br><strong>C1 Speaker:</strong> Has the language to talk about salary with confidence, politeness, and evidence. Knows how to open the conversation diplomatically, present value with facts, handle resistance gracefully, and close professionally.</div>
+<div class="insight"><strong>B2 Negotiator:</strong> Accepts the first offer (leaves value on the table) OR walks away (misses opportunities). No clear sequence.<br><br><strong>C1 Negotiator:</strong> Has a framework for negotiating terms. Knows when to open, when to listen, when to explore options, and when to agree. The difference isn't confidence — it's process.<br><br>"B2 negotiators see negotiation as confrontation. C1 negotiators see negotiation as collaboration. The best negotiators don't win — they find solutions that work for everyone."</div>
 </div>
 
-<div class="quote">"Salary conversations are rarely difficult because of the numbers. They're difficult because people struggle to explain value clearly, disagree respectfully, and negotiate without sounding defensive."</div>
+<div class="quote">"B2 negotiators accept the first offer or walk away. C1 negotiators have a framework for negotiating terms. The difference isn't confidence — it's process."</div>
 
 <section class="section">
 <div class="section-header">
 <h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
 </div>
 <div class="philosophy-section">
-<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Salary Conversations = Language of Value + Negotiation</h3>
-<p class="philosophy-text">"Salary conversations are rarely difficult because of the numbers. They're difficult because people struggle to explain value clearly, disagree respectfully, and negotiate without sounding defensive. This week teaches you the English language to navigate these conversations with confidence and diplomacy."</p>
-<p class="philosophy-text">Every salary conversation requires you to make <strong>five language decisions</strong> simultaneously:</p>
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Negotiating Terms = Process + Integration</h3>
+<p class="philosophy-text">"Negotiating terms isn't about winning or losing. It's about having a process that gives you enough confidence to find solutions that work for everyone."</p>
+<p class="philosophy-text">Every negotiation requires you to make five decisions simultaneously:</p>
 <div class="philosophy-list">
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Opening Decision:</strong> How do I bring up salary politely? (Direct vs. diplomatic)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Value Language:</strong> How do I present my contributions without sounding boastful? (Facts vs. claims)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Resistance Handling:</strong> How do I respond to pushback without getting defensive? (Reactive vs. composed)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Negotiation Language:</strong> How do I make counter-offers politely? (Demanding vs. collaborative)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Closing Language:</strong> How do I end the conversation professionally? (Abrupt vs. graceful)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Opening Decision:</strong> How do I start the negotiation? (Direct? Collaborative?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Listening Decision:</strong> How do I understand their needs? (Ask? Listen? Explore?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Exploring Decision:</strong> How do I explore options? (Suggest? Propose? Explore?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Agreeing Decision:</strong> How do I agree on terms? (Accept? Propose? Compromise?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Closing Decision:</strong> How do I close the deal? (Confirm? Clarify? Commit?)</div>
 </div>
-<p class="philosophy-text"><strong>Important:</strong> Day 57 taught you how to open money conversations safely. Day 58 taught you how to discuss budgets openly. Day 59 taught you how to handle borrow/lend requests. Day 60 teaches you the English language to talk about salary — using diplomatic openings, evidence-based value presentation, and polite negotiation.</p>
+<p class="philosophy-text"><strong>Important:</strong> Day 57-61 taught you the competencies. Day 62 teaches you how to integrate them into a negotiation sequence that works in real situations.</p>
 </div>
 </section>
 
@@ -411,21 +407,21 @@ overflow-x: hidden;
 <div class="plan-grid">
 <div class="plan-card">
 <div class="plan-icon">🧠</div>
-<div class="plan-title">Conversation Flow</div>
+<div class="plan-title">Negotiation Loop</div>
 <div class="plan-time">5 min</div>
-<div class="plan-desc">Open → Support → Negotiate → Close</div>
+<div class="plan-desc">Open → Listen → Explore → Agree → Close</div>
 </div>
 <div class="plan-card">
 <div class="plan-icon">👁️</div>
 <div class="plan-title">5 Lenses</div>
 <div class="plan-time">25 min</div>
-<div class="plan-desc">Language Decision Areas</div>
+<div class="plan-desc">Decision Areas</div>
 </div>
 <div class="plan-card">
 <div class="plan-icon">🔄</div>
 <div class="plan-title">Integration</div>
 <div class="plan-time">10 min</div>
-<div class="plan-desc">Presence + Negotiation + Leadership</div>
+<div class="plan-desc">Opening + Listening + Exploring</div>
 </div>
 <div class="plan-card">
 <div class="plan-icon">⚠️</div>
@@ -437,7 +433,7 @@ overflow-x: hidden;
 <div class="plan-icon">🔍</div>
 <div class="plan-title">Decoder</div>
 <div class="plan-time">10 min</div>
-<div class="plan-desc">8 Situations (B2 vs C1)</div>
+<div class="plan-desc">8 Situations</div>
 </div>
 <div class="plan-card">
 <div class="plan-icon">📖</div>
@@ -446,7 +442,7 @@ overflow-x: hidden;
 <div class="plan-desc">2 Cases + Breakdown</div>
 </div>
 <div class="plan-card">
-<div class="plan-icon">🎭</div>
+<div class="plan-icon"></div>
 <div class="plan-title">Dialogues</div>
 <div class="plan-time">15 min</div>
 <div class="plan-desc">2 Long Scenarios</div>
@@ -458,7 +454,7 @@ overflow-x: hidden;
 <div class="plan-desc">Deep Dive (8 steps)</div>
 </div>
 <div class="plan-card">
-<div class="plan-icon">🗣️</div>
+<div class="plan-icon">️</div>
 <div class="plan-title">Speaking</div>
 <div class="plan-time">10 min</div>
 <div class="plan-desc">Pushback Rounds</div>
@@ -474,30 +470,35 @@ overflow-x: hidden;
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Salary Conversation Flow</h2>
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Negotiation Loop</h2>
 </div>
 <div class="loop-section">
-<h3 class="loop-title">The 4-step conversation sequence for navigating salary discussions with confidence</h3>
+<h3 class="loop-title">The 5-step negotiation process that turns confrontation into collaboration</h3>
 <div class="loop-steps">
 <div class="loop-step">
 <div class="loop-step-number">1</div>
-<div class="loop-step-title">OPEN (Bring up salary diplomatically)</div>
-<div class="loop-step-desc">"I'd like to discuss my compensation..." / "Would it be possible to talk about..."</div>
+<div class="loop-step-title">OPEN (Start the conversation)</div>
+<div class="loop-step-desc">How do I start? "I'd like to discuss..." / "I'd like to talk about..." (Open with clarity)</div>
 </div>
 <div class="loop-step">
 <div class="loop-step-number">2</div>
-<div class="loop-step-title">SUPPORT (Present value with evidence)</div>
-<div class="loop-step-desc">"Based on the impact I've delivered..." / "Over the past year, I've..."</div>
+<div class="loop-step-title">LISTEN (Understand their needs)</div>
+<div class="loop-step-desc">How do I understand them? "What's important to you?" / "What matters most?" (Listen deeply)</div>
 </div>
 <div class="loop-step">
 <div class="loop-step-number">3</div>
-<div class="loop-step-title">NEGOTIATE (Handle resistance, make counter-offers)</div>
-<div class="loop-step-desc">"I understand the constraints. What if we explored..." / "Would it be possible to..."</div>
+<div class="loop-step-title">EXPLORE (Explore options)</div>
+<div class="loop-step-desc">How do I explore? "What if we..." / "Could we consider..." (Explore together)</div>
 </div>
 <div class="loop-step">
 <div class="loop-step-number">4</div>
-<div class="loop-step-title">CLOSE (End professionally)</div>
-<div class="loop-step-desc">"Thank you for considering this. When can we revisit?" / "I appreciate your time."</div>
+<div class="loop-step-title">AGREE (Agree on terms)</div>
+<div class="loop-step-desc">How do I agree? "I can agree to..." / "I'm comfortable with..." (Agree with clarity)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">5</div>
+<div class="loop-step-title">CLOSE (Close the deal)</div>
+<div class="loop-step-desc">How do I close? "Let's confirm..." / "Let's make sure we're aligned..." (Close with clarity)</div>
 </div>
 </div>
 </div>
@@ -505,18 +506,18 @@ overflow-x: hidden;
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Salary Language Lenses</h2>
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Negotiation Lenses</h2>
 </div>
-<p class="section-desc">Every salary conversation requires five language decisions. These are your 5 lenses:</p>
+<p class="section-desc">Every negotiation requires five decisions. These are your 5 lenses:</p>
 
 <div class="lenses-grid">
 
 <div class="lens-card">
 <div class="lens-number">1</div>
-<h3 class="lens-title">Opening (Direct vs. Diplomatic)
+<h3 class="lens-title">Opening (How do I start?)
 <button class="audio-btn-small" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I bring up salary politely?"</p>
+<p class="lens-core">"How do I open this negotiation?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
 <span class="lens-context">The Opening Decision</span>
@@ -524,251 +525,251 @@ overflow-x: hidden;
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>High trust + clear context → Direct ("I'd like to discuss my compensation")</li>
-<li>Medium trust + sensitive → Diplomatic ("Would it be possible to talk about...")</li>
-<li>Low trust + formal → Very diplomatic ("I was wondering if we could discuss...")</li>
+<li>High trust → Direct ("I'd like to discuss the terms")</li>
+<li>Medium trust → Collaborative ("I'd like to talk about how we can work this out")</li>
+<li>Low trust → Exploratory ("I'd like to explore some options")</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Partner asks about salary. Decision: Direct ("I make around X") because high trust. Bố mẹ hỏi lương. Decision: Diplomatic ("I'm comfortable sharing that I'm in the X range") because medium trust.</p>
+<p>Negotiating rent with landlord. Decision: Collaborative ("I'd like to talk about the rent")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Performance review. Decision: Direct ("I'd like to discuss my compensation") because clear context. Casual conversation with boss. Decision: Diplomatic ("Would it be possible to talk about my salary?") because sensitive.</p>
+<p>Negotiating salary with employer. Decision: Direct ("I'd like to discuss my compensation")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"I make around X" / "I'm in the X range"</span>
+<span class="register-phrase">"I'd like to talk about..." <button class="audio-btn-small" onclick="speakText('lens1r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"I'd like to discuss my compensation"</span>
+<span class="register-phrase">"I'd like to discuss..." <button class="audio-btn-small" onclick="speakText('lens1r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"Would it be possible to talk about my salary?"</span>
+<span class="register-phrase">"I'd like to discuss the terms..." <button class="audio-btn-small" onclick="speakText('lens1r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag formal">📋 Formal</span>
-<span class="register-phrase">"I was wondering if we could discuss my compensation package"</span>
+<span class="register-phrase">"I'd like to explore some options..." <button class="audio-btn-small" onclick="speakText('lens1r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>⚖️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Diplomatic)</strong>
-Reduces tension, shows respect.
+<strong>Gain (Direct)</strong>
+Clarity, confidence.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Diplomatic)</strong>
-May feel indirect.
+<strong>Lose (Direct)</strong>
+May feel confrontational.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Being too direct ("I want more money") or too indirect ("Um, maybe we could...")</p>
+<p>Opening too aggressively ("I need...") or too passively ("I was wondering if maybe...")</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I opening with confidence and diplomacy, or with apology or aggression?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I opening with clarity and collaboration, or with aggression or passivity?</p>
 </div>
 
 <div class="lens-card">
 <div class="lens-number">2</div>
-<h3 class="lens-title">Value Language (Facts vs. Claims)
+<h3 class="lens-title">Listening (How do I understand them?)
 <button class="audio-btn-small" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I present my contributions without sounding boastful?"</p>
+<p class="lens-core">"How do I understand their needs?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
-<span class="lens-context">The Value Decision</span>
+<span class="lens-context">The Listening Decision</span>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>Strong evidence → Facts ("I delivered X, resulting in Y")</li>
-<li>Moderate evidence → Balanced ("I've contributed to X, which has helped Y")</li>
-<li>Weak evidence → Humble ("I've been working on X, and I'm proud of Y")</li>
+<li>They're open → Ask directly ("What's important to you?")</li>
+<li>They're hesitant → Explore gently ("What matters most to you?")</li>
+<li>They're resistant → Listen first, then ask</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Partner asks why you deserve a raise. Decision: Facts ("I've been working overtime and got a promotion"). Bố mẹ hỏi tại sao lương cao. Decision: Balanced ("I've been taking on more responsibilities").</p>
+<p>Landlord is hesitant. Decision: Explore gently ("What matters most to you about the rent?")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Performance review. Decision: Facts ("I led the X project, generating $500K in revenue"). Casual conversation. Decision: Balanced ("I've been contributing to several key projects").</p>
+<p>Employer is open. Decision: Ask directly ("What's important to you about the compensation?")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"I've been working hard and got good results"</span>
+<span class="register-phrase">"What matters to you?" <button class="audio-btn-small" onclick="speakText('lens2r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"I've delivered X, which has helped Y"</span>
+<span class="register-phrase">"What's important to you?" <button class="audio-btn-small" onclick="speakText('lens2r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"Based on the impact I've delivered..."</span>
+<span class="register-phrase">"What matters most to you?" <button class="audio-btn-small" onclick="speakText('lens2r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
-<span class="register-tag formal">📋 Formal</span>
-<span class="register-phrase">"In light of my contributions to X, resulting in Y..."</span>
+<span class="register-tag formal"> Formal</span>
+<span class="register-phrase">"What are your key priorities?" <button class="audio-btn-small" onclick="speakText('lens2r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>⚖️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Facts)</strong>
-Harder to dismiss, shows evidence.
+<strong>Gain (Ask directly)</strong>
+Clarity, understanding.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Facts)</strong>
-May sound boastful if not framed carefully.
+<strong>Lose (Ask directly)</strong>
+May feel intrusive.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Making claims without evidence ("I deserve more") or being too humble ("I don't know if I deserve this")</p>
+<p>Asking too aggressively ("What do you want?") or too passively ("I don't know what you want")</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I presenting facts with confidence, or making claims without evidence?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I listening to understand, or listening to respond?</p>
 </div>
 
 <div class="lens-card">
 <div class="lens-number">3</div>
-<h3 class="lens-title">Resistance Handling (Reactive vs. Composed)
+<h3 class="lens-title">Exploring (How do I explore options?)
 <button class="audio-btn-small" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I respond to pushback without getting defensive?"</p>
+<p class="lens-core">"How do I explore options?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
-<span class="lens-context">The Resistance Decision</span>
+<span class="lens-context">The Exploring Decision</span>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>Soft pushback → Acknowledge ("I understand the constraints")</li>
-<li>Hard pushback → Compose ("I appreciate your perspective. What if we explored...")</li>
-<li>Emotional pushback → Stay calm ("I hear you. Let's look at this together")</li>
+<li>They're open → Suggest ("What if we...")</li>
+<li>They're hesitant → Propose ("Could we consider...")</li>
+<li>They're resistant → Explore together ("Let's explore some options")</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Partner says "We can't afford that." Decision: Acknowledge ("I understand. What if we looked at..."). Bố mẹ nói "Lương cao thế là tốt rồi." Decision: Compose ("I appreciate your perspective. For me, it's about...").</p>
+<p>Landlord is hesitant. Decision: Propose ("Could we consider a 6-month lease?")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Boss says "Budget is tight." Decision: Acknowledge ("I understand. What if we explored alternatives?"). Boss says "That's not possible." Decision: Compose ("I appreciate your perspective. What would make it possible?").</p>
+<p>Employer is open. Decision: Suggest ("What if we discuss a 10% increase?")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"I get it. What if we tried..."</span>
+<span class="register-phrase">"What if we..." <button class="audio-btn-small" onclick="speakText('lens3r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"I understand. What if we explored..."</span>
+<span class="register-phrase">"Could we consider..." <button class="audio-btn-small" onclick="speakText('lens3r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"I appreciate your perspective. What if we considered..."</span>
+<span class="register-phrase">"What if we explore..." <button class="audio-btn-small" onclick="speakText('lens3r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag formal">📋 Formal</span>
-<span class="register-phrase">"I acknowledge the constraints. Would it be possible to explore..."</span>
+<span class="register-phrase">"Let's explore some options..." <button class="audio-btn-small" onclick="speakText('lens3r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>⚖️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Composed)</strong>
-Keeps conversation productive.
+<strong>Gain (Suggest)</strong>
+Clarity, direction.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Composed)</strong>
-May feel like you're not advocating for yourself.
+<strong>Lose (Suggest)</strong>
+May feel prescriptive.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Getting defensive ("But I deserve this!") or giving up too easily ("Okay, never mind")</p>
+<p>Suggesting too aggressively ("We should...") or too passively ("I don't know what to do")</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I responding with composure and curiosity, or with defensiveness or defeat?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I exploring options, or am I imposing my solution?</p>
 </div>
 
 <div class="lens-card">
 <div class="lens-number">4</div>
-<h3 class="lens-title">Negotiation Language (Demanding vs. Collaborative)
+<h3 class="lens-title">Agreeing (How do I agree on terms?)
 <button class="audio-btn-small" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I make counter-offers politely?"</p>
+<p class="lens-core">"How do I agree on terms?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
-<span class="lens-context">The Negotiation Decision</span>
+<span class="lens-context">The Agreeing Decision</span>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>Clear ask → Collaborative ("Would it be possible to...")</li>
-<li>Flexible ask → Exploratory ("What if we considered...")</li>
-<li>Firm ask → Diplomatic ("I'd like to propose...")</li>
+<li>They agree → Accept ("I can agree to that")</li>
+<li>They propose → Consider ("I'm comfortable with that")</li>
+<li>They hesitate → Propose alternative ("Could we consider...")</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Partner asks how much you need. Decision: Collaborative ("Would it be possible to adjust..."). Bố mẹ hỏi muốn gì. Decision: Exploratory ("What if we looked at...").</p>
+<p>Landlord proposes. Decision: Consider ("I'm comfortable with that")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Boss offers 10% raise. Decision: Collaborative ("Would it be possible to consider 15%?"). Boss says no raise. Decision: Exploratory ("What if we explored alternatives like bonus or equity?").</p>
+<p>Employer agrees. Decision: Accept ("I can agree to that")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"What if we tried..." / "Could we..."</span>
+<span class="register-phrase">"I can agree to that" <button class="audio-btn-small" onclick="speakText('lens4r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"Would it be possible to..."</span>
+<span class="register-phrase">"I'm comfortable with that" <button class="audio-btn-small" onclick="speakText('lens4r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
-<span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"I'd like to propose..." / "What if we considered..."</span>
+<span class="register-tag professional"> Professional</span>
+<span class="register-phrase">"I can agree to those terms" <button class="audio-btn-small" onclick="speakText('lens4r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag formal">📋 Formal</span>
-<span class="register-phrase">"I would like to propose an adjustment to..."</span>
+<span class="register-phrase">"I'm comfortable with those terms" <button class="audio-btn-small" onclick="speakText('lens4r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>⚖️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Collaborative)</strong>
-Shows flexibility, invites dialogue.
+<strong>Gain (Accept)</strong>
+Clarity, closure.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Collaborative)</strong>
-May feel like you're compromising.
+<strong>Lose (Accept)</strong>
+May leave value on the table.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Being too demanding ("I need 20%") or too passive ("Whatever you think is fine")</p>
+<p>Accepting too quickly (leaves value) or negotiating too long (creates frustration)</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I negotiating with collaboration and diplomacy, or with demands or passivity?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I agreeing with clarity, or am I leaving value on the table?</p>
 </div>
 
 <div class="lens-card">
 <div class="lens-number">5</div>
-<h3 class="lens-title">Closing Language (Abrupt vs. Graceful)
+<h3 class="lens-title">Closing (How do I close the deal?)
 <button class="audio-btn-small" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I end the conversation professionally?"</p>
+<p class="lens-core">"How do I close the deal?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐ High</span>
 <span class="lens-context">The Closing Decision</span>
@@ -776,54 +777,54 @@ May feel like you're compromising.
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>Agreement reached → Grateful ("Thank you for considering this")</li>
-<li>No agreement → Professional ("When can we revisit?")</li>
-<li>Mixed outcome → Balanced ("I appreciate your time. Let's follow up on...")</li>
+<li>Clear agreement → Confirm ("Let's confirm the terms")</li>
+<li>Some uncertainty → Clarify ("Let's make sure we're aligned")</li>
+<li>Full agreement → Commit ("Let's move forward")</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Partner agrees. Decision: Grateful ("Thanks for understanding"). Partner needs time. Decision: Professional ("When can we talk about this again?").</p>
+<p>Agreement reached. Decision: Confirm ("Let's confirm the terms")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Boss agrees. Decision: Grateful ("Thank you for considering this. I appreciate it"). Boss needs approval. Decision: Professional ("When can we revisit this?").</p>
+<p>Agreement reached. Decision: Commit ("Let's move forward")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"Thanks for listening" / "Let's talk again soon"</span>
+<span class="register-phrase">"Let's confirm..." <button class="audio-btn-small" onclick="speakText('lens5r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
-<span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"Thank you for considering this"</span>
+<span class="register-tag neutral"> Neutral</span>
+<span class="register-phrase">"Let's make sure we're aligned..." <button class="audio-btn-small" onclick="speakText('lens5r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"I appreciate your time. When can we revisit?"</span>
+<span class="register-phrase">"Let's confirm the terms..." <button class="audio-btn-small" onclick="speakText('lens5r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag formal">📋 Formal</span>
-<span class="register-phrase">"Thank you for your consideration. I look forward to our follow-up discussion."</span>
+<span class="register-phrase">"Let's move forward..." <button class="audio-btn-small" onclick="speakText('lens5r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>⚖️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Graceful)</strong>
-Leaves positive impression, keeps door open.
+<strong>Gain (Confirm)</strong>
+Clarity, closure.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Graceful)</strong>
-Takes more time.
+<strong>Lose (Confirm)</strong>
+May feel abrupt.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Ending abruptly ("Okay, bye") or over-explaining ("I just want to say that I really appreciate...")</p>
+<p>Closing too abruptly ("Done") or too vaguely ("Let's see")</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I closing with professionalism and gratitude, or with abruptness or over-explanation?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I closing with clarity, or am I leaving ambiguity?</p>
 </div>
 
 </div>
@@ -831,28 +832,28 @@ Takes more time.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Language Mistakes</h2>
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
 </div>
 <div class="mistakes-section">
-<h3 class="mistakes-title">Traps that destroy salary conversations</h3>
+<h3 class="mistakes-title">Traps that destroy negotiations</h3>
 <div class="mistakes-grid">
 <div class="mistake-item">
-<h4 class="mistake-title">Mistake 1: Being Too Direct</h4>
-<div class="mistake-wrong">❌ "I want more money."</div>
+<h4 class="mistake-title">Mistake 1: Opening Too Aggressively</h4>
+<div class="mistake-wrong">❌ "I need a 20% raise."</div>
 <div class="mistake-right">✅ "I'd like to discuss my compensation."</div>
-<div class="mistake-why">Why: Direct demands create resistance. Diplomatic language opens dialogue.</div>
+<div class="mistake-why">Why: Aggressive opening creates resistance. Collaborative opening creates collaboration.</div>
 </div>
 <div class="mistake-item">
-<h4 class="mistake-title">Mistake 2: Making Claims Without Evidence</h4>
-<div class="mistake-wrong">❌ "I think I deserve more because I work hard."</div>
-<div class="mistake-right">✅ "Based on the impact I've delivered, I believe my compensation should reflect..."</div>
-<div class="mistake-why">Why: Claims without evidence are easy to dismiss. Facts are harder to ignore.</div>
+<h4 class="mistake-title">Mistake 2: Not Listening</h4>
+<div class="mistake-wrong"> "Here's what I want..." (without listening)</div>
+<div class="mistake-right">✅ "What's important to you?" (listen first)</div>
+<div class="mistake-why">Why: Not listening creates resistance. Listening creates understanding.</div>
 </div>
 <div class="mistake-item">
-<h4 class="mistake-title">Mistake 3: Getting Defensive</h4>
-<div class="mistake-wrong">❌ "But I work harder than others!"</div>
-<div class="mistake-right">✅ "I understand the constraints. What if we explored alternatives?"</div>
-<div class="mistake-why">Why: Defensiveness shuts down conversation. Composure keeps it productive.</div>
+<h4 class="mistake-title">Mistake 3: Closing Too Vaguely</h4>
+<div class="mistake-wrong">❌ "Let's see..."</div>
+<div class="mistake-right">✅ "Let's confirm the terms."</div>
+<div class="mistake-why">Why: Vague closing creates ambiguity. Clear closing creates clarity.</div>
 </div>
 </div>
 </div>
@@ -860,85 +861,85 @@ Takes more time.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Salary Conversation Decoder (8 Situations)</h2>
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Negotiation Decoder (8 Situations)</h2>
 </div>
 <div class="decoder-section">
-<h3 class="decoder-title">🔍 The Decision Decoder (B2 vs C1 Language)</h3>
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
 <table class="decoder-table">
 <thead>
 <tr>
 <th>Situation</th>
-<th>B2 Language</th>
-<th>C1 Language</th>
-<th>Trade-off</th>
-<th>Tone</th>
-<th>Register</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Trade-off of C</th>
+<th>When B is better?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1. Performance review - asking for raise</td>
-<td>"I think I deserve more."</td>
-<td>"Based on the impact I've delivered, I'd like to discuss my compensation."</td>
-<td>Takes more preparation</td>
-<td>Confident, diplomatic</td>
-<td>Professional</td>
+<td>1. Life: Negotiating rent with landlord</td>
+<td>Accept the first offer.</td>
+<td>Walk away.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When you have no leverage.</td>
 </tr>
 <tr>
-<td>2. Boss says "Budget is tight"</td>
-<td>"But I work harder than others!"</td>
-<td>"I understand the constraints. What if we explored alternatives?"</td>
-<td>Shows flexibility</td>
-<td>Composed, collaborative</td>
-<td>Professional</td>
+<td>2. Life: Negotiating price at a market</td>
+<td>Accept the first price.</td>
+<td>Walk away.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When the price is fixed.</td>
 </tr>
 <tr>
-<td>3. Partner asks about salary</td>
-<td>"I make X."</td>
-<td>"I'm comfortable sharing that I'm in the X range."</td>
-<td>Builds trust</td>
-<td>Open, transparent</td>
-<td>Casual</td>
+<td>3. Life: Negotiating with a contractor</td>
+<td>Accept the first quote.</td>
+<td>Get another quote.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When you're in a hurry.</td>
 </tr>
 <tr>
-<td>4. Bố mẹ hỏi lương</td>
-<td>"Con lương cao lắm."</td>
-<td>"I'm doing well. I'm in a good position financially."</td>
-<td>Shows respect</td>
-<td>Respectful, balanced</td>
-<td>Neutral</td>
+<td>4. Business: Negotiating salary with employer</td>
+<td>Accept the first offer.</td>
+<td>Walk away.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When you have no leverage.</td>
 </tr>
 <tr>
-<td>5. Colleague asks about your salary</td>
-<td>"I don't want to say."</td>
-<td>"I prefer not to discuss specific numbers, but I'm doing well."</td>
-<td>Maintains privacy</td>
-<td>Polite, diplomatic</td>
-<td>Professional</td>
+<td>5. Business: Negotiating contract terms</td>
+<td>Accept the first terms.</td>
+<td>Walk away.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When the terms are non-negotiable.</td>
 </tr>
 <tr>
-<td>6. Boss offers lower than expected</td>
-<td>"That's not enough."</td>
-<td>"I appreciate the offer. Would it be possible to consider X?"</td>
-<td>Opens negotiation</td>
-<td>Grateful, collaborative</td>
-<td>Professional</td>
+<td>6. Life: Negotiating with a service provider</td>
+<td>Accept the first offer.</td>
+<td>Switch providers.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When you're in a hurry.</td>
 </tr>
 <tr>
-<td>7. Friend asks if you make more than them</td>
-<td>"Yeah, I do."</td>
-<td>"We're in similar ranges. Let's focus on our own goals."</td>
-<td>Avoids comparison</td>
-<td>Diplomatic, supportive</td>
-<td>Casual</td>
+<td>7. Business: Negotiating with a vendor</td>
+<td>Accept the first offer.</td>
+<td>Find another vendor.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When you're in a hurry.</td>
 </tr>
 <tr>
-<td>8. No agreement reached</td>
-<td>"Okay, fine."</td>
-<td>"Thank you for considering this. When can we revisit?"</td>
-<td>Keeps door open</td>
-<td>Professional, grateful</td>
-<td>Professional</td>
+<td>8. Life: Negotiating with a landlord about repairs</td>
+<td>Accept the situation.</td>
+<td>Move out.</td>
+<td>Open → Listen → Explore → Agree → Close.</td>
+<td>Takes more time.</td>
+<td>When the landlord is unresponsive.</td>
 </tr>
 </tbody>
 </table>
@@ -952,184 +953,246 @@ Takes more time.
 <div class="reading-section">
 <h3 class="reading-title">📖 Case Studies</h3>
 <div class="reading-grid">
+
 <div class="case-box">
-<h4 class="case-title">💼 Case 1: Business - The Performance Review Raise Request</h4>
-<div class="case-context"><strong>Context:</strong> You're at your annual performance review. You've had a strong year: you led a project that generated $500K in revenue, mentored 3 junior team members, and received positive client feedback. You want to ask for a raise.</div>
+<h4 class="case-title"> Case 1: Life - Negotiating Rent with Landlord</h4>
+<div class="case-context"><strong>Context:</strong> Your lease is up for renewal. The landlord wants to raise the rent by 15%. You want to negotiate a lower increase.</div>
 <div class="case-decision">
-<h4>Conversation Flow:</h4>
+<h4>Your Decision:</h4>
 <ul>
-<li><strong>Open:</strong> "Thank you for the review. I'd like to discuss my compensation."</li>
-<li><strong>Support:</strong> "Based on the impact I've delivered this year — leading the X project that generated $500K, mentoring 3 team members, and receiving positive client feedback — I believe my compensation should reflect these contributions."</li>
-<li><strong>Negotiate:</strong> "I understand budget constraints. What if we explored alternatives like a performance bonus or equity?"</li>
-<li><strong>Close:</strong> "Thank you for considering this. When can we revisit?"</li>
+<li><strong>Lens 1 (Opening):</strong> Collaborative ("I'd like to discuss the rent")</li>
+<li><strong>Lens 2 (Listening):</strong> Ask directly ("What's important to you about the rent?")</li>
+<li><strong>Lens 3 (Exploring):</strong> Propose ("Could we consider a 10% increase?")</li>
+<li><strong>Lens 4 (Agreeing):</strong> Consider ("I'm comfortable with that")</li>
+<li><strong>Lens 5 (Closing):</strong> Confirm ("Let's confirm the terms")</li>
 </ul>
 </div>
+<div class="case-decision">
+<h4>Negotiation Flow:</h4>
+<ol style="padding-left: 24px; color: var(--text-secondary); font-size: 13px; line-height: 1.5;">
+<li><strong>Open:</strong> "I'd like to discuss the rent for the next lease."</li>
+<li><strong>Listen:</strong> "What's important to you about the rent increase?"</li>
+<li><strong>Explore:</strong> "Could we consider a 10% increase instead of 15%?"</li>
+<li><strong>Agree:</strong> "I'm comfortable with a 10% increase."</li>
+<li><strong>Close:</strong> "Let's confirm the terms and sign the lease."</li>
+</ol>
+</div>
 <div class="breakdown-section">
-<h4 class="breakdown-title">🎯 LANGUAGE BREAKDOWN (Deep Analysis)</h4>
+<h4 class="breakdown-title">🎯 BREAKDOWN (Deep Analysis)</h4>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"I'd like to discuss my compensation."</div>
+<div class="breakdown-sentence">"I'd like to discuss the rent for the next lease."</div>
 <div class="breakdown-analysis">
-<strong>🎯 Language Goal:</strong> Open diplomatically.
-<strong>🧠 Hidden Message:</strong> "I'm not demanding. I'm inviting a conversation."
+<strong>🎯 Communication Goal:</strong> Open with clarity.
+<strong>🧠 Hidden Message:</strong> "I'm not here to fight. I'm here to discuss."
 <strong>⚖️ Trade-off:</strong> Takes 5 seconds, but sets collaborative tone.
-<strong>🔄 B2 Alternative?</strong> "I want to talk about my salary." (Too direct, creates resistance).
-<strong>⭐ Why This Wins:</strong> Diplomatic opening. Shows respect.
+<strong>🔄 Better Alternative?</strong> "I need a lower rent." (Aggressive, creates resistance).
+<strong>⭐ Why This Wins:</strong> Collaborative opening. Sets collaborative tone.
 </div>
 </div>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"Based on the impact I've delivered..."</div>
+<div class="breakdown-sentence">"What's important to you about the rent increase?"</div>
 <div class="breakdown-analysis">
-<strong>🎯 Language Goal:</strong> Present value with evidence.
-<strong>🧠 Hidden Message:</strong> "I'm not making claims. I'm presenting facts."
-<strong>⚖️ Trade-off:</strong> Shows confidence, but may sound boastful if not framed carefully.
-<strong>🔄 B2 Alternative?</strong> "I think I deserve more because I work hard." (No evidence, easy to dismiss).
-<strong>⭐ Why This Wins:</strong> Evidence-based. Harder to dismiss.
+<strong> Communication Goal:</strong> Listen to understand.
+<strong>🧠 Hidden Message:</strong> "I want to understand your perspective."
+<strong>⚖️ Trade-off:</strong> Takes more time, but builds understanding.
+<strong>🔄 Better Alternative?</strong> "I can't afford 15%." (Positional, creates resistance).
+<strong>⭐ Why This Wins:</strong> Listening creates understanding. Opens dialogue.
 </div>
 </div>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"What if we explored alternatives?"</div>
+<div class="breakdown-sentence">"Could we consider a 10% increase instead of 15%?"</div>
 <div class="breakdown-analysis">
-<strong>🎯 Language Goal:</strong> Negotiate collaboratively.
-<strong>🧠 Hidden Message:</strong> "I'm flexible. Let's find a solution together."
-<strong>⚖️ Trade-off:</strong> Shows flexibility, but may feel like you're compromising.
-<strong>🔄 B2 Alternative?</strong> "I need 20% more." (Demanding, creates resistance).
-<strong>⭐ Why This Wins:</strong> Collaborative. Opens dialogue.
+<strong> Communication Goal:</strong> Explore options.
+<strong>🧠 Hidden Message:</strong> "I'm open to finding a solution."
+<strong>⚖️ Trade-off:</strong> Takes more time, but explores options.
+<strong>🔄 Better Alternative?</strong> "I'll take 10% or I'll leave." (Ultimatum, creates resistance).
+<strong>⭐ Why This Wins:</strong> Exploratory. Opens creative thinking.
 </div>
 </div>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"Thank you for considering this. When can we revisit?"</div>
+<div class="breakdown-sentence">"I'm comfortable with a 10% increase."</div>
 <div class="breakdown-analysis">
-<strong>🎯 Language Goal:</strong> Close professionally.
-<strong>🧠 Hidden Message:</strong> "I appreciate your time. I'm keeping the door open."
-<strong>⚖️ Trade-off:</strong> Takes more time, but leaves positive impression.
-<strong>🔄 B2 Alternative?</strong> "Okay, thanks." (Abrupt, closes door).
-<strong>⭐ Why This Wins:</strong> Professional. Keeps door open.
+<strong>🎯 Communication Goal:</strong> Agree with clarity.
+<strong> Hidden Message:</strong> "I can agree to this."
+<strong>⚖️ Trade-off:</strong> May leave value on the table, but creates closure.
+<strong>🔄 Better Alternative?</strong> "I need 5%." (Aggressive, may lose deal).
+<strong>⭐ Why This Wins:</strong> Clear agreement. Creates closure.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"Let's confirm the terms and sign the lease."</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Close with clarity.
+<strong> Hidden Message:</strong> "Let's make this official."
+<strong>⚖️ Trade-off:</strong> Takes time to confirm, but creates clarity.
+<strong>🔄 Better Alternative?</strong> "Done." (Too abrupt, may create confusion).
+<strong>⭐ Why This Wins:</strong> Clear closing. Creates clarity.
 </div>
 </div>
 </div>
 </div>
 
 <div class="case-box">
-<h4 class="case-title">🏠 Case 2: Life - Bố Mẹ Hỏi Lương</h4>
-<div class="case-context"><strong>Context:</strong> Bố mẹ hỏi bạn lương bao nhiêu trong bữa cơm gia đình. Bạn muốn trả lời một cách tôn trọng nhưng không muốn chia sẻ chi tiết.</div>
+<h4 class="case-title">💼 Case 2: Business - Negotiating Salary with Employer</h4>
+<div class="case-context"><strong>Context:</strong> You're negotiating a salary increase with your employer. They've offered 5%. You want 15%.</div>
 <div class="case-decision">
-<h4>Conversation Flow:</h4>
+<h4>Your Decision:</h4>
 <ul>
-<li><strong>Open:</strong> "Con hiểu bố mẹ quan tâm."</li>
-<li><strong>Support:</strong> "Con đang ở vị trí tốt về tài chính."</li>
-<li><strong>Negotiate:</strong> "Con thoải mái chia sẻ rằng con đang ở mức X-Y."</li>
-<li><strong>Close:</strong> "Cảm ơn bố mẹ đã quan tâm."</li>
+<li><strong>Lens 1 (Opening):</strong> Direct ("I'd like to discuss my compensation")</li>
+<li><strong>Lens 2 (Listening):</strong> Ask directly ("What's important to you about the compensation?")</li>
+<li><strong>Lens 3 (Exploring):</strong> Suggest ("What if we discuss a 12% increase?")</li>
+<li><strong>Lens 4 (Agreeing):</strong> Accept ("I can agree to 12%")</li>
+<li><strong>Lens 5 (Closing):</strong> Commit ("Let's move forward with 12%")</li>
 </ul>
 </div>
+<div class="case-decision">
+<h4>Negotiation Flow:</h4>
+<ol style="padding-left: 24px; color: var(--text-secondary); font-size: 13px; line-height: 1.5;">
+<li><strong>Open:</strong> "I'd like to discuss my compensation."</li>
+<li><strong>Listen:</strong> "What's important to you about the compensation?"</li>
+<li><strong>Explore:</strong> "What if we discuss a 12% increase?"</li>
+<li><strong>Agree:</strong> "I can agree to 12%."</li>
+<li><strong>Close:</strong> "Let's move forward with 12%."</li>
+</ol>
+</div>
 <div class="breakdown-section">
-<h4 class="breakdown-title">🎯 LANGUAGE BREAKDOWN (Deep Analysis)</h4>
+<h4 class="breakdown-title">🎯 BREAKDOWN (Deep Analysis)</h4>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"Con hiểu bố mẹ quan tâm."</div>
+<div class="breakdown-sentence">"I'd like to discuss my compensation."</div>
 <div class="breakdown-analysis">
-<strong>🎯 Language Goal:</strong> Acknowledge their concern.
-<strong>🧠 Hidden Message:</strong> "I respect your concern. I'm not dismissing you."
-<strong>⚖️ Trade-off:</strong> Shows respect, but may feel like you're avoiding.
-<strong>🔄 B2 Alternative?</strong> "Con không muốn nói." (Too direct, creates tension).
-<strong>⭐ Why This Wins:</strong> Respectful. Acknowledges their concern.
-</div>
-</div>
-<div class="breakdown-item">
-<div class="breakdown-sentence">"Con đang ở vị trí tốt về tài chính."</div>
-<div class="breakdown-analysis">
-<strong>🎯 Language Goal:</strong> Present value diplomatically.
-<strong>🧠 Hidden Message:</strong> "I'm doing well. You don't need to worry."
-<strong>⚖️ Trade-off:</strong> Reassures them, but doesn't give specifics.
-<strong>🔄 B2 Alternative?</strong> "Con lương cao lắm." (Too casual, may sound boastful).
-<strong>⭐ Why This Wins:</strong> Diplomatic. Reassures without specifics.
+<strong>🎯 Communication Goal:</strong> Open with clarity.
+<strong> Hidden Message:</strong> "I'm not here to fight. I'm here to discuss."
+<strong>️ Trade-off:</strong> Takes 5 seconds, but sets collaborative tone.
+<strong>🔄 Better Alternative?</strong> "I need a 15% raise." (Aggressive, creates resistance).
+<strong>⭐ Why This Wins:</strong> Collaborative opening. Sets collaborative tone.
 </div>
 </div>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"Con thoải mái chia sẻ rằng con đang ở mức X-Y."</div>
+<div class="breakdown-sentence">"What's important to you about the compensation?"</div>
 <div class="breakdown-analysis">
-<strong>🎯 Language Goal:</strong> Share diplomatically.
-<strong>🧠 Hidden Message:</strong> "I'm open, but on my terms."
-<strong>⚖️ Trade-off:</strong> Shows openness, but maintains boundaries.
-<strong>🔄 B2 Alternative?</strong> "Con lương X." (Too direct, no context).
-<strong>⭐ Why This Wins:</strong> Diplomatic. Maintains boundaries.
+<strong>🎯 Communication Goal:</strong> Listen to understand.
+<strong>🧠 Hidden Message:</strong> "I want to understand your perspective."
+<strong>⚖️ Trade-off:</strong> Takes more time, but builds understanding.
+<strong> Better Alternative?</strong> "I can't accept 5%." (Positional, creates resistance).
+<strong>⭐ Why This Wins:</strong> Listening creates understanding. Opens dialogue.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"What if we discuss a 12% increase?"</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Explore options.
+<strong>🧠 Hidden Message:</strong> "I'm open to finding a solution."
+<strong>⚖️ Trade-off:</strong> Takes more time, but explores options.
+<strong>🔄 Better Alternative?</strong> "I need 15% or I'll leave." (Ultimatum, creates resistance).
+<strong>⭐ Why This Wins:</strong> Exploratory. Opens creative thinking.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"I can agree to 12%."</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Agree with clarity.
+<strong>🧠 Hidden Message:</strong> "I can agree to this."
+<strong>⚖️ Trade-off:</strong> May leave value on the table, but creates closure.
+<strong>🔄 Better Alternative?</strong> "I need 15%." (Aggressive, may lose deal).
+<strong>⭐ Why This Wins:</strong> Clear agreement. Creates closure.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"Let's move forward with 12%."</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Close with clarity.
+<strong>🧠 Hidden Message:</strong> "Let's make this official."
+<strong>⚖️ Trade-off:</strong> Takes time to confirm, but creates clarity.
+<strong>🔄 Better Alternative?</strong> "Done." (Too abrupt, may create confusion).
+<strong>⭐ Why This Wins:</strong> Clear closing. Creates clarity.
 </div>
 </div>
 </div>
 </div>
+
 </div>
 </div>
 </section>
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: B2 → C1 + Sentence Function</h2>
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Normal → C1 + Sentence Function</h2>
 </div>
 <div class="micro-writing-section">
-<h3 class="micro-writing-title">✍️ B2 → C1 Rewrite</h3>
+<h3 class="micro-writing-title">✍️ Normal → C1 Rewrite</h3>
 <div class="rewrite-item">
-<div class="rewrite-task">❌ B2 (Business - Raise Request): "I want more money. I work hard."</div>
+<div class="rewrite-task">❌ Normal (Life - Rent): "I need a lower rent."</div>
+<div class="sentence-function-grid">
+<div class="sentence-function">
+<div class="sentence">"I'd like to discuss the rent for the next lease."</div>
+<div class="function">→ Function: Open with clarity</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"What's important to you about the rent increase?"</div>
+<div class="function">→ Function: Listen to understand</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"Could we consider a 10% increase?"</div>
+<div class="function">→ Function: Explore options</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"I'm comfortable with a 10% increase."</div>
+<div class="function">→ Function: Agree with clarity</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"Let's confirm the terms."</div>
+<div class="function">→ Function: Close with clarity</div>
+</div>
+</div>
+</div>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Normal (Business - Salary): "I need a 15% raise."</div>
 <div class="sentence-function-grid">
 <div class="sentence-function">
 <div class="sentence">"I'd like to discuss my compensation."</div>
-<div class="function">→ Function: Diplomatic opening</div>
+<div class="function">→ Function: Open with clarity</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"Based on the impact I've delivered..."</div>
-<div class="function">→ Function: Evidence-based value</div>
+<div class="sentence">"What's important to you about the compensation?"</div>
+<div class="function">→ Function: Listen to understand</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"What if we explored alternatives?"</div>
-<div class="function">→ Function: Collaborative negotiation</div>
+<div class="sentence">"What if we discuss a 12% increase?"</div>
+<div class="function">→ Function: Explore options</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"Thank you for considering this."</div>
-<div class="function">→ Function: Professional closing</div>
-</div>
-</div>
-</div>
-<div class="rewrite-item">
-<div class="rewrite-task">❌ B2 (Life - Bố Mẹ Hỏi): "Con lương cao lắm."</div>
-<div class="sentence-function-grid">
-<div class="sentence-function">
-<div class="sentence">"Con hiểu bố mẹ quan tâm."</div>
-<div class="function">→ Function: Respectful opening</div>
+<div class="sentence">"I can agree to 12%."</div>
+<div class="function">→ Function: Agree with clarity</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"Con đang ở vị trí tốt về tài chính."</div>
-<div class="function">→ Function: Diplomatic value</div>
-</div>
-<div class="sentence-function">
-<div class="sentence">"Con thoải mái chia sẻ rằng con đang ở mức X-Y."</div>
-<div class="function">→ Function: Boundary-setting</div>
-</div>
-<div class="sentence-function">
-<div class="sentence">"Cảm ơn bố mẹ đã quan tâm."</div>
-<div class="function">→ Function: Grateful closing</div>
+<div class="sentence">"Let's move forward with 12%."</div>
+<div class="function">→ Function: Close with clarity</div>
 </div>
 </div>
 </div>
 <h4 style="font-family: 'Fraunces', serif; margin: 24px 0 12px;">📝 Before / After Analysis</h4>
 <div class="before-after-grid">
 <div class="before-after normal">
-<div class="label">B2</div>
-<div class="text">"I want more money."</div>
-<div class="explanation">Demanding, creates resistance</div>
+<div class="label">Normal</div>
+<div class="text">"I need a lower rent."</div>
+<div class="explanation">Aggressive, creates resistance</div>
 </div>
 <div class="before-after executive">
 <div class="label">C1</div>
-<div class="text">"I'd like to discuss my compensation."</div>
-<div class="explanation">Diplomatic, opens dialogue</div>
+<div class="text">"I'd like to discuss the rent."</div>
+<div class="explanation">Collaborative, opens dialogue</div>
 </div>
 </div>
 <div class="before-after-grid" style="margin-top: 12px;">
 <div class="before-after normal">
-<div class="label">B2</div>
-<div class="text">"I think I deserve more."</div>
-<div class="explanation">Claim without evidence</div>
+<div class="label">Normal</div>
+<div class="text">"I need a 15% raise."</div>
+<div class="explanation">Aggressive, creates resistance</div>
 </div>
 <div class="before-after executive">
 <div class="label">C1</div>
-<div class="text">"Based on the impact I've delivered..."</div>
-<div class="explanation">Evidence-based value</div>
+<div class="text">"I'd like to discuss my compensation."</div>
+<div class="explanation">Collaborative, opens dialogue</div>
 </div>
 </div>
 <p style="font-size: 13px; color: var(--text-secondary); margin-top: 16px; font-style: italic;"><strong>C1 doesn't demand. C1 negotiates.</strong></p>
@@ -1138,71 +1201,350 @@ Takes more time.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Salary Lexicon)</h2>
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Negotiation Lexicon)</h2>
 </div>
 <div class="vocab-section">
-<h3 class="vocab-title">📝 The Salary Lexicon</h3>
+<h3 class="vocab-title">📝 The Negotiation Lexicon</h3>
 <div class="vocab-grid">
 <div class="vocab-item">
-<strong>compensation /kɒm.pənˈseɪ.ʃən/</strong>
+<strong>negotiate /nɪˈɡəʊ.ʃi.eɪt/</strong>
+<div class="pos">(verb)</div>
+<div class="meaning">Thương lượng, đàm phán</div>
+<div class="example">"I'd like to negotiate the terms."</div>
+</div>
+<div class="vocab-item">
+<strong>terms /tɜːmz/</strong>
 <div class="pos">(noun)</div>
-<div class="meaning">Lương thưởng</div>
-<div class="example">"I'd like to discuss my compensation."</div>
+<div class="meaning">Điều khoản</div>
+<div class="example">"Let's confirm the terms."</div>
 </div>
 <div class="vocab-item">
-<strong>salary range /ˈsæl.əri reɪndʒ/</strong>
-<div class="pos">(noun phrase)</div>
-<div class="meaning">Khoảng lương</div>
-<div class="example">"I'm in the X-Y range."</div>
-</div>
-<div class="vocab-item">
-<strong>pay raise /peɪ reɪz/</strong>
-<div class="pos">(noun phrase)</div>
-<div class="meaning">Tăng lương</div>
-<div class="example">"I'm hoping for a pay raise."</div>
-</div>
-<div class="vocab-item">
-<strong>promotion /prəˈməʊ.ʃən/</strong>
+<strong>conditions /kənˈdɪ.ənz/</strong>
 <div class="pos">(noun)</div>
-<div class="meaning">Thăng chức</div>
-<div class="example">"I got a promotion last year."</div>
+<div class="meaning">Điều kiện</div>
+<div class="example">"Let's agree on the conditions."</div>
 </div>
 <div class="vocab-item">
-<strong>benefits /ˈben.ɪ.fɪts/</strong>
+<strong>compromise /kɒm.prə.maɪz/</strong>
+<div class="pos">(verb/noun)</div>
+<div class="meaning">Thỏa hiệp</div>
+<div class="example">"Let's find a compromise."</div>
+</div>
+<div class="vocab-item">
+<strong>flexibility /ˌflek.sɪˈbɪl.ə.ti/</strong>
 <div class="pos">(noun)</div>
-<div class="meaning">Phúc lợi</div>
-<div class="example">"What's the benefits package?"</div>
+<div class="meaning">Sự linh hoạt</div>
+<div class="example">"I'm looking for some flexibility."</div>
 </div>
 <div class="vocab-item">
-<strong>bonus /ˈbəʊ.nəs/</strong>
+<strong>deal /diːl/</strong>
 <div class="pos">(noun)</div>
-<div class="meaning">Thưởng</div>
-<div class="example">"Is there a performance bonus?"</div>
+<div class="meaning">Thỏa thuận</div>
+<div class="example">"Let's close the deal."</div>
 </div>
 <div class="vocab-item">
-<strong>annual review /ˈæn.ju.əl rɪˈvjuː/</strong>
-<div class="pos">(noun phrase)</div>
-<div class="meaning">Đánh giá hàng năm</div>
-<div class="example">"I'd like to discuss this at my annual review."</div>
+<strong>agreement /əˈɡriː.mənt/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Sự đồng ý</div>
+<div class="example">"Let's reach an agreement."</div>
 </div>
 <div class="vocab-item">
-<strong>take-home pay /teɪk həʊm peɪ/</strong>
-<div class="pos">(noun phrase)</div>
-<div class="meaning">Lương thực nhận</div>
-<div class="example">"What's the take-home pay?"</div>
+<strong>offer /ˈɒf.ər/</strong>
+<div class="pos">(noun/verb)</div>
+<div class="meaning">Lời đề nghị</div>
+<div class="example">"Here's my offer."</div>
 </div>
 <div class="vocab-item">
-<strong>gross salary /ɡrəʊs ˈsæl.əri/</strong>
-<div class="pos">(noun phrase)</div>
-<div class="meaning">Lương trước thuế</div>
-<div class="example">"What's the gross salary?"</div>
+<strong>counter-offer /ˈkaʊn.tərˌɒf.ər/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Lời đề nghị ngược lại</div>
+<div class="example">"Here's my counter-offer."</div>
 </div>
 <div class="vocab-item">
-<strong>net salary /net ˈsæl.əri/</strong>
-<div class="pos">(noun phrase)</div>
-<div class="meaning">Lương sau thuế</div>
-<div class="example">"What's the net salary?"</div>
+<strong>settle /ˈset.əl/</strong>
+<div class="pos">(verb)</div>
+<div class="meaning">Giải quyết, dàn xếp</div>
+<div class="example">"Let's settle this."</div>
 </div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format - 14+ turns)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title"> Integrated Dialogues</h3>
+<div class="dialogue-grid">
+
+<div class="dialogue-card">
+<h4 class="case-title"> Dialogue 1: Negotiating Rent with Landlord (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Your lease is up for renewal. The landlord wants to raise the rent by 15%. You want to negotiate a lower increase.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'd like to discuss the rent for the next lease." <span class="move-highlight move1">Open</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"Sure. I'm thinking of raising it by 15%."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"What's important to you about the rent increase?" <span class="move-highlight move2">Listen</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"The market has gone up, and I need to cover my costs."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I understand. Could we consider a 10% increase instead of 15%?" <span class="move-highlight move3">Explore</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"I could do 12%."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'm comfortable with 12%." <span class="move-highlight move4">Agree</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"Great. Let's sign the lease."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Let's confirm the terms and sign the lease." <span class="move-highlight move5">Close</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Open (clarity) + Listen (understand) + Explore (options) + Agree (clarity) + Close (clarity).</li>
+<li><strong>Alternative Decision:</strong> Accept the first offer. (Risk: Leaves value on the table).</li>
+<li><strong>Why this decision?</strong> Open creates collaboration. Listen creates understanding. Explore creates options. Agree creates closure. Close creates clarity.</li>
+<li><strong>Resistance handled:</strong> Landlord pushed back with "15%." You recalibrated by exploring "10%." Agreed on "12%."</li>
+</ul>
+</div>
+</div>
+
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Negotiating Salary with Employer (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're negotiating a salary increase with your employer. They've offered 5%. You want 15%.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'd like to discuss my compensation." <span class="move-highlight move1">Open</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Employer:</div>
+<div class="dialogue-text">"Sure. We're offering 5%."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"What's important to you about the compensation?" <span class="move-highlight move2">Listen</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Employer:</div>
+<div class="dialogue-text">"We need to stay within budget."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I understand. What if we discuss a 12% increase?" <span class="move-highlight move3">Explore</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Employer:</div>
+<div class="dialogue-text">"We could do 10%."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I can agree to 10%." <span class="move-highlight move4">Agree</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Employer:</div>
+<div class="dialogue-text">"Great. Let's finalize this."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Let's move forward with 10%." <span class="move-highlight move5">Close</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Open (clarity) + Listen (understand) + Explore (options) + Agree (clarity) + Close (clarity).</li>
+<li><strong>Alternative Decision:</strong> Accept the first offer. (Risk: Leaves value on the table).</li>
+<li><strong>Why this decision?</strong> Open creates collaboration. Listen creates understanding. Explore creates options. Agree creates closure. Close creates clarity.</li>
+<li><strong>Resistance handled:</strong> Employer pushed back with "5%." You recalibrated by exploring "12%." Agreed on "10%."</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (8 Steps)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Audio</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Life Context:</strong> Listen to Dialogue 1 (Negotiating Rent with Landlord)</p>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Business Context:</strong> Listen to Dialogue 2 (Negotiating Salary with Employer)</p>
+<div class="transcript-box">
+<h4>📄 Transcript</h4>
+<p style="font-size: 13px; color: var(--text-secondary);"><strong>Life Dialogue Key Phrases:</strong></p>
+<ul style="padding-left: 20px; font-size: 13px; color: var(--text-secondary);">
+<li>"I'd like to discuss the rent for the next lease."</li>
+<li>"What's important to you about the rent increase?"</li>
+<li>"Could we consider a 10% increase?"</li>
+<li>"I'm comfortable with 12%."</li>
+<li>"Let's confirm the terms."</li>
+</ul>
+<p style="font-size: 13px; color: var(--text-secondary); margin-top: 12px;"><strong>Business Dialogue Key Phrases:</strong></p>
+<ul style="padding-left: 20px; font-size: 13px; color: var(--text-secondary);">
+<li>"I'd like to discuss my compensation."</li>
+<li>"What's important to you about the compensation?"</li>
+<li>"What if we discuss a 12% increase?"</li>
+<li>"I can agree to 10%."</li>
+<li>"Let's move forward with 10%."</li>
+</ul>
+</div>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"I'd like to discuss the rent."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "I need a lower rent." (aggressive)
+<span class="arrow">↓</span> Not: "I was wondering if maybe..." (passive)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Open with clarity
+<span class="arrow">↓</span> <strong>Effect:</strong> Creates collaboration, sets collaborative tone
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I'm here to discuss, not to fight"
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"What's important to you?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "What do you want?" (aggressive)
+<span class="arrow">↓</span> Not: "I don't know what you want." (passive)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Listen to understand
+<span class="arrow">↓</span> <strong>Effect:</strong> Creates understanding, opens dialogue
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I want to understand your perspective"
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Could we consider a 10% increase?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "I need 10%." (aggressive)
+<span class="arrow">↓</span> Not: "I don't know what to do." (passive)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Explore options
+<span class="arrow">↓</span> <strong>Effect:</strong> Creates options, opens creative thinking
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I'm open to finding a solution"
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I'm comfortable with 12%."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "I need 12%." (aggressive)
+<span class="arrow">↓</span> Not: "I guess 12% is okay." (passive)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Agree with clarity
+<span class="arrow">↓</span> <strong>Effect:</strong> Creates closure, creates clarity
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I can agree to this"
+</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"I'd like to discuss..."</div>
+<div class="note"><strong>Sắc thái:</strong> Collaborative, clear</div>
+<div class="note"><strong>Leadership framing:</strong> Sets collaborative tone</div>
+<div class="note"><strong>Alternative:</strong> "I need..." (aggressive)</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"What's important to you?"</div>
+<div class="note"><strong>Sắc thái:</strong> Curious, understanding</div>
+<div class="note"><strong>Leadership framing:</strong> Shows you want to understand</div>
+<div class="note"><strong>Alternative:</strong> "What do you want?" (aggressive)</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Could we consider..."</div>
+<div class="note"><strong>Sắc thái:</strong> Exploratory, open</div>
+<div class="note"><strong>Leadership framing:</strong> Shows you're open to options</div>
+<div class="note"><strong>Alternative:</strong> "I need..." (aggressive)</div>
+</div>
+</div>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">"I'd like to discuss..."</div>
+<div class="detail"><strong>Stress:</strong> "like" and "discuss"</div>
+<div class="detail"><strong>Pause:</strong> After "discuss" (let it sink in)</div>
+<div class="detail"><strong>Pitch:</strong> Warm, collaborative (not aggressive)</div>
+<div class="detail"><strong>Why:</strong> Shows you're here to discuss, not to fight</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">"What's important to you?"</div>
+<div class="detail"><strong>Stress:</strong> "important" and "you"</div>
+<div class="detail"><strong>Pause:</strong> Before "to you" (creates anticipation)</div>
+<div class="detail"><strong>Pitch:</strong> Rising on "important" (inviting), falling on "you" (grounding)</div>
+<div class="detail"><strong>Why:</strong> Signals this is a powerful question, not small talk</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">"Could we consider..."</div>
+<div class="detail"><strong>Stress:</strong> "could" and "consider"</div>
+<div class="detail"><strong>Pause:</strong> After "consider" (let it sink in)</div>
+<div class="detail"><strong>Pitch:</strong> Rising (inviting, not demanding)</div>
+<div class="detail"><strong>Why:</strong> Shows you're open to options, not imposing</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 1: Nghe Opening</strong></div>
+<div class="note"><strong>Focus:</strong> Tone, clarity, collaboration</div>
+<div class="note"><strong>Question:</strong> "How are they opening?"</div>
+<div class="note"><strong>Signal:</strong> Collaborative → Collaboration is strong</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 2: Nghe Listening</strong></div>
+<div class="note"><strong>Focus:</strong> Curiosity, understanding</div>
+<div class="note"><strong>Question:</strong> "How are they listening?"</div>
+<div class="note"><strong>Signal:</strong> Curious → Understanding is strong</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 3: Nghe Exploring</strong></div>
+<div class="note"><strong>Focus:</strong> Options, creativity</div>
+<div class="note"><strong>Question:</strong> "How are they exploring?"</div>
+<div class="note"><strong>Signal:</strong> Exploratory → Creativity is strong</div>
+</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the negotiation rhythm, not just the words:</div>
+<div class="note">1. Listen to: "I'd like to discuss... What's important to you? Could we consider..."</div>
+<div class="note">2. Shadow: Match the collaborative, curious, exploratory tone</div>
+<div class="note">3. Focus: Stress on "like," "important," "could"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different emotional quality</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "I'd like to discuss" instead of "I need"?</div>
+<div class="note">✅ To create collaboration. Collaborative opening creates collaboration.</div>
+<div class="note">2. What was the strategic goal of asking "What's important to you?"</div>
+<div class="note">✅ To listen to understand. Listening creates understanding.</div>
+<div class="note">3. How did you handle the pushback when they said "15%"?</div>
+<div class="note">✅ Recalibrated by exploring "10%." Explored options.</div>
+<div class="note">4. What was the trade-off of exploring options?</div>
+<div class="note">✅ Takes more time, but creates options. Creates creative thinking.</div>
 </div>
 </div>
 </section>
@@ -1212,7 +1554,7 @@ Takes more time.
 <h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context</h2>
 </div>
 <div class="grammar-section">
-<h3 class="grammar-title">📝 Softening & Diplomacy Grammar</h3>
+<h3 class="grammar-title"> Strategic Grammar Toolkit</h3>
 <table class="grammar-table">
 <thead>
 <tr>
@@ -1223,29 +1565,29 @@ Takes more time.
 </thead>
 <tbody>
 <tr>
-<td>Diplomatic opening</td>
-<td>"I'd like to..." / "Would it be possible to..."</td>
-<td>"I'd like to discuss my compensation."</td>
+<td>Open with clarity</td>
+<td>"I'd like to discuss..." / "I'd like to talk about..."</td>
+<td>"I'd like to discuss the rent."</td>
 </tr>
 <tr>
-<td>Softening requests</td>
-<td>"I was hoping..." / "I was wondering if..."</td>
-<td>"I was wondering if we could discuss my salary."</td>
+<td>Listen to understand</td>
+<td>"What's important to you?" / "What matters most?"</td>
+<td>"What's important to you about the rent?"</td>
 </tr>
 <tr>
-<td>Collaborative negotiation</td>
-<td>"What if we..." / "Would it be possible to..."</td>
-<td>"What if we explored alternatives?"</td>
+<td>Explore options</td>
+<td>"What if we..." / "Could we consider..."</td>
+<td>"Could we consider a 10% increase?"</td>
 </tr>
 <tr>
-<td>Polite pushback</td>
-<td>"I understand, but..." / "I appreciate, however..."</td>
-<td>"I understand the constraints, but what if we..."</td>
+<td>Agree with clarity</td>
+<td>"I can agree to..." / "I'm comfortable with..."</td>
+<td>"I'm comfortable with 12%."</td>
 </tr>
 <tr>
-<td>Professional closing</td>
-<td>"Thank you for..." / "I appreciate..."</td>
-<td>"Thank you for considering this."</td>
+<td>Close with clarity</td>
+<td>"Let's confirm..." / "Let's move forward..."</td>
+<td>"Let's confirm the terms."</td>
 </tr>
 </tbody>
 </table>
@@ -1260,20 +1602,20 @@ Takes more time.
 <h3 class="speaking-title">🎵 Strategic Pronunciation</h3>
 <div class="pronunciation-grid">
 <div class="pronunciation-deep-dive">
-<div class="phrase">1. Diplomatic Tone for Opening</div>
-<div class="detail">"I'd like to discuss my compensation." (Confident, diplomatic, not demanding)</div>
+<div class="phrase">1. Collaborative Tone for Opening</div>
+<div class="detail">"I'd like to discuss..." (Collaborative, clear, not aggressive)</div>
 </div>
 <div class="pronunciation-deep-dive">
-<div class="phrase">2. Stress on Evidence</div>
-<div class="detail">"Based on the impact I've delivered..." (Stress shows preparation)</div>
+<div class="phrase">2. Stress on Key Words</div>
+<div class="detail">"What's important to you?" (Stress shows this is a powerful question)</div>
 </div>
 <div class="pronunciation-deep-dive">
 <div class="phrase">3. Pause for Impact</div>
-<div class="detail">"I'm seeking... (pause) ...a 15-20% increase." (Pause lets it sink in)</div>
+<div class="detail">"Could we consider... (pause) ...a 10% increase?" (Pause lets it sink in)</div>
 </div>
 <div class="pronunciation-deep-dive">
 <div class="phrase">4. Rising Intonation for Questions</div>
-<div class="detail">"Would it be possible to consider X? ↗" (Rising = genuine question)</div>
+<div class="detail">"Could we consider a 10% increase? ↗" (Rising = inviting, not demanding)</div>
 </div>
 </div>
 </div>
@@ -1281,69 +1623,63 @@ Takes more time.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2 Life + 2 Business)</h2>
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (with Pushback + Alternative + Common Mistake)</h2>
 </div>
 <div class="speaking-section">
 <h3 class="speaking-title">🗣️ Practice Scenarios</h3>
 <div class="scenario-grid">
 <div class="scenario-card casual">
 <span class="scenario-badge">Life</span>
-<h3>Scenario 1: Bố Mẹ Hỏi Lương</h3>
-<div class="scenario-context">Bố mẹ hỏi lương bao nhiêu trong bữa cơm.</div>
-<div class="scenario-goal"><strong>Round 1 (Respectful Opening + Diplomatic Value):</strong></div>
-<div class="scenario-response">"Con hiểu bố mẹ quan tâm. Con đang ở vị trí tốt về tài chính."</div>
+<h3>Scenario 1: Negotiating Rent with Landlord</h3>
+<div class="scenario-context">Your lease is up for renewal. The landlord wants to raise the rent by 15%. You want to negotiate a lower increase.</div>
+<div class="scenario-goal"><strong>Round 1 (Open + Listen):</strong></div>
+<div class="scenario-response">"I'd like to discuss the rent. What's important to you about the rent increase?"</div>
 <div class="scenario-goal"><strong>Pushback:</strong></div>
-<div class="scenario-response">"Thế sao không nói cụ thể?"</div>
-<div class="scenario-goal"><strong>Round 2 (Boundary-setting):</strong></div>
-<div class="scenario-response">"Con hiểu bố mẹ muốn biết chi tiết. Nhưng con thấy thoải mái hơn khi chia sẻ khoảng lương."</div>
+<div class="scenario-response">"The market has gone up. I need to cover my costs."</div>
+<div class="scenario-goal"><strong>Round 2 (Explore + Agree + Close):</strong></div>
+<div class="scenario-response">"I understand. Could we consider a 10% increase? I'm comfortable with 12%. Let's confirm the terms."</div>
 <div class="scenario-goal"><strong>Alternative Response:</strong></div>
-<div class="scenario-response">"Con lương X." (Only if you're comfortable sharing specifics)</div>
-<div class="scenario-req"><strong>Common Mistake:</strong> Being too direct ("Con lương X") or too evasive ("Con không muốn nói")</div>
+<div class="scenario-response">"I need a lower rent." (Only if you have no leverage)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Opening too aggressively. This creates resistance.</div>
 </div>
-
 <div class="scenario-card professional">
 <span class="scenario-badge">Business</span>
-<h3>Scenario 2: The Performance Review</h3>
-<div class="scenario-context">You're at your performance review and want to ask for a raise.</div>
-<div class="scenario-goal"><strong>Round 1 (Diplomatic Opening + Evidence):</strong></div>
-<div class="scenario-response">"I'd like to discuss my compensation. Based on the impact I've delivered..."</div>
+<h3>Scenario 2: Negotiating Salary with Employer</h3>
+<div class="scenario-context">You're negotiating a salary increase with your employer. They've offered 5%. You want 15%.</div>
+<div class="scenario-goal"><strong>Round 1 (Open + Listen):</strong></div>
+<div class="scenario-response">"I'd like to discuss my compensation. What's important to you about the compensation?"</div>
 <div class="scenario-goal"><strong>Pushback:</strong></div>
-<div class="scenario-response">"Budget is tight right now."</div>
-<div class="scenario-goal"><strong>Round 2 (Collaborative Negotiation):</strong></div>
-<div class="scenario-response">"I understand. What if we explored alternatives? Maybe a performance bonus or equity?"</div>
+<div class="scenario-response">"We need to stay within budget."</div>
+<div class="scenario-goal"><strong>Round 2 (Explore + Agree + Close):</strong></div>
+<div class="scenario-response">"I understand. What if we discuss a 12% increase? I can agree to 10%. Let's move forward with 10%."</div>
 <div class="scenario-goal"><strong>Alternative Response:</strong></div>
-<div class="scenario-response">"I need 20% more." (Only if you're willing to risk resistance)</div>
-<div class="scenario-req"><strong>Common Mistake:</strong> Being too demanding ("I want more money") or too passive ("Whatever you think is fine")</div>
+<div class="scenario-response">"I need 15% or I'll leave." (Only if you have no leverage)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Opening too aggressively. This creates resistance.</div>
 </div>
-
 <div class="scenario-card casual">
 <span class="scenario-badge">Life</span>
-<h3>Scenario 3: Bạn Thân Hỏi Lương</h3>
-<div class="scenario-context">Bạn thân hỏi lương bao nhiêu.</div>
-<div class="scenario-goal"><strong>Round 1 (Open + Balanced):</strong></div>
-<div class="scenario-response">"I'm comfortable sharing that I'm in the X range."</div>
+<h3>Scenario 3: Negotiating Price at a Market</h3>
+<div class="scenario-context">You're at a market. The vendor is asking $100. You want to pay $70.</div>
+<div class="scenario-goal"><strong>Round 1 (Open + Listen):</strong></div>
+<div class="scenario-response">"I'd like to discuss the price. What's important to you about the price?"</div>
 <div class="scenario-goal"><strong>Pushback:</strong></div>
-<div class="scenario-response">"Thế có đủ sống không?"</div>
-<div class="scenario-goal"><strong>Round 2 (Reassuring):</strong></div>
-<div class="scenario-response">"Đủ sống. Con đang làm việc ở môi trường tốt và có cơ hội phát triển."</div>
+<div class="scenario-response">"The price is fixed."</div>
+<div class="scenario-goal"><strong>Round 2 (Explore + Agree + Close):</strong></div>
+<div class="scenario-response">"I understand. Could we consider $80? I'm comfortable with $80. Let's confirm the price."</div>
 <div class="scenario-goal"><strong>Alternative Response:</strong></div>
-<div class="scenario-response">"I don't want to say." (Only if you're not comfortable sharing)</div>
-<div class="scenario-req"><strong>Common Mistake:</strong> Being too direct ("I make X") or too evasive ("I don't want to talk about it")</div>
+<div class="scenario-response">"I need $70 or I'll walk away." (Only if you have no leverage)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Opening too aggressively. This creates resistance.</div>
 </div>
-
-<div class="scenario-card professional">
-<span class="scenario-badge">Business</span>
-<h3>Scenario 4: Colleague Asks About Your Salary</h3>
-<div class="scenario-context">Đồng nghiệp hỏi lương bao nhiêu.</div>
-<div class="scenario-goal"><strong>Round 1 (Diplomatic + Boundary):</strong></div>
-<div class="scenario-response">"I prefer not to discuss specific numbers, but I'm doing well."</div>
-<div class="scenario-goal"><strong>Pushback:</strong></div>
-<div class="scenario-response">"Why not? We're friends."</div>
-<div class="scenario-goal"><strong>Round 2 (Firm but Polite):</strong></div>
-<div class="scenario-response">"I appreciate your curiosity, but I'm more comfortable keeping that private."</div>
-<div class="scenario-goal"><strong>Alternative Response:</strong></div>
-<div class="scenario-response">"I make X." (Only if you're comfortable sharing)</div>
-<div class="scenario-req"><strong>Common Mistake:</strong> Being too direct ("I make X") or too aggressive ("None of your business")</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Negotiation</h3>
+<div class="scenario-context">Morning: Negotiate rent with landlord. Afternoon: Negotiate salary with employer.</div>
+<div class="scenario-goal"><strong>Morning (Life - Open + Listen + Explore + Agree + Close):</strong></div>
+<div class="scenario-response">"I'd like to discuss the rent. What's important to you? Could we consider a 10% increase? I'm comfortable with 12%. Let's confirm the terms."</div>
+<div class="scenario-goal"><strong>Afternoon (Business - Open + Listen + Explore + Agree + Close):</strong></div>
+<div class="scenario-response">"I'd like to discuss my compensation. What's important to you? What if we discuss a 12% increase? I can agree to 10%. Let's move forward with 10%."</div>
+<div class="scenario-goal"><strong>Reflection:</strong></div>
+<div class="scenario-req">How did your tone, pace, and word choice change between the two? Life = collaborative, curious. Business = direct, clear.</div>
 </div>
 </div>
 </div>
@@ -1351,38 +1687,38 @@ Takes more time.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Salary Conversation Practice</h2>
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Negotiation Audit</h2>
 </div>
 <div class="task-section">
 <h3 class="task-title">🎯 Practice Tasks</h3>
 <div class="task-grid">
 <div class="task-card easy">
 <div class="task-level">EASY</div>
-<h3>📝 The Salary Reflection</h3>
+<h3>📝 The Negotiation Audit</h3>
 <div class="task-time">⏱️ 15 minutes</div>
-<div class="task-desc">Reflect on a salary conversation you've had (or anticipate having). What language did you use? What could you improve?</div>
+<div class="task-desc">Identify 1 negotiation in your life or work. Apply the 5 lenses. What decisions are you making? Note the trade-offs.</div>
 <div class="task-requirements">
 <h4>Requirements:</h4>
 <ul>
-<li>Identify the salary conversation</li>
-<li>Analyze the language you used (B2 vs C1)</li>
-<li>Note what worked and what didn't</li>
-<li>Plan improvements for next time</li>
+<li>Identify the negotiation</li>
+<li>Apply the 5 lenses (Opening, Listening, Exploring, Agreeing, Closing)</li>
+<li>What decisions are you making?</li>
+<li>Note the trade-offs</li>
 </ul>
 </div>
-<div class="task-deliverable"><strong>Deliverable:</strong> Written reflection with language analysis</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</div>
 </div>
 <div class="task-card standard">
 <div class="task-level">STANDARD</div>
-<h3>🎭 The Salary Roleplay</h3>
-<div class="task-time">⏱️ 30 minutes</div>
-<div class="task-desc">Role-play a salary conversation with a friend. Practice the Conversation Flow (Open → Support → Negotiate → Close). Get feedback on your language.</div>
+<h3>🎭 The Negotiation Practice</h3>
+<div class="task-time">️ 30 minutes</div>
+<div class="task-desc">Role-play a negotiation scenario with a friend. Practice the Negotiation Flow (Open → Listen → Explore → Agree → Close). Get feedback on your tone and clarity.</div>
 <div class="task-requirements">
 <h4>Requirements:</h4>
 <ul>
-<li>Choose a salary scenario (business or life)</li>
-<li>Practice all 4 steps of the Conversation Flow</li>
-<li>Get feedback on your tone, evidence, and flexibility</li>
+<li>Choose a negotiation scenario (life or business)</li>
+<li>Practice all 5 steps of the Negotiation Flow</li>
+<li>Get feedback on your tone, questions, and clarity</li>
 <li>Note what worked and what didn't</li>
 </ul>
 </div>
@@ -1390,19 +1726,20 @@ Takes more time.
 </div>
 <div class="task-card challenge">
 <div class="task-level">CHALLENGE</div>
-<h3>🎯 The Real Salary Conversation</h3>
+<h3>🎯 The Real Negotiation</h3>
 <div class="task-time">⏱️ 60 minutes</div>
-<div class="task-desc">This week, have an actual salary conversation (or prepare for one). Use the Conversation Flow in real-time. Note what worked, what didn't, and what you learned about your default style.</div>
+<div class="task-desc">This week, have an actual negotiation. Use the 5 lenses and Negotiation Flow in real-time. Note what worked, what didn't, and what you learned about your default style.</div>
 <div class="task-requirements">
 <h4>Requirements:</h4>
 <ul>
-<li>Identify an actual salary conversation to have</li>
-<li>Apply the Conversation Flow in real-time</li>
+<li>Identify an actual negotiation to have</li>
+<li>Apply the 5 lenses in real-time</li>
+<li>Use the Negotiation Flow (Open → Listen → Explore → Agree → Close)</li>
 <li>Note what worked, what didn't</li>
 <li>What did you learn about your default style?</li>
 </ul>
 </div>
-<div class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with language analysis</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</div>
 </div>
 </div>
 </div>
@@ -1410,33 +1747,33 @@ Takes more time.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Salary Conversation Mastery</h2>
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Negotiation Mastery</h2>
 </div>
 <div class="mastery-section">
 <h3 class="mastery-title">🎯 Mastery Checklist</h3>
 <div class="mastery-grid">
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I open salary conversations diplomatically</h4>
-<p>I use diplomatic language, not demands.</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I open with clarity</h4>
+<p>I open with "I'd like to discuss..." not "I need..."</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I present value with evidence, not claims</h4>
-<p>I use facts and specifics, not vague claims.</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I listen to understand</h4>
+<p>I ask "What's important to you?" not "What do you want?"</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I handle resistance with composure, not defensiveness</h4>
-<p>I stay composed and curious, not reactive.</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I explore options</h4>
+<p>I ask "Could we consider..." not "I need..."</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I negotiate collaboratively, not demandingly</h4>
-<p>I use collaborative language, not demands.</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I agree with clarity</h4>
+<p>I say "I'm comfortable with..." not "I guess..."</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I close professionally, not abruptly</h4>
-<p>I end with gratitude and openness, not abruptness.</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I close with clarity</h4>
+<p>I say "Let's confirm..." not "Let's see..."</p>
 </div>
 </div>
-<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the Conversation Flow (Open → Support → Negotiate → Close) with diplomatic language, you are ready for <strong>Day 61: Comparing Financial Options and Risks</strong>.</p>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the 5 lenses and Negotiation Flow (Open → Listen → Explore → Agree → Close) in negotiations, you are ready for Day 63: Reality Task - Have an Honest Money Conversation.</p>
 </div>
 </section>
 
@@ -1447,15 +1784,15 @@ Takes more time.
 <div class="flashcard-section">
 <div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
 <div class="flashcard-front">
-<p><strong>Situation:</strong> You're at your performance review and want to ask for a raise</p>
-<button>Tap to reveal Conversation Flow →</button>
+<p><strong>Situation:</strong> You need to negotiate rent with your landlord</p>
+<button>Tap to reveal Negotiation Flow →</button>
 </div>
 <div class="flashcard-back">
-<p><strong>B2 Instinct:</strong> "I want more money. I work hard."</p>
-<p><strong>C1 Language:</strong> Diplomatic opening → Evidence-based value → Collaborative negotiation → Professional closing</p>
-<p><strong>Trade-off:</strong> Takes more preparation, but keeps conversation productive and leaves positive impression.</p>
+<p><strong>Wrong Instinct:</strong> "I need a lower rent."</p>
+<p><strong>C1 Language:</strong> Open → Listen → Explore → Agree → Close.</p>
+<p><strong>Trade-off:</strong> Takes more time upfront, but creates collaboration and better outcomes.</p>
 <div class="flashcard-tip">
-<strong>💡 Tip:</strong> In salary conversations, diplomatic opening reduces resistance. Evidence-based value is harder to dismiss. Collaborative negotiation keeps dialogue open. Professional closing leaves positive impression.
+<strong>💡 Tip:</strong> In negotiations, opening creates collaboration. Listening creates understanding. Exploring creates options. Agreeing creates closure. Closing creates clarity.
 </div>
 </div>
 </div>
@@ -1469,81 +1806,81 @@ Takes more time.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Salary Conversations</h2>
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Negotiating Terms</h2>
 </div>
 <div class="quiz-section">
 <h3 class="quiz-title">📝 Test Your Knowledge</h3>
 <div class="quiz-grid">
 <div class="quiz-question">
-<h4>1. (Judgement) You're at your performance review. Best opening?</h4>
+<h4>1. (Judgement) You need to negotiate rent with your landlord. Best opening?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I want more money."</div>
-<div class="quiz-option">B. "I'd like to discuss my compensation."</div>
-<div class="quiz-option">C. "Um, maybe we could talk about my salary?"</div>
+<div class="quiz-option">A. "I need a lower rent."</div>
+<div class="quiz-option">B. "I'd like to discuss the rent."</div>
+<div class="quiz-option">C. "I was wondering if maybe we could talk about the rent."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>2. (Judgement) Boss says "Budget is tight." Best response?</h4>
+<h4>2. (Judgement) Your employer offers 5% salary increase. You want 15%. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "But I work harder than others!"</div>
-<div class="quiz-option">B. "I understand. What if we explored alternatives?"</div>
-<div class="quiz-option">C. "Okay, never mind."</div>
+<div class="quiz-option">A. "I need 15%."</div>
+<div class="quiz-option">B. "What's important to you about the compensation?"</div>
+<div class="quiz-option">C. "I can't accept 5%."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>3. (Judgement) Partner asks about your salary. Best approach?</h4>
+<h4>3. (Judgement) Landlord says "The market has gone up." Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I make X."</div>
-<div class="quiz-option">B. "I'm comfortable sharing that I'm in the X range."</div>
-<div class="quiz-option">C. "I don't want to say."</div>
+<div class="quiz-option">A. "I understand. Could we consider a 10% increase?"</div>
+<div class="quiz-option">B. "I need 10%."</div>
+<div class="quiz-option">C. "I don't know what to do."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>4. (Judgement) Colleague asks about your salary. Best response?</h4>
+<h4>4. (Judgement) Employer says "We need to stay within budget." Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I make X."</div>
-<div class="quiz-option">B. "I prefer not to discuss specific numbers, but I'm doing well."</div>
-<div class="quiz-option">C. "None of your business."</div>
+<div class="quiz-option">A. "I understand. What if we discuss a 12% increase?"</div>
+<div class="quiz-option">B. "I need 15% or I'll leave."</div>
+<div class="quiz-option">C. "I don't know what to do."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>5. (Judgement) Boss offers lower than expected. Best response?</h4>
+<h4>5. (Judgement) Landlord offers 12%. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "That's not enough."</div>
-<div class="quiz-option">B. "I appreciate the offer. Would it be possible to consider X?"</div>
-<div class="quiz-option">C. "Fine, I'll take it."</div>
+<div class="quiz-option">A. "I'm comfortable with 12%."</div>
+<div class="quiz-option">B. "I need 10%."</div>
+<div class="quiz-option">C. "I guess 12% is okay."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>6. (Judgement) Friend asks if you make more than them. Best response?</h4>
+<h4>6. (Judgement) Employer offers 10%. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "Yeah, I do."</div>
-<div class="quiz-option">B. "We're in similar ranges. Let's focus on our own goals."</div>
-<div class="quiz-option">C. "I don't want to compare."</div>
+<div class="quiz-option">A. "Let's move forward with 10%."</div>
+<div class="quiz-option">B. "I need 15%."</div>
+<div class="quiz-option">C. "Let's see."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>7. (Trade-off) What is the trade-off of being diplomatic instead of direct?</h4>
+<h4>7. (Trade-off) What is the trade-off of opening with "I'd like to discuss"?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. You keep the conversation productive, but it takes more time.</div>
+<div class="quiz-option">A. You create collaboration, but it takes more time.</div>
 <div class="quiz-option">B. You save time but create resistance.</div>
 <div class="quiz-option">C. There is no trade-off.</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>8. (Trade-off) What is the trade-off of presenting evidence before asking for a raise?</h4>
+<h4>8. (Trade-off) What is the trade-off of exploring options?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. You make your ask harder to dismiss, but it takes more preparation.</div>
-<div class="quiz-option">B. You save time but your ask is easy to dismiss.</div>
+<div class="quiz-option">A. You create options, but it takes more time.</div>
+<div class="quiz-option">B. You save time but may miss options.</div>
 <div class="quiz-option">C. There is no trade-off.</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>9. (Vocabulary) Which phrase means "lương thực nhận sau khi trừ thuế"?</h4>
+<h4>9. (Vocabulary) Which word means "to discuss terms to reach an agreement"?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. Gross salary</div>
-<div class="quiz-option">B. Net salary</div>
-<div class="quiz-option">C. Take-home pay</div>
+<div class="quiz-option">A. Negotiate</div>
+<div class="quiz-option">B. Compromise</div>
+<div class="quiz-option">C. Settle</div>
 </div>
 </div>
 </div>
@@ -1552,19 +1889,19 @@ Takes more time.
 </section>
 
 <div class="day-navigation">
-<a href="week-09-day-59.html" class="nav-card">
-<div class="nav-label">← Previous Day</div>
-<div class="nav-title">Day 59: Handling Requests to Borrow or Lend Money</div>
-</a>
 <a href="week-09-day-61.html" class="nav-card">
-<div class="nav-label">Next Day →</div>
+<div class="nav-label">← Previous Day</div>
 <div class="nav-title">Day 61: Comparing Financial Options and Risks</div>
+</a>
+<a href="week-09-day-63.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 63: Reality Task - Have an Honest Money Conversation</div>
 </a>
 </div>
 
 <div class="complete-container">
-<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 60 Complete & Continue to Day 61</button>
-<div class="complete-message">Salary conversations are rarely difficult because of the numbers. They're difficult because people struggle to explain value clearly, disagree respectfully, and negotiate without sounding defensive. 💰</div>
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 62 Complete & Continue to Day 63</button>
+<div class="complete-message">B2 speakers demand. C1 speakers negotiate. 🤝</div>
 </div>
 
 </div>
@@ -1573,7 +1910,7 @@ Takes more time.
 <div class="container">
 <div class="footer-fox">🦊</div>
 <div class="footer-title">Professional Fluency Roadmap</div>
-<div class="footer-tagline">Week 9 · Day 60 · Talking About Salary and Compensation</div>
+<div class="footer-tagline">Week 9 · Day 62 · Negotiating Terms and Conditions</div>
 </div>
 </footer>
 
@@ -1586,11 +1923,33 @@ let isPlaying = false;
 let currentButton = null;
 
 const textContent = {
-'lens1': 'Lens 1: Opening. How do I bring up salary politely? Decision Cue: High trust plus clear context, direct. Medium trust plus sensitive, diplomatic. Low trust plus formal, very diplomatic.',
-'lens2': 'Lens 2: Value Language. How do I present my contributions without sounding boastful? Decision Cue: Strong evidence, facts. Moderate evidence, balanced. Weak evidence, humble.',
-'lens3': 'Lens 3: Resistance Handling. How do I respond to pushback without getting defensive? Decision Cue: Soft pushback, acknowledge. Hard pushback, compose. Emotional pushback, stay calm.',
-'lens4': 'Lens 4: Negotiation Language. How do I make counter-offers politely? Decision Cue: Clear ask, collaborative. Flexible ask, exploratory. Firm ask, diplomatic.',
-'lens5': 'Lens 5: Closing Language. How do I end the conversation professionally? Decision Cue: Agreement reached, grateful. No agreement, professional. Mixed outcome, balanced.'
+'lens1': 'Lens 1: Opening. How do I start the negotiation? Decision Cue: High trust, direct. Medium trust, collaborative. Low trust, exploratory.',
+'lens1r1': 'I\'d like to talk about...',
+'lens1r2': 'I\'d like to discuss...',
+'lens1r3': 'I\'d like to discuss the terms...',
+'lens1r4': 'I\'d like to explore some options...',
+'lens2': 'Lens 2: Listening. How do I understand their needs? Decision Cue: They\'re open, ask directly. They\'re hesitant, explore gently. They\'re resistant, listen first.',
+'lens2r1': 'What matters to you?',
+'lens2r2': 'What\'s important to you?',
+'lens2r3': 'What matters most to you?',
+'lens2r4': 'What are your key priorities?',
+'lens3': 'Lens 3: Exploring. How do I explore options? Decision Cue: They\'re open, suggest. They\'re hesitant, propose. They\'re resistant, explore together.',
+'lens3r1': 'What if we...',
+'lens3r2': 'Could we consider...',
+'lens3r3': 'What if we explore...',
+'lens3r4': 'Let\'s explore some options...',
+'lens4': 'Lens 4: Agreeing. How do I agree on terms? Decision Cue: They agree, accept. They propose, consider. They hesitate, propose alternative.',
+'lens4r1': 'I can agree to that',
+'lens4r2': 'I\'m comfortable with that',
+'lens4r3': 'I can agree to those terms',
+'lens4r4': 'I\'m comfortable with those terms',
+'lens5': 'Lens 5: Closing. How do I close the deal? Decision Cue: Clear agreement, confirm. Some uncertainty, clarify. Full agreement, commit.',
+'lens5r1': 'Let\'s confirm...',
+'lens5r2': 'Let\'s make sure we\'re aligned...',
+'lens5r3': 'Let\'s confirm the terms...',
+'lens5r4': 'Let\'s move forward...',
+'dialogue1': 'Dialogue 1: Negotiating Rent with Landlord. You: I\'d like to discuss the rent for the next lease. Open. Landlord: Sure. I\'m thinking of raising it by 15%. You: What\'s important to you about the rent increase? Listen. Landlord: The market has gone up, and I need to cover my costs. You: I understand. Could we consider a 10% increase instead of 15%? Explore. Landlord: I could do 12%. You: I\'m comfortable with 12%. Agree. Landlord: Great. Let\'s sign the lease. You: Let\'s confirm the terms and sign the lease. Close.',
+'dialogue2': 'Dialogue 2: Negotiating Salary with Employer. You: I\'d like to discuss my compensation. Open. Employer: Sure. We\'re offering 5%. You: What\'s important to you about the compensation? Listen. Employer: We need to stay within budget. You: I understand. What if we discuss a 12% increase? Explore. Employer: We could do 10%. You: I can agree to 10%. Agree. Employer: Great. Let\'s finalize this. You: Let\'s move forward with 10%. Close.'
 };
 
 function loadVoices() {
@@ -1674,7 +2033,7 @@ speechSynthesis.speak(currentUtterance);
 function resetUI() {
 isPlaying = false;
 currentButton = null;
-document.querySelectorAll('.audio-btn.playing, .audio-btn-small.playing').forEach(btn => {
+document.querySelectorAll('.audio-btn.playing').forEach(btn => {
 btn.classList.remove('playing');
 const icon = btn.querySelector('i');
 if (icon) {

@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 9 Day 65: Negotiating Salary and Compensation | Professional Fluency Roadmap</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Week 10 Day 65: Giving and Receiving Health Advice | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
 <style>
 :root {
---primary: #14B8A6; --primary-bright: #0D9488; --primary-soft: #CCFBF1; --primary-deep: #115E59;
---accent: #F59E0B; --accent-bright: #D97706; --accent-soft: #FEF3C7; --accent-deep: #92400E;
+--primary: #F97316; --primary-bright: #EA580C; --primary-soft: #FFEDD5; --primary-deep: #9A3412;
+--accent: #0EA5E9; --accent-bright: #0284C7; --accent-soft: #E0F2FE; --accent-deep: #075985;
 --text-primary: #1E293B; --text-secondary: #334155; --text-muted: #64748B;
 --radius-sm: 12px; --radius-md: 18px; --radius-lg: 24px;
 --color-pink: rgba(236, 72, 153, 0.15);
---color-blue: rgba(59, 130, 246, 0.15);
+--color-blue: rgba(14, 165, 233, 0.15);
 --color-purple: rgba(139, 92, 246, 0.15);
 --color-teal: rgba(20, 184, 166, 0.15);
 --color-amber: rgba(245, 158, 11, 0.15);
+--color-coral: rgba(249, 115, 22, 0.15);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -41,8 +42,8 @@ overflow-x: hidden;
 .day-tabs::-webkit-scrollbar { display: none; }
 .day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
 .day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
-.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
-.day-header { background: linear-gradient(135deg, rgba(204, 251, 241, 0.4), rgba(254, 243, 199, 0.4)); padding: 48px 0 40px; }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(255, 237, 213, 0.4), rgba(224, 242, 254, 0.4)); padding: 48px 0 40px; }
 .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
 .breadcrumb a { color: var(--text-secondary); text-decoration: none; }
 .day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
@@ -184,7 +185,7 @@ overflow-x: hidden;
 .vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
 .vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; }
 .vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
-.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3); }
 .dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
 .dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
 .dialogue-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
@@ -193,11 +194,11 @@ overflow-x: hidden;
 .audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
 .audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
 .audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
-.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3); }
 .audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
 .audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
 .dialogue-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
-.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(20, 184, 166, 0.1); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(249, 115, 22, 0.1); }
 .dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
 .dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
 .dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
@@ -217,7 +218,7 @@ overflow-x: hidden;
 .transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 8px; color: var(--text-primary); }
 .deep-dive-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 20px; }
 .deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
-.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(20, 184, 166, 0.1); padding-bottom: 8px; }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(249, 115, 22, 0.1); padding-bottom: 8px; }
 .deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
 .deep-dive-item .analysis .arrow { color: var(--primary-bright); font-weight: 600; display: block; margin: 4px 0; }
 .deep-dive-item .analysis strong { color: var(--primary-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
@@ -277,8 +278,8 @@ overflow-x: hidden;
 .mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
 .mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
 .flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
-.flashcard { background: linear-gradient(135deg, rgba(204, 251, 241, 0.4), rgba(254, 243, 199, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
-.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(20, 184, 166, 0.15); }
+.flashcard { background: linear-gradient(135deg, rgba(255, 237, 213, 0.4), rgba(224, 242, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(249, 115, 22, 0.15); }
 .flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
 .flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
 .flashcard-back { display: none; }
@@ -287,7 +288,7 @@ overflow-x: hidden;
 .flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
 .flashcard-tip strong { color: var(--accent-deep); }
 .flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
-.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(249, 115, 22, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
 .flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
 .flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
 .quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
@@ -297,20 +298,20 @@ overflow-x: hidden;
 .quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
 .quiz-options { display: flex; flex-direction: column; gap: 8px; }
 .quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
-.quiz-option:hover { border-color: var(--primary); background: rgba(204, 251, 241, 0.3); }
-.quiz-option.selected { border-color: var(--primary); background: rgba(204, 251, 241, 0.3); }
+.quiz-option:hover { border-color: var(--primary); background: rgba(255, 237, 213, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(255, 237, 213, 0.3); }
 .quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
 .quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
-.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3); }
 .day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
 .nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
 .nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
-.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(20, 184, 166, 0.15); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(249, 115, 22, 0.15); }
 .nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
 .nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
 .complete-container { text-align: center; margin: 40px 0; }
-.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(20, 184, 166, 0.4); }
-.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(20, 184, 166, 0.5); }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(249, 115, 22, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(249, 115, 22, 0.5); }
 .complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
 .footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
 .footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
@@ -340,7 +341,7 @@ overflow-x: hidden;
 
 <nav class="top-nav">
 <div class="container">
-<a href="week-09.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 9 Hub</a>
+<a href="week-10.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 10 Hub</a>
 <div class="day-indicator">Day 65 / 70</div>
 </div>
 </nav>
@@ -348,14 +349,14 @@ overflow-x: hidden;
 <div class="day-tabs-container">
 <div class="container">
 <div class="day-tabs">
-<a href="week-09.html" class="day-tab">Overview</a>
-<a href="week-09-day-64.html" class="day-tab">Day 64</a>
-<a href="week-09-day-65.html" class="day-tab active">Day 65</a>
-<a href="week-09-day-66.html" class="day-tab">Day 66</a>
-<a href="week-09-day-67.html" class="day-tab">Day 67</a>
-<a href="week-09-day-68.html" class="day-tab">Day 68</a>
-<a href="week-09-day-69.html" class="day-tab">Day 69</a>
-<a href="week-09-day-70.html" class="day-tab">Day 70</a>
+<a href="week-10.html" class="day-tab">Overview</a>
+<a href="week-10-day-64.html" class="day-tab">Day 64</a>
+<a href="week-10-day-65.html" class="day-tab active">Day 65</a>
+<a href="week-10-day-66.html" class="day-tab">Day 66</a>
+<a href="week-10-day-67.html" class="day-tab">Day 67</a>
+<a href="week-10-day-68.html" class="day-tab">Day 68</a>
+<a href="week-10-day-69.html" class="day-tab">Day 69</a>
+<a href="week-10-day-70.html" class="day-tab">Day 70</a>
 </div>
 </div>
 </div>
@@ -363,17 +364,17 @@ overflow-x: hidden;
 <header class="day-header">
 <div class="container">
 <div class="breadcrumb">
-<a href="index.html">Home</a> › <a href="week-09.html">Week 9</a> › Day 65
+<a href="index.html">Home</a> › <a href="week-10.html">Week 10</a> › Day 65
 </div>
 <div class="day-title-row">
-<span class="day-icon-inline">💼</span>
-<h1 class="day-title">Negotiating Salary and Compensation</h1>
+<span class="day-icon-inline">💊</span>
+<h1 class="day-title">Giving and Receiving Health Advice</h1>
 </div>
-<p class="day-subtitle">Day 57-64 taught you the competencies. Today, you learn how to negotiate salary and compensation with confidence and clarity. B2 negotiators accept the first offer or walk away. C1 negotiators have a framework for negotiating terms that work for everyone.</p>
+<p class="day-subtitle">Day 64 taught you how to describe symptoms to a doctor. Today, you learn how to give and receive health advice with empathy, precision, and cultural sensitivity. B2 speakers give unsolicited advice or dismiss concerns. C1 speakers know how to offer support sensitively and receive advice gracefully.</p>
 <div class="day-meta">
-<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Opening + Listening + Exploring + Agreeing</div>
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Empathy + Precision + Cultural Sensitivity</div>
 <div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
-<div class="meta-tag"><i class="ph-duotone ph-target"></i> Integration Framework Day 6 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Health Communication Day 2 of 7</div>
 <div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
 </div>
 </div>
@@ -383,27 +384,27 @@ overflow-x: hidden;
 
 <div class="c1-insight">
 <div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
-<div class="insight"><strong>B2 Negotiator:</strong> Accepts the first offer (leaves value on the table) OR walks away (misses opportunities). No clear sequence.<br><br><strong>C1 Negotiator:</strong> Has a framework for negotiating terms. Knows when to open, when to listen, when to explore options, and when to agree. The difference isn't confidence — it's process.<br><br>"B2 negotiators see negotiation as confrontation. C1 negotiators see negotiation as collaboration. The best negotiators don't win — they find solutions that work for everyone."</div>
+<div class="insight"><strong>B2 Speaker:</strong> Gives unsolicited advice ("You should...") or dismisses concerns ("It's nothing serious"). Struggles with cultural differences in health communication.<br><br><strong>C1 Speaker:</strong> Offers support sensitively ("Have you considered...?") and receives advice gracefully ("That's helpful, thank you"). Navigates cultural differences with sensitivity and respect.<br><br>"B2 speakers give advice. C1 speakers offer support. The difference isn't knowledge — it's empathy."</div>
 </div>
 
-<div class="quote">"B2 negotiators accept the first offer or walk away. C1 negotiators have a framework for negotiating terms. The difference isn't confidence — it's process."</div>
+<div class="quote">"B2 speakers give unsolicited advice. C1 speakers offer support sensitively. The difference isn't medical knowledge — it's empathy and cultural sensitivity."</div>
 
 <section class="section">
 <div class="section-header">
 <h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
 </div>
 <div class="philosophy-section">
-<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Negotiating Terms = Process + Integration</h3>
-<p class="philosophy-text">"Negotiating terms isn't about winning or losing. It's about having a process that gives you enough confidence to find solutions that work for everyone."</p>
-<p class="philosophy-text">Every negotiation requires you to make five decisions simultaneously:</p>
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Health Advice = Empathy + Cultural Sensitivity</h3>
+<p class="philosophy-text">"Giving and receiving health advice isn't about having all the answers. It's about offering support sensitively, respecting cultural differences, and communicating with empathy and precision."</p>
+<p class="philosophy-text">Every health advice conversation requires you to make five decisions simultaneously:</p>
 <div class="philosophy-list">
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Opening Decision:</strong> How do I start the negotiation? (Direct? Collaborative?)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Listening Decision:</strong> How do I understand their needs? (Ask? Listen? Explore?)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Exploring Decision:</strong> How do I explore options? (Suggest? Propose? Explore?)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Agreeing Decision:</strong> How do I agree on terms? (Accept? Propose? Compromise?)</div>
-<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Closing Decision:</strong> How do I close the deal? (Confirm? Clarify? Commit?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Empathy Decision:</strong> How do I show I care? (Direct? Sensitive?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Precision Decision:</strong> How specific should my advice be? (General? Specific?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Cultural Decision:</strong> How do I respect cultural differences? (Direct? Indirect?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Receiving Decision:</strong> How do I receive advice gracefully? (Defensive? Open?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Boundary Decision:</strong> How do I set boundaries respectfully? (Direct? Diplomatic?)</div>
 </div>
-<p class="philosophy-text"><strong>Important:</strong> Day 57-64 taught you the competencies. Day 65 teaches you how to integrate them into a negotiation sequence that works in real situations.</p>
+<p class="philosophy-text"><strong>Important:</strong> Day 64 taught you how to describe symptoms. Day 65 teaches you how to give and receive health advice with empathy, precision, and cultural sensitivity.</p>
 </div>
 </section>
 
@@ -413,10 +414,10 @@ overflow-x: hidden;
 </div>
 <div class="plan-grid">
 <div class="plan-card">
-<div class="plan-icon"></div>
-<div class="plan-title">Negotiation Loop</div>
+<div class="plan-icon">🧠</div>
+<div class="plan-title">Advice Loop</div>
 <div class="plan-time">5 min</div>
-<div class="plan-desc">Open → Listen → Explore → Agree → Close</div>
+<div class="plan-desc">Empathize → Suggest → Support → Follow-up</div>
 </div>
 <div class="plan-card">
 <div class="plan-icon">👁️</div>
@@ -428,7 +429,7 @@ overflow-x: hidden;
 <div class="plan-icon">🔄</div>
 <div class="plan-title">Integration</div>
 <div class="plan-time">10 min</div>
-<div class="plan-desc">Opening + Listening + Exploring</div>
+<div class="plan-desc">Empathy + Precision + Culture</div>
 </div>
 <div class="plan-card">
 <div class="plan-icon">⚠️</div>
@@ -449,13 +450,13 @@ overflow-x: hidden;
 <div class="plan-desc">2 Cases + Breakdown</div>
 </div>
 <div class="plan-card">
-<div class="plan-icon">🎭</div>
+<div class="plan-icon"></div>
 <div class="plan-title">Dialogues</div>
 <div class="plan-time">15 min</div>
 <div class="plan-desc">2 Long Scenarios</div>
 </div>
 <div class="plan-card">
-<div class="plan-icon"></div>
+<div class="plan-icon">🎧</div>
 <div class="plan-title">Listening</div>
 <div class="plan-time">12 min</div>
 <div class="plan-desc">Deep Dive (8 steps)</div>
@@ -477,35 +478,30 @@ overflow-x: hidden;
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Negotiation Loop</h2>
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Health Advice Loop</h2>
 </div>
 <div class="loop-section">
-<h3 class="loop-title">The 5-step negotiation process that turns confrontation into collaboration</h3>
+<h3 class="loop-title">The 4-step process for giving and receiving health advice with empathy</h3>
 <div class="loop-steps">
 <div class="loop-step">
 <div class="loop-step-number">1</div>
-<div class="loop-step-title">OPEN (Start the conversation)</div>
-<div class="loop-step-desc">How do I start? "I'd like to discuss..." / "I'd like to talk about..." (Open with clarity)</div>
+<div class="loop-step-title">EMPATHIZE (Show you care)</div>
+<div class="loop-step-desc">How do I show I care? "I'm sorry to hear that..." / "That sounds difficult..." (Empathize sensitively)</div>
 </div>
 <div class="loop-step">
 <div class="loop-step-number">2</div>
-<div class="loop-step-title">LISTEN (Understand their needs)</div>
-<div class="loop-step-desc">How do I understand them? "What's important to you?" / "What matters most?" (Listen deeply)</div>
+<div class="loop-step-title">SUGGEST (Offer support)</div>
+<div class="loop-step-desc">How do I offer support? "Have you considered..." / "You might want to..." (Suggest gently)</div>
 </div>
 <div class="loop-step">
 <div class="loop-step-number">3</div>
-<div class="loop-step-title">EXPLORE (Explore options)</div>
-<div class="loop-step-desc">How do I explore? "What if we..." / "Could we consider..." (Explore together)</div>
+<div class="loop-step-title">SUPPORT (Follow up)</div>
+<div class="loop-step-desc">How do I follow up? "How are you feeling now?" / "How did that go?" (Support continuously)</div>
 </div>
 <div class="loop-step">
 <div class="loop-step-number">4</div>
-<div class="loop-step-title">AGREE (Agree on terms)</div>
-<div class="loop-step-desc">How do I agree? "I can agree to..." / "I'm comfortable with..." (Agree with clarity)</div>
-</div>
-<div class="loop-step">
-<div class="loop-step-number">5</div>
-<div class="loop-step-title">CLOSE (Close the deal)</div>
-<div class="loop-step-desc">How do I close? "Let's confirm..." / "Let's make sure we're aligned..." (Close with clarity)</div>
+<div class="loop-step-title">FOLLOW-UP (Check in)</div>
+<div class="loop-step-desc">How do I check in? "How are you doing?" / "How did that work out?" (Check in regularly)</div>
 </div>
 </div>
 </div>
@@ -513,325 +509,325 @@ overflow-x: hidden;
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Negotiation Lenses</h2>
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Health Advice Lenses</h2>
 </div>
-<p class="section-desc">Every negotiation requires five decisions. These are your 5 lenses:</p>
+<p class="section-desc">Every health advice conversation requires five decisions. These are your 5 lenses:</p>
 
 <div class="lenses-grid">
 
 <div class="lens-card">
 <div class="lens-number">1</div>
-<h3 class="lens-title">Opening (How do I start?)
+<h3 class="lens-title">Empathy (How do I show I care?)
 <button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I open this negotiation?"</p>
+<p class="lens-core">"How do I show I care about their health concern?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
-<span class="lens-context">The Opening Decision</span>
+<span class="lens-context">The Empathy Decision</span>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>High trust → Direct ("I'd like to discuss the terms")</li>
-<li>Medium trust → Collaborative ("I'd like to talk about how we can work this out")</li>
-<li>Low trust → Exploratory ("I'd like to explore some options")</li>
+<li>Close relationship → Direct empathy ("I'm really sorry to hear that")</li>
+<li>Professional relationship → Professional empathy ("I'm sorry to hear you're dealing with this")</li>
+<li>Cultural sensitivity → Indirect empathy ("That sounds challenging")</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Negotiating rent with landlord. Decision: Collaborative ("I'd like to talk about the rent")</p>
+<p>Friend shares health concern. Decision: Direct empathy ("I'm really sorry to hear you're dealing with this. That sounds really difficult.")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Negotiating salary with employer. Decision: Direct ("I'd like to discuss my compensation")</p>
+<p>Colleague shares health issue. Decision: Professional empathy ("I'm sorry to hear you're dealing with this. How can I support you?")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"I'd like to talk about..." <button class="audio-btn" onclick="speakText('lens1r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I'm really sorry to hear that. That sounds really tough." <button class="audio-btn" onclick="speakText('lens1r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"I'd like to discuss..." <button class="audio-btn" onclick="speakText('lens1r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I'm sorry to hear you're dealing with this." <button class="audio-btn" onclick="speakText('lens1r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"I'd like to discuss the terms..." <button class="audio-btn" onclick="speakText('lens1r3', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-<div class="register-row">
-<span class="register-tag formal"> Formal</span>
-<span class="register-phrase">"I'd like to explore some options..." <button class="audio-btn" onclick="speakText('lens1r4', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-</div>
-<div class="compare-box">
-<h5>⚖️ Trade-offs</h5>
-<div class="compare-level strong">
-<strong>Gain (Direct)</strong>
-Clarity, confidence.
-</div>
-<div class="compare-level weak">
-<strong>Lose (Direct)</strong>
-May feel confrontational.
-</div>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Opening too aggressively ("I need...") or too passively ("I was wondering if maybe...")</p>
-</div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I opening with clarity and collaboration, or with aggression or passivity?</p>
-</div>
-
-<div class="lens-card">
-<div class="lens-number">2</div>
-<h3 class="lens-title">Listening (How do I understand them?)
-<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
-</h3>
-<p class="lens-core">"How do I understand their needs?"</p>
-<div class="lens-meta">
-<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
-<span class="lens-context">The Listening Decision</span>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
-<ul>
-<li>They're open → Ask directly ("What's important to you?")</li>
-<li>They're hesitant → Explore gently ("What matters most to you?")</li>
-<li>They're resistant → Listen first, then ask</li>
-</ul>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Landlord is hesitant. Decision: Explore gently ("What matters most to you about the rent?")</p>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Employer is open. Decision: Ask directly ("What's important to you about the compensation?")</p>
-</div>
-<div class="register-table">
-<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
-<div class="register-row">
-<span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"What matters to you?" <button class="audio-btn" onclick="speakText('lens2r1', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-<div class="register-row">
-<span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"What's important to you?" <button class="audio-btn" onclick="speakText('lens2r2', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-<div class="register-row">
-<span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"What matters most to you?" <button class="audio-btn" onclick="speakText('lens2r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I'm sorry to hear you're dealing with this. How can I support you?" <button class="audio-btn" onclick="speakText('lens1r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag formal">📋 Formal</span>
-<span class="register-phrase">"What are your key priorities?" <button class="audio-btn" onclick="speakText('lens2r4', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-</div>
-<div class="compare-box">
-<h5>⚖️ Trade-offs</h5>
-<div class="compare-level strong">
-<strong>Gain (Ask directly)</strong>
-Clarity, understanding.
-</div>
-<div class="compare-level weak">
-<strong>Lose (Ask directly)</strong>
-May feel intrusive.
-</div>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Asking too aggressively ("What do you want?") or too passively ("I don't know what you want")</p>
-</div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I listening to understand, or listening to respond?</p>
-</div>
-
-<div class="lens-card">
-<div class="lens-number">3</div>
-<h3 class="lens-title">Exploring (How do I explore options?)
-<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
-</h3>
-<p class="lens-core">"How do I explore options?"</p>
-<div class="lens-meta">
-<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
-<span class="lens-context">The Exploring Decision</span>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
-<ul>
-<li>They're open → Suggest ("What if we...")</li>
-<li>They're hesitant → Propose ("Could we consider...")</li>
-<li>They're resistant → Explore together ("Let's explore some options")</li>
-</ul>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Landlord is hesitant. Decision: Propose ("Could we consider a 6-month lease?")</p>
-</div>
-<div class="lens-subsection">
-<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Employer is open. Decision: Suggest ("What if we discuss a 10% increase?")</p>
-</div>
-<div class="register-table">
-<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
-<div class="register-row">
-<span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"What if we..." <button class="audio-btn" onclick="speakText('lens3r1', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-<div class="register-row">
-<span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"Could we consider..." <button class="audio-btn" onclick="speakText('lens3r2', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-<div class="register-row">
-<span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"What if we explore..." <button class="audio-btn" onclick="speakText('lens3r3', this)"><i class="ph-duotone ph-play"></i></button></span>
-</div>
-<div class="register-row">
-<span class="register-tag formal">📋 Formal</span>
-<span class="register-phrase">"Let's explore some options..." <button class="audio-btn" onclick="speakText('lens3r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I'm sorry to hear about your situation. Please let me know how I can assist." <button class="audio-btn" onclick="speakText('lens1r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Suggest)</strong>
-Clarity, direction.
+<strong>Gain (Direct empathy)</strong>
+Shows genuine care, builds connection.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Suggest)</strong>
-May feel prescriptive.
+<strong>Lose (Direct empathy)</strong>
+May feel intrusive in professional settings.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Suggesting too aggressively ("We should...") or too passively ("I don't know what to do")</p>
+<p>Giving unsolicited advice ("You should...") instead of showing empathy first.</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I exploring options, or am I imposing my solution?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I showing empathy first, or jumping straight to advice?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Precision (How specific should I be?)
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How specific should my advice be?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Precision Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
+<ul>
+<li>Medical professional → Specific advice ("You should see a doctor immediately")</li>
+<li>Friend/family → Gentle suggestion ("You might want to consider seeing a doctor")</li>
+<li>Colleague → General support ("Have you thought about talking to someone?")</li>
+</ul>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend mentions persistent headache. Decision: Gentle suggestion ("You might want to consider seeing a doctor if it persists.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Colleague mentions stress. Decision: General support ("Have you thought about talking to HR about workload?")</p>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
+<div class="register-row">
+<span class="register-tag casual">🏠 Casual</span>
+<span class="register-phrase">"You might want to consider seeing a doctor if it persists." <button class="audio-btn" onclick="speakText('lens2r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag neutral">☕ Neutral</span>
+<span class="register-phrase">"You might want to consider getting that checked out." <button class="audio-btn" onclick="speakText('lens2r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag professional">💼 Professional</span>
+<span class="register-phrase">"You might want to consider consulting a healthcare professional." <button class="audio-btn" onclick="speakText('lens2r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag formal"> Formal</span>
+<span class="register-phrase">"I would recommend consulting a healthcare professional for a proper assessment." <button class="audio-btn" onclick="speakText('lens2r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Specific advice)</strong>
+Provides clear guidance, shows expertise.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Specific advice)</strong>
+May feel presumptuous if not qualified.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Giving medical advice without qualification ("You should take...") instead of suggesting professional help.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I giving appropriate advice for my level of expertise?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Cultural Sensitivity (How do I respect differences?)
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I respect cultural differences in health communication?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Cultural Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
+<ul>
+<li>Western culture → Direct communication ("You should see a doctor")</li>
+<li>Eastern culture → Indirect communication ("You might want to consider...")</li>
+<li>Mixed culture → Balanced approach ("Have you thought about...?")</li>
+</ul>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend from different culture mentions health issue. Decision: Balanced approach ("Have you thought about talking to someone about this?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>International colleague mentions stress. Decision: Culturally sensitive ("Have you considered speaking with someone about this?")</p>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
+<div class="register-row">
+<span class="register-tag casual">🏠 Casual</span>
+<span class="register-phrase">"Have you thought about talking to someone about this?" <button class="audio-btn" onclick="speakText('lens3r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag neutral">☕ Neutral</span>
+<span class="register-phrase">"You might want to consider speaking with a professional." <button class="audio-btn" onclick="speakText('lens3r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag professional">💼 Professional</span>
+<span class="register-phrase">"You might want to consider consulting a healthcare professional." <button class="audio-btn" onclick="speakText('lens3r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag formal">📋 Formal</span>
+<span class="register-phrase">"I would recommend seeking professional medical advice." <button class="audio-btn" onclick="speakText('lens3r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Cultural sensitivity)</strong>
+Shows respect, avoids offense.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Cultural sensitivity)</strong>
+May feel indirect in direct cultures.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Assuming everyone communicates about health the same way.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I respecting cultural differences in health communication?</p>
 </div>
 
 <div class="lens-card">
 <div class="lens-number">4</div>
-<h3 class="lens-title">Agreeing (How do I agree on terms?)
+<h3 class="lens-title">Receiving (How do I receive advice gracefully?)
 <button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I agree on terms?"</p>
+<p class="lens-core">"How do I receive health advice gracefully?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
-<span class="lens-context">The Agreeing Decision</span>
+<span class="lens-context">The Receiving Decision</span>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>They agree → Accept ("I can agree to that")</li>
-<li>They propose → Consider ("I'm comfortable with that")</li>
-<li>They hesitate → Propose alternative ("Could we consider...")</li>
+<li>Helpful advice → Grateful acceptance ("That's really helpful, thank you")</li>
+<li>Unhelpful advice → Polite decline ("I appreciate the suggestion, but...")</li>
+<li>Unsolicited advice → Graceful boundary ("I appreciate your concern, but...")</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Landlord proposes. Decision: Consider ("I'm comfortable with that")</p>
+<p>Friend gives unsolicited health advice. Decision: Graceful boundary ("I appreciate your concern, but I'm handling it.")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Employer agrees. Decision: Accept ("I can agree to that")</p>
+<p>Colleague gives health advice. Decision: Polite decline ("I appreciate the suggestion, but I'm working with my doctor on this.")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"I can agree to that" <button class="audio-btn" onclick="speakText('lens4r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I appreciate your concern, but I'm handling it." <button class="audio-btn" onclick="speakText('lens4r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
-<span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"I'm comfortable with that" <button class="audio-btn" onclick="speakText('lens4r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-tag neutral"> Neutral</span>
+<span class="register-phrase">"I appreciate the suggestion, but I'm working with my doctor on this." <button class="audio-btn" onclick="speakText('lens4r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"I can agree to those terms" <button class="audio-btn" onclick="speakText('lens4r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I appreciate your concern, but I'm working with healthcare professionals on this." <button class="audio-btn" onclick="speakText('lens4r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag formal"> Formal</span>
-<span class="register-phrase">"I'm comfortable with those terms" <button class="audio-btn" onclick="speakText('lens4r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I appreciate your concern, but I'm working with medical professionals on this matter." <button class="audio-btn" onclick="speakText('lens4r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>⚖️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Accept)</strong>
-Clarity, closure.
+<strong>Gain (Graceful receiving)</strong>
+Maintains relationships, shows maturity.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Accept)</strong>
-May leave value on the table.
+<strong>Lose (Graceful receiving)</strong>
+May feel like you're dismissing their concern.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Accepting too quickly (leaves value) or negotiating too long (creates frustration)</p>
+<p>Reacting defensively ("I don't need your advice") instead of responding gracefully.</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I agreeing with clarity, or am I leaving value on the table?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I receiving advice gracefully, or reacting defensively?</p>
 </div>
 
 <div class="lens-card">
 <div class="lens-number">5</div>
-<h3 class="lens-title">Closing (How do I close the deal?)
+<h3 class="lens-title">Boundary (How do I set boundaries respectfully?)
 <button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
 </h3>
-<p class="lens-core">"How do I close the deal?"</p>
+<p class="lens-core">"How do I set boundaries about health topics respectfully?"</p>
 <div class="lens-meta">
 <span class="lens-rating">⭐⭐⭐⭐ High</span>
-<span class="lens-context">The Closing Decision</span>
+<span class="lens-context">The Boundary Decision</span>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
 <ul>
-<li>Clear agreement → Confirm ("Let's confirm the terms")</li>
-<li>Some uncertainty → Clarify ("Let's make sure we're aligned")</li>
-<li>Full agreement → Commit ("Let's move forward")</li>
+<li>Close relationship → Direct boundary ("I'd prefer not to discuss this")</li>
+<li>Professional relationship → Professional boundary ("I'd prefer to keep this private")</li>
+<li>Cultural sensitivity → Indirect boundary ("I'd prefer to keep this between us")</li>
 </ul>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-house"></i> Life Example</h4>
-<p>Agreement reached. Decision: Confirm ("Let's confirm the terms")</p>
+<p>Family member asks about health details. Decision: Direct boundary ("I'd prefer not to discuss the details, but I'm doing well.")</p>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
-<p>Agreement reached. Decision: Commit ("Let's move forward")</p>
+<p>Colleague asks about health details. Decision: Professional boundary ("I'd prefer to keep this private, but thank you for asking.")</p>
 </div>
 <div class="register-table">
 <h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
 <div class="register-row">
 <span class="register-tag casual">🏠 Casual</span>
-<span class="register-phrase">"Let's confirm..." <button class="audio-btn" onclick="speakText('lens5r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I'd prefer not to discuss the details, but I'm doing well." <button class="audio-btn" onclick="speakText('lens5r1', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag neutral">☕ Neutral</span>
-<span class="register-phrase">"Let's make sure we're aligned..." <button class="audio-btn" onclick="speakText('lens5r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I'd prefer to keep this private, but thank you for asking." <button class="audio-btn" onclick="speakText('lens5r2', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
 <span class="register-tag professional">💼 Professional</span>
-<span class="register-phrase">"Let's confirm the terms..." <button class="audio-btn" onclick="speakText('lens5r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-phrase">"I'd prefer to keep this private, but I appreciate your concern." <button class="audio-btn" onclick="speakText('lens5r3', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 <div class="register-row">
-<span class="register-tag formal"> Formal</span>
-<span class="register-phrase">"Let's move forward..." <button class="audio-btn" onclick="speakText('lens5r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+<span class="register-tag formal">📋 Formal</span>
+<span class="register-phrase">"I'd prefer to keep this matter private, but I appreciate your concern." <button class="audio-btn" onclick="speakText('lens5r4', this)"><i class="ph-duotone ph-play"></i></button></span>
 </div>
 </div>
 <div class="compare-box">
 <h5>⚖️ Trade-offs</h5>
 <div class="compare-level strong">
-<strong>Gain (Confirm)</strong>
-Clarity, closure.
+<strong>Gain (Clear boundary)</strong>
+Protects privacy, maintains boundaries.
 </div>
 <div class="compare-level weak">
-<strong>Lose (Confirm)</strong>
-May feel abrupt.
+<strong>Lose (Clear boundary)</strong>
+May feel like you're shutting them out.
 </div>
 </div>
 <div class="lens-subsection">
 <h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
-<p>Closing too abruptly ("Done") or too vaguely ("Let's see")</p>
+<p>Not setting boundaries (oversharing) or setting them too harshly ("None of your business").</p>
 </div>
-<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I closing with clarity, or am I leaving ambiguity?</p>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I setting boundaries respectfully, or being too harsh?</p>
 </div>
 
 </div>
@@ -842,25 +838,25 @@ May feel abrupt.
 <h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
 </div>
 <div class="mistakes-section">
-<h3 class="mistakes-title">Traps that destroy negotiations</h3>
+<h3 class="mistakes-title">Traps that destroy health advice conversations</h3>
 <div class="mistakes-grid">
 <div class="mistake-item">
-<h4 class="mistake-title">Mistake 1: Opening Too Aggressively</h4>
-<div class="mistake-wrong">❌ "I need a 20% raise."</div>
-<div class="mistake-right">✅ "I'd like to discuss my compensation."</div>
-<div class="mistake-why">Why: Aggressive opening creates resistance. Collaborative opening creates collaboration.</div>
+<h4 class="mistake-title">Mistake 1: Giving Unsolicited Advice</h4>
+<div class="mistake-wrong">❌ "You should see a doctor immediately."</div>
+<div class="mistake-right">✅ "Have you considered seeing a doctor about this?"</div>
+<div class="mistake-why">Why: Unsolicited advice feels presumptuous. Gentle suggestions show respect.</div>
 </div>
 <div class="mistake-item">
-<h4 class="mistake-title">Mistake 2: Not Listening</h4>
-<div class="mistake-wrong">❌ "Here's what I want..." (without listening)</div>
-<div class="mistake-right">✅ "What's important to you?" (listen first)</div>
-<div class="mistake-why">Why: Not listening creates resistance. Listening creates understanding.</div>
+<h4 class="mistake-title">Mistake 2: Reacting Defensively</h4>
+<div class="mistake-wrong">❌ "I don't need your advice."</div>
+<div class="mistake-right">✅ "I appreciate your concern, but I'm handling it."</div>
+<div class="mistake-why">Why: Defensive reactions damage relationships. Graceful responses maintain them.</div>
 </div>
 <div class="mistake-item">
-<h4 class="mistake-title">Mistake 3: Closing Too Vaguely</h4>
-<div class="mistake-wrong">❌ "Let's see..."</div>
-<div class="mistake-right">✅ "Let's confirm the terms."</div>
-<div class="mistake-why">Why: Vague closing creates ambiguity. Clear closing creates clarity.</div>
+<h4 class="mistake-title">Mistake 3: Ignoring Cultural Differences</h4>
+<div class="mistake-wrong">❌ "You should just go to the doctor."</div>
+<div class="mistake-right">✅ "Have you thought about talking to someone about this?"</div>
+<div class="mistake-why">Why: Cultural differences matter. Respectful communication shows cultural sensitivity.</div>
 </div>
 </div>
 </div>
@@ -868,7 +864,7 @@ May feel abrupt.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Negotiation Decoder (8 Situations)</h2>
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Health Advice Decoder (8 Situations)</h2>
 </div>
 <div class="decoder-section">
 <h3 class="decoder-title">🔍 The Decision Decoder</h3>
@@ -885,68 +881,68 @@ May feel abrupt.
 </thead>
 <tbody>
 <tr>
-<td>1. Life: Negotiating rent with landlord</td>
-<td>Accept the first offer.</td>
-<td>Walk away.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>1. Life: Friend shares health concern</td>
+<td>Give unsolicited advice.</td>
+<td>Listen silently.</td>
+<td>Empathize → Suggest → Support → Follow-up.</td>
 <td>Takes more time.</td>
-<td>When you have no leverage.</td>
+<td>When they just want to vent.</td>
 </tr>
 <tr>
-<td>2. Life: Negotiating price at a market</td>
-<td>Accept the first price.</td>
-<td>Walk away.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>2. Life: Colleague mentions stress</td>
+<td>Ignore it.</td>
+<td>Change the subject.</td>
+<td>Empathize → Suggest → Support → Follow-up.</td>
 <td>Takes more time.</td>
-<td>When the price is fixed.</td>
+<td>When it's not your place.</td>
 </tr>
 <tr>
-<td>3. Life: Negotiating with a contractor</td>
-<td>Accept the first quote.</td>
-<td>Get another quote.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>3. Life: Family member asks about health details</td>
+<td>Overshare details.</td>
+<td>Change the subject.</td>
+<td>Empathize → Set boundary → Support.</td>
 <td>Takes more time.</td>
-<td>When you're in a hurry.</td>
+<td>When you want privacy.</td>
 </tr>
 <tr>
-<td>4. Business: Negotiating salary with employer</td>
-<td>Accept the first offer.</td>
-<td>Walk away.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>4. Business: Colleague gives health advice</td>
+<td>React defensively.</td>
+<td>Ignore the advice.</td>
+<td>Empathize → Set boundary → Support.</td>
 <td>Takes more time.</td>
-<td>When you have no leverage.</td>
+<td>When you want to maintain boundaries.</td>
 </tr>
 <tr>
-<td>5. Business: Negotiating contract terms</td>
-<td>Accept the first terms.</td>
-<td>Walk away.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>5. Life: Friend from different culture shares concern</td>
+<td>Give direct advice.</td>
+<td>Stay silent.</td>
+<td>Empathize → Suggest culturally → Support.</td>
 <td>Takes more time.</td>
-<td>When the terms are non-negotiable.</td>
+<td>When cultural differences are significant.</td>
 </tr>
 <tr>
-<td>6. Life: Negotiating with a service provider</td>
-<td>Accept the first offer.</td>
-<td>Switch providers.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>6. Business: International colleague mentions stress</td>
+<td>Give direct advice.</td>
+<td>Ignore it.</td>
+<td>Empathize → Suggest culturally → Support.</td>
 <td>Takes more time.</td>
-<td>When you're in a hurry.</td>
+<td>When cultural differences are significant.</td>
 </tr>
 <tr>
-<td>7. Business: Negotiating with a vendor</td>
-<td>Accept the first offer.</td>
-<td>Find another vendor.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>7. Life: Family member gives unsolicited advice</td>
+<td>React defensively.</td>
+<td>Ignore the advice.</td>
+<td>Empathize → Set boundary → Support.</td>
 <td>Takes more time.</td>
-<td>When you're in a hurry.</td>
+<td>When you want to maintain boundaries.</td>
 </tr>
 <tr>
-<td>8. Life: Negotiating with a landlord about repairs</td>
-<td>Accept the situation.</td>
-<td>Move out.</td>
-<td>Open → Listen → Explore → Agree → Close.</td>
+<td>8. Business: Colleague asks about your health</td>
+<td>Overshare details.</td>
+<td>Change the subject.</td>
+<td>Empathize → Set boundary → Support.</td>
 <td>Takes more time.</td>
-<td>When the landlord is unresponsive.</td>
+<td>When you want to maintain privacy.</td>
 </tr>
 </tbody>
 </table>
@@ -962,96 +958,114 @@ May feel abrupt.
 <div class="reading-grid">
 
 <div class="case-box">
-<h4 class="case-title">🏠 Case 1: Life - Negotiating Rent with Landlord</h4>
-<div class="case-context"><strong>Context:</strong> Your lease is up for renewal. The landlord wants to raise the rent by 15%. You want to negotiate a lower increase.</div>
+<h4 class="case-title"> Case 1: Life - Friend Shares Health Concern</h4>
+<div class="case-context"><strong>Context:</strong> Your friend mentions they've been having persistent headaches and feeling stressed. They're clearly worried but haven't seen a doctor yet.</div>
 <div class="case-decision">
 <h4>Your Decision:</h4>
 <ul>
-<li><strong>Lens 1 (Opening):</strong> Collaborative ("I'd like to discuss the rent")</li>
-<li><strong>Lens 2 (Listening):</strong> Ask directly ("What's important to you about the rent?")</li>
-<li><strong>Lens 3 (Exploring):</strong> Propose ("Could we consider a 10% increase?")</li>
-<li><strong>Lens 4 (Agreeing):</strong> Consider ("I'm comfortable with that")</li>
-<li><strong>Lens 5 (Closing):</strong> Confirm ("Let's confirm the terms")</li>
+<li><strong>Lens 1 (Empathy):</strong> Direct empathy ("I'm really sorry to hear you're dealing with this")</li>
+<li><strong>Lens 2 (Precision):</strong> Gentle suggestion ("You might want to consider seeing a doctor")</li>
+<li><strong>Lens 3 (Cultural):</strong> Balanced approach (respectful but caring)</li>
+<li><strong>Lens 4 (Receiving):</strong> N/A (you're giving advice)</li>
+<li><strong>Lens 5 (Boundary):</strong> N/A (you're giving advice)</li>
 </ul>
 </div>
+<div class="case-decision">
+<h4>Advice Flow:</h4>
+<ol style="padding-left: 24px; color: var(--text-secondary); font-size: 13px; line-height: 1.5;">
+<li><strong>Empathize:</strong> "I'm really sorry to hear you're dealing with this. That sounds really difficult."</li>
+<li><strong>Suggest:</strong> "Have you considered seeing a doctor about the headaches?"</li>
+<li><strong>Support:</strong> "I'm here for you if you need anything."</li>
+<li><strong>Follow-up:</strong> "How did the doctor's appointment go?"</li>
+</ol>
+</div>
 <div class="breakdown-section">
-<h4 class="breakdown-title">🎯 BREAKDOWN (Deep Analysis)</h4>
+<h4 class="breakdown-title"> BREAKDOWN (Deep Analysis)</h4>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"I'd like to discuss the rent for the next lease."</div>
+<div class="breakdown-sentence">"I'm really sorry to hear you're dealing with this. That sounds really difficult."</div>
 <div class="breakdown-analysis">
-<strong>🎯 Communication Goal:</strong> Open with clarity.
-<strong>🧠 Hidden Message:</strong> "I'm not here to fight. I'm here to discuss."
-<strong>⚖️ Trade-off:</strong> Takes 5 seconds, but sets collaborative tone.
-<strong> Better Alternative?</strong> "I need a lower rent." (Aggressive, creates resistance).
-<strong>⭐ Why This Wins:</strong> Collaborative opening. Sets collaborative tone.
-</div>
-</div>
-<div class="breakdown-item">
-<div class="breakdown-sentence">"What's important to you about the rent increase?"</div>
-<div class="breakdown-analysis">
-<strong>🎯 Communication Goal:</strong> Listen to understand.
-<strong>🧠 Hidden Message:</strong> "I want to understand your perspective."
-<strong>⚖️ Trade-off:</strong> Takes more time, but builds understanding.
-<strong> Better Alternative?</strong> "I can't afford 15%." (Positional, creates resistance).
-<strong>⭐ Why This Wins:</strong> Listening creates understanding. Opens dialogue.
+<strong> Communication Goal:</strong> Show genuine empathy.
+<strong>🧠 Hidden Message:</strong> "I care about you and your wellbeing."
+<strong>⚖️ Trade-off:</strong> Takes time, but shows genuine care.
+<strong>🔄 Better Alternative?</strong> "You should see a doctor." (Too direct, feels presumptuous).
+<strong>⭐ Why This Wins:</strong> Shows genuine empathy before giving advice.
 </div>
 </div>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"Could we consider a 10% increase instead of 15%?"</div>
+<div class="breakdown-sentence">"Have you considered seeing a doctor about the headaches?"</div>
 <div class="breakdown-analysis">
-<strong>🎯 Communication Goal:</strong> Explore options.
-<strong>🧠 Hidden Message:</strong> "I'm open to finding a solution."
-<strong>️ Trade-off:</strong> Takes more time, but explores options.
-<strong>🔄 Better Alternative?</strong> "I'll take 10% or I'll leave." (Ultimatum, creates resistance).
-<strong>⭐ Why This Wins:</strong> Exploratory. Opens creative thinking.
+<strong>🎯 Communication Goal:</strong> Offer gentle suggestion.
+<strong> Hidden Message:</strong> "I'm concerned about you, but I respect your autonomy."
+<strong>⚖️ Trade-off:</strong> Takes more time, but shows respect.
+<strong>🔄 Better Alternative?</strong> "You need to see a doctor." (Too direct, feels demanding).
+<strong>⭐ Why This Wins:</strong> Gentle suggestion shows respect for their autonomy.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"I'm here for you if you need anything."</div>
+<div class="breakdown-analysis">
+<strong> Communication Goal:</strong> Offer ongoing support.
+<strong>🧠 Hidden Message:</strong> "I'm here for you, no matter what."
+<strong>⚖️ Trade-off:</strong> Takes time, but shows ongoing support.
+<strong>🔄 Better Alternative?</strong> "Let me know if you need anything." (Less personal).
+<strong>⭐ Why This Wins:</strong> Shows ongoing, personal support.
 </div>
 </div>
 </div>
 </div>
 
 <div class="case-box">
-<h4 class="case-title">💼 Case 2: Business - Negotiating Salary with Employer</h4>
-<div class="case-context"><strong>Context:</strong> You're negotiating a salary increase with your employer. They've offered 5%. You want 15%.</div>
+<h4 class="case-title">💼 Case 2: Business - Colleague Gives Health Advice</h4>
+<div class="case-context"><strong>Context:</strong> A colleague notices you look stressed and gives you unsolicited health advice. You're working with your doctor already, but you want to maintain a good relationship.</div>
 <div class="case-decision">
 <h4>Your Decision:</h4>
 <ul>
-<li><strong>Lens 1 (Opening):</strong> Direct ("I'd like to discuss my compensation")</li>
-<li><strong>Lens 2 (Listening):</strong> Ask directly ("What's important to you about the compensation?")</li>
-<li><strong>Lens 3 (Exploring):</strong> Suggest ("What if we discuss a 12% increase?")</li>
-<li><strong>Lens 4 (Agreeing):</strong> Accept ("I can agree to 12%")</li>
-<li><strong>Lens 5 (Closing):</strong> Commit ("Let's move forward with 12%")</li>
+<li><strong>Lens 1 (Empathy):</strong> Acknowledge their concern ("I appreciate your concern")</li>
+<li><strong>Lens 2 (Precision):</strong> N/A (you're receiving advice)</li>
+<li><strong>Lens 3 (Cultural):</strong> Professional boundary (respectful but clear)</li>
+<li><strong>Lens 4 (Receiving):</strong> Graceful boundary ("I'm working with my doctor on this")</li>
+<li><strong>Lens 5 (Boundary):</strong> Professional boundary ("I'd prefer to keep this private")</li>
 </ul>
+</div>
+<div class="case-decision">
+<h4>Response Flow:</h4>
+<ol style="padding-left: 24px; color: var(--text-secondary); font-size: 13px; line-height: 1.5;">
+<li><strong>Empathize:</strong> "I appreciate your concern about my stress."</li>
+<li><strong>Set Boundary:</strong> "I'm working with my doctor on this, so I'm in good hands."</li>
+<li><strong>Support:</strong> "I appreciate you looking out for me."</li>
+<li><strong>Follow-up:</strong> "Thanks again for your concern."</li>
+</ol>
 </div>
 <div class="breakdown-section">
 <h4 class="breakdown-title"> BREAKDOWN (Deep Analysis)</h4>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"I'd like to discuss my compensation."</div>
+<div class="breakdown-sentence">"I appreciate your concern about my stress."</div>
 <div class="breakdown-analysis">
-<strong>🎯 Communication Goal:</strong> Open with clarity.
-<strong>🧠 Hidden Message:</strong> "I'm not here to fight. I'm here to discuss."
-<strong>⚖️ Trade-off:</strong> Takes 5 seconds, but sets collaborative tone.
-<strong>🔄 Better Alternative?</strong> "I need a 15% raise." (Aggressive, creates resistance).
-<strong>⭐ Why This Wins:</strong> Collaborative opening. Sets collaborative tone.
+<strong>🎯 Communication Goal:</strong> Acknowledge their concern gracefully.
+<strong>🧠 Hidden Message:</strong> "I appreciate you caring, but I'm handling it."
+<strong>⚖️ Trade-off:</strong> Takes time, but maintains relationship.
+<strong>🔄 Better Alternative?</strong> "I don't need your advice." (Too harsh, damages relationship).
+<strong>⭐ Why This Wins:</strong> Acknowledges concern while maintaining boundaries.
 </div>
 </div>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"What's important to you about the compensation?"</div>
+<div class="breakdown-sentence">"I'm working with my doctor on this, so I'm in good hands."</div>
 <div class="breakdown-analysis">
-<strong>🎯 Communication Goal:</strong> Listen to understand.
-<strong>🧠 Hidden Message:</strong> "I want to understand your perspective."
-<strong>️ Trade-off:</strong> Takes more time, but builds understanding.
-<strong>🔄 Better Alternative?</strong> "I can't accept 5%." (Positional, creates resistance).
-<strong>⭐ Why This Wins:</strong> Listening creates understanding. Opens dialogue.
+<strong>🎯 Communication Goal:</strong> Set boundary gracefully.
+<strong>🧠 Hidden Message:</strong> "I'm handling it professionally, so you don't need to worry."
+<strong>️ Trade-off:</strong> Takes time, but maintains boundaries.
+<strong>🔄 Better Alternative?</strong> "I don't want to talk about it." (Too harsh).
+<strong>⭐ Why This Wins:</strong> Sets boundary while maintaining relationship.
 </div>
 </div>
 <div class="breakdown-item">
-<div class="breakdown-sentence">"What if we discuss a 12% increase?"</div>
+<div class="breakdown-sentence">"I appreciate you looking out for me."</div>
 <div class="breakdown-analysis">
-<strong>🎯 Communication Goal:</strong> Explore options.
-<strong>🧠 Hidden Message:</strong> "I'm open to finding a solution."
-<strong>⚖️ Trade-off:</strong> Takes more time, but explores options.
-<strong>🔄 Better Alternative?</strong> "I need 15% or I'll leave." (Ultimatum, creates resistance).
-<strong>⭐ Why This Wins:</strong> Exploratory. Opens creative thinking.
+<strong>🎯 Communication Goal:</strong> Show appreciation for their concern.
+<strong> Hidden Message:</strong> "I appreciate your concern, even though I don't need your advice."
+<strong>⚖️ Trade-off:</strong> Takes time, but maintains relationship.
+<strong>🔄 Better Alternative?</strong> "Thanks, but I'm fine." (Less personal).
+<strong>⭐ Why This Wins:</strong> Shows appreciation while maintaining boundaries.
 </div>
 </div>
 </div>
@@ -1068,52 +1082,36 @@ May feel abrupt.
 <div class="micro-writing-section">
 <h3 class="micro-writing-title">✍️ Normal → C1 Rewrite</h3>
 <div class="rewrite-item">
-<div class="rewrite-task">❌ Normal (Life - Rent): "I need a lower rent."</div>
+<div class="rewrite-task">❌ Normal (Life - Giving Advice): "You should see a doctor immediately."</div>
 <div class="sentence-function-grid">
 <div class="sentence-function">
-<div class="sentence">"I'd like to discuss the rent for the next lease."</div>
-<div class="function">→ Function: Open with clarity</div>
+<div class="sentence">"I'm really sorry to hear you're dealing with this. That sounds really difficult."</div>
+<div class="function">→ Function: Show genuine empathy</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"What's important to you about the rent increase?"</div>
-<div class="function">→ Function: Listen to understand</div>
+<div class="sentence">"Have you considered seeing a doctor about the headaches?"</div>
+<div class="function">→ Function: Offer gentle suggestion</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"Could we consider a 10% increase?"</div>
-<div class="function">→ Function: Explore options</div>
-</div>
-<div class="sentence-function">
-<div class="sentence">"I'm comfortable with a 10% increase."</div>
-<div class="function">→ Function: Agree with clarity</div>
-</div>
-<div class="sentence-function">
-<div class="sentence">"Let's confirm the terms."</div>
-<div class="function">→ Function: Close with clarity</div>
+<div class="sentence">"I'm here for you if you need anything."</div>
+<div class="function">→ Function: Offer ongoing support</div>
 </div>
 </div>
 </div>
 <div class="rewrite-item">
-<div class="rewrite-task">❌ Normal (Business - Salary): "I need a 15% raise."</div>
+<div class="rewrite-task">❌ Normal (Business - Receiving Advice): "I don't need your advice."</div>
 <div class="sentence-function-grid">
 <div class="sentence-function">
-<div class="sentence">"I'd like to discuss my compensation."</div>
-<div class="function">→ Function: Open with clarity</div>
+<div class="sentence">"I appreciate your concern about my stress."</div>
+<div class="function">→ Function: Acknowledge concern gracefully</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"What's important to you about the compensation?"</div>
-<div class="function">→ Function: Listen to understand</div>
+<div class="sentence">"I'm working with my doctor on this, so I'm in good hands."</div>
+<div class="function">→ Function: Set boundary gracefully</div>
 </div>
 <div class="sentence-function">
-<div class="sentence">"What if we discuss a 12% increase?"</div>
-<div class="function">→ Function: Explore options</div>
-</div>
-<div class="sentence-function">
-<div class="sentence">"I can agree to 12%."</div>
-<div class="function">→ Function: Agree with clarity</div>
-</div>
-<div class="sentence-function">
-<div class="sentence">"Let's move forward with 12%."</div>
-<div class="function">→ Function: Close with clarity</div>
+<div class="sentence">"I appreciate you looking out for me."</div>
+<div class="function">→ Function: Show appreciation</div>
 </div>
 </div>
 </div>
@@ -1121,107 +1119,107 @@ May feel abrupt.
 <div class="before-after-grid">
 <div class="before-after normal">
 <div class="label">Normal</div>
-<div class="text">"I need a lower rent."</div>
-<div class="explanation">Aggressive, creates resistance</div>
+<div class="text">"You should see a doctor immediately."</div>
+<div class="explanation">Too direct, feels presumptuous</div>
 </div>
 <div class="before-after executive">
 <div class="label">C1</div>
-<div class="text">"I'd like to discuss the rent."</div>
-<div class="explanation">Collaborative, opens dialogue</div>
+<div class="text">"Have you considered seeing a doctor about this?"</div>
+<div class="explanation">Gentle suggestion, shows respect</div>
 </div>
 </div>
 <div class="before-after-grid" style="margin-top: 12px;">
 <div class="before-after normal">
 <div class="label">Normal</div>
-<div class="text">"I need a 15% raise."</div>
-<div class="explanation">Aggressive, creates resistance</div>
+<div class="text">"I don't need your advice."</div>
+<div class="explanation">Too harsh, damages relationship</div>
 </div>
 <div class="before-after executive">
 <div class="label">C1</div>
-<div class="text">"I'd like to discuss my compensation."</div>
-<div class="explanation">Collaborative, opens dialogue</div>
+<div class="text">"I appreciate your concern, but I'm handling it."</div>
+<div class="explanation">Graceful boundary, maintains relationship</div>
 </div>
 </div>
-<p style="font-size: 13px; color: var(--text-secondary); margin-top: 16px; font-style: italic;"><strong>C1 doesn't demand. C1 negotiates.</strong></p>
+<p style="font-size: 13px; color: var(--text-secondary); margin-top: 16px; font-style: italic;"><strong>C1 speakers offer support sensitively. B2 speakers give unsolicited advice.</strong></p>
 </div>
 </section>
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Negotiation Lexicon)</h2>
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Health Advice Lexicon)</h2>
 </div>
 <div class="vocab-section">
-<h3 class="vocab-title">📝 The Negotiation Lexicon</h3>
+<h3 class="vocab-title">📝 The Health Advice Lexicon</h3>
 <div class="vocab-grid">
 <div class="vocab-item">
-<strong>negotiate /nɪˈɡəʊ.ʃi.eɪt/</strong>
+<strong>empathy /ˈem.pə.θi/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Sự đồng cảm</div>
+<div class="example">"I appreciate your empathy."</div>
+<button class="vocab-audio-btn" onclick="speakText('empathy', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>concern /kənˈsɜːn/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Sự quan tâm, lo lắng</div>
+<div class="example">"I appreciate your concern."</div>
+<button class="vocab-audio-btn" onclick="speakText('concern', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>consider /kənˈsɪd.ər/</strong>
 <div class="pos">(verb)</div>
-<div class="meaning">Thương lượng, đàm phán</div>
-<div class="example">"I'd like to negotiate the terms."</div>
-<button class="vocab-audio-btn" onclick="speakText('negotiate', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<div class="meaning">Cân nhắc, xem xét</div>
+<div class="example">"Have you considered seeing a doctor?"</div>
+<button class="vocab-audio-btn" onclick="speakText('consider', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
 </div>
 <div class="vocab-item">
-<strong>terms /tɜːmz/</strong>
-<div class="pos">(noun)</div>
-<div class="meaning">Điều khoản</div>
-<div class="example">"Let's confirm the terms."</div>
-<button class="vocab-audio-btn" onclick="speakText('terms', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
-</div>
-<div class="vocab-item">
-<strong>conditions /kənˈdɪ.ənz/</strong>
-<div class="pos">(noun)</div>
-<div class="meaning">Điều kiện</div>
-<div class="example">"Let's agree on the conditions."</div>
-<button class="vocab-audio-btn" onclick="speakText('conditions', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
-</div>
-<div class="vocab-item">
-<strong>compromise /kɒm.prə.maɪz/</strong>
-<div class="pos">(verb/noun)</div>
-<div class="meaning">Thỏa hiệp</div>
-<div class="example">"Let's find a compromise."</div>
-<button class="vocab-audio-btn" onclick="speakText('compromise', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
-</div>
-<div class="vocab-item">
-<strong>flexibility /ˌflek.sɪˈbɪl.ə.ti/</strong>
-<div class="pos">(noun)</div>
-<div class="meaning">Sự linh hoạt</div>
-<div class="example">"I'm looking for some flexibility."</div>
-<button class="vocab-audio-btn" onclick="speakText('flexibility', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
-</div>
-<div class="vocab-item">
-<strong>deal /diːl/</strong>
-<div class="pos">(noun)</div>
-<div class="meaning">Thỏa thuận</div>
-<div class="example">"Let's close the deal."</div>
-<button class="vocab-audio-btn" onclick="speakText('deal', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
-</div>
-<div class="vocab-item">
-<strong>agreement /əɡriː.mənt/</strong>
-<div class="pos">(noun)</div>
-<div class="meaning">Sự đồng ý</div>
-<div class="example">"Let's reach an agreement."</div>
-<button class="vocab-audio-btn" onclick="speakText('agreement', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
-</div>
-<div class="vocab-item">
-<strong>offer /ˈɒf.ər/</strong>
+<strong>support /səˈpɔːt/</strong>
 <div class="pos">(noun/verb)</div>
-<div class="meaning">Lời đề nghị</div>
-<div class="example">"Here's my offer."</div>
-<button class="vocab-audio-btn" onclick="speakText('offer', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<div class="meaning">Sự hỗ trợ, hỗ trợ</div>
+<div class="example">"I'm here for you if you need support."</div>
+<button class="vocab-audio-btn" onclick="speakText('support', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
 </div>
 <div class="vocab-item">
-<strong>counter-offer /ˈkaʊn.tərˌɒf.ər/</strong>
+<strong>boundary /ˈbaʊn.dər.i/</strong>
 <div class="pos">(noun)</div>
-<div class="meaning">Lời đề nghị ngược lại</div>
-<div class="example">"Here's my counter-offer."</div>
-<button class="vocab-audio-btn" onclick="speakText('counter-offer', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<div class="meaning">Ranh giới</div>
+<div class="example">"I'd prefer to keep this private."</div>
+<button class="vocab-audio-btn" onclick="speakText('boundary', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
 </div>
 <div class="vocab-item">
-<strong>settle /ˈset.əl/</strong>
+<strong>appreciate /əˈpriː.ʃi.eɪt/</strong>
 <div class="pos">(verb)</div>
-<div class="meaning">Giải quyết, dàn xếp</div>
-<div class="example">"Let's settle this."</div>
-<button class="vocab-audio-btn" onclick="speakText('settle', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<div class="meaning">Trân trọng, cảm kích</div>
+<div class="example">"I appreciate your concern."</div>
+<button class="vocab-audio-btn" onclick="speakText('appreciate', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>considerate /kənsɪd.ər.ət/</strong>
+<div class="pos">(adjective)</div>
+<div class="meaning">Chu đáo, ân cần</div>
+<div class="example">"That's very considerate of you."</div>
+<button class="vocab-audio-btn" onclick="speakText('considerate', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>supportive /səpɔː.tɪv/</strong>
+<div class="pos">(adjective)</div>
+<div class="meaning">Ủng hộ, hỗ trợ</div>
+<div class="example">"Thank you for being so supportive."</div>
+<button class="vocab-audio-btn" onclick="speakText('supportive', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>concerned /kənˈsɜnd/</strong>
+<div class="pos">(adjective)</div>
+<div class="meaning">Lo lắng, quan tâm</div>
+<div class="example">"I'm concerned about your health."</div>
+<button class="vocab-audio-btn" onclick="speakText('concerned', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>empathetic /em.pəˈθet.ɪk/</strong>
+<div class="pos">(adjective)</div>
+<div class="meaning">Đồng cảm</div>
+<div class="example">"Thank you for being so empathetic."</div>
+<button class="vocab-audio-btn" onclick="speakText('empathetic', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
 </div>
 </div>
 </div>
@@ -1236,113 +1234,97 @@ May feel abrupt.
 <div class="dialogue-grid">
 
 <div class="dialogue-card">
-<h4 class="case-title"> Dialogue 1: Negotiating Rent with Landlord (Life)</h4>
-<div class="dialogue-context"><strong>Context:</strong> Your lease is up for renewal. The landlord wants to raise the rent by 15%. You want to negotiate a lower increase.</div>
+<h4 class="case-title">🏠 Dialogue 1: Friend Shares Health Concern (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Your friend mentions they've been having persistent headaches and feeling stressed. They're clearly worried but haven't seen a doctor yet.</div>
 <div class="audio-controls">
 <button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
 <button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
 </div>
 <div class="dialogue-box">
 <div class="dialogue-turn">
-<div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"I'd like to discuss the rent for the next lease." <span class="move-highlight move1">Open</span></div>
-</div>
-<div class="dialogue-turn">
-<div class="dialogue-speaker">Landlord:</div>
-<div class="dialogue-text">"Sure. I'm thinking of raising it by 15%."</div>
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"I've been having these persistent headaches lately, and I'm feeling really stressed."</div>
 </div>
 <div class="dialogue-turn">
 <div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"What's important to you about the rent increase?" <span class="move-highlight move2">Listen</span></div>
+<div class="dialogue-text">"I'm really sorry to hear you're dealing with this. That sounds really difficult." <span class="move-highlight move1">Empathize</span></div>
 </div>
 <div class="dialogue-turn">
-<div class="dialogue-speaker">Landlord:</div>
-<div class="dialogue-text">"The market has gone up, and I need to cover my costs."</div>
-</div>
-<div class="dialogue-turn">
-<div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"I understand. Could we consider a 10% increase instead of 15%?" <span class="move-highlight move3">Explore</span></div>
-</div>
-<div class="dialogue-turn">
-<div class="dialogue-speaker">Landlord:</div>
-<div class="dialogue-text">"I could do 12%."</div>
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Yeah, it's been really tough. I haven't been able to sleep well either."</div>
 </div>
 <div class="dialogue-turn">
 <div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"I'm comfortable with 12%." <span class="move-highlight move1">Agree</span></div>
+<div class="dialogue-text">"Have you considered seeing a doctor about the headaches?" <span class="move-highlight move2">Suggest</span></div>
 </div>
 <div class="dialogue-turn">
-<div class="dialogue-speaker">Landlord:</div>
-<div class="dialogue-text">"Great. Let's sign the lease."</div>
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"I haven't yet. I've been putting it off."</div>
 </div>
 <div class="dialogue-turn">
 <div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"Let's confirm the terms and sign the lease." <span class="move-highlight move2">Close</span></div>
+<div class="dialogue-text">"I'm here for you if you need anything. Would you like me to help you find a doctor?" <span class="move-highlight move3">Support</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"That would be really helpful, actually."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Great. I'll help you look into it. How are you feeling now?" <span class="move-highlight move1">Follow-up</span></div>
 </div>
 </div>
 <div class="analysis-box">
 <h4>Decision Point Analysis</h4>
 <ul>
-<li><strong>Decision:</strong> Combined Open (clarity) + Listen (understand) + Explore (options) + Agree (clarity) + Close (clarity).</li>
-<li><strong>Alternative Decision:</strong> Accept the first offer. (Risk: Leaves value on the table).</li>
-<li><strong>Why this decision?</strong> Open creates collaboration. Listen creates understanding. Explore creates options. Agree creates closure. Close creates clarity.</li>
-<li><strong>Resistance handled:</strong> Landlord pushed back with "15%." You recalibrated by exploring "10%." Agreed on "12%."</li>
+<li><strong>Decision:</strong> Combined Empathize (show care) + Suggest (offer support) + Support (follow up) + Follow-up (check in).</li>
+<li><strong>Alternative Decision:</strong> Give unsolicited advice. (Risk: Feels presumptuous).</li>
+<li><strong>Why this decision?</strong> Empathize shows care. Suggest shows respect. Support shows ongoing care. Follow-up shows ongoing support.</li>
+<li><strong>Resistance handled:</strong> Friend was hesitant about seeing a doctor. You offered to help them find one.</li>
 </ul>
 </div>
 </div>
 
 <div class="dialogue-card">
-<h4 class="case-title">💼 Dialogue 2: Negotiating Salary with Employer (Business)</h4>
-<div class="dialogue-context"><strong>Context:</strong> You're negotiating a salary increase with your employer. They've offered 5%. You want 15%.</div>
+<h4 class="case-title">💼 Dialogue 2: Colleague Gives Health Advice (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> A colleague notices you look stressed and gives you unsolicited health advice. You're working with your doctor already, but you want to maintain a good relationship.</div>
 <div class="audio-controls">
 <button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
 <button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
 </div>
 <div class="dialogue-box">
 <div class="dialogue-turn">
-<div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"I'd like to discuss my compensation." <span class="move-highlight move1">Open</span></div>
-</div>
-<div class="dialogue-turn">
-<div class="dialogue-speaker">Employer:</div>
-<div class="dialogue-text">"Sure. We're offering 5%."</div>
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">"You look really stressed lately. You should really see a doctor about that."</div>
 </div>
 <div class="dialogue-turn">
 <div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"What's important to you about the compensation?" <span class="move-highlight move2">Listen</span></div>
+<div class="dialogue-text">"I appreciate your concern about my stress." <span class="move-highlight move1">Empathize</span></div>
 </div>
 <div class="dialogue-turn">
-<div class="dialogue-speaker">Employer:</div>
-<div class="dialogue-text">"We need to stay within budget."</div>
-</div>
-<div class="dialogue-turn">
-<div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"I understand. What if we discuss a 12% increase?" <span class="move-highlight move3">Explore</span></div>
-</div>
-<div class="dialogue-turn">
-<div class="dialogue-speaker">Employer:</div>
-<div class="dialogue-text">"We could do 10%."</div>
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">"I'm just worried about you. You should really get that checked out."</div>
 </div>
 <div class="dialogue-turn">
 <div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"I can agree to 10%." <span class="move-highlight move1">Agree</span></div>
+<div class="dialogue-text">"I'm working with my doctor on this, so I'm in good hands." <span class="move-highlight move2">Set Boundary</span></div>
 </div>
 <div class="dialogue-turn">
-<div class="dialogue-speaker">Employer:</div>
-<div class="dialogue-text">"Great. Let's finalize this."</div>
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">"Oh, okay. I just wanted to make sure you're okay."</div>
 </div>
 <div class="dialogue-turn">
 <div class="dialogue-speaker">You:</div>
-<div class="dialogue-text">"Let's move forward with 10%." <span class="move-highlight move2">Close</span></div>
+<div class="dialogue-text">"I appreciate you looking out for me. Thanks again for your concern." <span class="move-highlight move3">Support</span></div>
 </div>
 </div>
 <div class="analysis-box">
 <h4>Decision Point Analysis</h4>
 <ul>
-<li><strong>Decision:</strong> Combined Open (clarity) + Listen (understand) + Explore (options) + Agree (clarity) + Close (clarity).</li>
-<li><strong>Alternative Decision:</strong> Accept the first offer. (Risk: Leaves value on the table).</li>
-<li><strong>Why this decision?</strong> Open creates collaboration. Listen creates understanding. Explore creates options. Agree creates closure. Close creates clarity.</li>
-<li><strong>Resistance handled:</strong> Employer pushed back with "5%." You recalibrated by exploring "12%." Agreed on "10%."</li>
+<li><strong>Decision:</strong> Combined Empathize (acknowledge concern) + Set Boundary (graceful boundary) + Support (show appreciation).</li>
+<li><strong>Alternative Decision:</strong> React defensively. (Risk: Damages relationship).</li>
+<li><strong>Why this decision?</strong> Empathize acknowledges concern. Set boundary maintains boundaries. Support maintains relationship.</li>
+<li><strong>Resistance handled:</strong> Colleague was persistent about giving advice. You set boundary gracefully while maintaining relationship.</li>
 </ul>
 </div>
 </div>
@@ -1357,146 +1339,143 @@ May feel abrupt.
 </div>
 <div class="listening-section">
 <h3 class="listening-title">🎧 Audio</h3>
-<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Life Context:</strong> Listen to Dialogue 1 (Negotiating Rent with Landlord)</p>
-<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Business Context:</strong> Listen to Dialogue 2 (Negotiating Salary with Employer)</p>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Life Context:</strong> Listen to Dialogue 1 (Friend Shares Health Concern)</p>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Business Context:</strong> Listen to Dialogue 2 (Colleague Gives Health Advice)</p>
 <div class="transcript-box">
 <h4>📄 Transcript</h4>
 <p style="font-size: 13px; color: var(--text-secondary);"><strong>Life Dialogue Key Phrases:</strong></p>
 <ul style="padding-left: 20px; font-size: 13px; color: var(--text-secondary);">
-<li>"I'd like to discuss the rent for the next lease."</li>
-<li>"What's important to you about the rent increase?"</li>
-<li>"Could we consider a 10% increase?"</li>
-<li>"I'm comfortable with 12%."</li>
-<li>"Let's confirm the terms."</li>
+<li>"I'm really sorry to hear you're dealing with this. That sounds really difficult."</li>
+<li>"Have you considered seeing a doctor about the headaches?"</li>
+<li>"I'm here for you if you need anything."</li>
+<li>"How are you feeling now?"</li>
 </ul>
 <p style="font-size: 13px; color: var(--text-secondary); margin-top: 12px;"><strong>Business Dialogue Key Phrases:</strong></p>
 <ul style="padding-left: 20px; font-size: 13px; color: var(--text-secondary);">
-<li>"I'd like to discuss my compensation."</li>
-<li>"What's important to you about the compensation?"</li>
-<li>"What if we discuss a 12% increase?"</li>
-<li>"I can agree to 10%."</li>
-<li>"Let's move forward with 10%."</li>
+<li>"I appreciate your concern about my stress."</li>
+<li>"I'm working with my doctor on this, so I'm in good hands."</li>
+<li>"I appreciate you looking out for me."</li>
 </ul>
 </div>
 <div class="deep-dive-grid">
 <div class="deep-dive-item">
-<div class="phrase">"I'd like to discuss the rent."</div>
+<div class="phrase">"I'm really sorry to hear you're dealing with this."</div>
 <div class="analysis">
-<span class="arrow">↓</span> Not: "I need a lower rent." (aggressive)
-<span class="arrow">↓</span> Not: "I was wondering if maybe..." (passive)
-<span class="arrow">↓</span> <strong>Strategic choice:</strong> Open with clarity
-<span class="arrow">↓</span> <strong>Effect:</strong> Creates collaboration, sets collaborative tone
-<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I'm here to discuss, not to fight"
+<span class="arrow">↓</span> Not: "You should see a doctor." (too direct)
+<span class="arrow">↓</span> Not: "That's nothing serious." (dismissive)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Show genuine empathy
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows genuine care, builds connection
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I care about you and your wellbeing"
 </div>
 </div>
 <div class="deep-dive-item">
-<div class="phrase">"What's important to you?"</div>
+<div class="phrase">"Have you considered seeing a doctor?"</div>
 <div class="analysis">
-<span class="arrow">↓</span> Not: "What do you want?" (aggressive)
-<span class="arrow">↓</span> Not: "I don't know what you want." (passive)
-<span class="arrow">↓</span> <strong>Strategic choice:</strong> Listen to understand
-<span class="arrow">↓</span> <strong>Effect:</strong> Creates understanding, opens dialogue
-<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I want to understand your perspective"
+<span class="arrow">↓</span> Not: "You need to see a doctor." (too direct)
+<span class="arrow">↓</span> Not: "You should get that checked." (presumptuous)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Offer gentle suggestion
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows respect for their autonomy
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I respect your autonomy"
 </div>
 </div>
 <div class="deep-dive-item">
-<div class="phrase">"Could we consider a 10% increase?"</div>
+<div class="phrase">"I appreciate your concern about my stress."</div>
 <div class="analysis">
-<span class="arrow">↓</span> Not: "I need 10%." (aggressive)
-<span class="arrow">↓</span> Not: "I don't know what to do." (passive)
-<span class="arrow">↓</span> <strong>Strategic choice:</strong> Explore options
-<span class="arrow">↓</span> <strong>Effect:</strong> Creates options, opens creative thinking
-<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I'm open to finding a solution"
+<span class="arrow">↓</span> Not: "I don't need your advice." (too harsh)
+<span class="arrow">↓</span> Not: "I'm fine." (dismissive)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Acknowledge concern gracefully
+<span class="arrow">↓</span> <strong>Effect:</strong> Maintains relationship while setting boundary
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I appreciate your concern, but I'm handling it"
 </div>
 </div>
 <div class="deep-dive-item">
-<div class="phrase">"I'm comfortable with 12%."</div>
+<div class="phrase">"I appreciate you looking out for me."</div>
 <div class="analysis">
-<span class="arrow">↓</span> Not: "I need 12%." (aggressive)
-<span class="arrow">↓</span> Not: "I guess 12% is okay." (passive)
-<span class="arrow">↓</span> <strong>Strategic choice:</strong> Agree with clarity
-<span class="arrow">↓</span> <strong>Effect:</strong> Creates closure, creates clarity
-<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I can agree to this"
+<span class="arrow">↓</span> Not: "Thanks, but I'm fine." (less personal)
+<span class="arrow">↓</span> Not: "I don't need your help." (too harsh)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Show appreciation gracefully
+<span class="arrow">↓</span> <strong>Effect:</strong> Maintains relationship while maintaining boundaries
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I appreciate your concern, even though I don't need your advice"
 </div>
 </div>
 </div>
 <div class="language-notes-grid">
 <div class="language-notes-box">
-<div class="phrase">"I'd like to discuss..."</div>
-<div class="note"><strong>Sắc thái:</strong> Collaborative, clear</div>
-<div class="note"><strong>Leadership framing:</strong> Sets collaborative tone</div>
-<div class="note"><strong>Alternative:</strong> "I need..." (aggressive)</div>
+<div class="phrase">"I'm really sorry to hear..."</div>
+<div class="note"><strong>Sắc thái:</strong> Empathetic, caring</div>
+<div class="note"><strong>Leadership framing:</strong> Shows genuine care</div>
+<div class="note"><strong>Alternative:</strong> "You should..." (too direct)</div>
 </div>
 <div class="language-notes-box">
-<div class="phrase">"What's important to you?"</div>
-<div class="note"><strong>Sắc thái:</strong> Curious, understanding</div>
-<div class="note"><strong>Leadership framing:</strong> Shows you want to understand</div>
-<div class="note"><strong>Alternative:</strong> "What do you want?" (aggressive)</div>
+<div class="phrase">"Have you considered..."</div>
+<div class="note"><strong>Sắc thái:</strong> Gentle, respectful</div>
+<div class="note"><strong>Leadership framing:</strong> Shows respect for autonomy</div>
+<div class="note"><strong>Alternative:</strong> "You need to..." (too direct)</div>
 </div>
 <div class="language-notes-box">
-<div class="phrase">"Could we consider..."</div>
-<div class="note"><strong>Sắc thái:</strong> Exploratory, open</div>
-<div class="note"><strong>Leadership framing:</strong> Shows you're open to options</div>
-<div class="note"><strong>Alternative:</strong> "I need..." (aggressive)</div>
+<div class="phrase">"I appreciate your concern..."</div>
+<div class="note"><strong>Sắc thái:</strong> Graceful, appreciative</div>
+<div class="note"><strong>Leadership framing:</strong> Maintains relationship</div>
+<div class="note"><strong>Alternative:</strong> "I don't need..." (too harsh)</div>
 </div>
 </div>
 <div class="pronunciation-grid">
 <div class="pronunciation-deep-dive">
-<div class="phrase">1. Collaborative Tone for Opening</div>
-<div class="detail">"I'd like to discuss..." (Collaborative, clear, not aggressive)</div>
+<div class="phrase">1. Empathetic Tone for Empathy</div>
+<div class="detail">"I'm really sorry to hear..." (Warm, genuine, caring)</div>
 </div>
 <div class="pronunciation-deep-dive">
-<div class="phrase">2. Stress on Key Words</div>
-<div class="detail">"What's important to you?" (Stress shows this is a powerful question)</div>
+<div class="phrase">2. Gentle Tone for Suggestions</div>
+<div class="detail">"Have you considered..." (Gentle, respectful, not demanding)</div>
 </div>
 <div class="pronunciation-deep-dive">
-<div class="phrase">3. Pause for Impact</div>
-<div class="detail">"Could we consider... (pause) ...a 10% increase?" (Pause lets it sink in)</div>
+<div class="phrase">3. Graceful Tone for Boundaries</div>
+<div class="detail">"I appreciate your concern..." (Graceful, appreciative, not harsh)</div>
 </div>
 <div class="pronunciation-deep-dive">
 <div class="phrase">4. Rising Intonation for Questions</div>
-<div class="detail">"Could we consider a 10% increase? " (Rising = inviting, not demanding)</div>
+<div class="detail">"Have you considered...? ↗" (Rising = genuine question, not rhetorical)</div>
 </div>
 </div>
 <div class="language-notes-grid">
 <div class="language-notes-box">
 <div class="phrase">🧠 Listening Strategy</div>
-<div class="note"><strong>Lần 1: Nghe Opening</strong></div>
-<div class="note"><strong>Focus:</strong> Tone, clarity, collaboration</div>
-<div class="note"><strong>Question:</strong> "How are they opening?"</div>
-<div class="note"><strong>Signal:</strong> Collaborative → Collaboration is strong</div>
+<div class="note"><strong>Lần 1: Nghe Empathy</strong></div>
+<div class="note"><strong>Focus:</strong> Tone, empathy, care</div>
+<div class="note"><strong>Question:</strong> "How are they showing empathy?"</div>
+<div class="note"><strong>Signal:</strong> Empathetic → Shows genuine care</div>
 </div>
 <div class="language-notes-box">
-<div class="note"><strong>Lần 2: Nghe Listening</strong></div>
-<div class="note"><strong>Focus:</strong> Curiosity, understanding</div>
-<div class="note"><strong>Question:</strong> "How are they listening?"</div>
-<div class="note"><strong>Signal:</strong> Curious → Understanding is strong</div>
+<div class="note"><strong>Lần 2: Nghe Suggestions</strong></div>
+<div class="note"><strong>Focus:</strong> Gentleness, respect</div>
+<div class="note"><strong>Question:</strong> "How are they offering suggestions?"</div>
+<div class="note"><strong>Signal:</strong> Gentle → Shows respect for autonomy</div>
 </div>
 <div class="language-notes-box">
-<div class="note"><strong>Lần 3: Nghe Exploring</strong></div>
-<div class="note"><strong>Focus:</strong> Options, creativity</div>
-<div class="note"><strong>Question:</strong> "How are they exploring?"</div>
-<div class="note"><strong>Signal:</strong> Exploratory → Creativity is strong</div>
+<div class="note"><strong>Lần 3: Nghe Boundaries</strong></div>
+<div class="note"><strong>Focus:</strong> Gracefulness, appreciation</div>
+<div class="note"><strong>Question:</strong> "How are they setting boundaries?"</div>
+<div class="note"><strong>Signal:</strong> Graceful → Maintains relationship</div>
 </div>
 </div>
 <div class="language-notes-box">
 <div class="phrase">🗣️ Shadowing Challenge</div>
-<div class="note">Copy the negotiation rhythm, not just the words:</div>
-<div class="note">1. Listen to: "I'd like to discuss... What's important to you? Could we consider..."</div>
-<div class="note">2. Shadow: Match the collaborative, curious, exploratory tone</div>
-<div class="note">3. Focus: Stress on "like," "important," "could"</div>
+<div class="note">Copy the empathetic rhythm, not just the words:</div>
+<div class="note">1. Listen to: "I'm really sorry to hear... Have you considered... I appreciate your concern..."</div>
+<div class="note">2. Shadow: Match the empathetic, gentle, graceful tone</div>
+<div class="note">3. Focus: Stress on "sorry," "considered," "appreciate"</div>
 <div class="note">4. Practice: Say it 3 times, each time focusing on different emotional quality</div>
 </div>
 <div class="language-notes-box">
 <div class="phrase">✅ Outcome-based Questions</div>
-<div class="note">1. Why did you say "I'd like to discuss" instead of "I need"?</div>
-<div class="note">✅ To create collaboration. Collaborative opening creates collaboration.</div>
-<div class="note">2. What was the strategic goal of asking "What's important to you?"</div>
-<div class="note">✅ To listen to understand. Listening creates understanding.</div>
-<div class="note">3. How did you handle the pushback when they said "15%"?</div>
-<div class="note">✅ Recalibrated by exploring "10%." Explored options.</div>
-<div class="note">4. What was the trade-off of exploring options?</div>
-<div class="note">✅ Takes more time, but creates options. Creates creative thinking.</div>
+<div class="note">1. Why did you say "I'm really sorry to hear" instead of "You should see a doctor"?</div>
+<div class="note">✅ To show genuine empathy. Empathy shows care before giving advice.</div>
+<div class="note">2. What was the strategic goal of asking "Have you considered seeing a doctor?"</div>
+<div class="note">✅ To offer gentle suggestion. Gentle suggestion shows respect for autonomy.</div>
+<div class="note">3. How did you handle the colleague's persistent advice?</div>
+<div class="note">✅ Set boundary gracefully. Graceful boundary maintains relationship.</div>
+<div class="note">4. What was the trade-off of setting boundaries gracefully?</div>
+<div class="note">✅ Takes more time, but maintains relationship. Maintains relationship while maintaining boundaries.</div>
 </div>
 </div>
 </section>
@@ -1517,29 +1496,29 @@ May feel abrupt.
 </thead>
 <tbody>
 <tr>
-<td>Open with clarity</td>
-<td>"I'd like to discuss..." / "I'd like to talk about..."</td>
-<td>"I'd like to discuss the rent."</td>
+<td>Show empathy</td>
+<td>"I'm sorry to hear..." / "That sounds..."</td>
+<td>"I'm really sorry to hear you're dealing with this."</td>
 </tr>
 <tr>
-<td>Listen to understand</td>
-<td>"What's important to you?" / "What matters most?"</td>
-<td>"What's important to you about the rent?"</td>
+<td>Offer gentle suggestion</td>
+<td>"Have you considered..." / "You might want to..."</td>
+<td>"Have you considered seeing a doctor?"</td>
 </tr>
 <tr>
-<td>Explore options</td>
-<td>"What if we..." / "Could we consider..."</td>
-<td>"Could we consider a 10% increase?"</td>
+<td>Offer support</td>
+<td>"I'm here for you..." / "I'm here if you need..."</td>
+<td>"I'm here for you if you need anything."</td>
 </tr>
 <tr>
-<td>Agree with clarity</td>
-<td>"I can agree to..." / "I'm comfortable with..."</td>
-<td>"I'm comfortable with 12%."</td>
+<td>Set boundary gracefully</td>
+<td>"I appreciate your concern, but..." / "I'd prefer to..."</td>
+<td>"I appreciate your concern, but I'm handling it."</td>
 </tr>
 <tr>
-<td>Close with clarity</td>
-<td>"Let's confirm..." / "Let's move forward..."</td>
-<td>"Let's confirm the terms."</td>
+<td>Show appreciation</td>
+<td>"I appreciate..." / "Thank you for..."</td>
+<td>"I appreciate you looking out for me."</td>
 </tr>
 </tbody>
 </table>
@@ -1554,20 +1533,20 @@ May feel abrupt.
 <h3 class="speaking-title">🎵 Strategic Pronunciation</h3>
 <div class="pronunciation-grid">
 <div class="pronunciation-deep-dive">
-<div class="phrase">1. Collaborative Tone for Opening</div>
-<div class="detail">"I'd like to discuss..." (Collaborative, clear, not aggressive)</div>
+<div class="phrase">1. Empathetic Tone for Empathy</div>
+<div class="detail">"I'm really sorry to hear..." (Warm, genuine, caring)</div>
 </div>
 <div class="pronunciation-deep-dive">
-<div class="phrase">2. Stress on Key Words</div>
-<div class="detail">"What's important to you?" (Stress shows this is a powerful question)</div>
+<div class="phrase">2. Gentle Tone for Suggestions</div>
+<div class="detail">"Have you considered..." (Gentle, respectful, not demanding)</div>
 </div>
 <div class="pronunciation-deep-dive">
-<div class="phrase">3. Pause for Impact</div>
-<div class="detail">"Could we consider... (pause) ...a 10% increase?" (Pause lets it sink in)</div>
+<div class="phrase">3. Graceful Tone for Boundaries</div>
+<div class="detail">"I appreciate your concern..." (Graceful, appreciative, not harsh)</div>
 </div>
 <div class="pronunciation-deep-dive">
 <div class="phrase">4. Rising Intonation for Questions</div>
-<div class="detail">"Could we consider a 10% increase? ↗" (Rising = inviting, not demanding)</div>
+<div class="detail">"Have you considered...? ↗" (Rising = genuine question, not rhetorical)</div>
 </div>
 </div>
 </div>
@@ -1578,60 +1557,60 @@ May feel abrupt.
 <h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (with Pushback + Alternative + Common Mistake)</h2>
 </div>
 <div class="speaking-section">
-<h3 class="speaking-title">🗣️ Practice Scenarios</h3>
+<h3 class="speaking-title">️ Practice Scenarios</h3>
 <div class="scenario-grid">
 <div class="scenario-card casual">
 <span class="scenario-badge">Life</span>
-<h3>Scenario 1: Negotiating Rent with Landlord</h3>
-<div class="scenario-context">Your lease is up for renewal. The landlord wants to raise the rent by 15%. You want to negotiate a lower increase.</div>
-<div class="scenario-goal"><strong>Round 1 (Open + Listen):</strong></div>
-<div class="scenario-response">"I'd like to discuss the rent. What's important to you about the rent increase?"</div>
+<h3>Scenario 1: Friend Shares Health Concern</h3>
+<div class="scenario-context">Your friend mentions they've been having persistent headaches and feeling stressed.</div>
+<div class="scenario-goal"><strong>Round 1 (Empathize + Suggest):</strong></div>
+<div class="scenario-response">"I'm really sorry to hear you're dealing with this. Have you considered seeing a doctor?"</div>
 <div class="scenario-goal"><strong>Pushback:</strong></div>
-<div class="scenario-response">"The market has gone up. I need to cover my costs."</div>
-<div class="scenario-goal"><strong>Round 2 (Explore + Agree + Close):</strong></div>
-<div class="scenario-response">"I understand. Could we consider a 10% increase? I'm comfortable with 12%. Let's confirm the terms."</div>
+<div class="scenario-response">"I haven't yet. I've been putting it off."</div>
+<div class="scenario-goal"><strong>Round 2 (Support + Follow-up):</strong></div>
+<div class="scenario-response">"I'm here for you if you need anything. How are you feeling now?"</div>
 <div class="scenario-goal"><strong>Alternative Response:</strong></div>
-<div class="scenario-response">"I need a lower rent." (Only if you have no leverage)</div>
-<div class="scenario-req"><strong>Common Mistake:</strong> Opening too aggressively. This creates resistance.</div>
+<div class="scenario-response">"You should see a doctor immediately." (Too direct, feels presumptuous)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Giving unsolicited advice instead of showing empathy first.</div>
 </div>
 <div class="scenario-card professional">
 <span class="scenario-badge">Business</span>
-<h3>Scenario 2: Negotiating Salary with Employer</h3>
-<div class="scenario-context">You're negotiating a salary increase with your employer. They've offered 5%. You want 15%.</div>
-<div class="scenario-goal"><strong>Round 1 (Open + Listen):</strong></div>
-<div class="scenario-response">"I'd like to discuss my compensation. What's important to you about the compensation?"</div>
+<h3>Scenario 2: Colleague Gives Health Advice</h3>
+<div class="scenario-context">A colleague notices you look stressed and gives you unsolicited health advice.</div>
+<div class="scenario-goal"><strong>Round 1 (Empathize + Set Boundary):</strong></div>
+<div class="scenario-response">"I appreciate your concern about my stress. I'm working with my doctor on this."</div>
 <div class="scenario-goal"><strong>Pushback:</strong></div>
-<div class="scenario-response">"We need to stay within budget."</div>
-<div class="scenario-goal"><strong>Round 2 (Explore + Agree + Close):</strong></div>
-<div class="scenario-response">"I understand. What if we discuss a 12% increase? I can agree to 10%. Let's move forward with 10%."</div>
+<div class="scenario-response">"I'm just worried about you. You should really get that checked out."</div>
+<div class="scenario-goal"><strong>Round 2 (Support):</strong></div>
+<div class="scenario-response">"I appreciate you looking out for me. Thanks again for your concern."</div>
 <div class="scenario-goal"><strong>Alternative Response:</strong></div>
-<div class="scenario-response">"I need 15% or I'll leave." (Only if you have no leverage)</div>
-<div class="scenario-req"><strong>Common Mistake:</strong> Opening too aggressively. This creates resistance.</div>
+<div class="scenario-response">"I don't need your advice." (Too harsh, damages relationship)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Reacting defensively instead of responding gracefully.</div>
 </div>
 <div class="scenario-card casual">
 <span class="scenario-badge">Life</span>
-<h3>Scenario 3: Negotiating Price at a Market</h3>
-<div class="scenario-context">You're at a market. The vendor is asking $100. You want to pay $70.</div>
-<div class="scenario-goal"><strong>Round 1 (Open + Listen):</strong></div>
-<div class="scenario-response">"I'd like to discuss the price. What's important to you about the price?"</div>
+<h3>Scenario 3: Family Member Asks About Health Details</h3>
+<div class="scenario-context">A family member asks about your health details. You want to maintain privacy.</div>
+<div class="scenario-goal"><strong>Round 1 (Empathize + Set Boundary):</strong></div>
+<div class="scenario-response">"I appreciate your concern. I'd prefer to keep the details private, but I'm doing well."</div>
 <div class="scenario-goal"><strong>Pushback:</strong></div>
-<div class="scenario-response">"The price is fixed."</div>
-<div class="scenario-goal"><strong>Round 2 (Explore + Agree + Close):</strong></div>
-<div class="scenario-response">"I understand. Could we consider $80? I'm comfortable with $80. Let's confirm the price."</div>
+<div class="scenario-response">"I'm just worried about you. What exactly is going on?"</div>
+<div class="scenario-goal"><strong>Round 2 (Support):</strong></div>
+<div class="scenario-response">"I appreciate your concern. I'm working with my doctor, so I'm in good hands."</div>
 <div class="scenario-goal"><strong>Alternative Response:</strong></div>
-<div class="scenario-response">"I need $70 or I'll walk away." (Only if you have no leverage)</div>
-<div class="scenario-req"><strong>Common Mistake:</strong> Opening too aggressively. This creates resistance.</div>
+<div class="scenario-response">"None of your business." (Too harsh, damages relationship)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Setting boundaries too harshly instead of gracefully.</div>
 </div>
 <div class="scenario-card challenge">
 <span class="scenario-badge">Challenge</span>
-<h3>Scenario 4: Double Negotiation</h3>
-<div class="scenario-context">Morning: Negotiate rent with landlord. Afternoon: Negotiate salary with employer.</div>
-<div class="scenario-goal"><strong>Morning (Life - Open + Listen + Explore + Agree + Close):</strong></div>
-<div class="scenario-response">"I'd like to discuss the rent. What's important to you? Could we consider a 10% increase? I'm comfortable with 12%. Let's confirm the terms."</div>
-<div class="scenario-goal"><strong>Afternoon (Business - Open + Listen + Explore + Agree + Close):</strong></div>
-<div class="scenario-response">"I'd like to discuss my compensation. What's important to you? What if we discuss a 12% increase? I can agree to 10%. Let's move forward with 10%."</div>
+<h3>Scenario 4: Double Scenario</h3>
+<div class="scenario-context">Morning: Friend shares health concern. Afternoon: Colleague gives health advice.</div>
+<div class="scenario-goal"><strong>Morning (Life - Empathize + Suggest + Support + Follow-up):</strong></div>
+<div class="scenario-response">"I'm really sorry to hear you're dealing with this. Have you considered seeing a doctor? I'm here for you if you need anything. How are you feeling now?"</div>
+<div class="scenario-goal"><strong>Afternoon (Business - Empathize + Set Boundary + Support):</strong></div>
+<div class="scenario-response">"I appreciate your concern about my stress. I'm working with my doctor on this. I appreciate you looking out for me."</div>
 <div class="scenario-goal"><strong>Reflection:</strong></div>
-<div class="scenario-req">How did your tone, pace, and word choice change between the two? Life = collaborative, curious. Business = direct, clear.</div>
+<div class="scenario-req">How did your tone, pace, and word choice change between the two? Life = empathetic, gentle. Business = graceful, professional.</div>
 </div>
 </div>
 </div>
@@ -1639,21 +1618,21 @@ May feel abrupt.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Negotiation Audit</h2>
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Health Advice Audit</h2>
 </div>
 <div class="task-section">
-<h3 class="task-title">🎯 Practice Tasks</h3>
+<h3 class="task-title"> Practice Tasks</h3>
 <div class="task-grid">
 <div class="task-card easy">
 <div class="task-level">EASY</div>
-<h3>📝 The Negotiation Audit</h3>
+<h3>📝 The Health Advice Audit</h3>
 <div class="task-time">⏱️ 15 minutes</div>
-<div class="task-desc">Identify 1 negotiation in your life or work. Apply the 5 lenses. What decisions are you making? Note the trade-offs.</div>
+<div class="task-desc">Identify 1 health advice conversation in your life or work. Apply the 5 lenses. What decisions are you making? Note the trade-offs.</div>
 <div class="task-requirements">
 <h4>Requirements:</h4>
 <ul>
-<li>Identify the negotiation</li>
-<li>Apply the 5 lenses (Opening, Listening, Exploring, Agreeing, Closing)</li>
+<li>Identify the health advice conversation</li>
+<li>Apply the 5 lenses (Empathy, Precision, Cultural, Receiving, Boundary)</li>
 <li>What decisions are you making?</li>
 <li>Note the trade-offs</li>
 </ul>
@@ -1662,15 +1641,15 @@ May feel abrupt.
 </div>
 <div class="task-card standard">
 <div class="task-level">STANDARD</div>
-<h3>🎭 The Negotiation Practice</h3>
+<h3>🎭 The Health Advice Practice</h3>
 <div class="task-time">⏱️ 30 minutes</div>
-<div class="task-desc">Role-play a negotiation scenario with a friend. Practice the Negotiation Flow (Open → Listen → Explore → Agree → Close). Get feedback on your tone and clarity.</div>
+<div class="task-desc">Role-play a health advice scenario with a friend. Practice the Advice Flow (Empathize → Suggest → Support → Follow-up). Get feedback on your tone and empathy.</div>
 <div class="task-requirements">
 <h4>Requirements:</h4>
 <ul>
-<li>Choose a negotiation scenario (life or business)</li>
-<li>Practice all 5 steps of the Negotiation Flow</li>
-<li>Get feedback on your tone, questions, and clarity</li>
+<li>Choose a health advice scenario (life or business)</li>
+<li>Practice all 4 steps of the Advice Flow</li>
+<li>Get feedback on your tone, empathy, and cultural sensitivity</li>
 <li>Note what worked and what didn't</li>
 </ul>
 </div>
@@ -1678,15 +1657,15 @@ May feel abrupt.
 </div>
 <div class="task-card challenge">
 <div class="task-level">CHALLENGE</div>
-<h3>🎯 The Real Negotiation</h3>
-<div class="task-time">️ 60 minutes</div>
-<div class="task-desc">This week, have an actual negotiation. Use the 5 lenses and Negotiation Flow in real-time. Note what worked, what didn't, and what you learned about your default style.</div>
+<h3>🎯 The Real Health Advice</h3>
+<div class="task-time">⏱️ 60 minutes</div>
+<div class="task-desc">This week, have an actual health advice conversation. Use the 5 lenses and Advice Flow in real-time. Note what worked, what didn't, and what you learned about your default style.</div>
 <div class="task-requirements">
 <h4>Requirements:</h4>
 <ul>
-<li>Identify an actual negotiation to have</li>
+<li>Identify an actual health advice conversation to have</li>
 <li>Apply the 5 lenses in real-time</li>
-<li>Use the Negotiation Flow (Open → Listen → Explore → Agree → Close)</li>
+<li>Use the Advice Flow (Empathize → Suggest → Support → Follow-up)</li>
 <li>Note what worked, what didn't</li>
 <li>What did you learn about your default style?</li>
 </ul>
@@ -1699,33 +1678,33 @@ May feel abrupt.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Negotiation Mastery</h2>
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Health Advice Mastery</h2>
 </div>
 <div class="mastery-section">
 <h3 class="mastery-title"> Mastery Checklist</h3>
 <div class="mastery-grid">
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I open with clarity</h4>
-<p>I open with "I'd like to discuss..." not "I need..."</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I show empathy first</h4>
+<p>I show empathy before giving advice.</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I listen to understand</h4>
-<p>I ask "What's important to you?" not "What do you want?"</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I offer gentle suggestions</h4>
+<p>I offer gentle suggestions, not unsolicited advice.</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I explore options</h4>
-<p>I ask "Could we consider..." not "I need..."</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I respect cultural differences</h4>
+<p>I respect cultural differences in health communication.</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I agree with clarity</h4>
-<p>I say "I'm comfortable with..." not "I guess..."</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I receive advice gracefully</h4>
+<p>I receive advice gracefully, not defensively.</p>
 </div>
 <div class="mastery-card">
-<h4><i class="ph-duotone ph-check-circle"></i> I close with clarity</h4>
-<p>I say "Let's confirm..." not "Let's see..."</p>
+<h4><i class="ph-duotone ph-check-circle"></i> I set boundaries respectfully</h4>
+<p>I set boundaries respectfully, not harshly.</p>
 </div>
 </div>
-<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the 5 lenses and Negotiation Flow (Open → Listen → Explore → Agree → Close) in negotiations, you are ready for Day 66: Negotiating Salary and Compensation.</p>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the 5 lenses and Advice Flow (Empathize → Suggest → Support → Follow-up) in health advice conversations, you are ready for Day 66: Discussing Mental Health Openly.</p>
 </div>
 </section>
 
@@ -1736,15 +1715,15 @@ May feel abrupt.
 <div class="flashcard-section">
 <div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
 <div class="flashcard-front">
-<p><strong>Situation:</strong> You need to negotiate rent with your landlord</p>
-<button>Tap to reveal Negotiation Flow →</button>
+<p><strong>Situation:</strong> Friend shares health concern</p>
+<button>Tap to reveal Advice Flow →</button>
 </div>
 <div class="flashcard-back">
-<p><strong>Wrong Instinct:</strong> "I need a lower rent."</p>
-<p><strong>C1 Language:</strong> Open → Listen → Explore → Agree → Close.</p>
-<p><strong>Trade-off:</strong> Takes more time upfront, but creates collaboration and better outcomes.</p>
+<p><strong>Wrong Instinct:</strong> "You should see a doctor immediately."</p>
+<p><strong>C1 Language:</strong> Empathize → Suggest → Support → Follow-up.</p>
+<p><strong>Trade-off:</strong> Takes more time upfront, but shows empathy and respect.</p>
 <div class="flashcard-tip">
-<strong>💡 Tip:</strong> In negotiations, opening creates collaboration. Listening creates understanding. Exploring creates options. Agreeing creates closure. Closing creates clarity.
+<strong>💡 Tip:</strong> In health advice, empathy shows care. Suggestions show respect. Support shows ongoing care. Follow-up shows ongoing support.
 </div>
 </div>
 </div>
@@ -1758,81 +1737,81 @@ May feel abrupt.
 
 <section class="section">
 <div class="section-header">
-<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Negotiating Terms</h2>
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Health Advice</h2>
 </div>
 <div class="quiz-section">
 <h3 class="quiz-title">📝 Test Your Knowledge</h3>
 <div class="quiz-grid">
 <div class="quiz-question">
-<h4>1. (Judgement) You need to negotiate rent with your landlord. Best opening?</h4>
+<h4>1. (Judgement) Friend shares health concern. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I need a lower rent."</div>
-<div class="quiz-option">B. "I'd like to discuss the rent."</div>
-<div class="quiz-option">C. "I was wondering if maybe we could talk about the rent."</div>
+<div class="quiz-option">A. "You should see a doctor immediately."</div>
+<div class="quiz-option">B. "I'm really sorry to hear you're dealing with this."</div>
+<div class="quiz-option">C. "That's nothing serious."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>2. (Judgement) Your employer offers 5% salary increase. You want 15%. Best response?</h4>
+<h4>2. (Judgement) Colleague gives health advice. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I need 15%."</div>
-<div class="quiz-option">B. "What's important to you about the compensation?"</div>
-<div class="quiz-option">C. "I can't accept 5%."</div>
+<div class="quiz-option">A. "I don't need your advice."</div>
+<div class="quiz-option">B. "I appreciate your concern, but I'm handling it."</div>
+<div class="quiz-option">C. "I'm fine."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>3. (Judgement) Landlord says "The market has gone up." Best response?</h4>
+<h4>3. (Judgement) Family member asks about health details. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I understand. Could we consider a 10% increase?"</div>
-<div class="quiz-option">B. "I need 10%."</div>
-<div class="quiz-option">C. "I don't know what to do."</div>
+<div class="quiz-option">A. "None of your business."</div>
+<div class="quiz-option">B. "I'd prefer to keep the details private, but I'm doing well."</div>
+<div class="quiz-option">C. "I don't want to talk about it."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>4. (Judgement) Employer says "We need to stay within budget." Best response?</h4>
+<h4>4. (Judgement) Friend from different culture shares concern. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I understand. What if we discuss a 12% increase?"</div>
-<div class="quiz-option">B. "I need 15% or I'll leave."</div>
-<div class="quiz-option">C. "I don't know what to do."</div>
+<div class="quiz-option">A. "You should see a doctor."</div>
+<div class="quiz-option">B. "Have you thought about talking to someone about this?"</div>
+<div class="quiz-option">C. "You need to get that checked."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>5. (Judgement) Landlord offers 12%. Best response?</h4>
+<h4>5. (Judgement) Colleague asks about your health. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "I'm comfortable with 12%."</div>
-<div class="quiz-option">B. "I need 10%."</div>
-<div class="quiz-option">C. "I guess 12% is okay."</div>
+<div class="quiz-option">A. "I don't want to talk about it."</div>
+<div class="quiz-option">B. "I appreciate your concern, but I'm working with my doctor."</div>
+<div class="quiz-option">C. "I'm fine."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>6. (Judgement) Employer offers 10%. Best response?</h4>
+<h4>6. (Judgement) Friend gives unsolicited advice. Best response?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. "Let's move forward with 10%."</div>
-<div class="quiz-option">B. "I need 15%."</div>
-<div class="quiz-option">C. "Let's see."</div>
+<div class="quiz-option">A. "I don't need your advice."</div>
+<div class="quiz-option">B. "I appreciate your concern, but I'm handling it."</div>
+<div class="quiz-option">C. "I don't want your advice."</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>7. (Trade-off) What is the trade-off of opening with "I'd like to discuss"?</h4>
+<h4>7. (Trade-off) What is the trade-off of showing empathy first?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. You create collaboration, but it takes more time.</div>
-<div class="quiz-option">B. You save time but create resistance.</div>
+<div class="quiz-option">A. You show care, but it takes more time.</div>
+<div class="quiz-option">B. You save time but seem uncaring.</div>
 <div class="quiz-option">C. There is no trade-off.</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>8. (Trade-off) What is the trade-off of exploring options?</h4>
+<h4>8. (Trade-off) What is the trade-off of setting boundaries gracefully?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. You create options, but it takes more time.</div>
-<div class="quiz-option">B. You save time but may miss options.</div>
+<div class="quiz-option">A. You maintain relationship, but it takes more time.</div>
+<div class="quiz-option">B. You save time but damage relationship.</div>
 <div class="quiz-option">C. There is no trade-off.</div>
 </div>
 </div>
 <div class="quiz-question">
-<h4>9. (Vocabulary) Which word means "to discuss terms to reach an agreement"?</h4>
+<h4>9. (Vocabulary) Which word means "showing empathy and understanding"?</h4>
 <div class="quiz-options">
-<div class="quiz-option">A. Negotiate</div>
-<div class="quiz-option">B. Compromise</div>
-<div class="quiz-option">C. Settle</div>
+<div class="quiz-option">A. Empathetic</div>
+<div class="quiz-option">B. Considerate</div>
+<div class="quiz-option">C. Supportive</div>
 </div>
 </div>
 </div>
@@ -1841,19 +1820,19 @@ May feel abrupt.
 </section>
 
 <div class="day-navigation">
-<a href="week-09-day-64.html" class="nav-card">
+<a href="week-10-day-64.html" class="nav-card">
 <div class="nav-label">← Previous Day</div>
 <div class="nav-title">Day 64: Describing Symptoms to a Doctor</div>
 </a>
-<a href="week-09-day-66.html" class="nav-card">
+<a href="week-10-day-66.html" class="nav-card">
 <div class="nav-label">Next Day →</div>
-<div class="nav-title">Day 66: Negotiating Salary and Compensation</div>
+<div class="nav-title">Day 66: Discussing Mental Health Openly</div>
 </a>
 </div>
 
 <div class="complete-container">
 <button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 65 Complete & Continue to Day 66</button>
-<div class="complete-message">B2 speakers demand. C1 speakers negotiate. </div>
+<div class="complete-message">B2 speakers give unsolicited advice. C1 speakers offer support sensitively. 💊</div>
 </div>
 
 </div>
@@ -1862,7 +1841,7 @@ May feel abrupt.
 <div class="container">
 <div class="footer-fox">🦊</div>
 <div class="footer-title">Professional Fluency Roadmap</div>
-<div class="footer-tagline">Week 9 · Day 65 · Negotiating Terms and Conditions</div>
+<div class="footer-tagline">Week 10 · Day 65 · Giving and Receiving Health Advice</div>
 </div>
 </footer>
 
@@ -1876,43 +1855,43 @@ let currentButton = null;
 let shadowingMode = false;
 
 const textContent = {
-'lens1': 'Lens 1: Opening. How do I open this negotiation? Decision Cue: High trust, direct. Medium trust, collaborative. Low trust, exploratory.',
-'lens1r1': 'I\'d like to talk about...',
-'lens1r2': 'I\'d like to discuss...',
-'lens1r3': 'I\'d like to discuss the terms...',
-'lens1r4': 'I\'d like to explore some options...',
-'lens2': 'Lens 2: Listening. How do I listen to understand? Decision Cue: They\'re open, ask directly. They\'re hesitant, explore gently. They\'re resistant, listen first.',
-'lens2r1': 'What matters to you?',
-'lens2r2': 'What\'s important to you?',
-'lens2r3': 'What matters most to you?',
-'lens2r4': 'What are your key priorities?',
-'lens3': 'Lens 3: Exploring. How do I explore options? Decision Cue: They\'re open, suggest. They\'re hesitant, propose. They\'re resistant, explore together.',
-'lens3r1': 'What if we...',
-'lens3r2': 'Could we consider...',
-'lens3r3': 'What if we explore...',
-'lens3r4': 'Let\'s explore some options...',
-'lens4': 'Lens 4: Agreeing. How do I agree on terms? Decision Cue: They agree, accept. They propose, consider. They hesitate, propose alternative.',
-'lens4r1': 'I can agree to that',
-'lens4r2': 'I\'m comfortable with that',
-'lens4r3': 'I can agree to those terms',
-'lens4r4': 'I\'m comfortable with those terms',
-'lens5': 'Lens 5: Closing. How do I close the deal? Decision Cue: Clear agreement, confirm. Some uncertainty, clarify. Full agreement, commit.',
-'lens5r1': 'Let\'s confirm...',
-'lens5r2': 'Let\'s make sure we\'re aligned...',
-'lens5r3': 'Let\'s confirm the terms...',
-'lens5r4': 'Let\'s move forward...',
-'negotiate': 'negotiate',
-'terms': 'terms',
-'conditions': 'conditions',
-'compromise': 'compromise',
-'flexibility': 'flexibility',
-'deal': 'deal',
-'agreement': 'agreement',
-'offer': 'offer',
-'counter-offer': 'counter-offer',
-'settle': 'settle',
-'dialogue1': 'Dialogue 1: Negotiating Rent with Landlord. You: I\'d like to discuss the rent for the next lease. Open. Landlord: Sure. I\'m thinking of raising it by 15%. You: What\'s important to you about the rent increase? Listen. Landlord: The market has gone up, and I need to cover my costs. You: I understand. Could we consider a 10% increase instead of 15%? Explore. Landlord: I could do 12%. You: I\'m comfortable with 12%. Agree. Landlord: Great. Let\'s sign the lease. You: Let\'s confirm the terms and sign the lease. Close.',
-'dialogue2': 'Dialogue 2: Negotiating Salary with Employer. You: I\'d like to discuss my compensation. Open. Employer: Sure. We\'re offering 5%. You: What\'s important to you about the compensation? Listen. Employer: We need to stay within budget. You: I understand. What if we discuss a 12% increase? Explore. Employer: We could do 10%. You: I can agree to 10%. Agree. Employer: Great. Let\'s finalize this. You: Let\'s move forward with 10%. Close.'
+'lens1': 'Lens 1: Empathy. How do I show I care? Decision Cue: Close relationship, direct empathy. Professional relationship, professional empathy. Cultural sensitivity, indirect empathy.',
+'lens1r1': 'I\'m really sorry to hear that. That sounds really tough.',
+'lens1r2': 'I\'m sorry to hear you\'re dealing with this.',
+'lens1r3': 'I\'m sorry to hear you\'re dealing with this. How can I support you?',
+'lens1r4': 'I\'m sorry to hear about your situation. Please let me know how I can assist.',
+'lens2': 'Lens 2: Precision. How specific should my advice be? Decision Cue: Medical professional, specific advice. Friend/family, gentle suggestion. Colleague, general support.',
+'lens2r1': 'You might want to consider seeing a doctor if it persists.',
+'lens2r2': 'You might want to consider getting that checked out.',
+'lens2r3': 'You might want to consider consulting a healthcare professional.',
+'lens2r4': 'I would recommend consulting a healthcare professional for a proper assessment.',
+'lens3': 'Lens 3: Cultural Sensitivity. How do I respect cultural differences? Decision Cue: Western culture, direct communication. Eastern culture, indirect communication. Mixed culture, balanced approach.',
+'lens3r1': 'Have you thought about talking to someone about this?',
+'lens3r2': 'You might want to consider speaking with a professional.',
+'lens3r3': 'You might want to consider consulting a healthcare professional.',
+'lens3r4': 'I would recommend seeking professional medical advice.',
+'lens4': 'Lens 4: Receiving. How do I receive advice gracefully? Decision Cue: Helpful advice, grateful acceptance. Unhelpful advice, polite decline. Unsolicited advice, graceful boundary.',
+'lens4r1': 'I appreciate your concern, but I\'m handling it.',
+'lens4r2': 'I appreciate the suggestion, but I\'m working with my doctor on this.',
+'lens4r3': 'I appreciate your concern, but I\'m working with healthcare professionals on this.',
+'lens4r4': 'I appreciate your concern, but I\'m working with medical professionals on this matter.',
+'lens5': 'Lens 5: Boundary. How do I set boundaries respectfully? Decision Cue: Close relationship, direct boundary. Professional relationship, professional boundary. Cultural sensitivity, indirect boundary.',
+'lens5r1': 'I\'d prefer not to discuss the details, but I\'m doing well.',
+'lens5r2': 'I\'d prefer to keep this private, but thank you for asking.',
+'lens5r3': 'I\'d prefer to keep this private, but I appreciate your concern.',
+'lens5r4': 'I\'d prefer to keep this matter private, but I appreciate your concern.',
+'empathy': 'empathy',
+'concern': 'concern',
+'consider': 'consider',
+'support': 'support',
+'boundary': 'boundary',
+'appreciate': 'appreciate',
+'considerate': 'considerate',
+'supportive': 'supportive',
+'concerned': 'concerned',
+'empathetic': 'empathetic',
+'dialogue1': 'Dialogue 1: Friend Shares Health Concern. Friend: I\'ve been having these persistent headaches lately, and I\'m feeling really stressed. You: I\'m really sorry to hear you\'re dealing with this. That sounds really difficult. Empathize. Friend: Yeah, it\'s been really tough. I haven\'t been able to sleep well either. You: Have you considered seeing a doctor about the headaches? Suggest. Friend: I haven\'t yet. I\'ve been putting it off. You: I\'m here for you if you need anything. Would you like me to help you find a doctor? Support. Friend: That would be really helpful, actually. You: Great. I\'ll help you look into it. How are you feeling now? Follow-up.',
+'dialogue2': 'Dialogue 2: Colleague Gives Health Advice. Colleague: You look really stressed lately. You should really see a doctor about that. You: I appreciate your concern about my stress. Empathize. Colleague: I\'m just worried about you. You should really get that checked out. You: I\'m working with my doctor on this, so I\'m in good hands. Set Boundary. Colleague: Oh, okay. I just wanted to make sure you\'re okay. You: I appreciate you looking out for me. Thanks again for your concern. Support.'
 };
 
 // Audio Profiles
@@ -1927,19 +1906,16 @@ speaking: { rate: 1.10, pitch: 1.00 }
 
 // Voice scoring system
 function scoreVoice(voice) {
-let score = 70; // Default score
+let score = 70;
 
-// Platform detection
 const isWindows = navigator.platform.includes('Win');
 const isMac = navigator.platform.includes('Mac');
 const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-// Neural/Online/Natural/Enhanced detection
 if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) {
 score += 20;
 }
 
-// Platform-specific scoring
 if (isWindows) {
 if (voice.name.includes('Microsoft Online')) score += 25;
 if (voice.name.includes('Google')) score += 22;
@@ -1951,7 +1927,6 @@ if (voice.name.includes('Samantha')) score += 18;
 if (voice.name.includes('Alex')) score += 17;
 }
 
-// Language match
 if (voice.lang === 'en-US') score += 10;
 if (voice.lang.startsWith('en')) score += 5;
 
@@ -1966,10 +1941,8 @@ selectBestVoice();
 }
 
 function selectBestVoice() {
-// Filter English voices
 const enVoices = voices.filter(v => v.lang.startsWith('en'));
 
-// Score and select best voice
 let bestVoice = null;
 let bestScore = 0;
 
@@ -1986,7 +1959,7 @@ selectedVoice = bestVoice || enVoices[0];
 if (selectedVoice) {
 console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore);
 } else {
-console.log('🎙️ Audio Engine v3 - No suitable voice found, using default');
+console.log('️ Audio Engine v3 - No suitable voice found, using default');
 }
 }
 
@@ -1995,19 +1968,14 @@ speechSynthesis.onvoiceschanged = loadVoices;
 }
 loadVoices();
 
-// Punctuation Optimizer
 function optimizePunctuation(text) {
-// Add pauses after punctuation
 text = text.replace(/,/g, ', ...');
 text = text.replace(/\./g, '. ...');
 text = text.replace(/;/g, '; ...');
 text = text.replace(/:/g, ': ...');
 text = text.replace(/\?/g, '? ...');
 text = text.replace(/!/g, '! ...');
-
-// Clean up multiple pauses
 text = text.replace(/\.\.\. \.\.\./g, '...');
-
 return text;
 }
 
@@ -2021,7 +1989,6 @@ stopSpeech();
 const text = textContent[textId];
 if (!text) return;
 
-// Optimize punctuation for natural speech
 const optimizedText = optimizePunctuation(text);
 
 currentUtterance = new SpeechSynthesisUtterance(optimizedText);
@@ -2029,13 +1996,10 @@ currentUtterance = new SpeechSynthesisUtterance(optimizedText);
 if (selectedVoice) {
 currentUtterance.voice = selectedVoice;
 
-// Apply audio profile
 const profile = audioProfiles[mode] || audioProfiles.vocabulary;
 currentUtterance.rate = profile.rate;
 
-// Apply pitch variation for dialogue
 if (mode === 'dialogue') {
-// Alternate pitch for different speakers
 currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97;
 } else {
 currentUtterance.pitch = profile.pitch;
@@ -2070,7 +2034,6 @@ icon.className = 'ph-duotone ph-play';
 }
 }
 
-// Shadowing mode: pause and replay
 if (shadowingMode) {
 setTimeout(() => {
 speakText(textId, buttonElement, mode);

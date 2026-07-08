@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 10 Day 66: Navigating Health Insurance Conversations | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #14B8A6; --primary-bright: #0D9488; --primary-soft: #CCFBF1; --primary-deep: #115E59;
+--accent: #06B6D4; --accent-bright: #0891B2; --accent-soft: #CFFAFE; --accent-deep: #155E75;
+--text-primary: #1E293B; --text-secondary: #334155; --text-muted: #64748B;
+--radius-sm: 12px; --radius-md: 18px; --radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+font-family: 'Inter', sans-serif;
+background: #F9FAFB;
+color: var(--text-primary);
+font-size: 15px;
+line-height: 1.6;
+min-height: 100vh;
+position: relative;
+overflow-x: hidden;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(204, 251, 241, 0.4), rgba(207, 250, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(204, 251, 241, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(207, 250, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.register-table { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 12px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.register-table h4 { font-family: 'Fraunces', serif; font-size: 0.9rem; margin-bottom: 10px; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+.register-row { display: grid; grid-template-columns: 90px 1fr; gap: 10px; padding: 8px 10px; background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-sm); margin-bottom: 6px; align-items: center; }
+.register-row:last-child { margin-bottom: 0; }
+.register-tag { font-size: 10px; font-weight: 700; padding: 3px 6px; border-radius: 6px; text-align: center; }
+.register-tag.casual { background: var(--primary-soft); color: var(--primary-deep); }
+.register-tag.neutral { background: var(--accent-soft); color: var(--accent-deep); }
+.register-tag.professional { background: var(--primary-soft); color: var(--primary-deep); }
+.register-tag.formal { background: var(--accent-soft); color: var(--accent-deep); }
+.register-phrase { font-size: 12px; color: var(--text-secondary); font-style: italic; display: flex; align-items: center; gap: 6px; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.integration-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.integration-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.integration-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.integration-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.integration-step-number { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.integration-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.integration-step-goal { font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; }
+.integration-step-tools { font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; }
+.integration-step-language { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.reading-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-decision { margin-bottom: 16px; }
+.case-decision h4 { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.case-decision ul { list-style: none; padding: 0; }
+.case-decision li { padding: 4px 0 4px 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.case-decision li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 700; }
+.useful-language { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-top: 16px; border-left: 3px solid var(--primary); }
+.useful-language h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 12px; color: var(--primary-deep); }
+.useful-language ul { list-style: none; }
+.useful-language li { padding: 6px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); font-style: italic; }
+.useful-language li::before { content: '💬'; position: absolute; left: 0; }
+.breakdown-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); margin: 24px 0; border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.breakdown-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--accent-deep); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.breakdown-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.breakdown-item:last-child { margin-bottom: 0; }
+.breakdown-sentence { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+.breakdown-analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.breakdown-analysis strong { color: var(--accent-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.rewrite-item { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+.rewrite-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.rewrite-task { font-size: 13px; color: #C53030; font-weight: 600; margin-bottom: 12px; }
+.sentence-function-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 16px; }
+.sentence-function { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.sentence-function .sentence { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.sentence-function .function { font-size: 12px; color: var(--primary-bright); font-weight: 600; }
+.before-after-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.before-after { padding: 12px; border-radius: var(--radius-sm); }
+.before-after.normal { background: rgba(245, 101, 101, 0.05); border-left: 3px solid #F56565; }
+.before-after.executive { background: rgba(16, 185, 129, 0.05); border-left: 3px solid var(--primary); }
+.before-after .label { font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.before-after.normal .label { color: #C53030; }
+.before-after.executive .label { color: var(--primary-deep); }
+.before-after .text { font-size: 13px; color: var(--text-secondary); font-style: italic; margin-bottom: 4px; }
+.before-after .explanation { font-size: 12px; color: var(--text-muted); }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 13px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(20, 184, 166, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 12px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 8px; color: var(--text-primary); }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(20, 184, 166, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--primary-bright); font-weight: 600; display: block; margin: 4px 0; }
+.deep-dive-item .analysis strong { color: var(--primary-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.grammar-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.grammar-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(207, 250, 254, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(204, 251, 241, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-goal { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-bottom: 8px; background: rgba(255,255,255,0.9); padding: 6px 10px; border-radius: 6px; }
+.scenario-response { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; font-style: italic; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 6px; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(204, 251, 241, 0.4), rgba(207, 250, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(20, 184, 166, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(204, 251, 241, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(204, 251, 241, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3); }
+.day-navigation { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(20, 184, 166, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(20, 184, 166, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(20, 184, 166, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .sentence-function-grid, .before-after-grid, .integration-steps { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-10.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 10 Hub</a>
+<div class="day-indicator">Day 66 / 70</div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-10.html" class="day-tab">Overview</a>
+<a href="week-10-day-64.html" class="day-tab">Day 64</a>
+<a href="week-10-day-65.html" class="day-tab">Day 65</a>
+<a href="week-10-day-66.html" class="day-tab active">Day 66</a>
+<a href="week-10-day-67.html" class="day-tab">Day 67</a>
+<a href="week-10-day-68.html" class="day-tab">Day 68</a>
+<a href="week-10-day-69.html" class="day-tab">Day 69</a>
+<a href="week-10-day-70.html" class="day-tab">Day 70</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-10.html">Week 10</a> › Day 66
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🏥</span>
+<h1 class="day-title">Navigating Health Insurance Conversations</h1>
+</div>
+<p class="day-subtitle">Day 64 taught you how to describe symptoms. Day 65 taught you how to give and receive health advice. Day 66 teaches you how to navigate health insurance conversations with confidence. B2 speakers get confused by insurance jargon. C1 speakers know how to ask the right questions and advocate for themselves.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Insurance + Advocacy + Questions</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Health Communication Day 4 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Gets confused by insurance jargon. Doesn't know what questions to ask. Accepts whatever the insurance company says.<br><br><strong>C1 Speaker:</strong> Knows how to ask the right questions, advocate for themselves, and navigate insurance conversations with confidence.<br><br>"B2 speakers accept whatever insurance says. C1 speakers ask the right questions. The difference isn't knowledge — it's confidence to advocate."</div>
+</div>
+
+<div class="quote">"B2 speakers get lost in insurance jargon. C1 speakers ask the right questions. The difference isn't knowledge — it's the confidence to advocate for yourself."</div>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Health Insurance Conversations = Asking the Right Questions + Self-Advocacy</h3>
+<p class="philosophy-text">"Navigating health insurance isn't about understanding every detail. It's about knowing what questions to ask, advocating for yourself, and not being afraid to push back when something doesn't make sense."</p>
+<p class="philosophy-text">Every health insurance conversation requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Question Decision:</strong> What questions should I ask? (Direct? Specific?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Clarification Decision:</strong> How do I ask for clarification? (Polite? Direct?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Advocacy Decision:</strong> How do I advocate for myself? (Assertive? Polite?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Pushback Decision:</strong> How do I push back when something doesn't make sense? (Polite? Direct?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Follow-up Decision:</strong> How do I follow up? (Email? Call?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 64-65 taught you health communication basics. Day 66 teaches you how to navigate insurance conversations with confidence and advocacy.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">🧠</div>
+<div class="plan-title">Insurance Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Ask → Clarify → Advocate → Follow-up</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">👁️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">Decision Areas</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔄</div>
+<div class="plan-title">Integration</div>
+<div class="plan-time">10 min</div>
+<div class="plan-desc">Questions + Advocacy</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">10 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Cases + Useful Language</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎭</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">2 Long Scenarios</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎧</div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Deep Dive (8 steps)</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🗣️</div>
+<div class="plan-title">Speaking</div>
+<div class="plan-time">10 min</div>
+<div class="plan-desc">Pushback Rounds</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Review</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">Grammar + Quiz</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Health Insurance Conversation Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 4-step process for navigating insurance with confidence</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">ASK (Ask the right questions)</div>
+<div class="loop-step-desc">How do I ask? "What does this cover?" / "What's not covered?" (Ask specific questions)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">CLARIFY (Ask for clarification)</div>
+<div class="loop-step-desc">How do I clarify? "Could you clarify what that means?" / "Could you explain that in simpler terms?" (Clarify politely)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">ADVOCATE (Advocate for yourself)</div>
+<div class="loop-step-desc">How do I advocate? "I'd like to understand my options." / "I'd like to explore other options." (Advocate assertively)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">FOLLOW-UP (Follow up)</div>
+<div class="loop-step-desc">How do I follow up? "I'll follow up on this." / "I'll get back to you on this." (Follow up professionally)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Health Insurance Lenses</h2>
+</div>
+<p class="section-desc">Every health insurance conversation requires five decisions. These are your 5 lenses:</p>
+
+<div class="lenses-grid">
+
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Questioning (How do I ask the right questions?)
+<button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I ask the right questions about my insurance?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Questioning Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
+<ul>
+<li>Direct questions → "What does this cover?" (Specific, clear)</li>
+<li>Indirect questions → "Could you tell me what's covered?" (Polite, indirect)</li>
+<li>Clarifying questions → "Could you clarify what that means?" (Seeking understanding)</li>
+</ul>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Calling insurance company. Decision: Indirect questions ("Could you tell me what's covered under my plan?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Talking to HR about benefits. Decision: Direct questions ("What does this plan cover?")</p>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
+<div class="register-row">
+<span class="register-tag casual">🏠 Casual</span>
+<span class="register-phrase">"What does this cover?" <button class="audio-btn" onclick="speakText('lens1r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag neutral">☕ Neutral</span>
+<span class="register-phrase">"Could you tell me what's covered?" <button class="audio-btn" onclick="speakText('lens1r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag professional">💼 Professional</span>
+<span class="register-phrase">"I was wondering if you could clarify what's covered?" <button class="audio-btn" onclick="speakText('lens1r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag formal">📋 Formal</span>
+<span class="register-phrase">"Would you mind explaining what's covered under this plan?" <button class="audio-btn" onclick="speakText('lens1r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Indirect)</strong>
+Polite, professional, less confrontational.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Indirect)</strong>
+May take longer to get to the point.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Asking too directly ("What's covered?") which can sound demanding.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I asking questions politely and clearly?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Clarification (How do I ask for clarification?)
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I ask for clarification when I don't understand?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Clarification Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
+<ul>
+<li>Polite clarification → "Could you clarify what that means?" (Polite, respectful)</li>
+<li>Direct clarification → "What does that mean?" (Direct, clear)</li>
+<li>Detailed clarification → "Could you explain that in simpler terms?" (Seeking understanding)</li>
+</ul>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Insurance representative uses jargon. Decision: Polite clarification ("Could you clarify what that means in simpler terms?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>HR explains benefits. Decision: Direct clarification ("What does that mean?")</p>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
+<div class="register-row">
+<span class="register-tag casual">🏠 Casual</span>
+<span class="register-phrase">"What does that mean?" <button class="audio-btn" onclick="speakText('lens2r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag neutral">☕ Neutral</span>
+<span class="register-phrase">"Could you clarify what that means?" <button class="audio-btn" onclick="speakText('lens2r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag professional">💼 Professional</span>
+<span class="register-phrase">"Could you explain that in simpler terms?" <button class="audio-btn" onclick="speakText('lens2r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag formal">📋 Formal</span>
+<span class="register-phrase">"Would you mind explaining that in more detail?" <button class="audio-btn" onclick="speakText('lens2r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Polite)</strong>
+Shows respect, maintains professionalism.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Polite)</strong>
+May take longer to get clarification.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Pretending to understand instead of asking for clarification.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I asking for clarification when I need it?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Advocacy (How do I advocate for myself?)
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I advocate for myself when something doesn't seem right?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Advocacy Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
+<ul>
+<li>Assertive advocacy → "I'd like to understand my options." (Firm, respectful)</li>
+<li>Polite advocacy → "I was wondering if there are other options?" (Gentle, polite)</li>
+<li>Firm advocacy → "I'd like to explore other options." (Clear, assertive)</li>
+</ul>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Insurance denies a claim. Decision: Assertive advocacy ("I'd like to understand my options for appealing this decision.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>HR explains limited benefits. Decision: Polite advocacy ("I was wondering if there are other options available?")</p>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
+<div class="register-row">
+<span class="register-tag casual">🏠 Casual</span>
+<span class="register-phrase">"I'd like to understand my options." <button class="audio-btn" onclick="speakText('lens3r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag neutral">☕ Neutral</span>
+<span class="register-phrase">"I was wondering if there are other options?" <button class="audio-btn" onclick="speakText('lens3r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag professional">💼 Professional</span>
+<span class="register-phrase">"I'd like to explore other options." <button class="audio-btn" onclick="speakText('lens3r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag formal">📋 Formal</span>
+<span class="register-phrase">"I would appreciate it if we could explore other options." <button class="audio-btn" onclick="speakText('lens3r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Assertive)</strong>
+Shows confidence, gets results.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Assertive)</strong>
+May feel confrontational if not careful.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Accepting the first answer without advocating for yourself.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I advocating for myself when needed?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Pushback (How do I push back when something doesn't make sense?)
+<button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I push back when something doesn't make sense?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐ High</span>
+<span class="lens-context">The Pushback Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
+<ul>
+<li>Polite pushback → "I'm not sure I understand. Could you explain?" (Polite, questioning)</li>
+<li>Direct pushback → "That doesn't make sense to me." (Direct, clear)</li>
+<li>Firm pushback → "I'd like to understand why that's the case." (Firm, respectful)</li>
+</ul>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Insurance denies coverage unexpectedly. Decision: Firm pushback ("I'd like to understand why that's not covered.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>HR explains a benefit limitation. Decision: Polite pushback ("I'm not sure I understand. Could you explain?")</p>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
+<div class="register-row">
+<span class="register-tag casual">🏠 Casual</span>
+<span class="register-phrase">"That doesn't make sense to me." <button class="audio-btn" onclick="speakText('lens4r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag neutral">☕ Neutral</span>
+<span class="register-phrase">"I'm not sure I understand. Could you explain?" <button class="audio-btn" onclick="speakText('lens4r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag professional">💼 Professional</span>
+<span class="register-phrase">"I'd like to understand why that's the case." <button class="audio-btn" onclick="speakText('lens4r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag formal">📋 Formal</span>
+<span class="register-phrase">"I would appreciate clarification on why that's the case." <button class="audio-btn" onclick="speakText('lens4r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Firm)</strong>
+Gets answers, shows you're informed.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Firm)</strong>
+May feel confrontational if not careful.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Accepting things that don't make sense without pushing back.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I pushing back when something doesn't make sense?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Follow-up (How do I follow up?)
+<button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I follow up after the conversation?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐ High</span>
+<span class="lens-context">The Follow-up Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> Decision Cue</h4>
+<ul>
+<li>Email follow-up → "I'll follow up on this via email." (Professional, documented)</li>
+<li>Call follow-up → "I'll call back next week." (Direct, personal)</li>
+<li>In-person follow-up → "Can we discuss this in person?" (Personal, detailed)</li>
+</ul>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Complex insurance issue. Decision: Email follow-up ("I'll follow up on this via email to make sure we have everything documented.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>HR benefits question. Decision: Call follow-up ("I'll call back next week to follow up on this.")</p>
+</div>
+<div class="register-table">
+<h4><i class="ph-duotone ph-chat-circle-text"></i> Register Progression</h4>
+<div class="register-row">
+<span class="register-tag casual">🏠 Casual</span>
+<span class="register-phrase">"I'll call back next week." <button class="audio-btn" onclick="speakText('lens5r1', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag neutral"> Neutral</span>
+<span class="register-phrase">"I'll follow up on this via email." <button class="audio-btn" onclick="speakText('lens5r2', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag professional">💼 Professional</span>
+<span class="register-phrase">"I'll get back to you on this." <button class="audio-btn" onclick="speakText('lens5r3', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+<div class="register-row">
+<span class="register-tag formal">📋 Formal</span>
+<span class="register-phrase">"I will follow up on this matter via email." <button class="audio-btn" onclick="speakText('lens5r4', this)"><i class="ph-duotone ph-play"></i></button></span>
+</div>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Email)</strong>
+Creates documentation, professional.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Email)</strong>
+May take longer to get response.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Not following up after important conversations.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I following up appropriately?</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy insurance conversations</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Not Asking Questions</h4>
+<div class="mistake-wrong"> "I'll just accept whatever they say."</div>
+<div class="mistake-right">✅ "Could you clarify what that means?"</div>
+<div class="mistake-why">Why: Not asking questions leaves you uninformed. Asking questions shows you're engaged.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Not Advocating for Yourself</h4>
+<div class="mistake-wrong">❌ "I guess that's fine."</div>
+<div class="mistake-right">✅ "I'd like to understand my options."</div>
+<div class="mistake-why">Why: Not advocating leaves value on the table. Advocating shows confidence.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Not Following Up</h4>
+<div class="mistake-wrong">❌ "I'll call later."</div>
+<div class="mistake-right">✅ "I'll follow up on this via email by Friday."</div>
+<div class="mistake-why">Why: Not following up creates confusion. Following up creates clarity.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Health Insurance Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Trade-off of C</th>
+<th>When B is better?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Life: Calling insurance about coverage</td>
+<td>Accept whatever they say.</td>
+<td>Ask basic questions.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When you're in a hurry.</td>
+</tr>
+<tr>
+<td>2. Life: Talking to HR about benefits</td>
+<td>Accept the first explanation.</td>
+<td>Ask for clarification.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When you understand everything.</td>
+</tr>
+<tr>
+<td>3. Life: Calling insurance about a claim</td>
+<td>Accept the denial.</td>
+<td>Ask why it was denied.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When the denial is correct.</td>
+</tr>
+<tr>
+<td>4. Business: Talking to HR about insurance options</td>
+<td>Accept the first option.</td>
+<td>Ask about other options.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When there's only one option.</td>
+</tr>
+<tr>
+<td>5. Life: Calling insurance about a denied claim</td>
+<td>Accept the denial.</td>
+<td>Ask about appeals.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When the denial is correct.</td>
+</tr>
+<tr>
+<td>6. Business: Talking to HR about changing insurance</td>
+<td>Accept the current plan.</td>
+<td>Ask about changing.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When you can't change.</td>
+</tr>
+<tr>
+<td>7. Life: Calling insurance about a prescription</td>
+<td>Accept the coverage decision.</td>
+<td>Ask about alternatives.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When the decision is correct.</td>
+</tr>
+<tr>
+<td>8. Business: Talking to HR about insurance costs</td>
+<td>Accept the costs.</td>
+<td>Ask about other options.</td>
+<td>Ask → Clarify → Advocate → Follow-up.</td>
+<td>Takes more time.</td>
+<td>When there are no other options.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Deep Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Case Studies</h3>
+<div class="reading-grid">
+
+<div class="case-box">
+<h4 class="case-title">🏠 Case 1: Life - Calling Insurance About Coverage</h4>
+<div class="case-context"><strong>Context:</strong> You're calling your insurance company to understand what's covered under your new plan. The representative is using technical jargon that you don't fully understand.</div>
+<div class="case-decision">
+<h4>Your Decision:</h4>
+<ul>
+<li><strong>Lens 1 (Questioning):</strong> Indirect questions ("Could you tell me what's covered under my plan?")</li>
+<li><strong>Lens 2 (Clarification):</strong> Polite clarification ("Could you explain that in simpler terms?")</li>
+<li><strong>Lens 3 (Advocacy):</strong> Assertive advocacy ("I'd like to understand my options for appealing this decision.")</li>
+<li><strong>Lens 4 (Pushback):</strong> Polite pushback ("I'm not sure I understand. Could you explain?")</li>
+<li><strong>Lens 5 (Follow-up):</strong> Email follow-up ("I'll follow up on this via email.")</li>
+</ul>
+</div>
+<div class="case-decision">
+<h4>Insurance Flow:</h4>
+<ol style="padding-left: 24px; color: var(--text-secondary); font-size: 13px; line-height: 1.5;">
+<li><strong>Ask:</strong> "Could you tell me what's covered under my plan?"</li>
+<li><strong>Clarify:</strong> "Could you explain that in simpler terms?"</li>
+<li><strong>Advocate:</strong> "I'd like to understand my options."</li>
+<li><strong>Pushback:</strong> "I'm not sure I understand. Could you explain?"</li>
+<li><strong>Follow-up:</strong> "I'll follow up on this via email."</li>
+</ol>
+</div>
+<div class="breakdown-section">
+<h4 class="breakdown-title">🎯 BREAKDOWN (Deep Analysis)</h4>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"Could you tell me what's covered under my plan?"</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Ask indirect questions politely.
+<strong>🧠 Hidden Message:</strong> "I want to understand, but I'm being respectful."
+<strong>⚖️ Trade-off:</strong> Takes more time, but maintains professionalism.
+<strong>🔄 Better Alternative?</strong> "What's covered?" (Too direct, can sound demanding).
+<strong>⭐ Why This Wins:</strong> Indirect questions are polite and professional.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"Could you explain that in simpler terms?"</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Ask for clarification politely.
+<strong>🧠 Hidden Message:</strong> "I want to understand, but I need simpler language."
+<strong>⚖️ Trade-off:</strong> Takes more time, but ensures understanding.
+<strong>🔄 Better Alternative?</strong> "I don't understand." (Too direct, can sound confrontational).
+<strong>⭐ Why This Wins:</strong> Polite clarification ensures understanding without confrontation.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"I'd like to understand my options."</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Advocate for yourself assertively.
+<strong>🧠 Hidden Message:</strong> "I want to understand all my options before making a decision."
+<strong>⚖️ Trade-off:</strong> Takes more time, but shows you're informed.
+<strong>🔄 Better Alternative?</strong> "What are my options?" (Too direct, can sound demanding).
+<strong>⭐ Why This Wins:</strong> Assertive advocacy shows you're informed and engaged.
+</div>
+</div>
+</div>
+<div class="useful-language">
+<h4>💬 Useful Language</h4>
+<ul>
+<li>"Could you clarify what that means?"</li>
+<li>"Could you explain that in simpler terms?"</li>
+<li>"I'd like to understand my options."</li>
+<li>"I'm not sure I understand. Could you explain?"</li>
+<li>"I'll follow up on this via email."</li>
+</ul>
+</div>
+</div>
+
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Talking to HR About Benefits</h4>
+<div class="case-context"><strong>Context:</strong> You're talking to HR about your benefits package. They're explaining the limitations of your current plan, and you want to understand if there are other options available.</div>
+<div class="case-decision">
+<h4>Your Decision:</h4>
+<ul>
+<li><strong>Lens 1 (Questioning):</strong> Direct questions ("What does this plan cover?")</li>
+<li><strong>Lens 2 (Clarification):</strong> Direct clarification ("What does that mean?")</li>
+<li><strong>Lens 3 (Advocacy):</strong> Polite advocacy ("I was wondering if there are other options available?")</li>
+<li><strong>Lens 4 (Pushback):</strong> Polite pushback ("I'm not sure I understand. Could you explain?")</li>
+<li><strong>Lens 5 (Follow-up):</strong> Call follow-up ("I'll call back next week to follow up on this.")</li>
+</ul>
+</div>
+<div class="case-decision">
+<h4>HR Benefits Flow:</h4>
+<ol style="padding-left: 24px; color: var(--text-secondary); font-size: 13px; line-height: 1.5;">
+<li><strong>Ask:</strong> "What does this plan cover?"</li>
+<li><strong>Clarify:</strong> "What does that mean?"</li>
+<li><strong>Advocate:</strong> "I was wondering if there are other options available?"</li>
+<li><strong>Pushback:</strong> "I'm not sure I understand. Could you explain?"</li>
+<li><strong>Follow-up:</strong> "I'll call back next week to follow up on this."</li>
+</ol>
+</div>
+<div class="breakdown-section">
+<h4 class="breakdown-title">🎯 BREAKDOWN (Deep Analysis)</h4>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"What does this plan cover?"</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Ask direct questions clearly.
+<strong>🧠 Hidden Message:</strong> "I want to understand what's covered."
+<strong>️ Trade-off:</strong> Direct and clear, but may sound demanding.
+<strong>🔄 Better Alternative?</strong> "Could you tell me what's covered?" (More polite, but less direct).
+<strong>⭐ Why This Wins:</strong> Direct questions are clear and efficient.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"What does that mean?"</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Ask for clarification directly.
+<strong>🧠 Hidden Message:</strong> "I need clarification on this point."
+<strong>⚖️ Trade-off:</strong> Direct and clear, but may sound confrontational.
+<strong>🔄 Better Alternative?</strong> "Could you clarify that?" (More polite, but less direct).
+<strong>⭐ Why This Wins:</strong> Direct clarification is clear and efficient.
+</div>
+</div>
+<div class="breakdown-item">
+<div class="breakdown-sentence">"I was wondering if there are other options available?"</div>
+<div class="breakdown-analysis">
+<strong>🎯 Communication Goal:</strong> Advocate for yourself politely.
+<strong> Hidden Message:</strong> "I'm interested in exploring other options."
+<strong>️ Trade-off:</strong> Polite and respectful, but may take longer.
+<strong>🔄 Better Alternative?</strong> "Are there other options?" (More direct, but less polite).
+<strong>⭐ Why This Wins:</strong> Polite advocacy shows respect while advocating for yourself.
+</div>
+</div>
+</div>
+<div class="useful-language">
+<h4>💬 Useful Language</h4>
+<ul>
+<li>"What does this plan cover?"</li>
+<li>"What does that mean?"</li>
+<li>"I was wondering if there are other options available?"</li>
+<li>"I'm not sure I understand. Could you explain?"</li>
+<li>"I'll call back next week to follow up on this."</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Normal → C1 + Sentence Function</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">️ Normal → C1 Rewrite</h3>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Normal (Life - Insurance): "What's covered?"</div>
+<div class="sentence-function-grid">
+<div class="sentence-function">
+<div class="sentence">"Could you tell me what's covered under my plan?"</div>
+<div class="function">→ Function: Ask indirect questions politely</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"Could you explain that in simpler terms?"</div>
+<div class="function">→ Function: Ask for clarification politely</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"I'd like to understand my options."</div>
+<div class="function">→ Function: Advocate for yourself assertively</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"I'll follow up on this via email."</div>
+<div class="function">→ Function: Follow up professionally</div>
+</div>
+</div>
+</div>
+<div class="rewrite-item">
+<div class="rewrite-task">❌ Normal (Business - HR): "What does this cover?"</div>
+<div class="sentence-function-grid">
+<div class="sentence-function">
+<div class="sentence">"What does this plan cover?"</div>
+<div class="function">→ Function: Ask direct questions clearly</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"What does that mean?"</div>
+<div class="function">→ Function: Ask for clarification directly</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"I was wondering if there are other options available?"</div>
+<div class="function">→ Function: Advocate for yourself politely</div>
+</div>
+<div class="sentence-function">
+<div class="sentence">"I'll call back next week to follow up on this."</div>
+<div class="function">→ Function: Follow up professionally</div>
+</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; margin: 24px 0 12px;">📝 Before / After Analysis</h4>
+<div class="before-after-grid">
+<div class="before-after normal">
+<div class="label">Normal</div>
+<div class="text">"What's covered?"</div>
+<div class="explanation">Too direct, can sound demanding</div>
+</div>
+<div class="before-after executive">
+<div class="label">C1</div>
+<div class="text">"Could you tell me what's covered under my plan?"</div>
+<div class="explanation">Polite, professional, indirect</div>
+</div>
+</div>
+<div class="before-after-grid" style="margin-top: 12px;">
+<div class="before-after normal">
+<div class="label">Normal</div>
+<div class="text">"What does this cover?"</div>
+<div class="explanation">Too direct, can sound demanding</div>
+</div>
+<div class="before-after executive">
+<div class="label">C1</div>
+<div class="text">"I was wondering if there are other options available?"</div>
+<div class="explanation">Polite, respectful, indirect</div>
+</div>
+</div>
+<p style="font-size: 13px; color: var(--text-secondary); margin-top: 16px; font-style: italic;"><strong>C1 speakers ask questions politely. B2 speakers ask questions directly.</strong></p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Health Insurance Collocations)</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The Health Insurance Collocations</h3>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>file a claim /faɪl ə kleɪm/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Gửi yêu cầu bồi thường</div>
+<div class="example">"I need to file a claim for this medical expense."</div>
+<button class="vocab-audio-btn" onclick="speakText('file-claim', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>submit documentation /səbˈmɪt dɒk.ju.menˈteɪ.ʃən/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Gửi tài liệu</div>
+<div class="example">"I need to submit documentation for this claim."</div>
+<button class="vocab-audio-btn" onclick="speakText('submit-doc', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>coverage limit /ˈkʌv.ər.ɪd ˈlɪm.ɪt/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Giới hạn bảo hiểm</div>
+<div class="example">"What's the coverage limit for this procedure?"</div>
+<button class="vocab-audio-btn" onclick="speakText('coverage-limit', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>pre-existing condition /priː ɪɡˈzɪs.tɪŋ kənˈdɪʃ.ən/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tình trạng bệnh có sẵn</div>
+<div class="example">"Is this considered a pre-existing condition?"</div>
+<button class="vocab-audio-btn" onclick="speakText('pre-existing', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>prior authorization /ˈpraɪ.ər ˌɔː.θər.aɪˈzeɪ.ʃən/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Ủy quyền trước</div>
+<div class="example">"Do I need prior authorization for this procedure?"</div>
+<button class="vocab-audio-btn" onclick="speakText('prior-auth', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>out-of-pocket maximum /ˌaʊt.əvˈpɒk.ɪt ˈmæk.s.məm/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Số tiền tối đa phải trả</div>
+<div class="example">"What's the out-of-pocket maximum for this plan?"</div>
+<button class="vocab-audio-btn" onclick="speakText('out-of-pocket', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>annual deductible /ˈæn.ju.əl dɪˈdʌk.tɪ.bəl/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Số tiền khấu trừ hàng năm</div>
+<div class="example">"What's the annual deductible for this plan?"</div>
+<button class="vocab-audio-btn" onclick="speakText('annual-deductible', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>covered service /ˈkʌv.əd ˈsɜː.vɪs/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Dịch vụ được bảo hiểm</div>
+<div class="example">"Is this procedure a covered service?"</div>
+<button class="vocab-audio-btn" onclick="speakText('covered-service', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>network provider /ˈnet.wɜːk prəˈvaɪ.dər/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Nhà cung cấp trong mạng lưới</div>
+<div class="example">"Is this doctor a network provider?"</div>
+<button class="vocab-audio-btn" onclick="speakText('network-provider', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>policy holder /ˈpɒl.ə.si ˈhəʊl.dər/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Người được bảo hiểm</div>
+<div class="example">"Who is the policy holder for this plan?"</div>
+<button class="vocab-audio-btn" onclick="speakText('policy-holder', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>claim denied /kleɪm dɪˈnaɪd/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Yêu cầu bị từ chối</div>
+<div class="example">"My claim was denied. What are my options?"</div>
+<button class="vocab-audio-btn" onclick="speakText('claim-denied', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>claim approved /kleɪm əˈpruːvd/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Yêu cầu được phê duyệt</div>
+<div class="example">"My claim was approved. When will I receive payment?"</div>
+<button class="vocab-audio-btn" onclick="speakText('claim-approved', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>insurance provider /ɪnˈʃʊə.rəns prəˈvaɪ.dər/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Nhà cung cấp bảo hiểm</div>
+<div class="example">"Who is my insurance provider?"</div>
+<button class="vocab-audio-btn" onclick="speakText('insurance-provider', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>medical necessity /med.ɪ.kəl nəˈses.ə.ti/</strong>
+<div class="pos">(phrase)</div>
+<div class="meaning">Sự cần thiết về y tế</div>
+<div class="example">"Is this procedure considered a medical necessity?"</div>
+<button class="vocab-audio-btn" onclick="speakText('medical-necessity', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>deductible /dɪdʌk.tɪ.bəl/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Số tiền khấu trừ</div>
+<div class="example">"What's my deductible for this plan?"</div>
+<button class="vocab-audio-btn" onclick="speakText('deductible', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>co-pay /ˈkəʊ.peɪ/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Số tiền đồng thanh toán</div>
+<div class="example">"What's the co-pay for this visit?"</div>
+<button class="vocab-audio-btn" onclick="speakText('co-pay', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>premium /ˈpriː.mi.əm/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Phí bảo hiểm</div>
+<div class="example">"What's the monthly premium for this plan?"</div>
+<button class="vocab-audio-btn" onclick="speakText('premium', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>claim /kleɪm/</strong>
+<div class="pos">(noun)</div>
+<div class="meaning">Yêu cầu bồi thường</div>
+<div class="example">"I need to file a claim for this expense."</div>
+<button class="vocab-audio-btn" onclick="speakText('claim', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>appeal /əˈpiːl/</strong>
+<div class="pos">(noun/verb)</div>
+<div class="meaning">Kháng cáo</div>
+<div class="example">"I'd like to appeal this decision."</div>
+<button class="vocab-audio-btn" onclick="speakText('appeal', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format - 14+ turns)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title"> Integrated Dialogues</h3>
+<div class="dialogue-grid">
+
+<div class="dialogue-card">
+<h4 class="case-title"> Dialogue 1: Calling Insurance About Coverage (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're calling your insurance company to understand what's covered under your new plan.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hello, I'm calling to understand what's covered under my plan." <span class="move-highlight move1">Ask</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Insurance Rep:</div>
+<div class="dialogue-text">"Sure, I can help with that. What specific procedure are you asking about?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'm asking about a specific medical procedure. Could you clarify what's covered?" <span class="move-highlight move2">Clarify</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Insurance Rep:</div>
+<div class="dialogue-text">"That procedure requires prior authorization."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'm not sure I understand. Could you explain what prior authorization means?" <span class="move-highlight move2">Clarify</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Insurance Rep:</div>
+<div class="dialogue-text">"Prior authorization means you need approval before the procedure."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'd like to understand my options for getting prior authorization." <span class="move-highlight move3">Advocate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Insurance Rep:</div>
+<div class="dialogue-text">"You can submit documentation online or call us."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'll follow up on this via email to make sure I have everything documented." <span class="move-highlight move4">Follow-up</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Ask (indirect questions) + Clarify (polite clarification) + Advocate (assertive advocacy) + Follow-up (email follow-up).</li>
+<li><strong>Alternative Decision:</strong> Accept whatever they say. (Risk: Leaves you uninformed).</li>
+<li><strong>Why this decision?</strong> Ask creates understanding. Clarify ensures understanding. Advocate shows you're informed. Follow-up creates documentation.</li>
+<li><strong>Resistance handled:</strong> Insurance rep used jargon. You asked for clarification politely.</li>
+</ul>
+</div>
+</div>
+
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Talking to HR About Benefits (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're talking to HR about your benefits package and want to understand if there are other options available.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hi, I'm calling to understand my benefits package." <span class="move-highlight move1">Ask</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">HR:</div>
+<div class="dialogue-text">"Sure, I can help with that. What specific benefits are you asking about?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'm asking about the health insurance options. What does this plan cover?" <span class="move-highlight move1">Ask</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">HR:</div>
+<div class="dialogue-text">"This plan covers most medical procedures, but there are some limitations."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"What does that mean? Could you explain the limitations?" <span class="move-highlight move2">Clarify</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">HR:</div>
+<div class="dialogue-text">"Some procedures require prior authorization."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I was wondering if there are other options available?" <span class="move-highlight move3">Advocate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">HR:</div>
+<div class="dialogue-text">"Yes, there are other plans available. I can send you the information."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'll call back next week to follow up on this." <span class="move-highlight move4">Follow-up</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Ask (direct questions) + Clarify (direct clarification) + Advocate (polite advocacy) + Follow-up (call follow-up).</li>
+<li><strong>Alternative Decision:</strong> Accept the first explanation. (Risk: Leaves you uninformed).</li>
+<li><strong>Why this decision?</strong> Ask creates understanding. Clarify ensures understanding. Advocate shows you're informed. Follow-up creates follow-up.</li>
+<li><strong>Resistance handled:</strong> HR explained limitations. You asked for clarification directly.</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (8 Steps)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Audio</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Life Context:</strong> Listen to Dialogue 1 (Calling Insurance About Coverage)</p>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Business Context:</strong> Listen to Dialogue 2 (Talking to HR About Benefits)</p>
+<div class="transcript-box">
+<h4>📄 Transcript</h4>
+<p style="font-size: 13px; color: var(--text-secondary);"><strong>Life Dialogue Key Phrases:</strong></p>
+<ul style="padding-left: 20px; font-size: 13px; color: var(--text-secondary);">
+<li>"Could you tell me what's covered under my plan?"</li>
+<li>"Could you clarify what's covered?"</li>
+<li>"I'm not sure I understand. Could you explain?"</li>
+<li>"I'd like to understand my options."</li>
+<li>"I'll follow up on this via email."</li>
+</ul>
+<p style="font-size: 13px; color: var(--text-secondary); margin-top: 12px;"><strong>Business Dialogue Key Phrases:</strong></p>
+<ul style="padding-left: 20px; font-size: 13px; color: var(--text-secondary);">
+<li>"What does this plan cover?"</li>
+<li>"What does that mean?"</li>
+<li>"I was wondering if there are other options available?"</li>
+<li>"I'll call back next week to follow up on this."</li>
+</ul>
+</div>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"Could you tell me what's covered under my plan?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "What's covered?" (too direct)
+<span class="arrow">↓</span> Not: "Can you tell me what's covered?" (less polite)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Ask indirect questions politely
+<span class="arrow">↓</span> <strong>Effect:</strong> Polite, professional, less confrontational
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I want to understand, but I'm being respectful"
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Could you clarify what's covered?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "What does that mean?" (too direct)
+<span class="arrow">↓</span> Not: "Can you clarify?" (less polite)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Ask for clarification politely
+<span class="arrow">↓</span> <strong>Effect:</strong> Polite clarification ensures understanding
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I want to understand, but I'm being respectful"
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I'd like to understand my options."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "What are my options?" (too direct)
+<span class="arrow">↓</span> Not: "Can you tell me my options?" (less polite)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Advocate for yourself assertively
+<span class="arrow">↓</span> <strong>Effect:</strong> Assertive advocacy shows you're informed
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I want to understand all my options"
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I'll follow up on this via email."</div>
+<div class="analysis">
+<span class="arrow">↓</span> Not: "I'll call later." (too vague)
+<span class="arrow">↓</span> Not: "I'll follow up." (less specific)
+<span class="arrow">↓</span> <strong>Strategic choice:</strong> Follow up professionally
+<span class="arrow">↓</span> <strong>Effect:</strong> Creates documentation, professional
+<span class="arrow">↓</span> <strong>Leadership signal:</strong> "I'll follow up professionally"
+</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"Could you tell me..."</div>
+<div class="note"><strong>Sắc thái:</strong> Polite, indirect</div>
+<div class="note"><strong>Leadership framing:</strong> Shows respect</div>
+<div class="note"><strong>Alternative:</strong> "What's covered?" (too direct)</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Could you clarify..."</div>
+<div class="note"><strong>Sắc thái:</strong> Polite, respectful</div>
+<div class="note"><strong>Leadership framing:</strong> Shows you want to understand</div>
+<div class="note"><strong>Alternative:</strong> "What does that mean?" (too direct)</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"I'd like to understand..."</div>
+<div class="note"><strong>Sắc thái:</strong> Assertive, respectful</div>
+<div class="note"><strong>Leadership framing:</strong> Shows you're informed</div>
+<div class="note"><strong>Alternative:</strong> "What are my options?" (too direct)</div>
+</div>
+</div>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Sentence Stress</div>
+<div class="detail">"Could you TELL me what's COVERED under my PLAN?" (Stress on key words)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Linking</div>
+<div class="detail">"Could you tell_me what's covered_under my plan?" (Linking words together)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Reduction</div>
+<div class="detail">"Could you tell me what's covered?" (Reduction of "could you" to "couldja")</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Polite Intonation</div>
+<div class="detail">"Could you tell me what's covered? ↗" (Rising intonation for politeness)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">5. Information Chunking</div>
+<div class="detail">"Could you tell me... (pause) ...what's covered under my plan?" (Chunking information)</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 1: Nghe Questions</strong></div>
+<div class="note"><strong>Focus:</strong> Question types, politeness</div>
+<div class="note"><strong>Question:</strong> "What type of questions are they asking?"</div>
+<div class="note"><strong>Signal:</strong> Indirect questions → Polite, professional</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 2: Nghe Clarification</strong></div>
+<div class="note"><strong>Focus:</strong> Clarification types, politeness</div>
+<div class="note"><strong>Question:</strong> "How are they asking for clarification?"</div>
+<div class="note"><strong>Signal:</strong> Polite clarification → Respectful, professional</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 3: Nghe Advocacy</strong></div>
+<div class="note"><strong>Focus:</strong> Advocacy types, assertiveness</div>
+<div class="note"><strong>Question:</strong> "How are they advocating for themselves?"</div>
+<div class="note"><strong>Signal:</strong> Assertive advocacy → Informed, engaged</div>
+</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the polite rhythm, not just the words:</div>
+<div class="note">1. Listen to: "Could you tell me... Could you clarify... I'd like to understand..."</div>
+<div class="note">2. Shadow: Match the polite, respectful tone</div>
+<div class="note">3. Focus: Stress on key words, linking, reduction</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different pronunciation feature</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "Could you tell me" instead of "What's covered"?</div>
+<div class="note">✅ To be polite and professional. Indirect questions are more polite.</div>
+<div class="note">2. What was the strategic goal of asking "Could you clarify"?</div>
+<div class="note">✅ To ask for clarification politely. Polite clarification ensures understanding.</div>
+<div class="note">3. How did you handle the insurance jargon?</div>
+<div class="note">✅ Asked for clarification politely. Asked for simpler language.</div>
+<div class="note">4. What was the trade-off of following up via email?</div>
+<div class="note">✅ Creates documentation, but may take longer to get response.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit</h3>
+<table class="grammar-table">
+<thead>
+<tr>
+<th>Strategic Goal</th>
+<th>Language Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indirect Questions</td>
+<td>"Could you tell me..." / "Could you tell me whether..."</td>
+<td>"Could you tell me what's covered under my plan?"</td>
+</tr>
+<tr>
+<td>Modal Verbs</td>
+<td>"might" / "may" / "would" / "could"</td>
+<td>"I was wondering if there are other options."</td>
+</tr>
+<tr>
+<td>Passive Voice</td>
+<td>"Your claim has been approved." / "This service isn't covered."</td>
+<td>"My claim was denied. What are my options?"</td>
+</tr>
+<tr>
+<td>Hedging</td>
+<td>"It seems that..." / "Apparently..." / "As far as I understand..."</td>
+<td>"As far as I understand, this requires prior authorization."</td>
+</tr>
+<tr>
+<td>Polite Requests</td>
+<td>"Could you..." / "Would you mind..." / "Could you please..."</td>
+<td>"Could you clarify what that means?"</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-microphone"></i> Pronunciation Focus</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🎵 Strategic Pronunciation</h3>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Sentence Stress</div>
+<div class="detail">"Could you TELL me what's COVERED under my PLAN?" (Stress on key words)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Linking</div>
+<div class="detail">"Could you tell_me what's covered_under my plan?" (Linking words together)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Reduction</div>
+<div class="detail">"Could you tell me what's covered?" (Reduction of "could you" to "couldja")</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Polite Intonation</div>
+<div class="detail">"Could you tell me what's covered? ↗" (Rising intonation for politeness)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">5. Information Chunking</div>
+<div class="detail">"Could you tell me... (pause) ...what's covered under my plan?" (Chunking information)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (with Pushback + Alternative + Common Mistake)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Calling Insurance About Coverage</h3>
+<div class="scenario-context">You're calling your insurance company to understand what's covered under your new plan.</div>
+<div class="scenario-goal"><strong>Round 1 (Ask + Clarify):</strong></div>
+<div class="scenario-response">"Could you tell me what's covered under my plan? Could you clarify what that means?"</div>
+<div class="scenario-goal"><strong>Pushback:</strong></div>
+<div class="scenario-response">"That procedure requires prior authorization."</div>
+<div class="scenario-goal"><strong>Round 2 (Advocate + Follow-up):</strong></div>
+<div class="scenario-response">"I'd like to understand my options. I'll follow up on this via email."</div>
+<div class="scenario-goal"><strong>Alternative Response:</strong></div>
+<div class="scenario-response">"What's covered?" (Too direct, can sound demanding)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Asking too directly. This can sound demanding.</div>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Talking to HR About Benefits</h3>
+<div class="scenario-context">You're talking to HR about your benefits package and want to understand if there are other options available.</div>
+<div class="scenario-goal"><strong>Round 1 (Ask + Clarify):</strong></div>
+<div class="scenario-response">"What does this plan cover? What does that mean?"</div>
+<div class="scenario-goal"><strong>Pushback:</strong></div>
+<div class="scenario-response">"Some procedures require prior authorization."</div>
+<div class="scenario-goal"><strong>Round 2 (Advocate + Follow-up):</strong></div>
+<div class="scenario-response">"I was wondering if there are other options available? I'll call back next week to follow up."</div>
+<div class="scenario-goal"><strong>Alternative Response:</strong></div>
+<div class="scenario-response">"Are there other options?" (Too direct, less polite)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Asking too directly. This can sound demanding.</div>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Calling Insurance About a Denied Claim</h3>
+<div class="scenario-context">Your insurance claim was denied and you want to understand why and what your options are.</div>
+<div class="scenario-goal"><strong>Round 1 (Ask + Clarify):</strong></div>
+<div class="scenario-response">"Could you tell me why my claim was denied? Could you clarify what that means?"</div>
+<div class="scenario-goal"><strong>Pushback:</strong></div>
+<div class="scenario-response">"This procedure isn't covered under your plan."</div>
+<div class="scenario-goal"><strong>Round 2 (Advocate + Follow-up):</strong></div>
+<div class="scenario-response">"I'd like to understand my options for appealing this decision. I'll follow up via email."</div>
+<div class="scenario-goal"><strong>Alternative Response:</strong></div>
+<div class="scenario-response">"Why was my claim denied?" (Too direct, can sound confrontational)</div>
+<div class="scenario-req"><strong>Common Mistake:</strong> Asking too directly. This can sound confrontational.</div>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario</h3>
+<div class="scenario-context">Morning: Call insurance about coverage. Afternoon: Talk to HR about benefits.</div>
+<div class="scenario-goal"><strong>Morning (Life - Ask + Clarify + Advocate + Follow-up):</strong></div>
+<div class="scenario-response">"Could you tell me what's covered? Could you clarify? I'd like to understand my options. I'll follow up via email."</div>
+<div class="scenario-goal"><strong>Afternoon (Business - Ask + Clarify + Advocate + Follow-up):</strong></div>
+<div class="scenario-response">"What does this plan cover? What does that mean? I was wondering if there are other options. I'll call back next week."</div>
+<div class="scenario-goal"><strong>Reflection:</strong></div>
+<div class="scenario-req">How did your questions change between the two? Life = indirect, polite. Business = direct, clear.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Health Insurance Audit</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3> The Health Insurance Audit</h3>
+<div class="task-time">⏱️ 15 minutes</div>
+<div class="task-desc">Identify 1 health insurance conversation in your life or work. Apply the 5 lenses. What decisions are you making? Note the trade-offs.</div>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the health insurance conversation</li>
+<li>Apply the 5 lenses (Questioning, Clarification, Advocacy, Pushback, Follow-up)</li>
+<li>What decisions are you making?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Health Insurance Practice</h3>
+<div class="task-time">⏱️ 30 minutes</div>
+<div class="task-desc">Role-play a health insurance scenario with a friend. Practice the Insurance Flow (Ask → Clarify → Advocate → Follow-up). Get feedback on your questions and advocacy.</div>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose a health insurance scenario (life or business)</li>
+<li>Practice all 4 steps of the Insurance Flow</li>
+<li>Get feedback on your questions and advocacy</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Health Insurance Conversation</h3>
+<div class="task-time">⏱️ 60 minutes</div>
+<div class="task-desc">This week, have an actual health insurance conversation. Use the 5 lenses and Insurance Flow in real-time. Note what worked, what didn't, and what you learned.</div>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify an actual health insurance conversation to have</li>
+<li>Apply the 5 lenses in real-time</li>
+<li>Use the Insurance Flow (Ask → Clarify → Advocate → Follow-up)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default style?</li>
+</ul>
+</div>
+<div class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Health Insurance Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I ask questions politely</h4>
+<p>I ask indirect questions politely, not directly.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I ask for clarification politely</h4>
+<p>I ask for clarification politely, not directly.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I advocate for myself assertively</h4>
+<p>I advocate for myself assertively, not passively.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I push back when something doesn't make sense</h4>
+<p>I push back politely when something doesn't make sense.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I follow up professionally</h4>
+<p>I follow up professionally via email or call.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the 5 lenses and Insurance Flow (Ask → Clarify → Advocate → Follow-up) in health insurance conversations, you are ready for Day 67: Comforting Someone Who Is Ill.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> You need to call insurance about coverage</p>
+<button>Tap to reveal Insurance Flow →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "What's covered?"</p>
+<p><strong>C1 Language:</strong> Ask → Clarify → Advocate → Follow-up.</p>
+<p><strong>Trade-off:</strong> Takes more time upfront, but creates understanding and documentation.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In health insurance conversations, asking politely creates understanding. Clarifying ensures understanding. Advocating shows you're informed. Following up creates documentation.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Health Insurance</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title"> Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) You need to call insurance about coverage. Best question?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "What's covered?"</div>
+<div class="quiz-option">B. "Could you tell me what's covered under my plan?"</div>
+<div class="quiz-option">C. "Can you tell me what's covered?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Insurance rep uses jargon. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "What does that mean?"</div>
+<div class="quiz-option">B. "Could you clarify what that means?"</div>
+<div class="quiz-option">C. "Can you clarify?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Your claim was denied. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Why was my claim denied?"</div>
+<div class="quiz-option">B. "I'd like to understand my options for appealing this decision."</div>
+<div class="quiz-option">C. "Can you tell me why?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) HR explains benefits limitations. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Are there other options?"</div>
+<div class="quiz-option">B. "I was wondering if there are other options available?"</div>
+<div class="quiz-option">C. "Can you tell me about other options?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) You need to follow up. Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "I'll call later."</div>
+<div class="quiz-option">B. "I'll follow up on this via email."</div>
+<div class="quiz-option">C. "I'll follow up."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Insurance rep says "This requires prior authorization." Best response?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "What does that mean?"</div>
+<div class="quiz-option">B. "Could you clarify what prior authorization means?"</div>
+<div class="quiz-option">C. "Can you explain?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of asking indirect questions?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. You're more polite, but it takes longer.</div>
+<div class="quiz-option">B. You're more direct, but less polite.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of following up via email?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. You create documentation, but it may take longer.</div>
+<div class="quiz-option">B. You get faster response, but no documentation.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "gửi yêu cầu bồi thường"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. File a claim</div>
+<div class="quiz-option">B. Submit documentation</div>
+<div class="quiz-option">C. Coverage limit</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+
+<div class="day-navigation">
+<a href="week-10-day-65.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 65: Giving and Receiving Health Advice</div>
+</a>
+<a href="week-10-day-67.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 67: Comforting Someone Who Is Ill</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 66 Complete & Continue to Day 67</button>
+<div class="complete-message">B2 speakers ask questions directly. C1 speakers ask questions politely. </div>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 10 · Day 66 · Navigating Health Insurance Conversations</div>
+</div>
+</footer>
+
+<script>
+// ===== AUDIO ENGINE V3 =====
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+
+const textContent = {
+'lens1': 'Lens 1: Questioning. How do I ask the right questions? Decision Cue: Direct questions, specific. Indirect questions, polite. Clarifying questions, seeking understanding.',
+'lens1r1': 'What does this cover?',
+'lens1r2': 'Could you tell me what\'s covered?',
+'lens1r3': 'I was wondering if you could clarify what\'s covered?',
+'lens1r4': 'Would you mind explaining what\'s covered under this plan?',
+'lens2': 'Lens 2: Clarification. How do I ask for clarification? Decision Cue: Polite clarification, respectful. Direct clarification, clear. Detailed clarification, seeking understanding.',
+'lens2r1': 'What does that mean?',
+'lens2r2': 'Could you clarify what that means?',
+'lens2r3': 'Could you explain that in simpler terms?',
+'lens2r4': 'Would you mind explaining that in more detail?',
+'lens3': 'Lens 3: Advocacy. How do I advocate for myself? Decision Cue: Assertive advocacy, firm. Polite advocacy, gentle. Firm advocacy, clear.',
+'lens3r1': 'I\'d like to understand my options.',
+'lens3r2': 'I was wondering if there are other options?',
+'lens3r3': 'I\'d like to explore other options.',
+'lens3r4': 'I would appreciate it if we could explore other options.',
+'lens4': 'Lens 4: Pushback. How do I push back when something doesn\'t make sense? Decision Cue: Polite pushback, questioning. Direct pushback, clear. Firm pushback, respectful.',
+'lens4r1': 'That doesn\'t make sense to me.',
+'lens4r2': 'I\'m not sure I understand. Could you explain?',
+'lens4r3': 'I\'d like to understand why that\'s the case.',
+'lens4r4': 'I would appreciate clarification on why that\'s the case.',
+'lens5': 'Lens 5: Follow-up. How do I follow up after the conversation? Decision Cue: Email follow-up, professional. Call follow-up, direct. In-person follow-up, personal.',
+'lens5r1': 'I\'ll call back next week.',
+'lens5r2': 'I\'ll follow up on this via email.',
+'lens5r3': 'I\'ll get back to you on this.',
+'lens5r4': 'I will follow up on this matter via email.',
+'file-claim': 'file a claim',
+'submit-doc': 'submit documentation',
+'coverage-limit': 'coverage limit',
+'pre-existing': 'pre-existing condition',
+'prior-auth': 'prior authorization',
+'out-of-pocket': 'out-of-pocket maximum',
+'annual-deductible': 'annual deductible',
+'covered-service': 'covered service',
+'network-provider': 'network provider',
+'policy-holder': 'policy holder',
+'claim-denied': 'claim denied',
+'claim-approved': 'claim approved',
+'insurance-provider': 'insurance provider',
+'medical-necessity': 'medical necessity',
+'deductible': 'deductible',
+'co-pay': 'co-pay',
+'premium': 'premium',
+'claim': 'claim',
+'appeal': 'appeal',
+'dialogue1': 'Dialogue 1: Calling Insurance About Coverage. You: Hello, I\'m calling to understand what\'s covered under my plan. Ask. Insurance Rep: Sure, I can help with that. What specific procedure are you asking about? You: I\'m asking about a specific medical procedure. Could you clarify what\'s covered? Clarify. Insurance Rep: That procedure requires prior authorization. You: I\'m not sure I understand. Could you explain what prior authorization means? Clarify. Insurance Rep: Prior authorization means you need approval before the procedure. You: I\'d like to understand my options for getting prior authorization. Advocate. Insurance Rep: You can submit documentation online or call us. You: I\'ll follow up on this via email to make sure I have everything documented. Follow-up.',
+'dialogue2': 'Dialogue 2: Talking to HR About Benefits. You: Hi, I\'m calling to understand my benefits package. Ask. HR: Sure, I can help with that. What specific benefits are you asking about? You: I\'m asking about the health insurance options. What does this plan cover? Ask. HR: This plan covers most medical procedures, but there are some limitations. You: What does that mean? Could you explain the limitations? Clarify. HR: Some procedures require prior authorization. You: I was wondering if there are other options available? Advocate. HR: Yes, there are other plans available. I can send you the information. You: I\'ll call back next week to follow up on this. Follow-up.'
+};
+
+// Audio Profiles
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+
+// Voice scoring system
+function scoreVoice(voice) {
+let score = 70;
+
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) {
+score += 20;
+}
+
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+
+return score;
+}
+
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) {
+selectBestVoice();
+}
+}
+
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+
+let bestVoice = null;
+let bestScore = 0;
+
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) {
+bestScore = score;
+bestVoice = voice;
+}
+});
+
+selectedVoice = bestVoice || enVoices[0];
+
+if (selectedVoice) {
+console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore);
+} else {
+console.log('🎙️ Audio Engine v3 - No suitable voice found, using default');
+}
+}
+
+if (speechSynthesis.onvoiceschanged !== undefined) {
+speechSynthesis.onvoiceschanged = loadVoices;
+}
+loadVoices();
+
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) {
+stopSpeech();
+return;
+}
+stopSpeech();
+
+const text = textContent[textId];
+if (!text) return;
+
+const optimizedText = optimizePunctuation(text);
+
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+
+if (mode === 'dialogue') {
+currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97;
+} else {
+currentUtterance.pitch = profile.pitch;
+}
+} else {
+currentUtterance.rate = 0.95;
+currentUtterance.pitch = 1.05;
+}
+
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+
+isPlaying = true;
+currentButton = buttonElement;
+
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) {
+icon.className = 'ph-duotone ph-pause';
+}
+}
+
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) {
+icon.className = 'ph-duotone ph-play';
+}
+}
+
+if (shadowingMode) {
+setTimeout(() => {
+speakText(textId, buttonElement, mode);
+}, 2000);
+}
+};
+
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) {
+icon.className = 'ph-duotone ph-play';
+}
+}
+};
+
+speechSynthesis.speak(currentUtterance);
+}
+
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) {
+icon.className = 'ph-duotone ph-play';
+}
+});
+}
+
+function stopSpeech() {
+speechSynthesis.cancel();
+resetUI();
+}
+
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') {
+option.classList.add('correct');
+} else if (option.classList.contains('selected')) {
+option.classList.add('incorrect');
+}
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) {
+currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards);
+} else if (this.textContent.includes('Prev')) {
+currentFlashcard = Math.max(currentFlashcard - 1, 1);
+}
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+
+</body>
+</html>

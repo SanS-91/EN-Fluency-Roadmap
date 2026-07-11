@@ -333,6 +333,70 @@ body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-
 .decoder-table { font-size: 11px; }
 .decoder-table th, .decoder-table td { padding: 8px; }
 }
+/* ===== FIX TRÀN TRANG DỨT ĐIỂM ===== */
+
+/* 1. Khóa chặt body và container */
+* {
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+}
+body {
+    overflow-x: hidden; /* Chặn mọi thứ tràn ra ngoài màn hình */
+    max-width: 100vw;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    overflow-x: hidden; /* Ngăn container tự giãn */
+}
+
+/* 2. Fix Tables - Nguyên nhân số 1 gây tràn */
+.decoder-table {
+    width: 100%;
+    table-layout: fixed; /* Ép table không tự giãn theo nội dung */
+    word-wrap: break-word; /* Tự động xuống dòng khi text dài */
+    word-break: break-word;
+}
+.decoder-table th, 
+.decoder-table td {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    vertical-align: top;
+}
+
+/* 3. Fix Grid/Flex Items chứa text dài - Nguyên nhân số 2 */
+/* Ép các item này phải co lại (min-width: 0) thay vì đẩy grid giãn ra */
+.quiz-option, 
+.writing-task, 
+.lens-card, 
+.decoder-card,
+.task-card,
+.scenario-card,
+.mastery-card,
+.quiz-question {
+    min-width: 0; /* QUAN TRỌNG: Cho phép co nhỏ hơn kích thước nội dung */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+/* 4. Fix các section có padding lớn */
+.decoder-section,
+.reading-section,
+.micro-writing-section,
+.vocab-section,
+.dialogue-section,
+.listening-section,
+.grammar-section,
+.speaking-section,
+.task-section,
+.mastery-section,
+.quiz-section {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 </style>
 </head>
 <body>

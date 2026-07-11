@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 13 Day 90: Resisting Sales Pressure Gracefully | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+.deep-dive-item .analysis .arrow { color: var(--primary-bright); font-weight: 600; display: block; margin: 4px 0; }
+.deep-dive-item .analysis strong { color: var(--primary-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-13.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 13 Hub</a>
+<div class="day-indicator">Day 90 / 91</div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-13.html" class="day-tab">Overview</a>
+<a href="week-13-day-85.html" class="day-tab">Day 85</a>
+<a href="week-13-day-86.html" class="day-tab">Day 86</a>
+<a href="week-13-day-87.html" class="day-tab">Day 87</a>
+<a href="week-13-day-88.html" class="day-tab">Day 88</a>
+<a href="week-13-day-89.html" class="day-tab">Day 89</a>
+<a href="week-13-day-90.html" class="day-tab active">Day 90</a>
+<a href="week-13-day-91.html" class="day-tab">Day 91</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-13.html">Week 13</a> › Day 90
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🛡️</span>
+<h1 class="day-title">Resisting Sales Pressure Gracefully</h1>
+</div>
+<p class="day-subtitle">Day 89 taught you to handle objections confidently. Day 90 teaches you how to <strong>resist sales pressure gracefully</strong> — saying no without burning bridges, handling high-pressure tactics, and maintaining relationships. B2 speakers feel guilty or give in. C1 speakers say no gracefully while keeping the relationship intact.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Saying No + Maintaining Relationships + Graceful Refusal</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Sales Resistance Day 6 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Feels guilty when saying no. Gives in to pressure. Says "Maybe" when they mean "No." Feels obligated to explain extensively.<br><br><strong>C1 Speaker:</strong> Says no gracefully without guilt. Uses "I appreciate the offer, but..." pattern. Keeps relationships intact while being firm. Doesn't over-explain.<br><br>"B2 speakers feel guilty saying no. C1 speakers say no gracefully. The difference isn't vocabulary — it's confidence to say no without burning bridges."</div>
+</div>
+
+<div class="quote">"B2 speakers say 'Maybe' when they mean 'No.' C1 speakers say 'I appreciate the offer, but it's not the right fit right now.' The difference isn't vocabulary — it's confidence."</div>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Graceful Refusal = Appreciation + Clarity + Relationship Preservation</h3>
+<p class="philosophy-text">"Saying no gracefully isn't about being nice — it's about being clear while preserving the relationship. You can say no without burning bridges."</p>
+<p class="philosophy-text">Every graceful refusal requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Appreciation Decision:</strong> How do I show appreciation? (Genuine? Perfunctory?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Clarity Decision:</strong> How do I say no clearly? (Clear? Vague?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Reason Decision:</strong> How much do I explain? (Brief? Extensive?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Future Decision:</strong> Do I leave the door open? (Open? Closed?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Relationship Decision:</strong> How do I preserve the relationship? (Preserve? Burn?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 90 teaches you how to say no gracefully while preserving relationships and maintaining your boundaries.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">🛡️</div>
+<div class="plan-title">Refusal Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Appreciate → Clarify → Preserve</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">👁️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔍</div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Graceful Refusal Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 4-step process for saying no gracefully</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">APPRECIATE (Show appreciation)</div>
+<div class="loop-step-desc">How do I show appreciation? "I appreciate the offer..." / "I really appreciate you thinking of me..." (Show genuine appreciation)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">CLARIFY (Say no clearly)</div>
+<div class="loop-step-desc">How do I say no clearly? "It's not the right fit right now..." / "It's not quite what I'm looking for..." (Be clear but gentle)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">REASON (Give brief reason)</div>
+<div class="loop-step-desc">How much do I explain? "It's not quite the right timing..." / "It's not quite aligned with my priorities..." (Brief, not extensive)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">PRESERVE (Preserve relationship)</div>
+<div class="loop-step-desc">How do I preserve the relationship? "Let's keep in touch..." / "Let's definitely stay in touch..." (Leave door open)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Graceful Refusal Lenses (3-Level Examples)</h2>
+</div>
+<p class="section-desc">Every graceful refusal requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+
+<div class="lenses-grid">
+
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Showing Appreciation
+<button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I show genuine appreciation?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Appreciation Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Thanks for the offer."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I really appreciate you thinking of me."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I really appreciate you thinking of me for this — it means a lot that you thought of me."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend offers you a job. Decision: Genuine appreciation ("I really appreciate you thinking of me for this...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Client offers you a project. Decision: Professional appreciation ("I really appreciate you thinking of me for this opportunity...")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Genuine)</strong>
+Preserves relationship, shows you value them.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Genuine)</strong>
+Takes more time to express genuinely.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Saying "Thanks" perfunctorily. Native speakers show genuine appreciation to preserve relationships.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I showing genuine appreciation or being perfunctory?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Saying No Clearly
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I say no clearly but gently?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Clarity Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"No, I can't."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I don't think it's the right fit."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I appreciate the offer, but it's not quite the right fit for me right now."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend invites you to event. Decision: Clear but gentle ("I appreciate the offer, but it's not quite the right fit...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Client offers project. Decision: Professional clarity ("I appreciate the opportunity, but it's not quite aligned with my priorities...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Clear)</strong>
+Avoids confusion, preserves relationship.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Clear)</strong>
+May feel uncomfortable being direct.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Saying "Maybe" when you mean "No." Native speakers are clear to avoid confusion.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I being clear or being vague?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Giving Brief Reason
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How much do I explain?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐ High</span>
+<span class="lens-context">The Reason Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I'm busy."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"It's not quite the right timing."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"It's not quite the right timing for me right now — I'm focusing on other priorities."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend invites you to event. Decision: Brief reason ("It's not quite the right timing...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Client offers project. Decision: Professional reason ("It's not quite aligned with my current priorities...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Brief)</strong>
+Clear without over-explaining, preserves relationship.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Brief)</strong>
+May feel like you're not giving enough explanation.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Over-explaining extensively. Native speakers give brief reasons without over-explaining.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I being brief or over-explaining?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Leaving Door Open
+<button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"Do I leave the door open?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐ High</span>
+<span class="lens-context">The Future Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Maybe later."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Let's keep in touch."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Let's definitely keep in touch — I'd love to stay connected for future opportunities."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend invites you to event. Decision: Leave door open ("Let's definitely keep in touch...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Client offers project. Decision: Professional door open ("Let's definitely stay connected for future opportunities...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Open)</strong>
+Preserves relationship, leaves future possibilities.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Open)</strong>
+May lead to future pressure.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Closing door completely. Native speakers leave door open to preserve relationships.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I leaving the door open or closing it?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Preserving Relationship
+<button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I preserve the relationship?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Relationship Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Thanks anyway."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I really appreciate you thinking of me."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I really appreciate you thinking of me — it means a lot. Let's definitely stay in touch."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend invites you to event. Decision: Preserve relationship ("I really appreciate you thinking of me...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Client offers project. Decision: Professional preservation ("I really appreciate you thinking of me for this opportunity...")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Preserve)</strong>
+Maintains relationship, preserves future opportunities.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Preserve)</strong>
+Takes more effort to maintain relationship.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Burning bridges when saying no. Native speakers preserve relationships even when saying no.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I preserving the relationship or burning bridges?</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy graceful refusal</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Saying "Maybe" When You Mean "No"</h4>
+<div class="mistake-wrong"> "Maybe... I'll think about it..." (when you mean no)</div>
+<div class="mistake-right">✅ "I appreciate the offer, but it's not quite the right fit for me right now."</div>
+<div class="mistake-why">Why: Saying "maybe" creates confusion and false hope. Being clear preserves the relationship better.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Over-explaining Extensively</h4>
+<div class="mistake-wrong">❌ "I can't because... [5-minute explanation]"</div>
+<div class="mistake-right">✅ "It's not quite the right timing for me right now — I'm focusing on other priorities."</div>
+<div class="mistake-why">Why: Over-explaining sounds defensive. Brief reasons are clearer and preserve the relationship better.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Burning Bridges</h4>
+<div class="mistake-wrong">❌ "No, I'm not interested. Don't ask me again."</div>
+<div class="mistake-right">✅ "I appreciate the offer, but it's not the right fit. Let's definitely keep in touch for future opportunities."</div>
+<div class="mistake-why">Why: Burning bridges destroys relationships. Leaving the door open preserves future opportunities.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Graceful Refusal Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Friend invites you to event you don't want to attend</td>
+<td>"Maybe... I'll think about it..."</td>
+<td>"I don't think I can make it."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate you thinking of me! Unfortunately, it's not quite the right timing for me right now — I'm focusing on other priorities. But let's definitely keep in touch!"</span>
+<span class="why">Why: Shows appreciation, clear but gentle, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate the offer, but it's not the right fit."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>2. Client offers project that's not right fit</td>
+<td>"Maybe... let me think about it..."</td>
+<td>"It's not quite what I'm looking for."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate you thinking of me for this opportunity! Unfortunately, it's not quite aligned with my current priorities. But let's definitely stay in touch for future opportunities."</span>
+<span class="why">Why: Shows appreciation, clear but professional, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate the opportunity, but it's not aligned with my priorities."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>3. Friend asks you to do favor you don't want to do</td>
+<td>"Maybe... I'll see..."</td>
+<td>"I don't think I can help with that."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate you asking me! Unfortunately, I'm not able to help with that right now — I'm focusing on other commitments. But I really appreciate you thinking of me!"</span>
+<span class="why">Why: Shows appreciation, clear but gentle, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate you asking, but I can't help with that."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>4. Salesperson pressures you to buy</td>
+<td>"Maybe... I'll think about it..."</td>
+<td>"I'm not interested."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I appreciate you showing me this! Unfortunately, it's not quite what I'm looking for right now. But I appreciate your time!"</span>
+<span class="why">Why: Shows appreciation, clear but polite, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate your time, but it's not what I'm looking for."</td>
+<td>Casual to professional</td>
+</tr>
+<tr>
+<td>5. Colleague asks you to take on extra work</td>
+<td>"Maybe... I'll see if I can..."</td>
+<td>"I don't have capacity."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate you thinking of me! Unfortunately, I don't have capacity right now — I'm focusing on other priorities. But I really appreciate you thinking of me!"</span>
+<span class="why">Why: Shows appreciation, clear but professional, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate you thinking of me, but I don't have capacity."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>6. Friend invites you to join their business</td>
+<td>"Maybe... I'll think about it..."</td>
+<td>"I'm not interested in joining."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate you thinking of me for this! Unfortunately, it's not quite aligned with my current priorities. But I really appreciate you thinking of me — let's definitely stay in touch!"</span>
+<span class="why">Why: Shows appreciation, clear but gentle, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate the opportunity, but it's not aligned with my priorities."</td>
+<td>Casual to professional</td>
+</tr>
+<tr>
+<td>7. Someone asks you to do something you're uncomfortable with</td>
+<td>"Maybe... I'll see..."</td>
+<td>"I'm not comfortable with that."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate you asking! Unfortunately, that's not quite something I'm comfortable with. But I really appreciate you thinking of me!"</span>
+<span class="why">Why: Shows appreciation, clear but gentle, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate you asking, but I'm not comfortable with that."</td>
+<td>Casual to professional</td>
+</tr>
+<tr>
+<td>8. Someone pressures you to make quick decision</td>
+<td>"Maybe... I need to think..."</td>
+<td>"I need more time to decide."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate the offer! I need a bit more time to think about it — I want to make sure it's the right fit. I'll get back to you soon!"</span>
+<span class="why">Why: Shows appreciation, clear about needing time, preserves relationship</span>
+</div>
+</td>
+<td>"I appreciate the offer, but I need more time to decide."</td>
+<td>Casual to professional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title">🏠 Case 1: Life - Resisting Friend's Business Invitation</h4>
+<div class="case-context"><strong>Context:</strong> Your friend invites you to join their startup. You're not interested, but you want to preserve the friendship.</div>
+<div class="case-narrative">
+<p><span class="speaker">Friend:</span> "Hey! I'm starting a new startup and I'd love for you to join as co-founder. What do you think?"</p>
+<p><span class="speaker">You:</span> "Wow, <strong>I really appreciate you thinking of me for this!</strong> That's really exciting!" <span class="move-highlight move1">Appreciate</span></p>
+<p><span class="speaker">Friend:</span> "Yeah! I think we could build something amazing together."</p>
+<p><span class="speaker">You:</span> "That sounds amazing! <strong>Unfortunately, it's not quite aligned with my current priorities</strong> — I'm focusing on my current role right now." <span class="move-highlight move2">Clarify</span></p>
+<p><span class="speaker">Friend:</span> "Oh, I see. Are you sure? I think it could be really great."</p>
+<p><span class="speaker">You:</span> "I'm sure — <strong>it's not quite the right timing for me right now.</strong> But <strong>I really appreciate you thinking of me!</strong>" <span class="move-highlight move3">Reason + Appreciate</span></p>
+<p><span class="speaker">Friend:</span> "I understand. Well, if you change your mind, let me know!"</p>
+<p><span class="speaker">You:</span> "Absolutely! <strong>Let's definitely keep in touch</strong> — I'd love to stay connected and see how your startup grows!" <span class="move-highlight move4">Preserve</span></p>
+<p><span class="speaker">Friend:</span> "That sounds great! Thanks for being honest."</p>
+<p><span class="speaker">You:</span> "Of course! <strong>I really appreciate you thinking of me</strong> — it means a lot. Let's definitely grab coffee soon and catch up!" <span class="move-highlight move4">Preserve</span></p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I really appreciate you thinking of me!"</strong><span class="meaning">Tôi thực sự trân trọng bạn đã nghĩ đến tôi!</span><span class="register">Register: Casual</span></li>
+<li><strong>"That's really exciting!"</strong><span class="meaning">Điều đó thực sự thú vị!</span><span class="register">Register: Casual</span></li>
+<li><strong>"Unfortunately, it's not quite aligned with my current priorities"</strong><span class="meaning">Thật không may, nó không hoàn toàn phù hợp với ưu tiên hiện tại của tôi</span><span class="register">Register: Casual</span></li>
+<li><strong>"I'm focusing on my current role right now"</strong><span class="meaning">Tôi đang tập trung vào vai trò hiện tại của mình</span><span class="register">Register: Casual</span></li>
+<li><strong>"It's not quite the right timing for me right now"</strong><span class="meaning">Không phải thời điểm phù hợp cho tôi lúc này</span><span class="register">Register: Casual</span></li>
+<li><strong>"I really appreciate you thinking of me!"</strong><span class="meaning">Tôi thực sự trân trọng bạn đã nghĩ đến tôi!</span><span class="register">Register: Casual</span></li>
+<li><strong>"Let's definitely keep in touch"</strong><span class="meaning">Hãy chắc chắn giữ liên lạc</span><span class="register">Register: Casual</span></li>
+<li><strong>"I'd love to stay connected"</strong><span class="meaning">Tôi rất muốn giữ kết nối</span><span class="register">Register: Casual</span></li>
+<li><strong>"See how your startup grows"</strong><span class="meaning">Xem startup của bạn phát triển như thế nào</span><span class="register">Register: Casual</span></li>
+<li><strong>"Thanks for being honest"</strong><span class="meaning">Cảm ơn vì đã trung thực</span><span class="register">Register: Casual</span></li>
+<li><strong>"Of course!"</strong><span class="meaning">Tất nhiên rồi!</span><span class="register">Register: Casual</span></li>
+<li><strong>"I really appreciate you thinking of me — it means a lot"</strong><span class="meaning">Tôi thực sự trân trọng bạn đã nghĩ đến tôi — điều đó có ý nghĩa rất lớn</span><span class="register">Register: Casual</span></li>
+<li><strong>"Let's definitely grab coffee soon"</strong><span class="meaning">Hãy chắc chắn đi cà phê sớm</span><span class="register">Register: Casual</span></li>
+<li><strong>"Catch up"</strong><span class="meaning">Hàn huyên</span><span class="register">Register: Casual</span></li>
+<li><strong>"That sounds amazing!"</strong><span class="meaning">Nghe có vẻ tuyệt vời!</span><span class="register">Register: Casual</span></li>
+<li><strong>"That sounds great!"</strong><span class="meaning">Nghe có vẻ tuyệt!</span><span class="register">Register: Casual</span></li>
+<li><strong>"Are you sure?"</strong><span class="meaning">Bạn chắc chứ?</span><span class="register">Register: Casual</span></li>
+<li><strong>"I think it could be really great"</strong><span class="meaning">Tôi nghĩ nó có thể thực sự tuyệt vời</span><span class="register">Register: Casual</span></li>
+<li><strong>"I'm focusing on other priorities"</strong><span class="meaning">Tôi đang tập trung vào các ưu tiên khác</span><span class="register">Register: Casual</span></li>
+<li><strong>"It's not quite the right fit"</strong><span class="meaning">Không hoàn toàn phù hợp</span><span class="register">Register: Casual</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Resisting Client's Project Offer</h4>
+<div class="case-context"><strong>Context:</strong> A client offers you a project that's not the right fit. You want to decline gracefully while preserving the relationship.</div>
+<div class="case-narrative">
+<p><span class="speaker">Client:</span> "Hi! We have a new project and I'd love for you to lead it. What do you think?"</p>
+<p><span class="speaker">You:</span> "Hi! <strong>I really appreciate you thinking of me for this opportunity!</strong> That sounds like an exciting project." <span class="move-highlight move1">Appreciate</span></p>
+<p><span class="speaker">Client:</span> "Yeah! I think you'd be perfect for it."</p>
+<p><span class="speaker">You:</span> "That's really flattering! <strong>Unfortunately, it's not quite aligned with my current priorities</strong> — I'm focusing on other projects right now." <span class="move-highlight move2">Clarify</span></p>
+<p><span class="speaker">Client:</span> "Oh, I see. Are you sure? I think it could be a great opportunity."</p>
+<p><span class="speaker">You:</span> "I'm sure — <strong>it's not quite the right timing for me right now.</strong> But <strong>I really appreciate you thinking of me!</strong>" <span class="move-highlight move3">Reason + Appreciate</span></p>
+<p><span class="speaker">Client:</span> "I understand. Well, if you change your mind, let me know!"</p>
+<p><span class="speaker">You:</span> "Absolutely! <strong>Let's definitely stay in touch</strong> — I'd love to stay connected for future opportunities!" <span class="move-highlight move4">Preserve</span></p>
+<p><span class="speaker">Client:</span> "That sounds great! Thanks for being honest."</p>
+<p><span class="speaker">You:</span> "Of course! <strong>I really appreciate you thinking of me</strong> — it means a lot. Let's definitely grab coffee soon and catch up!" <span class="move-highlight move4">Preserve</span></p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I really appreciate you thinking of me for this opportunity!"</strong><span class="meaning">Tôi thực sự trân trọng bạn đã nghĩ đến tôi cho cơ hội này!</span><span class="register">Register: Professional</span></li>
+<li><strong>"That sounds like an exciting project"</strong><span class="meaning">Nghe có vẻ như một dự án thú vị</span><span class="register">Register: Professional</span></li>
+<li><strong>"That's really flattering!"</strong><span class="meaning">Điều đó thực sự là một lời khen!</span><span class="register">Register: Professional</span></li>
+<li><strong>"Unfortunately, it's not quite aligned with my current priorities"</strong><span class="meaning">Thật không may, nó không hoàn toàn phù hợp với ưu tiên hiện tại của tôi</span><span class="register">Register: Professional</span></li>
+<li><strong>"I'm focusing on other projects right now"</strong><span class="meaning">Tôi đang tập trung vào các dự án khác lúc này</span><span class="register">Register: Professional</span></li>
+<li><strong>"It's not quite the right timing for me right now"</strong><span class="meaning">Không phải thời điểm phù hợp cho tôi lúc này</span><span class="register">Register: Professional</span></li>
+<li><strong>"I really appreciate you thinking of me!"</strong><span class="meaning">Tôi thực sự trân trọng bạn đã nghĩ đến tôi!</span><span class="register">Register: Professional</span></li>
+<li><strong>"Let's definitely stay in touch"</strong><span class="meaning">Hãy chắc chắn giữ liên lạc</span><span class="register">Register: Professional</span></li>
+<li><strong>"I'd love to stay connected for future opportunities"</strong><span class="meaning">Tôi rất muốn giữ kết nối cho các cơ hội tương lai</span><span class="register">Register: Professional</span></li>
+<li><strong>"Thanks for being honest"</strong><span class="meaning">Cảm ơn vì đã trung thực</span><span class="register">Register: Professional</span></li>
+<li><strong>"Of course!"</strong><span class="meaning">Tất nhiên rồi!</span><span class="register">Register: Professional</span></li>
+<li><strong>"I really appreciate you thinking of me — it means a lot"</strong><span class="meaning">Tôi thực sự trân trọng bạn đã nghĩ đến tôi — điều đó có ý nghĩa rất lớn</span><span class="register">Register: Professional</span></li>
+<li><strong>"Let's definitely grab coffee soon"</strong><span class="meaning">Hãy chắc chắn đi cà phê sớm</span><span class="register">Register: Professional</span></li>
+<li><strong>"Catch up"</strong><span class="meaning">Hàn huyên</span><span class="register">Register: Professional</span></li>
+<li><strong>"That sounds like an exciting project"</strong><span class="meaning">Nghe có vẻ như một dự án thú vị</span><span class="register">Register: Professional</span></li>
+<li><strong>"That's really flattering"</strong><span class="meaning">Điều đó thực sự là một lời khen</span><span class="register">Register: Professional</span></li>
+<li><strong>"Are you sure?"</strong><span class="meaning">Bạn chắc chứ?</span><span class="register">Register: Professional</span></li>
+<li><strong>"I think it could be a great opportunity"</strong><span class="meaning">Tôi nghĩ nó có thể là một cơ hội tuyệt vời</span><span class="register">Register: Professional</span></li>
+<li><strong>"I'm focusing on other priorities"</strong><span class="meaning">Tôi đang tập trung vào các ưu tiên khác</span><span class="register">Register: Professional</span></li>
+<li><strong>"It's not quite the right fit"</strong><span class="meaning">Không hoàn toàn phù hợp</span><span class="register">Register: Professional</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Graceful Refusal Messages (with Model Answers)</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Resisting Friend's Invitation</h4>
+<p class="task-context"><strong>Context:</strong> Your friend invites you to an event you don't want to attend. Write a message declining gracefully while preserving the friendship.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use appreciation pattern</li>
+<li>Use clear but gentle refusal</li>
+<li>Length: 80-120 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hey! I really appreciate you thinking of me for this! That sounds like a lot of fun. Unfortunately, it's not quite the right timing for me right now — I'm focusing on other commitments. But I really appreciate you thinking of me! Let's definitely keep in touch and grab coffee soon!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Appreciation:</strong> "I really appreciate you thinking of me"</li>
+<li><strong>Clear refusal:</strong> "It's not quite the right timing"</li>
+<li><strong>Preserve relationship:</strong> "Let's definitely keep in touch"</li>
+<li><strong>Brief reason:</strong> "I'm focusing on other commitments"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"Hey! Thanks so much for thinking of me! That sounds fun, but it's not quite the right timing for me right now. I really appreciate you thinking of me though! Let's definitely grab coffee soon!"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (80-120 words)</li>
+<li>□ dùng appreciation pattern</li>
+<li>□ dùng clear but gentle refusal</li>
+<li>□ preserve relationship</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Resisting Client's Project Offer</h4>
+<p class="task-context"><strong>Context:</strong> A client offers you a project that's not the right fit. Write a message declining gracefully while preserving the relationship.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use appreciation pattern</li>
+<li>Use clear but professional refusal</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi! I really appreciate you thinking of me for this opportunity! That sounds like an exciting project. Unfortunately, it's not quite aligned with my current priorities — I'm focusing on other projects right now. But I really appreciate you thinking of me! Let's definitely stay in touch for future opportunities!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Appreciation:</strong> "I really appreciate you thinking of me"</li>
+<li><strong>Clear refusal:</strong> "It's not quite aligned with my current priorities"</li>
+<li><strong>Preserve relationship:</strong> "Let's definitely stay in touch"</li>
+<li><strong>Brief reason:</strong> "I'm focusing on other projects"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Hi! Thank you for thinking of me for this opportunity. That sounds like an exciting project. Unfortunately, it's not quite aligned with my current priorities. I really appreciate you thinking of me though! Let's definitely stay in touch for future opportunities."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng appreciation pattern</li>
+<li>□ dùng clear but professional refusal</li>
+<li>□ preserve relationship</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Resisting Colleague's Request</h4>
+<p class="task-context"><strong>Context:</strong> A colleague asks you to take on extra work that you don't have capacity for. Write a message declining gracefully.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use appreciation pattern</li>
+<li>Use clear but professional refusal</li>
+<li>Length: 80-120 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi! I really appreciate you thinking of me for this! Unfortunately, I don't have capacity right now — I'm focusing on other priorities. But I really appreciate you thinking of me! Let's definitely keep in touch for future opportunities!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Appreciation:</strong> "I really appreciate you thinking of me"</li>
+<li><strong>Clear refusal:</strong> "I don't have capacity right now"</li>
+<li><strong>Preserve relationship:</strong> "Let's definitely keep in touch"</li>
+<li><strong>Brief reason:</strong> "I'm focusing on other priorities"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Hi! Thank you for thinking of me. Unfortunately, I don't have capacity for this right now. I really appreciate you thinking of me though! Let's definitely keep in touch."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (80-120 words)</li>
+<li>□ dùng appreciation pattern</li>
+<li>□ dùng clear but professional refusal</li>
+<li>□ preserve relationship</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Resisting Sales Pressure</h4>
+<p class="task-context"><strong>Context:</strong> A salesperson is pressuring you to buy something you don't want. Write a message declining gracefully.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use appreciation pattern</li>
+<li>Use clear but polite refusal</li>
+<li>Length: 80-120 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi! I really appreciate you showing me this! Unfortunately, it's not quite what I'm looking for right now. But I really appreciate your time! Let's definitely keep in touch for future opportunities!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Appreciation:</strong> "I really appreciate you showing me this"</li>
+<li><strong>Clear refusal:</strong> "It's not quite what I'm looking for"</li>
+<li><strong>Preserve relationship:</strong> "Let's definitely keep in touch"</li>
+<li><strong>Brief reason:</strong> "It's not quite what I'm looking for"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Polite)</h5>
+<p class="alt-text">"Hi! Thank you for showing me this. Unfortunately, it's not quite what I'm looking for right now. I really appreciate your time though! Let's definitely keep in touch."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (80-120 words)</li>
+<li>□ dùng appreciation pattern</li>
+<li>□ dùng clear but polite refusal</li>
+<li>□ preserve relationship</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Graceful Refusal Lexicon)</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title"> The Graceful Refusal Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title"> Appreciation Patterns</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>I really appreciate you thinking of me</strong>
+<div class="ipa">/aɪ ˈrɪə.li əˈpriː.ʃi.eɪt juː ˈθɪŋ.kɪŋ əv miː/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi thực sự trân trọng bạn đã nghĩ đến tôi</div>
+<div class="collocation">Collocation: "I really appreciate you thinking of me"</div>
+<div class="chunk">Chunk: "I really appreciate you thinking of me for this"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I really appreciate you thinking of me."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I really appreciate you thinking of me for this opportunity — it means a lot!"</div>
+<div class="native-alt">Native alternative: "I really appreciate you thinking of me"</div>
+<button class="vocab-audio-btn" onclick="speakText('appreciate-thinking', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I really appreciate your time</strong>
+<div class="ipa">/aɪ rɪə.li əˈpriː.ʃi.eɪt jɔːr taɪm/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi thực sự trân trọng thời gian của bạn</div>
+<div class="collocation">Collocation: "I really appreciate your time"</div>
+<div class="chunk">Chunk: "I really appreciate your time"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I really appreciate your time."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I really appreciate your time — it means a lot!"</div>
+<div class="native-alt">Native alternative: "I really appreciate your time"</div>
+<button class="vocab-audio-btn" onclick="speakText('appreciate-time', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>That's really flattering</strong>
+<div class="ipa">/ðæts ˈrɪə.li ˈflæt.ər.ɪŋ/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều đó thực sự là một lời khen</div>
+<div class="collocation">Collocation: "that's really flattering"</div>
+<div class="chunk">Chunk: "That's really flattering!"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"That's really flattering!"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"That's really flattering! I really appreciate you thinking of me."</div>
+<div class="native-alt">Native alternative: "that's really flattering"</div>
+<button class="vocab-audio-btn" onclick="speakText('really-flattering', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title"> Clear Refusal Patterns</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>It's not quite the right fit</strong>
+<div class="ipa">/ɪts nɒt kwaɪt ðə rat fɪt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Không hoàn toàn phù hợp</div>
+<div class="collocation">Collocation: "it's not quite the right fit"</div>
+<div class="chunk">Chunk: "It's not quite the right fit for me"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"It's not quite the right fit."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Unfortunately, it's not quite the right fit for me right now."</div>
+<div class="native-alt">Native alternative: "it's not quite the right fit"</div>
+<button class="vocab-audio-btn" onclick="speakText('not-right-fit', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>It's not quite aligned with my priorities</strong>
+<div class="ipa">/ts nɒt kwaɪt əˈlaɪnd wɪð maɪ praɪˈɒr.ə.tiz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Không hoàn toàn phù hợp với ưu tiên của tôi</div>
+<div class="collocation">Collocation: "it's not quite aligned with my priorities"</div>
+<div class="chunk">Chunk: "It's not quite aligned with my current priorities"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"It's not quite aligned with my priorities."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Unfortunately, it's not quite aligned with my current priorities."</div>
+<div class="native-alt">Native alternative: "it's not quite aligned with my priorities"</div>
+<button class="vocab-audio-btn" onclick="speakText('not-aligned', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>It's not quite the right timing</strong>
+<div class="ipa">/ɪts nɒt kwaɪt ðə raɪt taɪ.mɪŋ/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Không phải thời điểm phù hợp</div>
+<div class="collocation">Collocation: "it's not quite the right timing"</div>
+<div class="chunk">Chunk: "It's not quite the right timing for me"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"It's not quite the right timing."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Unfortunately, it's not quite the right timing for me right now."</div>
+<div class="native-alt">Native alternative: "it's not quite the right timing"</div>
+<button class="vocab-audio-btn" onclick="speakText('not-right-timing', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🤝 Relationship Preservation</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>Let's definitely keep in touch</strong>
+<div class="ipa">/lets ˈdef.ɪ.nət.li kiːp ɪn tʌtʃ/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Hãy chắc chắn giữ liên lạc</div>
+<div class="collocation">Collocation: "let's definitely keep in touch"</div>
+<div class="chunk">Chunk: "Let's definitely keep in touch"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Let's definitely keep in touch."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Let's definitely keep in touch — I'd love to stay connected!"</div>
+<div class="native-alt">Native alternative: "let's definitely keep in touch"</div>
+<button class="vocab-audio-btn" onclick="speakText('keep-in-touch', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I'd love to stay connected</strong>
+<div class="ipa">/aɪd lʌv tuː steɪ kəˈnek.tɪd/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi rất muốn giữ kết nối</div>
+<div class="collocation">Collocation: "I'd love to stay connected"</div>
+<div class="chunk">Chunk: "I'd love to stay connected for future opportunities"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I'd love to stay connected."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I'd love to stay connected for future opportunities!"</div>
+<div class="native-alt">Native alternative: "I'd love to stay connected"</div>
+<button class="vocab-audio-btn" onclick="speakText('stay-connected', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>It means a lot</strong>
+<div class="ipa">/ɪt miːnz ə lɒt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều đó có ý nghĩa rất lớn</div>
+<div class="collocation">Collocation: "it means a lot"</div>
+<div class="chunk">Chunk: "It means a lot that you thought of me"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"It means a lot."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I really appreciate you thinking of me — it means a lot!"</div>
+<div class="native-alt">Native alternative: "it means a lot"</div>
+<button class="vocab-audio-btn" onclick="speakText('means-a-lot', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format - 15-20 turns)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title">🏠 Dialogue 1: Resisting Friend's Business Invitation (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Your friend invites you to join their startup. You're not interested, but you want to preserve the friendship.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Hey! I'm starting a new startup and I'd love for you to join as co-founder. What do you think?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Wow, <strong>I really appreciate you thinking of me for this!</strong> That's really exciting!" <span class="move-highlight move1">Appreciate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Yeah! I think we could build something amazing together."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"That sounds amazing! <strong>Unfortunately, it's not quite aligned with my current priorities</strong> — I'm focusing on my current role right now." <span class="move-highlight move2">Clarify</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Oh, I see. Are you sure? I think it could be really great."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'm sure — <strong>it's not quite the right timing for me right now.</strong> But <strong>I really appreciate you thinking of me!</strong>" <span class="move-highlight move3">Reason + Appreciate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"I understand. Well, if you change your mind, let me know!"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Absolutely! <strong>Let's definitely keep in touch</strong> — I'd love to stay connected and see how your startup grows!" <span class="move-highlight move4">Preserve</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"That sounds great! Thanks for being honest."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Of course! <strong>I really appreciate you thinking of me</strong> — it means a lot. Let's definitely grab coffee soon and catch up!" <span class="move-highlight move4">Preserve</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Appreciation (genuine) + Clarification (clear but gentle) + Preservation (leave door open).</li>
+<li><strong>Alternative Decision:</strong> Saying "maybe" or burning bridges. (Risk: Confusion or destroyed relationship).</li>
+<li><strong>Why this decision?</strong> Appreciation preserves relationship. Clear refusal avoids confusion. Leaving door open preserves future opportunities.</li>
+<li><strong>Resistance handled:</strong> Friend's persistence. You stayed firm but gentle.</li>
+<li><strong>Evolution:</strong> Appreciation → Clarification → Reason → Preservation.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Resisting Client's Project Offer (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> A client offers you a project that's not the right fit. You want to decline gracefully while preserving the relationship.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Client:</div>
+<div class="dialogue-text">"Hi! We have a new project and I'd love for you to lead it. What do you think?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hi! <strong>I really appreciate you thinking of me for this opportunity!</strong> That sounds like an exciting project." <span class="move-highlight move1">Appreciate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Client:</div>
+<div class="dialogue-text">"Yeah! I think you'd be perfect for it."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"That's really flattering! <strong>Unfortunately, it's not quite aligned with my current priorities</strong> — I'm focusing on other projects right now." <span class="move-highlight move2">Clarify</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Client:</div>
+<div class="dialogue-text">"Oh, I see. Are you sure? I think it could be a great opportunity."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'm sure — <strong>it's not quite the right timing for me right now.</strong> But <strong>I really appreciate you thinking of me!</strong>" <span class="move-highlight move3">Reason + Appreciate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Client:</div>
+<div class="dialogue-text">"I understand. Well, if you change your mind, let me know!"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Absolutely! <strong>Let's definitely stay in touch</strong> — I'd love to stay connected for future opportunities!" <span class="move-highlight move4">Preserve</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Client:</div>
+<div class="dialogue-text">"That sounds great! Thanks for being honest."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Of course! <strong>I really appreciate you thinking of me</strong> — it means a lot. Let's definitely grab coffee soon and catch up!" <span class="move-highlight move4">Preserve</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Appreciation (genuine) + Clarification (clear but professional) + Preservation (leave door open).</li>
+<li><strong>Alternative Decision:</strong> Saying "maybe" or burning bridges. (Risk: Confusion or destroyed relationship).</li>
+<li><strong>Why this decision?</strong> Appreciation preserves relationship. Clear refusal avoids confusion. Leaving door open preserves future opportunities.</li>
+<li><strong>Resistance handled:</strong> Client's persistence. You stayed firm but professional.</li>
+<li><strong>Evolution:</strong> Appreciation → Clarification → Reason → Preservation.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to a natural conversation about resisting pressure gracefully. Notice the fillers, hesitation, and discourse markers.</p>
+<div class="transcript-box">
+<h4>📄 Transcript</h4>
+<div class="transcript-text">
+<p><strong>Key Phrases from Dialogues:</strong></p>
+<p>"I really appreciate you thinking of me!"</p>
+<p>"Unfortunately, it's not quite the right fit..."</p>
+<p>"Let's definitely keep in touch..."</p>
+<p>"It means a lot..."</p>
+</div>
+</div>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"I really appreciate you thinking of me!"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Shows genuine appreciation
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I really appreciate you thinking of me..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Preserves relationship, shows you value them
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Unfortunately, it's not quite the right fit..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Clear but gentle refusal
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Unfortunately, it's not quite the right fit..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Clear without being harsh
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Let's definitely keep in touch..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Preserves relationship
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Let's definitely keep in touch..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Leaves door open for future
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"It means a lot..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Shows genuine appreciation
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "It means a lot..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows genuine appreciation
+</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"I really appreciate..."</div>
+<div class="note"><strong>Function:</strong> Shows genuine appreciation</div>
+<div class="note"><strong>Usage:</strong> Use when declining to preserve relationship</div>
+<div class="note"><strong>Alternative:</strong> "I really appreciate..."</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Unfortunately..."</div>
+<div class="note"><strong>Function:</strong> Softens refusal</div>
+<div class="note"><strong>Usage:</strong> Use before clear refusal</div>
+<div class="note"><strong>Alternative:</strong> "Unfortunately..."</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Let's definitely..."</div>
+<div class="note"><strong>Function:</strong> Leaves door open</div>
+<div class="note"><strong>Usage:</strong> Use to preserve relationship</div>
+<div class="note"><strong>Alternative:</strong> "Let's definitely..."</div>
+</div>
+</div>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Appreciation Intonation</div>
+<div class="detail">"I really appreciate you thinking of me!" (Warm, genuine tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Refusal Intonation</div>
+<div class="detail">"Unfortunately, it's not quite the right fit..." (Gentle, clear tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Preservation Intonation</div>
+<div class="detail">"Let's definitely keep in touch!" (Warm, open tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Appreciation Emphasis</div>
+<div class="detail">"It means a lot!" (Emphasis on "means a lot")</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 1: Nghe Appreciation</strong></div>
+<div class="note"><strong>Focus:</strong> "I really appreciate..."</div>
+<div class="note"><strong>Question:</strong> "Where is the appreciation?"</div>
+<div class="note"><strong>Signal:</strong> Shows genuine appreciation</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 2: Nghe Refusal</strong></div>
+<div class="note"><strong>Focus:</strong> "Unfortunately..."</div>
+<div class="note"><strong>Question:</strong> "Where is the refusal?"</div>
+<div class="note"><strong>Signal:</strong> Clear but gentle refusal</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 3: Nghe Preservation</strong></div>
+<div class="note"><strong>Focus:</strong> "Let's definitely..."</div>
+<div class="note"><strong>Question:</strong> "Where is the preservation?"</div>
+<div class="note"><strong>Signal:</strong> Leaves door open</div>
+</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the graceful refusal rhythm:</div>
+<div class="note">1. Listen to: "I really appreciate... Unfortunately... Let's definitely..."</div>
+<div class="note">2. Shadow: Match the warm, genuine, gentle tone</div>
+<div class="note">3. Focus: Stress on "appreciate", "unfortunately", "definitely"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different element</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "I really appreciate you thinking of me"?</div>
+<div class="note">✅ To show genuine appreciation and preserve relationship.</div>
+<div class="note">2. What was the strategic goal of saying "Unfortunately, it's not quite the right fit"?</div>
+<div class="note">✅ To be clear but gentle, avoiding confusion.</div>
+<div class="note">3. How did you handle preserving the relationship?</div>
+<div class="note">✅ Said "Let's definitely keep in touch" — leaves door open.</div>
+<div class="note">4. What was the trade-off of being clear?</div>
+<div class="note">✅ Avoids confusion, but may feel uncomfortable being direct.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Appreciation with "I really appreciate you thinking of me"</h4>
+<div class="explanation">Used to show genuine appreciation when declining. Preserves relationship while being clear.</div>
+<ul class="grammar-examples-list">
+<li>"I really appreciate you thinking of me!"</li>
+<li>"I really appreciate you thinking of me for this opportunity!"</li>
+<li>"I really appreciate your time!"</li>
+<li>"I really appreciate you thinking of me — it means a lot!"</li>
+<li>"I really appreciate you showing me this!"</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "Thanks" (perfunctory, doesn't preserve relationship)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I really appreciate you thinking of me!"
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Clear Refusal with "It's not quite the right fit"</h4>
+<div class="explanation">Used to say no clearly but gently. Clear without being harsh.</div>
+<ul class="grammar-examples-list">
+<li>"It's not quite the right fit."</li>
+<li>"It's not quite aligned with my priorities."</li>
+<li>"It's not quite the right timing."</li>
+<li>"It's not quite what I'm looking for."</li>
+<li>"It's not quite something I'm comfortable with."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "Maybe..." (vague, creates confusion)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "It's not quite the right fit."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Brief Reason with "I'm focusing on..."</h4>
+<div class="explanation">Used to give brief reason without over-explaining. Brief without being defensive.</div>
+<ul class="grammar-examples-list">
+<li>"I'm focusing on other priorities."</li>
+<li>"I'm focusing on my current role."</li>
+<li>"I'm focusing on other projects."</li>
+<li>"I'm focusing on other commitments."</li>
+<li>"It's not quite the right timing for me."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> [5-minute explanation] (over-explaining, sounds defensive)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I'm focusing on other priorities."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Leaving Door Open with "Let's definitely keep in touch"</h4>
+<div class="explanation">Used to preserve relationship. Leaves door open for future opportunities.</div>
+<ul class="grammar-examples-list">
+<li>"Let's definitely keep in touch!"</li>
+<li>"Let's definitely stay in touch!"</li>
+<li>"I'd love to stay connected!"</li>
+<li>"Let's definitely grab coffee soon!"</li>
+<li>"Let's definitely keep in touch for future opportunities!"</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "Don't ask me again." (burns bridges)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "Let's definitely keep in touch!"
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Appreciation Emphasis with "It means a lot"</h4>
+<div class="explanation">Used to show genuine appreciation. Shows genuine appreciation.</div>
+<ul class="grammar-examples-list">
+<li>"It means a lot!"</li>
+<li>"It means a lot that you thought of me!"</li>
+<li>"It really means a lot!"</li>
+<li>"It means a lot that you thought of me for this!"</li>
+<li>"It really means a lot!"</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "Thanks" (doesn't show genuine appreciation)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "It means a lot!"
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Resisting Friend's Invitation</h3>
+<p class="scenario-context">Friend invites you to event you don't want to attend.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Appreciate + Clarify</span>
+<span class="response">"I really appreciate you thinking of me! Unfortunately, it's not quite the right timing for me right now."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Preserve</span>
+<span class="response">"But I really appreciate you thinking of me! Let's definitely keep in touch and grab coffee soon!"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Saying "maybe" when you mean "no."</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Resisting Client's Project Offer</h3>
+<p class="scenario-context">Client offers project that's not right fit.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Appreciate + Clarify</span>
+<span class="response">"I really appreciate you thinking of me for this opportunity! Unfortunately, it's not quite aligned with my current priorities."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Preserve</span>
+<span class="response">"But I really appreciate you thinking of me! Let's definitely stay in touch for future opportunities!"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Over-explaining extensively.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Resisting Colleague's Request</h3>
+<p class="scenario-context">Colleague asks you to take on extra work.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Appreciate + Clarify</span>
+<span class="response">"I really appreciate you thinking of me! Unfortunately, I don't have capacity right now."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Preserve</span>
+<span class="response">"But I really appreciate you thinking of me! Let's definitely keep in touch!"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Burning bridges.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Resisting Sales Pressure</h3>
+<p class="scenario-context">Salesperson pressures you to buy something you don't want.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Appreciate + Clarify</span>
+<span class="response">"I really appreciate you showing me this! Unfortunately, it's not quite what I'm looking for right now."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Preserve</span>
+<span class="response">"But I really appreciate your time! Let's definitely keep in touch!"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 3: Handle Persistence</span>
+<span class="response">"I'm sure — it's not quite the right fit. But I really appreciate your time!"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Giving in to pressure.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Graceful Refusal Challenge</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title"> Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 The Graceful Refusal Audit</h3>
+<p class="task-time">⏱️ 15 minutes</p>
+<p class="task-desc">Identify 1 situation where you need to say no. Apply the 5 lenses. What decisions are you making?</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the situation</li>
+<li>Apply the 5 lenses (Appreciation, Clarity, Reason, Future, Relationship)</li>
+<li>What decisions are you making?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</p>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Graceful Refusal Practice</h3>
+<p class="task-time">⏱️ 30 minutes</p>
+<p class="task-desc">Role-play a graceful refusal scenario. Practice the 5-step loop. Get feedback on your gracefulness.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose a graceful refusal scenario</li>
+<li>Practice all 5 steps of the loop</li>
+<li>Get feedback on your gracefulness</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</p>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3> The Real Graceful Refusal</h3>
+<p class="task-time">⏱️ 60 minutes</p>
+<p class="task-desc">This week, say no gracefully in a real situation. Use the 5-step framework in real-time. Note what worked, what didn't, and what you learned.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify a real situation to say no</li>
+<li>Apply the 5-step framework in real-time</li>
+<li>Use the 5-step framework (Appreciation, Clarity, Reason, Future, Relationship)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default style?</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Graceful Refusal Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I show genuine appreciation</h4>
+<p>I show genuine appreciation when declining, not being perfunctory.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I say no clearly</h4>
+<p>I say no clearly but gently, not being vague or harsh.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I give brief reason</h4>
+<p>I give brief reason without over-explaining.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I leave door open</h4>
+<p>I leave door open for future, not closing it completely.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I preserve relationship</h4>
+<p>I preserve relationship, not burning bridges.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the 5-step framework in graceful refusal, you are ready for Day 91: Final Integration.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> You need to say no gracefully</p>
+<button>Tap to reveal Graceful Refusal Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "Maybe..." or "No, I'm not interested."</p>
+<p><strong>C1 Language:</strong> Appreciate → Clarify → Reason → Preserve.</p>
+<p><strong>Trade-off:</strong> Takes more effort, but preserves relationship.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In graceful refusal, appreciation preserves relationship. Clarity avoids confusion. Brief reason avoids over-explaining. Leaving door open preserves future.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Resisting Sales Pressure Gracefully</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Friend invites you to event you don't want. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Maybe... I'll think about it..."</div>
+<div class="quiz-option" data-correct="true">B. "I really appreciate you thinking of me! Unfortunately, it's not quite the right timing."</div>
+<div class="quiz-option" data-correct="false">C. "No, I'm not interested."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Client offers project that's not right fit. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Maybe... let me think about it..."</div>
+<div class="quiz-option" data-correct="true">B. "I really appreciate you thinking of me! Unfortunately, it's not quite aligned with my priorities."</div>
+<div class="quiz-option" data-correct="false">C. "I'm not interested."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Colleague asks you to take on extra work. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Maybe... I'll see if I can..."</div>
+<div class="quiz-option" data-correct="true">B. "I really appreciate you thinking of me! Unfortunately, I don't have capacity right now."</div>
+<div class="quiz-option" data-correct="false">C. "I can't help with that."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Salesperson pressures you to buy. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Maybe... I need to think..."</div>
+<div class="quiz-option" data-correct="true">B. "I really appreciate you showing me this! Unfortunately, it's not quite what I'm looking for."</div>
+<div class="quiz-option" data-correct="false">C. "I'm not interested. Don't ask me again."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Friend asks you to join their business. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Maybe... I'll think about it..."</div>
+<div class="quiz-option" data-correct="true">B. "I really appreciate you thinking of me! Unfortunately, it's not quite aligned with my priorities."</div>
+<div class="quiz-option" data-correct="false">C. "I'm not interested in joining."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Someone asks you to do something uncomfortable. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Maybe... I'll see..."</div>
+<div class="quiz-option" data-correct="true">B. "I really appreciate you asking! Unfortunately, that's not quite something I'm comfortable with."</div>
+<div class="quiz-option" data-correct="false">C. "I'm not comfortable with that."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of showing genuine appreciation?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Preserves relationship, but takes more effort.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but burns bridges.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of being clear?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Avoids confusion, but may feel uncomfortable.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but creates confusion.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Hãy chắc chắn giữ liên lạc"?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Let's definitely keep in touch</div>
+<div class="quiz-option" data-correct="false">B. Don't ask me again</div>
+<div class="quiz-option" data-correct="false">C. Maybe later</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+
+<div class="day-navigation">
+<a href="week-13-day-89.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 89: Handling Objections Confidently</div>
+</a>
+<a href="week-13-day-91.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 91: Final Integration</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 90 Complete & Continue to Day 91</button>
+<p class="complete-message">B2 speakers feel guilty saying no. C1 speakers say no gracefully. ️</p>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 13 · Day 90 · Resisting Sales Pressure Gracefully</div>
+</div>
+</footer>
+
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+
+const textContent = {
+'lens1': 'Lens 1: Showing Appreciation. How do I show genuine appreciation? I really appreciate you thinking of me for this — it means a lot that you thought of me.',
+'lens2': 'Lens 2: Saying No Clearly. How do I say no clearly but gently? I appreciate the offer, but it\'s not quite the right fit for me right now.',
+'lens3': 'Lens 3: Giving Brief Reason. How much do I explain? It\'s not quite the right timing for me right now — I\'m focusing on other priorities.',
+'lens4': 'Lens 4: Leaving Door Open. Do I leave the door open? Let\'s definitely keep in touch — I\'d love to stay connected for future opportunities.',
+'lens5': 'Lens 5: Preserving Relationship. How do I preserve the relationship? I really appreciate you thinking of me — it means a lot. Let\'s definitely stay in touch.',
+'appreciate-thinking': 'I really appreciate you thinking of me',
+'appreciate-time': 'I really appreciate your time',
+'really-flattering': 'That\'s really flattering',
+'not-right-fit': 'It\'s not quite the right fit',
+'not-aligned': 'It\'s not quite aligned with my priorities',
+'not-right-timing': 'It\'s not quite the right timing',
+'keep-in-touch': 'Let\'s definitely keep in touch',
+'stay-connected': 'I\'d love to stay connected',
+'means-a-lot': 'It means a lot',
+'dialogue1': 'Dialogue 1: Resisting Friend\'s Business Invitation. Friend: Hey! I\'m starting a new startup and I\'d love for you to join as co-founder. What do you think? You: Wow, I really appreciate you thinking of me for this! That\'s really exciting! Friend: Yeah! I think we could build something amazing together. You: That sounds amazing! Unfortunately, it\'s not quite aligned with my current priorities — I\'m focusing on my current role right now. Friend: Oh, I see. Are you sure? I think it could be really great. You: I\'m sure — it\'s not quite the right timing for me right now. But I really appreciate you thinking of me! Friend: I understand. Well, if you change your mind, let me know! You: Absolutely! Let\'s definitely keep in touch — I\'d love to stay connected and see how your startup grows! Friend: That sounds great! Thanks for being honest. You: Of course! I really appreciate you thinking of me — it means a lot. Let\'s definitely grab coffee soon and catch up!',
+'dialogue2': 'Dialogue 2: Resisting Client\'s Project Offer. Client: Hi! We have a new project and I\'d love for you to lead it. What do you think? You: Hi! I really appreciate you thinking of me for this opportunity! That sounds like an exciting project. Client: Yeah! I think you\'d be perfect for it. You: That\'s really flattering! Unfortunately, it\'s not quite aligned with my current priorities — I\'m focusing on other projects right now. Client: Oh, I see. Are you sure? I think it could be a great opportunity. You: I\'m sure — it\'s not quite the right timing for me right now. But I really appreciate you thinking of me! Client: I understand. Well, if you change your mind, let me know! You: Absolutely! Let\'s definitely stay in touch — I\'d love to stay connected for future opportunities! Client: That sounds great! Thanks for being honest. You: Of course! I really appreciate you thinking of me — it means a lot. Let\'s definitely grab coffee soon and catch up!'
+};
+
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+
+</body>
+</html>

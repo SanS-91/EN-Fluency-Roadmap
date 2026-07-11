@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 13 Day 91: Negotiate Something This Week | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-title button { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+.deep-dive-item .analysis .arrow { color: var(--primary-bright); font-weight: 600; display: block; margin: 4px 0; }
+.deep-dive-item .analysis strong { color: var(--primary-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-13.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 13 Hub</a>
+<div class="day-indicator">Day 91 / 91</div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-13.html" class="day-tab">Overview</a>
+<a href="week-13-day-85.html" class="day-tab">Day 85</a>
+<a href="week-13-day-86.html" class="day-tab">Day 86</a>
+<a href="week-13-day-87.html" class="day-tab">Day 87</a>
+<a href="week-13-day-88.html" class="day-tab">Day 88</a>
+<a href="week-13-day-89.html" class="day-tab">Day 89</a>
+<a href="week-13-day-90.html" class="day-tab">Day 90</a>
+<a href="week-13-day-91.html" class="day-tab active">Day 91</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-13.html">Week 13</a> › Day 91
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🤝</span>
+<h1 class="day-title">Negotiate Something This Week</h1>
+</div>
+<p class="day-subtitle">Days 85-90 taught you to prepare, open, explore, propose, and close negotiations. Day 91 is your <strong>final integration challenge</strong> — negotiate something real this week using everything you've learned. B2 speakers avoid negotiation or give up too easily. C1 speakers negotiate confidently with preparation, creativity, and confidence.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Real-World Negotiation + Integration</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> This week's challenge</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Final Integration Day</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Avoids negotiation or gives up too easily. Says "That's fine" when it's not, or accepts the first offer without exploring.<br><br><strong>C1 Speaker:</strong> Prepares thoroughly, opens confidently, explores interests creatively, proposes win-win solutions, and closes with confidence. Knows their BATNA and ZOPA.<br><br>"B2 speakers fear negotiation. C1 speakers embrace it as an opportunity. The difference isn't vocabulary — it's mindset and preparation."</div>
+</div>
+
+<div class="quote">"B2 speakers say 'That's fine.' C1 speakers say 'I'd like to explore if there's room to move on this.' The difference isn't vocabulary — it's mindset and preparation."</div>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Real Negotiation = Preparation + Confidence + Creativity + Win-Win</h3>
+<p class="philosophy-text">"Negotiating in real life isn't about winning at all costs. It's about preparing thoroughly, opening confidently, exploring interests creatively, proposing win-win solutions, and closing with confidence."</p>
+<p class="philosophy-text">Every real negotiation requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Preparation Decision:</strong> How do I prepare? (Research BATNA & ZOPA?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Opening Decision:</strong> How do I open? (Confidently? Hesitantly?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Exploration Decision:</strong> How do I explore? (Creatively? Narrowly?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Proposal Decision:</strong> How do I propose? (Win-win? Win-lose?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Closing Decision:</strong> How do I close? (Confidently? Hesitantly?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 91 is your final integration challenge — negotiate something real this week using everything you've learned throughout Week 13.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (This Week)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">📋</div>
+<div class="plan-title">Preparation</div>
+<div class="plan-time">Before</div>
+<div class="plan-desc">Research BATNA & ZOPA</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎯</div>
+<div class="plan-title">Opening</div>
+<div class="plan-time">During</div>
+<div class="plan-desc">Open confidently</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Exploration</div>
+<div class="plan-time">During</div>
+<div class="plan-desc">Explore interests</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💡</div>
+<div class="plan-title">Proposal</div>
+<div class="plan-time">During</div>
+<div class="plan-desc">Propose win-win</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✅</div>
+<div class="plan-title">Closing</div>
+<div class="plan-time">End</div>
+<div class="plan-desc">Close confidently</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Real Negotiation Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 5-step process for real-world negotiation</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">PREPARE (Research BATNA & ZOPA)</div>
+<div class="loop-step-desc">How do I prepare? Research your BATNA (Best Alternative to Negotiated Agreement) and ZOPA (Zone of Possible Agreement). Know your walk-away point.</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">OPEN (Open confidently)</div>
+<div class="loop-step-desc">How do I open? "I'd like to discuss..." / "I'd like to explore..." Open confidently, not hesitantly. Set the tone.</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">EXPLORE (Explore interests creatively)</div>
+<div class="loop-step-desc">How do I explore? "What's most important to you?" / "What would make this work for you?" Explore underlying interests, not just positions.</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">PROPOSE (Propose win-win solutions)</div>
+<div class="loop-step-desc">How do I propose? "What if we..." / "Would you be open to..." Propose creative win-win solutions, not win-lose.</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">5</div>
+<div class="loop-step-title">CLOSE (Close confidently)</div>
+<div class="loop-step-desc">How do I close? "Let's agree on..." / "Let's finalize..." Close confidently, confirm agreement, and set next steps.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Real Negotiation Lenses (3-Level Examples)</h2>
+</div>
+<p class="section-desc">Every real negotiation requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+
+<div class="lenses-grid">
+
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Preparing
+<button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I prepare before negotiating?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Preparation Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I'll just ask for what I want."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I'll research what's reasonable before I negotiate."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I'll research my BATNA and ZOPA before the negotiation. I know my walk-away point, and I know what's reasonable based on market data."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Negotiating rent. Decision: Research market rates, know your BATNA ("If they won't budge, I have another apartment lined up")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Negotiating salary. Decision: Research market salary data, know your BATNA ("If they won't meet my number, I have another offer")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Prepared)</strong>
+Confidence, leverage, better outcomes.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Prepared)</strong>
+Takes time to research, but worth it.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Negotiating without preparation. Native C1 speakers always research BATNA and ZOPA before negotiating.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I preparing with BATNA and ZOPA, or just winging it?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Opening
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I open the negotiation confidently?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Opening Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Can we talk about...?"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I'd like to discuss..."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I'd like to discuss [topic] and explore if there's room to move on this. I've done some research, and I think there's potential for a win-win here."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Negotiating rent. Decision: Confident opening ("I'd like to discuss the rent and explore if there's room to move on this...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Negotiating salary. Decision: Confident opening ("I'd like to discuss my compensation and explore if there's room to move on this...")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Confident)</strong>
+Sets positive tone, shows preparation, builds confidence.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Confident)</strong>
+May seem aggressive if not balanced with warmth.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Opening hesitantly or apologetically. Native C1 speakers open confidently with preparation.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I opening confidently or hesitantly?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Exploring
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I explore interests creatively?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Exploration Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"What do you want?"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"What's important to you?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"What's most important to you in this? What would make this work for you? Help me understand what matters most so we can find a win-win."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Negotiating rent. Decision: Explore interests ("What's most important to you — the price or the lease term?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Negotiating salary. Decision: Explore interests ("What's most important to you — the base salary or the benefits package?")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Creative)</strong>
+Uncovers hidden interests, creates win-win opportunities.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Creative)</strong>
+Takes more time, but leads to better outcomes.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Focusing only on positions, not interests. Native C1 speakers explore underlying interests to create win-win.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I exploring interests or just positions?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Proposing
+<button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I propose win-win solutions?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Proposal Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"How about...?"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"What if we...?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"What if we tried [creative solution]? Would you be open to [alternative]? I think this could work for both of us because [reason]."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Negotiating rent. Decision: Creative proposal ("What if we signed a longer lease in exchange for a lower monthly rate?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Negotiating salary. Decision: Creative proposal ("What if we structured the compensation with a higher base and performance bonus?")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Win-Win)</strong>
+Creates mutual benefit, builds relationship, better outcomes.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Win-Win)</strong>
+Requires creativity and understanding of both sides' interests.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Proposing win-lose solutions. Native C1 speakers propose creative win-win solutions.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I proposing win-win or win-lose?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Closing
+<button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I close the deal confidently?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Closing Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"OK, let's do it."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Let's agree on this."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Great! Let's finalize this. Let me confirm what we've agreed on: [summary]. Let's set next steps — I'll [action] by [date], and you'll [action] by [date]. Does that sound good?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Negotiating rent. Decision: Confident closing with confirmation ("Great! Let's finalize this. Let me confirm...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Negotiating salary. Decision: Confident closing with next steps ("Great! Let's finalize this. Let me confirm... I'll send the signed offer by Friday.")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Confident)</strong>
+Confirms agreement, sets clear next steps, prevents misunderstandings.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Confident)</strong>
+May feel rushed if not balanced with thoroughness.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Closing without confirming or setting next steps. Native C1 speakers always confirm and set next steps.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I closing with confirmation and next steps?</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy real negotiations</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Negotiating Without Preparation</h4>
+<div class="mistake-wrong">❌ "I'll just ask for what I want and see what happens."</div>
+<div class="mistake-right">✅ "I've researched my BATNA and ZOPA. I know my walk-away point and what's reasonable based on market data."</div>
+<div class="mistake-why">Why: Negotiating without preparation leads to weak outcomes. Native C1 speakers always research BATNA and ZOPA before negotiating.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Focusing on Positions, Not Interests</h4>
+<div class="mistake-wrong">❌ "I want $X." / "I need $X."</div>
+<div class="mistake-right">✅ "What's most important to you in this? What would make this work for you?"</div>
+<div class="mistake-why">Why: Focusing on positions creates win-lose. Exploring interests creates win-win opportunities.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Closing Without Confirmation</h4>
+<div class="mistake-wrong">❌ "OK, let's do it." (without confirming details)</div>
+<div class="mistake-right">✅ "Great! Let's finalize this. Let me confirm what we've agreed on: [summary]. Let's set next steps."</div>
+<div class="mistake-why">Why: Closing without confirmation leads to misunderstandings. Native C1 speakers always confirm and set next steps.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Real Negotiation Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title"> The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Negotiating a salary raise</td>
+<td>"I want a raise."</td>
+<td>"I'd like to discuss my compensation."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to discuss my compensation and explore if there's room to move on this. I've done some research on market rates for my role, and I think there's potential for a win-win here. What's most important to you in structuring my compensation?"</span>
+<span class="why">Why: Shows preparation, explores interests, proposes win-win</span>
+</div>
+</td>
+<td>"I'd like to discuss my compensation based on market research."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>2. Negotiating rent with landlord</td>
+<td>"Can you lower the rent?"</td>
+<td>"Is there room to move on the rent?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to discuss the rent and explore if there's room to move on this. I've researched comparable units in the area, and I think there's potential for a win-win. What if we signed a longer lease in exchange for a lower monthly rate?"</span>
+<span class="why">Why: Shows preparation, proposes creative win-win</span>
+</div>
+</td>
+<td>"I'd like to discuss the rent based on market research."</td>
+<td>Casual to professional</td>
+</tr>
+<tr>
+<td>3. Negotiating with a vendor</td>
+<td>"Can you give me a discount?"</td>
+<td>"Is there room to move on the price?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to discuss the pricing and explore if there's room to move on this. I've done some research on comparable vendors, and I think there's potential for a win-win. What if we committed to a longer-term contract in exchange for better pricing?"</span>
+<span class="why">Why: Shows preparation, proposes creative win-win</span>
+</div>
+</td>
+<td>"I'd like to discuss the pricing based on market research."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>4. Negotiating a deadline</td>
+<td>"Can we extend the deadline?"</td>
+<td>"Is there flexibility on the deadline?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to discuss the timeline and explore if there's flexibility. I've reviewed the scope, and I think there's potential for a win-win. What if we phased the deliverables to meet the most critical deadlines first?"</span>
+<span class="why">Why: Shows preparation, proposes creative win-win</span>
+</div>
+</td>
+<td>"I'd like to discuss the timeline based on the scope."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>5. Negotiating scope of work</td>
+<td>"Can we reduce the scope?"</td>
+<td>"Is there flexibility on the scope?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to discuss the scope and explore if there's flexibility. I've reviewed the priorities, and I think there's potential for a win-win. What if we prioritized the most critical deliverables and phased the rest?"</span>
+<span class="why">Why: Shows preparation, proposes creative win-win</span>
+</div>
+</td>
+<td>"I'd like to discuss the scope based on priorities."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>6. Negotiating payment terms</td>
+<td>"Can we change the payment terms?"</td>
+<td>"Is there flexibility on payment terms?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to discuss the payment terms and explore if there's flexibility. I've reviewed our cash flow, and I think there's potential for a win-win. What if we structured the payments in phases aligned with deliverables?"</span>
+<span class="why">Why: Shows preparation, proposes creative win-win</span>
+</div>
+</td>
+<td>"I'd like to discuss payment terms based on cash flow."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>7. Negotiating a partnership deal</td>
+<td>"Can we partner?"</td>
+<td>"I'd like to discuss a potential partnership."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to discuss a potential partnership and explore if there's alignment. I've researched your business, and I think there's potential for a win-win. What's most important to you in a partnership?"</span>
+<span class="why">Why: Shows preparation, explores interests, proposes win-win</span>
+</div>
+</td>
+<td>"I'd like to discuss a potential partnership based on alignment."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>8. Closing a negotiation</td>
+<td>"OK, let's do it."</td>
+<td>"Let's agree on this."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Great! Let's finalize this. Let me confirm what we've agreed on: [summary]. Let's set next steps — I'll [action] by [date], and you'll [action] by [date]. Does that sound good?"</span>
+<span class="why">Why: Confirms agreement, sets clear next steps, prevents misunderstandings</span>
+</div>
+</td>
+<td>"Let's finalize and confirm the details."</td>
+<td>Professional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title">🏠 Case 1: Life - Negotiating Rent with Landlord</h4>
+<div class="case-context"><strong>Context:</strong> You're renewing your lease and want to negotiate a lower rent. You've researched comparable units and know your BATNA (another apartment you've seen).</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Hi [Landlord], thanks for meeting with me. <strong>I'd like to discuss the rent renewal and explore if there's room to move on this.</strong> I've done some research on comparable units in the area, and I think there's potential for a win-win here."</p>
+<p><span class="speaker">Landlord:</span> "Sure, I'm open to discussing it. What are you thinking?"</p>
+<p><span class="speaker">You:</span> "<strong>Based on my research, comparable units in the area are renting for about 10% less than my current rate.</strong> I've been a reliable tenant for 2 years, always paying on time. <strong>What's most important to you in this — the rent amount or the lease term?</strong>"</p>
+<p><span class="speaker">Landlord:</span> "Well, the rent is important, but having a reliable long-term tenant is also valuable."</p>
+<p><span class="speaker">You:</span> "<strong>That makes sense. What if we signed a longer lease — say 18 months instead of 12 — in exchange for a 10% reduction in the monthly rate?</strong> That way you get a longer-term reliable tenant, and I get a rate that's more in line with the market."</p>
+<p><span class="speaker">Landlord:</span> "Hmm, that's interesting. Let me think about that."</p>
+<p><span class="speaker">You:</span> "<strong>Totally understandable. Take your time. I'm happy to discuss any other ideas you might have as well.</strong>"</p>
+<p><span class="speaker">Landlord:</span> "Actually, I think that could work. Let's do 18 months at the reduced rate."</p>
+<p><span class="speaker">You:</span> "<strong>Great! Let's finalize this. Let me confirm: 18-month lease at [reduced rate], starting [date]. I'll send over the signed lease by Friday, and you'll send over the updated lease agreement by Wednesday. Does that sound good?</strong>"</p>
+<p><span class="speaker">Landlord:</span> "Sounds perfect. I'll send the updated agreement by Wednesday."</p>
+<p><span class="speaker">You:</span> "Perfect! Thanks for being open to this. Looking forward to continuing as your tenant."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I'd like to discuss [topic] and explore if there's room to move on this."</strong><span class="meaning">Tôi muốn thảo luận [chủ đề] và khám phá xem có chỗ để điều chỉnh không.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've done some research on [topic]."</strong><span class="meaning">Tôi đã làm một số nghiên cứu về [chủ đề].</span><span class="register">Register: Professional</span></li>
+<li><strong>"I think there's potential for a win-win here."</strong><span class="meaning">Tôi nghĩ có tiềm năng cho một kết quả đôi bên cùng có lợi ở đây.</span><span class="register">Register: Professional</span></li>
+<li><strong>"What's most important to you in this?"</strong><span class="meaning">Điều gì quan trọng nhất với bạn trong việc này?</span><span class="register">Register: Professional</span></li>
+<li><strong>"What if we [creative solution]?"</strong><span class="meaning">Nếu chúng ta [giải pháp sáng tạo] thì sao?</span><span class="register">Register: Professional</span></li>
+<li><strong>"That makes sense."</strong><span class="meaning">Điều đó có ý nghĩa.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Totally understandable."</strong><span class="meaning">Hoàn toàn dễ hiểu.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Take your time."</strong><span class="meaning">Cứ từ từ.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I'm happy to discuss any other ideas you might have."</strong><span class="meaning">Tôi sẵn sàng thảo luận bất kỳ ý tưởng nào khác mà bạn có thể có.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Great! Let's finalize this."</strong><span class="meaning">Tuyệt! Hãy chốt điều này.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Let me confirm what we've agreed on."</strong><span class="meaning">Hãy để tôi xác nhận những gì chúng ta đã đồng ý.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Let's set next steps."</strong><span class="meaning">Hãy đặt các bước tiếp theo.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Does that sound good?"</strong><span class="meaning">Điều đó nghe có vẻ tốt không?</span><span class="register">Register: Casual</span></li>
+<li><strong>"Sounds perfect."</strong><span class="meaning">Nghe có vẻ hoàn hảo.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Looking forward to [action]."</strong><span class="meaning">Mong chờ [hành động].</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've been a reliable tenant for X years."</strong><span class="meaning">Tôi đã là một người thuê nhà đáng tin cậy trong X năm.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Always paying on time."</strong><span class="meaning">Luôn thanh toán đúng hạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Comparable units in the area."</strong><span class="meaning">Các căn hộ tương đương trong khu vực.</span><span class="register">Register: Professional</span></li>
+<li><strong>"In line with the market."</strong><span class="meaning">Phù hợp với thị trường.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Longer-term reliable tenant."</strong><span class="meaning">Người thuê dài hạn đáng tin cậy.</span><span class="register">Register: Professional</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Negotiating Salary with Employer</h4>
+<div class="case-context"><strong>Context:</strong> You're negotiating a salary raise with your employer. You've researched market salary data and know your BATNA (another job offer).</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Hi [Manager], thanks for meeting with me. <strong>I'd like to discuss my compensation and explore if there's room to move on this.</strong> I've done some research on market rates for my role, and I think there's potential for a win-win here."</p>
+<p><span class="speaker">Manager:</span> "Sure, I'm open to discussing it. What are you thinking?"</p>
+<p><span class="speaker">You:</span> "<strong>Based on my research, the market rate for my role is about 15% higher than my current salary.</strong> I've taken on additional responsibilities over the past year, including [specific responsibility]. <strong>What's most important to you in structuring my compensation — the base salary or the benefits package?</strong>"</p>
+<p><span class="speaker">Manager:</span> "Well, the base salary is important, but we also need to consider the overall compensation package."</p>
+<p><span class="speaker">You:</span> "<strong>That makes sense. What if we structured the compensation with a higher base salary and a performance-based bonus?</strong> That way you get the flexibility of tying compensation to performance, and I get a base that's more in line with the market."</p>
+<p><span class="speaker">Manager:</span> "Hmm, that's interesting. Let me think about that and discuss with HR."</p>
+<p><span class="speaker">You:</span> "<strong>Totally understandable. Take your time. I'm happy to discuss any other ideas you might have as well.</strong>"</p>
+<p><span class="speaker">Manager:</span> "Actually, I think that could work. Let me discuss with HR and get back to you by Friday."</p>
+<p><span class="speaker">You:</span> "<strong>Great! Let's finalize this. Let me confirm: we'll discuss the structured compensation with HR, and you'll get back to me by Friday. Does that sound good?</strong>"</p>
+<p><span class="speaker">Manager:</span> "Sounds perfect. I'll get back to you by Friday."</p>
+<p><span class="speaker">You:</span> "Perfect! Thanks for being open to this. Looking forward to hearing from you."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I'd like to discuss my compensation and explore if there's room to move on this."</strong><span class="meaning">Tôi muốn thảo luận về bồi thường của mình và khám phá xem có chỗ để điều chỉnh không.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've done some research on market rates for my role."</strong><span class="meaning">Tôi đã làm một số nghiên cứu về mức lương thị trường cho vai trò của mình.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I think there's potential for a win-win here."</strong><span class="meaning">Tôi nghĩ có tiềm năng cho một kết quả đôi bên cùng có lợi ở đây.</span><span class="register">Register: Professional</span></li>
+<li><strong>"What's most important to you in structuring my compensation?"</strong><span class="meaning">Điều gì quan trọng nhất với bạn trong việc cấu trúc bồi thường của tôi?</span><span class="register">Register: Professional</span></li>
+<li><strong>"What if we structured the compensation with [solution]?"</strong><span class="meaning">Nếu chúng ta cấu trúc bồi thường với [giải pháp] thì sao?</span><span class="register">Register: Professional</span></li>
+<li><strong>"That makes sense."</strong><span class="meaning">Điều đó có ý nghĩa.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Totally understandable."</strong><span class="meaning">Hoàn toàn dễ hiểu.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Take your time."</strong><span class="meaning">Cứ từ từ.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I'm happy to discuss any other ideas you might have."</strong><span class="meaning">Tôi sẵn sàng thảo luận bất kỳ ý tưởng nào khác mà bạn có thể có.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Great! Let's finalize this."</strong><span class="meaning">Tuyệt! Hãy chốt điều này.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Let me confirm what we've agreed on."</strong><span class="meaning">Hãy để tôi xác nhận những gì chúng ta đã đồng ý.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Does that sound good?"</strong><span class="meaning">Điều đó nghe có vẻ tốt không?</span><span class="register">Register: Casual</span></li>
+<li><strong>"Sounds perfect."</strong><span class="meaning">Nghe có vẻ hoàn hảo.</span><span class="register">Register: Casual</span></li>
+<li><strong>"Looking forward to hearing from you."</strong><span class="meaning">Mong chờ nghe từ bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've taken on additional responsibilities."</strong><span class="meaning">Tôi đã đảm nhận thêm trách nhiệm.</span><span class="register">Register: Professional</span></li>
+<li><strong>"More in line with the market."</strong><span class="meaning">Phù hợp hơn với thị trường.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Performance-based bonus."</strong><span class="meaning">Thưởng dựa trên hiệu suất.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Overall compensation package."</strong><span class="meaning">Gói bồi thường tổng thể.</span><span class="register">Register: Professional</span></li>
+<li><strong>"Get back to you by [date]."</strong><span class="meaning">Phản hồi lại bạn vào [ngày].</span><span class="register">Register: Professional</span></li>
+<li><strong>"Thanks for being open to this."</strong><span class="meaning">Cảm ơn vì đã cởi mở với điều này.</span><span class="register">Register: Professional</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Negotiation Messages (with Model Answers)</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Negotiating Rent Email</h4>
+<p class="task-context"><strong>Context:</strong> You're renewing your lease and want to negotiate a lower rent. Write an email to your landlord using the 5-step negotiation loop.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 opening structures (e.g., "I'd like to discuss...", "I'd like to explore...")</li>
+<li>Use 2 proposal structures (e.g., "What if we...", "Would you be open to...")</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi [Landlord], thanks for meeting with me. I'd like to discuss the rent renewal and explore if there's room to move on this. I've done some research on comparable units in the area, and I think there's potential for a win-win here. Based on my research, comparable units are renting for about 10% less. What if we signed a longer lease in exchange for a lower monthly rate? That way you get a longer-term reliable tenant, and I get a rate more in line with the market. Does that sound good?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Opening:</strong> "I'd like to discuss...", "I'd like to explore..."</li>
+<li><strong>Collocations:</strong> "comparable units", "win-win", "in line with the market"</li>
+<li><strong>Proposal:</strong> "What if we...", "Does that sound good?"</li>
+<li><strong>Closing:</strong> "Does that sound good?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"Hi [Landlord], I'd like to discuss the rent renewal. I've looked at comparable units in the area, and they're about 10% less. What if we did a longer lease for a lower rate? That way you get a reliable long-term tenant. Does that work for you?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (comparable units, win-win, in line with the market)</li>
+<li>□ dùng đủ 2 opening structures (I'd like to discuss, I'd like to explore)</li>
+<li>□ dùng đủ 2 proposal structures (What if we, Does that sound good)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Negotiating Salary Email</h4>
+<p class="task-context"><strong>Context:</strong> You're negotiating a salary raise with your employer. Write an email using the 5-step negotiation loop.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 opening structures</li>
+<li>Use 2 proposal structures</li>
+<li>Length: 150-200 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi [Manager], thanks for meeting with me. I'd like to discuss my compensation and explore if there's room to move on this. I've done some research on market rates for my role, and I think there's potential for a win-win here. Based on my research, the market rate is about 15% higher than my current salary. I've taken on additional responsibilities over the past year. What if we structured the compensation with a higher base salary and a performance-based bonus? That way you get flexibility tied to performance, and I get a base more in line with the market. Does that sound good?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Opening:</strong> "I'd like to discuss...", "I'd like to explore..."</li>
+<li><strong>Collocations:</strong> "market rates", "win-win", "performance-based bonus"</li>
+<li><strong>Proposal:</strong> "What if we...", "Does that sound good?"</li>
+<li><strong>Closing:</strong> "Does that sound good?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Dear [Manager], I'd like to discuss my compensation. I've researched market rates, and they're about 15% higher than my current salary. What if we structured the compensation with a higher base and performance bonus? That provides flexibility while aligning with market rates. Does that work for you?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (150-200 words)</li>
+<li>□ dùng đủ 3 collocations (market rates, win-win, performance-based bonus)</li>
+<li>□ dùng đủ 2 opening structures (I'd like to discuss, I'd like to explore)</li>
+<li>□ dùng đủ 2 proposal structures (What if we, Does that sound good)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Negotiating with Vendor Email</h4>
+<p class="task-context"><strong>Context:</strong> You're negotiating with a vendor for better pricing. Write an email using the 5-step negotiation loop.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 opening structures</li>
+<li>Use 2 proposal structures</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi [Vendor], thanks for meeting with me. I'd like to discuss the pricing and explore if there's room to move on this. I've done some research on comparable vendors, and I think there's potential for a win-win here. Based on my research, comparable vendors are offering about 10% better pricing. What if we committed to a longer-term contract in exchange for better pricing? That way you get a longer-term commitment, and we get pricing more in line with the market. Does that sound good?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Opening:</strong> "I'd like to discuss...", "I'd like to explore..."</li>
+<li><strong>Collocations:</strong> "comparable vendors", "win-win", "longer-term contract"</li>
+<li><strong>Proposal:</strong> "What if we...", "Does that sound good?"</li>
+<li><strong>Closing:</strong> "Does that sound good?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Dear [Vendor], I'd like to discuss the pricing. I've researched comparable vendors, and they're offering about 10% better pricing. What if we committed to a longer-term contract for better pricing? That provides a longer-term commitment while aligning with market rates. Does that work for you?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (comparable vendors, win-win, longer-term contract)</li>
+<li>□ dùng đủ 2 opening structures (I'd like to discuss, I'd like to explore)</li>
+<li>□ dùng đủ 2 proposal structures (What if we, Does that sound good)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Negotiating Deadline Email</h4>
+<p class="task-context"><strong>Context:</strong> You're negotiating a deadline extension with your manager. Write an email using the 5-step negotiation loop.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 opening structures</li>
+<li>Use 2 proposal structures</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi [Manager], thanks for meeting with me. I'd like to discuss the timeline and explore if there's flexibility. I've reviewed the scope, and I think there's potential for a win-win here. Based on my review, the scope is more extensive than initially planned. What if we phased the deliverables to meet the most critical deadlines first? That way we meet the critical deadlines, and the rest can be phased in. Does that sound good?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Opening:</strong> "I'd like to discuss...", "I'd like to explore..."</li>
+<li><strong>Collocations:</strong> "win-win", "critical deadlines", "phased deliverables"</li>
+<li><strong>Proposal:</strong> "What if we...", "Does that sound good?"</li>
+<li><strong>Closing:</strong> "Does that sound good?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Dear [Manager], I'd like to discuss the timeline. I've reviewed the scope, and it's more extensive than planned. What if we phased the deliverables to meet critical deadlines first? That meets critical deadlines while phasing the rest. Does that work for you?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (win-win, critical deadlines, phased deliverables)</li>
+<li>□ dùng đủ 2 opening structures (I'd like to discuss, I'd like to explore)</li>
+<li>□ dùng đủ 2 proposal structures (What if we, Does that sound good)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Negotiation Lexicon)</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The Negotiation Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">📋 Preparation</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>BATNA</strong>
+<div class="ipa">/ˈbæt.nə/</div>
+<div class="pos">(acronym)</div>
+<div class="meaning">Best Alternative to Negotiated Agreement</div>
+<div class="collocation">Collocation: "know your BATNA"</div>
+<div class="chunk">Chunk: "I know my BATNA"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I know my BATNA."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I've researched my BATNA and know my walk-away point."</div>
+<div class="native-alt">Native alternative: "walk-away point"</div>
+<button class="vocab-audio-btn" onclick="speakText('batna', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>ZOPA</strong>
+<div class="ipa">/ˈzoʊ.pə/</div>
+<div class="pos">(acronym)</div>
+<div class="meaning">Zone of Possible Agreement</div>
+<div class="collocation">Collocation: "know your ZOPA"</div>
+<div class="chunk">Chunk: "I know the ZOPA"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I know the ZOPA."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I've researched the ZOPA and know what's reasonable."</div>
+<div class="native-alt">Native alternative: "zone of possible agreement"</div>
+<button class="vocab-audio-btn" onclick="speakText('zopa', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>win-win</strong>
+<div class="ipa">/wɪn wɪn/</div>
+<div class="pos">(noun/adjective)</div>
+<div class="meaning">Đôi bên cùng có lợi</div>
+<div class="collocation">Collocation: "potential for a win-win"</div>
+<div class="chunk">Chunk: "there's potential for a win-win"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"There's potential for a win-win."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I think there's potential for a win-win here."</div>
+<div class="native-alt">Native alternative: "mutually beneficial"</div>
+<button class="vocab-audio-btn" onclick="speakText('win-win', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🎯 Opening & Exploration</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>I'd like to discuss</strong>
+<div class="ipa">/aɪd laɪk tuː dɪskʌs/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi muốn thảo luận</div>
+<div class="collocation">Collocation: "I'd like to discuss [topic]"</div>
+<div class="chunk">Chunk: "I'd like to discuss [topic] and explore..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I'd like to discuss the rent."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I'd like to discuss the rent and explore if there's room to move on this."</div>
+<div class="native-alt">Native alternative: "I'd like to discuss"</div>
+<button class="vocab-audio-btn" onclick="speakText('id-like-to-discuss', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>What's most important to you</strong>
+<div class="ipa">/wts moʊst ɪmˈpɔːr.tənt tuː juː/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều gì quan trọng nhất với bạn</div>
+<div class="collocation">Collocation: "What's most important to you"</div>
+<div class="chunk">Chunk: "What's most important to you in this?"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"What's most important to you?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What's most important to you in structuring my compensation?"</div>
+<div class="native-alt">Native alternative: "What matters most to you"</div>
+<button class="vocab-audio-btn" onclick="speakText('whats-most-important', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>explore if there's room to move</strong>
+<div class="ipa">/kˈsplɔːr ɪf ðeəz ruːm tuː muːv/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Khám phá xem có chỗ để điều chỉnh không</div>
+<div class="collocation">Collocation: "explore if there's room to move"</div>
+<div class="chunk">Chunk: "explore if there's room to move on this"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Explore if there's room to move."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I'd like to explore if there's room to move on this."</div>
+<div class="native-alt">Native alternative: "see if there's flexibility"</div>
+<button class="vocab-audio-btn" onclick="speakText('room-to-move', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title"> Proposal & Closing</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>What if we</strong>
+<div class="ipa">/wʌt ɪf wiː/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Nếu chúng ta thì sao</div>
+<div class="collocation">Collocation: "What if we [solution]"</div>
+<div class="chunk">Chunk: "What if we [creative solution]?"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"What if we tried that?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What if we signed a longer lease in exchange for a lower rate?"</div>
+<div class="native-alt">Native alternative: "What if we"</div>
+<button class="vocab-audio-btn" onclick="speakText('what-if-we', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>Let's finalize</strong>
+<div class="ipa">/lets ˈfaɪ.nəl.aɪz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Hãy chốt</div>
+<div class="collocation">Collocation: "Let's finalize this"</div>
+<div class="chunk">Chunk: "Great! Let's finalize this."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Let's finalize this."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Great! Let's finalize this. Let me confirm what we've agreed on."</div>
+<div class="native-alt">Native alternative: "Let's finalize"</div>
+<button class="vocab-audio-btn" onclick="speakText('lets-finalize', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>Does that sound good</strong>
+<div class="ipa">/dʌz ðæt saʊnd ɡʊd/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều đó nghe có vẻ tốt không</div>
+<div class="collocation">Collocation: "Does that sound good?"</div>
+<div class="chunk">Chunk: "Does that sound good?"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Does that sound good?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Does that sound good? Let's set next steps."</div>
+<div class="native-alt">Native alternative: "Does that work for you?"</div>
+<button class="vocab-audio-btn" onclick="speakText('does-that-sound-good', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format - 15-20 turns)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title">🏠 Dialogue 1: Negotiating Rent (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're renewing your lease and want to negotiate a lower rent. Conversation evolves through preparation → opening → exploration → proposal → closing.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hi [Landlord], thanks for meeting with me. <strong>I'd like to discuss the rent renewal and explore if there's room to move on this.</strong> I've done some research on comparable units in the area, and I think there's potential for a win-win here." <span class="move-highlight move1">Open</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"Sure, I'm open to discussing it. What are you thinking?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Based on my research, comparable units in the area are renting for about 10% less than my current rate.</strong> I've been a reliable tenant for 2 years, always paying on time. <strong>What's most important to you in this — the rent amount or the lease term?</strong>" <span class="move-highlight move2">Explore</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"Well, the rent is important, but having a reliable long-term tenant is also valuable."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>That makes sense. What if we signed a longer lease — say 18 months instead of 12 — in exchange for a 10% reduction in the monthly rate?</strong> That way you get a longer-term reliable tenant, and I get a rate that's more in line with the market." <span class="move-highlight move3">Propose</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"Hmm, that's interesting. Let me think about that."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Totally understandable. Take your time. I'm happy to discuss any other ideas you might have as well.</strong>" <span class="move-highlight move3">Explore</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"Actually, I think that could work. Let's do 18 months at the reduced rate."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Great! Let's finalize this. Let me confirm: 18-month lease at [reduced rate], starting [date]. I'll send over the signed lease by Friday, and you'll send over the updated lease agreement by Wednesday. Does that sound good?</strong>" <span class="move-highlight move4">Close</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Landlord:</div>
+<div class="dialogue-text">"Sounds perfect. I'll send the updated agreement by Wednesday."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Perfect! Thanks for being open to this. Looking forward to continuing as your tenant." <span class="move-highlight move4">Close</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Open (confident) + Explore (interests) + Propose (win-win) + Close (confirm + next steps).</li>
+<li><strong>Alternative Decision:</strong> Negotiate without preparation or close without confirmation. (Risk: Weak outcome or misunderstandings).</li>
+<li><strong>Why this decision?</strong> Preparation shows leverage. Opening confidently sets tone. Exploring interests creates win-win. Closing with confirmation prevents misunderstandings.</li>
+<li><strong>Resistance handled:</strong> Landlord needed time to think. You gave space and remained open.</li>
+<li><strong>Evolution:</strong> Preparation → Open → Explore → Propose → Close → Confirm.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Negotiating Salary (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're negotiating a salary raise with your employer. Conversation evolves through preparation → opening → exploration → proposal → closing.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hi [Manager], thanks for meeting with me. <strong>I'd like to discuss my compensation and explore if there's room to move on this.</strong> I've done some research on market rates for my role, and I think there's potential for a win-win here." <span class="move-highlight move1">Open</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"Sure, I'm open to discussing it. What are you thinking?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Based on my research, the market rate for my role is about 15% higher than my current salary.</strong> I've taken on additional responsibilities over the past year. <strong>What's most important to you in structuring my compensation — the base salary or the benefits package?</strong>" <span class="move-highlight move2">Explore</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"Well, the base salary is important, but we also need to consider the overall compensation package."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>That makes sense. What if we structured the compensation with a higher base salary and a performance-based bonus?</strong> That way you get the flexibility of tying compensation to performance, and I get a base that's more in line with the market." <span class="move-highlight move3">Propose</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"Hmm, that's interesting. Let me think about that and discuss with HR."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Totally understandable. Take your time. I'm happy to discuss any other ideas you might have as well.</strong>" <span class="move-highlight move3">Explore</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"Actually, I think that could work. Let me discuss with HR and get back to you by Friday."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Great! Let's finalize this. Let me confirm: we'll discuss the structured compensation with HR, and you'll get back to me by Friday. Does that sound good?</strong>" <span class="move-highlight move4">Close</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"Sounds perfect. I'll get back to you by Friday."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Perfect! Thanks for being open to this. Looking forward to hearing from you." <span class="move-highlight move4">Close</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Open (confident) + Explore (interests) + Propose (win-win) + Close (confirm + next steps).</li>
+<li><strong>Alternative Decision:</strong> Negotiate without preparation or close without confirmation. (Risk: Weak outcome or misunderstandings).</li>
+<li><strong>Why this decision?</strong> Preparation shows leverage. Opening confidently sets tone. Exploring interests creates win-win. Closing with confirmation prevents misunderstandings.</li>
+<li><strong>Resistance handled:</strong> Manager needed time to discuss with HR. You gave space and remained open.</li>
+<li><strong>Evolution:</strong> Preparation → Open → Explore → Propose → Close → Confirm.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to a natural negotiation conversation. Notice the fillers, hesitation, and discourse markers used in real negotiations.</p>
+<div class="transcript-box">
+<h4>📄 Transcript</h4>
+<div class="transcript-text">
+<p><strong>Key Phrases from Dialogues:</strong></p>
+<p>"I'd like to discuss [topic] and explore if there's room to move on this..."</p>
+<p>"I've done some research on [topic]..."</p>
+<p>"What's most important to you in this?"</p>
+<p>"What if we [creative solution]?"</p>
+<p>"That makes sense. Totally understandable."</p>
+<p>"Great! Let's finalize this. Let me confirm..."</p>
+</div>
+</div>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"I'd like to discuss [topic] and explore..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Confident opening
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I'd like to discuss [topic] and explore..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Sets confident tone, shows preparation
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"What's most important to you in this?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Explore interests
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "What's most important to you..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Uncovers hidden interests, creates win-win
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"What if we [creative solution]?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Propose win-win
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "What if we [solution]?"
+<span class="arrow">↓</span> <strong>Effect:</strong> Creates creative win-win solutions
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Great! Let's finalize this. Let me confirm..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Confident closing
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Great! Let's finalize this. Let me confirm..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Confirms agreement, sets next steps
+</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"I'd like to discuss..."</div>
+<div class="note"><strong>Function:</strong> Confident opening</div>
+<div class="note"><strong>Usage:</strong> Use to open negotiations confidently</div>
+<div class="note"><strong>Alternative:</strong> "I'd like to explore..."</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"What's most important to you?"</div>
+<div class="note"><strong>Function:</strong> Explore interests</div>
+<div class="note"><strong>Usage:</strong> Use to uncover hidden interests</div>
+<div class="note"><strong>Alternative:</strong> "What matters most to you?"</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"What if we...?"</div>
+<div class="note"><strong>Function:</strong> Propose win-win</div>
+<div class="note"><strong>Usage:</strong> Use to propose creative solutions</div>
+<div class="note"><strong>Alternative:</strong> "Would you be open to...?"</div>
+</div>
+</div>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Confident Opening Intonation</div>
+<div class="detail">"I'd like to discuss..." (Confident, steady tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Exploration Intonation</div>
+<div class="detail">"What's most important to you?" (Rising intonation, inviting)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Proposal Intonation</div>
+<div class="detail">"What if we...?" (Rising intonation, inviting)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Closing Intonation</div>
+<div class="detail">"Great! Let's finalize this." (Confident, falling intonation)</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 1: Nghe Opening</strong></div>
+<div class="note"><strong>Focus:</strong> "I'd like to discuss..."</div>
+<div class="note"><strong>Question:</strong> "How do they open confidently?"</div>
+<div class="note"><strong>Signal:</strong> Confident opening sets tone</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 2: Nghe Exploration</strong></div>
+<div class="note"><strong>Focus:</strong> "What's most important to you?"</div>
+<div class="note"><strong>Question:</strong> "How do they explore interests?"</div>
+<div class="note"><strong>Signal:</strong> Exploring interests creates win-win</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 3: Nghe Closing</strong></div>
+<div class="note"><strong>Focus:</strong> "Great! Let's finalize this..."</div>
+<div class="note"><strong>Question:</strong> "How do they close confidently?"</div>
+<div class="note"><strong>Signal:</strong> Confident closing confirms agreement</div>
+</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the negotiation rhythm:</div>
+<div class="note">1. Listen to: "I'd like to discuss... What's most important to you? What if we...? Great! Let's finalize..."</div>
+<div class="note">2. Shadow: Match the confident, inviting tone</div>
+<div class="note">3. Focus: Stress on "discuss", "important", "what if", "finalize"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different phase</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "I'd like to discuss [topic] and explore..."?</div>
+<div class="note">✅ To open confidently and show preparation.</div>
+<div class="note">2. What was the strategic goal of saying "What's most important to you?"?</div>
+<div class="note">✅ To uncover hidden interests and create win-win.</div>
+<div class="note">3. How did you handle the proposal?</div>
+<div class="note">✅ Said "What if we [solution]?" — creative win-win proposal.</div>
+<div class="note">4. What was the trade-off of closing with confirmation?</div>
+<div class="note">✅ Prevents misunderstandings, but takes more time.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Opening with "I'd like to discuss..."</h4>
+<div class="explanation">Used to open negotiations confidently. These phrases set a confident tone and show preparation.</div>
+<ul class="grammar-examples-list">
+<li>"I'd like to discuss [topic] and explore if there's room to move on this."</li>
+<li>"I'd like to discuss my compensation and explore..."</li>
+<li>"I'd like to discuss the pricing and explore..."</li>
+<li>"I'd like to discuss the timeline and explore..."</li>
+<li>"I'd like to discuss a potential partnership and explore..."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "Can we talk about...?" (Hesitant, not confident)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I'd like to discuss [topic] and explore if there's room to move on this."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Exploring with "What's most important to you?"</h4>
+<div class="explanation">Used to explore underlying interests. These phrases uncover hidden interests to create win-win.</div>
+<ul class="grammar-examples-list">
+<li>"What's most important to you in this?"</li>
+<li>"What's most important to you in structuring my compensation?"</li>
+<li>"What matters most to you in this?"</li>
+<li>"What's the priority for you in this?"</li>
+<li>"What's most important to you in this arrangement?"</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "What do you want?" (Too direct, focuses on positions)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "What's most important to you in this?"
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Proposing with "What if we..."</h4>
+<div class="explanation">Used to propose creative win-win solutions. These phrases create creative win-win solutions.</div>
+<ul class="grammar-examples-list">
+<li>"What if we [creative solution]?"</li>
+<li>"What if we signed a longer lease in exchange for a lower rate?"</li>
+<li>"What if we structured the compensation with a higher base and bonus?"</li>
+<li>"What if we committed to a longer-term contract for better pricing?"</li>
+<li>"What if we phased the deliverables to meet critical deadlines?"</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "How about...?" (Less creative, less win-win)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "What if we [creative solution]?"
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Preparing with "I've done some research..."</h4>
+<div class="explanation">Used to show preparation. These phrases show you've done research and have leverage.</div>
+<ul class="grammar-examples-list">
+<li>"I've done some research on [topic]."</li>
+<li>"I've done some research on market rates for my role."</li>
+<li>"I've done some research on comparable vendors."</li>
+<li>"I've done some research on comparable units in the area."</li>
+<li>"I've done some research on the scope."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "I think..." (Without research, no leverage)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I've done some research on [topic]."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Closing with "Great! Let's finalize this..."</h4>
+<div class="explanation">Used to close negotiations confidently. These phrases confirm agreement and set next steps.</div>
+<ul class="grammar-examples-list">
+<li>"Great! Let's finalize this. Let me confirm what we've agreed on."</li>
+<li>"Great! Let's finalize this. Let me confirm: [summary]."</li>
+<li>"Great! Let's finalize this. Let's set next steps."</li>
+<li>"Great! Let's finalize this. Does that sound good?"</li>
+<li>"Great! Let's finalize this. I'll [action] by [date]."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "OK, let's do it." (Without confirmation or next steps)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "Great! Let's finalize this. Let me confirm what we've agreed on."
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Negotiating Rent</h3>
+<p class="scenario-context">You're renewing your lease and want to negotiate a lower rent.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Open + Explore</span>
+<span class="response">"I'd like to discuss the rent renewal and explore if there's room to move on this. I've done some research on comparable units. What's most important to you — the rent or the lease term?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Propose + Close</span>
+<span class="response">"What if we signed a longer lease for a lower rate? Great! Let's finalize this. Let me confirm the details. Does that sound good?"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Negotiating without preparation.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Negotiating Salary</h3>
+<p class="scenario-context">You're negotiating a salary raise with your employer.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Open + Explore</span>
+<span class="response">"I'd like to discuss my compensation and explore if there's room to move. I've done research on market rates. What's most important to you — base salary or benefits?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Propose + Close</span>
+<span class="response">"What if we structured compensation with a higher base and performance bonus? Great! Let's finalize this. Let me confirm the details. Does that sound good?"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Focusing on positions, not interests.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Negotiating with Vendor</h3>
+<p class="scenario-context">You're negotiating with a vendor for better pricing.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Open + Explore</span>
+<span class="response">"I'd like to discuss the pricing and explore if there's room to move. I've researched comparable vendors. What's most important to you — price or contract length?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Propose + Close</span>
+<span class="response">"What if we committed to a longer-term contract for better pricing? Great! Let's finalize this. Let me confirm. Does that sound good?"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Closing without confirmation.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario</h3>
+<p class="scenario-context">Morning: Negotiate rent. Afternoon: Negotiate salary.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Morning (Life - Open + Explore + Propose + Close)</span>
+<span class="response">"I'd like to discuss the rent... I've done research... What's most important? What if we...? Great! Let's finalize. Let me confirm. Does that sound good?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Afternoon (Business - Open + Explore + Propose + Close)</span>
+<span class="response">"I'd like to discuss my compensation... I've done research... What's most important? What if we...? Great! Let's finalize. Let me confirm. Does that sound good?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Reflection</span>
+<span class="response">How did your approach change between the two? Life = more casual. Business = more formal. But the 5-step loop is the same.</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Not adapting register to context.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: Negotiate Something This Week</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Your Final Integration Challenge</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3> The Negotiation Audit</h3>
+<p class="task-time">⏱️ Before negotiating</p>
+<p class="task-desc">Identify something you want to negotiate this week. Research your BATNA and ZOPA. Prepare your opening, exploration questions, and proposal.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify what you want to negotiate</li>
+<li>Research your BATNA (Best Alternative)</li>
+<li>Research your ZOPA (Zone of Possible Agreement)</li>
+<li>Prepare your opening statement</li>
+<li>Prepare exploration questions</li>
+<li>Prepare your win-win proposal</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written negotiation preparation document</p>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Negotiation Practice</h3>
+<p class="task-time">⏱️ During negotiation</p>
+<p class="task-desc">Negotiate something real this week using the 5-step loop. Record yourself (if possible) and reflect afterward.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Negotiate something real this week</li>
+<li>Use all 5 steps of the loop</li>
+<li>Record yourself (if possible)</li>
+<li>Reflect on what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Negotiation reflection notes</p>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Negotiation</h3>
+<p class="task-time">⏱️ This week</p>
+<p class="task-desc">Negotiate something significant this week (salary, rent, vendor contract, etc.). Use the full 5-step loop. Document your preparation, execution, and outcome.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Negotiate something significant this week</li>
+<li>Use the full 5-step framework</li>
+<li>Document your BATNA and ZOPA</li>
+<li>Document your opening, exploration, proposal, and closing</li>
+<li>Document the outcome and what you learned</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Complete negotiation documentation with outcome analysis</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Negotiation Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title"> Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I prepare with BATNA & ZOPA</h4>
+<p>I research my BATNA and ZOPA before every negotiation.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I open confidently</h4>
+<p>I open negotiations confidently with "I'd like to discuss..."</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I explore interests</h4>
+<p>I explore underlying interests with "What's most important to you?"</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I propose win-win</h4>
+<p>I propose creative win-win solutions with "What if we...?"</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I close with confirmation</h4>
+<p>I close confidently with confirmation and next steps.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong> Congratulations!</strong> You've completed Week 13! You now have the skills to negotiate confidently in real life. Go negotiate something this week!</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> You need to negotiate something this week</p>
+<button>Tap to reveal Negotiation Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "I'll just ask for what I want and see what happens."</p>
+<p><strong>C1 Language:</strong> Prepare → Open → Explore → Propose → Close.</p>
+<p><strong>Trade-off:</strong> Takes more time to prepare, but leads to better outcomes.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In negotiations, preparation shows leverage. Opening confidently sets tone. Exploring interests creates win-win. Proposing creatively creates win-win. Closing with confirmation prevents misunderstandings.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Real Negotiation</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Before negotiating, what should you research?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. Just what you want</div>
+<div class="quiz-option" data-correct="true">B. Your BATNA and ZOPA</div>
+<div class="quiz-option" data-correct="false">C. Just the other party's position</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) How should you open a negotiation?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Can we talk about...?"</div>
+<div class="quiz-option" data-correct="true">B. "I'd like to discuss [topic] and explore if there's room to move on this."</div>
+<div class="quiz-option" data-correct="false">C. "I need [X]."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) How should you explore interests?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "What do you want?"</div>
+<div class="quiz-option" data-correct="true">B. "What's most important to you in this?"</div>
+<div class="quiz-option" data-correct="false">C. "What's your position?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) How should you propose?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "How about...?"</div>
+<div class="quiz-option" data-correct="true">B. "What if we [creative win-win solution]?"</div>
+<div class="quiz-option" data-correct="false">C. "I need [X]."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) How should you close?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "OK, let's do it."</div>
+<div class="quiz-option" data-correct="true">B. "Great! Let's finalize this. Let me confirm what we've agreed on. Let's set next steps."</div>
+<div class="quiz-option" data-correct="false">C. "Let's agree on this."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) What's the trade-off of preparing with BATNA and ZOPA?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Takes more time, but leads to better outcomes.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but leads to weaker outcomes.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What's the trade-off of exploring interests?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Takes more time, but creates win-win opportunities.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but creates win-lose.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What's the trade-off of closing with confirmation?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Takes more time, but prevents misunderstandings.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but creates misunderstandings.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) What does BATNA stand for?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Best Alternative to Negotiated Agreement</div>
+<div class="quiz-option" data-correct="false">B. Best Alternative to Negotiated Arrangement</div>
+<div class="quiz-option" data-correct="false">C. Best Alternative to Negotiated Agreement</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+
+<div class="day-navigation">
+<a href="week-13-day-90.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 90: Negotiating Confidently</div>
+</a>
+<a href="week-13.html" class="nav-card">
+<div class="nav-label">Week Complete 🎉</div>
+<div class="nav-title">Week 13 Complete!</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Week 13 Complete! 🎉</button>
+<p class="complete-message">B2 speakers fear negotiation. C1 speakers embrace it. You're now a C1 negotiator! </p>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<p class="footer-title">Professional Fluency Roadmap</p>
+<p class="footer-tagline">Week 13 · Day 91 · Negotiate Something This Week · Week Complete! 🎉</p>
+</div>
+</footer>
+
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+
+const textContent = {
+'lens1': 'Lens 1: Preparing. How do I prepare before negotiating? I\'ll research my BATNA and ZOPA. I know my walk-away point, and I know what\'s reasonable based on market data.',
+'lens2': 'Lens 2: Opening. How do I open the negotiation confidently? I\'d like to discuss [topic] and explore if there\'s room to move on this. I\'ve done some research, and I think there\'s potential for a win-win here.',
+'lens3': 'Lens 3: Exploring. How do I explore interests creatively? What\'s most important to you in this? What would make this work for you? Help me understand what matters most so we can find a win-win.',
+'lens4': 'Lens 4: Proposing. How do I propose win-win solutions? What if we [creative solution]? Would you be open to [alternative]? I think this could work for both of us because [reason].',
+'lens5': 'Lens 5: Closing. How do I close the deal confidently? Great! Let\'s finalize this. Let me confirm what we\'ve agreed on: [summary]. Let\'s set next steps — I\'ll [action] by [date], and you\'ll [action] by [date]. Does that sound good?',
+'batna': 'BATNA',
+'zopa': 'ZOPA',
+'win-win': 'win-win',
+'id-like-to-discuss': 'I\'d like to discuss',
+'whats-most-important': 'What\'s most important to you',
+'room-to-move': 'explore if there\'s room to move',
+'what-if-we': 'What if we',
+'lets-finalize': 'Let\'s finalize',
+'does-that-sound-good': 'Does that sound good',
+'dialogue1': 'Dialogue 1: Negotiating Rent. You: Hi [Landlord], thanks for meeting with me. I\'d like to discuss the rent renewal and explore if there\'s room to move on this. I\'ve done some research on comparable units in the area, and I think there\'s potential for a win-win here. Landlord: Sure, I\'m open to discussing it. What are you thinking? You: Based on my research, comparable units in the area are renting for about 10% less than my current rate. I\'ve been a reliable tenant for 2 years, always paying on time. What\'s most important to you in this — the rent amount or the lease term? Landlord: Well, the rent is important, but having a reliable long-term tenant is also valuable. You: That makes sense. What if we signed a longer lease — say 18 months instead of 12 — in exchange for a 10% reduction in the monthly rate? That way you get a longer-term reliable tenant, and I get a rate that\'s more in line with the market. Landlord: Hmm, that\'s interesting. Let me think about that. You: Totally understandable. Take your time. I\'m happy to discuss any other ideas you might have as well. Landlord: Actually, I think that could work. Let\'s do 18 months at the reduced rate. You: Great! Let\'s finalize this. Let me confirm: 18-month lease at [reduced rate], starting [date]. I\'ll send over the signed lease by Friday, and you\'ll send over the updated lease agreement by Wednesday. Does that sound good? Landlord: Sounds perfect. I\'ll send the updated agreement by Wednesday. You: Perfect! Thanks for being open to this. Looking forward to continuing as your tenant.',
+'dialogue2': 'Dialogue 2: Negotiating Salary. You: Hi [Manager], thanks for meeting with me. I\'d like to discuss my compensation and explore if there\'s room to move on this. I\'ve done some research on market rates for my role, and I think there\'s potential for a win-win here. Manager: Sure, I\'m open to discussing it. What are you thinking? You: Based on my research, the market rate for my role is about 15% higher than my current salary. I\'ve taken on additional responsibilities over the past year. What\'s most important to you in structuring my compensation — the base salary or the benefits package? Manager: Well, the base salary is important, but we also need to consider the overall compensation package. You: That makes sense. What if we structured the compensation with a higher base salary and a performance-based bonus? That way you get the flexibility of tying compensation to performance, and I get a base that\'s more in line with the market. Manager: Hmm, that\'s interesting. Let me think about that and discuss with HR. You: Totally understandable. Take your time. I\'m happy to discuss any other ideas you might have as well. Manager: Actually, I think that could work. Let me discuss with HR and get back to you by Friday. You: Great! Let\'s finalize this. Let me confirm: we\'ll discuss the structured compensation with HR, and you\'ll get back to me by Friday. Does that sound good? Manager: Sounds perfect. I\'ll get back to you by Friday. You: Perfect! Thanks for being open to this. Looking forward to hearing from you.'
+};
+
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+
+</body>
+</html>

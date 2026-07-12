@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 14 Day 92: Explaining Complex Concepts Simply | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-title button { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+.deep-dive-item .analysis .arrow { color: var(--primary-bright); font-weight: 600; display: block; margin: 4px 0; }
+.deep-dive-item .analysis strong { color: var(--primary-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-14.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 14 Hub</a>
+<div class="day-indicator">Day 92 / 98</div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-14.html" class="day-tab">Overview</a>
+<a href="week-14-day-92.html" class="day-tab active">Day 92</a>
+<a href="week-14-day-93.html" class="day-tab">Day 93</a>
+<a href="week-14-day-94.html" class="day-tab">Day 94</a>
+<a href="week-14-day-95.html" class="day-tab">Day 95</a>
+<a href="week-14-day-96.html" class="day-tab">Day 96</a>
+<a href="week-14-day-97.html" class="day-tab">Day 97</a>
+<a href="week-14-day-98.html" class="day-tab">Day 98</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-14.html">Week 14</a> › Day 92
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🎓</span>
+<h1 class="day-title">Explaining Complex Concepts Simply</h1>
+</div>
+<p class="day-subtitle">Week 14 teaches you to support others' learning and growth. Day 92 teaches you how to <strong>explain complex concepts simply</strong> — breaking down technical information, using analogies effectively, and checking for understanding. B2 speakers use jargon and confuse their audience. C1 speakers make complex ideas accessible to anyone.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Simplification + Analogies + Clarity</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Learning & Growth Day 1 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Uses technical jargon, assumes everyone understands, explains in one long monologue without checking comprehension.<br><br><strong>C1 Speaker:</strong> Breaks down complex ideas into digestible parts, uses relatable analogies, checks for understanding throughout, and adjusts explanation based on audience feedback.<br><br>"B2 speakers explain what they know. C1 speakers explain what their audience needs to understand. The difference isn't knowledge — it's empathy and adaptation."</div>
+</div>
+
+<div class="quote">"B2 speakers say 'It's a machine learning algorithm that utilizes neural networks.' C1 speakers say 'Think of it like teaching a computer to recognize patterns, similar to how you learn to recognize faces.' The difference isn't knowledge — it's empathy."</div>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Simple Explanation = Breakdown + Analogy + Checking</h3>
+<p class="philosophy-text">"Explaining complex concepts isn't about dumbing down — it's about making ideas accessible without losing accuracy. You break it down, connect it to what they know, and verify they understand."</p>
+<p class="philosophy-text">Every effective explanation requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Breakdown Decision:</strong> How do I break it down? (All at once? Step-by-step?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Analogy Decision:</strong> How do I connect it? (Technical? Relatable?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Jargon Decision:</strong> How do I handle terminology? (Use freely? Explain first?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Checking Decision:</strong> How do I verify understanding? (Assume? Ask?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Adaptation Decision:</strong> How do I adjust? (One way? Flexible?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 92 teaches you how to explain complex concepts simply with breakdown, analogy, and checking for understanding.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Explanation Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Break Down → Connect → Check</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔍</div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Explanation Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 3-step process for explaining complex concepts simply</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">BREAK DOWN (Break it into parts)</div>
+<div class="loop-step-desc">How do I break it down? "Let me break this down into three parts..." / "There are really two key concepts here..." (Break into digestible parts)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">CONNECT (Use analogies and examples)</div>
+<div class="loop-step-desc">How do I connect it? "Think of it like..." / "It's similar to..." (Connect to what they already know)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">CHECK (Verify understanding)</div>
+<div class="loop-step-desc">How do I check? "Does that make sense?" / "Let me know if you'd like me to clarify..." (Verify and adjust)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Explanation Lenses (3-Level Examples)</h2>
+</div>
+<p class="section-desc">Every effective explanation requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+
+<div class="lenses-grid">
+
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Breaking Down Complexity
+<button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I break down complex concepts?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Breakdown Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"So basically, it works like this..."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"There are really three main parts to understand..."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Let me break this down into three key components. First, [part 1]. Second, [part 2]. And third, [part 3]. Each builds on the previous one."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Explaining how insurance works to a friend. Decision: Break into parts ("There are really three main parts: what you pay, what's covered, and what happens when you make a claim...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Explaining a new software system to colleagues. Decision: Break into components ("Let me break this down into three key components: the interface, the database, and the automation features...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Structured)</strong>
+Easier to follow, less overwhelming, better retention.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Structured)</strong>
+Takes more time upfront, but saves time overall.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Explaining everything at once without structure. Native C1 speakers break complex ideas into digestible parts.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I breaking it down or overwhelming them?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Using Analogies Effectively
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I use analogies to connect?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Analogy Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"It's like a computer."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Think of it like a library system."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Think of it like a library. The database is like the card catalog — it organizes everything. The interface is like the librarian — it helps you find what you need. And the automation is like the self-checkout — it speeds up the process."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Explaining blockchain. Decision: Relatable analogy ("Think of it like a shared Google Doc that everyone can see but no one can delete...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Explaining cloud computing. Decision: Professional analogy ("Think of it like renting vs. buying. Instead of buying servers, you're renting computing power...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Relatable)</strong>
+Makes abstract concrete, leverages existing knowledge.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Relatable)</strong>
+Analogy might not be perfect, but gets the point across.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Using technical analogies for non-technical audiences. Native C1 speakers use relatable, everyday analogies.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I using relatable analogies or technical ones?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Handling Jargon
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I handle technical terminology?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐ High</span>
+<span class="lens-context">The Jargon Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"The API integrates with the CRM."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"The API — that's the connection between systems — integrates with the CRM, which is your customer database."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"The API — which is basically a bridge that lets different software systems talk to each other — integrates with your CRM, which is your customer database. So essentially, it connects your tools so they can share information automatically."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Explaining mortgage rates. Decision: Explain first ("APR — that's the annual percentage rate, which includes both interest and fees...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Explaining ROI. Decision: Explain first ("ROI — return on investment, which is basically how much profit you make compared to what you spent...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Explained)</strong>
+Everyone understands, no one feels lost or embarrassed.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Explained)</strong>
+Takes more time, but prevents confusion later.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Using jargon without explanation. Native C1 speakers always explain technical terms when needed.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I explaining jargon or assuming they know it?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Checking for Understanding
+<button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I verify they understand?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Checking Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Do you understand?"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Does that make sense?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Does that make sense so far? I'm happy to go over any part again. Or if you'd like, you can tell me what you're thinking, and I can clarify if needed."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Explaining a recipe. Decision: Check understanding ("Does that make sense? Feel free to ask if anything's unclear...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Explaining a new process. Decision: Check understanding ("Before we move on, does everyone understand how this works? I'm happy to clarify anything...")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Checking)</strong>
+Catches misunderstandings early, shows you care.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Checking)</strong>
+May slow down the conversation, but prevents errors.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Asking "Do you understand?" which pressures people to say yes. Native C1 speakers ask open questions that invite clarification.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I checking for understanding or assuming?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Adapting to Audience
+<button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I adjust my explanation?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Adaptation Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Let me explain it differently."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Let me try explaining it another way."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I notice that might not have been clear. Let me try a different approach. [Adjusts explanation based on their confusion]. Is this clearer?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Explaining technology to parents. Decision: Adapt ("I notice that's confusing. Let me try explaining it differently, maybe with a simpler example...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Explaining to different departments. Decision: Adapt ("For the marketing team, let me explain it in terms of customer impact. For engineering, let me explain the technical implementation...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Adaptive)</strong>
+Meets people where they are, shows empathy.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Adaptive)</strong>
+Requires reading the room and flexibility.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Sticking to one explanation even when it's not working. Native C1 speakers adapt based on audience feedback.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I adapting or just repeating?</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy clear explanations</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Using Jargon Without Explanation</h4>
+<div class="mistake-wrong">❌ "The API integrates with the CRM to optimize the UX."</div>
+<div class="mistake-right">✅ "The API — which is a bridge that lets systems talk to each other — integrates with your CRM, which is your customer database, to improve the user experience."</div>
+<div class="mistake-why">Why: Jargon without explanation excludes people. Always explain technical terms when needed.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Not Checking for Understanding</h4>
+<div class="mistake-wrong">❌ "Do you understand?" (Yes/No question that pressures them)</div>
+<div class="mistake-right">✅ "Does that make sense? I'm happy to go over any part again. Or you can tell me what you're thinking, and I can clarify."</div>
+<div class="mistake-why">Why: "Do you understand?" pressures people to say yes even when confused. Open questions invite clarification.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Not Breaking It Down</h4>
+<div class="mistake-wrong">❌ Explaining everything at once in one long monologue</div>
+<div class="mistake-right">✅ "Let me break this down into three key parts. First... Second... Third..."</div>
+<div class="mistake-why">Why: Overwhelming people with information all at once leads to confusion. Breaking it down makes it digestible.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Explanation Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Explaining blockchain to non-technical friend</td>
+<td>"It's a distributed ledger using cryptographic hashing."</td>
+<td>"It's like a digital record book."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Think of it like a shared Google Doc that everyone can see but no one can delete or change without everyone else knowing. Every change is recorded permanently."</span>
+<span class="why">Why: Relatable analogy, no jargon, concrete example</span>
+</div>
+</td>
+<td>"It's like a shared record that everyone can see."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>2. Explaining ROI to marketing team</td>
+<td>"The ROI is calculated by dividing net profit by investment cost."</td>
+<td>"ROI shows how much profit you make."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"ROI — return on investment — is basically how much profit you make compared to what you spent. So if you spend $100 and make $150 back, your ROI is 50%. It tells you if your investment was worth it."</span>
+<span class="why">Why: Explains jargon, uses concrete example, connects to decision</span>
+</div>
+</td>
+<td>"ROI shows profit compared to what you spent."</td>
+<td>Semi-formal</td>
+</tr>
+<tr>
+<td>3. Explaining new software to colleagues</td>
+<td>"The system utilizes machine learning algorithms."</td>
+<td>"The system learns from data."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Let me break this down. The system learns from data — think of it like teaching a computer to recognize patterns, similar to how you learn to recognize faces. The more data it sees, the better it gets."</span>
+<span class="why">Why: Breaks down, uses relatable analogy, explains process</span>
+</div>
+</td>
+<td>"The system learns from patterns in data."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>4. Explaining mortgage to first-time buyer</td>
+<td>"The APR includes origination fees and points."</td>
+<td>"APR is the total cost of the loan."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"APR — that's the annual percentage rate — includes both the interest and any fees. So it's the true cost of borrowing. Think of it like the 'sticker price' vs. the 'total price' — APR is the total price."</span>
+<span class="why">Why: Explains jargon, uses analogy, connects to familiar concept</span>
+</div>
+</td>
+<td>"APR is the total cost including fees."</td>
+<td>Semi-formal</td>
+</tr>
+<tr>
+<td>5. Explaining cloud computing to executives</td>
+<td>"It's infrastructure as a service with elastic scaling."</td>
+<td>"It's renting computing power instead of buying."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Think of it like renting vs. buying a house. Instead of buying expensive servers, you're renting computing power as you need it. You pay for what you use, and you can scale up or down instantly."</span>
+<span class="why">Why: Relatable analogy, connects to business decision, explains benefit</span>
+</div>
+</td>
+<td>"It's renting computing power as needed."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>6. Explaining SEO to small business owner</td>
+<td>"It's about optimizing meta tags and backlinks."</td>
+<td>"It helps you rank higher on Google."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"SEO — search engine optimization — helps your website show up higher when people search on Google. Think of it like being in a phone book: you want to be on the first page, not the last. SEO helps you get there."</span>
+<span class="why">Why: Explains acronym, uses relatable analogy, explains benefit</span>
+</div>
+</td>
+<td>"SEO helps you rank higher on Google."</td>
+<td>Semi-formal</td>
+</tr>
+<tr>
+<td>7. Explaining compound interest to teenager</td>
+<td>"It's interest calculated on principal and accumulated interest."</td>
+<td>"It's interest on interest."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Compound interest is like a snowball rolling down a hill. You start with a small amount, but as it rolls, it picks up more snow and gets bigger and bigger. Your money earns interest, then that interest earns more interest, and it grows faster over time."</span>
+<span class="why">Why: Visual analogy, age-appropriate, shows progression</span>
+</div>
+</td>
+<td>"It's interest that grows on itself over time."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>8. Checking if explanation worked</td>
+<td>"Do you understand?"</td>
+<td>"Does that make sense?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Does that make sense so far? I'm happy to go over any part again. Or if you'd like, you can tell me what you're thinking, and I can clarify if needed."</span>
+<span class="why">Why: Open question, invites clarification, shows you care</span>
+</div>
+</td>
+<td>"What questions do you have?"</td>
+<td>All registers</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title">🏠 Case 1: Life - Explaining Insurance to a Friend</h4>
+<div class="case-context"><strong>Context:</strong> Your friend is buying their first car and doesn't understand insurance. You need to explain how it works in simple terms.</div>
+<div class="case-narrative">
+<p><span class="speaker">Friend:</span> "I need to get car insurance, but I have no idea how it works. Can you explain?"</p>
+<p><span class="speaker">You:</span> "Of course! <strong>Let me break this down into three main parts.</strong> First, there's what you pay — that's your premium. Second, there's what's covered — that's your coverage. And third, there's what happens when you make a claim."</p>
+<p><span class="speaker">Friend:</span> "Okay, so what's a premium?"</p>
+<p><span class="speaker">You:</span> "<strong>Think of it like a subscription service</strong> — like Netflix. You pay a monthly or yearly fee to have the insurance. That's your premium. The higher your coverage, the higher your premium usually is."</p>
+<p><span class="speaker">Friend:</span> "Got it. And what does 'coverage' mean?"</p>
+<p><span class="speaker">You:</span> "<strong>Coverage is basically what the insurance will pay for.</strong> So if you have liability coverage and you hit someone's car, the insurance pays for their repairs. If you have collision coverage, it pays for your car repairs too. <strong>Does that make sense so far?</strong>"</p>
+<p><span class="speaker">Friend:</span> "Yeah, I think so. What about a deductible?"</p>
+<p><span class="speaker">You:</span> "<strong>Good question! A deductible is the amount you pay before insurance kicks in.</strong> Think of it like this: if you have a $500 deductible and your repair costs $2,000, you pay the first $500, and insurance pays the remaining $1,500. <strong>The higher your deductible, the lower your premium usually is.</strong>"</p>
+<p><span class="speaker">Friend:</span> "Oh, that makes sense now! Thanks for explaining it so clearly."</p>
+<p><span class="speaker">You:</span> "<strong>No problem! Let me know if you have any other questions</strong> — insurance can be confusing at first, but once you understand the basics, it gets easier."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"Let me break this down into [number] main parts."</strong><span class="meaning">Hãy để tôi chia nhỏ điều này thành [số] phần chính.</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Think of it like..."</strong><span class="meaning">Hãy nghĩ về nó như...</span><span class="register">Register: Casual</span></li>
+<li><strong>"Basically..."</strong><span class="meaning">Về cơ bản...</span><span class="register">Register: Casual</span></li>
+<li><strong>"Does that make sense so far?"</strong><span class="meaning">Điều đó có ý nghĩa không?</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Good question!"</strong><span class="meaning">Câu hỏi hay!</span><span class="register">Register: Casual</span></li>
+<li><strong>"The higher/lower your X, the higher/lower your Y"</strong><span class="meaning">X càng cao/thấp thì Y càng cao/thấp</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"No problem!"</strong><span class="meaning">Không có gì!</span><span class="register">Register: Casual</span></li>
+<li><strong>"Let me know if you have any other questions"</strong><span class="meaning">Hãy cho tôi biết nếu bạn có câu hỏi nào khác</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Once you understand the basics..."</strong><span class="meaning">Một khi bạn hiểu những điều cơ bản...</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"It gets easier"</strong><span class="meaning">Nó sẽ dễ dàng hơn</span><span class="register">Register: Casual</span></li>
+<li><strong>"First... Second... Third..."</strong><span class="meaning">Đầu tiên... Thứ hai... Thứ ba...</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"What you pay"</strong><span class="meaning">Những gì bạn trả</span><span class="register">Register: Casual</span></li>
+<li><strong>"What's covered"</strong><span class="meaning">Những gì được bảo hiểm</span><span class="register">Register: Casual</span></li>
+<li><strong>"What happens when..."</strong><span class="meaning">Điều gì xảy ra khi...</span><span class="register">Register: Casual</span></li>
+<li><strong>"Monthly or yearly fee"</strong><span class="meaning">Phí hàng tháng hoặc hàng năm</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Pays for"</strong><span class="meaning">Chi trả cho</span><span class="register">Register: Casual</span></li>
+<li><strong>"Before insurance kicks in"</strong><span class="meaning">Trước khi bảo hiểm có hiệu lực</span><span class="register">Register: Casual</span></li>
+<li><strong>"The remaining"</strong><span class="meaning">Phần còn lại</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"At first"</strong><span class="meaning">Lúc đầu</span><span class="register">Register: Casual</span></li>
+<li><strong>"Confusing"</strong><span class="meaning">Gây nhầm lẫn</span><span class="register">Register: Casual</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Explaining New Software to Team</h4>
+<div class="case-context"><strong>Context:</strong> Your company is implementing a new project management software. You need to explain how it works to your team members who aren't tech-savvy.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Hi everyone! <strong>I know this new software might seem overwhelming at first, so let me break it down into three key components.</strong> First, there's the dashboard — that's your main screen. Second, there are the projects — where you manage your work. And third, there's the collaboration features — how you work with others."</p>
+<p><span class="speaker">Team Member 1:</span> "What's the dashboard exactly?"</p>
+<p><span class="speaker">You:</span> "<strong>Think of the dashboard like the homepage of a website</strong> — it's where you land when you log in, and it shows you an overview of everything. You can see your tasks, upcoming deadlines, and recent activity all in one place."</p>
+<p><span class="speaker">Team Member 2:</span> "How do we create a project?"</p>
+<p><span class="speaker">You:</span> "<strong>Great question! Creating a project is like creating a folder on your computer.</strong> You click the 'New Project' button, give it a name, and then you can add tasks to it. <strong>Does that make sense?</strong>"</p>
+<p><span class="speaker">Team Member 3:</span> "What about the automation features you mentioned?"</p>
+<p><span class="speaker">You:</span> "<strong>Let me explain that differently.</strong> Automation is like having a helpful assistant. For example, when a task is marked complete, the system can automatically notify the next person. Or when a deadline is approaching, it can send you a reminder. <strong>You don't have to remember to do these things manually — the system does it for you.</strong>"</p>
+<p><span class="speaker">Team Member 1:</span> "Oh, that's actually pretty cool!"</p>
+<p><span class="speaker">You:</span> "<strong>Exactly! And if anything isn't clear as you start using it, please don't hesitate to ask.</strong> I'm happy to walk through it again or show you specific features. <strong>What questions do you have?</strong>"</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I know this might seem overwhelming at first"</strong><span class="meaning">Tôi biết điều này có vẻ quá tải lúc đầu</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Let me break it down into [number] key components"</strong><span class="meaning">Hãy để tôi chia nhỏ thành [số] thành phần chính</span><span class="register">Register: Professional</span></li>
+<li><strong>"Think of X like Y"</strong><span class="meaning">Hãy nghĩ về X như Y</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Great question!"</strong><span class="meaning">Câu hỏi tuyệt vời!</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Does that make sense?"</strong><span class="meaning">Điều đó có ý nghĩa không?</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Let me explain that differently"</strong><span class="meaning">Hãy để tôi giải thích điều đó theo cách khác</span><span class="register">Register: Professional</span></li>
+<li><strong>"For example..."</strong><span class="meaning">Ví dụ...</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"You don't have to..."</strong><span class="meaning">Bạn không phải...</span><span class="register">Register: Casual</span></li>
+<li><strong>"The system does it for you"</strong><span class="meaning">Hệ thống làm điều đó cho bạn</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"That's actually pretty cool"</strong><span class="meaning">Điều đó thực sự khá tuyệt</span><span class="register">Register: Casual</span></li>
+<li><strong>"Please don't hesitate to ask"</strong><span class="meaning">Vui lòng đừng ngần ngại hỏi</span><span class="register">Register: Professional</span></li>
+<li><strong>"I'm happy to..."</strong><span class="meaning">Tôi sẵn lòng...</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Walk through it again"</strong><span class="meaning">Đi qua nó một lần nữa</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Specific features"</strong><span class="meaning">Các tính năng cụ thể</span><span class="register">Register: Professional</span></li>
+<li><strong>"What questions do you have?"</strong><span class="meaning">Bạn có câu hỏi nào?</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Main screen"</strong><span class="meaning">Màn hình chính</span><span class="register">Register: Casual</span></li>
+<li><strong>"Overview of everything"</strong><span class="meaning">Tổng quan về mọi thứ</span><span class="register">Register: Semi-formal</span></li>
+<li><strong>"Upcoming deadlines"</strong><span class="meaning">Hạn chót sắp tới</span><span class="register">Register: Professional</span></li>
+<li><strong>"Recent activity"</strong><span class="meaning">Hoạt động gần đây</span><span class="register">Register: Professional</span></li>
+<li><strong>"Marked complete"</strong><span class="meaning">Được đánh dấu hoàn thành</span><span class="register">Register: Semi-formal</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Explanation Messages (with Model Answers)</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Explaining a Technical Concept</h4>
+<p class="task-context"><strong>Context:</strong> You need to explain how a VPN works to a non-technical friend. Write a message explaining it simply.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 analogy structures (e.g., "Think of it like...", "It's similar to...")</li>
+<li>Use 1 checking structure (e.g., "Does that make sense?")</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"A VPN is like a secret tunnel for your internet connection. Think of it like this: normally, when you browse the internet, it's like walking down a public street where anyone can see you. But with a VPN, it's like walking through a private tunnel — no one can see what you're doing. It encrypts your data, which means it scrambles it so hackers can't read it. Does that make sense? Happy to explain it differently if needed!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Analogies:</strong> "like a secret tunnel", "like walking down a public street", "like walking through a private tunnel"</li>
+<li><strong>Collocations:</strong> "internet connection", "encrypts your data", "scrambles it"</li>
+<li><strong>Checking:</strong> "Does that make sense?"</li>
+<li><strong>Adaptation:</strong> "Happy to explain it differently if needed"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (More Casual)</h5>
+<p class="alt-text">"A VPN is basically a secure tunnel for your internet. Think of it like sending a letter in a locked box instead of a postcard — only you and the recipient can read it. It keeps your data private and safe. Make sense?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (internet connection, encrypts data, scrambles)</li>
+<li>□ dùng đủ 2 analogy structures (Think of it like, It's like)</li>
+<li>□ dùng đủ 1 checking structure (Does that make sense)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Explaining a Business Concept</h4>
+<p class="task-context"><strong>Context:</strong> You need to explain 'cash flow' to a new employee. Write a message explaining it simply.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 analogy structures</li>
+<li>Use 1 checking structure</li>
+<li>Length: 150-200 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Cash flow is the movement of money in and out of the business. Think of it like your personal bank account: money comes in (income) and money goes out (expenses). The key difference is timing — you might make a sale today but not get paid for 30 days, while you still need to pay bills now. That's why cash flow is different from profit. Let me break it down: positive cash flow means more money coming in than going out. Negative cash flow means the opposite. Does that make sense? I'm happy to go over specific examples if you'd like."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Breakdown:</strong> "Let me break it down"</li>
+<li><strong>Analogies:</strong> "like your personal bank account"</li>
+<li><strong>Collocations:</strong> "movement of money", "positive cash flow", "negative cash flow"</li>
+<li><strong>Checking:</strong> "Does that make sense?"</li>
+<li><strong>Offer to clarify:</strong> "I'm happy to go over specific examples"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (More Formal)</h5>
+<p class="alt-text">"Cash flow represents the movement of money in and out of the business. Think of it like a bank account balance over time. The key is timing — revenue and expenses don't always align. Positive cash flow indicates more money coming in than going out. Please let me know if you'd like me to clarify any part of this."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (150-200 words)</li>
+<li>□ dùng đủ 3 collocations (movement of money, positive cash flow, negative cash flow)</li>
+<li>□ dùng đủ 2 analogy structures (Think of it like)</li>
+<li>□ dùng đủ 1 checking structure (Does that make sense)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Explaining a Process</h4>
+<p class="task-context"><strong>Context:</strong> You need to explain how to submit an expense report to a new team member. Write a message explaining the process.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 breakdown structures (e.g., "First... Second... Third...")</li>
+<li>Use 1 checking structure</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Submitting an expense report is pretty straightforward. Let me break it down into three steps. First, save all your receipts — you can take photos or keep the physical copies. Second, log into the expense system and create a new report. Third, upload your receipts and categorize each expense (meals, travel, supplies, etc.). Once you submit it, your manager approves it, and finance processes the reimbursement. The whole process usually takes about a week. Does that make sense? Feel free to ask if anything's unclear!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Breakdown:</strong> "Let me break it down into three steps. First... Second... Third..."</li>
+<li><strong>Collocations:</strong> "pretty straightforward", "categorize each expense", "processes the reimbursement"</li>
+<li><strong>Checking:</strong> "Does that make sense?"</li>
+<li><strong>Invitation:</strong> "Feel free to ask if anything's unclear"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (More Detailed)</h5>
+<p class="alt-text">"The expense report process has three main steps. First, collect and save all receipts. Second, log into the system and create a new report. Third, upload receipts and categorize expenses. After submission, your manager approves it, and finance processes reimbursement within a week. Let me know if you need clarification on any step."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (straightforward, categorize expense, processes reimbursement)</li>
+<li>□ dùng đủ 2 breakdown structures (First, Second, Third)</li>
+<li>□ dùng đủ 1 checking structure (Does that make sense)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Explaining a Complex Topic</h4>
+<p class="task-context"><strong>Context:</strong> You need to explain 'machine learning' to someone with no technical background. Write a message explaining it simply.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 analogy structures</li>
+<li>Use 1 checking structure</li>
+<li>Length: 150-200 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Machine learning is like teaching a computer to learn from experience. Think of it like teaching a child to recognize animals. You show them pictures of cats and dogs, and eventually they learn to tell the difference. Machine learning works the same way — you feed the computer lots of data (like thousands of photos), and it learns to recognize patterns. For example, Netflix uses machine learning to recommend shows you might like based on what you've watched before. It's not magic — it's just pattern recognition based on data. Does that make sense? I'm happy to explain it with a different example if that helps!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Analogies:</strong> "like teaching a child to recognize animals", "like thousands of photos"</li>
+<li><strong>Collocations:</strong> "learn from experience", "recognize patterns", "pattern recognition"</li>
+<li><strong>Concrete example:</strong> "Netflix uses machine learning to recommend shows"</li>
+<li><strong>Checking:</strong> "Does that make sense?"</li>
+<li><strong>Adaptation:</strong> "I'm happy to explain it with a different example"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Simpler)</h5>
+<p class="alt-text">"Machine learning is teaching computers to learn from data. Think of it like learning from experience — the more examples the computer sees, the better it gets at recognizing patterns. For instance, spam filters learn to identify spam emails by seeing thousands of examples. Make sense?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (150-200 words)</li>
+<li>□ dùng đủ 3 collocations (learn from experience, recognize patterns, pattern recognition)</li>
+<li>□ dùng đủ 2 analogy structures (Think of it like, like)</li>
+<li>□ dùng đủ 1 checking structure (Does that make sense)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Explanation Lexicon)</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The Explanation Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">🎓 Breaking Down Complexity</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>break it down</strong>
+<div class="ipa">/breɪk ɪt daʊn/</div>
+<div class="pos">(phrasal verb)</div>
+<div class="meaning">Chia nhỏ ra</div>
+<div class="collocation">Collocation: "break it down into parts"</div>
+<div class="chunk">Chunk: "Let me break this down into three parts"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Let me break it down."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Let me break this down into three key components."</div>
+<div class="native-alt">Native alternative: "break it down"</div>
+<button class="vocab-audio-btn" onclick="speakText('break-it-down', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>key components</strong>
+<div class="ipa">/kiː kəmˈpoʊ.nənts/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Các thành phần chính</div>
+<div class="collocation">Collocation: "key components"</div>
+<div class="chunk">Chunk: "three key components"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"There are key components."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Let me break this down into three key components."</div>
+<div class="native-alt">Native alternative: "key parts"</div>
+<button class="vocab-audio-btn" onclick="speakText('key-components', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>digestible parts</strong>
+<div class="ipa">/dɪˈdʒes.tə.bəl pɑːrts/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Các phần dễ tiêu hóa/dễ hiểu</div>
+<div class="collocation">Collocation: "digestible parts"</div>
+<div class="chunk">Chunk: "break it into digestible parts"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Break it into parts."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Break it into digestible parts so it's easier to understand."</div>
+<div class="native-alt">Native alternative: "manageable chunks"</div>
+<button class="vocab-audio-btn" onclick="speakText('digestible-parts', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🔗 Using Analogies</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>Think of it like</strong>
+<div class="ipa">/θɪŋk əv t laɪk/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Hãy nghĩ về nó như</div>
+<div class="collocation">Collocation: "Think of it like [analogy]"</div>
+<div class="chunk">Chunk: "Think of it like a library"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Think of it like this."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Think of it like a library system — it organizes everything."</div>
+<div class="native-alt">Native alternative: "Think of it like"</div>
+<button class="vocab-audio-btn" onclick="speakText('think-of-it-like', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>It's similar to</strong>
+<div class="ipa">/ɪts ˈsɪm.ə.lər tu/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Nó tương tự như</div>
+<div class="collocation">Collocation: "It's similar to [analogy]"</div>
+<div class="chunk">Chunk: "It's similar to a subscription service"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"It's similar to that."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"It's similar to a subscription service — you pay monthly for access."</div>
+<div class="native-alt">Native alternative: "It's like"</div>
+<button class="vocab-audio-btn" onclick="speakText('its-similar-to', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>relatable analogy</strong>
+<div class="ipa">/rɪˈleɪ.tə.bəl əˈnæl.ə.dʒi/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Phép so sánh dễ liên tưởng</div>
+<div class="collocation">Collocation: "relatable analogy"</div>
+<div class="chunk">Chunk: "use a relatable analogy"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Use an analogy."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Use a relatable analogy that connects to their experience."</div>
+<div class="native-alt">Native alternative: "relatable comparison"</div>
+<button class="vocab-audio-btn" onclick="speakText('relatable-analogy', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">✅ Checking Understanding</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>Does that make sense</strong>
+<div class="ipa">/dʌz æt meɪk sens/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều đó có ý nghĩa không</div>
+<div class="collocation">Collocation: "Does that make sense?"</div>
+<div class="chunk">Chunk: "Does that make sense so far?"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"Does that make sense?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Does that make sense so far? I'm happy to clarify if needed."</div>
+<div class="native-alt">Native alternative: "Does that make sense"</div>
+<button class="vocab-audio-btn" onclick="speakText('does-that-make-sense', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I'm happy to clarify</strong>
+<div class="ipa">/aɪm ˈhæp.i tuː ˈklær.ə.faɪ/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi sẵn lòng làm rõ</div>
+<div class="collocation">Collocation: "I'm happy to clarify"</div>
+<div class="chunk">Chunk: "I'm happy to clarify if needed"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I can clarify."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I'm happy to clarify if you have any questions."</div>
+<div class="native-alt">Native alternative: "I'm happy to clarify"</div>
+<button class="vocab-audio-btn" onclick="speakText('im-happy-to-clarify', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>go over it again</strong>
+<div class="ipa">/ɡoʊ ˈoʊ.vər ɪt əˈɡen/</div>
+<div class="pos">(phrasal verb)</div>
+<div class="meaning">Đi qua nó một lần nữa</div>
+<div class="collocation">Collocation: "go over it again"</div>
+<div class="chunk">Chunk: "I'm happy to go over it again"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I can explain it again."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I'm happy to go over it again if anything's unclear."</div>
+<div class="native-alt">Native alternative: "review it again"</div>
+<button class="vocab-audio-btn" onclick="speakText('go-over-it-again', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format - 15-20 turns)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title">🏠 Dialogue 1: Explaining Insurance (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Your friend is buying their first car and doesn't understand insurance. Conversation evolves through breakdown → analogy → checking → adaptation.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"I need to get car insurance, but I have no idea how it works. Can you explain?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Of course! <strong>Let me break this down into three main parts.</strong> First, there's what you pay — that's your premium. Second, there's what's covered — that's your coverage. And third, there's what happens when you make a claim." <span class="move-highlight move1">Break Down</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Okay, so what's a premium?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Think of it like a subscription service</strong> — like Netflix. You pay a monthly or yearly fee to have the insurance. That's your premium. The higher your coverage, the higher your premium usually is." <span class="move-highlight move2">Analogy</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Got it. And what does 'coverage' mean?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Coverage is basically what the insurance will pay for.</strong> So if you have liability coverage and you hit someone's car, the insurance pays for their repairs. If you have collision coverage, it pays for your car repairs too. <strong>Does that make sense so far?</strong>" <span class="move-highlight move3">Check</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Yeah, I think so. What about a deductible?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Good question! A deductible is the amount you pay before insurance kicks in.</strong> Think of it like this: if you have a $500 deductible and your repair costs $2,000, you pay the first $500, and insurance pays the remaining $1,500. <strong>The higher your deductible, the lower your premium usually is.</strong>" <span class="move-highlight move2">Analogy</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Oh, that makes sense now! Thanks for explaining it so clearly."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>No problem! Let me know if you have any other questions</strong> — insurance can be confusing at first, but once you understand the basics, it gets easier." <span class="move-highlight move4">Support</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Break Down (three parts) + Analogy (Netflix subscription) + Check (Does that make sense) + Support (Let me know).</li>
+<li><strong>Alternative Decision:</strong> Explaining all at once without structure. (Risk: Overwhelming, confusing).</li>
+<li><strong>Why this decision?</strong> Breaking down makes it digestible. Analogies make it relatable. Checking ensures understanding. Support shows you care.</li>
+<li><strong>Adaptation:</strong> Friend asked follow-up questions. You adapted by explaining each part clearly.</li>
+<li><strong>Evolution:</strong> Break Down → Analogy → Check → Clarify → Support.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Explaining Software (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're explaining new project management software to your team. Conversation evolves through breakdown → analogy → checking → adaptation.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hi everyone! <strong>I know this new software might seem overwhelming at first, so let me break it down into three key components.</strong> First, there's the dashboard — that's your main screen. Second, there are the projects — where you manage your work. And third, there's the collaboration features — how you work with others." <span class="move-highlight move1">Break Down</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member 1:</div>
+<div class="dialogue-text">"What's the dashboard exactly?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Think of the dashboard like the homepage of a website</strong> — it's where you land when you log in, and it shows you an overview of everything. You can see your tasks, upcoming deadlines, and recent activity all in one place." <span class="move-highlight move2">Analogy</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member 2:</div>
+<div class="dialogue-text">"How do we create a project?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Great question! Creating a project is like creating a folder on your computer.</strong> You click the 'New Project' button, give it a name, and then you can add tasks to it. <strong>Does that make sense?</strong>" <span class="move-highlight move3">Check</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member 3:</div>
+<div class="dialogue-text">"What about the automation features you mentioned?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Let me explain that differently.</strong> Automation is like having a helpful assistant. For example, when a task is marked complete, the system can automatically notify the next person. Or when a deadline is approaching, it can send you a reminder. <strong>You don't have to remember to do these things manually — the system does it for you.</strong>" <span class="move-highlight move2">Analogy</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Team Member 1:</div>
+<div class="dialogue-text">"Oh, that's actually pretty cool!"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>Exactly! And if anything isn't clear as you start using it, please don't hesitate to ask.</strong> I'm happy to walk through it again or show you specific features. <strong>What questions do you have?</strong>" <span class="move-highlight move4">Support</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Break Down (three components) + Analogy (homepage, folder, assistant) + Check (Does that make sense) + Support (What questions do you have).</li>
+<li><strong>Alternative Decision:</strong> Technical explanation without analogies. (Risk: Confusing for non-tech-savvy team).</li>
+<li><strong>Why this decision?</strong> Breaking down makes it digestible. Analogies make it relatable. Checking ensures understanding. Support shows you're available.</li>
+<li><strong>Adaptation:</strong> When asked about automation, you explained it differently with a new analogy.</li>
+<li><strong>Evolution:</strong> Break Down → Analogy → Check → Adapt → Support.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to a natural explanation conversation. Notice the fillers, hesitation, and discourse markers used in explaining complex concepts.</p>
+<div class="transcript-box">
+<h4>📄 Transcript</h4>
+<div class="transcript-text">
+<p><strong>Key Phrases from Dialogues:</strong></p>
+<p>"Let me break this down into three parts..."</p>
+<p>"Think of it like..."</p>
+<p>"Does that make sense so far?"</p>
+<p>"Good question! Let me explain that differently..."</p>
+</div>
+</div>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"Let me break this down into [number] parts..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Structuring explanation
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Let me break this down into..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Makes complex ideas digestible
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Think of it like..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Creating analogy
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Think of it like [relatable thing]"
+<span class="arrow">↓</span> <strong>Effect:</strong> Connects abstract to concrete
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Does that make sense so far?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Checking understanding
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Does that make sense so far?"
+<span class="arrow">↓</span> <strong>Effect:</strong> Invites clarification, shows you care
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Good question! Let me explain that differently..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Adapting explanation
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Good question! Let me explain that differently..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows flexibility, validates question
+</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"Let me break this down..."</div>
+<div class="note"><strong>Function:</strong> Structuring explanation</div>
+<div class="note"><strong>Usage:</strong> Use before explaining complex topics</div>
+<div class="note"><strong>Alternative:</strong> "Let me break this down"</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Think of it like..."</div>
+<div class="note"><strong>Function:</strong> Creating analogy</div>
+<div class="note"><strong>Usage:</strong> Use to make abstract concrete</div>
+<div class="note"><strong>Alternative:</strong> "It's like..."</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"Does that make sense?"</div>
+<div class="note"><strong>Function:</strong> Checking understanding</div>
+<div class="note"><strong>Usage:</strong> Use after explaining key points</div>
+<div class="note"><strong>Alternative:</strong> "Does that make sense?"</div>
+</div>
+</div>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Breakdown Intonation</div>
+<div class="detail">"Let me break this down..." (Clear, deliberate pace)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Analogy Intonation</div>
+<div class="detail">"Think of it like..." (Warm, inviting tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Checking Intonation</div>
+<div class="detail">"Does that make sense?" (Rising intonation, inviting)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Adaptation Intonation</div>
+<div class="detail">"Good question! Let me explain..." (Enthusiastic, supportive)</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 1: Nghe Breakdown</strong></div>
+<div class="note"><strong>Focus:</strong> "Let me break this down..."</div>
+<div class="note"><strong>Question:</strong> "How do they structure the explanation?"</div>
+<div class="note"><strong>Signal:</strong> Structures into parts</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 2: Nghe Analogies</strong></div>
+<div class="note"><strong>Focus:</strong> "Think of it like..."</div>
+<div class="note"><strong>Question:</strong> "What analogies do they use?"</div>
+<div class="note"><strong>Signal:</strong> Makes abstract concrete</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 3: Nghe Checking</strong></div>
+<div class="note"><strong>Focus:</strong> "Does that make sense?"</div>
+<div class="note"><strong>Question:</strong> "How do they check understanding?"</div>
+<div class="note"><strong>Signal:</strong> Invites clarification</div>
+</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the explanation rhythm:</div>
+<div class="note">1. Listen to: "Let me break this down... Think of it like... Does that make sense?"</div>
+<div class="note">2. Shadow: Match the clear, warm, inviting tone</div>
+<div class="note">3. Focus: Stress on "break down", "think", "make sense"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different element</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "Let me break this down into three parts"?</div>
+<div class="note">✅ To structure the explanation and make it digestible.</div>
+<div class="note">2. What was the strategic goal of using "Think of it like..."?</div>
+<div class="note">✅ To make abstract concepts concrete and relatable.</div>
+<div class="note">3. How did you handle checking for understanding?</div>
+<div class="note">✅ Asked "Does that make sense?" — open question that invites clarification.</div>
+<div class="note">4. What was the trade-off of explaining differently?</div>
+<div class="note">✅ Takes more time, but ensures everyone understands.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Breaking Down with "Let me break this down into..."</h4>
+<div class="explanation">Used to structure complex explanations. These phrases break ideas into digestible parts.</div>
+<ul class="grammar-examples-list">
+<li>"Let me break this down into three parts."</li>
+<li>"Let me break this down into three key components."</li>
+<li>"There are really two main concepts here."</li>
+<li>"Let me break this down step by step."</li>
+<li>"There are three things to understand."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "So basically, it works like this..." (Explaining all at once)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "Let me break this down into three parts."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Analogies with "Think of it like..."</h4>
+<div class="explanation">Used to create relatable analogies. These phrases connect abstract to concrete.</div>
+<ul class="grammar-examples-list">
+<li>"Think of it like a library system."</li>
+<li>"Think of it like a subscription service."</li>
+<li>"It's similar to a folder on your computer."</li>
+<li>"It's like having a helpful assistant."</li>
+<li>"Think of it like this: [analogy]."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "It's like a computer." (Too vague)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "Think of it like a library system — it organizes everything."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Checking with "Does that make sense?"</h4>
+<div class="explanation">Used to verify understanding. These phrases invite clarification without pressure.</div>
+<ul class="grammar-examples-list">
+<li>"Does that make sense?"</li>
+<li>"Does that make sense so far?"</li>
+<li>"I'm happy to clarify if needed."</li>
+<li>"Let me know if you'd like me to go over it again."</li>
+<li>"What questions do you have?"</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "Do you understand?" (Pressures them to say yes)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "Does that make sense so far? I'm happy to clarify if needed."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Explaining Jargon with "X — which is..."</h4>
+<div class="explanation">Used to explain technical terms. These phrases define jargon immediately.</div>
+<ul class="grammar-examples-list">
+<li>"API — which is a bridge that lets systems talk to each other..."</li>
+<li>"ROI — return on investment, which is basically..."</li>
+<li>"APR — that's the annual percentage rate..."</li>
+<li>"CRM, which is your customer database..."</li>
+<li>"SEO — search engine optimization — helps..."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> Using jargon without explanation
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "API — which is a bridge that lets systems talk to each other..."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Adapting with "Let me explain that differently"</h4>
+<div class="explanation">Used to adjust explanation when it's not working. These phrases show flexibility.</div>
+<ul class="grammar-examples-list">
+<li>"Let me explain that differently."</li>
+<li>"Let me try a different approach."</li>
+<li>"Let me put it another way."</li>
+<li>"I notice that might not have been clear. Let me try..."</li>
+<li>"Let me give you a different example."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> Repeating the same explanation louder/slower
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "Let me explain that differently. [New approach]. Is this clearer?"
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Explaining Blockchain</h3>
+<p class="scenario-context">Your friend asks about blockchain. Explain it simply.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Break Down + Analogy</span>
+<span class="response">"Let me break this down. Think of it like a shared Google Doc that everyone can see but no one can delete. Every change is recorded permanently."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Check + Adapt</span>
+<span class="response">"Does that make sense? I can explain it with a different example if that helps!"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Using technical jargon.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Explaining ROI</h3>
+<p class="scenario-context">You need to explain ROI to a new team member.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Break Down + Explain Jargon</span>
+<span class="response">"ROI — return on investment — is basically how much profit you make compared to what you spent. Let me break it down: if you spend $100 and make $150 back..."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Check + Support</span>
+<span class="response">"Does that make sense? I'm happy to go over specific examples if you'd like."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Not explaining the acronym.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Explaining Compound Interest</h3>
+<p class="scenario-context">Your teenager asks about compound interest.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Analogy</span>
+<span class="response">"Think of it like a snowball rolling down a hill. You start small, but as it rolls, it picks up more snow and gets bigger and bigger. Your money earns interest, then that interest earns more interest."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Check</span>
+<span class="response">"Does that make sense? It's like your money grows faster over time."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Using technical definitions.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario</h3>
+<p class="scenario-context">Morning: Explain insurance to friend. Afternoon: Explain software to team.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Morning (Life - Break Down + Analogy + Check)</span>
+<span class="response">"Let me break this down into three parts... Think of it like a subscription... Does that make sense?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Afternoon (Business - Break Down + Analogy + Check)</span>
+<span class="response">"Let me break this down into three components... Think of the dashboard like a homepage... Does that make sense?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Reflection</span>
+<span class="response">How did your approach change? Life = more casual analogies. Business = more structured. But the 3-step loop is the same.</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Not adapting register to audience.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: Explain Something This Week</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 The Explanation Audit</h3>
+<p class="task-time">⏱️ Before explaining</p>
+<p class="task-desc">Identify something complex you need to explain this week. Plan your breakdown, analogy, and checking questions.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify what you need to explain</li>
+<li>Plan how to break it down (3 parts)</li>
+<li>Prepare a relatable analogy</li>
+<li>Prepare checking questions</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written explanation plan</p>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Explanation Practice</h3>
+<p class="task-time">⏱️ During explanation</p>
+<p class="task-desc">Explain something complex to someone this week using the 3-step loop. Record yourself (if possible) and reflect afterward.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Explain something real this week</li>
+<li>Use all 3 steps of the loop</li>
+<li>Record yourself (if possible)</li>
+<li>Reflect on what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Explanation reflection notes</p>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Explanation</h3>
+<p class="task-time">⏱️ This week</p>
+<p class="task-desc">Explain something complex to someone who doesn't understand it. Use the full 3-step loop. Document your preparation, execution, and outcome.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Explain something complex this week</li>
+<li>Use the full 3-step framework</li>
+<li>Document your breakdown, analogy, and checking</li>
+<li>Document their understanding and your adaptation</li>
+<li>Document what you learned</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Complete explanation documentation with outcome analysis</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Explanation Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I break down complexity</h4>
+<p>I break complex ideas into digestible parts, not explaining all at once.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I use relatable analogies</h4>
+<p>I use relatable analogies, not technical ones.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I explain jargon</h4>
+<p>I explain technical terms when needed, not assuming they know.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I check for understanding</h4>
+<p>I check for understanding with open questions, not "Do you understand?"</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I adapt my explanation</h4>
+<p>I adapt based on their feedback, not just repeating the same thing.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong> Congratulations!</strong> You now have the skills to explain complex concepts simply. Go explain something this week!</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> You need to explain something complex</p>
+<button>Tap to reveal Explanation Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "So basically, it works like this..." (Explaining all at once)</p>
+<p><strong>C1 Language:</strong> Break Down → Connect → Check.</p>
+<p><strong>Trade-off:</strong> Takes more time upfront, but prevents confusion and saves time overall.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In explanations, breaking down makes it digestible. Analogies make it relatable. Checking ensures understanding. Adapting shows you care.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Explaining Complex Concepts</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Explaining blockchain to non-technical friend. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "It's a distributed ledger using cryptographic hashing."</div>
+<div class="quiz-option" data-correct="true">B. "Think of it like a shared Google Doc that everyone can see but no one can delete."</div>
+<div class="quiz-option" data-correct="false">C. "It's a digital record book."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Explaining ROI to new employee. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "The ROI is calculated by dividing net profit by investment cost."</div>
+<div class="quiz-option" data-correct="true">B. "ROI — return on investment — is basically how much profit you make compared to what you spent."</div>
+<div class="quiz-option" data-correct="false">C. "ROI shows profit."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Checking if explanation worked. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "Do you understand?"</div>
+<div class="quiz-option" data-correct="true">B. "Does that make sense so far? I'm happy to clarify if needed."</div>
+<div class="quiz-option" data-correct="false">C. "Got it?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Explaining when they don't understand. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. Repeat the same explanation louder</div>
+<div class="quiz-option" data-correct="true">B. "Let me explain that differently. [New approach]. Is this clearer?"</div>
+<div class="quiz-option" data-correct="false">C. "It's simple, just..."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Handling jargon. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. Use it freely assuming they know</div>
+<div class="quiz-option" data-correct="true">B. "API — which is a bridge that lets systems talk to each other..."</div>
+<div class="quiz-option" data-correct="false">C. Avoid using any technical terms</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Structuring a complex explanation. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. Explain everything at once</div>
+<div class="quiz-option" data-correct="true">B. "Let me break this down into three key parts. First... Second... Third..."</div>
+<div class="quiz-option" data-correct="false">C. "So basically..."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of breaking down complexity?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Takes more time upfront, but prevents confusion and saves time overall.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but confuses people.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of using analogies?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Analogy might not be perfect, but makes abstract concrete.</div>
+<div class="quiz-option" data-correct="false">B. Makes explanation longer without benefit.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Chia nhỏ ra"?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Break it down</div>
+<div class="quiz-option" data-correct="false">B. Explain it</div>
+<div class="quiz-option" data-correct="false">C. Describe it</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+
+<div class="day-navigation">
+<a href="week-13-day-91.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 91: Negotiate Something This Week</div>
+</a>
+<a href="week-14-day-93.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 93: Using Analogies and Metaphors Effectively</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 92 Complete & Continue to Day 93</button>
+<p class="complete-message">B2 speakers explain what they know. C1 speakers explain what their audience needs to understand. 🎓</p>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<p class="footer-title">Professional Fluency Roadmap</p>
+<p class="footer-tagline">Week 14 · Day 92 · Explaining Complex Concepts Simply</p>
+</div>
+</footer>
+
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+
+const textContent = {
+'lens1': 'Lens 1: Breaking Down Complexity. How do I break down complex concepts? Let me break this down into three key components. First, [part 1]. Second, [part 2]. And third, [part 3]. Each builds on the previous one.',
+'lens2': 'Lens 2: Using Analogies Effectively. How do I use analogies to connect? Think of it like a library. The database is like the card catalog — it organizes everything. The interface is like the librarian — it helps you find what you need. And the automation is like the self-checkout — it speeds up the process.',
+'lens3': 'Lens 3: Handling Jargon. How do I handle technical terminology? The API — which is basically a bridge that lets different software systems talk to each other — integrates with your CRM, which is your customer database. So essentially, it connects your tools so they can share information automatically.',
+'lens4': 'Lens 4: Checking for Understanding. How do I verify they understand? Does that make sense so far? I\'m happy to go over any part again. Or if you\'d like, you can tell me what you\'re thinking, and I can clarify if needed.',
+'lens5': 'Lens 5: Adapting to Audience. How do I adjust my explanation? I notice that might not have been clear. Let me try a different approach. [Adjusts explanation based on their confusion]. Is this clearer?',
+'break-it-down': 'break it down',
+'key-components': 'key components',
+'digestible-parts': 'digestible parts',
+'think-of-it-like': 'Think of it like',
+'its-similar-to': 'It\'s similar to',
+'relatable-analogy': 'relatable analogy',
+'does-that-make-sense': 'Does that make sense',
+'im-happy-to-clarify': 'I\'m happy to clarify',
+'go-over-it-again': 'go over it again',
+'dialogue1': 'Dialogue 1: Explaining Insurance. Friend: I need to get car insurance, but I have no idea how it works. Can you explain? You: Of course! Let me break this down into three main parts. First, there\'s what you pay — that\'s your premium. Second, there\'s what\'s covered — that\'s your coverage. And third, there\'s what happens when you make a claim. Friend: Okay, so what\'s a premium? You: Think of it like a subscription service — like Netflix. You pay a monthly or yearly fee to have the insurance. That\'s your premium. The higher your coverage, the higher your premium usually is. Friend: Got it. And what does \'coverage\' mean? You: Coverage is basically what the insurance will pay for. So if you have liability coverage and you hit someone\'s car, the insurance pays for their repairs. If you have collision coverage, it pays for your car repairs too. Does that make sense so far? Friend: Yeah, I think so. What about a deductible? You: Good question! A deductible is the amount you pay before insurance kicks in. Think of it like this: if you have a $500 deductible and your repair costs $2,000, you pay the first $500, and insurance pays the remaining $1,500. The higher your deductible, the lower your premium usually is. Friend: Oh, that makes sense now! Thanks for explaining it so clearly. You: No problem! Let me know if you have any other questions — insurance can be confusing at first, but once you understand the basics, it gets easier.',
+'dialogue2': 'Dialogue 2: Explaining Software. You: Hi everyone! I know this new software might seem overwhelming at first, so let me break it down into three key components. First, there\'s the dashboard — that\'s your main screen. Second, there are the projects — where you manage your work. And third, there\'s the collaboration features — how you work with others. Team Member 1: What\'s the dashboard exactly? You: Think of the dashboard like the homepage of a website — it\'s where you land when you log in, and it shows you an overview of everything. You can see your tasks, upcoming deadlines, and recent activity all in one place. Team Member 2: How do we create a project? You: Great question! Creating a project is like creating a folder on your computer. You click the \'New Project\' button, give it a name, and then you can add tasks to it. Does that make sense? Team Member 3: What about the automation features you mentioned? You: Let me explain that differently. Automation is like having a helpful assistant. For example, when a task is marked complete, the system can automatically notify the next person. Or when a deadline is approaching, it can send you a reminder. You don\'t have to remember to do these things manually — the system does it for you. Team Member 1: Oh, that\'s actually pretty cool! You: Exactly! And if anything isn\'t clear as you start using it, please don\'t hesitate to ask. I\'m happy to walk through it again or show you specific features. What questions do you have?'
+};
+
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+
+</body>
+</html>

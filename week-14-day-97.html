@@ -1,0 +1,2210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 14 Day 97: Discussing Learning Goals and Progress | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.move-highlight.move4 { background: #10B981; }
+.move-highlight.move5 { background: #F59E0B; }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+.deep-dive-item .analysis .arrow { color: var(--primary-bright); font-weight: 600; display: block; margin: 4px 0; }
+.deep-dive-item .analysis strong { color: var(--primary-deep); display: block; margin-top: 8px; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+<div class="container">
+<a href="week-14.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 14 Hub</a>
+<div class="day-indicator">Day 97 / 98</div>
+</div>
+</nav>
+
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-14.html" class="day-tab">Overview</a>
+<a href="week-14-day-92.html" class="day-tab">Day 92</a>
+<a href="week-14-day-93.html" class="day-tab">Day 93</a>
+<a href="week-14-day-94.html" class="day-tab">Day 94</a>
+<a href="week-14-day-95.html" class="day-tab">Day 95</a>
+<a href="week-14-day-96.html" class="day-tab">Day 96</a>
+<a href="week-14-day-97.html" class="day-tab active">Day 97</a>
+<a href="week-14-day-98.html" class="day-tab">Day 98</a>
+</div>
+</div>
+</div>
+
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-14.html">Week 14</a> › Day 97
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🎯</span>
+<h1 class="day-title">Discussing Learning Goals and Progress</h1>
+</div>
+<p class="day-subtitle">Day 96 taught you to encourage others through challenges. Day 97 teaches you how to <strong>discuss learning goals and progress</strong> — setting goals, tracking progress, discussing strategies, and reflecting on outcomes. B2 speakers give vague updates. C1 speakers discuss progress with specificity, reflection, and forward momentum.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Learning Goals + Progress Tracking + Reflection</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Learning & Growth Day 6 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Gives vague updates ("I'm doing okay" / "I'm trying my best"). Doesn't track progress or reflect on what's working.<br><br><strong>C1 Speaker:</strong> Discusses progress with specificity ("I've improved X by Y%"), reflects on what's working ("What's working well is..."), and sets specific next steps ("My next focus is...").<br><br>"B2 speakers talk about learning. C1 speakers track progress and reflect on growth."</div>
+</div>
+
+<div class="quote">"B2 speakers say 'I'm trying to improve.' C1 speakers say 'I've improved X by Y% over the last month, and my next focus is Z.' The difference isn't effort — it's specificity and reflection."</div>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Learning Progress = Setting Goals + Tracking + Reflecting + Next Steps</h3>
+<p class="philosophy-text">"Discussing learning progress isn't about giving vague updates. It's about setting specific goals, tracking progress with data, reflecting on what's working, and setting clear next steps."</p>
+<p class="philosophy-text">Every learning progress discussion requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Goal-Setting Decision:</strong> How do I set goals? (Vague? Specific?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Tracking Decision:</strong> How do I track progress? (Vague? Specific with data?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Reflection Decision:</strong> How do I reflect? (Surface? Deep?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Challenge Decision:</strong> How do I discuss challenges? (Vague? Specific?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Next Steps Decision:</strong> How do I set next steps? (Vague? Specific?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 97 teaches you how to discuss learning goals and progress with specificity, reflection, and forward momentum.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Progress Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Set Goals → Track → Reflect → Next Steps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">👁️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎧</div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📝</div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Progress Discussion Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 4-step process for discussing learning progress</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">SET GOALS (Set specific goals)</div>
+<div class="loop-step-desc">How do I set goals? "My goal is to..." / "My focus is..." (Set specific, measurable goals)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">TRACK PROGRESS (Track with data)</div>
+<div class="loop-step-desc">How do I track? "I've improved X by Y%" / "I've been working on..." (Track with specific data)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">REFLECT (Reflect on what's working)</div>
+<div class="loop-step-desc">How do I reflect? "What's working well is..." / "What I've found is..." (Reflect deeply)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">NEXT STEPS (Set clear next steps)</div>
+<div class="loop-step-desc">How do I set next steps? "My next focus is..." / "My next step is..." (Set specific next steps)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Progress Discussion Lenses (3-Level Examples)</h2>
+</div>
+<p class="section-desc">Every learning progress discussion requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+
+<div class="lenses-grid">
+
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Setting Goals
+<button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I set specific goals?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Goal-Setting Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I want to improve my English."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I'm trying to improve my speaking skills."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"My goal is to improve my speaking fluency by 20% over the next 3 months, specifically in business meetings."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Discussing fitness goals. Decision: Specific goal ("My goal is to run 5km without stopping by the end of this month.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Discussing learning goals with manager. Decision: Specific goal ("My goal is to improve my presentation skills by delivering 3 presentations this quarter.")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Specific)</strong>
+Clear direction, measurable progress, accountability.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Specific)</strong>
+May feel too rigid if circumstances change.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Vague goals ("I want to get better"). Native C1 speakers set specific, measurable goals.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I setting specific goals or vague goals?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Tracking Progress
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I track progress with data?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Tracking Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I'm doing okay."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I've been practicing regularly."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"I've improved my speaking fluency by about 20% over the last month — I've been practicing 30 minutes daily and delivering 2 presentations this month."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Tracking fitness progress. Decision: Specific data ("I've improved my 5km time by 2 minutes over the last month.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Tracking learning progress. Decision: Specific data ("I've completed 3 courses this quarter and applied 2 new skills to my projects.")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Data)</strong>
+Clear evidence of progress, accountability, motivation.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Data)</strong>
+May feel too mechanical if not balanced with reflection.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Vague tracking ("I'm doing okay"). Native C1 speakers track with specific data.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I tracking with data or vaguely?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Reflecting on Progress
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I reflect on what's working?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Reflection Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"It's going well."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"What's working well is my consistency."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"What's working well is my daily practice routine — I've found that 30 minutes of daily practice is more effective than 2 hours once a week."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Reflecting on fitness. Decision: Deep reflection ("What's working well is my morning routine — I've found that exercising in the morning gives me more energy throughout the day.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Reflecting on learning. Decision: Deep reflection ("What I've found is that applying new skills immediately to real projects accelerates my learning significantly.")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Deep)</strong>
+Deeper insights, better adjustments, accelerated growth.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Deep)</strong>
+Takes more time to reflect deeply.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Surface reflection ("It's going well"). Native C1 speakers reflect deeply on what's working.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I reflecting deeply or superficially?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Discussing Challenges
+<button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I discuss challenges specifically?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Challenge Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I'm having some difficulties."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I'm struggling with consistency."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"My main challenge is maintaining consistency — I've found that when I'm busy with work, my practice routine is the first thing to go."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Discussing fitness challenges. Decision: Specific challenge ("My main challenge is finding time to exercise — I've found that morning workouts work best for my schedule.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Discussing learning challenges. Decision: Specific challenge ("My main challenge is applying new skills — I've found that I need to apply them within 24 hours of learning to retain them.")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Specific)</strong>
+Clear understanding of challenges, better solutions.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Specific)</strong>
+May feel too vulnerable if not in safe environment.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Vague challenges ("I'm having difficulties"). Native C1 speakers discuss challenges specifically.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I discussing challenges specifically or vaguely?</p>
+</div>
+
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Setting Next Steps
+<button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I set specific next steps?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Next Steps Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I'll keep trying."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I'll keep practicing."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"My next focus is to deliver 3 presentations this quarter — I've scheduled 2 already and I'm looking for opportunities for the third."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Setting fitness next steps. Decision: Specific next steps ("My next focus is to run 3 times this week — I've scheduled Monday, Wednesday, and Friday morning runs.")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Setting learning next steps. Decision: Specific next steps ("My next focus is to complete the advanced course by end of month — I've completed 60% and I'm on track.")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Specific)</strong>
+Clear direction, accountability, momentum.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Specific)</strong>
+May feel too rigid if circumstances change.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Vague next steps ("I'll keep trying"). Native C1 speakers set specific next steps.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I setting specific next steps or vague next steps?</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy progress discussions</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Vague Goals</h4>
+<div class="mistake-wrong">❌ "I want to improve my English."</div>
+<div class="mistake-right">✅ "My goal is to improve my speaking fluency by 20% over the next 3 months."</div>
+<div class="mistake-why">Why: Vague goals don't provide direction. Specific goals provide clear direction and measurability.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Vague Progress Tracking</h4>
+<div class="mistake-wrong">❌ "I'm doing okay."</div>
+<div class="mistake-right">✅ "I've improved my speaking fluency by about 20% over the last month."</div>
+<div class="mistake-why">Why: Vague tracking doesn't show progress. Specific tracking with data shows clear progress.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Vague Next Steps</h4>
+<div class="mistake-wrong">❌ "I'll keep trying."</div>
+<div class="mistake-right">✅ "My next focus is to deliver 3 presentations this quarter."</div>
+<div class="mistake-why">Why: Vague next steps don't provide momentum. Specific next steps provide clear direction and momentum.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Progress Discussion Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Discussing language learning goals</td>
+<td>"I want to improve my English."</td>
+<td>"I'm trying to improve my speaking."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"My goal is to improve my speaking fluency by 20% over the next 3 months, specifically in business meetings."</span>
+<span class="why">Why: Specific, measurable, time-bound</span>
+</div>
+</td>
+<td>"I want to improve my speaking by 20% in 3 months."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>2. Discussing fitness progress</td>
+<td>"I'm doing okay."</td>
+<td>"I've been exercising regularly."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I've improved my 5km time by 2 minutes over the last month — I've been running 3 times per week."</span>
+<span class="why">Why: Specific data, clear progress</span>
+</div>
+</td>
+<td>"I've improved my 5km time by 2 minutes."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>3. Discussing learning challenges</td>
+<td>"I'm having some difficulties."</td>
+<td>"I'm struggling with consistency."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"My main challenge is maintaining consistency — I've found that when I'm busy, my practice routine is the first to go."</span>
+<span class="why">Why: Specific challenge, specific insight</span>
+</div>
+</td>
+<td>"My main challenge is consistency."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>4. Discussing next steps</td>
+<td>"I'll keep trying."</td>
+<td>"I'll keep practicing."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"My next focus is to deliver 3 presentations this quarter — I've scheduled 2 already."</span>
+<span class="why">Why: Specific, actionable, time-bound</span>
+</div>
+</td>
+<td>"My next focus is to deliver 3 presentations."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>5. Discussing what's working</td>
+<td>"It's going well."</td>
+<td>"What's working is my consistency."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"What's working well is my daily practice — I've found that 30 minutes daily is more effective than 2 hours once a week."</span>
+<span class="why">Why: Deep reflection, specific insight</span>
+</div>
+</td>
+<td>"What's working is my daily practice."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>6. Discussing learning goals with manager</td>
+<td>"I want to get better at presentations."</td>
+<td>"I want to improve my presentation skills."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"My goal is to improve my presentation skills by delivering 3 presentations this quarter and getting feedback after each one."</span>
+<span class="why">Why: Specific, measurable, with feedback loop</span>
+</div>
+</td>
+<td>"I want to deliver 3 presentations this quarter."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>7. Discussing progress in performance review</td>
+<td>"I've been doing well."</td>
+<td>"I've improved in several areas."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Over the last 6 months, I've improved my presentation skills by delivering 5 presentations, and I've completed 2 advanced courses."</span>
+<span class="why">Why: Specific data, time-bound, specific achievements</span>
+</div>
+</td>
+<td>"I've delivered 5 presentations and completed 2 courses."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>8. Discussing next steps after feedback</h4>
+<td>"I'll try to improve."</td>
+<td>"I'll work on that."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Based on your feedback, my next focus is to improve my data analysis skills — I've enrolled in a course starting next week."</span>
+<span class="why">Why: Specific, based on feedback, actionable</span>
+</div>
+</td>
+<td>"My next focus is to improve my data analysis skills."</td>
+<td>Professional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title">🏠 Case 1: Life - Discussing Fitness Goals with Friend</h4>
+<div class="case-context"><strong>Context:</strong> You're discussing your fitness goals and progress with a friend at the gym. You want to discuss your goals, progress, challenges, and next steps specifically.</div>
+<div class="case-narrative">
+<p><span class="speaker">Friend:</span> "Hey! How's your fitness journey going?"</p>
+<p><span class="speaker">You:</span> "It's going well! <strong>My goal is to run 5km without stopping by the end of this month.</strong> I've been training for about 6 weeks now." <span class="move-highlight move1">Set Goals</span></p>
+<p><span class="speaker">Friend:</span> "Nice! How's the progress?"</p>
+<p><span class="speaker">You:</span> "<strong>I've improved my 5km time by about 2 minutes over the last month</strong> — I went from 32 minutes to 30 minutes. <strong>What's working well is my morning routine</strong> — I've found that running in the morning gives me more energy throughout the day." <span class="move-highlight move2">Track + Reflect</span></p>
+<p><span class="speaker">Friend:</span> "That's great progress! What's been challenging?"</p>
+<p><span class="speaker">You:</span> "<strong>My main challenge is maintaining consistency</strong> — I've found that when I'm busy with work, my running routine is the first thing to go. <strong>What I've found is that scheduling my runs in the morning helps</strong> — I'm less likely to skip them." <span class="move-highlight move3">Challenges + Reflection</span></p>
+<p><span class="speaker">Friend:</span> "That makes sense. What's your plan going forward?"</p>
+<p><span class="speaker">You:</span> "<strong>My next focus is to run 4 times this week</strong> — I've scheduled Monday, Wednesday, Friday, and Saturday morning runs. <strong>My goal is to get my 5km time down to 28 minutes by the end of next month.</strong>" <span class="move-highlight move4">Next Steps</span></p>
+<p><span class="speaker">Friend:</span> "That sounds like a solid plan! How are you tracking your progress?"</p>
+<p><span class="speaker">You:</span> "<strong>I'm using a running app that tracks my distance and time</strong> — it's been really helpful for staying motivated. <strong>What I've found is that seeing my progress visually keeps me motivated.</strong>" <span class="move-highlight move4">Tracking + Reflection</span></p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"My goal is to..."</strong><span class="meaning">Mục tiêu của tôi là...</span><span class="register">Register: Casual</span></li>
+<li><strong>"I've improved X by Y"</strong><span class="meaning">Tôi đã cải thiện X lên Y</span><span class="register">Register: Casual</span></li>
+<li><strong>"What's working well is..."</strong><span class="meaning">Điều đang hoạt động tốt là...</span><span class="register">Register: Casual</span></li>
+<li><strong>"My main challenge is..."</strong><span class="meaning">Thách thức chính của tôi là...</span><span class="register">Register: Casual</span></li>
+<li><strong>"What I've found is..."</strong><span class="meaning">Điều tôi nhận thấy là...</span><span class="register">Register: Casual</span></li>
+<li><strong>"My next focus is..."</strong><span class="meaning">Trọng tâm tiếp theo của tôi là...</span><span class="register">Register: Casual</span></li>
+<li><strong>"I've been training for..."</strong><span class="meaning">Tôi đã tập luyện được...</span><span class="register">Register: Casual</span></li>
+<li><strong>"I've improved my time by..."</strong><span class="meaning">Tôi đã cải thiện thời gian của mình lên...</span><span class="register">Register: Casual</span></li>
+<li><strong>"What's working well is my routine"</strong><span class="meaning">Điều đang hoạt động tốt là thói quen của tôi</span><span class="register">Register: Casual</span></li>
+<li><strong>"My main challenge is consistency"</strong><span class="meaning">Thách thức chính của tôi là sự nhất quán</span><span class="register">Register: Casual</span></li>
+<li><strong>"What I've found is that..."</strong><span class="meaning">Điều tôi nhận thấy là...</span><span class="register">Register: Casual</span></li>
+<li><strong>"My next focus is to..."</strong><span class="meaning">Trọng tâm tiếp theo của tôi là...</span><span class="register">Register: Casual</span></li>
+<li><strong>"I've scheduled..."</strong><span class="meaning">Tôi đã lên lịch...</span><span class="register">Register: Casual</span></li>
+<li><strong>"My goal is to get X down to Y"</strong><span class="meaning">Mục tiêu của tôi là giảm X xuống Y</span><span class="register">Register: Casual</span></li>
+<li><strong>"I'm using X to track"</strong><span class="meaning">Tôi đang sử dụng X để theo dõi</span><span class="register">Register: Casual</span></li>
+<li><strong>"It's been really helpful for..."</strong><span class="meaning">Nó đã thực sự hữu ích cho...</span><span class="register">Register: Casual</span></li>
+<li><strong>"What I've found is that seeing progress keeps me motivated"</strong><span class="meaning">Điều tôi nhận thấy là thấy tiến bộ giữ cho tôi có động lực</span><span class="register">Register: Casual</span></li>
+<li><strong>"That sounds like a solid plan"</strong><span class="meaning">Nghe có vẻ như một kế hoạch vững chắc</span><span class="register">Register: Casual</span></li>
+<li><strong>"How are you tracking your progress?"</strong><span class="meaning">Bạn đang theo dõi tiến bộ của mình như thế nào?</span><span class="register">Register: Casual</span></li>
+<li><strong>"It's been really helpful for staying motivated"</strong><span class="meaning">Nó đã thực sự hữu ích để giữ động lực</span><span class="register">Register: Casual</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Discussing Learning Goals with Manager</h4>
+<div class="case-context"><strong>Context:</strong> You're in a 1-on-1 meeting with your manager. You want to discuss your learning goals, progress, challenges, and next steps specifically.</div>
+<div class="case-narrative">
+<p><span class="speaker">Manager:</span> "How are your learning goals going?"</p>
+<p><span class="speaker">You:</span> "They're going well! <strong>My goal this quarter is to improve my presentation skills by delivering 3 presentations and getting feedback after each one.</strong> I've delivered 2 so far." <span class="move-highlight move1">Set Goals</span></p>
+<p><span class="speaker">Manager:</span> "Great! How's the progress?"</p>
+<p><span class="speaker">You:</span> "<strong>I've improved my presentation skills significantly</strong> — I've delivered 2 presentations this quarter and received positive feedback on both. <strong>What's working well is practicing before each presentation</strong> — I've found that rehearsing at least twice helps me feel more confident." <span class="move-highlight move2">Track + Reflect</span></p>
+<p><span class="speaker">Manager:</span> "That's great progress! What's been challenging?"</p>
+<p><span class="speaker">You:</span> "<strong>My main challenge is managing nervousness</strong> — I've found that the more I practice, the less nervous I get. <strong>What I've found is that practicing in front of colleagues helps</strong> — it simulates the real presentation environment." <span class="move-highlight move3">Challenges + Reflection</span></p>
+<p><span class="speaker">Manager:</span> "That makes sense. What's your plan for the rest of the quarter?"</p>
+<p><span class="speaker">You:</span> "<strong>My next focus is to deliver my third presentation next month</strong> — I've scheduled it for the team meeting. <strong>My goal is to get feedback on all 3 presentations and identify 2 areas for improvement.</strong>" <span class="move-highlight move4">Next Steps</span></p>
+<p><span class="speaker">Manager:</span> "That sounds like a solid plan. How can I support you?"</p>
+<p><span class="speaker">You:</span> "<strong>I'd appreciate it if you could attend my next presentation and provide feedback</strong> — your feedback has been really helpful so far. <strong>What I've found is that your feedback helps me identify blind spots.</strong>" <span class="move-highlight move4">Next Steps + Reflection</span></p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"My goal this quarter is to..."</strong><span class="meaning">Mục tiêu của tôi trong quý này là...</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've improved X significantly"</strong><span class="meaning">Tôi đã cải thiện X đáng kể</span><span class="register">Register: Professional</span></li>
+<li><strong>"What's working well is..."</strong><span class="meaning">Điều đang hoạt động tốt là...</span><span class="register">Register: Professional</span></li>
+<li><strong>"My main challenge is..."</strong><span class="meaning">Thách thức chính của tôi là...</span><span class="register">Register: Professional</span></li>
+<li><strong>"What I've found is..."</strong><span class="meaning">Điều tôi nhận thấy là...</span><span class="register">Register: Professional</span></li>
+<li><strong>"My next focus is to..."</strong><span class="meaning">Trọng tâm tiếp theo của tôi là...</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've delivered X so far"</strong><span class="meaning">Tôi đã thực hiện X cho đến nay</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've improved my skills significantly"</strong><span class="meaning">Tôi đã cải thiện kỹ năng của mình đáng kể</span><span class="register">Register: Professional</span></li>
+<li><strong>"What's working well is practicing"</strong><span class="meaning">Điều đang hoạt động tốt là thực hành</span><span class="register">Register: Professional</span></li>
+<li><strong>"My main challenge is managing nervousness"</strong><span class="meaning">Thách thức chính của tôi là quản lý sự lo lắng</span><span class="register">Register: Professional</span></li>
+<li><strong>"What I've found is that practicing helps"</strong><span class="meaning">Điều tôi nhận thấy là thực hành giúp ích</span><span class="register">Register: Professional</span></li>
+<li><strong>"My next focus is to deliver"</strong><span class="meaning">Trọng tâm tiếp theo của tôi là thực hiện</span><span class="register">Register: Professional</span></li>
+<li><strong>"I've scheduled it for..."</strong><span class="meaning">Tôi đã lên lịch nó cho...</span><span class="register">Register: Professional</span></li>
+<li><strong>"My goal is to get feedback"</strong><span class="meaning">Mục tiêu của tôi là nhận phản hồi</span><span class="register">Register: Professional</span></li>
+<li><strong>"I'd appreciate it if you could..."</strong><span class="meaning">Tôi sẽ đánh giá cao nếu bạn có thể...</span><span class="register">Register: Professional</span></li>
+<li><strong>"Your feedback has been really helpful"</strong><span class="meaning">Phản hồi của bạn đã thực sự hữu ích</span><span class="register">Register: Professional</span></li>
+<li><strong>"What I've found is that your feedback helps"</strong><span class="meaning">Điều tôi nhận thấy là phản hồi của bạn giúp ích</span><span class="register">Register: Professional</span></li>
+<li><strong>"That sounds like a solid plan"</strong><span class="meaning">Nghe có vẻ như một kế hoạch vững chắc</span><span class="register">Register: Professional</span></li>
+<li><strong>"How can I support you?"</strong><span class="meaning">Tôi có thể hỗ trợ bạn như thế nào?</span><span class="register">Register: Professional</span></li>
+<li><strong>"Your feedback helps me identify blind spots"</strong><span class="meaning">Phản hồi của bạn giúp tôi xác định các điểm mù</span><span class="register">Register: Professional</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Progress Discussion Messages (with Model Answers)</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Discussing Fitness Goals with Friend</h4>
+<p class="task-context"><strong>Context:</strong> You're discussing your fitness goals and progress with a friend. Write a message discussing your goals, progress, challenges, and next steps.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 progress patterns from this lesson</li>
+<li>Use 2 goal-setting structures</li>
+<li>Use 2 reflection structures</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hey! My goal is to run 5km without stopping by the end of this month. I've been training for about 6 weeks now. I've improved my 5km time by about 2 minutes over the last month — I went from 32 minutes to 30 minutes. What's working well is my morning routine — I've found that running in the morning gives me more energy. My main challenge is maintaining consistency — I've found that when I'm busy, my running routine is the first to go. My next focus is to run 4 times this week — I've scheduled Monday, Wednesday, Friday, and Saturday morning runs."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Goal-setting:</strong> "My goal is to...", "My next focus is to..."</li>
+<li><strong>Tracking:</strong> "I've improved X by Y", "I've been training for..."</li>
+<li><strong>Reflection:</strong> "What's working well is...", "What I've found is..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (More Casual)</h5>
+<p class="alt-text">"Hey! My goal is to run 5km by end of month. I've improved my time by 2 minutes this month. What's working is my morning routine. My main challenge is consistency. My next focus is to run 4 times this week."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 progress patterns</li>
+<li>□ dùng đủ 2 goal-setting structures</li>
+<li>□ dùng đủ 2 reflection structures</li>
+<li>□ có goals → progress → challenges → next steps</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Discussing Learning Goals with Manager</h4>
+<p class="task-context"><strong>Context:</strong> You're in a 1-on-1 meeting with your manager. Write a message discussing your learning goals, progress, challenges, and next steps.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 progress patterns</li>
+<li>Use 2 goal-setting structures</li>
+<li>Use 2 reflection structures</li>
+<li>Length: 150-200 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"My goal this quarter is to improve my presentation skills by delivering 3 presentations and getting feedback after each one. I've delivered 2 so far. I've improved my presentation skills significantly — I've received positive feedback on both presentations. What's working well is practicing before each presentation — I've found that rehearsing at least twice helps me feel more confident. My main challenge is managing nervousness — I've found that the more I practice, the less nervous I get. My next focus is to deliver my third presentation next month — I've scheduled it for the team meeting. My goal is to get feedback on all 3 presentations and identify 2 areas for improvement."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Goal-setting:</strong> "My goal this quarter is to...", "My next focus is to..."</li>
+<li><strong>Tracking:</strong> "I've improved X significantly", "I've delivered X so far"</li>
+<li><strong>Reflection:</strong> "What's working well is...", "What I've found is..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (More Formal)</h5>
+<p class="alt-text">"My goal this quarter is to improve my presentation skills. I've delivered 2 presentations so far and received positive feedback. What's working well is my practice routine. My main challenge is managing nervousness. My next focus is to deliver my third presentation next month."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (150-200 words)</li>
+<li>□ dùng đủ 3 progress patterns</li>
+<li>□ dùng đủ 2 goal-setting structures</li>
+<li>□ dùng đủ 2 reflection structures</li>
+<li>□ có goals → progress → challenges → next steps</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Discussing Language Learning Progress</h4>
+<p class="task-context"><strong>Context:</strong> You're discussing your English learning progress with a language partner. Write a message discussing your goals, progress, challenges, and next steps.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 progress patterns</li>
+<li>Use 2 goal-setting structures</li>
+<li>Use 2 reflection structures</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"My goal this month is to improve my speaking fluency by having 3 conversation sessions. I've had 2 sessions so far. I've improved my fluency significantly — I've found that I'm more confident in conversations now. What's working well is practicing with you — I've found that regular practice helps me build confidence. My main challenge is finding time to practice — I've found that when I'm busy, I skip practice sessions. My next focus is to have my third session this week — I've scheduled it for Thursday."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Goal-setting:</strong> "My goal this month is to...", "My next focus is to..."</li>
+<li><strong>Tracking:</strong> "I've improved X significantly", "I've had X so far"</li>
+<li><strong>Reflection:</strong> "What's working well is...", "What I've found is..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (More Casual)</h5>
+<p class="alt-text">"My goal is to improve my speaking this month. I've had 2 sessions so far. I've improved my fluency. What's working is practicing with you. My main challenge is finding time. My next focus is to have my third session this week."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 progress patterns</li>
+<li>□ dùng đủ 2 goal-setting structures</li>
+<li>□ dùng đủ 2 reflection structures</li>
+<li>□ có goals → progress → challenges → next steps</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Discussing Project Progress with Team</h4>
+<p class="task-context"><strong>Context:</strong> You're discussing your project progress with your team. Write a message discussing your goals, progress, challenges, and next steps.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 progress patterns</li>
+<li>Use 2 goal-setting structures</li>
+<li>Use 2 reflection structures</li>
+<li>Length: 150-200 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"My goal this sprint is to complete the user authentication feature and get it reviewed. I've completed 80% of the feature so far. I've made significant progress — I've completed the login and registration modules. What's working well is my approach to breaking down the feature into smaller tasks — I've found that this helps me stay focused. My main challenge is integrating with the existing system — I've found that the existing codebase is more complex than I initially thought. My next focus is to complete the integration by end of this week — I've scheduled time to work on it tomorrow and Thursday."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Goal-setting:</strong> "My goal this sprint is to...", "My next focus is to..."</li>
+<li><strong>Tracking:</strong> "I've made significant progress", "I've completed X so far"</li>
+<li><strong>Reflection:</strong> "What's working well is...", "What I've found is..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (More Formal)</h5>
+<p class="alt-text">"My goal this sprint is to complete the user authentication feature. I've completed 80% so far. What's working well is my task breakdown approach. My main challenge is the integration. My next focus is to complete the integration by end of week."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (150-200 words)</li>
+<li>□ dùng đủ 3 progress patterns</li>
+<li>□ dùng đủ 2 goal-setting structures</li>
+<li>□ dùng đủ 2 reflection structures</li>
+<li>□ có goals → progress → challenges → next steps</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Progress Discussion Lexicon)</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The Progress Discussion Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">🎯 Goal-Setting Patterns</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>My goal is to...</strong>
+<div class="ipa">/maɪ ɡoʊl ɪz tuː/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Mục tiêu của tôi là...</div>
+<div class="collocation">Collocation: "My goal is to..."</div>
+<div class="chunk">Chunk: "My goal is to [specific goal]"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"My goal is to improve."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"My goal is to improve my speaking fluency by 20% over the next 3 months."</div>
+<div class="native-alt">Native alternative: "My goal is to..."</div>
+<button class="vocab-audio-btn" onclick="speakText('my-goal-is', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>My next focus is...</strong>
+<div class="ipa">/maɪ nɛkst ˈfoʊ.kəs ɪz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Trọng tâm tiếp theo của tôi là...</div>
+<div class="collocation">Collocation: "My next focus is..."</div>
+<div class="chunk">Chunk: "My next focus is to [specific action]"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"My next focus is to improve."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"My next focus is to deliver 3 presentations this quarter."</div>
+<div class="native-alt">Native alternative: "My next focus is..."</div>
+<button class="vocab-audio-btn" onclick="speakText('my-next-focus', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>My goal this quarter is...</strong>
+<div class="ipa">/maɪ ɡoʊl ðɪs ˈkwɔr.tər ɪz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Mục tiêu của tôi trong quý này là...</div>
+<div class="collocation">Collocation: "My goal this quarter is..."</div>
+<div class="chunk">Chunk: "My goal this quarter is to [specific goal]"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"My goal this quarter is to improve."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"My goal this quarter is to improve my presentation skills by delivering 3 presentations."</div>
+<div class="native-alt">Native alternative: "My goal this quarter is..."</div>
+<button class="vocab-audio-btn" onclick="speakText('my-goal-quarter', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">📊 Tracking Patterns</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>I've improved X by Y</strong>
+<div class="ipa">/aɪv ɪmpruːvd eks baɪ waɪ/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi đã cải thiện X lên Y</div>
+<div class="collocation">Collocation: "I've improved X by Y"</div>
+<div class="chunk">Chunk: "I've improved X by Y over the last [time]"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I've improved my skills."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I've improved my speaking fluency by 20% over the last month."</div>
+<div class="native-alt">Native alternative: "I've improved X by Y"</div>
+<button class="vocab-audio-btn" onclick="speakText('ive-improved', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I've been [verb+ing] for...</strong>
+<div class="ipa">/aɪv bɪn ˈvɜːbɪŋ fɔːr/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi đã [đang làm gì đó] được...</div>
+<div class="collocation">Collocation: "I've been [verb+ing] for [time]"</div>
+<div class="chunk">Chunk: "I've been [verb+ing] for [time] now"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I've been practicing for a while."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I've been training for about 6 weeks now."</div>
+<div class="native-alt">Native alternative: "I've been [verb+ing] for..."</div>
+<button class="vocab-audio-btn" onclick="speakText('ive-been', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I've completed X so far</strong>
+<div class="ipa">/aɪv kəmˈpliː.tɪd eks soʊ fɑːr/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi đã hoàn thành X cho đến nay</div>
+<div class="collocation">Collocation: "I've completed X so far"</div>
+<div class="chunk">Chunk: "I've completed X so far"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I've completed some work."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I've delivered 2 presentations so far."</div>
+<div class="native-alt">Native alternative: "I've completed X so far"</div>
+<button class="vocab-audio-btn" onclick="speakText('ive-completed', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">💭 Reflection Patterns</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>What's working well is...</strong>
+<div class="ipa">/wɒts ˈwɜ.kɪŋ wel ɪz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều đang hoạt động tốt là...</div>
+<div class="collocation">Collocation: "What's working well is..."</div>
+<div class="chunk">Chunk: "What's working well is [specific thing]"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"What's working well is my routine."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What's working well is my daily practice — I've found that 30 minutes daily is more effective."</div>
+<div class="native-alt">Native alternative: "What's working well is..."</div>
+<button class="vocab-audio-btn" onclick="speakText('whats-working', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>What I've found is...</strong>
+<div class="ipa">/wɒt aɪv fand ɪz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều tôi nhận thấy là...</div>
+<div class="collocation">Collocation: "What I've found is..."</div>
+<div class="chunk">Chunk: "What I've found is that [insight]"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"What I've found is that practice helps."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What I've found is that practicing in front of colleagues helps me feel more confident."</div>
+<div class="native-alt">Native alternative: "What I've found is..."</div>
+<button class="vocab-audio-btn" onclick="speakText('what-ive-found', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>My main challenge is...</strong>
+<div class="ipa">/maɪ meɪn ˈtʃæl.ɪndʒ ɪz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Thách thức chính của tôi là...</div>
+<div class="collocation">Collocation: "My main challenge is..."</div>
+<div class="chunk">Chunk: "My main challenge is [specific challenge]"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"My main challenge is consistency."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"My main challenge is maintaining consistency — I've found that when I'm busy, my routine is the first to go."</div>
+<div class="native-alt">Native alternative: "My main challenge is..."</div>
+<button class="vocab-audio-btn" onclick="speakText('my-main-challenge', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format - 15-20 turns)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title">🏠 Dialogue 1: Discussing Fitness Goals with Friend (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're discussing your fitness goals and progress with a friend at the gym. Conversation evolves through setting goals → tracking progress → reflecting → next steps.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Hey! How's your fitness journey going?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"It's going well! <strong>My goal is to run 5km without stopping by the end of this month.</strong> I've been training for about 6 weeks now." <span class="move-highlight move1">Set Goals</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"Nice! How's the progress?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>I've improved my 5km time by about 2 minutes over the last month</strong> — I went from 32 minutes to 30 minutes. <strong>What's working well is my morning routine</strong> — I've found that running in the morning gives me more energy throughout the day." <span class="move-highlight move2">Track + Reflect</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"That's great progress! What's been challenging?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>My main challenge is maintaining consistency</strong> — I've found that when I'm busy with work, my running routine is the first thing to go. <strong>What I've found is that scheduling my runs in the morning helps</strong> — I'm less likely to skip them." <span class="move-highlight move3">Challenges + Reflection</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"That makes sense. What's your plan going forward?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>My next focus is to run 4 times this week</strong> — I've scheduled Monday, Wednesday, Friday, and Saturday morning runs. <strong>My goal is to get my 5km time down to 28 minutes by the end of next month.</strong>" <span class="move-highlight move4">Next Steps</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Friend:</div>
+<div class="dialogue-text">"That sounds like a solid plan! How are you tracking your progress?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>I'm using a running app that tracks my distance and time</strong> — it's been really helpful for staying motivated. <strong>What I've found is that seeing my progress visually keeps me motivated.</strong>" <span class="move-highlight move4">Tracking + Reflection</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Set Goals (specific) + Track Progress (with data) + Reflect (deeply) + Next Steps (specific).</li>
+<li><strong>Alternative Decision:</strong> Vague updates ("I'm doing okay"). (Risk: No clear direction, no accountability).</li>
+<li><strong>Why this decision?</strong> Specific goals provide direction. Tracking with data shows progress. Deep reflection provides insights. Specific next steps provide momentum.</li>
+<li><strong>Resistance handled:</strong> Friend asked about challenges. You discussed challenges specifically with insights.</li>
+<li><strong>Evolution:</strong> Set Goals → Track → Reflect → Challenges → Next Steps → Tracking.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Discussing Learning Goals with Manager (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're in a 1-on-1 meeting with your manager. Conversation evolves through setting goals → tracking progress → reflecting → next steps.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"How are your learning goals going?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"They're going well! <strong>My goal this quarter is to improve my presentation skills by delivering 3 presentations and getting feedback after each one.</strong> I've delivered 2 so far." <span class="move-highlight move1">Set Goals</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"Great! How's the progress?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>I've improved my presentation skills significantly</strong> — I've delivered 2 presentations this quarter and received positive feedback on both. <strong>What's working well is practicing before each presentation</strong> — I've found that rehearsing at least twice helps me feel more confident." <span class="move-highlight move2">Track + Reflect</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"That's great progress! What's been challenging?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>My main challenge is managing nervousness</strong> — I've found that the more I practice, the less nervous I get. <strong>What I've found is that practicing in front of colleagues helps</strong> — it simulates the real presentation environment." <span class="move-highlight move3">Challenges + Reflection</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"That makes sense. What's your plan for the rest of the quarter?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>My next focus is to deliver my third presentation next month</strong> — I've scheduled it for the team meeting. <strong>My goal is to get feedback on all 3 presentations and identify 2 areas for improvement.</strong>" <span class="move-highlight move4">Next Steps</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Manager:</div>
+<div class="dialogue-text">"That sounds like a solid plan. How can I support you?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"<strong>I'd appreciate it if you could attend my next presentation and provide feedback</strong> — your feedback has been really helpful so far. <strong>What I've found is that your feedback helps me identify blind spots.</strong>" <span class="move-highlight move4">Next Steps + Reflection</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Set Goals (specific) + Track Progress (with data) + Reflect (deeply) + Next Steps (specific).</li>
+<li><strong>Alternative Decision:</strong> Vague updates ("I'm doing well"). (Risk: No clear direction, no accountability).</li>
+<li><strong>Why this decision?</strong> Specific goals provide direction. Tracking with data shows progress. Deep reflection provides insights. Specific next steps provide momentum.</li>
+<li><strong>Resistance handled:</strong> Manager asked about challenges. You discussed challenges specifically with insights.</li>
+<li><strong>Evolution:</strong> Set Goals → Track → Reflect → Challenges → Next Steps → Support.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to natural progress discussions. Notice the fillers, hesitation, and discourse markers.</p>
+<div class="transcript-box">
+<h4>📄 Transcript</h4>
+<div class="transcript-text">
+<p><strong>Key Phrases from Dialogues:</strong></p>
+<p>"My goal is to..."</p>
+<p>"I've improved X by Y..."</p>
+<p>"What's working well is..."</p>
+<p>"My main challenge is..."</p>
+<p>"My next focus is..."</p>
+</div>
+</div>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"My goal is to..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Sets specific goal
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "My goal is to [specific goal]"
+<span class="arrow">↓</span> <strong>Effect:</strong> Provides clear direction
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I've improved X by Y..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Tracks progress with data
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I've improved X by Y over [time]"
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows specific progress
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"What's working well is..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Reflects on what's working
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "What's working well is [specific thing]"
+<span class="arrow">↓</span> <strong>Effect:</strong> Provides deep insight
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"My next focus is..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Sets specific next steps
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "My next focus is to [specific action]"
+<span class="arrow">↓</span> <strong>Effect:</strong> Provides clear momentum
+</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">"My goal is to..."</div>
+<div class="note"><strong>Function:</strong> Sets specific goal</div>
+<div class="note"><strong>Native pattern:</strong> "My goal is to [specific goal]"</div>
+<div class="note"><strong>Alternative:</strong> "My focus is to..."</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"I've improved X by Y..."</div>
+<div class="note"><strong>Function:</strong> Tracks progress</div>
+<div class="note"><strong>Native pattern:</strong> "I've improved X by Y over [time]"</div>
+<div class="note"><strong>Alternative:</strong> "I've improved by Y..."</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">"What's working well is..."</div>
+<div class="note"><strong>Function:</strong> Reflects deeply</div>
+<div class="note"><strong>Native pattern:</strong> "What's working well is [specific thing]"</div>
+<div class="note"><strong>Alternative:</strong> "What I've found is..."</div>
+</div>
+</div>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Goal-Setting Intonation</div>
+<div class="detail">"My goal is to..." (Confident, clear tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Progress Tracking Intonation</div>
+<div class="detail">"I've improved X by Y..." (Proud, specific tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Reflection Intonation</div>
+<div class="detail">"What's working well is..." (Thoughtful, reflective tone)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Next Steps Intonation</div>
+<div class="detail">"My next focus is..." (Determined, forward-looking tone)</div>
+</div>
+</div>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 1: Nghe Goal-Setting</strong></div>
+<div class="note"><strong>Focus:</strong> "My goal is to..."</div>
+<div class="note"><strong>Question:</strong> "What are their goals?"</div>
+<div class="note"><strong>Signal:</strong> Specific goals provide direction</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 2: Nghe Progress Tracking</strong></div>
+<div class="note"><strong>Focus:</strong> "I've improved X by Y..."</div>
+<div class="note"><strong>Question:</strong> "How are they tracking progress?"</div>
+<div class="note"><strong>Signal:</strong> Specific data shows progress</div>
+</div>
+<div class="language-notes-box">
+<div class="note"><strong>Lần 3: Nghe Reflection</strong></div>
+<div class="note"><strong>Focus:</strong> "What's working well is..."</div>
+<div class="note"><strong>Question:</strong> "What insights are they sharing?"</div>
+<div class="note"><strong>Signal:</strong> Deep reflection provides insights</div>
+</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">️ Shadowing Challenge</div>
+<div class="note">Copy the progress discussion rhythm:</div>
+<div class="note">1. Listen to: "My goal is to... I've improved X by Y... What's working well is... My next focus is..."</div>
+<div class="note">2. Shadow: Match the goal-setting, tracking, reflection, next steps rhythm</div>
+<div class="note">3. Focus: Stress on "goal", "improved", "working well", "next focus"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different element</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "My goal is to..."?</div>
+<div class="note">✅ To set specific goal. Provides clear direction.</div>
+<div class="note">2. What was the strategic goal of saying "I've improved X by Y"?</div>
+<div class="note">✅ To track progress with data. Shows specific progress.</div>
+<div class="note">3. How did you handle reflection?</div>
+<div class="note">✅ Said "What's working well is..." Provides deep insight.</div>
+<div class="note">4. What was the trade-off of setting specific next steps?</div>
+<div class="note">✅ Provides momentum, but may feel too rigid if circumstances change.</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Goal-Setting with "My goal is to..."</h4>
+<div class="explanation">Used to set specific goals. These phrases provide clear direction and measurability.</div>
+<ul class="grammar-examples-list">
+<li>"My goal is to improve my speaking fluency by 20% over the next 3 months."</li>
+<li>"My goal this quarter is to deliver 3 presentations."</li>
+<li>"My goal is to run 5km without stopping by the end of this month."</li>
+<li>"My goal is to complete the course by end of month."</li>
+<li>"My goal is to improve my data analysis skills."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "I want to improve." (Too vague)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "My goal is to [specific goal] by [time]."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Tracking with "I've improved X by Y"</h4>
+<div class="explanation">Used to track progress with data. These phrases show specific progress.</div>
+<ul class="grammar-examples-list">
+<li>"I've improved my speaking fluency by about 20% over the last month."</li>
+<li>"I've improved my 5km time by 2 minutes."</li>
+<li>"I've improved my presentation skills significantly."</li>
+<li>"I've delivered 2 presentations so far."</li>
+<li>"I've completed 80% of the feature so far."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "I'm doing okay." (Too vague)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I've improved X by Y over [time]."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Reflecting with "What's working well is..."</h4>
+<div class="explanation">Used to reflect on what's working. These phrases provide deep insights.</div>
+<ul class="grammar-examples-list">
+<li>"What's working well is my daily practice — I've found that 30 minutes daily is more effective."</li>
+<li>"What's working well is practicing before each presentation."</li>
+<li>"What I've found is that practicing in front of colleagues helps."</li>
+<li>"What I've found is that the more I practice, the less nervous I get."</li>
+<li>"What I've found is that your feedback helps me identify blind spots."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "It's going well." (Too surface)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "What's working well is [specific thing] — I've found that [insight]."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Discussing Challenges with "My main challenge is..."</h4>
+<div class="explanation">Used to discuss challenges specifically. These phrases provide specific insights.</div>
+<ul class="grammar-examples-list">
+<li>"My main challenge is maintaining consistency — I've found that when I'm busy, my routine is the first to go."</li>
+<li>"My main challenge is managing nervousness."</li>
+<li>"My main challenge is finding time to practice."</li>
+<li>"My main challenge is the integration."</li>
+<li>"My main challenge is maintaining consistency."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "I'm having some difficulties." (Too vague)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "My main challenge is [specific challenge] — I've found that [insight]."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Next Steps with "My next focus is..."</h4>
+<div class="explanation">Used to set specific next steps. These phrases provide clear momentum.</div>
+<ul class="grammar-examples-list">
+<li>"My next focus is to run 4 times this week — I've scheduled Monday, Wednesday, Friday, and Saturday."</li>
+<li>"My next focus is to deliver my third presentation next month."</li>
+<li>"My next focus is to complete the integration by end of this week."</li>
+<li>"My next focus is to have my third session this week."</li>
+<li>"My goal is to get feedback on all 3 presentations."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "I'll keep trying." (Too vague)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "My next focus is to [specific action] — I've [specific action taken]."
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Discussing Fitness Goals with Friend</h3>
+<p class="scenario-context">You're discussing your fitness goals and progress with a friend at the gym.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Set Goals + Track Progress</span>
+<span class="response">"My goal is to run 5km by end of month. I've improved my time by 2 minutes over the last month."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Reflect + Next Steps</span>
+<span class="response">"What's working well is my morning routine. My next focus is to run 4 times this week."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Vague updates instead of specific progress.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Discussing Learning Goals with Manager</h3>
+<p class="scenario-context">You're in a 1-on-1 meeting with your manager discussing your learning goals.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Set Goals + Track Progress</span>
+<span class="response">"My goal this quarter is to improve my presentation skills. I've delivered 2 presentations so far."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Reflect + Next Steps</span>
+<span class="response">"What's working well is my practice routine. My next focus is to deliver my third presentation next month."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Vague updates instead of specific progress.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Discussing Language Learning Progress</h3>
+<p class="scenario-context">You're discussing your English learning progress with a language partner.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Set Goals + Track Progress</span>
+<span class="response">"My goal this month is to improve my speaking fluency. I've had 2 conversation sessions so far."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Reflect + Next Steps</span>
+<span class="response">"What's working well is practicing with you. My next focus is to have my third session this week."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Vague updates instead of specific progress.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Discussing Project Progress with Team</h3>
+<p class="scenario-context">You're discussing your project progress with your team in a stand-up meeting.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Set Goals + Track Progress</span>
+<span class="response">"My goal this sprint is to complete the user authentication feature. I've completed 80% so far."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Reflect + Challenges</span>
+<span class="response">"What's working well is my task breakdown approach. My main challenge is the integration."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 3: Next Steps</span>
+<span class="response">"My next focus is to complete the integration by end of this week — I've scheduled time to work on it."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Vague updates instead of specific progress.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Progress Discussion Challenge</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 The Progress Audit</h3>
+<p class="task-time">⏱️ 15 minutes</p>
+<p class="task-desc">Identify 1 learning goal. Apply the 5 lenses. What decisions are you making? Note the trade-offs.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the learning goal</li>
+<li>Apply the 5 lenses (Goal-Setting, Tracking, Reflection, Challenges, Next Steps)</li>
+<li>What decisions are you making?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</p>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Progress Discussion Practice</h3>
+<p class="task-time">⏱️ 30 minutes</p>
+<p class="task-desc">Role-play a progress discussion. Practice the 5-step loop. Get feedback on your specificity.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose a progress discussion scenario</li>
+<li>Practice all 5 steps of the loop</li>
+<li>Get feedback on your specificity</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</p>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Progress Discussion</h3>
+<p class="task-time">️ 60 minutes</p>
+<p class="task-desc">This week, have an actual progress discussion. Use the 5-step framework in real-time. Note what worked, what didn't, and what you learned.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify an actual progress discussion to have</li>
+<li>Apply the 5-step framework in real-time</li>
+<li>Use the 5-step framework (Goal-Setting, Tracking, Reflection, Challenges, Next Steps)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default style?</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Progress Discussion Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I set specific goals</h4>
+<p>I set specific, measurable goals, not vague goals.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I track progress with data</h4>
+<p>I track progress with specific data, not vague updates.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I reflect deeply</h4>
+<p>I reflect deeply on what's working, not superficially.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I discuss challenges specifically</h4>
+<p>I discuss challenges specifically, not vaguely.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I set specific next steps</h4>
+<p>I set specific next steps, not vague next steps.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the 5-step framework in progress discussions, you are ready for Day 98: Final Integration.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> You need to discuss your learning progress</p>
+<button>Tap to reveal Progress Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "I'm doing okay."</p>
+<p><strong>C1 Language:</strong> Set Goals → Track → Reflect → Challenges → Next Steps.</p>
+<p><strong>Trade-off:</strong> Takes more time to be specific, but provides clear direction and momentum.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In progress discussions, specific goals provide direction. Tracking with data shows progress. Deep reflection provides insights. Specific next steps provide momentum.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Discussing Learning Goals and Progress</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Discussing fitness goals. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "I want to get fit."</div>
+<div class="quiz-option" data-correct="true">B. "My goal is to run 5km without stopping by the end of this month."</div>
+<div class="quiz-option" data-correct="false">C. "I want to improve my fitness."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Discussing progress. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "I'm doing okay."</div>
+<div class="quiz-option" data-correct="true">B. "I've improved my 5km time by 2 minutes over the last month."</div>
+<div class="quiz-option" data-correct="false">C. "I've been exercising."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Discussing what's working. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "It's going well."</div>
+<div class="quiz-option" data-correct="true">B. "What's working well is my morning routine — I've found that running in the morning gives me more energy."</div>
+<div class="quiz-option" data-correct="false">C. "My routine is working."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Discussing challenges. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "I'm having some difficulties."</div>
+<div class="quiz-option" data-correct="true">B. "My main challenge is maintaining consistency — I've found that when I'm busy, my routine is the first to go."</div>
+<div class="quiz-option" data-correct="false">C. "I'm struggling."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Discussing next steps. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "I'll keep trying."</div>
+<div class="quiz-option" data-correct="true">B. "My next focus is to run 4 times this week — I've scheduled Monday, Wednesday, Friday, and Saturday."</div>
+<div class="quiz-option" data-correct="false">C. "I'll keep exercising."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Discussing learning goals with manager. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="false">A. "I want to get better at presentations."</div>
+<div class="quiz-option" data-correct="true">B. "My goal this quarter is to improve my presentation skills by delivering 3 presentations and getting feedback after each one."</div>
+<div class="quiz-option" data-correct="false">C. "I want to improve my skills."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of setting specific goals?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Provides clear direction, but may feel too rigid if circumstances change.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but doesn't provide direction.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of tracking with data?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. Shows specific progress, but may feel too mechanical if not balanced with reflection.</div>
+<div class="quiz-option" data-correct="false">B. Saves time but doesn't show progress.</div>
+<div class="quiz-option" data-correct="false">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Mục tiêu của tôi là..."?</h4>
+<div class="quiz-options">
+<div class="quiz-option" data-correct="true">A. My goal is to...</div>
+<div class="quiz-option" data-correct="false">B. I want to...</div>
+<div class="quiz-option" data-correct="false">C. I'm trying to...</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+
+<div class="day-navigation">
+<a href="week-14-day-96.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 96: Encouraging Others Through Challenges</div>
+</a>
+<a href="week-14-day-98.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 98: Final Integration</div>
+</a>
+</div>
+
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 97 Complete & Continue to Day 98</button>
+<p class="complete-message">B2 speakers give vague updates. C1 speakers track progress and reflect on growth. 🎯</p>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<div class="footer-title">Professional Fluency Roadmap</div>
+<div class="footer-tagline">Week 14 · Day 97 · Discussing Learning Goals and Progress</div>
+</div>
+</footer>
+
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+
+const textContent = {
+'lens1': 'Lens 1: Setting Goals. How do I set specific goals? My goal is to run 5km without stopping by the end of this month. I\'ve been training for about 6 weeks now.',
+'lens2': 'Lens 2: Tracking Progress. How do I track progress with data? I\'ve improved my 5km time by about 2 minutes over the last month — I went from 32 minutes to 30 minutes.',
+'lens3': 'Lens 3: Reflecting on Progress. How do I reflect on what\'s working? What\'s working well is my morning routine — I\'ve found that running in the morning gives me more energy throughout the day.',
+'lens4': 'Lens 4: Discussing Challenges. How do I discuss challenges specifically? My main challenge is maintaining consistency — I\'ve found that when I\'m busy with work, my running routine is the first thing to go.',
+'lens5': 'Lens 5: Setting Next Steps. How do I set specific next steps? My next focus is to run 4 times this week — I\'ve scheduled Monday, Wednesday, Friday, and Saturday morning runs.',
+'my-goal-is': 'My goal is to...',
+'my-next-focus': 'My next focus is...',
+'my-goal-quarter': 'My goal this quarter is...',
+'ive-improved': 'I\'ve improved X by Y...',
+'ive-been': 'I\'ve been [verb+ing] for...',
+'ive-completed': 'I\'ve completed X so far',
+'whats-working': 'What\'s working well is...',
+'what-ive-found': 'What I\'ve found is...',
+'my-main-challenge': 'My main challenge is...',
+'dialogue1': 'Dialogue 1: Discussing Fitness Goals with Friend. Friend: Hey! How\'s your fitness journey going? You: It\'s going well! My goal is to run 5km without stopping by the end of this month. I\'ve been training for about 6 weeks now. Friend: Nice! How\'s the progress? You: I\'ve improved my 5km time by about 2 minutes over the last month — I went from 32 minutes to 30 minutes. What\'s working well is my morning routine — I\'ve found that running in the morning gives me more energy throughout the day. Friend: That\'s great progress! What\'s been challenging? You: My main challenge is maintaining consistency — I\'ve found that when I\'m busy with work, my running routine is the first thing to go. What I\'ve found is that scheduling my runs in the morning helps — I\'m less likely to skip them. Friend: That makes sense. What\'s your plan going forward? You: My next focus is to run 4 times this week — I\'ve scheduled Monday, Wednesday, Friday, and Saturday morning runs. My goal is to get my 5km time down to 28 minutes by the end of next month. Friend: That sounds like a solid plan! How are you tracking your progress? You: I\'m using a running app that tracks my distance and time — it\'s been really helpful for staying motivated. What I\'ve found is that seeing my progress visually keeps me motivated.',
+'dialogue2': 'Dialogue 2: Discussing Learning Goals with Manager. Manager: How are your learning goals going? You: They\'re going well! My goal this quarter is to improve my presentation skills by delivering 3 presentations and getting feedback after each one. I\'ve delivered 2 so far. Manager: Great! How\'s the progress? You: I\'ve improved my presentation skills significantly — I\'ve delivered 2 presentations this quarter and received positive feedback on both. What\'s working well is practicing before each presentation — I\'ve found that rehearsing at least twice helps me feel more confident. Manager: That\'s great progress! What\'s been challenging? You: My main challenge is managing nervousness — I\'ve found that the more I practice, the less nervous I get. What I\'ve found is that practicing in front of colleagues helps — it simulates the real presentation environment. Manager: That makes sense. What\'s your plan for the rest of the quarter? You: My next focus is to deliver my third presentation next month — I\'ve scheduled it for the team meeting. My goal is to get feedback on all 3 presentations and identify 2 areas for improvement. Manager: That sounds like a solid plan. How can I support you? You: I\'d appreciate it if you could attend my next presentation and provide feedback — your feedback has been really helpful so far. What I\'ve found is that your feedback helps me identify blind spots.'
+};
+
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+
+</body>
+</html>

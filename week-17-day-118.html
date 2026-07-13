@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 17 Day 118: Discussing AI and Emerging Tech Ethically | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--text-highlight: #7C3AED;
+--text-error: #DC2626;
+--text-success: #059669;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 800px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.reading-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.move-highlight.move4 { background: #10B981; }
+.move-highlight.move5 { background: #F59E0B; }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--text-highlight); font-weight: 700; display: block; margin: 6px 0; }
+.deep-dive-item .analysis strong { color: var(--text-primary); display: block; margin-top: 10px; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.sample-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-top: 16px; border-left: 4px solid #10B981; }
+.sample-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.sample-answer .answer-text { font-size: 13px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+<div class="container">
+<a href="week-17.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 17 Hub</a>
+<div class="day-indicator">Day 118 / 119</div>
+</div>
+</nav>
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-17.html" class="day-tab">Overview</a>
+<a href="week-17-day-113.html" class="day-tab">Day 113</a>
+<a href="week-17-day-114.html" class="day-tab">Day 114</a>
+<a href="week-17-day-115.html" class="day-tab">Day 115</a>
+<a href="week-17-day-116.html" class="day-tab">Day 116</a>
+<a href="week-17-day-117.html" class="day-tab">Day 117</a>
+<a href="week-17-day-118.html" class="day-tab active">Day 118</a>
+<a href="week-17-day-119.html" class="day-tab">Day 119</a>
+</div>
+</div>
+</div>
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-17.html">Week 17</a> › Day 118
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🤖</span>
+<h1 class="day-title">Discussing AI and Emerging Tech Ethically</h1>
+</div>
+<p class="day-subtitle">Days 113-117 taught you to explain tech, craft analogies, discuss privacy, set boundaries, and navigate conflicts. Day 118 focuses on <strong>discussing AI and emerging tech ethically</strong> — addressing bias, job displacement, deepfakes, and algorithmic accountability. B2 speakers panic or dismiss concerns. C1 speakers balance perspectives, propose safeguards, and navigate uncertainty with nuance.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> AI Ethics + Balanced Perspectives + Safeguard Proposals</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Tech Simplification Day 6 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Panics ("AI will take all our jobs!") or dismisses concerns ("It's just a tool, stop worrying"). Doesn't acknowledge complexity or propose balanced solutions.<br><br><strong>C1 Speaker:</strong> Acknowledges valid concerns, presents multiple perspectives, proposes practical safeguards, and navigates uncertainty honestly. Says "I can see why that's concerning, and there are also potential benefits we should consider. What safeguards might help us get the best of both?"<br><br>"B2 speakers react to AI ethics debates. C1 speakers navigate them with nuance. The difference isn't technical knowledge — it's balanced thinking and ethical reasoning."</div>
+</div>
+<div class="quote">"The question isn't whether AI will change our world — it's whether we'll shape that change thoughtfully, or let it shape us."</div>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Discussing AI Ethics = Assessing Stakeholders + Framing Concerns + Balancing Perspectives + Proposing Safeguards + Managing Uncertainty</h3>
+<p class="philosophy-text">"Discussing AI ethics isn't about having all the answers. It's about assessing who's affected, framing concerns honestly, balancing multiple perspectives, proposing practical safeguards, and managing uncertainty with humility."</p>
+<p class="philosophy-text">Every AI ethics discussion requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Stakeholder Decision:</strong> Who's affected by this technology? (Workers? Users? Society?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Framing Decision:</strong> How do I present concerns without panic? (Alarmist? Balanced?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Perspective Decision:</strong> How do I balance benefits and risks? (One-sided? Nuanced?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Safeguard Decision:</strong> What practical measures can we propose? (Vague? Concrete?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Uncertainty Decision:</strong> How do I handle what we don't know? (Pretend certainty? Honest humility?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 118 teaches you how to discuss AI and emerging tech ethics with nuance, balance, and practical wisdom.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">🤖</div>
+<div class="plan-title">AI Ethics Discussion Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Assess → Frame → Balance → Propose → Manage</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">👁️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎧</div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📝</div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The AI Ethics Discussion Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 5-step process for discussing AI and emerging tech ethically</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">ASSESS STAKEHOLDERS (Identify who's affected)</div>
+<div class="loop-step-desc">Who's impacted? "Who might be affected by this technology?" / "What groups should we consider?" (Think broadly)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">FRAME CONCERNS (Present issues honestly)</div>
+<div class="loop-step-desc">How do I raise concerns? "I can see why that's concerning..." / "There are valid worries about..." (Honest, not alarmist)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">BALANCE PERSPECTIVES (Show multiple sides)</div>
+<div class="loop-step-desc">How do I present balance? "On one hand... on the other hand..." / "There are also potential benefits..." (Nuanced, not one-sided)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">PROPOSE SAFEGUARDS (Suggest practical measures)</div>
+<div class="loop-step-desc">What can we do? "What safeguards might help?" / "Could we implement..." (Concrete, not vague)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">5</div>
+<div class="loop-step-title">MANAGE UNCERTAINTY (Acknowledge what we don't know)</div>
+<div class="loop-step-desc">How do I handle uncertainty? "We don't have all the answers yet..." / "It's still early days..." (Honest humility)</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 AI Ethics Lenses (3-Level Examples)</h2>
+</div>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">Every AI ethics discussion requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+<div class="lenses-grid">
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Assessing Stakeholders <button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"Who's actually affected by this technology?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Stakeholder Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"It affects workers."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"We should think about who might be impacted."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Before we dive in, let's think about who might be affected — not just the workers, but also the users, the communities, and future generations. What groups should we consider?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Family discussion about AI in schools. Decision: Broad stakeholder thinking ("Let's think about who might be affected — students, teachers, parents...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Company adopting AI hiring tools. Decision: Professional stakeholder assessment ("We need to consider candidates, HR teams, and legal compliance...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Broad Thinking):</strong> Identifies hidden impacts, shows ethical awareness.</div>
+<div class="compare-level weak"><strong>Lose (Broad Thinking):</strong> Can feel overwhelming; may slow decision-making.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Only considering obvious stakeholders. Native speakers think broadly about indirect and long-term impacts.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I thinking broadly or narrowly about who's affected?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Framing Concerns Honestly <button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I raise concerns without panic?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Framing Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"AI will take all our jobs!"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"There are concerns about job displacement."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I can see why job displacement is concerning — it's a valid worry. At the same time, history shows technology often creates new roles even as it changes existing ones. The question is how we manage the transition."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Friend worried about AI replacing artists. Decision: Honest framing ("I can see why that's concerning — it's a valid worry...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Team anxious about AI automation. Decision: Professional framing ("There are valid concerns, and there are also opportunities...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Honest Framing):</strong> Validates concerns while maintaining perspective.</div>
+<div class="compare-level weak"><strong>Lose (Honest Framing):</strong> May feel like you're minimizing legitimate fears.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Either panicking or dismissing concerns entirely. Native speakers validate worries while providing context.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I framing honestly or reacting emotionally?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Balancing Perspectives <button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I show multiple sides without being wishy-washy?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Perspective Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"It has good and bad sides."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"There are benefits and risks."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"On one hand, AI can process medical scans faster and more accurately than humans, potentially saving lives. On the other hand, if the training data is biased, it could perpetuate healthcare disparities. Both realities are true simultaneously."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Debate about social media algorithms. Decision: Balanced perspective ("On one hand... on the other hand...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Board discussing AI customer service. Decision: Professional balance ("The efficiency gains are significant, but we need to consider...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Balanced):</strong> Shows intellectual honesty, builds trust.</div>
+<div class="compare-level weak"><strong>Lose (Balanced):</strong> May seem indecisive if not paired with clear recommendations.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Presenting only one side or false balance. Native speakers acknowledge complexity while taking informed positions.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I balancing perspectives or being one-sided?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Proposing Practical Safeguards <button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"What concrete measures can we actually implement?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Safeguard Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"We should regulate AI."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"We need some safeguards."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"What if we implemented regular algorithmic audits, required transparency reports, and established a human oversight committee? These are concrete steps that could help us catch bias early while still benefiting from the technology."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Community discussing facial recognition. Decision: Concrete safeguards ("What if we required consent and regular audits...?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Company deploying AI hiring. Decision: Professional safeguards ("Could we implement blind screening and regular bias testing...?")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Concrete Safeguards):</strong> Provides actionable path forward, shows problem-solving.</div>
+<div class="compare-level weak"><strong>Lose (Concrete Safeguards):</strong> May be seen as insufficient by those wanting stronger measures.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Proposing vague solutions ("We need regulation") without specifics. Native speakers suggest concrete, implementable measures.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I proposing concrete safeguards or vague ideals?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Managing Uncertainty with Humility <button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I handle what we don't know yet?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Uncertainty Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Nobody knows what will happen."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"It's still early days."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I want to be honest — we don't have all the answers yet. The long-term impacts of generative AI on creative work are still unfolding. What we can do is stay informed, remain adaptable, and make decisions that preserve human agency while we learn."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Teen asking about AI's future. Decision: Honest humility ("We don't have all the answers yet, but...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Executive asking for AI strategy. Decision: Professional humility ("It's still early days, but here's what we can do now...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Honest Humility):</strong> Builds credibility, avoids overpromising.</div>
+<div class="compare-level weak"><strong>Lose (Honest Humility):</strong> May feel unsatisfying to those wanting definitive answers.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Pretending certainty or avoiding the topic. Native speakers acknowledge uncertainty while offering informed guidance.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I being honest about uncertainty or pretending to know?</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy AI ethics discussions</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Panic or Dismissal Instead of Nuance</h4>
+<div class="mistake-wrong"> "AI will destroy all jobs!" or "It's just a tool, stop worrying."</div>
+<div class="mistake-right">✅ "I can see why job displacement is concerning — it's a valid worry. At the same time, history shows technology often creates new roles. The question is how we manage the transition."</div>
+<div class="mistake-why">Why: Panic shuts down dialogue. Dismissal invalidates concerns. Nuance keeps conversation productive.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Vague Safeguards Without Specifics</h4>
+<div class="mistake-wrong">❌ "We need to regulate AI."</div>
+<div class="mistake-right">✅ "What if we implemented regular algorithmic audits, required transparency reports, and established a human oversight committee?"</div>
+<div class="mistake-why">Why: Vague solutions feel unsatisfying. Concrete measures show you've thought practically about implementation.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Pretending Certainty About Uncertain Futures</h4>
+<div class="mistake-wrong">❌ "AI will definitely do X in 5 years."</div>
+<div class="mistake-right">✅ "I want to be honest — we don't have all the answers yet. The long-term impacts are still unfolding. What we can do is stay informed and make decisions that preserve human agency."</div>
+<div class="mistake-why">Why: False certainty damages credibility. Honest humility builds trust and allows for course correction.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The AI Ethics Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. AI replacing jobs</td>
+<td>"AI will take all our jobs!"</td>
+<td>"There are concerns about job displacement."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I can see why job displacement is concerning — it's a valid worry. At the same time, history shows technology often creates new roles even as it changes existing ones. The question is how we manage the transition and support workers through it."</span>
+<span class="why">Why: Validates concern, provides historical context, focuses on solutions.</span>
+</div>
+</td>
+<td>Validates + contextualizes + solution-focused</td>
+<td>"I can see why that's concerning..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>2. Algorithmic bias in hiring</td>
+<td>"AI is biased and unfair."</td>
+<td>"We should check for bias."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Algorithmic bias is a real concern — if the training data reflects historical inequalities, the AI can perpetuate them. What if we implemented regular bias audits, diverse training data reviews, and human oversight for final decisions?"</span>
+<span class="why">Why: Acknowledges mechanism, proposes concrete safeguards.</span>
+</div>
+</td>
+<td>Explains mechanism + concrete safeguards</td>
+<td>"What if we implemented..."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>3. Deepfakes and misinformation</td>
+<td>"Deepfakes will destroy truth!"</td>
+<td>"We need to be careful."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Deepfakes raise legitimate concerns about trust and misinformation. On one hand, the technology has creative applications. On the other, it could undermine trust in media. What safeguards might help — like watermarking AI-generated content or media literacy education?"</span>
+<span class="why">Why: Balances perspectives, proposes practical measures.</span>
+</div>
+</td>
+<td>Balances + proposes safeguards</td>
+<td>"What safeguards might help..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>4. AI in healthcare decisions</td>
+<td>"Robots shouldn't make medical decisions."</td>
+<td>"We need human oversight."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand the concern about AI making medical decisions — it feels impersonal. At the same time, AI can process scans faster and sometimes catch things humans miss. What if we used AI as a diagnostic aid while keeping doctors as the final decision-makers?"</span>
+<span class="why">Why: Validates emotion, shows benefit, proposes hybrid model.</span>
+</div>
+</td>
+<td>Validates + shows benefit + hybrid proposal</td>
+<td>"What if we used AI as..."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>5. Autonomous vehicles</td>
+<td>"Self-driving cars are dangerous."</td>
+<td>"They need more testing."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Autonomous vehicles raise valid safety concerns — the technology isn't perfect yet. On the other hand, human error causes most accidents. What if we implemented gradual rollout with strict safety standards, clear liability frameworks, and public education?"</span>
+<span class="why">Why: Acknowledges current limits, provides context, proposes phased approach.</span>
+</div>
+</td>
+<td>Acknowledges limits + context + phased approach</td>
+<td>"What if we implemented gradual..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>6. AI surveillance and privacy</td>
+<td>"Surveillance AI is creepy."</td>
+<td>"We need privacy laws."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"AI surveillance raises serious privacy concerns — it's understandable to feel uneasy. At the same time, it can help with public safety in some contexts. What safeguards might balance these — like clear usage policies, transparency reports, and citizen oversight boards?"</span>
+<span class="why">Why: Validates emotion, acknowledges complexity, proposes governance.</span>
+</div>
+</td>
+<td>Validates + acknowledges complexity + governance</td>
+<td>"What safeguards might balance..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>7. AI-generated art and creativity</td>
+<td>"AI art isn't real art."</td>
+<td>"It's different from human art."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I can see why AI-generated art feels threatening to artists — it's a valid concern about creative work being devalued. At the same time, some artists are using AI as a tool to enhance their work. What if we established clear attribution standards and ensured artists are compensated when their work trains AI models?"</span>
+<span class="why">Why: Validates artists, shows nuance, proposes concrete protections.</span>
+</div>
+</td>
+<td>Validates + shows nuance + concrete protections</td>
+<td>"What if we established..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>8. Long-term AI risks (AGI)</td>
+<td>"AI will become superintelligent and destroy us!"</td>
+<td>"We should be careful."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I want to be honest — the long-term risks of advanced AI are uncertain, and reasonable people disagree. What we can do now is invest in AI safety research, establish international cooperation frameworks, and make decisions that preserve human agency while we learn more."</span>
+<span class="why">Why: Acknowledges uncertainty, shows humility, proposes actionable steps.</span>
+</div>
+</td>
+<td>Acknowledges uncertainty + humility + actionable steps</td>
+<td>"What we can do now..."</td>
+<td>Professional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title"> Case 1: Life - Family Discussion About AI in Schools</h4>
+<div class="case-context"><strong>Context:</strong> Your teenager's school is considering using AI tutoring systems. Your family is having a heated discussion about whether this is beneficial or harmful. You need to navigate the conversation thoughtfully.</div>
+<div class="case-narrative">
+<p><span class="speaker">Teen:</span> "The school wants to use AI tutors. I think it's cool — it could help me learn faster."</p>
+<p><span class="speaker">Parent:</span> "I don't know... I'm worried it'll replace teachers and make education impersonal."</p>
+<p><span class="speaker">You:</span> "I can see why both of you have different perspectives. Let's think about who might be affected — students, teachers, parents. What are the potential benefits and concerns?"</p>
+<p><span class="speaker">Teen:</span> "Well, it could give me personalized help when I'm stuck."</p>
+<p><span class="speaker">Parent:</span> "But what about data privacy? And what if it's biased?"</p>
+<p><span class="speaker">You:</span> "Those are valid concerns. On one hand, AI tutors can provide personalized support that teachers sometimes can't give to every student. On the other hand, we need to think about data privacy and potential bias. What safeguards might help — like clear data policies, regular bias audits, and keeping teachers in the loop?"</p>
+<p><span class="speaker">Teen:</span> "I guess that makes sense. I wouldn't want it to replace teachers completely."</p>
+<p><span class="speaker">You:</span> "Exactly. What if we thought of it as a tool to support teachers, not replace them? And I want to be honest — we don't have all the answers about long-term impacts yet. What we can do is stay informed, ask the school good questions, and make sure students' voices are heard in the decision."</p>
+</div>
+<div class="useful-language-box">
+<h4> Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I can see why both of you have different perspectives."</strong><span class="meaning">Tôi có thể thấy tại sao cả hai bạn có quan điểm khác nhau.</span><span class="register">Register: Casual · Balance</span></li>
+<li><strong>"Let's think about who might be affected."</strong><span class="meaning">Hãy nghĩ về những ai có thể bị ảnh hưởng.</span><span class="register">Register: Casual · Assess</span></li>
+<li><strong>"Those are valid concerns."</strong><span class="meaning">Đó là những mối quan ngại hợp lý.</span><span class="register">Register: Casual · Frame</span></li>
+<li><strong>"On one hand... on the other hand..."</strong><span class="meaning">Một mặt... mặt khác...</span><span class="register">Register: Casual · Balance</span></li>
+<li><strong>"What safeguards might help?"</strong><span class="meaning">Những biện pháp bảo vệ nào có thể giúp ích?</span><span class="register">Register: Casual · Propose</span></li>
+<li><strong>"What if we thought of it as..."</strong><span class="meaning">Nếu chúng ta nghĩ về nó như là...</span><span class="register">Register: Casual · Propose</span></li>
+<li><strong>"I want to be honest — we don't have all the answers yet."</strong><span class="meaning">Tôi muốn thành thật — chúng ta chưa có tất cả câu trả lời.</span><span class="register">Register: Casual · Uncertainty</span></li>
+<li><strong>"What we can do is stay informed."</strong><span class="meaning">Điều chúng ta có thể làm là staying informed.</span><span class="register">Register: Casual · Uncertainty</span></li>
+<li><strong>"It's a valid concern about..."</strong><span class="meaning">Đó là một mối quan ngại hợp lý về...</span><span class="register">Register: Casual · Frame</span></li>
+<li><strong>"What if we implemented..."</strong><span class="meaning">Nếu chúng ta triển khai...</span><span class="register">Register: Casual · Propose</span></li>
+<li><strong>"At the same time..."</strong><span class="meaning">Đồng thời...</span><span class="register">Register: Casual · Balance</span></li>
+<li><strong>"The question is how we..."</strong><span class="meaning">Câu hỏi là làm thế nào chúng ta...</span><span class="register">Register: Casual · Propose</span></li>
+<li><strong>"I understand the concern about..."</strong><span class="meaning">Tôi hiểu mối quan ngại về...</span><span class="register">Register: Casual · Frame</span></li>
+<li><strong>"What if we used AI as..."</strong><span class="meaning">Nếu chúng ta sử dụng AI như là...</span><span class="register">Register: Casual · Propose</span></li>
+<li><strong>"It's still early days."</strong><span class="meaning">Vẫn còn sớm.</span><span class="register">Register: Casual · Uncertainty</span></li>
+<li><strong>"Reasonable people disagree."</strong><span class="meaning">Những người hợp lý có thể không đồng ý.</span><span class="register">Register: Casual · Uncertainty</span></li>
+<li><strong>"What we can do now is..."</strong><span class="meaning">Điều chúng ta có thể làm bây giờ là...</span><span class="register">Register: Casual · Propose</span></li>
+<li><strong>"Let's stay informed and..."</strong><span class="meaning">Hãy staying informed và...</span><span class="register">Register: Casual · Uncertainty</span></li>
+<li><strong>"Make decisions that preserve..."</strong><span class="meaning">Đưa ra quyết định bảo tồn...</span><span class="register">Register: Casual · Propose</span></li>
+<li><strong>"Both realities are true simultaneously."</strong><span class="meaning">Cả hai thực tế đều đúng đồng thời.</span><span class="register">Register: Casual · Balance</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Board Discussion About AI Hiring Tools</h4>
+<div class="case-context"><strong>Context:</strong> Your company's board is considering adopting AI-powered hiring tools. Some members are excited about efficiency, others are concerned about bias and fairness. You need to facilitate a balanced discussion.</div>
+<div class="case-narrative">
+<p><span class="speaker">CEO:</span> "AI hiring tools could cut our recruitment time in half. We should move fast."</p>
+<p><span class="speaker">HR Director:</span> "I'm worried about bias. What if the AI discriminates against certain candidates?"</p>
+<p><span class="speaker">You:</span> "I can see why both perspectives are important. Before we decide, let's think about who might be affected — candidates, our HR team, the company's reputation, and legal compliance. What are the potential benefits and risks?"</p>
+<p><span class="speaker">CEO:</span> "The efficiency gains are significant. We could screen more candidates faster."</p>
+<p><span class="speaker">HR Director:</span> "But if the training data is biased, we could perpetuate discrimination without realizing it."</p>
+<p><span class="speaker">You:</span> "Those are both valid points. On one hand, AI can process applications faster and potentially reduce human bias in initial screening. On the other hand, if the training data reflects historical inequalities, the AI could amplify them. What safeguards might help — like regular bias audits, diverse training data reviews, and human oversight for final decisions?"</p>
+<p><span class="speaker">CEO:</span> "That makes sense. We shouldn't move so fast that we create problems."</p>
+<p><span class="speaker">You:</span> "Exactly. What if we piloted the tool with strict safeguards first, measured outcomes carefully, and adjusted based on what we learn? And I want to be honest — we don't have perfect answers about long-term impacts yet. What we can do is proceed thoughtfully, stay informed about best practices, and make decisions that balance efficiency with fairness."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I can see why both perspectives are important."</strong><span class="meaning">Tôi có thể thấy tại sao cả hai quan điểm đều quan trọng.</span><span class="register">Register: Professional · Balance</span></li>
+<li><strong>"Before we decide, let's think about who might be affected."</strong><span class="meaning">Trước khi quyết định, hãy nghĩ về những ai có thể bị ảnh hưởng.</span><span class="register">Register: Professional · Assess</span></li>
+<li><strong>"Those are both valid points."</strong><span class="meaning">Cả hai đều là những điểm hợp lý.</span><span class="register">Register: Professional · Frame</span></li>
+<li><strong>"On one hand... on the other hand..."</strong><span class="meaning">Một mặt... mặt khác...</span><span class="register">Register: Professional · Balance</span></li>
+<li><strong>"What safeguards might help?"</strong><span class="meaning">Những biện pháp bảo vệ nào có thể giúp ích?</span><span class="register">Register: Professional · Propose</span></li>
+<li><strong>"What if we piloted the tool with..."</strong><span class="meaning">Nếu chúng ta thử nghiệm công cụ với...</span><span class="register">Register: Professional · Propose</span></li>
+<li><strong>"I want to be honest — we don't have perfect answers yet."</strong><span class="meaning">Tôi muốn thành thật — chúng ta chưa có câu trả lời hoàn hảo.</span><span class="register">Register: Professional · Uncertainty</span></li>
+<li><strong>"What we can do is proceed thoughtfully."</strong><span class="meaning">Điều chúng ta có thể làm là tiến hành một cách thận trọng.</span><span class="register">Register: Professional · Uncertainty</span></li>
+<li><strong>"The efficiency gains are significant."</strong><span class="meaning">Những gains về hiệu quả là đáng kể.</span><span class="register">Register: Professional · Balance</span></li>
+<li><strong>"We could perpetuate discrimination without realizing it."</strong><span class="meaning">Chúng ta có thể perpetuate phân biệt đối xử mà không nhận ra.</span><span class="register">Register: Professional · Frame</span></li>
+<li><strong>"What if we implemented..."</strong><span class="meaning">Nếu chúng ta triển khai...</span><span class="register">Register: Professional · Propose</span></li>
+<li><strong>"Measured outcomes carefully."</strong><span class="meaning">Đo lường kết quả một cách cẩn thận.</span><span class="register">Register: Professional · Propose</span></li>
+<li><strong>"Adjusted based on what we learn."</strong><span class="meaning">Điều chỉnh dựa trên những gì chúng ta học được.</span><span class="register">Register: Professional · Uncertainty</span></li>
+<li><strong>"Balance efficiency with fairness."</strong><span class="meaning">Cân bằng hiệu quả với công bằng.</span><span class="register">Register: Professional · Propose</span></li>
+<li><strong>"Stay informed about best practices."</strong><span class="meaning">Staying informed về best practices.</span><span class="register">Register: Professional · Uncertainty</span></li>
+<li><strong>"Make decisions that..."</strong><span class="meaning">Đưa ra quyết định mà...</span><span class="register">Register: Professional · Propose</span></li>
+<li><strong>"We shouldn't move so fast that..."</strong><span class="meaning">Chúng ta không nên di chuyển quá nhanh đến mức...</span><span class="register">Register: Professional · Frame</span></li>
+<li><strong>"Proceed thoughtfully."</strong><span class="meaning">Tiến hành một cách thận trọng.</span><span class="register">Register: Professional · Uncertainty</span></li>
+<li><strong>"Regular bias audits."</strong><span class="meaning">Kiểm tra bias thường xuyên.</span><span class="register">Register: Professional · Propose</span></li>
+<li><strong>"Human oversight for final decisions."</strong><span class="meaning">Giám sát của con người cho các quyết định cuối cùng.</span><span class="register">Register: Professional · Propose</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: AI Ethics Messages</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Respond to Friend Worried About AI Replacing Artists</h4>
+<p class="task-context"><strong>Context:</strong> Your artist friend is anxious about AI image generators. Write a message acknowledging their concern while offering balanced perspective.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 validating structure</li>
+<li>Use 1 balanced perspective structure</li>
+<li>Length: 120-170 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hey — I can see why AI image generators feel threatening to artists. It's a valid concern about creative work being devalued, and I understand the worry. At the same time, I've seen some artists using AI as a tool to enhance their work, not replace it. On one hand, there's real risk of exploitation if companies use AI to avoid paying artists. On the other hand, some artists are finding new ways to create with these tools. What if we advocated for clear attribution standards and ensured artists are compensated when their work trains AI models? I want to be honest — we don't have all the answers yet about long-term impacts. What we can do is stay informed, support artists, and push for ethical practices."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Validating:</strong> "I can see why... It's a valid concern..."</li>
+<li><strong>Collocations:</strong> "valid concern", "at the same time", "stay informed"</li>
+<li><strong>Balanced perspective:</strong> "On one hand... on the other hand..."</li>
+<li><strong>Concrete proposal:</strong> "What if we advocated for..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"Hey — I get why AI art generators feel scary. It's a real concern. At the same time, some artists are using them as tools. On one hand, there's risk of exploitation. On the other, there are new creative possibilities. What if we pushed for artists to be compensated when their work trains AI? We don't have all the answers yet, but we can stay informed and support ethical practices."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (120-170 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 validating structure</li>
+<li>□ có 1 balanced perspective structure</li>
+<li>□ có validate → balance → propose → acknowledge uncertainty</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Email to Team About AI Customer Service Implementation</h4>
+<p class="task-context"><strong>Context:</strong> Your company is implementing AI chatbots for customer service. Some team members are worried about job security. Write an email addressing concerns while explaining the plan.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 acknowledging structure</li>
+<li>Use 1 safeguard proposal structure</li>
+<li>Length: 150-200 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi team, I understand there are concerns about the AI chatbot implementation and what it means for our roles. Those are valid concerns, and I want to address them honestly. On one hand, AI can handle routine inquiries faster, freeing us to focus on complex cases that need human empathy and judgment. On the other hand, I understand the worry about job displacement. What safeguards might help? We're planning to retrain team members for higher-value roles, implement a gradual rollout with human oversight, and ensure no one is displaced without support. I want to be honest — we don't have all the answers about long-term impacts yet. What we can do now is stay informed, provide feedback during the pilot, and make sure our voices shape how this technology is used. Let's schedule a Q&A session next week to discuss this further."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Acknowledging:</strong> "I understand there are concerns... Those are valid concerns..."</li>
+<li><strong>Collocations:</strong> "valid concerns", "on one hand... on the other hand", "stay informed"</li>
+<li><strong>Safeguard proposal:</strong> "What safeguards might help? We're planning to..."</li>
+<li><strong>Honest uncertainty:</strong> "I want to be honest — we don't have all the answers yet."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Dear team, I acknowledge the concerns regarding AI chatbot implementation and its impact on our roles. These are legitimate concerns that deserve honest discussion. While AI can efficiently handle routine inquiries, enabling us to focus on complex cases requiring human judgment, I understand the apprehension about job displacement. To address this, we propose implementing retraining programs, gradual rollout with human oversight, and comprehensive support for any role transitions. While we don't have complete certainty about long-term impacts, we commit to transparent communication and ensuring your voices shape this transition. Let's schedule a discussion session to address your questions."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (150-200 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 acknowledging structure</li>
+<li>□ có 1 safeguard proposal structure</li>
+<li>□ có acknowledge → balance → propose → acknowledge uncertainty → next steps</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Social Media Post About Deepfakes</h4>
+<p class="task-context"><strong>Context:</strong> You want to post about deepfakes and misinformation on social media. Write a balanced post that raises awareness without panic.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 balanced perspective structure</li>
+<li>Use 1 practical safeguard suggestion</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Deepfakes raise legitimate concerns about trust and misinformation — it's understandable to feel uneasy. On one hand, the technology has creative applications in film and education. On the other, it could undermine trust in media and enable new forms of fraud. What safeguards might help? Watermarking AI-generated content, investing in media literacy education, and supporting fact-checking organizations. I want to be honest — we don't have perfect solutions yet, and the technology is evolving fast. What we can do is stay critical, verify before sharing, and support policies that promote transparency. Both the risks and opportunities are real. The question is how we navigate this thoughtfully."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Balanced perspective:</strong> "On one hand... on the other hand..."</li>
+<li><strong>Collocations:</strong> "legitimate concerns", "stay critical", "the question is how"</li>
+<li><strong>Practical safeguards:</strong> "Watermarking AI-generated content, investing in media literacy..."</li>
+<li><strong>Honest uncertainty:</strong> "I want to be honest — we don't have perfect solutions yet."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"Deepfakes are concerning — it's understandable to feel uneasy. On one hand, there are creative uses. On the other, there's real risk of misinformation. What can help? Watermarking AI content, media literacy education, supporting fact-checkers. We don't have perfect solutions yet, but we can stay critical, verify before sharing, and support transparency. Both risks and opportunities are real. The question is how we navigate this thoughtfully."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 balanced perspective structure</li>
+<li>□ có 1 practical safeguard suggestion</li>
+<li>□ có acknowledge concern → balance → propose → acknowledge uncertainty → call to action</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Response to Colleague Excited About Unregulated AI Tool</h4>
+<p class="task-context"><strong>Context:</strong> A colleague wants to adopt a new AI tool without considering privacy or bias implications. Write a message raising concerns constructively.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 acknowledging structure</li>
+<li>Use 1 safeguard proposal structure</li>
+<li>Length: 120-170 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"I can see why you're excited about this AI tool — the efficiency gains look significant. At the same time, I have some concerns we should think through before adopting it. Who might be affected — our users, our team, our compliance standing? I'm worried about data privacy and potential bias if the training data isn't diverse. What safeguards might help? What if we conducted a privacy impact assessment, tested for bias with diverse datasets, and established human oversight for decisions that affect users? I want to be honest — I don't have all the answers, and the tool might be great. But I think we should proceed thoughtfully rather than moving fast and fixing problems later. Could we schedule a meeting to discuss safeguards before making a decision?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Acknowledging:</strong> "I can see why you're excited... the efficiency gains look significant."</li>
+<li><strong>Collocations:</strong> "at the same time", "proceed thoughtfully", "I don't have all the answers"</li>
+<li><strong>Safeguard proposal:</strong> "What safeguards might help? What if we conducted..."</li>
+<li><strong>Stakeholder thinking:</strong> "Who might be affected — our users, our team, our compliance standing?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Direct)</h5>
+<p class="alt-text">"I get the excitement about this tool — it looks efficient. At the same time, we should think about who might be affected and what safeguards we need. I'm concerned about data privacy and potential bias. What if we conducted a privacy assessment, tested for bias, and established human oversight? I don't have all the answers, but I think we should proceed thoughtfully. Could we discuss safeguards before deciding?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (120-170 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 acknowledging structure</li>
+<li>□ có 1 safeguard proposal structure</li>
+<li>□ có acknowledge excitement → raise concerns → propose safeguards → suggest discussion</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The AI Ethics Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">⚖️ Balancing Perspectives</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>valid concern</strong>
+<div class="ipa">/ˈvæl.ɪd kənˈsɜːn/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Mối quan ngại hợp lý</div>
+<div class="collocation">Collocation: "valid concern"</div>
+<div class="chunk">Chunk: "It's a valid concern about..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I can see why job displacement is concerning — it's a valid worry."</div>
+<div class="native-alt">Native alternative: "legitimate concern"</div>
+<button class="vocab-audio-btn" onclick="speakText('valid-concern', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>on one hand... on the other hand</strong>
+<div class="ipa">/n wʌn hænd... n ði ˈð.ə hænd/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Một mặt... mặt khác</div>
+<div class="collocation">Collocation: "on one hand... on the other hand"</div>
+<div class="chunk">Chunk: "On one hand... on the other hand..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"On one hand, AI can process scans faster. On the other hand, if the training data is biased, it could perpetuate disparities."</div>
+<div class="native-alt">Native alternative: "while... at the same time"</div>
+<button class="vocab-audio-btn" onclick="speakText('one-hand', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>at the same time</strong>
+<div class="ipa">/æt ðə seɪm taɪm/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Đồng thời</div>
+<div class="collocation">Collocation: "at the same time"</div>
+<div class="chunk">Chunk: "At the same time, there are also..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I understand the concern. At the same time, there are potential benefits we should consider."</div>
+<div class="native-alt">Native alternative: "simultaneously"</div>
+<button class="vocab-audio-btn" onclick="speakText('same-time', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🛡️ Safeguards & Solutions</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>what safeguards might help</strong>
+<div class="ipa">/wɒt ˈseɪf.ɡɑːdz maɪt help/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Những biện pháp bảo vệ nào có thể giúp ích</div>
+<div class="collocation">Collocation: "what safeguards might help"</div>
+<div class="chunk">Chunk: "What safeguards might help?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What safeguards might help — like regular audits, transparency reports, and human oversight?"</div>
+<div class="native-alt">Native alternative: "what measures could help"</div>
+<button class="vocab-audio-btn" onclick="speakText('safeguards', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>what if we implemented</strong>
+<div class="ipa">/wɒt ɪf wiː ˈɪm.pl.ment.ɪd/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Nếu chúng ta triển khai</div>
+<div class="collocation">Collocation: "what if we implemented"</div>
+<div class="chunk">Chunk: "What if we implemented..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What if we implemented regular algorithmic audits and required transparency reports?"</div>
+<div class="native-alt">Native alternative: "could we implement"</div>
+<button class="vocab-audio-btn" onclick="speakText('what-if', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>proceed thoughtfully</strong>
+<div class="ipa">/prəˈsiːd ˈθɔːt.fəl.i/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Tiến hành một cách thận trọng</div>
+<div class="collocation">Collocation: "proceed thoughtfully"</div>
+<div class="chunk">Chunk: "We should proceed thoughtfully"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I think we should proceed thoughtfully rather than moving fast and fixing problems later."</div>
+<div class="native-alt">Native alternative: "move carefully"</div>
+<button class="vocab-audio-btn" onclick="speakText('proceed', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🤔 Managing Uncertainty</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>I want to be honest</strong>
+<div class="ipa">/aɪ wɒnt tuː biː ˈɒn.ɪst/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi muốn thành thật</div>
+<div class="collocation">Collocation: "I want to be honest"</div>
+<div class="chunk">Chunk: "I want to be honest — ..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I want to be honest — we don't have all the answers yet."</div>
+<div class="native-alt">Native alternative: "to be frank"</div>
+<button class="vocab-audio-btn" onclick="speakText('honest', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>we don't have all the answers</strong>
+<div class="ipa">/wi dəʊnt hæv ɔl ði ˈɑːn.səz/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Chúng ta chưa có tất cả câu trả lời</div>
+<div class="collocation">Collocation: "we don't have all the answers"</div>
+<div class="chunk">Chunk: "We don't have all the answers yet"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"We don't have all the answers yet, but we can stay informed and make thoughtful decisions."</div>
+<div class="native-alt">Native alternative: "it's still uncertain"</div>
+<button class="vocab-audio-btn" onclick="speakText('answers', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>stay informed</strong>
+<div class="ipa">/steɪ ɪnfɔːmd/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Staying informed</div>
+<div class="collocation">Collocation: "stay informed"</div>
+<div class="chunk">Chunk: "What we can do is stay informed"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What we can do is stay informed, remain adaptable, and make decisions that preserve human agency."</div>
+<div class="native-alt">Native alternative: "keep up to date"</div>
+<button class="vocab-audio-btn" onclick="speakText('stay-informed', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title">🏠 Dialogue 1: Family Discussion About AI in Schools (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Your teenager's school is considering AI tutoring systems. Your family is having a heated discussion. You navigate the conversation thoughtfully.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Teen:</div>
+<div class="dialogue-text">"The school wants to use AI tutors. I think it's cool — it could help me learn faster."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Parent:</div>
+<div class="dialogue-text">"I don't know... I'm worried it'll replace teachers and make education impersonal."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I can see why both of you have different perspectives. Let's think about who might be affected — students, teachers, parents. What are the potential benefits and concerns?" <span class="move-highlight move1">Assess</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Teen:</div>
+<div class="dialogue-text">"Well, it could give me personalized help when I'm stuck."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Parent:</div>
+<div class="dialogue-text">"But what about data privacy? And what if it's biased?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Those are valid concerns. On one hand, AI tutors can provide personalized support that teachers sometimes can't give to every student. On the other hand, we need to think about data privacy and potential bias. What safeguards might help — like clear data policies, regular bias audits, and keeping teachers in the loop?" <span class="move-highlight move2">Balance + Propose</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Teen:</div>
+<div class="dialogue-text">"I guess that makes sense. I wouldn't want it to replace teachers completely."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Exactly. What if we thought of it as a tool to support teachers, not replace them? And I want to be honest — we don't have all the answers about long-term impacts yet. What we can do is stay informed, ask the school good questions, and make sure students' voices are heard in the decision." <span class="move-highlight move3">Propose + Uncertainty</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Assess (broad stakeholder thinking) + Frame (validating both perspectives) + Balance (on one hand... on the other hand) + Propose (concrete safeguards) + Manage Uncertainty (honest humility).</li>
+<li><strong>Alternative Decision:</strong> Take sides or dismiss concerns. (Risk: Family conflict, poor decision-making).</li>
+<li><strong>Why this decision?</strong> Assessing stakeholders shows ethical awareness. Validating both perspectives keeps dialogue open. Balancing shows nuance. Proposing safeguards provides path forward. Acknowledging uncertainty builds trust.</li>
+<li><strong>Resistance handled:</strong> Teen's excitement vs. parent's worry. You validated both while moving toward thoughtful decision.</li>
+<li><strong>Evolution:</strong> Heated disagreement → Assess stakeholders → Validate both → Balance perspectives → Propose safeguards → Acknowledge uncertainty → Family alignment.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Board Discussion About AI Hiring Tools (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Your company's board is considering AI hiring tools. Some members are excited about efficiency, others concerned about bias. You facilitate balanced discussion.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">CEO:</div>
+<div class="dialogue-text">"AI hiring tools could cut our recruitment time in half. We should move fast."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">HR Director:</div>
+<div class="dialogue-text">"I'm worried about bias. What if the AI discriminates against certain candidates?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I can see why both perspectives are important. Before we decide, let's think about who might be affected — candidates, our HR team, the company's reputation, and legal compliance. What are the potential benefits and risks?" <span class="move-highlight move1">Assess</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">CEO:</div>
+<div class="dialogue-text">"The efficiency gains are significant. We could screen more candidates faster."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">HR Director:</div>
+<div class="dialogue-text">"But if the training data is biased, we could perpetuate discrimination without realizing it."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Those are both valid points. On one hand, AI can process applications faster and potentially reduce human bias in initial screening. On the other hand, if the training data reflects historical inequalities, the AI could amplify them. What safeguards might help — like regular bias audits, diverse training data reviews, and human oversight for final decisions?" <span class="move-highlight move2">Balance + Propose</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">CEO:</div>
+<div class="dialogue-text">"That makes sense. We shouldn't move so fast that we create problems."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Exactly. What if we piloted the tool with strict safeguards first, measured outcomes carefully, and adjusted based on what we learn? And I want to be honest — we don't have perfect answers about long-term impacts yet. What we can do is proceed thoughtfully, stay informed about best practices, and make decisions that balance efficiency with fairness." <span class="move-highlight move3">Propose + Uncertainty</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Assess (broad stakeholder thinking) + Frame (validating both perspectives) + Balance (efficiency vs. fairness) + Propose (concrete safeguards) + Manage Uncertainty (honest humility).</li>
+<li><strong>Alternative Decision:</strong> Side with CEO or HR Director. (Risk: Poor decision, board conflict).</li>
+<li><strong>Why this decision?</strong> Assessing stakeholders shows strategic thinking. Validating both keeps board unified. Balancing shows leadership. Proposing safeguards provides actionable path. Acknowledging uncertainty shows wisdom.</li>
+<li><strong>Resistance handled:</strong> CEO's urgency vs. HR's caution. You validated both while moving toward thoughtful implementation.</li>
+<li><strong>Evolution:</strong> Board tension → Assess stakeholders → Validate both → Balance perspectives → Propose safeguards → Acknowledge uncertainty → Board alignment.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to the dialogues above. Notice the fillers, hesitation, and discourse markers used in AI ethics discussions.</p>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 16px;">Step 1: Full Transcript</h4>
+<div class="transcript-box">
+<p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;"><em>Refer to the dialogues above for the full transcript with spoken English features.</em></p>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 2: Key Phrases Breakdown</h4>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"I can see why both perspectives are important..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Validates multiple viewpoints
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I can see why... is important/concerning..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "I understand both sides..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Keeps dialogue open, shows empathy
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"On one hand... on the other hand..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Presents balanced perspective
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "On one hand... on the other hand..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "While... at the same time..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows intellectual honesty and nuance
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"What safeguards might help?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Shifts from problem to solution
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "What safeguards might help?"
+<span class="arrow">↓</span> <strong>Alternative:</strong> "What measures could help?"
+<span class="arrow">↓</span> <strong>Effect:</strong> Moves conversation forward constructively
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I want to be honest — we don't have all the answers yet..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Acknowledges uncertainty with humility
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I want to be honest — ..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "To be frank, ..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Builds credibility through honesty
+</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 3: Pronunciation Focus</h4>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Measured, thoughtful tone</div>
+<div class="detail">"I can see why both perspectives are important..." (Measured, not rushed — shows you're thinking)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Pause between contrasting points</div>
+<div class="detail">"On one hand... (pause) ...on the other hand..." (Pause emphasizes the contrast)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Rising intonation for proposals</div>
+<div class="detail">"What safeguards might help?" (Rising intonation invites collaboration)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Sincere tone for honesty markers</div>
+<div class="detail">"I want to be honest..." (Sincere, not defensive — builds trust)</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 4: Listening Strategy (3 passes)</h4>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 1: Nghe Validation</div>
+<div class="note"><strong>Focus:</strong> "I can see why...", "Those are valid concerns..."</div>
+<div class="note"><strong>Question:</strong> "Where do they validate different perspectives?"</div>
+<div class="note"><strong>Signal:</strong> Validation signals respect and keeps dialogue open</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 2: Nghe Balance</div>
+<div class="note"><strong>Focus:</strong> "On one hand... on the other hand...", "At the same time..."</div>
+<div class="note"><strong>Question:</strong> "Where do they present multiple perspectives?"</div>
+<div class="note"><strong>Signal:</strong> Balance signals intellectual honesty</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 3: Nghe Proposals</div>
+<div class="note"><strong>Focus:</strong> "What safeguards might help?", "What if we implemented..."</div>
+<div class="note"><strong>Question:</strong> "Where do they propose concrete solutions?"</div>
+<div class="note"><strong>Signal:</strong> Proposals signal problem-solving orientation</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 5: Shadowing Challenge</h4>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the spoken English rhythm, not just the words:</div>
+<div class="note">1. Listen to: "I can see why both perspectives are important. Let's think about who might be affected..."</div>
+<div class="note">2. Shadow: Match the measured, thoughtful tone</div>
+<div class="note">3. Focus: Stress on "important", "think", "affected"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different element (validation / assessment / proposal)</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 6: Outcome-based Questions</h4>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "I can see why both perspectives are important"?</div>
+<div class="note">✅ To validate multiple viewpoints and keep dialogue open. Shows respect.</div>
+<div class="note">2. What was the strategic goal of saying "On one hand... on the other hand..."?</div>
+<div class="note">✅ To present balanced perspective. Shows intellectual honesty and nuance.</div>
+<div class="note">3. How did you handle proposing safeguards?</div>
+<div class="note">✅ Said "What safeguards might help?" then gave concrete examples. Moves from problem to solution.</div>
+<div class="note">4. What was the trade-off of acknowledging uncertainty?</div>
+<div class="note">✅ Builds credibility through honesty, but may feel unsatisfying to those wanting definitive answers.</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Validating with "I can see why..."</h4>
+<div class="explanation">Used to acknowledge concerns without necessarily agreeing. Shows empathy while maintaining space for nuance.</div>
+<ul class="grammar-examples-list">
+<li>"I can see why job displacement is concerning."</li>
+<li>"I can see why both perspectives are important."</li>
+<li>"I can see why that feels threatening."</li>
+<li>"I can see why you're excited about this."</li>
+<li>"I can see why privacy is a concern."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "You're wrong to worry." (Dismissive)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "I can see why that's concerning — it's a valid worry."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Balancing with "On one hand... on the other hand..."</h4>
+<div class="explanation">Used to present multiple perspectives honestly. Shows you've thought about complexity.</div>
+<ul class="grammar-examples-list">
+<li>"On one hand, AI can process scans faster. On the other hand, if the training data is biased, it could perpetuate disparities."</li>
+<li>"On one hand, there are efficiency gains. On the other hand, we need to consider the human impact."</li>
+<li>"On one hand, the technology has creative applications. On the other, it could undermine trust."</li>
+<li>"While the benefits are significant, we also need to acknowledge the risks."</li>
+<li>"At the same time as we embrace innovation, we should remain cautious."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "It's all good" or "It's all bad." (One-sided)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "On one hand... on the other hand..."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Proposing with "What safeguards might help?"</h4>
+<div class="explanation">Used to shift from problem identification to solution generation. Shows proactive thinking.</div>
+<ul class="grammar-examples-list">
+<li>"What safeguards might help — like regular audits and human oversight?"</li>
+<li>"What if we implemented bias testing and transparency reports?"</li>
+<li>"Could we establish a human oversight committee?"</li>
+<li>"What measures could we put in place to address this?"</li>
+<li>"How might we balance efficiency with fairness?"</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "We need regulation." (Vague)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "What safeguards might help — like specific, concrete measures?"</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Acknowledging Uncertainty with "I want to be honest"</h4>
+<div class="explanation">Used to acknowledge what we don't know with humility. Builds credibility through honesty.</div>
+<ul class="grammar-examples-list">
+<li>"I want to be honest — we don't have all the answers yet."</li>
+<li>"I want to be honest — the long-term impacts are still uncertain."</li>
+<li>"To be frank, reasonable people disagree on this."</li>
+<li>"I'll be honest — it's still early days."</li>
+<li>"I want to acknowledge that we're navigating uncharted territory."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "AI will definitely do X." (False certainty)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "I want to be honest — we don't have perfect answers yet."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Moving Forward with "What we can do is..."</h4>
+<div class="explanation">Used to provide actionable guidance despite uncertainty. Shows leadership and practical wisdom.</div>
+<ul class="grammar-examples-list">
+<li>"What we can do is stay informed and make thoughtful decisions."</li>
+<li>"What we can do now is invest in safety research."</li>
+<li>"What we can do is proceed thoughtfully and adjust as we learn."</li>
+<li>"What we can do is ensure human agency is preserved."</li>
+<li>"What we can do is listen to affected communities and adapt."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "We should wait and see." (Passive)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "What we can do is take concrete, thoughtful action now."</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Friend Worried About AI Replacing Artists</h3>
+<p class="scenario-context">Your artist friend is anxious about AI image generators. Respond with balance and empathy.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Validate + Balance</span>
+<span class="response">"I can see why AI image generators feel threatening — it's a valid concern. At the same time, some artists are using AI as a tool to enhance their work."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Propose + Acknowledge Uncertainty</span>
+<span class="response">"What if we advocated for clear attribution standards and artist compensation? I want to be honest — we don't have all the answers yet, but we can stay informed and push for ethical practices."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Dismissing concerns or panicking.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Team Anxious About AI Customer Service</h3>
+<p class="scenario-context">Your team is worried about AI chatbots replacing jobs. Address concerns while explaining the plan.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Acknowledge + Balance</span>
+<span class="response">"I understand there are concerns — those are valid. On one hand, AI can handle routine inquiries. On the other hand, I understand the worry about displacement."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Propose Safeguards + Next Steps</span>
+<span class="response">"What safeguards might help? We're planning retraining, gradual rollout, and human oversight. Let's schedule a Q&A to discuss further."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Dismissing job security concerns.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Teen Asking About AI's Future</h3>
+<p class="scenario-context">Your teenager asks if AI will take over the world. Respond with honesty and nuance.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Validate + Balance</span>
+<span class="response">"I can see why that's concerning — it's a valid question. On one hand, AI has amazing potential. On the other, there are real risks we should take seriously."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Acknowledge Uncertainty + Empower</span>
+<span class="response">"I want to be honest — we don't have all the answers. What we can do is stay informed, think critically, and make sure humans stay in control of important decisions."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Pretending certainty or dismissing the question.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario — Family + Board</h3>
+<p class="scenario-context">Morning: Family discussion about AI in schools. Afternoon: Board discussion about AI hiring tools.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Morning (Life — Warm, validating, educational)</span>
+<span class="response">"I can see why both of you have different perspectives. Let's think about who might be affected. What safeguards might help?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Afternoon (Business — Professional, strategic, actionable)</span>
+<span class="response">"I can see why both perspectives are important. Let's assess stakeholders. What safeguards might help — like bias audits and human oversight?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Reflection</span>
+<span class="response">How did your approach change? Life = more educational, validating emotions. Business = more strategic, focusing on implementation. Both = balanced, proposing safeguards.</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Using the same register for both contexts.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The AI Ethics Challenge</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 The AI Ethics Audit</h3>
+<p class="task-time">⏱️ 15 minutes</p>
+<p class="task-desc">Identify 1 AI ethics discussion you've had recently. Apply the 5 lenses. What decisions did you make? Note the trade-offs.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the AI ethics discussion situation</li>
+<li>Apply the 5 lenses (Assess Stakeholders, Frame Concerns, Balance Perspectives, Propose Safeguards, Manage Uncertainty)</li>
+<li>What decisions did you make?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</p>
+<div class="sample-answer">
+<h5> Sample Answer</h5>
+<p class="answer-text">"My friend was worried about AI replacing artists. I assessed stakeholders (artists, users, companies). I framed concerns honestly ('It's a valid concern'). I balanced perspectives ('On one hand... on the other hand...'). I proposed safeguards ('What if we advocated for attribution standards?'). I acknowledged uncertainty ('We don't have all the answers yet'). Trade-off: Took more time than just agreeing or dismissing, but led to more thoughtful conversation."</p>
+</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The AI Ethics Practice</h3>
+<p class="task-time">⏱️ 30 minutes</p>
+<p class="task-desc">Role-play an AI ethics scenario. Practice the 5-step loop. Get feedback on your balance and nuance.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose an AI ethics scenario</li>
+<li>Practice all 5 steps of the loop</li>
+<li>Get feedback on your balance and nuance</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Role-play: Team anxious about AI customer service. I practiced acknowledging concerns ('Those are valid concerns'). I practiced balancing ('On one hand... on the other hand...'). I practiced proposing safeguards ('What if we implemented retraining and human oversight?'). Feedback: I was balanced, but I could improve my concrete proposals — I was a bit vague on specifics."</p>
+</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real AI Ethics Discussion</h3>
+<p class="task-time">️ 60 minutes</p>
+<p class="task-desc">This week, have an actual AI ethics discussion with someone. Use the 5-step framework. Note what worked, what didn't, and what you learned about your default style.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify an actual AI ethics discussion to have</li>
+<li>Apply the 5-step framework in real-time</li>
+<li>Use the framework (Assess, Frame, Balance, Propose, Manage Uncertainty)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default style?</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Real discussion: Family debate about AI in schools. I applied the 5-step framework: 1) Assessed stakeholders (students, teachers, parents). 2) Framed concerns ('Those are valid concerns'). 3) Balanced ('On one hand... on the other hand...'). 4) Proposed safeguards ('What if we required clear data policies and bias audits?'). 5) Managed uncertainty ('We don't have all the answers yet'). What worked: Validating both perspectives kept dialogue open. What didn't: I could have been more specific on safeguards. What I learned: My default style is to balance well, but I sometimes struggle with concrete proposals."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> AI Ethics Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I assess stakeholders broadly</h4>
+<p>I think about who's affected — not just obvious groups, but indirect and long-term impacts.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I frame concerns honestly</h4>
+<p>I validate worries without panicking or dismissing. I present issues with nuance.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I balance multiple perspectives</h4>
+<p>I show both benefits and risks. I avoid one-sided arguments.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I propose concrete safeguards</h4>
+<p>I suggest specific, implementable measures — not vague ideals.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I manage uncertainty with humility</h4>
+<p>I acknowledge what we don't know. I avoid false certainty.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently discuss AI and emerging tech ethics with nuance and balance, you are ready for Day 119: Week 17 Review and Integration.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> Friend worried about AI replacing jobs</p>
+<button>Tap to reveal AI Ethics Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "AI will take all our jobs!" or "It's just a tool, stop worrying."</p>
+<p><strong>C1 Language:</strong> Assess → Frame → Balance → Propose → Manage Uncertainty.<br>
+"I can see why job displacement is concerning — it's a valid worry. At the same time, history shows technology often creates new roles. What safeguards might help — like retraining programs and transition support? I want to be honest — we don't have all the answers yet, but we can stay informed and shape the transition thoughtfully."</p>
+<p><strong>Trade-off:</strong> Takes more time than reacting, but leads to more thoughtful decisions.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In AI ethics discussions, assessing stakeholders shows ethical awareness. Framing honestly validates concerns. Balancing perspectives shows nuance. Proposing safeguards provides path forward. Acknowledging uncertainty builds credibility.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Discussing AI and Emerging Tech Ethically</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Friend worried about AI replacing artists. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "AI will destroy all creative jobs!"</div>
+<div class="quiz-option">B. "I can see why that's concerning — it's a valid worry. At the same time, some artists are using AI as a tool. What if we advocated for clear attribution standards?"</div>
+<div class="quiz-option">C. "It's just a tool, stop worrying."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Team anxious about AI customer service. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Don't worry, it won't affect your jobs."</div>
+<div class="quiz-option">B. "I understand there are concerns — those are valid. On one hand, AI can handle routine inquiries. On the other, I understand the worry. What safeguards might help — like retraining and human oversight?"</div>
+<div class="quiz-option">C. "We need to move fast regardless."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Board discussing AI hiring tools. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Let's just implement it quickly."</div>
+<div class="quiz-option">B. "I can see why both perspectives are important. Let's assess stakeholders. What safeguards might help — like bias audits and human oversight?"</div>
+<div class="quiz-option">C. "AI hiring is too risky, let's not do it."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Teen asking if AI will take over. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Yes, AI will definitely become superintelligent."</div>
+<div class="quiz-option">B. "I want to be honest — we don't have all the answers. On one hand, AI has amazing potential. On the other, there are real risks. What we can do is stay informed and ensure humans stay in control."</div>
+<div class="quiz-option">C. "No, that's just science fiction."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Colleague wants to adopt AI tool without considering privacy. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "That's a terrible idea."</div>
+<div class="quiz-option">B. "I can see why you're excited — the efficiency gains look significant. At the same time, who might be affected? What if we conducted a privacy assessment and tested for bias first?"</div>
+<div class="quiz-option">C. "Sure, let's just do it."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Handling uncertainty about AI's long-term impacts. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "AI will definitely do X in 10 years."</div>
+<div class="quiz-option">B. "I want to be honest — we don't have all the answers yet. What we can do is stay informed, invest in safety research, and make decisions that preserve human agency."</div>
+<div class="quiz-option">C. "Nobody knows, so why bother thinking about it?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of balancing perspectives?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Shows intellectual honesty and builds trust, but may seem indecisive if not paired with clear recommendations.</div>
+<div class="quiz-option">B. Saves time but may alienate one side.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of acknowledging uncertainty?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Builds credibility through honesty, but may feel unsatisfying to those wanting definitive answers.</div>
+<div class="quiz-option">B. Provides certainty but may be wrong.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Những biện pháp bảo vệ nào có thể giúp ích"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. What safeguards might help</div>
+<div class="quiz-option">B. I want to be honest</div>
+<div class="quiz-option">C. On one hand... on the other hand</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+<div class="day-navigation">
+<a href="week-17-day-117.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 117: Navigating Online Conflicts and Misinformation</div>
+</a>
+<a href="week-17-day-119.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 119: Week 17 Review and Integration</div>
+</a>
+</div>
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 118 Complete & Continue to Day 119</button>
+<p class="complete-message">B2 speakers react to AI ethics debates. C1 speakers navigate them with nuance. 🤖</p>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="footer-fox"></div>
+<p class="footer-title">Professional Fluency Roadmap</p>
+<p class="footer-tagline">Week 17 · Day 118 · Discussing AI and Emerging Tech Ethically</p>
+</div>
+</footer>
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+const textContent = {
+'lens1': 'Lens 1: Assessing Stakeholders. Who is actually affected by this technology? Before we dive in, let us think about who might be affected — not just the workers, but also the users, the communities, and future generations. What groups should we consider?',
+'lens2': 'Lens 2: Framing Concerns Honestly. How do I raise concerns without panic? I can see why job displacement is concerning — it is a valid worry. At the same time, history shows technology often creates new roles even as it changes existing ones. The question is how we manage the transition.',
+'lens3': 'Lens 3: Balancing Perspectives. How do I show multiple sides without being wishy-washy? On one hand, AI can process medical scans faster and more accurately than humans, potentially saving lives. On the other hand, if the training data is biased, it could perpetuate healthcare disparities. Both realities are true simultaneously.',
+'lens4': 'Lens 4: Proposing Practical Safeguards. What concrete measures can we actually implement? What if we implemented regular algorithmic audits, required transparency reports, and established a human oversight committee? These are concrete steps that could help us catch bias early while still benefiting from the technology.',
+'lens5': 'Lens 5: Managing Uncertainty with Humility. How do I handle what we do not know yet? I want to be honest — we do not have all the answers yet. The long-term impacts of generative AI on creative work are still unfolding. What we can do is stay informed, remain adaptable, and make decisions that preserve human agency while we learn.',
+'valid-concern': 'valid concern',
+'one-hand': 'on one hand... on the other hand',
+'same-time': 'at the same time',
+'safeguards': 'what safeguards might help',
+'what-if': 'what if we implemented',
+'proceed': 'proceed thoughtfully',
+'honest': 'I want to be honest',
+'answers': 'we do not have all the answers',
+'stay-informed': 'stay informed',
+'dialogue1': 'Dialogue 1: Family Discussion About AI in Schools. Teen: The school wants to use AI tutors. I think it is cool — it could help me learn faster. Parent: I do not know... I am worried it will replace teachers and make education impersonal. You: I can see why both of you have different perspectives. Let us think about who might be affected — students, teachers, parents. What are the potential benefits and concerns? Teen: Well, it could give me personalized help when I am stuck. Parent: But what about data privacy? And what if it is biased? You: Those are valid concerns. On one hand, AI tutors can provide personalized support that teachers sometimes can not give to every student. On the other hand, we need to think about data privacy and potential bias. What safeguards might help — like clear data policies, regular bias audits, and keeping teachers in the loop? Teen: I guess that makes sense. I would not want it to replace teachers completely. You: Exactly. What if we thought of it as a tool to support teachers, not replace them? And I want to be honest — we do not have all the answers about long-term impacts yet. What we can do is stay informed, ask the school good questions, and make sure students voices are heard in the decision.',
+'dialogue2': 'Dialogue 2: Board Discussion About AI Hiring Tools. CEO: AI hiring tools could cut our recruitment time in half. We should move fast. HR Director: I am worried about bias. What if the AI discriminates against certain candidates? You: I can see why both perspectives are important. Before we decide, let us think about who might be affected — candidates, our HR team, the company reputation, and legal compliance. What are the potential benefits and risks? CEO: The efficiency gains are significant. We could screen more candidates faster. HR Director: But if the training data is biased, we could perpetuate discrimination without realizing it. You: Those are both valid points. On one hand, AI can process applications faster and potentially reduce human bias in initial screening. On the other hand, if the training data reflects historical inequalities, the AI could amplify them. What safeguards might help — like regular bias audits, diverse training data reviews, and human oversight for final decisions? CEO: That makes sense. We should not move so fast that we create problems. You: Exactly. What if we piloted the tool with strict safeguards first, measured outcomes carefully, and adjusted based on what we learn? And I want to be honest — we do not have perfect answers about long-term impacts yet. What we can do is proceed thoughtfully, stay informed about best practices, and make decisions that balance efficiency with fairness.'
+};
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+</body>
+</html>

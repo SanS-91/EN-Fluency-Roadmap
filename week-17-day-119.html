@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 17 Day 119: Teach Someone a Tech Skill | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--text-highlight: #7C3AED;
+--text-error: #DC2626;
+--text-success: #059669;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 800px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.reading-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.move-highlight.move4 { background: #10B981; }
+.move-highlight.move5 { background: #F59E0B; }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--text-highlight); font-weight: 700; display: block; margin: 6px 0; }
+.deep-dive-item .analysis strong { color: var(--text-primary); display: block; margin-top: 10px; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.sample-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-top: 16px; border-left: 4px solid #10B981; }
+.sample-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.sample-answer .answer-text { font-size: 13px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+<div class="container">
+<a href="week-17.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 17 Hub</a>
+<div class="day-indicator">Day 119 / 119</div>
+</div>
+</nav>
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-17.html" class="day-tab">Overview</a>
+<a href="week-17-day-113.html" class="day-tab">Day 113</a>
+<a href="week-17-day-114.html" class="day-tab">Day 114</a>
+<a href="week-17-day-115.html" class="day-tab">Day 115</a>
+<a href="week-17-day-116.html" class="day-tab">Day 116</a>
+<a href="week-17-day-117.html" class="day-tab">Day 117</a>
+<a href="week-17-day-118.html" class="day-tab">Day 118</a>
+<a href="week-17-day-119.html" class="day-tab active">Day 119</a>
+</div>
+</div>
+</div>
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-17.html">Week 17</a> › Day 119
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🎓</span>
+<h1 class="day-title">Teach Someone a Tech Skill</h1>
+</div>
+<p class="day-subtitle">Days 113-118 taught you to explain tech, craft analogies, discuss privacy, set boundaries, navigate conflicts, and debate AI ethics. Day 119 focuses on the practical act of <strong>teaching a tech skill step-by-step</strong> — scaffolding the lesson, checking understanding, and empowering the learner. B2 speakers rush or do it for them. C1 speakers guide patiently, verify comprehension, and build the learner's confidence.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Tech Pedagogy + Scaffolding + Empowerment</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Tech Simplification Day 7 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Rushes through steps or takes over. Says "Just click here, then here, okay done!" and grabs the mouse. Leaves the learner dependent and confused.<br><br><strong>C1 Speaker:</strong> Breaks the skill into small steps, demonstrates once, guides the learner through it, and then lets them do it independently. Says "Let's break this down. First, what do you see on the screen? Great, now let's try clicking that together."<br><br>"B2 speakers do it for them. C1 speakers teach them how. The difference isn't technical knowledge — it's patience and pedagogy."</div>
+</div>
+<div class="quote">"Do it for them, and they'll ask again tomorrow. Teach them how, and they'll never need to ask again."</div>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Teaching Tech = Scaffolding + Demonstrating + Guiding + Releasing</h3>
+<p class="philosophy-text">"Teaching a tech skill isn't about showing how fast you can do it. It's about breaking it down, demonstrating clearly, guiding them through it, and empowering them to do it themselves."</p>
+<p class="philosophy-text">Every tech teaching session requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Scaffolding Decision:</strong> How do I break this into small, manageable steps?</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Pacing Decision:</strong> How fast should we go? (Rushed? Patient?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Checking Decision:</strong> How do I verify they understand each step?</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Empowering Decision:</strong> How do I build their confidence to do it alone?</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Feedback Decision:</strong> How do I correct mistakes without discouraging them?</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 119 teaches you how to teach tech skills with patience, clarity, and empowering language.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">🎓</div>
+<div class="plan-title">Teaching Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Scaffold → Demonstrate → Guide → Release</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">👁️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔍</div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎧</div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📝</div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Teaching Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 4-step process for teaching a tech skill</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">SCAFFOLD (Break it down)</div>
+<div class="loop-step-desc">How do I break it into steps? "Let's break this down into three simple parts..." / "First, we'll just look at the menu..." (Chunk the skill)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">DEMONSTRATE (Show once)</div>
+<div class="loop-step-desc">How do I show it? "Watch me do it once first..." / "I'll click through it while you watch..." (Model the action)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">GUIDE (Do it together)</div>
+<div class="loop-step-desc">How do we do it together? "Now let's try it together. You tell me what to click..." / "Your turn — I'll guide you..." (Scaffolded practice)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">RELEASE (Let them do it)</div>
+<div class="loop-step-desc">How do I let them fly? "Now you try it on your own. I'll just watch..." / "You've got this — give it a go!" (Independent practice)</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Teaching Lenses (3-Level Examples)</h2>
+</div>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">Every tech teaching session requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+<div class="lenses-grid">
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Scaffolding the Steps <button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I break this into manageable chunks?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Scaffolding Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"First do this, then this, then this."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Let's break this down into a few simple steps."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Let's break this down into three simple parts. First, we'll just get familiar with the menu. Once you're comfortable there, we'll look at the settings. Sound good?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Teaching parent to use a new app. Decision: Chunking ("Let's break this down into three simple parts...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Teaching colleague a new software. Decision: Professional scaffolding ("We'll tackle this in phases...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Scaffolded):</strong> Prevents overwhelm, builds confidence step-by-step.</div>
+<div class="compare-level weak"><strong>Lose (Scaffolded):</strong> Takes more time than just showing it all at once.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Showing all steps at once. Native speakers chunk the skill into small, digestible parts.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I scaffolding or overwhelming?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Pacing the Lesson <button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How fast should we go?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Pacing Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Hurry up, click it."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Take your time, no rush."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Take your time — there's no rush. We'll go at your pace, and we can always pause if you need a moment to process."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Teaching grandma to use a smartphone. Decision: Patient pacing ("Take your time — there's no rush...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Onboarding new hire to software. Decision: Professional pacing ("Let's move at a pace that works for you...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Patient):</strong> Reduces anxiety, improves retention.</div>
+<div class="compare-level weak"><strong>Lose (Patient):</strong> Takes more time; may feel slow for quick learners.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Rushing the learner. Native speakers let the learner set the pace.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I pacing well or rushing?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Checking Understanding <button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I verify they get each step?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Checking Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Do you understand?"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Does that make sense so far?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Before we move on, could you show me how you'd do that step? I just want to make sure I explained it clearly."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Teaching teen to code. Decision: Active checking ("Could you show me how you'd do that step?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Teaching team a new workflow. Decision: Professional checking ("Let's do a quick practice run...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Active Check):</strong> Catches misunderstandings early, ensures retention.</div>
+<div class="compare-level weak"><strong>Lose (Active Check):</strong> May feel like a test if not framed gently.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Asking "Do you understand?" (puts pressure to say yes). Native speakers ask them to demonstrate.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I checking or assuming?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Empowering the Learner <button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I build their confidence?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Empowering Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Good job."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"You're doing great, keep going."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"You're doing brilliantly — see how quickly you picked that up? You've absolutely got this. Why don't you try the next step on your own?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Parent learning to video call. Decision: Specific praise ("You're doing brilliantly — see how quickly you picked that up?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Colleague learning Excel. Decision: Professional empowerment ("You've got the hang of it...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Empowered):</strong> Builds independence, reduces future dependency on you.</div>
+<div class="compare-level weak"><strong>Lose (Empowered):</strong> Requires genuine encouragement; fake praise feels patronizing.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Taking over when they struggle. Native speakers encourage them to push through.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I empowering or taking over?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Handling Mistakes Gracefully <button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I correct them without discouraging them?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Feedback Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"No, that's wrong. Do it this way."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Not quite, try clicking the other button."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"You're on the right track! Actually, for this specific step, we want to click the blue button instead. It's an easy mix-up — let's try it together."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Teen makes a coding error. Decision: Positive correction ("You're on the right track! Actually...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Colleague uses wrong formula. Decision: Professional feedback ("Good approach, but for this data set...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Graceful):</strong> Maintains confidence, encourages risk-taking.</div>
+<div class="compare-level weak"><strong>Lose (Graceful):</strong> Takes more words; may feel indirect to some.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Saying "No, that's wrong." Native speakers validate the effort before correcting.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I correcting gracefully or harshly?</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy tech teaching</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Doing It For Them</h4>
+<div class="mistake-wrong">❌ "Give me the mouse, I'll just do it."</div>
+<div class="mistake-right">✅ "You tell me what to click, and I'll guide you. Your turn!"</div>
+<div class="mistake-why">Why: Doing it for them creates dependency. Guiding them builds independence and muscle memory.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Moving Too Fast</h4>
+<div class="mistake-wrong">❌ "Just click here, then here, then here, okay done!"</div>
+<div class="mistake-right">✅ "Let's take it one step at a time. First, let's just find the menu. Got it? Great, now...""</div>
+<div class="mistake-why">Why: Rushing overwhelms the learner. Pacing ensures they actually retain the skill.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Using Jargon Without Checking</h4>
+<div class="mistake-wrong">❌ "Just clear the cache and reset the DNS."</div>
+<div class="mistake-right">✅ "We need to clear out some temporary files — think of it like cleaning out a junk drawer. Ready to try?"</div>
+<div class="mistake-why">Why: Jargon creates confusion and makes the learner feel stupid. Plain language builds understanding.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Teaching Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Teaching parent to use Zoom</td>
+<td>"Just click the link."</td>
+<td>"Let me show you how."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Let's break this down. First, let's just find the app icon. Got it? Great. Now, let's try clicking it together. You tell me when you're ready for the next step."</span>
+<span class="why">Why: Scaffolds, paces well, empowers.</span>
+</div>
+</td>
+<td>Scaffolds + empowers</td>
+<td>"Let's break this down..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>2. Teaching colleague Excel shortcut</td>
+<td>"Just press Ctrl+Shift+L."</td>
+<td>"Here, watch me do it."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Watch me do it once first. See how I highlight the data, then press Ctrl+Shift+L? Now you try it on your sheet. I'll watch."</span>
+<span class="why">Why: Demonstrates, then releases.</span>
+</div>
+</td>
+<td>Demonstrates + releases</td>
+<td>"Watch me do it once..."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>3. Teaching teen to code</td>
+<td>"Your code is wrong, fix it."</td>
+<td>"Try looking at line 5."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"You're on the right track! Actually, there's a small typo on line 5. What do you think happens if we change that semicolon to a comma? Let's test it."</span>
+<span class="why">Why: Positive correction, encourages problem-solving.</span>
+</div>
+</td>
+<td>Positive correction + inquiry</td>
+<td>"You're on the right track..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>4. Teaching grandma smartphone</td>
+<td>"Just swipe up."</td>
+<td>"Let me do it for you."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Take your time — there's no rush. Place your finger at the bottom, and gently slide it up. Perfect! You've got the hang of it."</span>
+<span class="why">Why: Patient pacing, specific praise.</span>
+</div>
+</td>
+<td>Patient + specific praise</td>
+<td>"Take your time..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>5. Teaching team new software</td>
+<td>"Read the manual."</td>
+<td>"I'll send a tutorial video."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Let's tackle this in phases. Today, we'll just get comfortable with the dashboard. Next week, we'll look at the reporting features. Sound good?"</span>
+<span class="why">Why: Phased scaffolding, checks buy-in.</span>
+</div>
+</td>
+<td>Phased scaffolding</td>
+<td>"Let's tackle this in phases..."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>6. Friend keeps asking for tech help</td>
+<td>"I already showed you this!"</td>
+<td>"Let me show you again."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'm happy to help! This time, why don't you drive? Tell me what you'd click first, and I'll guide you. That way it'll stick better."</span>
+<span class="why">Why: Shifts from doing to guiding.</span>
+</div>
+</td>
+<td>Shifts to guiding</td>
+<td>"Why don't you drive?..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>7. Learner makes a mistake</td>
+<td>"No, that's wrong."</td>
+<td>"Try the other button."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"You're on the right track! Actually, for this step, we want the blue button. It's an easy mix-up — let's try it together."</span>
+<span class="why">Why: Validates effort, corrects gently.</span>
+</div>
+</td>
+<td>Validates + corrects gently</td>
+<td>"You're on the right track..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>8. Learner feels overwhelmed</td>
+<td>"It's really easy, don't worry."</td>
+<td>"We can stop if you want."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"It's completely normal to feel overwhelmed at first — there's a lot to take in. Why don't we pause here, and you can practice just this first part? You're doing great."</span>
+<span class="why">Why: Validates feelings, chunks the task.</span>
+</div>
+</td>
+<td>Validates + chunks task</td>
+<td>"It's completely normal..."</td>
+<td>Casual</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title">🏠 Case 1: Life - Teaching Parent to Use Video Calls</h4>
+<div class="case-context"><strong>Context:</strong> Your mom wants to learn how to use Zoom to call her grandchildren. You need to teach her step-by-step without making her feel stupid or overwhelmed.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Mom, I'm so glad you want to learn this. Let's break it down into three simple parts. First, we'll just get familiar with the app icon. Once you're comfortable there, we'll look at how to join a call. Sound good?"</p>
+<p><span class="speaker">Mom:</span> "Okay, but what if I press the wrong thing and break it?"</p>
+<p><span class="speaker">You:</span> "You can't break it, I promise! Take your time — there's no rush. We'll go at your pace. First, can you find the blue icon that looks like a camera? Point to it."</p>
+<p><span class="speaker">Mom:</span> "This one?"</p>
+<p><span class="speaker">You:</span> "Perfect! You found it. Now, let's try tapping it together. Go ahead — your turn."</p>
+<p><span class="speaker">Mom:</span> (Taps) "Oh, it opened!"</p>
+<p><span class="speaker">You:</span> "Brilliant! See how quickly you picked that up? Now, before we move on, could you close it and open it again by yourself? I just want to make sure that first step feels solid."</p>
+<p><span class="speaker">Mom:</span> (Does it) "Like this?"</p>
+<p><span class="speaker">You:</span> "Exactly! You've absolutely got this. Now, let's look at the next part..."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"Let's break this down into three simple parts."</strong><span class="meaning">Hãy chia nhỏ điều này thành ba phần đơn giản.</span><span class="register">Register: Casual · Scaffold</span></li>
+<li><strong>"Once you're comfortable there..."</strong><span class="meaning">Một khi bạn đã thoải mái với phần đó...</span><span class="register">Register: Casual · Scaffold</span></li>
+<li><strong>"Take your time — there's no rush."</strong><span class="meaning">Cứ từ từ — không cần vội.</span><span class="register">Register: Casual · Pace</span></li>
+<li><strong>"We'll go at your pace."</strong><span class="meaning">Chúng ta sẽ đi theo tốc độ của bạn.</span><span class="register">Register: Casual · Pace</span></li>
+<li><strong>"You can't break it, I promise!"</strong><span class="meaning">Bạn không thể làm hỏng nó đâu, tôi hứa!</span><span class="register">Register: Casual · Reassure</span></li>
+<li><strong>"Perfect! You found it."</strong><span class="meaning">Tuyệt vời! Bạn tìm thấy rồi.</span><span class="register">Register: Casual · Praise</span></li>
+<li><strong>"Go ahead — your turn."</strong><span class="meaning">Cứ tiếp tục — đến lượt bạn.</span><span class="register">Register: Casual · Release</span></li>
+<li><strong>"Brilliant! See how quickly you picked that up?"</strong><span class="meaning">Tuyệt! Thấy chưa, bạn học nhanh thế nào?</span><span class="register">Register: Casual · Empower</span></li>
+<li><strong>"Before we move on, could you...?"</strong><span class="meaning">Trước khi chúng ta chuyển sang phần khác, bạn có thể...?</span><span class="register">Register: Casual · Check</span></li>
+<li><strong>"I just want to make sure that first step feels solid."</strong><span class="meaning">Tôi chỉ muốn đảm bảo bước đầu tiên thật vững.</span><span class="register">Register: Casual · Check</span></li>
+<li><strong>"Exactly! You've absolutely got this."</strong><span class="meaning">Chính xác! Bạn hoàn toàn làm được mà.</span><span class="register">Register: Casual · Empower</span></li>
+<li><strong>"Let's tackle this in phases."</strong><span class="meaning">Hãy giải quyết từng giai đoạn một.</span><span class="register">Register: Casual · Scaffold</span></li>
+<li><strong>"You're on the right track!"</strong><span class="meaning">Bạn đang đi đúng hướng rồi!</span><span class="register">Register: Casual · Feedback</span></li>
+<li><strong>"It's an easy mix-up."</strong><span class="meaning">Dễ nhầm thôi mà.</span><span class="register">Register: Casual · Feedback</span></li>
+<li><strong>"It's completely normal to feel overwhelmed."</strong><span class="meaning">Hoàn toàn bình thường khi cảm thấy choáng ngợp.</span><span class="register">Register: Casual · Reassure</span></li>
+<li><strong>"Why don't you drive?"</strong><span class="meaning">Sao bạn không tự làm đi?</span><span class="register">Register: Casual · Release</span></li>
+<li><strong>"I'll guide you."</strong><span class="meaning">Tôi sẽ hướng dẫn bạn.</span><span class="register">Register: Casual · Guide</span></li>
+<li><strong>"That way it'll stick better."</strong><span class="meaning">Như vậy sẽ nhớ lâu hơn.</span><span class="register">Register: Casual · Explain</span></li>
+<li><strong>"Let's test it."</strong><span class="meaning">Hãy thử xem sao.</span><span class="register">Register: Casual · Check</span></li>
+<li><strong>"You're doing great."</strong><span class="meaning">Bạn làm tốt lắm.</span><span class="register">Register: Casual · Praise</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Teaching Colleague a New Software Tool</h4>
+<div class="case-context"><strong>Context:</strong> Your company adopted a new project management tool. Your colleague is struggling with it. You need to teach them the basics without making them feel incompetent.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Hey, I know this new tool has a bit of a learning curve. Let's tackle this in phases. Today, we'll just get comfortable with creating tasks. Next week, we'll look at the reporting features. Sound good?"</p>
+<p><span class="speaker">Colleague:</span> "Yeah, I just feel like I'm clicking randomly and nothing makes sense."</p>
+<p><span class="speaker">You:</span> "That's completely normal — the interface isn't very intuitive at first. Watch me do it once first. See how I click 'New Task' here, then fill in these three fields? Now you try it on your project. I'll watch."</p>
+<p><span class="speaker">Colleague:</span> (Clicks) "Like this?"</p>
+<p><span class="speaker">You:</span> "You're on the right track! Actually, for the due date, we want to use this calendar picker instead of typing it. It's an easy mix-up. Let's try it together."</p>
+<p><span class="speaker">Colleague:</span> (Does it) "Oh, that's much easier."</p>
+<p><span class="speaker">You:</span> "Exactly! You've got the hang of it. Before we move on, why don't you create one more task on your own? I'll just be here if you get stuck."</p>
+<p><span class="speaker">Colleague:</span> (Does it) "Okay, I think I've got it now."</p>
+<p><span class="speaker">You:</span> "Brilliant! See, you picked that up really quickly. If you ever forget, just message me and we can do a quick refresher."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"Let's tackle this in phases."</strong><span class="meaning">Hãy giải quyết từng giai đoạn một.</span><span class="register">Register: Professional · Scaffold</span></li>
+<li><strong>"Today, we'll just get comfortable with..."</strong><span class="meaning">Hôm nay, chúng ta chỉ cần làm quen với...</span><span class="register">Register: Professional · Scaffold</span></li>
+<li><strong>"That's completely normal."</strong><span class="meaning">Điều đó hoàn toàn bình thường.</span><span class="register">Register: Professional · Reassure</span></li>
+<li><strong>"Watch me do it once first."</strong><span class="meaning">Hãy xem tôi làm một lần trước.</span><span class="register">Register: Professional · Demonstrate</span></li>
+<li><strong>"See how I click...?"</strong><span class="meaning">Thấy tôi click... không?</span><span class="register">Register: Professional · Demonstrate</span></li>
+<li><strong>"Now you try it on your project."</strong><span class="meaning">Bây giờ bạn thử trên dự án của bạn xem.</span><span class="register">Register: Professional · Release</span></li>
+<li><strong>"You're on the right track!"</strong><span class="meaning">Bạn đang đi đúng hướng rồi!</span><span class="register">Register: Professional · Feedback</span></li>
+<li><strong>"It's an easy mix-up."</strong><span class="meaning">Dễ nhầm thôi mà.</span><span class="register">Register: Professional · Feedback</span></li>
+<li><strong>"You've got the hang of it."</strong><span class="meaning">Bạn nắm được cách làm rồi.</span><span class="register">Register: Professional · Empower</span></li>
+<li><strong>"Why don't you create one more task on your own?"</strong><span class="meaning">Sao bạn không tự tạo thêm một task nữa?</span><span class="register">Register: Professional · Release</span></li>
+<li><strong>"I'll just be here if you get stuck."</strong><span class="meaning">Tôi sẽ ở đây nếu bạn bị vướng.</span><span class="register">Register: Professional · Reassure</span></li>
+<li><strong>"You picked that up really quickly."</strong><span class="meaning">Bạn học cái đó rất nhanh.</span><span class="register">Register: Professional · Empower</span></li>
+<li><strong>"If you ever forget..."</strong><span class="meaning">Nếu bao giờ bạn quên...</span><span class="register">Register: Professional · Reassure</span></li>
+<li><strong>"We can do a quick refresher."</strong><span class="meaning">Chúng ta có thể ôn lại nhanh.</span><span class="register">Register: Professional · Reassure</span></li>
+<li><strong>"The interface isn't very intuitive."</strong><span class="meaning">Giao diện không trực quan lắm.</span><span class="register">Register: Professional · Reassure</span></li>
+<li><strong>"Let's try it together."</strong><span class="meaning">Hãy thử cùng nhau.</span><span class="register">Register: Professional · Guide</span></li>
+<li><strong>"Before we move on..."</strong><span class="meaning">Trước khi chúng ta chuyển sang phần khác...</span><span class="register">Register: Professional · Check</span></li>
+<li><strong>"I know this has a bit of a learning curve."</strong><span class="meaning">Tôi biết cái này có chút đường cong học tập.</span><span class="register">Register: Professional · Reassure</span></li>
+<li><strong>"Actually, for the due date..."</strong><span class="meaning">Thực ra, đối với ngày đến hạn...</span><span class="register">Register: Professional · Feedback</span></li>
+<li><strong>"Sound good?"</strong><span class="meaning">Nghe ổn không?</span><span class="register">Register: Professional · Check</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Teaching Messages</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Write a Step-by-Step Guide for a Parent</h4>
+<p class="task-context"><strong>Context:</strong> Your dad wants to learn how to order food online. Write a simple, encouraging step-by-step message.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 scaffolding structure</li>
+<li>Use 1 empowering structure</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi Dad! Let's break this down into three simple parts. First, we'll just open the app. Once you're comfortable there, we'll look at the menu. Take your time — there's no rush. Step 1: Find the green icon and tap it. Perfect! Step 2: Tap 'Restaurants' at the top. You're doing brilliantly! Step 3: Choose a restaurant. You've absolutely got this. Why don't you try it on your own and let me know when you're ready for the next part? I'll just be here if you get stuck."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Scaffolding:</strong> "Let's break this down into three simple parts."</li>
+<li><strong>Collocations:</strong> "take your time", "you've got this", "get stuck"</li>
+<li><strong>Empowering:</strong> "You're doing brilliantly!"</li>
+<li><strong>Releasing:</strong> "Why don't you try it on your own?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"Hey Dad! Let's take this one step at a time. First, just open the app. No rush! Find the green icon and tap it. Great job! Next, tap 'Restaurants'. You're doing great. Try it yourself and tell me when you're ready for the next bit. I'm here if you need me!"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 scaffolding structure</li>
+<li>□ có 1 empowering structure</li>
+<li>□ có scaffold → demonstrate → guide → release</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Offer to Teach a Colleague</h4>
+<p class="task-context"><strong>Context:</strong> A colleague is struggling with a new software. Write a Slack message offering to teach them.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 reassuring structure</li>
+<li>Use 1 scaffolding structure</li>
+<li>Length: 120-170 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hey [Name], I know this new tool has a bit of a learning curve, and that's completely normal. If you'd like, I can walk you through it. Let's tackle this in phases — today we'll just get comfortable with the basics, and we can look at the advanced features next week. Why don't we grab 15 minutes this afternoon? You can drive, and I'll guide you. That way it'll stick better. No pressure though — just let me know what works for you!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Reassuring:</strong> "that's completely normal."</li>
+<li><strong>Collocations:</strong> "learning curve", "tackle this in phases", "get comfortable"</li>
+<li><strong>Scaffolding:</strong> "Let's tackle this in phases..."</li>
+<li><strong>Empowering:</strong> "You can drive, and I'll guide you."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Hi [Name], I understand the new software can be challenging at first. I'd be happy to schedule a brief training session. We can break it down into manageable phases, starting with the core functions. Please let me know your availability."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (120-170 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 reassuring structure</li>
+<li>□ có 1 scaffolding structure</li>
+<li>□ có reassure → offer → scaffold → empower</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Correct a Mistake Gracefully</h4>
+<p class="task-context"><strong>Context:</strong> Your friend is learning to edit photos and keeps using the wrong tool. Write a message correcting them gently.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 positive correction structure</li>
+<li>Use 1 empowering structure</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"You're on the right track! Actually, for this specific effect, we want to use the 'Blur' tool instead of 'Sharpen'. It's an easy mix-up — the icons look really similar. You're doing brilliantly though, see how quickly you're picking up the interface? Why don't you try switching to the Blur tool and see what happens? You've absolutely got this. Let me know how it looks!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Positive correction:</strong> "You're on the right track! Actually..."</li>
+<li><strong>Collocations:</strong> "easy mix-up", "picking up", "got this"</li>
+<li><strong>Empowering:</strong> "You're doing brilliantly though..."</li>
+<li><strong>Releasing:</strong> "Why don't you try switching...?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"You're doing great! Just a small tweak — for this effect, try the 'Blur' tool instead. The icons are super similar, so it's an easy mix-up. You're picking it up really fast though! Give the Blur tool a go and let me know what you think."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 positive correction structure</li>
+<li>□ có 1 empowering structure</li>
+<li>□ có validate → correct → empower → release</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Follow-Up After a Teaching Session</h4>
+<p class="task-context"><strong>Context:</strong> You taught your mom to use Zoom yesterday. Write a follow-up message checking in and encouraging her.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 checking structure</li>
+<li>Use 1 empowering structure</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi Mom! How are you feeling about Zoom today? I know there was a lot to take in yesterday, but you picked it up really quickly. Why don't you try opening the app and joining a test call on your own? Take your time — there's no rush. You've absolutely got the hang of it now. If you get stuck or forget a step, just message me and we can do a quick refresher. I'm so proud of you for learning this!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Checking:</strong> "How are you feeling about Zoom today?"</li>
+<li><strong>Collocations:</strong> "picked it up", "got the hang of it", "quick refresher"</li>
+<li><strong>Empowering:</strong> "You've absolutely got the hang of it now."</li>
+<li><strong>Reassuring:</strong> "If you get stuck... just message me."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"Hey Mom! How's Zoom going? You did so well yesterday. Why don't you try opening it yourself today? No rush! You've totally got this. If you forget anything, just text me. Love you!"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 checking structure</li>
+<li>□ có 1 empowering structure</li>
+<li>□ có check-in → praise → challenge → reassure</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The Teaching Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">🎓 Scaffolding & Pacing</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>break this down</strong>
+<div class="ipa">/breɪk ðɪs daʊn/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Chia nhỏ điều này</div>
+<div class="collocation">Collocation: "break this down into parts"</div>
+<div class="chunk">Chunk: "Let's break this down into..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Let's break this down into three simple parts."</div>
+<div class="native-alt">Native alternative: "chunk this"</div>
+<button class="vocab-audio-btn" onclick="speakText('break-down', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>take your time</strong>
+<div class="ipa">/teɪk jɔːr taɪm/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Cứ từ từ</div>
+<div class="collocation">Collocation: "take your time"</div>
+<div class="chunk">Chunk: "Take your time — there's no rush."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Take your time — there's no rush. We'll go at your pace."</div>
+<div class="native-alt">Native alternative: "no hurry"</div>
+<button class="vocab-audio-btn" onclick="speakText('take-time', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>tackle this in phases</strong>
+<div class="ipa">/ˈtæk.əl ðɪs ɪn feɪzɪz/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Giải quyết từng giai đoạn</div>
+<div class="collocation">Collocation: "tackle this in phases"</div>
+<div class="chunk">Chunk: "Let's tackle this in phases."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Let's tackle this in phases — today we'll just get comfortable with the basics."</div>
+<div class="native-alt">Native alternative: "take it step by step"</div>
+<button class="vocab-audio-btn" onclick="speakText('tackle-phases', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">💡 Empowerment & Praise</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>you've got this</strong>
+<div class="ipa">/juv ɡɒt ðɪs/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Bạn làm được mà</div>
+<div class="collocation">Collocation: "you've got this"</div>
+<div class="chunk">Chunk: "You've absolutely got this."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"You're doing brilliantly! You've absolutely got this."</div>
+<div class="native-alt">Native alternative: "you can do it"</div>
+<button class="vocab-audio-btn" onclick="speakText('got-this', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>got the hang of it</strong>
+<div class="ipa">/ɡɒt ðə hæŋ ɒv ɪt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Nắm được cách làm</div>
+<div class="collocation">Collocation: "got the hang of it"</div>
+<div class="chunk">Chunk: "You've got the hang of it."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Exactly! You've got the hang of it now."</div>
+<div class="native-alt">Native alternative: "figured it out"</div>
+<button class="vocab-audio-btn" onclick="speakText('hang-of-it', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>picked it up</strong>
+<div class="ipa">/pɪkt ɪt ʌp/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Học nhanh</div>
+<div class="collocation">Collocation: "picked it up quickly"</div>
+<div class="chunk">Chunk: "You picked it up really quickly."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"See how quickly you picked that up?"</div>
+<div class="native-alt">Native alternative: "learned it fast"</div>
+<button class="vocab-audio-btn" onclick="speakText('picked-up', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🔄 Checking & Feedback</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>on the right track</strong>
+<div class="ipa">/ɒn ə raɪt træk/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Đang đi đúng hướng</div>
+<div class="collocation">Collocation: "you're on the right track"</div>
+<div class="chunk">Chunk: "You're on the right track!"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"You're on the right track! Actually, for this step..."</div>
+<div class="native-alt">Native alternative: "good direction"</div>
+<button class="vocab-audio-btn" onclick="speakText('right-track', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>easy mix-up</strong>
+<div class="ipa">/ˈiː.zi ˈmɪks.ʌp/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Dễ nhầm lẫn</div>
+<div class="collocation">Collocation: "it's an easy mix-up"</div>
+<div class="chunk">Chunk: "It's an easy mix-up."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"It's an easy mix-up — the icons look really similar."</div>
+<div class="native-alt">Native alternative: "common mistake"</div>
+<button class="vocab-audio-btn" onclick="speakText('easy-mixup', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>quick refresher</strong>
+<div class="ipa">/kwɪk rɪfres.ər/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Ôn lại nhanh</div>
+<div class="collocation">Collocation: "do a quick refresher"</div>
+<div class="chunk">Chunk: "we can do a quick refresher"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"If you ever forget, just message me and we can do a quick refresher."</div>
+<div class="native-alt">Native alternative: "quick review"</div>
+<button class="vocab-audio-btn" onclick="speakText('quick-refresher', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title"> Dialogue 1: Teaching Parent to Use Video Calls (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Your mom wants to learn Zoom. You teach her step-by-step.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Mom, I'm so glad you want to learn this. Let's break this down into three simple parts. First, we'll just get familiar with the app icon. Sound good?" <span class="move-highlight move1">Scaffold</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Mom:</div>
+<div class="dialogue-text">"Okay, but what if I press the wrong thing and break it?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"You can't break it, I promise! Take your time — there's no rush. First, can you find the blue icon that looks like a camera? Point to it." <span class="move-highlight move2">Pace</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Mom:</div>
+<div class="dialogue-text">"This one?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Perfect! You found it. Now, let's try tapping it together. Go ahead — your turn." <span class="move-highlight move3">Guide</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Mom:</div>
+<div class="dialogue-text">(Taps) "Oh, it opened!"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Brilliant! See how quickly you picked that up? Now, before we move on, could you close it and open it again by yourself? I just want to make sure that first step feels solid." <span class="move-highlight move4">Check</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Mom:</div>
+<div class="dialogue-text">(Does it) "Like this?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Exactly! You've absolutely got this. Now, let's look at the next part..." <span class="move-highlight move5">Empower</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Scaffold (chunking) + Pace (patient) + Guide (together) + Check (active) + Empower (specific praise).</li>
+<li><strong>Alternative Decision:</strong> Do it for her or rush. (Risk: Dependency or overwhelm).</li>
+<li><strong>Why this decision?</strong> Scaffolding prevents overwhelm. Pacing reduces anxiety. Guiding builds muscle memory. Checking ensures retention. Empowering builds confidence.</li>
+<li><strong>Resistance handled:</strong> Mom's fear of breaking it. You reassured her immediately.</li>
+<li><strong>Evolution:</strong> Fear → Scaffold → Pace → Guide → Check → Empower → Confidence.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Teaching Colleague New Software (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> Colleague struggling with new tool. You teach them the basics.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hey, I know this new tool has a bit of a learning curve. Let's tackle this in phases. Today, we'll just get comfortable with creating tasks. Sound good?" <span class="move-highlight move1">Scaffold</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">"Yeah, I just feel like I'm clicking randomly."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"That's completely normal. Watch me do it once first. See how I click 'New Task' here? Now you try it on your project. I'll watch." <span class="move-highlight move2">Demonstrate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">(Clicks) "Like this?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"You're on the right track! Actually, for the due date, use this calendar picker. It's an easy mix-up. Let's try it together." <span class="move-highlight move3">Feedback</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">(Does it) "Oh, that's much easier."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Exactly! You've got the hang of it. Why don't you create one more task on your own? I'll just be here if you get stuck." <span class="move-highlight move4">Release</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">(Does it) "Okay, I think I've got it now."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Brilliant! You picked that up really quickly. If you ever forget, just message me for a quick refresher." <span class="move-highlight move5">Empower</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Scaffold (phases) + Demonstrate (model) + Feedback (graceful) + Release (independent) + Empower (praise).</li>
+<li><strong>Alternative Decision:</strong> Take over or send a manual. (Risk: Frustration or no learning).</li>
+<li><strong>Why this decision?</strong> Phasing prevents overwhelm. Modeling shows the standard. Graceful feedback maintains confidence. Releasing builds independence.</li>
+<li><strong>Resistance handled:</strong> Colleague's feeling of "clicking randomly." You normalized it and provided structure.</li>
+<li><strong>Evolution:</strong> Frustration → Scaffold → Demonstrate → Feedback → Release → Empower → Competence.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to the dialogues above. Notice the encouraging tone, pacing, and discourse markers used in teaching.</p>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 16px;">Step 1: Full Transcript</h4>
+<div class="transcript-box">
+<p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;"><em>Refer to the dialogues above for the full transcript with spoken English features.</em></p>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 2: Key Phrases Breakdown</h4>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"Let's break this down..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Signals scaffolding is coming
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Let's break this down into..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "Let's take this step by step..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Reduces overwhelm, sets expectations
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Take your time — there's no rush."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Sets a patient pace
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Take your time..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "No hurry..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Reduces anxiety, improves retention
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"You're on the right track!"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Validates effort before correcting
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "You're on the right track! Actually..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "Good start, but..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Maintains confidence during correction
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"You've absolutely got this."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Empowers the learner
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "You've got this."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "You can do it."
+<span class="arrow">↓</span> <strong>Effect:</strong> Builds independence and confidence
+</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 3: Pronunciation Focus</h4>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Warm, encouraging tone</div>
+<div class="detail">"You're doing brilliantly!" (Warm, genuine — not patronizing)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Pausing for processing</div>
+<div class="detail">"Perfect! (pause) You found it." (Pause lets the praise land)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Rising intonation for checks</div>
+<div class="detail">"Sound good?" (Rising intonation invites agreement)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Stress on empowerment words</div>
+<div class="detail">"You've absolutely GOT THIS." (Stress builds confidence)</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 4: Listening Strategy (3 passes)</h4>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 1: Nghe Scaffolding</div>
+<div class="note"><strong>Focus:</strong> "Let's break this down...", "First...", "Once you're comfortable..."</div>
+<div class="note"><strong>Question:</strong> "Where do they chunk the skill?"</div>
+<div class="note"><strong>Signal:</strong> Chunking signals structured teaching</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 2: Nghe Empowerment</div>
+<div class="note"><strong>Focus:</strong> "You've got this", "Brilliant!", "You picked that up quickly"</div>
+<div class="note"><strong>Question:</strong> "Where do they build confidence?"</div>
+<div class="note"><strong>Signal:</strong> Praise signals a safe learning environment</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 3: Nghe Checking</div>
+<div class="note"><strong>Focus:</strong> "Before we move on...", "Could you show me...?"</div>
+<div class="note"><strong>Question:</strong> "Where do they verify understanding?"</div>
+<div class="note"><strong>Signal:</strong> Active checking signals effective teaching</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 5: Shadowing Challenge</h4>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the spoken English rhythm, not just the words:</div>
+<div class="note">1. Listen to: "Let's break this down into three simple parts. First, we'll just..."</div>
+<div class="note">2. Shadow: Match the warm, pacing tone</div>
+<div class="note">3. Focus: Stress on "break", "three", "first"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different element (scaffold / pace / empower)</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 6: Outcome-based Questions</h4>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "Let's break this down into three simple parts"?</div>
+<div class="note">✅ To scaffold the learning. Prevents overwhelm.</div>
+<div class="note">2. What was the strategic goal of saying "Take your time — there's no rush"?</div>
+<div class="note">✅ To set a patient pace. Reduces anxiety, improves retention.</div>
+<div class="note">3. How did you handle the mistake?</div>
+<div class="note">✅ Said "You're on the right track! Actually..." Validates effort before correcting.</div>
+<div class="note">4. What was the trade-off of releasing them to do it alone?</div>
+<div class="note">✅ Builds independence, but they might struggle initially.</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Softened Imperatives with "Let's..."</h4>
+<div class="explanation">Used to guide without commanding. Makes the learner feel like a partner.</div>
+<ul class="grammar-examples-list">
+<li>"Let's break this down into three simple parts."</li>
+<li>"Let's tackle this in phases."</li>
+<li>"Let's try it together."</li>
+<li>"Let's take it one step at a time."</li>
+<li>"Let's see what happens when you click that."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Click here. Then click there." (Too commanding)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Let's click here together."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Sequencing with "First... Once... Then..."</h4>
+<div class="explanation">Used to scaffold steps clearly. Shows the logical progression.</div>
+<ul class="grammar-examples-list">
+<li>"First, we'll just get familiar with the menu. Once you're comfortable there, we'll look at the settings."</li>
+<li>"First, find the icon. Once you've tapped it, we'll move to the next step."</li>
+<li>"Once you've done that, then we can try the advanced features."</li>
+<li>"After you've opened the app, the next thing to do is..."</li>
+<li>"Before we move on, let's make sure this step feels solid."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Do this, do this, do this." (No sequencing markers)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "First... Once... Then..."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Checking with "Before we move on..."</h4>
+<div class="explanation">Used to verify understanding before progressing. Prevents building on shaky foundations.</div>
+<ul class="grammar-examples-list">
+<li>"Before we move on, could you show me how you'd do that step?"</li>
+<li>"Before we move on, let's make sure that first step feels solid."</li>
+<li>"Does that make sense before we try the next part?"</li>
+<li>"How are we feeling about this step? Ready to move on?"</li>
+<li>"Why don't you try it once more by yourself before we continue?"</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Do you understand?" (Puts pressure to say yes)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Before we move on, could you show me?"</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Empowering with "You've got this"</h4>
+<div class="explanation">Used to build confidence and encourage independence.</div>
+<ul class="grammar-examples-list">
+<li>"You've absolutely got this."</li>
+<li>"You've got the hang of it now."</li>
+<li>"See how quickly you picked that up?"</li>
+<li>"You're doing brilliantly — keep going!"</li>
+<li>"Why don't you try the next step on your own? You're ready."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Good job." (Too generic)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "You've absolutely got this."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Graceful Correction with "You're on the right track"</h4>
+<div class="explanation">Used to correct mistakes without damaging confidence.</div>
+<ul class="grammar-examples-list">
+<li>"You're on the right track! Actually, for this step..."</li>
+<li>"Good approach! Just one small tweak..."</li>
+<li>"You're so close! Actually, we want to click the blue button instead."</li>
+<li>"That's a good try. For this specific case, though..."</li>
+<li>"You're thinking about it the right way. The only thing is..."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "No, that's wrong." (Damages confidence)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "You're on the right track! Actually..."</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Teaching Parent to Use an App</h3>
+<p class="scenario-context">Your dad wants to learn a new app. Teach him step-by-step.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Scaffold + Pace</span>
+<span class="response">"Let's break this down into simple parts. Take your time — there's no rush. First, let's just find the icon."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Guide + Empower</span>
+<span class="response">"Perfect! Now you try tapping it. You're doing brilliantly! You've absolutely got this."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Doing it for them or rushing.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Teaching Colleague Software</h3>
+<p class="scenario-context">Colleague struggling with new tool. Teach them the basics.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Reassure + Scaffold</span>
+<span class="response">"That's completely normal — it has a learning curve. Let's tackle this in phases. Today we'll just get comfortable with the basics."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Demonstrate + Release</span>
+<span class="response">"Watch me do it once first. Now you try it on your project. I'll just be here if you get stuck."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Sending a manual instead of teaching.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Correcting a Mistake</h3>
+<p class="scenario-context">Your friend is learning to edit photos and keeps using the wrong tool.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Validate + Correct</span>
+<span class="response">"You're on the right track! Actually, for this effect, we want the 'Blur' tool. It's an easy mix-up."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Empower + Release</span>
+<span class="response">"You're picking it up really fast! Why don't you try switching to the Blur tool? You've got this."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Saying "No, that's wrong."</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario — Parent + Colleague</h3>
+<p class="scenario-context">Morning: Teach mom Zoom. Afternoon: Teach colleague Excel.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Morning (Life — Warm, patient, specific praise)</span>
+<span class="response">"Take your time, Mom. You can't break it! Perfect, you found it. You're doing brilliantly."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Afternoon (Business — Professional, phased, empowering)</span>
+<span class="response">"Let's tackle this in phases. Watch me do it once, then you try. You've got the hang of it!"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Reflection</span>
+<span class="response">How did your approach change? Life = more emotional reassurance. Business = more structured phasing. Both = scaffold → guide → release.</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Using the same register for both contexts.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Teaching Challenge</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 The Teaching Audit</h3>
+<p class="task-time">⏱️ 15 minutes</p>
+<p class="task-desc">Identify 1 time you taught someone a tech skill. Apply the 5 lenses. What decisions did you make? Note the trade-offs.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the teaching situation</li>
+<li>Apply the 5 lenses (Scaffold, Pace, Check, Empower, Feedback)</li>
+<li>What decisions did you make?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"I taught my dad to order food online. I scaffolded ('Let's break this down'), paced well ('Take your time'), checked ('Before we move on...'), empowered ('You've got this!'), and corrected gracefully ('You're on the right track!'). Trade-off: Took longer than just doing it for him, but now he can do it independently."</p>
+</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Teaching Practice</h3>
+<p class="task-time">⏱️ 30 minutes</p>
+<p class="task-desc">Role-play a tech teaching scenario. Practice the 4-step loop. Get feedback on your scaffolding and empowerment.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose a tech teaching scenario</li>
+<li>Practice all 4 steps of the loop</li>
+<li>Get feedback on your scaffolding and empowerment</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Role-play: Teaching colleague Excel. I practiced scaffolding ('Let's tackle this in phases'), demonstrating ('Watch me do it once'), releasing ('Now you try'), and empowering ('You've got the hang of it!'). Feedback: I scaffolded well, but I could improve my checking — I moved on too fast."</p>
+</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Teaching Session</h3>
+<p class="task-time">⏱️ 60 minutes</p>
+<p class="task-desc">This week, teach someone a tech skill in real life. Use the 4-step framework. Note what worked, what didn't, and what you learned about your default teaching style.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify an actual tech skill to teach</li>
+<li>Apply the 4-step framework in real-time</li>
+<li>Use the framework (Scaffold, Demonstrate, Guide, Release)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default teaching style?</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Real teaching: Taught my mom to use Zoom. I applied the 4-step framework: 1) Scaffolded: 'Let's break this down.' 2) Demonstrated: 'Watch me do it once.' 3) Guided: 'Now let's try together.' 4) Released: 'Now you try it on your own.' What worked: The phasing prevented overwhelm. What didn't: I rushed the checking step. What I learned: My default style is to scaffold well, but I need to slow down and verify each step before moving on."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Teaching Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title"> Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I scaffold the skill</h4>
+<p>I break it into small, manageable steps, not overwhelming them.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I pace the lesson well</h4>
+<p>I let the learner set the pace, not rushing them.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I check understanding actively</h4>
+<p>I ask them to demonstrate, not just ask "Do you understand?"</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I empower the learner</h4>
+<p>I build their confidence with specific praise and encouragement.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I correct mistakes gracefully</h4>
+<p>I validate effort before correcting, not saying "That's wrong."</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> Congratulations! You've completed Week 17. If you can consistently teach tech skills with patience and empowerment, you are ready for Week 18: Advanced Professional Communication.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> Your parent is struggling to learn a new app</p>
+<button>Tap to reveal Teaching Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "Give me the phone, I'll just do it for you."</p>
+<p><strong>C1 Language:</strong> Scaffold → Demonstrate → Guide → Release.<br>
+"Let's break this down into simple parts. Take your time — there's no rush. Watch me do it once first. Now you try it — you've absolutely got this!"</p>
+<p><strong>Trade-off:</strong> Takes more time upfront, but builds long-term independence.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In tech teaching, scaffolding prevents overwhelm. Pacing reduces anxiety. Active checking ensures retention. Empowering builds confidence. Graceful correction maintains dignity.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Teach Someone a Tech Skill</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Parent struggling with an app. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Give me the phone, I'll do it."</div>
+<div class="quiz-option">B. "Let's break this down into simple parts. Take your time — there's no rush. Watch me do it once, then you try."</div>
+<div class="quiz-option">C. "Just click here, then here, okay done!"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Colleague makes a mistake in software. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "No, that's wrong. Do it this way."</div>
+<div class="quiz-option">B. "You're on the right track! Actually, for this step, we want the blue button. It's an easy mix-up."</div>
+<div class="quiz-option">C. "Try the other button."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Learner feels overwhelmed. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "It's really easy, don't worry."</div>
+<div class="quiz-option">B. "It's completely normal to feel overwhelmed. Let's pause here, and you can practice just this first part. You're doing great."</div>
+<div class="quiz-option">C. "We can stop if you want."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Checking if learner understands. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Do you understand?"</div>
+<div class="quiz-option">B. "Before we move on, could you show me how you'd do that step?"</div>
+<div class="quiz-option">C. "Got it?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Friend keeps asking for tech help. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "I already showed you this!"</div>
+<div class="quiz-option">B. "I'm happy to help! This time, why don't you drive? Tell me what you'd click first, and I'll guide you."</div>
+<div class="quiz-option">C. "Let me do it for you."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Empowering a learner. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Good job."</div>
+<div class="quiz-option">B. "You're doing brilliantly — see how quickly you picked that up? You've absolutely got this."</div>
+<div class="quiz-option">C. "Not bad."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of scaffolding?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Prevents overwhelm and builds confidence, but takes more time.</div>
+<div class="quiz-option">B. Saves time but may confuse the learner.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of releasing them to do it alone?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Builds independence, but they might struggle initially.</div>
+<div class="quiz-option">B. Ensures they do it right, but creates dependency.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Bạn làm được mà"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. You've got this</div>
+<div class="quiz-option">B. Take your time</div>
+<div class="quiz-option">C. Let's break this down</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+<div class="day-navigation">
+<a href="week-17-day-118.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 118: Discussing AI and Emerging Tech Ethically</div>
+</a>
+<a href="week-18.html" class="nav-card">
+<div class="nav-label">Next Week →</div>
+<div class="nav-title">Week 18: Advanced Professional Communication</div>
+</a>
+</div>
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Week 17 Complete & Continue to Week 18</button>
+<p class="complete-message">B2 speakers do it for them. C1 speakers teach them how. 🎓</p>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<p class="footer-title">Professional Fluency Roadmap</p>
+<p class="footer-tagline">Week 17 · Day 119 · Teach Someone a Tech Skill</p>
+</div>
+</footer>
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+const textContent = {
+'lens1': 'Lens 1: Scaffolding the Steps. How do I break this into manageable chunks? Let us break this down into three simple parts. First, we will just get familiar with the menu. Once you are comfortable there, we will look at the settings. Sound good?',
+'lens2': 'Lens 2: Pacing the Lesson. How fast should we go? Take your time — there is no rush. We will go at your pace, and we can always pause if you need a moment to process.',
+'lens3': 'Lens 3: Checking Understanding. How do I verify they get each step? Before we move on, could you show me how you would do that step? I just want to make sure I explained it clearly.',
+'lens4': 'Lens 4: Empowering the Learner. How do I build their confidence? You are doing brilliantly — see how quickly you picked that up? You have absolutely got this. Why do not you try the next step on your own?',
+'lens5': 'Lens 5: Handling Mistakes Gracefully. How do I correct them without discouraging them? You are on the right track! Actually, for this specific step, we want to click the blue button instead. It is an easy mix-up — let us try it together.',
+'break-down': 'break this down',
+'take-time': 'take your time',
+'tackle-phases': 'tackle this in phases',
+'got-this': 'you have got this',
+'hang-of-it': 'got the hang of it',
+'picked-up': 'picked it up',
+'right-track': 'on the right track',
+'easy-mixup': 'easy mix-up',
+'quick-refresher': 'quick refresher',
+'dialogue1': 'Dialogue 1: Teaching Parent to Use Video Calls. You: Mom, I am so glad you want to learn this. Let us break this down into three simple parts. First, we will just get familiar with the app icon. Sound good? Mom: Okay, but what if I press the wrong thing and break it? You: You cannot break it, I promise! Take your time — there is no rush. First, can you find the blue icon that looks like a camera? Point to it. Mom: This one? You: Perfect! You found it. Now, let us try tapping it together. Go ahead — your turn. Mom: (Taps) Oh, it opened! You: Brilliant! See how quickly you picked that up? Now, before we move on, could you close it and open it again by yourself? I just want to make sure that first step feels solid. Mom: (Does it) Like this? You: Exactly! You have absolutely got this. Now, let us look at the next part.',
+'dialogue2': 'Dialogue 2: Teaching Colleague New Software. You: Hey, I know this new tool has a bit of a learning curve. Let us tackle this in phases. Today, we will just get comfortable with creating tasks. Sound good? Colleague: Yeah, I just feel like I am clicking randomly. You: That is completely normal. Watch me do it once first. See how I click New Task here? Now you try it on your project. I will watch. Colleague: (Clicks) Like this? You: You are on the right track! Actually, for the due date, use this calendar picker. It is an easy mix-up. Let us try it together. Colleague: (Does it) Oh, that is much easier. You: Exactly! You have got the hang of it. Why do not you create one more task on your own? I will just be here if you get stuck. Colleague: (Does it) Okay, I think I have got it now. You: Brilliant! You picked that up really quickly. If you ever forget, just message me for a quick refresher.'
+};
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+</body>
+</html>

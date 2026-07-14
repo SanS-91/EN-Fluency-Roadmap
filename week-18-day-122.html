@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 18 Day 122: Volunteering and Coordinating with Teams | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--text-highlight: #7C3AED;
+--text-error: #DC2626;
+--text-success: #059669;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 800px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.reading-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.move-highlight.move4 { background: #10B981; }
+.move-highlight.move5 { background: #F59E0B; }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--text-highlight); font-weight: 700; display: block; margin: 6px 0; }
+.deep-dive-item .analysis strong { color: var(--text-primary); display: block; margin-top: 10px; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.sample-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-top: 16px; border-left: 4px solid #10B981; }
+.sample-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.sample-answer .answer-text { font-size: 13px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+<div class="container">
+<a href="week-18.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 18 Hub</a>
+<div class="day-indicator">Day 122 / 126</div>
+</div>
+</nav>
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-18.html" class="day-tab">Overview</a>
+<a href="week-18-day-120.html" class="day-tab">Day 120</a>
+<a href="week-18-day-121.html" class="day-tab">Day 121</a>
+<a href="week-18-day-122.html" class="day-tab active">Day 122</a>
+<a href="week-18-day-123.html" class="day-tab">Day 123</a>
+<a href="week-18-day-124.html" class="day-tab">Day 124</a>
+<a href="week-18-day-125.html" class="day-tab">Day 125</a>
+<a href="week-18-day-126.html" class="day-tab">Day 126</a>
+</div>
+</div>
+</div>
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-18.html">Week 18</a> › Day 122
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🤝</span>
+<h1 class="day-title">Volunteering and Coordinating with Teams</h1>
+</div>
+<p class="day-subtitle">Days 120-121 taught you to organize community events and discuss local issues with neighbors. Day 122 focuses on <strong>volunteering and coordinating with teams</strong> — recruiting volunteers, delegating tasks, motivating the team, and following up. B2 speakers just show up and do tasks. C1 speakers recruit, coordinate, delegate, motivate, and build team cohesion.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Volunteer Coordination + Team Leadership + Motivation</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Civic Persuasion Day 3 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Just shows up and does tasks. Says "What should I do?" or waits to be told what to do. Doesn't recruit others, delegate, or motivate the team.<br><br><strong>C1 Speaker:</strong> Recruits volunteers, coordinates tasks, delegates effectively, motivates the team, and follows up. Says "Would you be interested in helping with...?" and "Let's divide this up so everyone has a clear role."<br><br>"B2 speakers volunteer. C1 speakers lead volunteers. The difference isn't enthusiasm — it's coordination and team-building."</div>
+</div>
+<div class="quote">"Volunteering is about giving your time. Coordinating volunteers is about multiplying everyone's impact."</div>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Coordinating Volunteers = Recruiting + Coordinating + Delegating + Motivating + Following Up</h3>
+<p class="philosophy-text">"Coordinating volunteers isn't about doing everything yourself. It's about recruiting the right people, coordinating tasks clearly, delegating effectively, motivating the team, and following up to build lasting relationships."</p>
+<p class="philosophy-text">Every volunteer coordination requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Recruitment Decision:</strong> How do I recruit volunteers? (Passive? Proactive?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Coordination Decision:</strong> How do I coordinate tasks? (Chaotic? Clear?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Delegation Decision:</strong> How do I delegate? (Vague? Specific?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Motivation Decision:</strong> How do I motivate the team? (Generic? Personal?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Follow-up Decision:</strong> How do I follow up? (Forget? Appreciate?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 122 teaches you how to coordinate volunteers with clarity, motivation, and appreciation.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">🤝</div>
+<div class="plan-title">Volunteer Coordination Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Recruit → Coordinate → Delegate → Motivate → Follow Up</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔍</div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎧</div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📝</div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Volunteer Coordination Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 5-step process for coordinating volunteers</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">RECRUIT (Bring people in)</div>
+<div class="loop-step-desc">How do I recruit? "Would you be interested in helping with...?" / "We're looking for volunteers to..." (Recruit proactively)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">COORDINATE (Organize tasks)</div>
+<div class="loop-step-desc">How do I coordinate? "Let's divide this up so everyone has a clear role..." / "Here's what we need to cover..." (Coordinate clearly)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">DELEGATE (Assign roles)</div>
+<div class="loop-step-desc">How do I delegate? "Could you take the lead on...?" / "Would you mind handling...?" (Delegate specifically)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">MOTIVATE (Keep energy up)</div>
+<div class="loop-step-desc">How do I motivate? "I really appreciate everyone's effort..." / "We're making a real difference..." (Motivate personally)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">5</div>
+<div class="loop-step-title">FOLLOW UP (Show appreciation)</div>
+<div class="loop-step-desc">How do I follow up? "Thanks so much for your help..." / "I'd love to have you join us again..." (Follow up warmly)</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Coordination Lenses (3-Level Examples)</h2>
+</div>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">Every volunteer coordination requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+<div class="lenses-grid">
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Recruiting Volunteers <button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I recruit volunteers effectively?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Recruitment Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"We need volunteers."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Would you like to help with the clean-up?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"We're organizing a neighborhood clean-up this Saturday, and we'd love to have you join us. Would you be interested in helping out? Even an hour would make a real difference."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Recruiting for community garden. Decision: Warm, specific invitation ("We'd love to have you join us...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Recruiting for corporate volunteer day. Decision: Professional invitation ("We're looking for volunteers to...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Proactive):</strong> Builds a strong team, shows leadership.</div>
+<div class="compare-level weak"><strong>Lose (Proactive):</strong> Takes time to recruit; some may say no.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Waiting for volunteers to show up. Native speakers recruit proactively with warm, specific invitations.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I recruiting or waiting?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Coordinating Tasks <button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I coordinate tasks clearly?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Coordination Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Everyone just help out."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Let's split up the work."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Let's divide this up so everyone has a clear role. We need someone to handle supplies, someone to coordinate the team, and someone to manage communications. Does that sound fair?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Coordinating food drive. Decision: Clear role division ("Let's divide this up so everyone has a clear role...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Coordinating team volunteer day. Decision: Professional coordination ("Here's what we need to cover...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Clear):</strong> Everyone knows what to do, prevents confusion.</div>
+<div class="compare-level weak"><strong>Lose (Clear):</strong> Takes more upfront planning time.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Vague instructions. Native speakers coordinate with clear roles and expectations.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I coordinating clearly or vaguely?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Delegating Effectively <button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I delegate without being bossy?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Delegation Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"You do this."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Could you handle the supplies?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Could you take the lead on coordinating supplies? You're really good at organizing, and I think you'd do a great job. Let me know if you need any support."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Delegating at community garden. Decision: Respectful delegation ("Could you take the lead on...?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Delegating at corporate event. Decision: Professional delegation ("Would you mind handling...?")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Respectful):</strong> Builds trust, shows you value their skills.</div>
+<div class="compare-level weak"><strong>Lose (Respectful):</strong> Takes more words; may feel indirect.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Ordering people around. Native speakers delegate with respect and offer support.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I delegating respectfully or ordering?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Motivating the Team <button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I keep the team motivated?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Motivation Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Good job, everyone."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Thanks for your help, team."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I really appreciate everyone's effort today. We're making a real difference in our community, and it wouldn't be possible without each of you. Let's take a quick break — you've earned it."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Mid-event motivation. Decision: Personal appreciation ("I really appreciate everyone's effort...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>End-of-day motivation. Decision: Professional appreciation ("We're making a real impact...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Personal):</strong> Builds loyalty, keeps energy high.</div>
+<div class="compare-level weak"><strong>Lose (Personal):</strong> Takes time; may feel cheesy if not genuine.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Generic praise. Native speakers motivate with specific, personal appreciation.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I motivating personally or generically?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Following Up Warmly <button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button></h3>
+<p class="lens-core">"How do I follow up to build lasting relationships?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Follow-up Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Thanks."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Thanks for helping out."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Thanks so much for your help today — you really made a difference. I'd love to have you join us again next month. Would you be open to that?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Post-event thank you. Decision: Warm follow-up ("Thanks so much for your help today...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Post-volunteer day email. Decision: Professional follow-up ("I'd love to have you join us again...")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Warm):</strong> Builds lasting relationships, encourages return volunteers.</div>
+<div class="compare-level weak"><strong>Lose (Warm):</strong> Takes time; some may not respond.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Forgetting to follow up. Native speakers follow up warmly to build lasting relationships.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I following up or forgetting?</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy volunteer coordination</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Doing Everything Yourself</h4>
+<div class="mistake-wrong">❌ "I'll just handle everything myself."</div>
+<div class="mistake-right">✅ "Let's divide this up so everyone has a clear role. Could you take the lead on supplies?"</div>
+<div class="mistake-why">Why: Doing everything yourself leads to burnout and doesn't build the team. Delegating builds capacity and trust.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Vague Instructions</h4>
+<div class="mistake-wrong">❌ "Everyone just help out."</div>
+<div class="mistake-right">✅ "We need someone to handle supplies, someone to coordinate the team, and someone to manage communications."</div>
+<div class="mistake-why">Why: Vague instructions create confusion and frustration. Clear roles help everyone contribute effectively.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Forgetting to Appreciate</h4>
+<div class="mistake-wrong">❌ (No thank you after the event)</div>
+<div class="mistake-right">✅ "Thanks so much for your help today — you really made a difference. I'd love to have you join us again."</div>
+<div class="mistake-why">Why: Forgetting to appreciate volunteers kills motivation. Warm follow-up builds lasting relationships.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Coordination Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Recruiting for clean-up</td>
+<td>"We need volunteers."</td>
+<td>"Would you like to help?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"We're organizing a neighborhood clean-up this Saturday, and we'd love to have you join us. Would you be interested in helping out? Even an hour would make a real difference."</span>
+<span class="why">Why: Warm, specific, low-pressure invitation.</span>
+</div>
+</td>
+<td>Warm + specific + low-pressure</td>
+<td>"We'd love to have you join us..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>2. Coordinating food drive team</td>
+<td>"Everyone just help out."</td>
+<td>"Let's split up the work."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Let's divide this up so everyone has a clear role. We need someone to handle collection, someone to sort, and someone to distribute. Does that sound fair?"</span>
+<span class="why">Why: Clear roles, checks buy-in.</span>
+</div>
+</td>
+<td>Clear roles + checks buy-in</td>
+<td>"Let's divide this up so everyone has a clear role..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>3. Delegating at community garden</td>
+<td>"You do this."</td>
+<td>"Could you handle the watering?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Could you take the lead on coordinating the watering schedule? You're really good at organizing, and I think you'd do a great job. Let me know if you need any support."</span>
+<span class="why">Why: Respectful, acknowledges skills, offers support.</span>
+</div>
+</td>
+<td>Respectful + acknowledges skills</td>
+<td>"Could you take the lead on...?"</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>4. Motivating tired volunteers</td>
+<td>"Good job, everyone."</td>
+<td>"Thanks for your help."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I really appreciate everyone's effort today. We're making a real difference in our community, and it wouldn't be possible without each of you. Let's take a quick break — you've earned it."</span>
+<span class="why">Why: Specific appreciation, acknowledges impact, offers break.</span>
+</div>
+</td>
+<td>Specific + acknowledges impact</td>
+<td>"I really appreciate everyone's effort..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>5. Handling volunteer no-show</td>
+<td>"They didn't show up."</td>
+<td>"We're short-handed today."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Looks like we're a bit short-handed today — no worries, we can adjust. Let's redistribute the tasks so everyone has a manageable load. Who'd be open to taking on a bit more?"</span>
+<span class="why">Why: Positive framing, collaborative redistribution.</span>
+</div>
+</td>
+<td>Positive framing + collaborative</td>
+<td>"Let's redistribute the tasks..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>6. Coordinating with local authorities</td>
+<td>"We need permission."</td>
+<td>"Could we get approval?"</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"We're planning a community clean-up and would love to coordinate with your office. Could you walk us through what permissions we need and how we can work together effectively?"</span>
+<span class="why">Why: Collaborative, seeks guidance, shows respect.</span>
+</div>
+</td>
+<td>Collaborative + seeks guidance</td>
+<td>"Could you walk us through what permissions..."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>7. Following up after event</td>
+<td>"Thanks."</td>
+<td>"Thanks for helping."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"Thanks so much for your help today — you really made a difference. I'd love to have you join us again next month. Would you be open to that?"</span>
+<span class="why">Why: Specific appreciation + future invitation.</span>
+</div>
+</td>
+<td>Specific + future invitation</td>
+<td>"Thanks so much for your help today..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>8. Managing volunteer conflict</td>
+<td>"Stop arguing."</td>
+<td>"Let's work it out."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I can see we have different perspectives here, and that's okay. Let's take a step back and find a solution that works for everyone. What do you both think would be fair?"</span>
+<span class="why">Why: Validates both sides, seeks collaborative solution.</span>
+</div>
+</td>
+<td>Validates + seeks collaboration</td>
+<td>"Let's find a solution that works for everyone..."</td>
+<td>Casual</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title">🏘️ Case 1: Life - Community Clean-Up Coordination</h4>
+<div class="case-context"><strong>Context:</strong> You're coordinating a neighborhood clean-up. You need to recruit volunteers, coordinate tasks, delegate roles, motivate the team, and follow up afterward.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Hi everyone — we're organizing a neighborhood clean-up this Saturday, and we'd love to have you join us. Would you be interested in helping out? Even an hour would make a real difference."</p>
+<p><span class="speaker">Neighbor 1:</span> "I'd love to help! What do you need me to do?"</p>
+<p><span class="speaker">You:</span> "That's great! Let's divide this up so everyone has a clear role. We need someone to handle supplies, someone to coordinate the team on the day, and someone to manage communications. Does that sound fair?"</p>
+<p><span class="speaker">Neighbor 2:</span> "I can handle supplies — I have extra bags and gloves at home."</p>
+<p><span class="speaker">You:</span> "Perfect! Could you take the lead on coordinating supplies? You're really good at organizing, and I think you'd do a great job. Let me know if you need any support."</p>
+<p><span class="speaker">Neighbor 1:</span> "I'll coordinate the team on the day."</p>
+<p><span class="speaker">You:</span> "Excellent! I'll manage communications and send out reminders. On the day, I really appreciate everyone's effort — we're making a real difference in our community, and it wouldn't be possible without each of you."</p>
+<p><span class="speaker">Neighbor 2:</span> "This is going to be great!"</p>
+<p><span class="speaker">You:</span> "After the event, I'll send out a thank you message. Thanks so much for your help — you really made a difference. I'd love to have you join us again next month. Would you be open to that?"</p>
+</div>
+<div class="useful-language-box">
+<h4> Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"We'd love to have you join us."</strong><span class="meaning">Chúng tôi rất muốn bạn tham gia cùng chúng tôi.</span><span class="register">Register: Casual · Recruit</span></li>
+<li><strong>"Would you be interested in helping out?"</strong><span class="meaning">Bạn có quan tâm đến việc giúp đỡ không?</span><span class="register">Register: Casual · Recruit</span></li>
+<li><strong>"Even an hour would make a real difference."</strong><span class="meaning">Chỉ một giờ cũng tạo ra sự khác biệt thực sự.</span><span class="register">Register: Casual · Recruit</span></li>
+<li><strong>"Let's divide this up so everyone has a clear role."</strong><span class="meaning">Hãy chia nhỏ để mọi người có vai trò rõ ràng.</span><span class="register">Register: Casual · Coordinate</span></li>
+<li><strong>"Does that sound fair?"</strong><span class="meaning">Điều đó nghe có công bằng không?</span><span class="register">Register: Casual · Coordinate</span></li>
+<li><strong>"Could you take the lead on...?"</strong><span class="meaning">Bạn có thể dẫn đầu về...?</span><span class="register">Register: Casual · Delegate</span></li>
+<li><strong>"You're really good at organizing."</strong><span class="meaning">Bạn thực sự giỏi tổ chức.</span><span class="register">Register: Casual · Delegate</span></li>
+<li><strong>"Let me know if you need any support."</strong><span class="meaning">Hãy cho tôi biết nếu bạn cần hỗ trợ.</span><span class="register">Register: Casual · Delegate</span></li>
+<li><strong>"I really appreciate everyone's effort."</strong><span class="meaning">Tôi thực sự đánh giá cao nỗ lực của mọi người.</span><span class="register">Register: Casual · Motivate</span></li>
+<li><strong>"We're making a real difference."</strong><span class="meaning">Chúng ta đang tạo ra sự khác biệt thực sự.</span><span class="register">Register: Casual · Motivate</span></li>
+<li><strong>"It wouldn't be possible without each of you."</strong><span class="meaning">Điều đó sẽ không thể xảy ra nếu không có mỗi người trong số các bạn.</span><span class="register">Register: Casual · Motivate</span></li>
+<li><strong>"Thanks so much for your help."</strong><span class="meaning">Cảm ơn rất nhiều vì sự giúp đỡ của bạn.</span><span class="register">Register: Casual · Follow-up</span></li>
+<li><strong>"You really made a difference."</strong><span class="meaning">Bạn thực sự đã tạo ra sự khác biệt.</span><span class="register">Register: Casual · Follow-up</span></li>
+<li><strong>"I'd love to have you join us again."</strong><span class="meaning">Tôi rất muốn bạn tham gia cùng chúng tôi lần nữa.</span><span class="register">Register: Casual · Follow-up</span></li>
+<li><strong>"Would you be open to that?"</strong><span class="meaning">Bạn có sẵn lòng với điều đó không?</span><span class="register">Register: Casual · Follow-up</span></li>
+<li><strong>"That's great!"</strong><span class="meaning">Tuyệt vời!</span><span class="register">Register: Casual · Encouragement</span></li>
+<li><strong>"Perfect!"</strong><span class="meaning">Hoàn hảo!</span><span class="register">Register: Casual · Encouragement</span></li>
+<li><strong>"Excellent!"</strong><span class="meaning">Xuất sắc!</span><span class="register">Register: Casual · Encouragement</span></li>
+<li><strong>"This is going to be great!"</strong><span class="meaning">Điều này sẽ thật tuyệt!</span><span class="register">Register: Casual · Encouragement</span></li>
+<li><strong>"No worries, we can adjust."</strong><span class="meaning">Không sao, chúng ta có thể điều chỉnh.</span><span class="register">Register: Casual · Flexibility</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Corporate Volunteer Day Coordination</h4>
+<div class="case-context"><strong>Context:</strong> You're coordinating a corporate volunteer day. You need to recruit colleagues, coordinate with the partner organization, delegate roles, motivate the team, and follow up with leadership.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Hi team — we're organizing a corporate volunteer day next month, and we're looking for volunteers to participate. Would you be interested in joining us? It's a great opportunity to give back to the community."</p>
+<p><span class="speaker">Colleague 1:</span> "I'd love to help! What's involved?"</p>
+<p><span class="speaker">You:</span> "We'll be working with a local food bank. Let's divide this up so everyone has a clear role. We need someone to coordinate with the food bank, someone to manage logistics, and someone to handle communications."</p>
+<p><span class="speaker">Colleague 2:</span> "I can coordinate with the food bank — I've worked with them before."</p>
+<p><span class="speaker">You:</span> "That's perfect. Could you take the lead on that? You have great experience with them, and I think you'd do an excellent job. Let me know if you need any support from my side."</p>
+<p><span class="speaker">Colleague 1:</span> "I'll handle logistics."</p>
+<p><span class="speaker">You:</span> "Great! I'll manage communications and keep leadership updated. On the day, I really appreciate everyone's effort — we're making a real impact, and it reflects well on our company culture."</p>
+<p><span class="speaker">Colleague 2:</span> "Looking forward to it!"</p>
+<p><span class="speaker">You:</span> "After the event, I'll send a thank you email to everyone and share the impact with leadership. Thanks so much for your commitment — you're making a real difference. I'd love to have you join us for future volunteer days."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"We're looking for volunteers to participate."</strong><span class="meaning">Chúng tôi đang tìm tình nguyện viên tham gia.</span><span class="register">Register: Professional · Recruit</span></li>
+<li><strong>"It's a great opportunity to give back."</strong><span class="meaning">Đó là cơ hội tuyệt vời để đáp lại cộng đồng.</span><span class="register">Register: Professional · Recruit</span></li>
+<li><strong>"Would you be interested in joining us?"</strong><span class="meaning">Bạn có quan tâm đến việc tham gia cùng chúng tôi không?</span><span class="register">Register: Professional · Recruit</span></li>
+<li><strong>"Let's divide this up so everyone has a clear role."</strong><span class="meaning">Hãy chia nhỏ để mọi người có vai trò rõ ràng.</span><span class="register">Register: Professional · Coordinate</span></li>
+<li><strong>"That's perfect."</strong><span class="meaning">Điều đó thật hoàn hảo.</span><span class="register">Register: Professional · Encouragement</span></li>
+<li><strong>"Could you take the lead on that?"</strong><span class="meaning">Bạn có thể dẫn đầu về điều đó không?</span><span class="register">Register: Professional · Delegate</span></li>
+<li><strong>"You have great experience with them."</strong><span class="meaning">Bạn có nhiều kinh nghiệm với họ.</span><span class="register">Register: Professional · Delegate</span></li>
+<li><strong>"Let me know if you need any support."</strong><span class="meaning">Hãy cho tôi biết nếu bạn cần hỗ trợ.</span><span class="register">Register: Professional · Delegate</span></li>
+<li><strong>"I really appreciate everyone's effort."</strong><span class="meaning">Tôi thực sự đánh giá cao nỗ lực của mọi người.</span><span class="register">Register: Professional · Motivate</span></li>
+<li><strong>"We're making a real impact."</strong><span class="meaning">Chúng ta đang tạo ra tác động thực sự.</span><span class="register">Register: Professional · Motivate</span></li>
+<li><strong>"It reflects well on our company culture."</strong><span class="meaning">Điều đó phản ánh tốt văn hóa công ty chúng ta.</span><span class="register">Register: Professional · Motivate</span></li>
+<li><strong>"Thanks so much for your commitment."</strong><span class="meaning">Cảm ơn rất nhiều vì sự cam kết của bạn.</span><span class="register">Register: Professional · Follow-up</span></li>
+<li><strong>"You're making a real difference."</strong><span class="meaning">Bạn đang tạo ra sự khác biệt thực sự.</span><span class="register">Register: Professional · Follow-up</span></li>
+<li><strong>"I'd love to have you join us for future volunteer days."</strong><span class="meaning">Tôi rất muốn bạn tham gia cùng chúng tôi cho các ngày tình nguyện trong tương lai.</span><span class="register">Register: Professional · Follow-up</span></li>
+<li><strong>"Looking forward to it!"</strong><span class="meaning">Mong chờ điều đó!</span><span class="register">Register: Professional · Enthusiasm</span></li>
+<li><strong>"We'll be working with a local food bank."</strong><span class="meaning">Chúng ta sẽ làm việc với ngân hàng thực phẩm địa phương.</span><span class="register">Register: Professional · Context</span></li>
+<li><strong>"I'll manage communications."</strong><span class="meaning">Tôi sẽ quản lý truyền thông.</span><span class="register">Register: Professional · Role</span></li>
+<li><strong>"I'll send a thank you email."</strong><span class="meaning">Tôi sẽ gửi email cảm ơn.</span><span class="register">Register: Professional · Follow-up</span></li>
+<li><strong>"Share the impact with leadership."</strong><span class="meaning">Chia sẻ tác động với lãnh đạo.</span><span class="register">Register: Professional · Follow-up</span></li>
+<li><strong>"Great!"</strong><span class="meaning">Tuyệt!</span><span class="register">Register: Professional · Encouragement</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Volunteer Messages</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Volunteer Recruitment Message</h4>
+<p class="task-context"><strong>Context:</strong> Write a message recruiting neighbors for a community clean-up.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 recruitment structure</li>
+<li>Use 1 low-pressure closing</li>
+<li>Length: 80-120 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi neighbors! We're organizing a neighborhood clean-up this Saturday morning, and we'd love to have you join us. Would you be interested in helping out? Even an hour would make a real difference. We'll provide all the supplies — just bring yourself and a positive attitude! No pressure if you can't make it, but we'd really appreciate your help. Let me know if you're interested, and I'll send more details. Thanks so much!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Recruitment:</strong> "We'd love to have you join us."</li>
+<li><strong>Collocations:</strong> "make a real difference", "no pressure", "thanks so much"</li>
+<li><strong>Low-pressure closing:</strong> "No pressure if you can't make it..."</li>
+<li><strong>Call to action:</strong> "Let me know if you're interested..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Shorter)</h5>
+<p class="alt-text">"Hi neighbors! We're organizing a clean-up this Saturday and would love your help. Even an hour makes a difference. No pressure if you can't make it — just let me know if you're interested. Thanks!"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (80-120 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 recruitment structure</li>
+<li>□ có 1 low-pressure closing</li>
+<li>□ có opening → invitation → details → low-pressure close</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Task Delegation Email</h4>
+<p class="task-context"><strong>Context:</strong> Write an email delegating roles to volunteer team members.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 delegation structure</li>
+<li>Use 1 support offer</li>
+<li>Length: 120-170 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi team, Thanks so much for volunteering! Let's divide this up so everyone has a clear role. Sarah, could you take the lead on coordinating supplies? You're really good at organizing, and I think you'd do a great job. Mike, would you mind handling team coordination on the day? You have great people skills. I'll manage communications and send out reminders. Let me know if you need any support — I'm here to help. I really appreciate everyone's effort, and I know we're going to make a real difference together. Looking forward to Saturday!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Delegation:</strong> "Could you take the lead on...?"</li>
+<li><strong>Collocations:</strong> "divide this up", "clear role", "make a real difference"</li>
+<li><strong>Support offer:</strong> "Let me know if you need any support..."</li>
+<li><strong>Appreciation:</strong> "I really appreciate everyone's effort..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Dear team, Thank you for volunteering. To ensure clarity, let's assign specific roles. Sarah, could you lead supply coordination? Mike, would you handle team coordination? I'll manage communications. Please let me know if you need support. I appreciate your commitment and look forward to making an impact together."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (120-170 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 delegation structure</li>
+<li>□ có 1 support offer</li>
+<li>□ có opening → delegation → support → appreciation → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Motivation Message to Tired Team</h4>
+<p class="task-context"><strong>Context:</strong> Your volunteer team is getting tired mid-event. Write a message to motivate them.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 appreciation structure</li>
+<li>Use 1 impact statement</li>
+<li>Length: 80-120 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hey team — I know we've been working hard, and I really appreciate everyone's effort today. We're making a real difference in our community, and it wouldn't be possible without each of you. Let's take a quick 10-minute break — you've earned it! When we come back, we'll tackle the last section together. Thanks so much for your commitment — you're amazing!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Appreciation:</strong> "I really appreciate everyone's effort today."</li>
+<li><strong>Collocations:</strong> "making a real difference", "you've earned it", "thanks so much"</li>
+<li><strong>Impact statement:</strong> "We're making a real difference in our community..."</li>
+<li><strong>Break offer:</strong> "Let's take a quick 10-minute break..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Shorter)</h5>
+<p class="alt-text">"Team, I really appreciate your effort today. We're making a real difference! Let's take a quick break — you've earned it. Thanks so much for your commitment!"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (80-120 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 appreciation structure</li>
+<li>□ có 1 impact statement</li>
+<li>□ có appreciation → impact → break → thanks</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Follow-Up Thank You Message</h4>
+<p class="task-context"><strong>Context:</strong> Write a follow-up thank you message after a volunteer event.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 appreciation structure</li>
+<li>Use 1 future invitation</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi everyone, Thanks so much for your help today — you really made a difference! We collected over 50 bags of trash, and the neighborhood looks amazing. It wouldn't have been possible without each of you. I really appreciate your time and effort. I'd love to have you join us again next month for our next clean-up. Would you be open to that? Let me know, and I'll send more details soon. Thanks again for your commitment — you're wonderful volunteers!"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Appreciation:</strong> "Thanks so much for your help today..."</li>
+<li><strong>Collocations:</strong> "made a difference", "wouldn't have been possible", "thanks again"</li>
+<li><strong>Future invitation:</strong> "I'd love to have you join us again next month..."</li>
+<li><strong>Specific impact:</strong> "We collected over 50 bags of trash..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Dear team, Thank you so much for your commitment today. Together, we made a real impact on our community. I'd love to have you join us for future volunteer days. Please let me know if you'd be interested. Thanks again for your wonderful contribution."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 appreciation structure</li>
+<li>□ có 1 future invitation</li>
+<li>□ có thanks → impact → appreciation → future invite → closing</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The Volunteer Coordination Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">🤝 Recruitment & Coordination</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>would you be interested in</strong>
+<div class="ipa">/wʊd ju bi ˈɪn.trəs.tɪd ɪn/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Bạn có quan tâm đến không</div>
+<div class="collocation">Collocation: "would you be interested in helping?"</div>
+<div class="chunk">Chunk: "Would you be interested in helping out?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Would you be interested in helping with the clean-up this Saturday?"</div>
+<div class="native-alt">Native alternative: "would you like to help?"</div>
+<button class="vocab-audio-btn" onclick="speakText('interested-in', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>we'd love to have you join us</strong>
+<div class="ipa">/wid lʌv tu hæv ju dʒɔɪn ʌs/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Chúng tôi rất muốn bạn tham gia</div>
+<div class="collocation">Collocation: "we'd love to have you join us"</div>
+<div class="chunk">Chunk: "We'd love to have you join us..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"We're organizing a clean-up, and we'd love to have you join us."</div>
+<div class="native-alt">Native alternative: "we'd love your help"</div>
+<button class="vocab-audio-btn" onclick="speakText('love-join', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>divide this up</strong>
+<div class="ipa">/dɪˈvaɪd ðɪs ʌp/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Chia nhỏ điều này</div>
+<div class="collocation">Collocation: "divide this up so everyone has a clear role"</div>
+<div class="chunk">Chunk: "Let's divide this up so..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Let's divide this up so everyone has a clear role."</div>
+<div class="native-alt">Native alternative: "split this up"</div>
+<button class="vocab-audio-btn" onclick="speakText('divide-up', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title"> Delegation & Motivation</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>take the lead on</strong>
+<div class="ipa">/teɪk ðə liːd ɒn/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Dẫn đầu về</div>
+<div class="collocation">Collocation: "take the lead on"</div>
+<div class="chunk">Chunk: "Could you take the lead on...?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Could you take the lead on coordinating supplies?"</div>
+<div class="native-alt">Native alternative: "lead the..."</div>
+<button class="vocab-audio-btn" onclick="speakText('take-lead', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>make a real difference</strong>
+<div class="ipa">/meɪk ə rɪəl ˈdɪf.ər.əns/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Tạo ra sự khác biệt thực sự</div>
+<div class="collocation">Collocation: "make a real difference"</div>
+<div class="chunk">Chunk: "You really made a difference."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"We're making a real difference in our community."</div>
+<div class="native-alt">Native alternative: "make an impact"</div>
+<button class="vocab-audio-btn" onclick="speakText('make-difference', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I really appreciate</strong>
+<div class="ipa">/aɪ ˈrɪə.li əˈpriː.ʃi.eɪt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi thực sự đánh giá cao</div>
+<div class="collocation">Collocation: "I really appreciate everyone's effort"</div>
+<div class="chunk">Chunk: "I really appreciate..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I really appreciate everyone's effort today."</div>
+<div class="native-alt">Native alternative: "I truly appreciate"</div>
+<button class="vocab-audio-btn" onclick="speakText('really-appreciate', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title"> Follow-up & Appreciation</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>thanks so much for</strong>
+<div class="ipa">/θæŋks səʊ mʌtʃ fɔː/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Cảm ơn rất nhiều vì</div>
+<div class="collocation">Collocation: "thanks so much for your help"</div>
+<div class="chunk">Chunk: "Thanks so much for..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Thanks so much for your help today — you really made a difference."</div>
+<div class="native-alt">Native alternative: "thank you so much for"</div>
+<button class="vocab-audio-btn" onclick="speakText('thanks-so-much', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I'd love to have you join us again</strong>
+<div class="ipa">/aɪd lʌv tu hæv ju dʒɔɪn ʌs əˈɡen/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi rất muốn bạn tham gia cùng chúng tôi lần nữa</div>
+<div class="collocation">Collocation: "I'd love to have you join us again"</div>
+<div class="chunk">Chunk: "I'd love to have you join us again..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I'd love to have you join us again next month."</div>
+<div class="native-alt">Native alternative: "we'd love to see you again"</div>
+<button class="vocab-audio-btn" onclick="speakText('love-join-again', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>would you be open to</strong>
+<div class="ipa">/wʊd ju bi ˈəʊ.pən tu/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Bạn có sẵn lòng với không</div>
+<div class="collocation">Collocation: "would you be open to that?"</div>
+<div class="chunk">Chunk: "Would you be open to...?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Would you be open to joining us again next month?"</div>
+<div class="native-alt">Native alternative: "would you be up for..."</div>
+<button class="vocab-audio-btn" onclick="speakText('open-to', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title">🏘️ Dialogue 1: Community Clean-Up Coordination (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're coordinating a neighborhood clean-up. Conversation evolves through recruiting → coordinating → delegating → motivating → following up.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hi everyone — we're organizing a neighborhood clean-up this Saturday, and we'd love to have you join us. Would you be interested in helping out? Even an hour would make a real difference." <span class="move-highlight move1">Recruit</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 1:</div>
+<div class="dialogue-text">"I'd love to help! What do you need me to do?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"That's great! Let's divide this up so everyone has a clear role. We need someone to handle supplies, someone to coordinate the team, and someone to manage communications. Does that sound fair?" <span class="move-highlight move2">Coordinate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 2:</div>
+<div class="dialogue-text">"I can handle supplies — I have extra bags and gloves at home."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Perfect! Could you take the lead on coordinating supplies? You're really good at organizing, and I think you'd do a great job. Let me know if you need any support." <span class="move-highlight move3">Delegate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 1:</div>
+<div class="dialogue-text">"I'll coordinate the team on the day."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Excellent! On the day, I really appreciate everyone's effort — we're making a real difference in our community, and it wouldn't be possible without each of you." <span class="move-highlight move4">Motivate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 2:</div>
+<div class="dialogue-text">"This is going to be great!"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"After the event, I'll send out a thank you message. Thanks so much for your help — you really made a difference. I'd love to have you join us again next month. Would you be open to that?" <span class="move-highlight move5">Follow Up</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Recruit (warm invitation) + Coordinate (clear roles) + Delegate (respectful assignment) + Motivate (personal appreciation) + Follow Up (future invitation).</li>
+<li><strong>Alternative Decision:</strong> Do everything yourself or give vague instructions. (Risk: Burnout or confusion).</li>
+<li><strong>Why this decision?</strong> Recruiting builds the team. Coordinating prevents chaos. Delegating builds capacity. Motivating keeps energy high. Following up builds lasting relationships.</li>
+<li><strong>Resistance handled:</strong> Neighbor's question "What do you need me to do?" You addressed it with clear role division.</li>
+<li><strong>Evolution:</strong> Recruitment → Coordination → Delegation → Motivation → Follow-up → Lasting team.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Corporate Volunteer Day (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're coordinating a corporate volunteer day. Conversation evolves through recruiting colleagues → coordinating with partner → delegating roles → motivating team → following up with leadership.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Hi team — we're organizing a corporate volunteer day next month, and we're looking for volunteers to participate. Would you be interested in joining us? It's a great opportunity to give back to the community." <span class="move-highlight move1">Recruit</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague 1:</div>
+<div class="dialogue-text">"I'd love to help! What's involved?"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"We'll be working with a local food bank. Let's divide this up so everyone has a clear role. We need someone to coordinate with the food bank, someone to manage logistics, and someone to handle communications." <span class="move-highlight move2">Coordinate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague 2:</div>
+<div class="dialogue-text">"I can coordinate with the food bank — I've worked with them before."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"That's perfect. Could you take the lead on that? You have great experience with them, and I think you'd do an excellent job. Let me know if you need any support from my side." <span class="move-highlight move3">Delegate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague 1:</div>
+<div class="dialogue-text">"I'll handle logistics."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Great! I'll manage communications and keep leadership updated. On the day, I really appreciate everyone's effort — we're making a real impact, and it reflects well on our company culture." <span class="move-highlight move4">Motivate</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague 2:</div>
+<div class="dialogue-text">"Looking forward to it!"</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"After the event, I'll send a thank you email to everyone and share the impact with leadership. Thanks so much for your commitment — you're making a real difference. I'd love to have you join us for future volunteer days." <span class="move-highlight move5">Follow Up</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Recruit (professional invitation) + Coordinate (clear structure) + Delegate (acknowledges experience) + Motivate (connects to company culture) + Follow Up (shares impact with leadership).</li>
+<li><strong>Alternative Decision:</strong> Just assign tasks or do it alone. (Risk: Low engagement or burnout).</li>
+<li><strong>Why this decision?</strong> Professional recruiting shows respect. Clear coordination prevents confusion. Delegating to experienced colleagues builds trust. Connecting to company culture motivates. Sharing impact with leadership shows value.</li>
+<li><strong>Resistance handled:</strong> Colleague's question "What's involved?" You addressed it with clear context and role division.</li>
+<li><strong>Evolution:</strong> Recruitment → Coordination → Delegation → Motivation → Follow-up → Strong volunteer culture.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to the dialogues above. Notice the warm tone, inclusive language, and discourse markers used in volunteer coordination.</p>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 16px;">Step 1: Full Transcript</h4>
+<div class="transcript-box">
+<p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;"><em>Refer to the dialogues above for the full transcript with spoken English features.</em></p>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 2: Key Phrases Breakdown</h4>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"We'd love to have you join us..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Warm recruitment invitation
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "We'd love to have you join us..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "We'd love your help..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows enthusiasm and inclusion
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Let's divide this up so everyone has a clear role."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Clear coordination
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Let's divide this up so..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "Let's split this up..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Prevents confusion, ensures clarity
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Could you take the lead on...?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Respectful delegation
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Could you take the lead on...?"
+<span class="arrow">↓</span> <strong>Alternative:</strong> "Would you mind handling...?"
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows trust, acknowledges skills
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I really appreciate everyone's effort..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Personal motivation
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I really appreciate everyone's effort..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "I truly appreciate..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Builds loyalty, keeps energy high
+</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 3: Pronunciation Focus</h4>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Warm, inviting tone</div>
+<div class="detail">"We'd love to have you join us..." (Warm, enthusiastic — not demanding)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Rising intonation for questions</div>
+<div class="detail">"Would you be interested in helping out?" (Rising intonation invites response)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Stress on appreciation words</div>
+<div class="detail">"I REALLY appreciate everyone's EFFORT today." (Stress shows sincerity)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Pause for impact</div>
+<div class="detail">"Thanks so much for your help... (pause) ...you really made a difference." (Pause adds weight)</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 4: Listening Strategy (3 passes)</h4>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 1: Nghe Recruitment</div>
+<div class="note"><strong>Focus:</strong> "We'd love to have you join us...", "Would you be interested..."</div>
+<div class="note"><strong>Question:</strong> "Where do they recruit warmly?"</div>
+<div class="note"><strong>Signal:</strong> Warm recruitment shows inclusive leadership</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase"> Listening Strategy Lần 2: Nghe Delegation</div>
+<div class="note"><strong>Focus:</strong> "Could you take the lead on...?", "Let me know if you need support"</div>
+<div class="note"><strong>Question:</strong> "Where do they delegate respectfully?"</div>
+<div class="note"><strong>Signal:</strong> Respectful delegation builds trust</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 3: Nghe Appreciation</div>
+<div class="note"><strong>Focus:</strong> "I really appreciate...", "Thanks so much for..."</div>
+<div class="note"><strong>Question:</strong> "Where do they show appreciation?"</div>
+<div class="note"><strong>Signal:</strong> Appreciation builds lasting relationships</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 5: Shadowing Challenge</h4>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the spoken English rhythm, not just the words:</div>
+<div class="note">1. Listen to: "We'd love to have you join us. Would you be interested in helping out?"</div>
+<div class="note">2. Shadow: Match the warm, inviting tone</div>
+<div class="note">3. Focus: Stress on "love", "join", "interested"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different element (warmth / invitation / low-pressure)</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 6: Outcome-based Questions</h4>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "We'd love to have you join us"?</div>
+<div class="note">✅ To recruit warmly. Shows enthusiasm and inclusion.</div>
+<div class="note">2. What was the strategic goal of saying "Let's divide this up so everyone has a clear role"?</div>
+<div class="note">✅ To coordinate clearly. Prevents confusion and ensures everyone contributes.</div>
+<div class="note">3. How did you handle delegation?</div>
+<div class="note">✅ Said "Could you take the lead on...?" Shows trust and acknowledges skills.</div>
+<div class="note">4. What was the trade-off of following up warmly?</div>
+<div class="note">✅ Builds lasting relationships and encourages return volunteers, but takes time.</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Recruiting with "Would you be interested in..."</h4>
+<div class="explanation">Used to recruit volunteers warmly. These structures show enthusiasm without pressure.</div>
+<ul class="grammar-examples-list">
+<li>"Would you be interested in helping with the clean-up?"</li>
+<li>"We'd love to have you join us this Saturday."</li>
+<li>"Would you be open to volunteering with us?"</li>
+<li>"We're looking for volunteers to... Would you be interested?"</li>
+<li>"Even an hour would make a real difference."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "We need volunteers." (Too direct, no warmth)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Would you be interested in helping out?"</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Coordinating with "Let's divide this up..."</h4>
+<div class="explanation">Used to coordinate tasks clearly. These structures prevent confusion and ensure clarity.</div>
+<ul class="grammar-examples-list">
+<li>"Let's divide this up so everyone has a clear role."</li>
+<li>"We need someone to handle X, someone to handle Y, and someone to handle Z."</li>
+<li>"Does that sound fair?"</li>
+<li>"Here's what we need to cover..."</li>
+<li>"Let's make sure everyone knows what they're responsible for."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Everyone just help out." (Too vague)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Let's divide this up so everyone has a clear role."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Delegating with "Could you take the lead on..."</h4>
+<div class="explanation">Used to delegate respectfully. These structures show trust and acknowledge skills.</div>
+<ul class="grammar-examples-list">
+<li>"Could you take the lead on coordinating supplies?"</li>
+<li>"Would you mind handling team coordination?"</li>
+<li>"You're really good at organizing, and I think you'd do a great job."</li>
+<li>"Let me know if you need any support."</li>
+<li>"I think you'd be perfect for this role."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "You do this." (Too commanding)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Could you take the lead on...?"</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Motivating with "I really appreciate..."</h4>
+<div class="explanation">Used to motivate the team personally. These structures build loyalty and keep energy high.</div>
+<ul class="grammar-examples-list">
+<li>"I really appreciate everyone's effort today."</li>
+<li>"We're making a real difference in our community."</li>
+<li>"It wouldn't be possible without each of you."</li>
+<li>"You've earned a break — let's take 10 minutes."</li>
+<li>"Your commitment means so much to this project."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Good job, everyone." (Too generic)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "I really appreciate everyone's effort today."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Following Up with "Thanks so much for..."</h4>
+<div class="explanation">Used to follow up warmly. These structures build lasting relationships and encourage return volunteers.</div>
+<ul class="grammar-examples-list">
+<li>"Thanks so much for your help today — you really made a difference."</li>
+<li>"I'd love to have you join us again next month."</li>
+<li>"Would you be open to volunteering with us again?"</li>
+<li>"I'll send out a thank you message to everyone."</li>
+<li>"Looking forward to working with you again soon."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Thanks." (Too brief, no warmth)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Thanks so much for your help today..."</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Recruiting for Clean-Up</h3>
+<p class="scenario-context">Recruit neighbors for a community clean-up. Use warm, low-pressure language.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Recruit + Coordinate</span>
+<span class="response">"We're organizing a clean-up this Saturday, and we'd love to have you join us. Would you be interested in helping out? Even an hour makes a difference."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Delegate + Motivate</span>
+<span class="response">"Could you take the lead on supplies? You're great at organizing. I really appreciate your help — we're making a real difference together."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Being too direct or pressuring.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Coordinating Corporate Volunteer Day</h3>
+<p class="scenario-context">Coordinate colleagues for a corporate volunteer day. Use professional, clear language.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Recruit + Coordinate</span>
+<span class="response">"We're looking for volunteers for our corporate volunteer day. Would you be interested in joining us? Let's divide this up so everyone has a clear role."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Delegate + Follow Up</span>
+<span class="response">"Could you take the lead on coordinating with the food bank? You have great experience. I'd love to have you join us for future volunteer days."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Not connecting to company culture.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Motivating Tired Volunteers</h3>
+<p class="scenario-context">Your volunteer team is getting tired mid-event. Motivate them personally.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Appreciate + Impact</span>
+<span class="response">"I really appreciate everyone's effort today. We're making a real difference in our community, and it wouldn't be possible without each of you."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Break + Thanks</span>
+<span class="response">"Let's take a quick break — you've earned it! Thanks so much for your commitment. You're amazing!"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Generic praise instead of personal appreciation.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario — Life + Business</h3>
+<p class="scenario-context">Morning: Recruit neighbors for clean-up. Afternoon: Coordinate corporate volunteer day.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Morning (Life — Warm, personal, low-pressure)</span>
+<span class="response">"We'd love to have you join us! Would you be interested in helping out? No pressure if you can't make it."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Afternoon (Business — Professional, clear, culture-connected)</span>
+<span class="response">"We're looking for volunteers to participate. Let's divide this up so everyone has a clear role. This reflects well on our company culture."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Reflection</span>
+<span class="response">How did your approach change? Life = warmer, more personal. Business = more structured, connects to culture. Both = clear roles + appreciation.</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Using the same register for both contexts.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Volunteer Coordination Challenge</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3> The Volunteer Audit</h3>
+<p class="task-time">⏱️ 15 minutes</p>
+<p class="task-desc">Identify 1 volunteer situation you've been part of. Apply the 5 lenses. What decisions were made? Note the trade-offs.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the volunteer situation</li>
+<li>Apply the 5 lenses (Recruit, Coordinate, Delegate, Motivate, Follow Up)</li>
+<li>What decisions were made?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"I helped organize a community garden. Recruitment: We recruited warmly ('We'd love to have you join us'). Coordination: We divided tasks clearly ('Let's divide this up so everyone has a clear role'). Delegation: We delegated respectfully ('Could you take the lead on...?'). Motivation: We appreciated personally ('I really appreciate everyone's effort'). Follow-up: We followed up warmly ('Thanks so much for your help'). Trade-off: Took more time to coordinate, but built a strong, motivated team."</p>
+</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Volunteer Practice</h3>
+<p class="task-time">⏱️ 30 minutes</p>
+<p class="task-desc">Role-play a volunteer coordination scenario. Practice the 5-step loop. Get feedback on your recruitment and delegation.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose a volunteer coordination scenario</li>
+<li>Practice all 5 steps of the loop</li>
+<li>Get feedback on your recruitment and delegation</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Role-play: Coordinating a food drive. I practiced recruiting warmly ('We'd love to have you join us'), coordinating clearly ('Let's divide this up'), delegating respectfully ('Could you take the lead on...?'), motivating personally ('I really appreciate everyone's effort'), and following up warmly ('Thanks so much for your help'). Feedback: I was warm in recruitment but could improve my delegation — I was too vague about roles."</p>
+</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Volunteer Coordination</h3>
+<p class="task-time">⏱️ 60 minutes</p>
+<p class="task-desc">This week, actually coordinate a volunteer activity. Use the 5-step framework. Note what worked, what didn't, and what you learned.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify an actual volunteer activity to coordinate</li>
+<li>Apply the 5-step framework in real-time</li>
+<li>Use the framework (Recruit, Coordinate, Delegate, Motivate, Follow Up)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default coordination style?</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Real coordination: Organized a neighborhood clean-up. Applied the 5-step framework: 1) Recruited: 'We'd love to have you join us.' 2) Coordinated: 'Let's divide this up so everyone has a clear role.' 3) Delegated: 'Could you take the lead on supplies?' 4) Motivated: 'I really appreciate everyone's effort — we're making a real difference.' 5) Followed up: 'Thanks so much for your help — I'd love to have you join us again.' What worked: The warm recruitment got great turnout. What didn't: I could have delegated more specifically. What I learned: My default style is warm and appreciative, but I need to be more specific in delegation."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Volunteer Coordination Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I recruit volunteers warmly</h4>
+<p>I recruit with warm, specific invitations, not vague requests.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I coordinate tasks clearly</h4>
+<p>I divide tasks so everyone has a clear role, not vague instructions.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I delegate respectfully</h4>
+<p>I delegate with trust and offer support, not ordering people around.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I motivate the team personally</h4>
+<p>I appreciate specifically and acknowledge impact, not generic praise.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I follow up warmly</h4>
+<p>I thank specifically and invite return volunteers, not forgetting to appreciate.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently coordinate volunteers with warmth, clarity, and appreciation, you are ready for Day 123: Advocating for Causes You Care About.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> You need to recruit volunteers for a community event</p>
+<button>Tap to reveal Volunteer Coordination Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "We need volunteers."</p>
+<p><strong>C1 Language:</strong> Recruit → Coordinate → Delegate → Motivate → Follow Up.<br>
+"We'd love to have you join us! Would you be interested in helping out? Let's divide this up so everyone has a clear role. Could you take the lead on supplies? I really appreciate everyone's effort — we're making a real difference. Thanks so much for your help — I'd love to have you join us again!"</p>
+<p><strong>Trade-off:</strong> Takes more time upfront, but builds a strong, motivated team.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In volunteer coordination, warm recruitment builds the team. Clear coordination prevents chaos. Respectful delegation builds capacity. Personal motivation keeps energy high. Warm follow-up builds lasting relationships.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Volunteering and Coordinating with Teams</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Recruiting volunteers for clean-up. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "We need volunteers."</div>
+<div class="quiz-option">B. "We're organizing a clean-up this Saturday, and we'd love to have you join us. Would you be interested in helping out?"</div>
+<div class="quiz-option">C. "You should volunteer."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Coordinating tasks for food drive. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Everyone just help out."</div>
+<div class="quiz-option">B. "Let's divide this up so everyone has a clear role. We need someone to handle collection, someone to sort, and someone to distribute."</div>
+<div class="quiz-option">C. "Just do whatever needs doing."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Delegating to volunteer. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "You do this."</div>
+<div class="quiz-option">B. "Could you take the lead on coordinating supplies? You're really good at organizing, and I think you'd do a great job."</div>
+<div class="quiz-option">C. "Handle the supplies."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Motivating tired team. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Good job, everyone."</div>
+<div class="quiz-option">B. "I really appreciate everyone's effort today. We're making a real difference in our community, and it wouldn't be possible without each of you."</div>
+<div class="quiz-option">C. "Keep working."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Following up after event. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Thanks."</div>
+<div class="quiz-option">B. "Thanks so much for your help today — you really made a difference. I'd love to have you join us again next month."</div>
+<div class="quiz-option">C. (No follow-up)</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Handling volunteer no-show. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "They didn't show up."</div>
+<div class="quiz-option">B. "Looks like we're a bit short-handed today — no worries, we can adjust. Let's redistribute the tasks so everyone has a manageable load."</div>
+<div class="quiz-option">C. "We're screwed."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of warm recruitment?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Builds a strong team, but takes more time than just posting a sign-up sheet.</div>
+<div class="quiz-option">B. Faster but less engaged volunteers.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of clear coordination?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Prevents confusion, but takes more upfront planning time.</div>
+<div class="quiz-option">B. More flexible but more confusing.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Bạn có thể dẫn đầu về..."?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Could you take the lead on...?</div>
+<div class="quiz-option">B. Would you be interested in...?</div>
+<div class="quiz-option">C. Thanks so much for...</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+<div class="day-navigation">
+<a href="week-18-day-121.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 121: Discussing Local Issues with Neighbors</div>
+</a>
+<a href="week-18-day-123.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 123: Advocating for Causes You Care About</div>
+</a>
+</div>
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 122 Complete & Continue to Day 123</button>
+<p class="complete-message">B2 speakers volunteer. C1 speakers lead volunteers. </p>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<p class="footer-title">Professional Fluency Roadmap</p>
+<p class="footer-tagline">Week 18 · Day 122 · Volunteering and Coordinating with Teams</p>
+</div>
+</footer>
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+const textContent = {
+'lens1': 'Lens 1: Recruiting Volunteers. How do I recruit volunteers effectively? We are organizing a neighborhood clean-up this Saturday, and we would love to have you join us. Would you be interested in helping out? Even an hour would make a real difference.',
+'lens2': 'Lens 2: Coordinating Tasks. How do I coordinate tasks clearly? Let us divide this up so everyone has a clear role. We need someone to handle supplies, someone to coordinate the team, and someone to manage communications. Does that sound fair?',
+'lens3': 'Lens 3: Delegating Effectively. How do I delegate without being bossy? Could you take the lead on coordinating supplies? You are really good at organizing, and I think you would do a great job. Let me know if you need any support.',
+'lens4': 'Lens 4: Motivating the Team. How do I keep the team motivated? I really appreciate everyone is effort today. We are making a real difference in our community, and it would not be possible without each of you. Let us take a quick break — you have earned it.',
+'lens5': 'Lens 5: Following Up Warmly. How do I follow up to build lasting relationships? Thanks so much for your help today — you really made a difference. I would love to have you join us again next month. Would you be open to that?',
+'interested-in': 'would you be interested in',
+'love-join': 'we would love to have you join us',
+'divide-up': 'divide this up',
+'take-lead': 'take the lead on',
+'make-difference': 'make a real difference',
+'really-appreciate': 'I really appreciate',
+'thanks-so-much': 'thanks so much for',
+'love-join-again': 'I would love to have you join us again',
+'open-to': 'would you be open to',
+'dialogue1': 'Dialogue 1: Community Clean-Up Coordination. You: Hi everyone — we are organizing a neighborhood clean-up this Saturday, and we would love to have you join us. Would you be interested in helping out? Even an hour would make a real difference. Neighbor 1: I would love to help! What do you need me to do? You: That is great! Let us divide this up so everyone has a clear role. We need someone to handle supplies, someone to coordinate the team, and someone to manage communications. Does that sound fair? Neighbor 2: I can handle supplies — I have extra bags and gloves at home. You: Perfect! Could you take the lead on coordinating supplies? You are really good at organizing, and I think you would do a great job. Let me know if you need any support. Neighbor 1: I will coordinate the team on the day. You: Excellent! On the day, I really appreciate everyone is effort — we are making a real difference in our community, and it would not be possible without each of you. Neighbor 2: This is going to be great! You: After the event, I will send out a thank you message. Thanks so much for your help — you really made a difference. I would love to have you join us again next month. Would you be open to that?',
+'dialogue2': 'Dialogue 2: Corporate Volunteer Day. You: Hi team — we are organizing a corporate volunteer day next month, and we are looking for volunteers to participate. Would you be interested in joining us? It is a great opportunity to give back to the community. Colleague 1: I would love to help! What is involved? You: We will be working with a local food bank. Let us divide this up so everyone has a clear role. We need someone to coordinate with the food bank, someone to manage logistics, and someone to handle communications. Colleague 2: I can coordinate with the food bank — I have worked with them before. You: That is perfect. Could you take the lead on that? You have great experience with them, and I think you would do an excellent job. Let me know if you need any support from my side. Colleague 1: I will handle logistics. You: Great! I will manage communications and keep leadership updated. On the day, I really appreciate everyone is effort — we are making a real impact, and it reflects well on our company culture. Colleague 2: Looking forward to it! You: After the event, I will send a thank you email to everyone and share the impact with leadership. Thanks so much for your commitment — you are making a real difference. I would love to have you join us for future volunteer days.'
+};
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+</body>
+</html>

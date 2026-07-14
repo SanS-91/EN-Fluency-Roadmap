@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 18 Day 124: Building Consensus in Community Settings | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--text-highlight: #7C3AED;
+--text-error: #DC2626;
+--text-success: #059669;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 800px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.reading-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.move-highlight.move4 { background: #10B981; }
+.move-highlight.move5 { background: #F59E0B; }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--text-highlight); font-weight: 700; display: block; margin: 6px 0; }
+.deep-dive-item .analysis strong { color: var(--text-primary); display: block; margin-top: 10px; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.sample-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-top: 16px; border-left: 4px solid #10B981; }
+.sample-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.sample-answer .answer-text { font-size: 13px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+<div class="container">
+<a href="week-18.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 18 Hub</a>
+<div class="day-indicator">Day 124 / 126</div>
+</div>
+</nav>
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-18.html" class="day-tab">Overview</a>
+<a href="week-18-day-120.html" class="day-tab">Day 120</a>
+<a href="week-18-day-121.html" class="day-tab">Day 121</a>
+<a href="week-18-day-122.html" class="day-tab">Day 122</a>
+<a href="week-18-day-123.html" class="day-tab">Day 123</a>
+<a href="week-18-day-124.html" class="day-tab active">Day 124</a>
+<a href="week-18-day-125.html" class="day-tab">Day 125</a>
+<a href="week-18-day-126.html" class="day-tab">Day 126</a>
+</div>
+</div>
+</div>
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-18.html">Week 18</a> › Day 124
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">🤝</span>
+<h1 class="day-title">Building Consensus in Community Settings</h1>
+</div>
+<p class="day-subtitle">Days 120-123 taught you to organize events, discuss local issues, coordinate volunteers, and advocate for causes. Day 124 focuses on <strong>building consensus in community settings</strong> — bringing diverse voices together, finding common ground, and reaching agreements that work for everyone. B2 speakers push their own agenda or avoid conflict. C1 speakers listen actively, bridge differences, and facilitate win-win solutions.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Consensus Building + Conflict Resolution + Facilitation</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Civic Persuasion Day 5 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i> 💡 C1 Insight</div>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Pushes their own agenda ("We should do it my way") or avoids conflict entirely ("Let's just not talk about it"). Doesn't bridge differences or facilitate group agreement.<br><br><strong>C1 Speaker:</strong> Listens to all sides, identifies shared values, proposes compromises, and guides the group toward a decision everyone can support. Says "I hear what you're saying, and I think we can find a solution that addresses both concerns."<br><br>"B2 speakers win arguments. C1 speakers build consensus. The difference isn't persuasion — it's facilitation and empathy."</div>
+</div>
+<div class="quote">"Consensus isn't about everyone agreeing on everything. It's about everyone feeling heard and committing to move forward together."</div>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Building Consensus = Listening + Finding Common Ground + Proposing Compromise + Facilitating Agreement + Confirming Commitment</h3>
+<p class="philosophy-text">"Building consensus isn't about getting everyone to agree with you. It's about listening to all perspectives, finding shared values, proposing compromises, facilitating agreement, and ensuring everyone commits to the outcome."</p>
+<p class="philosophy-text">Every consensus-building conversation requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Listening Decision:</strong> How do I hear all sides? (Selective? Active?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Common Ground Decision:</strong> How do I find shared values? (Ignore? Highlight?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Compromise Decision:</strong> How do I propose a middle path? (Rigid? Flexible?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Facilitation Decision:</strong> How do I guide the group? (Dominate? Facilitate?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Commitment Decision:</strong> How do I confirm buy-in? (Assume? Verify?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 124 teaches you how to build consensus with empathy, flexibility, and skilled facilitation.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">🤝</div>
+<div class="plan-title">Consensus Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Listen → Find Ground → Compromise → Facilitate → Confirm</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">👁️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔍</div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📚</div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎧</div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📝</div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Consensus Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 5-step process for building consensus</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">LISTEN ACTIVELY (Hear all sides)</div>
+<div class="loop-step-desc">How do I listen? "I'd like to hear everyone's perspective..." / "Tell me more about your concern..." (Listen without judgment)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">FIND COMMON GROUND (Identify shared values)</div>
+<div class="loop-step-desc">What do we agree on? "It sounds like we all want..." / "I think we share the same goal here..." (Highlight shared values)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">PROPOSE COMPROMISE (Suggest middle path)</div>
+<div class="loop-step-desc">How do we bridge the gap? "What if we met halfway?" / "Could we try a solution that addresses both concerns?" (Propose flexibly)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">FACILITATE AGREEMENT (Guide the group)</div>
+<div class="loop-step-desc">How do I guide us? "Does this feel like a direction we can all support?" / "Let's see if we can refine this together." (Facilitate, don't dominate)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">5</div>
+<div class="loop-step-title">CONFIRM COMMITMENT (Verify buy-in)</div>
+<div class="loop-step-desc">How do I confirm? "Are we all comfortable moving forward with this?" / "Can I count on everyone's support?" (Verify explicitly)</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Consensus Lenses (3-Level Examples)</h2>
+</div>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">Every consensus-building conversation requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+<div class="lenses-grid">
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Listening Actively
+<button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I hear all sides without judgment?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Listening Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I hear you."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I understand your concern."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"I'd like to hear everyone's perspective on this before we decide. Could you tell me more about what's driving your concern?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Neighborhood dispute. Decision: Active listening ("I'd like to hear everyone's perspective...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Board disagreement. Decision: Professional listening ("Could you tell me more about what's driving your concern?")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Active)</strong> Builds trust, ensures all voices are heard, prevents resentment.</div>
+<div class="compare-level weak"><strong>Lose (Active)</strong> Takes more time; may feel like you're delaying the decision.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Listening selectively or interrupting. Native speakers listen to understand, not to respond.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I listening to understand or to respond?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Finding Common Ground
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I identify shared values?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Common Ground Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"We all want the same thing."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I think we share the same goal."</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"It sounds like we all want what's best for the community, even if we disagree on the approach. Let's start from that shared goal."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Park renovation debate. Decision: Highlighting shared values ("It sounds like we all want what's best...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Budget allocation. Decision: Professional common ground ("Let's start from that shared goal...")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Shared)</strong> Creates a foundation for collaboration, reduces polarization.</div>
+<div class="compare-level weak"><strong>Lose (Shared)</strong> May oversimplify complex differences if not careful.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Focusing only on differences. Native speakers actively look for what unites the group.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I focusing on differences or commonalities?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Proposing Compromise
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I suggest a middle path?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Compromise Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Let's meet halfway."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"What if we tried a compromise?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"What if we met halfway? Could we try a solution that addresses both the safety concerns and the budget constraints?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Noise complaint resolution. Decision: Flexible compromise ("What if we met halfway?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Project scope debate. Decision: Professional compromise ("Could we try a solution that addresses both...")</p>
+</div>
+<div class="compare-box">
+<h5>️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Flexible)</strong> Bridges gaps, shows willingness to collaborate.</div>
+<div class="compare-level weak"><strong>Lose (Flexible)</strong> May feel like you're giving up your core position.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Being rigid or demanding. Native speakers propose compromises as invitations, not ultimatums.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I proposing or demanding?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Facilitating Agreement
+<button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I guide the group without dominating?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Facilitation Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Let's decide."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Does this work for everyone?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Does this feel like a direction we can all support? Let's see if we can refine this together to make sure everyone's needs are met."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Community event planning. Decision: Inclusive facilitation ("Does this feel like a direction we can all support?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Policy change. Decision: Professional facilitation ("Let's see if we can refine this together...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Facilitated)</strong> Creates ownership, ensures sustainable agreement.</div>
+<div class="compare-level weak"><strong>Lose (Facilitated)</strong> Takes more time; may feel indecisive to some.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Forcing a decision or dominating the conversation. Native speakers guide, not dictate.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I facilitating or dominating?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Confirming Commitment
+<button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I verify everyone's buy-in?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Commitment Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"Are we agreed?"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"Is everyone okay with this?"</span>
+</div>
+<div class="example-level c1">
+<span class="level-label">C1 Professional</span>
+<span class="example-text">"Are we all comfortable moving forward with this? Can I count on everyone's support to make this happen?"</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Neighborhood agreement. Decision: Explicit confirmation ("Are we all comfortable moving forward...?")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Team decision. Decision: Professional confirmation ("Can I count on everyone's support...?")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong"><strong>Gain (Confirmed)</strong> Prevents future resentment, ensures accountability.</div>
+<div class="compare-level weak"><strong>Lose (Confirmed)</strong> May surface lingering objections that need addressing.</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Assuming agreement because no one spoke up. Native speakers verify explicitly.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I confirming or assuming?</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy consensus building</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Pushing Your Own Agenda</h4>
+<div class="mistake-wrong">❌ "We should do it my way because it's the best."</div>
+<div class="mistake-right">✅ "I'd like to hear everyone's perspective. I think we can find a solution that addresses all our concerns."</div>
+<div class="mistake-why">Why: Pushing your agenda creates resistance. Listening and bridging creates buy-in.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Avoiding Conflict Entirely</h4>
+<div class="mistake-wrong">❌ "Let's just not talk about it and move on."</div>
+<div class="mistake-right">✅ "I know this is a sensitive topic, but I think it's important we address it together so we can move forward."</div>
+<div class="mistake-why">Why: Avoiding conflict leaves issues unresolved. Addressing it constructively builds stronger agreements.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Assuming Agreement</h4>
+<div class="mistake-wrong">❌ "Okay, we're all agreed then." (when people are silent)</div>
+<div class="mistake-right">✅ "Are we all comfortable moving forward with this? Does anyone have lingering concerns we should address?"</div>
+<div class="mistake-why">Why: Silence doesn't mean agreement. Explicit confirmation ensures true buy-in.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Consensus Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title">🔍 The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Neighborhood zoning dispute</td>
+<td>"My way is the only way."</td>
+<td>"Let's compromise."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I'd like to hear everyone's perspective. It sounds like we all want what's best for the neighborhood. What if we met halfway and found a solution that addresses both concerns?"</span>
+<span class="why">Why: Listens, finds common ground, proposes compromise.</span>
+</div>
+</td>
+<td>Listen + Common ground + Compromise</td>
+<td>"I'd like to hear everyone's perspective..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>2. Park renovation debate</td>
+<td>"We need a playground, not a garden."</td>
+<td>"Maybe we can have both."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"It sounds like we all want a space that serves the whole community. Could we try a design that incorporates both a playground and a garden area? Let's see if we can refine this together."</span>
+<span class="why">Why: Highlights shared goal, proposes inclusive solution.</span>
+</div>
+</td>
+<td>Shared goal + Inclusive solution</td>
+<td>"It sounds like we all want..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>3. Noise complaint resolution</td>
+<td>"You need to be quieter."</td>
+<td>"Let's find a middle ground."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand your concern about the noise, and I also hear that you want to enjoy your space. What if we agreed on quiet hours after 10pm? Does that feel like a direction we can all support?"</span>
+<span class="why">Why: Validates both sides, proposes specific compromise.</span>
+</div>
+</td>
+<td>Validates both + Specific compromise</td>
+<td>"What if we agreed on..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>4. Community budget allocation</td>
+<td>"My project should get the funding."</td>
+<td>"Let's split the budget."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I think we all want to make the best use of our limited budget. Could we prioritize projects based on community impact and phase the rest over time? Are we all comfortable with that approach?"</span>
+<span class="why">Why: Shared priority, phased approach, confirms commitment.</span>
+</div>
+</td>
+<td>Shared priority + Phased approach</td>
+<td>"Could we prioritize based on..."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>5. School district changes</td>
+<td>"This change is terrible."</td>
+<td>"Let's discuss the pros and cons."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I know this is a sensitive topic, and I appreciate everyone sharing their concerns. It sounds like we all want the best for our children. Let's work together to find a solution that minimizes disruption."</span>
+<span class="why">Why: Acknowledges sensitivity, finds common ground, collaborative tone.</span>
+</div>
+</td>
+<td>Acknowledges sensitivity + Collaborative</td>
+<td>"It sounds like we all want..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>6. Local business regulations</td>
+<td>"These rules are too strict."</td>
+<td>"Maybe we can adjust them."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I hear the concern about over-regulation, and I also understand the need for standards. What if we reviewed the rules together and identified which ones are essential and which could be relaxed?"</span>
+<span class="why">Why: Validates both concerns, proposes joint review.</span>
+</div>
+</td>
+<td>Validates both + Joint review</td>
+<td>"What if we reviewed together..."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>7. Environmental initiative</td>
+<td>"We must do this immediately."</td>
+<td>"Let's take it step by step."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I share your urgency about this issue, and I also hear the concern about feasibility. What if we started with a pilot program to demonstrate the impact, then scaled up? Can I count on everyone's support for the pilot?"</span>
+<span class="why">Why: Balances urgency with feasibility, confirms support.</span>
+</div>
+</td>
+<td>Balances urgency + Confirms support</td>
+<td>"What if we started with a pilot..."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>8. Traffic/parking solutions</td>
+<td>"We need more parking spaces."</td>
+<td>"Let's look at alternatives."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"It sounds like we all want to reduce congestion and make the area accessible. What if we explored a mix of parking improvements and better public transit options? Does this feel like a direction we can all support?"</span>
+<span class="why">Why: Shared goal, mixed solution, facilitates agreement.</span>
+</div>
+</td>
+<td>Shared goal + Mixed solution</td>
+<td>"It sounds like we all want..."</td>
+<td>Casual</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title">🏘️ Case 1: Life - Deciding on a Community Garden Design</h4>
+<div class="case-context"><strong>Context:</strong> The neighborhood is deciding how to use a vacant lot. Some want a playground, others want a community garden. You need to facilitate a consensus.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "I'd like to hear everyone's perspective on this before we decide. I know this is important to all of us."</p>
+<p><span class="speaker">Neighbor 1:</span> "We really need a playground for the kids. There's nowhere for them to play safely."</p>
+<p><span class="speaker">Neighbor 2:</span> "But a community garden would bring people together and provide fresh produce. It's more inclusive."</p>
+<p><span class="speaker">You:</span> "Thank you both for sharing. It sounds like we all want a space that serves the whole community and brings us together. That's our shared goal."</p>
+<p><span class="speaker">Neighbor 1:</span> "Yes, but the kids need a safe place to play."</p>
+<p><span class="speaker">You:</span> "I hear that. And I also hear that the garden would foster community connections. What if we met halfway? Could we try a design that incorporates both a small playground area and a community garden? Let's see if we can refine this together to make sure both needs are met."</p>
+<p><span class="speaker">Neighbor 2:</span> "That could work if the garden is the main focus."</p>
+<p><span class="speaker">Neighbor 1:</span> "And the playground is safe and well-maintained."</p>
+<p><span class="speaker">You:</span> "Exactly. Does this feel like a direction we can all support? Are we all comfortable moving forward with a hybrid design? Can I count on everyone's support to make this happen?"</p>
+<p><span class="speaker">Both:</span> "Yes, we can work with that."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I'd like to hear everyone's perspective."</strong><span class="meaning">Tôi muốn nghe quan điểm của mọi người.</span><span class="register">Register: Casual · Listen</span></li>
+<li><strong>"It sounds like we all want..."</strong><span class="meaning">Có vẻ như tất cả chúng ta đều muốn...</span><span class="register">Register: Casual · Common Ground</span></li>
+<li><strong>"That's our shared goal."</strong><span class="meaning">Đó là mục tiêu chung của chúng ta.</span><span class="register">Register: Casual · Common Ground</span></li>
+<li><strong>"I hear that."</strong><span class="meaning">Tôi hiểu điều đó.</span><span class="register">Register: Casual · Listen</span></li>
+<li><strong>"What if we met halfway?"</strong><span class="meaning">Nếu chúng ta gặp nhau ở giữa thì sao?</span><span class="register">Register: Casual · Compromise</span></li>
+<li><strong>"Could we try a design that incorporates both?"</strong><span class="meaning">Chúng ta có thể thử một thiết kế kết hợp cả hai không?</span><span class="register">Register: Casual · Compromise</span></li>
+<li><strong>"Let's see if we can refine this together."</strong><span class="meaning">Hãy xem chúng ta có thể cùng nhau tinh chỉnh điều này không.</span><span class="register">Register: Casual · Facilitate</span></li>
+<li><strong>"Does this feel like a direction we can all support?"</strong><span class="meaning">Điều này có cảm giác như một hướng đi mà tất cả chúng ta có thể hỗ trợ không?</span><span class="register">Register: Casual · Facilitate</span></li>
+<li><strong>"Are we all comfortable moving forward with this?"</strong><span class="meaning">Tất cả chúng ta có thoải mái tiến tới với điều này không?</span><span class="register">Register: Casual · Commit</span></li>
+<li><strong>"Can I count on everyone's support?"</strong><span class="meaning">Tôi có thể dựa vào sự hỗ trợ của mọi người không?</span><span class="register">Register: Casual · Commit</span></li>
+<li><strong>"I know this is important to all of us."</strong><span class="meaning">Tôi biết điều này quan trọng với tất cả chúng ta.</span><span class="register">Register: Casual · Listen</span></li>
+<li><strong>"Thank you both for sharing."</strong><span class="meaning">Cảm ơn cả hai đã chia sẻ.</span><span class="register">Register: Casual · Listen</span></li>
+<li><strong>"I also hear that..."</strong><span class="meaning">Tôi cũng nghe thấy rằng...</span><span class="register">Register: Casual · Listen</span></li>
+<li><strong>"Let's make sure both needs are met."</strong><span class="meaning">Hãy đảm bảo cả hai nhu cầu đều được đáp ứng.</span><span class="register">Register: Casual · Compromise</span></li>
+<li><strong>"That could work if..."</strong><span class="meaning">Điều đó có thể hiệu quả nếu...</span><span class="register">Register: Casual · Compromise</span></li>
+<li><strong>"Yes, we can work with that."</strong><span class="meaning">Vâng, chúng ta có thể làm việc với điều đó.</span><span class="register">Register: Casual · Commit</span></li>
+<li><strong>"I share your concern about..."</strong><span class="meaning">Tôi chia sẻ mối quan ngại của bạn về...</span><span class="register">Register: Casual · Listen</span></li>
+<li><strong>"Let's work together to find..."</strong><span class="meaning">Hãy cùng nhau làm việc để tìm ra...</span><span class="register">Register: Casual · Facilitate</span></li>
+<li><strong>"Does anyone have lingering concerns?"</strong><span class="meaning">Có ai còn mối quan ngại nào không?</span><span class="register">Register: Casual · Commit</span></li>
+<li><strong>"I appreciate everyone sharing their concerns."</strong><span class="meaning">Tôi đánh giá cao việc mọi người chia sẻ mối quan ngại.</span><span class="register">Register: Casual · Listen</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - HOA Deciding on Security System</h4>
+<div class="case-context"><strong>Context:</strong> The HOA board is deciding whether to install a new security system. Some members are concerned about cost, others about safety. You need to build consensus.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "Before we vote, I'd like to hear everyone's perspective on this. I know safety and budget are both top priorities."</p>
+<p><span class="speaker">Board Member 1:</span> "We need the security system. There have been break-ins, and residents are worried."</p>
+<p><span class="speaker">Board Member 2:</span> "But the cost is too high. We can't raise fees again this year."</p>
+<p><span class="speaker">You:</span> "Thank you both. It sounds like we all want a safe community that's also financially responsible. That's our shared goal."</p>
+<p><span class="speaker">Board Member 1:</span> "Yes, but safety has to come first."</p>
+<p><span class="speaker">You:</span> "I hear that, and I also hear the concern about the budget. What if we met halfway? Could we explore a phased installation — starting with the most critical areas this year and expanding next year? Let's see if we can refine this together."</p>
+<p><span class="speaker">Board Member 2:</span> "That would keep the initial cost manageable."</p>
+<p><span class="speaker">Board Member 1:</span> "As long as we commit to the full plan."</p>
+<p><span class="speaker">You:</span> "Exactly. Does this feel like a direction we can all support? Are we all comfortable moving forward with a phased approach? Can I count on everyone's support to present this to the residents?"</p>
+<p><span class="speaker">Both:</span> "Yes, that works for us."</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"Before we vote, I'd like to hear everyone's perspective."</strong><span class="meaning">Trước khi bỏ phiếu, tôi muốn nghe quan điểm của mọi người.</span><span class="register">Register: Professional · Listen</span></li>
+<li><strong>"It sounds like we all want..."</strong><span class="meaning">Có vẻ như tất cả chúng ta đều muốn...</span><span class="register">Register: Professional · Common Ground</span></li>
+<li><strong>"That's our shared goal."</strong><span class="meaning">Đó là mục tiêu chung của chúng ta.</span><span class="register">Register: Professional · Common Ground</span></li>
+<li><strong>"I hear that, and I also hear..."</strong><span class="meaning">Tôi nghe thấy điều đó, và tôi cũng nghe thấy...</span><span class="register">Register: Professional · Listen</span></li>
+<li><strong>"What if we met halfway?"</strong><span class="meaning">Nếu chúng ta gặp nhau ở giữa thì sao?</span><span class="register">Register: Professional · Compromise</span></li>
+<li><strong>"Could we explore a phased installation?"</strong><span class="meaning">Chúng ta có thể khám phá một cài đặt theo giai đoạn không?</span><span class="register">Register: Professional · Compromise</span></li>
+<li><strong>"Let's see if we can refine this together."</strong><span class="meaning">Hãy xem chúng ta có thể cùng nhau tinh chỉnh điều này không.</span><span class="register">Register: Professional · Facilitate</span></li>
+<li><strong>"Does this feel like a direction we can all support?"</strong><span class="meaning">Điều này có cảm giác như một hướng đi mà tất cả chúng ta có thể hỗ trợ không?</span><span class="register">Register: Professional · Facilitate</span></li>
+<li><strong>"Are we all comfortable moving forward?"</strong><span class="meaning">Tất cả chúng ta có thoải mái tiến tới không?</span><span class="register">Register: Professional · Commit</span></li>
+<li><strong>"Can I count on everyone's support?"</strong><span class="meaning">Tôi có thể dựa vào sự hỗ trợ của mọi người không?</span><span class="register">Register: Professional · Commit</span></li>
+<li><strong>"I know safety and budget are both top priorities."</strong><span class="meaning">Tôi biết an toàn và ngân sách đều là ưu tiên hàng đầu.</span><span class="register">Register: Professional · Listen</span></li>
+<li><strong>"Thank you both."</strong><span class="meaning">Cảm ơn cả hai.</span><span class="register">Register: Professional · Listen</span></li>
+<li><strong>"Safety has to come first."</strong><span class="meaning">An toàn phải được đặt lên hàng đầu.</span><span class="register">Register: Professional · Listen</span></li>
+<li><strong>"That would keep the initial cost manageable."</strong><span class="meaning">Điều đó sẽ giữ chi phí ban đầu ở mức có thể quản lý.</span><span class="register">Register: Professional · Compromise</span></li>
+<li><strong>"As long as we commit to the full plan."</strong><span class="meaning">Miễn là chúng ta cam kết với kế hoạch đầy đủ.</span><span class="register">Register: Professional · Compromise</span></li>
+<li><strong>"Yes, that works for us."</strong><span class="meaning">Vâng, điều đó phù hợp với chúng tôi.</span><span class="register">Register: Professional · Commit</span></li>
+<li><strong>"I share your concern about..."</strong><span class="meaning">Tôi chia sẻ mối quan ngại của bạn về...</span><span class="register">Register: Professional · Listen</span></li>
+<li><strong>"Let's work together to find..."</strong><span class="meaning">Hãy cùng nhau làm việc để tìm ra...</span><span class="register">Register: Professional · Facilitate</span></li>
+<li><strong>"Does anyone have lingering concerns?"</strong><span class="meaning">Có ai còn mối quan ngại nào không?</span><span class="register">Register: Professional · Commit</span></li>
+<li><strong>"I appreciate everyone sharing their concerns."</strong><span class="meaning">Tôi đánh giá cao việc mọi người chia sẻ mối quan ngại.</span><span class="register">Register: Professional · Listen</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Consensus Messages</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Facilitate a Neighborhood Decision</h4>
+<p class="task-context"><strong>Context:</strong> Write a message to your neighborhood group facilitating a decision about a shared space.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 listening structure</li>
+<li>Use 1 compromise structure</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi everyone, I'd like to hear everyone's perspective on how we should use the shared lot. I know this is important to all of us. It sounds like we all want a space that serves the whole community. What if we met halfway and created a hybrid design with both a playground and a garden? Let's see if we can refine this together. Does this feel like a direction we can all support? Are we all comfortable moving forward with this? Can I count on everyone's support to make it happen?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Listening:</strong> "I'd like to hear everyone's perspective..."</li>
+<li><strong>Collocations:</strong> "shared goal", "met halfway", "move forward"</li>
+<li><strong>Compromise:</strong> "What if we met halfway and created a hybrid design?"</li>
+<li><strong>Commitment:</strong> "Can I count on everyone's support?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Shorter)</h5>
+<p class="alt-text">"Hi neighbors, I'd like to hear everyone's thoughts on the shared lot. It sounds like we all want a space that serves everyone. What if we met halfway with a hybrid design? Does this feel like a direction we can all support? Can I count on everyone's support?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 listening structure</li>
+<li>□ có 1 compromise structure</li>
+<li>□ có listen → common ground → compromise → confirm</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Resolve a Budget Disagreement</h4>
+<p class="task-context"><strong>Context:</strong> Write a message to your team resolving a disagreement about budget allocation.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 common ground structure</li>
+<li>Use 1 facilitation structure</li>
+<li>Length: 120-170 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi team, I'd like to hear everyone's perspective on the budget allocation before we finalize it. I know we all want to make the best use of our limited resources — that's our shared goal. I hear the concern about funding Project A, and I also hear the need to support Project B. What if we met halfway and prioritized based on immediate impact, then phased the rest? Let's see if we can refine this together. Does this feel like a direction we can all support? Are we all comfortable moving forward with this approach? Can I count on everyone's support to execute the plan?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Common ground:</strong> "I know we all want to make the best use..."</li>
+<li><strong>Collocations:</strong> "shared goal", "met halfway", "move forward"</li>
+<li><strong>Facilitation:</strong> "Let's see if we can refine this together."</li>
+<li><strong>Commitment:</strong> "Can I count on everyone's support?"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Hi team, before we finalize the budget, I'd like to hear everyone's perspective. It sounds like we all want to maximize our impact. What if we prioritized based on immediate impact and phased the rest? Does this feel like a direction we can all support? Can I count on everyone's support?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (120-170 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 common ground structure</li>
+<li>□ có 1 facilitation structure</li>
+<li>□ có listen → common ground → compromise → confirm</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Address a Sensitive Community Issue</h4>
+<p class="task-context"><strong>Context:</strong> Write a message addressing a sensitive issue in your community (e.g., noise, parking).</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 validation structure</li>
+<li>Use 1 confirmation structure</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi everyone, I know this is a sensitive topic, and I appreciate everyone sharing their concerns. I'd like to hear everyone's perspective. It sounds like we all want a peaceful and respectful community. I hear the concern about the noise, and I also hear the desire to enjoy our spaces. What if we agreed on quiet hours after 10pm? Does this feel like a direction we can all support? Are we all comfortable moving forward with this? Can I count on everyone's support to make this work?"</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Validation:</strong> "I know this is a sensitive topic, and I appreciate..."</li>
+<li><strong>Collocations:</strong> "shared goal", "met halfway", "move forward"</li>
+<li><strong>Confirmation:</strong> "Are we all comfortable moving forward with this?"</li>
+<li><strong>Compromise:</strong> "What if we agreed on quiet hours..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Shorter)</h5>
+<p class="alt-text">"Hi neighbors, I know this is sensitive. I'd like to hear everyone's perspective. It sounds like we all want a peaceful community. What if we agreed on quiet hours after 10pm? Does this feel like a direction we can all support? Can I count on everyone's support?"</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 validation structure</li>
+<li>□ có 1 confirmation structure</li>
+<li>□ có validate → listen → compromise → confirm</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Follow-Up After a Consensus Meeting</h4>
+<p class="task-context"><strong>Context:</strong> Write a follow-up message after a community meeting where a decision was made.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 1 summary structure</li>
+<li>Use 1 commitment structure</li>
+<li>Length: 120-170 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"Hi everyone, thank you all for sharing your perspectives yesterday. I appreciate everyone's openness. It sounds like we all want what's best for the community, and I'm glad we found a shared goal. To summarize, we agreed to move forward with the hybrid design for the shared lot. I want to confirm: are we all comfortable moving forward with this? Can I count on everyone's support to make this happen? If anyone has lingering concerns, please let me know. Otherwise, let's work together to bring this vision to life. Thank you again for your collaboration."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Summary:</strong> "To summarize, we agreed to move forward..."</li>
+<li><strong>Collocations:</strong> "shared goal", "move forward", "count on support"</li>
+<li><strong>Commitment:</strong> "Can I count on everyone's support?"</li>
+<li><strong>Appreciation:</strong> "Thank you all for sharing..."</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"Hi team, thank you for your perspectives yesterday. To summarize, we agreed to move forward with the phased approach. Are we all comfortable moving forward? Can I count on everyone's support? If anyone has lingering concerns, please let me know. Thank you for your collaboration."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (120-170 words)</li>
+<li>□ dùng đủ 3 collocations</li>
+<li>□ có 1 summary structure</li>
+<li>□ có 1 commitment structure</li>
+<li>□ có thank → summarize → confirm → close</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title"> The Consensus Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">👂 Listening & Validation</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>I'd like to hear everyone's perspective</strong>
+<div class="ipa">/aɪd laɪk tuː hɪər ˈev.ri.wʌnz pəspek.tɪv/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi muốn nghe quan điểm của mọi người</div>
+<div class="collocation">Collocation: "hear everyone's perspective"</div>
+<div class="chunk">Chunk: "I'd like to hear everyone's perspective..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Before we decide, I'd like to hear everyone's perspective on this."</div>
+<div class="native-alt">Native alternative: "I'd like to get everyone's thoughts"</div>
+<button class="vocab-audio-btn" onclick="speakText('hear-perspective', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I hear that</strong>
+<div class="ipa">/aɪ hɪər ðæt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi hiểu điều đó</div>
+<div class="collocation">Collocation: "I hear that"</div>
+<div class="chunk">Chunk: "I hear that, and I also hear..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I hear that, and I also hear the concern about the budget."</div>
+<div class="native-alt">Native alternative: "I understand that"</div>
+<button class="vocab-audio-btn" onclick="speakText('hear-that', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I appreciate everyone sharing</strong>
+<div class="ipa">/aɪ əˈpriː.ʃi.eɪt ˈev.ri.wʌn ˈʃeə.rɪ/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi đánh giá cao việc mọi người chia sẻ</div>
+<div class="collocation">Collocation: "appreciate everyone sharing"</div>
+<div class="chunk">Chunk: "I appreciate everyone sharing their concerns."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I appreciate everyone sharing their concerns so openly."</div>
+<div class="native-alt">Native alternative: "thanks for sharing"</div>
+<button class="vocab-audio-btn" onclick="speakText('appreciate-sharing', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🤝 Common Ground & Compromise</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>it sounds like we all want</strong>
+<div class="ipa">/ɪt sandz laɪk wi ɔːl wɒnt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Có vẻ như tất cả chúng ta đều muốn</div>
+<div class="collocation">Collocation: "it sounds like we all want"</div>
+<div class="chunk">Chunk: "It sounds like we all want..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"It sounds like we all want what's best for the community."</div>
+<div class="native-alt">Native alternative: "it seems we all want"</div>
+<button class="vocab-audio-btn" onclick="speakText('sounds-like', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>meet halfway</strong>
+<div class="ipa">/miːt ˈhɑːf.weɪ/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Gặp nhau ở giữa (thỏa hiệp)</div>
+<div class="collocation">Collocation: "meet halfway"</div>
+<div class="chunk">Chunk: "What if we met halfway?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"What if we met halfway and found a solution that works for everyone?"</div>
+<div class="native-alt">Native alternative: "find a middle ground"</div>
+<button class="vocab-audio-btn" onclick="speakText('meet-halfway', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>shared goal</strong>
+<div class="ipa">/ʃeəd ɡəʊl/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Mục tiêu chung</div>
+<div class="collocation">Collocation: "shared goal"</div>
+<div class="chunk">Chunk: "That's our shared goal."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Even if we disagree on the approach, that's our shared goal."</div>
+<div class="native-alt">Native alternative: "common objective"</div>
+<button class="vocab-audio-btn" onclick="speakText('shared-goal', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">✅ Facilitation & Commitment</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>does this feel like a direction</strong>
+<div class="ipa">/dʌz ðɪs fiːl laɪk ə dɪˈrek.ʃən/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Điều này có cảm giác như một hướng đi</div>
+<div class="collocation">Collocation: "does this feel like a direction"</div>
+<div class="chunk">Chunk: "Does this feel like a direction we can all support?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Does this feel like a direction we can all support?"</div>
+<div class="native-alt">Native alternative: "does this work for everyone"</div>
+<button class="vocab-audio-btn" onclick="speakText('feel-like-direction', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>move forward with</strong>
+<div class="ipa">/muːv ˈfɔː.wəd wɪð/</div>
+<div class="pos">(verb phrase)</div>
+<div class="meaning">Tiến tới với</div>
+<div class="collocation">Collocation: "move forward with"</div>
+<div class="chunk">Chunk: "Are we all comfortable moving forward with this?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Are we all comfortable moving forward with this plan?"</div>
+<div class="native-alt">Native alternative: "proceed with"</div>
+<button class="vocab-audio-btn" onclick="speakText('move-forward', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>count on everyone's support</strong>
+<div class="ipa">/kaʊnt n ˈev.ri.wʌnz səˈpɔːt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Dựa vào sự hỗ trợ của mọi người</div>
+<div class="collocation">Collocation: "count on everyone's support"</div>
+<div class="chunk">Chunk: "Can I count on everyone's support?"</div>
+<div class="example level-label">C1:</div>
+<div class="example">"Can I count on everyone's support to make this happen?"</div>
+<div class="native-alt">Native alternative: "rely on everyone's support"</div>
+<button class="vocab-audio-btn" onclick="speakText('count-on-support', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title">🏘️ Dialogue 1: Deciding on a Community Garden (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> The neighborhood is deciding how to use a vacant lot. Some want a playground, others want a garden. You facilitate consensus.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I'd like to hear everyone's perspective on this before we decide. I know this is important to all of us." <span class="move-highlight move1">Listen</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 1:</div>
+<div class="dialogue-text">"We really need a playground for the kids. There's nowhere for them to play safely."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 2:</div>
+<div class="dialogue-text">"But a community garden would bring people together and provide fresh produce."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Thank you both for sharing. It sounds like we all want a space that serves the whole community and brings us together. That's our shared goal." <span class="move-highlight move2">Common Ground</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 1:</div>
+<div class="dialogue-text">"Yes, but the kids need a safe place to play."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I hear that. And I also hear that the garden would foster community connections. What if we met halfway? Could we try a design that incorporates both a small playground area and a community garden? Let's see if we can refine this together." <span class="move-highlight move3">Compromise</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 2:</div>
+<div class="dialogue-text">"That could work if the garden is the main focus."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Neighbor 1:</div>
+<div class="dialogue-text">"And the playground is safe and well-maintained."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Exactly. Does this feel like a direction we can all support? Are we all comfortable moving forward with a hybrid design? Can I count on everyone's support to make this happen?" <span class="move-highlight move4">Facilitate + Confirm</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Both:</div>
+<div class="dialogue-text">"Yes, we can work with that."</div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Listen (hear all sides) + Common Ground (identify shared values) + Compromise (propose middle path) + Facilitate (guide group) + Confirm (verify buy-in).</li>
+<li><strong>Alternative Decision:</strong> Push one agenda or avoid the decision. (Risk: Resentment or no decision).</li>
+<li><strong>Why this decision?</strong> Listening builds trust. Common ground creates foundation. Compromise bridges gaps. Facilitation ensures ownership. Confirmation ensures accountability.</li>
+<li><strong>Resistance handled:</strong> Competing priorities (playground vs. garden). You addressed both by proposing a hybrid solution.</li>
+<li><strong>Evolution:</strong> Disagreement → Listen → Common Ground → Compromise → Facilitate → Confirm → Agreement.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: HOA Security System Decision (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> The HOA board is deciding on a new security system. Some are concerned about cost, others about safety. You build consensus.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Before we vote, I'd like to hear everyone's perspective on this. I know safety and budget are both top priorities." <span class="move-highlight move1">Listen</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Board Member 1:</div>
+<div class="dialogue-text">"We need the security system. There have been break-ins, and residents are worried."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Board Member 2:</div>
+<div class="dialogue-text">"But the cost is too high. We can't raise fees again this year."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Thank you both. It sounds like we all want a safe community that's also financially responsible. That's our shared goal." <span class="move-highlight move2">Common Ground</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Board Member 1:</div>
+<div class="dialogue-text">"Yes, but safety has to come first."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I hear that, and I also hear the concern about the budget. What if we met halfway? Could we explore a phased installation — starting with the most critical areas this year and expanding next year? Let's see if we can refine this together." <span class="move-highlight move3">Compromise</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Board Member 2:</div>
+<div class="dialogue-text">"That would keep the initial cost manageable."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Board Member 1:</div>
+<div class="dialogue-text">"As long as we commit to the full plan."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"Exactly. Does this feel like a direction we can all support? Are we all comfortable moving forward with a phased approach? Can I count on everyone's support to present this to the residents?" <span class="move-highlight move4">Facilitate + Confirm</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Both:</div>
+<div class="dialogue-text">"Yes, that works for us."</div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Listen (hear concerns) + Common Ground (safe + responsible) + Compromise (phased approach) + Facilitate (guide discussion) + Confirm (verify support).</li>
+<li><strong>Alternative Decision:</strong> Force a vote or delay indefinitely. (Risk: Division or no action).</li>
+<li><strong>Why this decision?</strong> Listening validates concerns. Common ground unites. Compromise finds practical path. Facilitation ensures buy-in. Confirmation ensures execution.</li>
+<li><strong>Resistance handled:</strong> Safety vs. budget. You addressed both with a phased approach.</li>
+<li><strong>Evolution:</strong> Disagreement → Listen → Common Ground → Compromise → Facilitate → Confirm → Agreement.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to the dialogues above. Notice the inclusive language, hedging, and discourse markers used in consensus building.</p>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 16px;">Step 1: Full Transcript</h4>
+<div class="transcript-box">
+<p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;"><em>Refer to the dialogues above for the full transcript with spoken English features.</em></p>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 2: Key Phrases Breakdown</h4>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"I'd like to hear everyone's perspective..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Opens the floor inclusively
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I'd like to hear everyone's perspective..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "I'd like to get everyone's thoughts..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows respect, encourages participation
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"It sounds like we all want..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Identifies common ground
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "It sounds like we all want..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "It seems we all share..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Creates unity, reduces polarization
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"What if we met halfway?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Proposes compromise gently
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "What if we met halfway?"
+<span class="arrow">↓</span> <strong>Alternative:</strong> "Could we find a middle ground?"
+<span class="arrow">↓</span> <strong>Effect:</strong> Invites collaboration, not demands
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"Does this feel like a direction we can all support?"</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Checks for consensus gently
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "Does this feel like a direction..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "Does this work for everyone?"
+<span class="arrow">↓</span> <strong>Effect:</strong> Ensures buy-in without pressure
+</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 3: Pronunciation Focus</h4>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Warm, inclusive tone</div>
+<div class="detail">"I'd like to hear everyone's perspective..." (Warm, inviting — not commanding)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Rising intonation for questions</div>
+<div class="detail">"Does this feel like a direction we can all support?" (Rising intonation invites response)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Stress on collaborative words</div>
+<div class="detail">"Let's see if we can refine this TOGETHER." (Stress on "together" emphasizes collaboration)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Pause for reflection</div>
+<div class="detail">"It sounds like we all want... (pause) ...a safe community." (Pause lets the common ground land)</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 4: Listening Strategy (3 passes)</h4>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase"> Listening Strategy Lần 1: Nghe Listening</div>
+<div class="note"><strong>Focus:</strong> "I'd like to hear...", "I hear that..."</div>
+<div class="note"><strong>Question:</strong> "Where do they listen actively?"</div>
+<div class="note"><strong>Signal:</strong> Active listening shows respect and builds trust</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 2: Nghe Common Ground</div>
+<div class="note"><strong>Focus:</strong> "It sounds like we all want...", "That's our shared goal."</div>
+<div class="note"><strong>Question:</strong> "Where do they identify shared values?"</div>
+<div class="note"><strong>Signal:</strong> Common ground creates foundation for agreement</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy Lần 3: Nghe Confirmation</div>
+<div class="note"><strong>Focus:</strong> "Are we all comfortable...?", "Can I count on...?"</div>
+<div class="note"><strong>Question:</strong> "Where do they confirm commitment?"</div>
+<div class="note"><strong>Signal:</strong> Explicit confirmation ensures true buy-in</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 5: Shadowing Challenge</h4>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the spoken English rhythm, not just the words:</div>
+<div class="note">1. Listen to: "It sounds like we all want a space that serves the whole community."</div>
+<div class="note">2. Shadow: Match the warm, unifying tone</div>
+<div class="note">3. Focus: Stress on "all", "serves", "whole community"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different element (warmth / unity / inclusion)</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 6: Outcome-based Questions</h4>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "I'd like to hear everyone's perspective"?</div>
+<div class="note">✅ To open the floor inclusively. Shows respect for all voices.</div>
+<div class="note">2. What was the strategic goal of saying "It sounds like we all want..."?</div>
+<div class="note">✅ To identify common ground. Creates a foundation for collaboration.</div>
+<div class="note">3. How did you handle the compromise?</div>
+<div class="note">✅ Said "What if we met halfway?" Invites collaboration, doesn't demand.</div>
+<div class="note">4. What was the trade-off of confirming commitment explicitly?</div>
+<div class="note">✅ Ensures true buy-in, but may surface lingering objections that need addressing.</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Listening with "I'd like to hear everyone's perspective"</h4>
+<div class="explanation">Used to open the floor inclusively. These structures show respect and encourage participation.</div>
+<ul class="grammar-examples-list">
+<li>"I'd like to hear everyone's perspective on this."</li>
+<li>"Before we decide, I'd like to get everyone's thoughts."</li>
+<li>"Could you tell me more about what's driving your concern?"</li>
+<li>"I appreciate everyone sharing their concerns so openly."</li>
+<li>"Thank you both for sharing your perspectives."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Let me tell you what I think." (Dominating)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "I'd like to hear everyone's perspective."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Common Ground with "It sounds like we all want..."</h4>
+<div class="explanation">Used to identify shared values. These structures create unity and reduce polarization.</div>
+<ul class="grammar-examples-list">
+<li>"It sounds like we all want what's best for the community."</li>
+<li>"I think we share the same goal here."</li>
+<li>"Even if we disagree on the approach, that's our shared goal."</li>
+<li>"Let's start from that shared goal."</li>
+<li>"It seems we all want a solution that works for everyone."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "You're wrong and I'm right." (Polarizing)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "It sounds like we all want..."</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Compromise with "What if we met halfway?"</h4>
+<div class="explanation">Used to propose a middle path. These structures invite collaboration, not demands.</div>
+<ul class="grammar-examples-list">
+<li>"What if we met halfway?"</li>
+<li>"Could we try a solution that addresses both concerns?"</li>
+<li>"What if we explored a phased approach?"</li>
+<li>"Let's see if we can find a middle ground."</li>
+<li>"Could we refine this together to make sure everyone's needs are met?"</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "We have to do it my way." (Rigid)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "What if we met halfway?"</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Facilitation with "Does this feel like a direction..."</h4>
+<div class="explanation">Used to guide the group gently. These structures ensure ownership without pressure.</div>
+<ul class="grammar-examples-list">
+<li>"Does this feel like a direction we can all support?"</li>
+<li>"Let's see if we can refine this together."</li>
+<li>"How does this sit with everyone?"</li>
+<li>"Are there any adjustments we should make to make this work for everyone?"</li>
+<li>"Let's work together to bring this vision to life."</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "This is the final decision." (Dictating)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Does this feel like a direction we can all support?"</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Confirmation with "Can I count on everyone's support?"</h4>
+<div class="explanation">Used to verify buy-in explicitly. These structures ensure accountability.</div>
+<ul class="grammar-examples-list">
+<li>"Can I count on everyone's support to make this happen?"</li>
+<li>"Are we all comfortable moving forward with this?"</li>
+<li>"Does anyone have lingering concerns we should address?"</li>
+<li>"Can we all commit to this plan?"</li>
+<li>"I want to confirm: are we all on the same page?"</li>
+</ul>
+<div class="common-mistake"><strong>Common Mistake:</strong> "Okay, we're agreed then." (Assuming)</div>
+<div class="native-alt"><strong>Native Alternative:</strong> "Can I count on everyone's support?"</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Neighborhood Zoning Dispute</h3>
+<p class="scenario-context">Neighbors disagree on how to use a shared lot. Facilitate consensus.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Listen + Common Ground</span>
+<span class="response">"I'd like to hear everyone's perspective. It sounds like we all want what's best for the neighborhood. That's our shared goal."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Compromise + Confirm</span>
+<span class="response">"What if we met halfway with a hybrid design? Does this feel like a direction we can all support? Can I count on everyone's support?"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Pushing your own agenda.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: HOA Budget Allocation</h3>
+<p class="scenario-context">Board members disagree on budget priorities. Build consensus.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Listen + Common Ground</span>
+<span class="response">"I'd like to hear everyone's perspective. It sounds like we all want to make the best use of our limited resources."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Compromise + Confirm</span>
+<span class="response">"What if we prioritized based on immediate impact and phased the rest? Are we all comfortable moving forward with this?"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Forcing a vote without discussion.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Noise Complaint Resolution</h3>
+<p class="scenario-context">Neighbors complain about noise. Facilitate a respectful agreement.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Listen + Common Ground</span>
+<span class="response">"I know this is sensitive. I'd like to hear everyone's perspective. It sounds like we all want a peaceful community."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Compromise + Confirm</span>
+<span class="response">"What if we agreed on quiet hours after 10pm? Does this feel like a direction we can all support? Can I count on everyone's support?"</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Taking sides or avoiding the issue.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario — Life + Business</h3>
+<p class="scenario-context">Morning: Neighborhood dispute. Afternoon: Board disagreement.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Morning (Life — Warm, inclusive, community-focused)</span>
+<span class="response">"I'd like to hear everyone's perspective. It sounds like we all want what's best for the neighborhood. What if we met halfway?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Afternoon (Business — Professional, structured, impact-focused)</span>
+<span class="response">"Before we vote, I'd like to hear everyone's perspective. It sounds like we all want to maximize our impact. What if we phased the approach?"</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Reflection</span>
+<span class="response">How did your approach change? Life = warmer, more community-focused. Business = more structured, impact-focused. Both = listen → common ground → compromise → confirm.</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Using the same register for both contexts.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Consensus Challenge</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3> The Consensus Audit</h3>
+<p class="task-time">⏱️ 15 minutes</p>
+<p class="task-desc">Identify 1 group decision you've been part of. Apply the 5 lenses. What decisions were made? Note the trade-offs.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the group decision situation</li>
+<li>Apply the 5 lenses (Listen, Common Ground, Compromise, Facilitate, Confirm)</li>
+<li>What decisions were made?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</p>
+<div class="sample-answer">
+<h5> Sample Answer</h5>
+<p class="answer-text">"Our neighborhood decided on a shared lot design. Listening: 'I'd like to hear everyone's perspective.' Common Ground: 'It sounds like we all want what's best.' Compromise: 'What if we met halfway with a hybrid design?' Facilitation: 'Does this feel like a direction we can all support?' Confirmation: 'Can I count on everyone's support?' Trade-off: Took more time to facilitate, but created stronger buy-in and less resentment."</p>
+</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Consensus Practice</h3>
+<p class="task-time">⏱️ 30 minutes</p>
+<p class="task-desc">Role-play a group decision scenario. Practice the 5-step loop. Get feedback on your facilitation and listening.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose a group decision scenario</li>
+<li>Practice all 5 steps of the loop</li>
+<li>Get feedback on your facilitation and listening</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Role-play: HOA budget allocation. I practiced listening ('I'd like to hear everyone's perspective'), finding common ground ('It sounds like we all want to maximize impact'), proposing compromise ('What if we phased the approach?'), facilitating ('Does this feel like a direction we can all support?'), and confirming ('Can I count on everyone's support?'). Feedback: I was strong on listening but could improve my confirmation — I assumed agreement too quickly."</p>
+</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Consensus</h3>
+<p class="task-time">⏱️ 60 minutes</p>
+<p class="task-desc">This week, facilitate an actual group decision. Use the 5-step framework. Note what worked, what didn't, and what you learned.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify an actual group decision to facilitate</li>
+<li>Apply the 5-step framework in real-time</li>
+<li>Use the framework (Listen, Common Ground, Compromise, Facilitate, Confirm)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default facilitation style?</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</p>
+<div class="sample-answer">
+<h5> Sample Answer</h5>
+<p class="answer-text">"Real consensus: Facilitated a decision about our community garden design. Applied the 5-step framework: 1) Listened: 'I'd like to hear everyone's perspective.' 2) Common Ground: 'It sounds like we all want a space that serves everyone.' 3) Compromise: 'What if we met halfway with a hybrid design?' 4) Facilitated: 'Does this feel like a direction we can all support?' 5) Confirmed: 'Can I count on everyone's support?' What worked: The common ground statement unified the group. What didn't: I could have spent more time listening to the minority view. What I learned: My default style is to move to compromise quickly — I need to slow down and ensure all voices are truly heard first."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Consensus Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I listen actively to all sides</h4>
+<p>I hear all perspectives without judgment, not just the ones I agree with.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I find and highlight common ground</h4>
+<p>I identify shared values to create a foundation for collaboration.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I propose compromises flexibly</h4>
+<p>I suggest middle paths as invitations, not ultimatums.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I facilitate without dominating</h4>
+<p>I guide the group to ownership, not dictate the outcome.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I confirm commitment explicitly</h4>
+<p>I verify buy-in explicitly, not assume agreement from silence.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently build consensus with empathy, flexibility, and skilled facilitation, you are ready for Day 125: Navigating Cultural Differences in Community.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> Your neighborhood is divided on how to use a shared space</p>
+<button>Tap to reveal Consensus Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "We should do it my way."</p>
+<p><strong>C1 Language:</strong> Listen → Common Ground → Compromise → Facilitate → Confirm.<br>
+"I'd like to hear everyone's perspective. It sounds like we all want what's best for the community. What if we met halfway with a hybrid design? Does this feel like a direction we can all support? Can I count on everyone's support?"</p>
+<p><strong>Trade-off:</strong> Takes more time to facilitate, but creates stronger buy-in and sustainable agreement.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In consensus building, listening builds trust. Common ground creates foundation. Compromise bridges gaps. Facilitation ensures ownership. Confirmation ensures accountability.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Building Consensus in Community Settings</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Neighborhood divided on shared space. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "We should do it my way because it's the best."</div>
+<div class="quiz-option">B. "I'd like to hear everyone's perspective. It sounds like we all want what's best. What if we met halfway?"</div>
+<div class="quiz-option">C. "Let's just not talk about it and move on."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Board disagreement on budget. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "My project should get the funding."</div>
+<div class="quiz-option">B. "I'd like to hear everyone's perspective. It sounds like we all want to maximize impact. What if we phased the approach?"</div>
+<div class="quiz-option">C. "Let's just vote and move on."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Noise complaint between neighbors. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "You need to be quieter."</div>
+<div class="quiz-option">B. "I'd like to hear everyone's perspective. It sounds like we all want a peaceful community. What if we agreed on quiet hours?"</div>
+<div class="quiz-option">C. "Let's just ignore it."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Confirming group agreement. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "Okay, we're all agreed then." (when people are silent)</div>
+<div class="quiz-option">B. "Are we all comfortable moving forward with this? Can I count on everyone's support?"</div>
+<div class="quiz-option">C. "Does anyone disagree?"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Facilitating a sensitive discussion. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "This is too sensitive, let's not discuss it."</div>
+<div class="quiz-option">B. "I know this is sensitive, and I appreciate everyone sharing. Let's work together to find a solution."</div>
+<div class="quiz-option">C. "We need to decide right now."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Proposing a compromise. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "We have to do it this way."</div>
+<div class="quiz-option">B. "What if we met halfway and found a solution that addresses both concerns?"</div>
+<div class="quiz-option">C. "My way is the only way."</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of active listening?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Builds trust and ensures all voices are heard, but takes more time.</div>
+<div class="quiz-option">B. Saves time but may create resentment.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of confirming commitment explicitly?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Ensures true buy-in and accountability, but may surface lingering objections.</div>
+<div class="quiz-option">B. Saves time but may lead to false agreement.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Gặp nhau ở giữa (thỏa hiệp)"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Meet halfway</div>
+<div class="quiz-option">B. Shared goal</div>
+<div class="quiz-option">C. Move forward</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+<div class="day-navigation">
+<a href="week-18-day-123.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 123: Advocating for Causes You Care About</div>
+</a>
+<a href="week-18-day-125.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 125: Navigating Cultural Differences in Community</div>
+</a>
+</div>
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 124 Complete & Continue to Day 125</button>
+<p class="complete-message">B2 speakers win arguments. C1 speakers build consensus. 🤝</p>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<p class="footer-title">Professional Fluency Roadmap</p>
+<p class="footer-tagline">Week 18 · Day 124 · Building Consensus in Community Settings</p>
+</div>
+</footer>
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+const textContent = {
+'lens1': 'Lens 1: Listening Actively. How do I hear all sides without judgment? I would like to hear everyone is perspective on this before we decide. Could you tell me more about what is driving your concern?',
+'lens2': 'Lens 2: Finding Common Ground. How do I identify shared values? It sounds like we all want what is best for the community, even if we disagree on the approach. Let us start from that shared goal.',
+'lens3': 'Lens 3: Proposing Compromise. How do I suggest a middle path? What if we met halfway? Could we try a solution that addresses both the safety concerns and the budget constraints?',
+'lens4': 'Lens 4: Facilitating Agreement. How do I guide the group without dominating? Does this feel like a direction we can all support? Let us see if we can refine this together to make sure everyone is needs are met.',
+'lens5': 'Lens 5: Confirming Commitment. How do I verify everyone is buy-in? Are we all comfortable moving forward with this? Can I count on everyone is support to make this happen?',
+'hear-perspective': 'I would like to hear everyone is perspective',
+'hear-that': 'I hear that',
+'appreciate-sharing': 'I appreciate everyone sharing',
+'sounds-like': 'it sounds like we all want',
+'meet-halfway': 'meet halfway',
+'shared-goal': 'shared goal',
+'feel-like-direction': 'does this feel like a direction',
+'move-forward': 'move forward with',
+'count-on-support': 'count on everyone is support',
+'dialogue1': 'Dialogue 1: Deciding on a Community Garden. You: I would like to hear everyone is perspective on this before we decide. I know this is important to all of us. Neighbor 1: We really need a playground for the kids. There is nowhere for them to play safely. Neighbor 2: But a community garden would bring people together and provide fresh produce. You: Thank you both for sharing. It sounds like we all want a space that serves the whole community and brings us together. That is our shared goal. Neighbor 1: Yes, but the kids need a safe place to play. You: I hear that. And I also hear that the garden would foster community connections. What if we met halfway? Could we try a design that incorporates both a small playground area and a community garden? Let us see if we can refine this together. Neighbor 2: That could work if the garden is the main focus. Neighbor 1: And the playground is safe and well-maintained. You: Exactly. Does this feel like a direction we can all support? Are we all comfortable moving forward with a hybrid design? Can I count on everyone is support to make this happen? Both: Yes, we can work with that.',
+'dialogue2': 'Dialogue 2: HOA Security System Decision. You: Before we vote, I would like to hear everyone is perspective on this. I know safety and budget are both top priorities. Board Member 1: We need the security system. There have been break-ins, and residents are worried. Board Member 2: But the cost is too high. We cannot raise fees again this year. You: Thank you both. It sounds like we all want a safe community that is also financially responsible. That is our shared goal. Board Member 1: Yes, but safety has to come first. You: I hear that, and I also hear the concern about the budget. What if we met halfway? Could we explore a phased installation — starting with the most critical areas this year and expanding next year? Let us see if we can refine this together. Board Member 2: That would keep the initial cost manageable. Board Member 1: As long as we commit to the full plan. You: Exactly. Does this feel like a direction we can all support? Are we all comfortable moving forward with a phased approach? Can I count on everyone is support to present this to the residents? Both: Yes, that works for us.'
+};
+const audioProfiles = {
+vocabulary: { rate: 0.82, pitch: 1.00 },
+reading: { rate: 1.00, pitch: 1.00 },
+dialogue: { rate: 1.10, pitch: 1.00 },
+listening: { rate: 1.00, pitch: 1.00 },
+shadowing: { rate: 0.88, pitch: 1.00 },
+speaking: { rate: 1.10, pitch: 1.00 }
+};
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+</body>
+</html>

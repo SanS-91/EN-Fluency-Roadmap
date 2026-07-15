@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 19 Day 132: Navigating Political Disagreements | Professional Fluency Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+<style>
+:root {
+--primary: #EC4899;
+--primary-bright: #DB2777;
+--primary-soft: #FCE7F3;
+--primary-deep: #9D174D;
+--accent: #8B5CF6;
+--accent-bright: #7C3AED;
+--accent-soft: #EDE9FE;
+--accent-deep: #5B21B6;
+--text-primary: #1E293B;
+--text-secondary: #334155;
+--text-muted: #64748B;
+--text-highlight: #7C3AED;
+--text-error: #DC2626;
+--text-success: #059669;
+--radius-sm: 12px;
+--radius-md: 18px;
+--radius-lg: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #F9FAFB; color: var(--text-primary); font-size: 15px; line-height: 1.6; min-height: 100vh; position: relative; overflow-x: hidden; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+.top-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 12px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.top-nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-back { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.nav-back i { --ph-color: var(--primary-bright); }
+.day-indicator { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+.day-tabs-container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); position: sticky; top: 57px; z-index: 99; padding: 12px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.day-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.day-tabs::-webkit-scrollbar { display: none; }
+.day-tab { padding: 8px 18px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; white-space: nowrap; transition: all 0.3s ease; }
+.day-tab:hover { background: rgba(255, 255, 255, 1); color: var(--primary-bright); }
+.day-tab.active { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-header { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); padding: 48px 0 40px; }
+.breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.day-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-icon-inline { font-size: 3rem; }
+.day-title { font-family: 'Fraunces', serif; font-size: 2.8rem; font-weight: 600; color: var(--text-primary); }
+.day-subtitle { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7; max-width: 800px; }
+.day-subtitle strong { color: var(--primary-deep); }
+.day-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.meta-tag { background: rgba(255, 255, 255, 0.9); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); }
+.meta-tag i { --ph-color: var(--primary-bright); }
+.section { margin: 48px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-title i { --ph-color: var(--primary-bright); font-size: 1.8rem; }
+.c1-insight { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; border-left: 4px solid var(--primary); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.c1-insight .label { font-size: 10px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.c1-insight .label i { --ph-color: var(--primary-bright); }
+.c1-insight .insight { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; }
+.quote { font-family: 'Fraunces', serif; font-size: 1.05rem; font-style: italic; color: var(--text-secondary); margin: 24px 0; padding: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.philosophy-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.philosophy-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.philosophy-title i { --ph-color: var(--primary-bright); }
+.philosophy-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.philosophy-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.philosophy-item { background: rgba(255, 255, 255, 0.9); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px; border-left: 3px solid var(--primary); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.philosophy-item i { --ph-color: var(--primary-bright); font-size: 1.1rem; flex-shrink: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 20px; }
+.plan-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 16px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+.plan-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.plan-title { font-family: 'Fraunces', serif; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.plan-time { font-size: 11px; color: var(--primary-bright); font-weight: 600; margin-bottom: 4px; background: var(--primary-soft); padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.plan-desc { font-size: 11px; color: var(--text-muted); }
+.loop-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.loop-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.loop-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.loop-step { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.loop-step-number { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.loop-step-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.loop-step-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.lenses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; }
+.lens-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.lens-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); border-left-color: var(--accent); }
+.lens-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 12px; }
+.lens-card:nth-child(even) .lens-number { background: linear-gradient(135deg, var(--accent), var(--accent-bright)); }
+.lens-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lens-core { font-size: 13px; color: var(--primary-deep); font-style: italic; margin-bottom: 12px; }
+.lens-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.lens-rating { font-size: 11px; color: var(--primary-bright); font-weight: 600; }
+.lens-context { font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.7); padding: 3px 8px; border-radius: 10px; }
+.lens-subsection { margin-bottom: 12px; }
+.lens-subsection h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.lens-subsection h4 i { --ph-color: var(--primary-bright); }
+.lens-subsection p, .lens-subsection ul { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+.lens-subsection ul { list-style: none; padding-left: 0; }
+.lens-subsection li { padding: 3px 0; padding-left: 16px; position: relative; }
+.lens-subsection li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.example-levels { margin-top: 10px; }
+.example-level { padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.example-level.simple { background: rgba(204, 251, 241, 0.5); border-left: 3px solid #10B981; }
+.example-level.natural { background: rgba(254, 243, 199, 0.5); border-left: 3px solid #F59E0B; }
+.example-level.c1 { background: rgba(237, 233, 254, 0.5); border-left: 3px solid var(--accent); }
+.example-level .level-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.example-level.simple .level-label { color: #059669; }
+.example-level.natural .level-label { color: #B45309; }
+.example-level.c1 .level-label { color: var(--accent-deep); }
+.example-level .example-text { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.compare-box { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 12px; margin-top: 12px; border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.compare-box h5 { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.compare-level { padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 4px; font-size: 12px; border-left: 3px solid; }
+.compare-level.weak { background: rgba(245, 101, 101, 0.08); border-left-color: #F56565; }
+.compare-level.strong { background: rgba(16, 185, 129, 0.08); border-left-color: var(--primary); }
+.compare-level strong { display: block; margin-bottom: 2px; font-size: 11px; }
+.compare-level.weak strong { color: #C53030; }
+.compare-level.strong strong { color: var(--primary-deep); }
+.mistakes-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mistakes-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mistakes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.mistake-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mistake-title { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.mistake-wrong { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: #C53030; border-left: 3px solid #F56565; }
+.mistake-right { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 13px; color: var(--primary-deep); border-left: 3px solid var(--primary); }
+.mistake-why { font-size: 12px; color: var(--text-secondary); font-style: italic; }
+.decoder-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; overflow-x: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.decoder-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.decoder-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 800px; }
+.decoder-table th { background: var(--primary-soft); padding: 12px; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--primary); }
+.decoder-table td { padding: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); color: var(--text-secondary); vertical-align: top; }
+.decoder-table td:first-child { font-weight: 600; color: var(--text-primary); }
+.option-c-box { background: rgba(237, 233, 254, 0.3); padding: 10px; border-radius: var(--radius-sm); margin-top: 6px; }
+.option-c-box .option-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+.option-c-box .conversation { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-bottom: 8px; }
+.option-c-box .why { font-size: 11px; color: var(--primary-deep); font-style: italic; }
+.reading-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.reading-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.reading-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.case-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); margin-bottom: 24px; }
+.case-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.case-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.case-narrative { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+.case-narrative .speaker { font-weight: 700; color: var(--primary-deep); }
+.case-narrative p { margin-bottom: 12px; }
+.useful-language-box { background: rgba(252, 231, 243, 0.3); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 20px; border-left: 4px solid var(--primary); }
+.useful-language-box h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.useful-language-box ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.useful-language-box li { padding: 8px 10px; position: relative; font-size: 12px; color: var(--text-secondary); line-height: 1.4; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.useful-language-box li strong { color: var(--primary-deep); display: block; margin-bottom: 4px; font-size: 12px; }
+.useful-language-box li .meaning { font-size: 11px; color: var(--text-muted); font-style: italic; display: block; }
+.useful-language-box li .register { font-size: 10px; color: var(--accent-deep); font-style: italic; display: block; margin-top: 2px; }
+.micro-writing-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.micro-writing-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.writing-task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.writing-task { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 24px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.writing-task h4 { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--primary-deep); margin-bottom: 10px; }
+.writing-task .task-context { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px; }
+.writing-task .requirements { background: rgba(237, 233, 254, 0.3); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.writing-task .requirements h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.writing-task .requirements ul { list-style: none; padding: 0; }
+.writing-task .requirements li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.writing-task .requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.model-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #10B981; }
+.model-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.model-answer .answer-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.language-breakdown { background: rgba(254, 243, 199, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid #F59E0B; }
+.language-breakdown h5 { font-size: 11px; font-weight: 700; color: #B45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.language-breakdown ul { list-style: none; padding: 0; }
+.language-breakdown li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.language-breakdown li::before { content: '•'; position: absolute; left: 0; color: #B45309; font-weight: 600; }
+.alternative-version { background: rgba(237, 233, 254, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px; border-left: 4px solid var(--accent); }
+.alternative-version h5 { font-size: 11px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.alternative-version .alt-text { font-size: 14px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.self-check { background: rgba(252, 231, 243, 0.3); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--primary); }
+.self-check h5 { font-size: 11px; font-weight: 700; color: var(--primary-deep); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.self-check ul { list-style: none; padding: 0; }
+.self-check li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); }
+.self-check li::before { content: '□'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.vocab-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.vocab-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.vocab-category { margin-bottom: 28px; }
+.vocab-category-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-soft); }
+.vocab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vocab-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.vocab-item strong { display: block; font-size: 14px; color: var(--accent-deep); margin-bottom: 4px; }
+.vocab-item .ipa { font-size: 11px; color: var(--primary-bright); font-family: 'SF Mono', monospace; font-style: italic; }
+.vocab-item .pos { font-size: 11px; color: var(--text-muted); font-style: italic; }
+.vocab-item .meaning { font-size: 12px; color: var(--text-secondary); margin: 4px 0; }
+.vocab-item .collocation { font-size: 12px; color: var(--primary-deep); font-weight: 600; margin-top: 6px; }
+.vocab-item .chunk { font-size: 12px; color: var(--accent-deep); font-style: italic; margin-top: 4px; }
+.vocab-item .example { font-size: 12px; color: var(--text-secondary); font-style: italic; margin-top: 6px; }
+.vocab-item .example.level-label { font-size: 10px; font-weight: 700; color: var(--accent-deep); text-transform: uppercase; letter-spacing: 0.5px; font-style: normal; margin-top: 4px; }
+.vocab-item .native-alt { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.vocab-audio-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 6px 12px; border-radius: 12px; font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; transition: all 0.3s ease; }
+.vocab-audio-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.dialogue-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.dialogue-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.dialogue-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dialogue-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; border-left: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.dialogue-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.5; }
+.audio-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+.audio-btn { padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border: none; transition: all 0.3s ease; }
+.audio-btn.play { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; }
+.audio-btn.play:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.audio-btn.stop { background: rgba(245, 101, 101, 0.1); color: #DC2626; border: 1px solid rgba(220, 38, 38, 0.2); }
+.audio-btn.stop:hover { background: rgba(245, 101, 101, 0.2); }
+.dialogue-box { background: rgba(255, 255, 255, 0.95); padding: 18px; border-radius: var(--radius-md); margin-bottom: 14px; border-left: 3px solid var(--primary); }
+.dialogue-turn { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
+.dialogue-turn:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.dialogue-speaker { font-size: 12px; font-weight: 700; color: var(--primary-deep); margin-bottom: 4px; }
+.dialogue-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.dialogue-text strong { color: var(--primary-deep); font-weight: 600; }
+.move-highlight { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; margin-left: 8px; color: white; }
+.move-highlight.move1 { background: var(--primary); }
+.move-highlight.move2 { background: var(--accent); }
+.move-highlight.move3 { background: var(--primary-bright); }
+.move-highlight.move4 { background: #10B981; }
+.move-highlight.move5 { background: #F59E0B; }
+.analysis-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 16px; margin-top: 16px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.analysis-box h4 { font-family: 'Fraunces', serif; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-primary); }
+.analysis-box ul { list-style: none; }
+.analysis-box li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.analysis-box li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.listening-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.listening-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+.transcript-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.transcript-box h4 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+.transcript-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.transcript-text .speaker { font-weight: 700; color: var(--primary-deep); }
+.transcript-text p { margin-bottom: 10px; }
+.deep-dive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 20px; }
+.deep-dive-item { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.deep-dive-item .phrase { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-style: italic; border-bottom: 1px solid rgba(236, 72, 153, 0.1); padding-bottom: 8px; }
+.deep-dive-item .analysis { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.deep-dive-item .analysis .arrow { color: var(--text-highlight); font-weight: 700; display: block; margin: 6px 0; }
+.deep-dive-item .analysis strong { color: var(--text-primary); display: block; margin-top: 10px; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.language-notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.language-notes-box { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.language-notes-box .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.language-notes-box .note { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.pronunciation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pronunciation-deep-dive { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.pronunciation-deep-dive .phrase { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.pronunciation-deep-dive .detail { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+.grammar-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.grammar-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.grammar-patterns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grammar-pattern { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.grammar-pattern:nth-child(even) { border-left-color: var(--accent); }
+.grammar-pattern h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--primary-deep); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.grammar-pattern:nth-child(even) h4 { color: var(--accent-deep); }
+.grammar-pattern .explanation { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px; }
+.grammar-examples-list { list-style: none; padding: 0; margin-bottom: 10px; }
+.grammar-examples-list li { padding: 4px 0 4px 16px; position: relative; font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.grammar-examples-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.grammar-pattern .common-mistake { background: rgba(245, 101, 101, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 10px; border-left: 3px solid #F56565; font-size: 12px; color: #C53030; }
+.grammar-pattern .native-alt { background: rgba(16, 185, 129, 0.08); padding: 10px; border-radius: var(--radius-sm); margin-top: 8px; border-left: 3px solid var(--primary); font-size: 12px; color: var(--primary-deep); }
+.speaking-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.speaking-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.scenario-card { background: rgba(252, 231, 243, 0.6); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.scenario-card:nth-child(even) { background: rgba(237, 233, 254, 0.6); }
+.scenario-card.professional { border-left: 4px solid var(--primary); }
+.scenario-card.casual { border-left: 4px solid var(--accent); }
+.scenario-card.challenge { border-left: 4px solid var(--primary-bright); }
+.scenario-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; color: white; }
+.scenario-card.professional .scenario-badge { background: var(--primary); }
+.scenario-card.casual .scenario-badge { background: var(--accent); }
+.scenario-card.challenge .scenario-badge { background: var(--primary-bright); }
+.scenario-card h3 { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+.scenario-context { font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.scenario-rounds { margin-top: 12px; }
+.scenario-round { background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.scenario-round .round-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; color: var(--primary-deep); }
+.scenario-round .response { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.5; }
+.scenario-req { font-size: 12px; color: var(--text-secondary); margin-top: 12px; }
+.scenario-req strong { color: var(--primary-deep); }
+.task-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.task-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.task-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 24px; position: relative; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.task-card.easy { border-left: 4px solid var(--primary); }
+.task-card.standard { border-left: 4px solid var(--accent); }
+.task-card.challenge { border-left: 4px solid #DC2626; }
+.task-level { position: absolute; top: 16px; right: 16px; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 12px; letter-spacing: 0.5px; }
+.task-card.easy .task-level { background: var(--primary-soft); color: var(--primary-deep); }
+.task-card.standard .task-level { background: var(--accent-soft); color: var(--accent-deep); }
+.task-card.challenge .task-level { background: rgba(220, 38, 38, 0.15); color: #991B1B; }
+.task-card h3 { font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary); }
+.task-time { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 10px; }
+.task-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.task-requirements { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.task-requirements h4 { font-size: 12px; font-weight: 600; color: var(--primary-deep); margin-bottom: 8px; }
+.task-requirements ul { list-style: none; }
+.task-requirements li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.task-requirements li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-bright); font-weight: 600; }
+.task-deliverable { font-size: 13px; color: var(--text-secondary); padding: 10px 12px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-sm); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.sample-answer { background: rgba(204, 251, 241, 0.3); padding: 16px; border-radius: var(--radius-sm); margin-top: 16px; border-left: 4px solid #10B981; }
+.sample-answer h5 { font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.sample-answer .answer-text { font-size: 13px; color: var(--text-secondary); line-height: 1.7; font-style: italic; }
+.mastery-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.mastery-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.mastery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+.mastery-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.mastery-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.flashcard-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.flashcard { background: linear-gradient(135deg, rgba(252, 231, 243, 0.4), rgba(237, 233, 254, 0.4)); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 32px; margin-bottom: 16px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: all 0.4s ease; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.flashcard:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.flashcard-front p { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+.flashcard-front button { background: var(--primary); color: white; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.flashcard-back { display: none; }
+.flashcard-back.active { display: block; }
+.flashcard-back p { font-size: 14px; color: var(--text-secondary); font-style: italic; margin-bottom: 14px; line-height: 1.5; }
+.flashcard-tip { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-secondary); line-height: 1.5; border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-tip strong { color: var(--accent-deep); }
+.flashcard-nav { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.flashcard-nav button { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); }
+.flashcard-nav button:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.flashcard-nav span { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.quiz-section { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 32px; margin: 32px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.quiz-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+.quiz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.quiz-question { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 18px; border-left: 3px solid var(--primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.quiz-question h4 { font-family: 'Fraunces', serif; font-size: 1rem; margin-bottom: 10px; color: var(--text-primary); }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; }
+.quiz-option { padding: 10px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 2px solid rgba(0, 0, 0, 0.05); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.3s ease; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.quiz-option:hover { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(252, 231, 243, 0.3); }
+.quiz-option.correct { border-color: var(--primary); background: rgba(16, 185, 129, 0.15); }
+.quiz-option.incorrect { border-color: #F56565; background: rgba(245, 101, 101, 0.1); }
+.check-btn { background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer; margin-top: 16px; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+.day-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+.nav-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 20px; text-decoration: none; color: inherit; transition: all 0.3s ease; border: 1px solid rgba(0, 0, 0, 0.05); position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.nav-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+.nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15); }
+.nav-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.nav-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.complete-container { text-align: center; margin: 40px 0; }
+.complete-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-bright)); color: white; padding: 16px 32px; border-radius: 36px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 8px 28px rgba(236, 72, 153, 0.4); }
+.complete-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 36px rgba(236, 72, 153, 0.5); }
+.complete-message { margin-top: 16px; font-size: 14px; color: var(--text-muted); }
+.footer { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(30px); padding: 40px 0 28px; text-align: center; margin-top: 56px; border-top: 1px solid rgba(0, 0, 0, 0.06); box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04); }
+.footer-fox { font-size: 2.5rem; margin-bottom: 12px; }
+.footer-title { font-family: 'Fraunces', serif; font-size: 1.2rem; margin-bottom: 6px; font-weight: 600; }
+.footer-tagline { color: var(--text-muted); font-size: 13px; }
+@media (max-width: 768px) {
+.day-title { font-size: 2rem; }
+.day-navigation, .philosophy-list, .plan-grid, .loop-steps, .lenses-grid, .mistakes-grid, .reading-grid, .dialogue-grid, .scenario-grid, .task-grid, .mastery-grid, .quiz-grid, .deep-dive-grid, .language-notes-grid, .pronunciation-grid, .grammar-patterns, .vocab-grid, .writing-task-grid, .useful-language-box ul { grid-template-columns: 1fr; }
+.decoder-table { font-size: 11px; }
+.decoder-table th, .decoder-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+<div class="container">
+<a href="week-19.html" class="nav-back"><i class="ph-duotone ph-arrow-left"></i>Week 19 Hub</a>
+<div class="day-indicator">Day 132 / 133</div>
+</div>
+</nav>
+<div class="day-tabs-container">
+<div class="container">
+<div class="day-tabs">
+<a href="week-19.html" class="day-tab">Overview</a>
+<a href="week-19-day-127.html" class="day-tab">Day 127</a>
+<a href="week-19-day-128.html" class="day-tab">Day 128</a>
+<a href="week-19-day-129.html" class="day-tab">Day 129</a>
+<a href="week-19-day-130.html" class="day-tab">Day 130</a>
+<a href="week-19-day-131.html" class="day-tab">Day 131</a>
+<a href="week-19-day-132.html" class="day-tab active">Day 132</a>
+<a href="week-19-day-133.html" class="day-tab">Day 133</a>
+</div>
+</div>
+</div>
+<header class="day-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> › <a href="week-19.html">Week 19</a> › Day 132
+</div>
+<div class="day-title-row">
+<span class="day-icon-inline">️</span>
+<h1 class="day-title">Navigating Political Disagreements</h1>
+</div>
+<p class="day-subtitle">Days 127-131 taught you to discuss current events, debate social issues, talk to kids about fake news, and discuss politics with people who disagree. Day 132 teaches you how to <strong>navigate political disagreements</strong> — staying respectful, finding common ground, disagreeing without being disagreeable, and keeping conversations productive. B2 speakers get defensive or avoid the topic. C1 speakers stay calm, acknowledge different perspectives, and keep the conversation constructive.</p>
+<div class="day-meta">
+<div class="meta-tag"><i class="ph-duotone ph-lightbulb"></i> Political Disagreements + Respectful Dialogue + Common Ground</div>
+<div class="meta-tag"><i class="ph-duotone ph-clock"></i> 90 minutes</div>
+<div class="meta-tag"><i class="ph-duotone ph-target"></i> Political Disagreements Day 1 of 7</div>
+<div class="meta-tag"><i class="ph-duotone ph-sparkle"></i>  C1 Insight</div>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="c1-insight">
+<div class="label"><i class="ph-duotone ph-lightbulb"></i> C1 Insight</div>
+<div class="insight"><strong>B2 Speaker:</strong> Gets defensive or avoids the topic. Says "I don't want to talk about politics" or "You're completely wrong." Doesn't acknowledge different perspectives.<br><br><strong>C1 Speaker:</strong> Stays calm, acknowledges different perspectives, finds common ground, and keeps the conversation constructive. Says "I see where you're coming from, but I see it differently because..."<br><br>"B2 speakers avoid political disagreements. C1 speakers navigate them. The difference isn't agreement — it's respectful dialogue."</div>
+</div>
+<div class="quote">"B2 speakers say 'You're completely wrong.' C1 speakers say 'I see where you're coming from, but I see it differently because...' The difference isn't agreement — it's respectful dialogue."</div>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-lightbulb"></i> Today's Philosophy</h2>
+</div>
+<div class="philosophy-section">
+<h3 class="philosophy-title"><i class="ph-duotone ph-lightbulb"></i> Navigating Disagreements = Staying Calm + Acknowledging Perspectives + Finding Common Ground + Keeping it Constructive</h3>
+<p class="philosophy-text">"Navigating political disagreements isn't about winning arguments. It's about staying calm, acknowledging different perspectives, finding common ground, and keeping the conversation constructive while managing emotions."</p>
+<p class="philosophy-text">Every political disagreement requires you to make five decisions simultaneously:</p>
+<div class="philosophy-list">
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Calm Decision:</strong> How do I stay calm? (Defensive? Composed?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Perspective Decision:</strong> How do I acknowledge perspectives? (Dismiss? Acknowledge?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Common Ground Decision:</strong> How do I find common ground? (None? Some?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Constructive Decision:</strong> How do I keep it constructive? (Argumentative? Constructive?)</div>
+<div class="philosophy-item"><i class="ph-duotone ph-check-circle"></i> <strong>Emotion Decision:</strong> How do I manage emotions? (Frustrated? Composed?)</div>
+</div>
+<p class="philosophy-text"><strong>Important:</strong> Day 132 teaches you how to navigate political disagreements with composure, acknowledgment, and constructive dialogue.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-calendar-check"></i> Today's Plan (90 min)</h2>
+</div>
+<div class="plan-grid">
+<div class="plan-card">
+<div class="plan-icon">🗳️</div>
+<div class="plan-title">Disagreement Response Loop</div>
+<div class="plan-time">5 min</div>
+<div class="plan-desc">Stay Calm → Acknowledge → Find Common Ground → Keep Constructive</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">️</div>
+<div class="plan-title">5 Lenses</div>
+<div class="plan-time">25 min</div>
+<div class="plan-desc">3-Level Examples</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">⚠️</div>
+<div class="plan-title">Mistakes</div>
+<div class="plan-time">3 min</div>
+<div class="plan-desc">Common traps</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🔍</div>
+<div class="plan-title">Decoder</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">8 Situations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📖</div>
+<div class="plan-title">Reading</div>
+<div class="plan-time">18 min</div>
+<div class="plan-desc">2 Long Cases</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">✍️</div>
+<div class="plan-title">Micro Writing</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">4 Tasks + Model Answers</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon"></div>
+<div class="plan-title">Vocabulary</div>
+<div class="plan-time">8 min</div>
+<div class="plan-desc">15+ Collocations</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">💬</div>
+<div class="plan-title">Dialogues</div>
+<div class="plan-time">15 min</div>
+<div class="plan-desc">15-20 turns each</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">🎧</div>
+<div class="plan-title">Listening</div>
+<div class="plan-time">12 min</div>
+<div class="plan-desc">Spoken English</div>
+</div>
+<div class="plan-card">
+<div class="plan-icon">📝</div>
+<div class="plan-title">Grammar</div>
+<div class="plan-time">7 min</div>
+<div class="plan-desc">5 C1 Patterns</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-arrows-clockwise"></i> The Disagreement Response Loop</h2>
+</div>
+<div class="loop-section">
+<h3 class="loop-title">The 4-step process for navigating political disagreements</h3>
+<div class="loop-steps">
+<div class="loop-step">
+<div class="loop-step-number">1</div>
+<div class="loop-step-title">STAY CALM (Stay composed)</div>
+<div class="loop-step-desc">How do I stay calm? "I understand your perspective..." / "I can see where you're coming from..." (Stay composed)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">2</div>
+<div class="loop-step-title">ACKNOWLEDGE PERSPECTIVES (Acknowledge perspectives)</div>
+<div class="loop-step-desc">How do I acknowledge? "I can see your point..." / "I understand your perspective..." (Acknowledge respectfully)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">3</div>
+<div class="loop-step-title">FIND COMMON GROUND (Find common ground)</div>
+<div class="loop-step-desc">How do I find common ground? "We both agree that..." / "We both want the same thing..." (Find common ground)</div>
+</div>
+<div class="loop-step">
+<div class="loop-step-number">4</div>
+<div class="loop-step-title">KEEP IT CONSTRUCTIVE (Keep it constructive)</div>
+<div class="loop-step-desc">How do I keep it constructive? "I see it differently because..." / "I respectfully disagree because..." (Keep it constructive)</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-eye"></i> 5 Disagreement Lenses (3-Level Examples)</h2>
+</div>
+<p class="section-desc">Every political disagreement requires five decisions. Each lens has 3 levels of examples: <strong>Simple → Natural → C1 Professional</strong>.</p>
+<div class="lenses-grid">
+<div class="lens-card">
+<div class="lens-number">1</div>
+<h3 class="lens-title">Staying Calm
+<button class="audio-btn" onclick="speakText('lens1', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I stay calm under pressure?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Calm Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I don't want to talk about this."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I understand your perspective, but I see it differently."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Family dinner. Decision: Composed response ("I understand your perspective, and I can see where you're coming from...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Workplace discussion. Decision: Professional response ("I understand your perspective, and I can see where you're coming from...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Composed)</strong>
+Keeps the conversation constructive, shows maturity.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Composed)</strong>
+May seem like you don't care if not balanced with appropriate concern.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Getting defensive or avoiding the topic. Native speakers stay calm to keep the conversation constructive.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I staying calm or getting defensive?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">2</div>
+<h3 class="lens-title">Acknowledging Perspectives
+<button class="audio-btn" onclick="speakText('lens2', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I acknowledge perspectives respectfully?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Perspective Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I hear you."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I can see your point."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"I can see your point, and I understand your perspective. I see it differently because..."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Family dinner. Decision: Respectful acknowledgment ("I can see your point, and I understand your perspective...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Workplace discussion. Decision: Professional acknowledgment ("I can see your point, and I understand your perspective...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Respectful)</strong>
+Shows respect, keeps the conversation constructive.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Respectful)</strong>
+May seem like you agree if not balanced with your own perspective.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Dismissing perspectives. Native speakers acknowledge perspectives to keep the conversation constructive.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I acknowledging perspectives or dismissing them?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">3</div>
+<h3 class="lens-title">Finding Common Ground
+<button class="audio-btn" onclick="speakText('lens3', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I find common ground?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Common Ground Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"We agree on some things."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"We both want the same thing."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"We both agree that this is important, and we both want the same outcome. I see it differently because..."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Family dinner. Decision: Common ground ("We both agree that this is important...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Workplace discussion. Decision: Professional common ground ("We both agree that this is important...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Common Ground)</strong>
+Finds common ground, keeps the conversation constructive.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Common Ground)</strong>
+May seem like you're compromising too much if not balanced.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Focusing on differences. Native speakers find common ground to keep the conversation constructive.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I finding common ground or focusing on differences?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">4</div>
+<h3 class="lens-title">Keeping it Constructive
+<button class="audio-btn" onclick="speakText('lens4', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I keep it constructive?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Constructive Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"You're wrong."</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"I see it differently."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"I see it differently because I see it from a different perspective. I respectfully disagree because..."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Family dinner. Decision: Constructive response ("I see it differently because...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Workplace discussion. Decision: Professional constructive response ("I respectfully disagree because...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Constructive)</strong>
+Keeps the conversation constructive, shows maturity.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Constructive)</strong>
+May seem like you don't care if not balanced with appropriate concern.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Being argumentative. Native speakers keep it constructive to keep the conversation productive.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I keeping it constructive or being argumentative?</p>
+</div>
+<div class="lens-card">
+<div class="lens-number">5</div>
+<h3 class="lens-title">Managing Emotions
+<button class="audio-btn" onclick="speakText('lens5', this)"><i class="ph-duotone ph-play"></i></button>
+</h3>
+<p class="lens-core">"How do I manage emotions professionally?"</p>
+<div class="lens-meta">
+<span class="lens-rating">⭐⭐⭐⭐⭐ Very High</span>
+<span class="lens-context">The Emotion Decision</span>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-lightbulb"></i> 3-Level Examples</h4>
+<div class="example-levels">
+<div class="example-level simple">
+<span class="level-label">Simple (B2)</span>
+<span class="example-text">"I'm so frustrated!"</span>
+</div>
+<div class="example-level natural">
+<span class="level-label">Natural (B2+)</span>
+<span class="example-text">"This is frustrating, but let's work it out."</span>
+</div>
+<div class="example-level c1">
+<span class="lens-label">C1 Professional</span>
+<span class="example-text">"I understand this is certainly frustrating, and I appreciate your help in finding a solution. I'm sure we can work this out together."</span>
+</div>
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-house"></i> Life Example</h4>
+<p>Family dinner. Decision: Emotional management ("I understand this is certainly frustrating, and I appreciate your help...")</p>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-briefcase"></i> Business Example</h4>
+<p>Workplace discussion. Decision: Professional emotional management ("I appreciate your help in finding a solution...")</p>
+</div>
+<div class="compare-box">
+<h5>⚖️ Trade-offs</h5>
+<div class="compare-level strong">
+<strong>Gain (Managed)</strong>
+Keeps you professional, helps you keep the conversation constructive.
+</div>
+<div class="compare-level weak">
+<strong>Lose (Managed)</strong>
+May seem like you don't care if not balanced with appropriate concern.
+</div>
+</div>
+<div class="lens-subsection">
+<h4><i class="ph-duotone ph-warning"></i> Common Mistake</h4>
+<p>Letting emotions take over. Native speakers manage emotions to stay professional and keep the conversation constructive.</p>
+</div>
+<p style="font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 12px;">Reflection: Am I managing emotions or letting them take over?</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-warning"></i> 3 Common Mistakes</h2>
+</div>
+<div class="mistakes-section">
+<h3 class="mistakes-title">Traps that destroy political disagreement navigation</h3>
+<div class="mistakes-grid">
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 1: Getting Defensive Instead of Staying Calm</h4>
+<div class="mistake-wrong">❌ "You're completely wrong! I don't want to talk about this!"</div>
+<div class="mistake-right">✅ "I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+<div class="mistake-why">Why: Getting defensive prevents constructive dialogue. Staying calm keeps the conversation constructive.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 2: Avoiding the Topic Instead of Acknowledging Perspectives</h4>
+<div class="mistake-wrong">❌ "I don't want to talk about politics."</div>
+<div class="mistake-right">✅ "I can see your point, and I understand your perspective. I see it differently because..."</div>
+<div class="mistake-why">Why: Avoiding the topic prevents constructive dialogue. Acknowledging perspectives keeps the conversation constructive.</div>
+</div>
+<div class="mistake-item">
+<h4 class="mistake-title">Mistake 3: Being Argumentative Instead of Keeping it Constructive</h4>
+<div class="mistake-wrong">❌ "You're wrong! You don't understand!"</div>
+<div class="mistake-right">✅ "I see it differently because I see it from a different perspective. I respectfully disagree because..."</div>
+<div class="mistake-why">Why: Being argumentative prevents constructive dialogue. Keeping it constructive keeps the conversation productive.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-magnifying-glass"></i> The Disagreement Decoder (8 Situations)</h2>
+</div>
+<div class="decoder-section">
+<h3 class="decoder-title"> The Decision Decoder</h3>
+<table class="decoder-table">
+<thead>
+<tr>
+<th>Situation</th>
+<th>Option A (B2 Default)</th>
+<th>Option B (Safe)</th>
+<th>Option C (C1)</th>
+<th>Why This Works</th>
+<th>Better Alternative</th>
+<th>Register Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Family dinner</td>
+<td>"I don't want to talk about politics."</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+<span class="why">Why: Stays calm, acknowledges perspectives</span>
+</div>
+</td>
+<td>"I understand your perspective, and I can see where you're coming from."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>2. Social media</td>
+<td>"You're completely wrong!"</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I can see your point, and I understand your perspective. I see it differently because..."</span>
+<span class="why">Why: Acknowledges perspectives, keeps it constructive</span>
+</div>
+</td>
+<td>"I can see your point, and I understand your perspective."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>3. Workplace discussion</td>
+<td>"You're wrong!"</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand your perspective, and I can see where you're coming from. I respectfully disagree because..."</span>
+<span class="why">Why: Stays calm, keeps it constructive</span>
+</div>
+</td>
+<td>"I understand your perspective, and I respectfully disagree."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>4. Friend disagreement</td>
+<td>"You don't understand!"</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+<span class="why">Why: Stays calm, acknowledges perspectives</span>
+</div>
+</td>
+<td>"I understand your perspective, and I can see where you're coming from."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>5. Family gathering</td>
+<td>"I don't want to talk about this."</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+<span class="why">Why: Stays calm, acknowledges perspectives</span>
+</div>
+</td>
+<td>"I understand your perspective, and I can see where you're coming from."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>6. Workplace meeting</td>
+<td>"You're wrong!"</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand your perspective, and I can see where you're coming from. I respectfully disagree because..."</span>
+<span class="why">Why: Stays calm, keeps it constructive</span>
+</div>
+</td>
+<td>"I understand your perspective, and I respectfully disagree."</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>7. Social media comment</td>
+<td>"You're completely wrong!"</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I can see your point, and I understand your perspective. I see it differently because..."</span>
+<span class="why">Why: Acknowledges perspectives, keeps it constructive</span>
+</div>
+</td>
+<td>"I can see your point, and I understand your perspective."</td>
+<td>Casual</td>
+</tr>
+<tr>
+<td>8. Family dinner argument</td>
+<td>"You don't understand!"</td>
+<td>"I see it differently."</td>
+<td>
+<div class="option-c-box">
+<span class="option-label">C1 Response</span>
+<span class="conversation">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+<span class="why">Why: Stays calm, acknowledges perspectives</span>
+</div>
+</td>
+<td>"I understand your perspective, and I can see where you're coming from."</td>
+<td>Casual</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-open"></i> Reading Box (2 Long Cases + Useful Language)</h2>
+</div>
+<div class="reading-section">
+<h3 class="reading-title">📖 Long Case Studies (350-500 words each)</h3>
+<div class="case-box">
+<h4 class="case-title"> Case 1: Life - Family Dinner</h4>
+<div class="case-context"><strong>Context:</strong> You're having a family dinner and a political disagreement arises. You need to stay respectful, acknowledge different perspectives, and keep the conversation constructive.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "I understand your perspective, and I can see where you're coming from. <strong>I see it differently because I see it from a different perspective. I respectfully disagree because...</strong>"</p>
+<p><span class="speaker">Family Member:</span> "I understand your perspective, and I can see where you're coming from. I see it differently because..."</p>
+<p><span class="speaker">You:</span> "I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>"</p>
+<p><span class="speaker">Family Member:</span> "I understand your perspective, and I can see where you're coming from. I see it differently because..."</p>
+<p><span class="speaker">You:</span> "I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>"</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I understand your perspective."</strong><span class="meaning">Tôi hiểu quan điểm của bạn.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I can see where you're coming from."</strong><span class="meaning">Tôi có thể hiểu từ góc độ của bạn.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I see it differently because..."</strong><span class="meaning">Tôi thấy nó khác biệt vì...</span><span class="register">Register: Casual</span></li>
+<li><strong>"I respectfully disagree because..."</strong><span class="meaning">Tôi tôn trọng không đồng ý vì...</span><span class="register">Register: Casual</span></li>
+<li><strong>"We both agree that this is important."</strong><span class="meaning">Chúng ta đều đồng ý rằng điều này quan trọng.</span><span class="register">Register: Casual</span></li>
+<li><strong>"We both want the same outcome."</strong><span class="meaning">Chúng ta đều muốn cùng một kết quả.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I appreciate your perspective."</strong><span class="meaning">Tôi đánh giá cao quan điểm của bạn.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I can see your point."</strong><span class="meaning">Tôi có thể thấy quan điểm của bạn.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I see it differently because I see it from a different perspective."</strong><span class="meaning">Tôi thấy nó khác biệt vì tôi thấy nó từ một góc độ khác.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I respectfully disagree because..."</strong><span class="meaning">Tôi tôn trọng không đồng ý vì...</span><span class="register">Register: Casual</span></li>
+<li><strong>"We both agree that this is important."</strong><span class="meaning">Chúng ta đều đồng ý rằng điều này quan trọng.</span><span class="register">Register: Casual</span></li>
+<li><strong>"We both want the same outcome."</strong><span class="meaning">Chúng ta đều muốn cùng một kết quả.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I appreciate your perspective."</strong><span class="meaning">Tôi đánh giá cao quan điểm của bạn.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I can see your point."</strong><span class="meaning">Tôi có thể thấy quan điểm của bạn.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I see it differently because..."</strong><span class="meaning">Tôi thấy nó khác biệt vì...</span><span class="register">Register: Casual</span></li>
+<li><strong>"I respectfully disagree because..."</strong><span class="meaning">Tôi tôn trọng không đồng ý vì...</span><span class="register">Register: Casual</span></li>
+<li><strong>"We both agree that this is important."</strong><span class="meaning">Chúng ta đều đồng ý rằng điều này quan trọng.</span><span class="register">Register: Casual</span></li>
+<li><strong>"We both want the same outcome."</strong><span class="meaning">Chúng ta đều muốn cùng một kết quả.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I appreciate your perspective."</strong><span class="meaning">Tôi đánh giá cao quan điểm của bạn.</span><span class="register">Register: Casual</span></li>
+<li><strong>"I can see your point."</strong><span class="meaning">Tôi có thể thấy quan điểm của bạn.</span><span class="register">Register: Casual</span></li>
+</ul>
+</div>
+</div>
+<div class="case-box">
+<h4 class="case-title">💼 Case 2: Business - Workplace Discussion</h4>
+<div class="case-context"><strong>Context:</strong> You're having a workplace discussion and a political disagreement arises. You need to stay respectful, acknowledge different perspectives, and keep the conversation constructive.</div>
+<div class="case-narrative">
+<p><span class="speaker">You:</span> "I understand your perspective, and I can see where you're coming from. <strong>I see it differently because I see it from a different perspective. I respectfully disagree because...</strong>"</p>
+<p><span class="speaker">Colleague:</span> "I understand your perspective, and I can see where you're coming from. I see it differently because..."</p>
+<p><span class="speaker">You:</span> "I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>"</p>
+<p><span class="speaker">Colleague:</span> "I understand your perspective, and I can see where you're coming from. I see it differently because..."</p>
+<p><span class="speaker">You:</span> "I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>"</p>
+</div>
+<div class="useful-language-box">
+<h4>💬 Useful Language from This Case (20 expressions)</h4>
+<ul>
+<li><strong>"I understand your perspective."</strong><span class="meaning">Tôi hiểu quan điểm của bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I can see where you're coming from."</strong><span class="meaning">Tôi có thể hiểu từ góc độ của bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I see it differently because..."</strong><span class="meaning">Tôi thấy nó khác biệt vì...</span><span class="register">Register: Professional</span></li>
+<li><strong>"I respectfully disagree because..."</strong><span class="meaning">Tôi tôn trọng không đồng ý vì...</span><span class="register">Register: Professional</span></li>
+<li><strong>"We both agree that this is important."</strong><span class="meaning">Chúng ta đều đồng ý rằng điều này quan trọng.</span><span class="register">Register: Professional</span></li>
+<li><strong>"We both want the same outcome."</strong><span class="meaning">Chúng ta đều muốn cùng một kết quả.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I appreciate your perspective."</strong><span class="meaning">Tôi đánh giá cao quan điểm của bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I can see your point."</strong><span class="meaning">Tôi có thể thấy quan điểm của bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I see it differently because I see it from a different perspective."</strong><span class="meaning">Tôi thấy nó khác biệt vì tôi thấy nó từ một góc độ khác.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I respectfully disagree because..."</strong><span class="meaning">Tôi tôn trọng không đồng ý vì...</span><span class="register">Register: Professional</span></li>
+<li><strong>"We both agree that this is important."</strong><span class="meaning">Chúng ta đều đồng ý rằng điều này quan trọng.</span><span class="register">Register: Professional</span></li>
+<li><strong>"We both want the same outcome."</strong><span class="meaning">Chúng ta đều muốn cùng một kết quả.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I appreciate your perspective."</strong><span class="meaning">Tôi đánh giá cao quan điểm của bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I can see your point."</strong><span class="meaning">Tôi có thể thấy quan điểm của bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I see it differently because..."</strong><span class="meaning">Tôi thấy nó khác biệt vì...</span><span class="register">Register: Professional</span></li>
+<li><strong>"I respectfully disagree because..."</strong><span class="meaning">Tôi tôn trọng không đồng ý vì...</span><span class="register">Register: Professional</span></li>
+<li><strong>"We both agree that this is important."</strong><span class="meaning">Chúng ta đều đồng ý rằng điều này quan trọng.</span><span class="register">Register: Professional</span></li>
+<li><strong>"We both want the same outcome."</strong><span class="meaning">Chúng ta đều muốn cùng một kết quả.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I appreciate your perspective."</strong><span class="meaning">Tôi đánh giá cao quan điểm của bạn.</span><span class="register">Register: Professional</span></li>
+<li><strong>"I can see your point."</strong><span class="meaning">Tôi có thể thấy quan điểm của bạn.</span><span class="register">Register: Professional</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-pen"></i> Micro Writing: Disagreement Messages (with Model Answers)</h2>
+</div>
+<div class="micro-writing-section">
+<h3 class="micro-writing-title">✍️ 4 Writing Tasks with Model Answers</h3>
+<div class="writing-task-grid">
+<div class="writing-task">
+<h4>Task 1: Family Dinner</h4>
+<p class="task-context"><strong>Context:</strong> You're having a family dinner and a political disagreement arises. Write a message staying respectful, acknowledging different perspectives, and keeping the conversation constructive.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 acknowledgment structures (e.g., "I understand your perspective...", "I can see where you're coming from...")</li>
+<li>Use 2 constructive structures (e.g., "I see it differently because...", "I respectfully disagree because...")</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Acknowledgment:</strong> "I understand your perspective...", "I can see where you're coming from..."</li>
+<li><strong>Collocations:</strong> "see it differently", "respectfully disagree", "common ground"</li>
+<li><strong>Constructive:</strong> "I see it differently because...", "I respectfully disagree because..."</li>
+<li><strong>Cohesion markers:</strong> "I understand", "I can see", "I see it differently"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (see it differently, respectfully disagree, common ground)</li>
+<li>□ dùng đủ 2 acknowledgment structures (I understand your perspective, I can see where you're coming from)</li>
+<li>□ dùng đủ 2 constructive structures (I see it differently because, I respectfully disagree because)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 2: Social Media</h4>
+<p class="task-context"><strong>Context:</strong> You're on social media and a political disagreement arises. Write a message staying respectful, acknowledging different perspectives, and keeping the conversation constructive.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 acknowledgment structures</li>
+<li>Use 2 constructive structures</li>
+<li>Length: 150-200 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Acknowledgment:</strong> "I understand your perspective...", "I can see where you're coming from..."</li>
+<li><strong>Collocations:</strong> "see it differently", "respectfully disagree", "common ground"</li>
+<li><strong>Constructive:</strong> "I see it differently because...", "I respectfully disagree because..."</li>
+<li><strong>Cohesion markers:</strong> "I understand", "I can see", "I see it differently"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (150-200 words)</li>
+<li>□ dùng đủ 3 collocations (see it differently, respectfully disagree, common ground)</li>
+<li>□ dùng đủ 2 acknowledgment structures (I understand your perspective, I can see where you're coming from)</li>
+<li>□ dùng đủ 2 constructive structures (I see it differently because, I respectfully disagree because)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 3: Workplace Discussion</h4>
+<p class="task-context"><strong>Context:</strong> You're having a workplace discussion and a political disagreement arises. Write a message staying respectful, acknowledging different perspectives, and keeping the conversation constructive.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 acknowledgment structures</li>
+<li>Use 2 constructive structures</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Acknowledgment:</strong> "I understand your perspective...", "I can see where you're coming from..."</li>
+<li><strong>Collocations:</strong> "see it differently", "respectfully disagree", "common ground"</li>
+<li><strong>Constructive:</strong> "I see it differently because...", "I respectfully disagree because..."</li>
+<li><strong>Cohesion markers:</strong> "I understand", "I can see", "I see it differently"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Casual)</h5>
+<p class="alt-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (see it differently, respectfully disagree, common ground)</li>
+<li>□ dùng đủ 2 acknowledgment structures (I understand your perspective, I can see where you're coming from)</li>
+<li>□ dùng đủ 2 constructive structures (I see it differently because, I respectfully disagree because)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+<div class="writing-task">
+<h4>Task 4: Friend Disagreement</h4>
+<p class="task-context"><strong>Context:</strong> You're having a disagreement with a friend. Write a message staying respectful, acknowledging different perspectives, and keeping the conversation constructive.</p>
+<div class="requirements">
+<h5>Requirements:</h5>
+<ul>
+<li>Use 3 collocations from this lesson</li>
+<li>Use 2 acknowledgment structures</li>
+<li>Use 2 constructive structures</li>
+<li>Length: 100-150 words</li>
+</ul>
+</div>
+<div class="model-answer">
+<h5>Model Answer (C1)</h5>
+<p class="answer-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="language-breakdown">
+<h5>Language Breakdown</h5>
+<ul>
+<li><strong>Acknowledgment:</strong> "I understand your perspective...", "I can see where you're coming from..."</li>
+<li><strong>Collocations:</strong> "see it differently", "respectfully disagree", "common ground"</li>
+<li><strong>Constructive:</strong> "I see it differently because...", "I respectfully disagree because..."</li>
+<li><strong>Cohesion markers:</strong> "I understand", "I can see", "I see it differently"</li>
+</ul>
+</div>
+<div class="alternative-version">
+<h5>Alternative Version (Professional)</h5>
+<p class="alt-text">"I understand your perspective, and I can see where you're coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... I appreciate your perspective. I can see your point. I see it differently because... I respectfully disagree because..."</p>
+</div>
+<div class="self-check">
+<h5>Self-check Checklist</h5>
+<ul>
+<li>□ đủ word count (100-150 words)</li>
+<li>□ dùng đủ 3 collocations (see it differently, respectfully disagree, common ground)</li>
+<li>□ dùng đủ 2 acknowledgment structures (I understand your perspective, I can see where you're coming from)</li>
+<li>□ dùng đủ 2 constructive structures (I see it differently because, I respectfully disagree because)</li>
+<li>□ có opening → development → closing</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-book-bookmark"></i> Executive Vocabulary Box (Disagreement Lexicon)</h2>
+</div>
+<div class="vocab-section">
+<h3 class="vocab-title">📝 The Disagreement Lexicon (15+ Collocations)</h3>
+<div class="vocab-category">
+<div class="vocab-category-title">🗳️ Disagreement & Perspectives</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>political disagreement</strong>
+<div class="ipa">/pəˈlɪt.ɪ.kəl ˌdɪs.əˈɡriː.mənt/</div>
+<div class="pos">(noun phrase)</div>
+<div class="meaning">Bất đồng chính trị</div>
+<div class="collocation">Collocation: "political disagreement"</div>
+<div class="chunk">Chunk: "I understand your perspective"</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I understand your perspective."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+<div class="native-alt">Native alternative: "I see your point"</div>
+<button class="vocab-audio-btn" onclick="speakText('political-disagreement', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I see it differently</strong>
+<div class="ipa">/aɪ siː ɪt ˈdɪf.ər.ənt.li/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi thấy nó khác biệt</div>
+<div class="collocation">Collocation: "I see it differently"</div>
+<div class="chunk">Chunk: "I see it differently because..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I see it differently."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I see it differently because I see it from a different perspective."</div>
+<div class="native-alt">Native alternative: "I see it differently"</div>
+<button class="vocab-audio-btn" onclick="speakText('see-differently', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I respectfully disagree</strong>
+<div class="ipa">/aɪ rɪˈspekt.fəl.i ˌdɪs.əˈɡriː/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi tôn trọng không đồng ý</div>
+<div class="collocation">Collocation: "I respectfully disagree"</div>
+<div class="chunk">Chunk: "I respectfully disagree because..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I respectfully disagree."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I respectfully disagree because..."</div>
+<div class="native-alt">Native alternative: "I respectfully disagree"</div>
+<button class="vocab-audio-btn" onclick="speakText('respectfully-disagree', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">💡 Acknowledgment & Common Ground</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>I understand your perspective</strong>
+<div class="ipa">/aɪ ʌn.dəstænd jɔː pəˈspek.tv/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi hiểu quan điểm của bạn</div>
+<div class="collocation">Collocation: "I understand your perspective"</div>
+<div class="chunk">Chunk: "I understand your perspective, and..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I understand your perspective."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I understand your perspective, and I can see where you're coming from."</div>
+<div class="native-alt">Native alternative: "I see your point"</div>
+<button class="vocab-audio-btn" onclick="speakText('understand-perspective', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I can see where you're coming from</strong>
+<div class="ipa">/aɪ kæn si weə jɔː ˈkʌm.ɪŋ frɒm/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi có thể hiểu từ góc độ của bạn</div>
+<div class="collocation">Collocation: "I can see where you're coming from"</div>
+<div class="chunk">Chunk: "I can see where you're coming from, and..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I can see where you're coming from."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I can see where you're coming from, and I see it differently because..."</div>
+<div class="native-alt">Native alternative: "I see your point"</div>
+<button class="vocab-audio-btn" onclick="speakText('see-where-coming', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>We both agree that</strong>
+<div class="ipa">/wiː bəʊθ əˈɡriː ðæt/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Chúng ta đều đồng ý rằng</div>
+<div class="collocation">Collocation: "we both agree that"</div>
+<div class="chunk">Chunk: "We both agree that..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"We both agree that..."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"We both agree that this is important, and we both want the same outcome."</div>
+<div class="native-alt">Native alternative: "we both agree"</div>
+<button class="vocab-audio-btn" onclick="speakText('both-agree', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+<div class="vocab-category">
+<div class="vocab-category-title">🤝 Constructive Dialogue</div>
+<div class="vocab-grid">
+<div class="vocab-item">
+<strong>I see it from a different perspective</strong>
+<div class="ipa">/aɪ siː ɪt frɒm ə ˈdɪf.ər.ənt pəˈspek.tɪv/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi thấy nó từ một góc độ khác</div>
+<div class="collocation">Collocation: "I see it from a different perspective"</div>
+<div class="chunk">Chunk: "I see it from a different perspective..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I see it from a different perspective."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I see it differently because I see it from a different perspective."</div>
+<div class="native-alt">Native alternative: "I see it from a different perspective"</div>
+<button class="vocab-audio-btn" onclick="speakText('different-perspective', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>We both want the same outcome</strong>
+<div class="ipa">/wiː bəʊθ wɒnt ðə seɪm aʊt.kʌm/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Chúng ta đều muốn cùng một kết quả</div>
+<div class="collocation">Collocation: "we both want the same outcome"</div>
+<div class="chunk">Chunk: "We both want the same outcome..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"We both want the same outcome."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"We both agree that this is important, and we both want the same outcome."</div>
+<div class="native-alt">Native alternative: "we both want the same thing"</div>
+<button class="vocab-audio-btn" onclick="speakText('same-outcome', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+<div class="vocab-item">
+<strong>I appreciate your perspective</strong>
+<div class="ipa">/aɪ əˈpriː.ʃi.eɪt jɔː pəˈspek.tɪv/</div>
+<div class="pos">(phrase)</div>
+<div class="meaning">Tôi đánh giá cao quan điểm của bạn</div>
+<div class="collocation">Collocation: "I appreciate your perspective"</div>
+<div class="chunk">Chunk: "I appreciate your perspective, and..."</div>
+<div class="example level-label">Neutral:</div>
+<div class="example">"I appreciate your perspective."</div>
+<div class="example level-label">C1:</div>
+<div class="example">"I appreciate your perspective, and I can see your point."</div>
+<div class="native-alt">Native alternative: "I appreciate your view"</div>
+<button class="vocab-audio-btn" onclick="speakText('appreciate-perspective', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chats"></i> Integrated Dialogues (Long Format - 15-20 turns)</h2>
+</div>
+<div class="dialogue-section">
+<h3 class="dialogue-title">💬 Integrated Dialogues (15-20 turns with evolution)</h3>
+<div class="dialogue-grid">
+<div class="dialogue-card">
+<h4 class="case-title"> Dialogue 1: Family Dinner (Life)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're having a family dinner and a political disagreement arises. You need to stay respectful, acknowledge different perspectives, and keep the conversation constructive. Conversation evolves through staying calm → acknowledging perspectives → finding common ground → keeping it constructive.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue1', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I understand your perspective, and I can see where you're coming from. <strong>I see it differently because I see it from a different perspective. I respectfully disagree because...</strong>" <span class="move-highlight move1">Stay Calm</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Family Member:</div>
+<div class="dialogue-text">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>" <span class="move-highlight move2">Acknowledge Perspectives</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Family Member:</div>
+<div class="dialogue-text">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>" <span class="move-highlight move3">Find Common Ground</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Stay Calm (composed response) + Acknowledge Perspectives (respectful acknowledgment) + Find Common Ground (common ground) + Keep it Constructive (constructive response).</li>
+<li><strong>Alternative Decision:</strong> Get defensive or avoid. (Risk: No constructive dialogue or no common ground).</li>
+<li><strong>Why this decision?</strong> Staying calm keeps the conversation constructive. Acknowledging perspectives keeps the conversation constructive. Finding common ground keeps the conversation constructive. Keeping it constructive keeps the conversation productive.</li>
+<li><strong>Resistance handled:</strong> Family dinner political disagreement. You stayed calm, acknowledged perspectives, found common ground, and kept it constructive.</li>
+<li><strong>Evolution:</strong> Family dinner → Stay calm → Acknowledge perspectives → Find common ground → Keep it constructive → Constructive dialogue.</li>
+</ul>
+</div>
+</div>
+<div class="dialogue-card">
+<h4 class="case-title">💼 Dialogue 2: Workplace Discussion (Business)</h4>
+<div class="dialogue-context"><strong>Context:</strong> You're having a workplace discussion and a political disagreement arises. You need to stay respectful, acknowledge different perspectives, and keep the conversation constructive. Conversation evolves through staying calm → acknowledging perspectives → finding common ground → keeping it constructive.</div>
+<div class="audio-controls">
+<button class="audio-btn play" onclick="speakText('dialogue2', this)"><i class="ph-duotone ph-play"></i> Nghe</button>
+<button class="audio-btn stop" onclick="stopSpeech()"><i class="ph-duotone ph-stop"></i> Dừng</button>
+</div>
+<div class="dialogue-box">
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I understand your perspective, and I can see where you're coming from. <strong>I see it differently because I see it from a different perspective. I respectfully disagree because...</strong>" <span class="move-highlight move1">Stay Calm</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>" <span class="move-highlight move2">Acknowledge Perspectives</span></div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">Colleague:</div>
+<div class="dialogue-text">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+</div>
+<div class="dialogue-turn">
+<div class="dialogue-speaker">You:</div>
+<div class="dialogue-text">"I appreciate your perspective. <strong>We both agree that this is important, and we both want the same outcome. I see it differently because...</strong> <strong>I respectfully disagree because...</strong>" <span class="move-highlight move3">Find Common Ground</span></div>
+</div>
+</div>
+<div class="analysis-box">
+<h4>Decision Point Analysis</h4>
+<ul>
+<li><strong>Decision:</strong> Combined Stay Calm (composed response) + Acknowledge Perspectives (respectful acknowledgment) + Find Common Ground (common ground) + Keep it Constructive (constructive response).</li>
+<li><strong>Alternative Decision:</strong> Get defensive or avoid. (Risk: No constructive dialogue or no common ground).</li>
+<li><strong>Why this decision?</strong> Staying calm keeps the conversation constructive. Acknowledging perspectives keeps the conversation constructive. Finding common ground keeps the conversation constructive. Keeping it constructive keeps the conversation productive.</li>
+<li><strong>Resistance handled:</strong> Workplace discussion political disagreement. You stayed calm, acknowledged perspectives, found common ground, and kept it constructive.</li>
+<li><strong>Evolution:</strong> Workplace discussion → Stay calm → Acknowledge perspectives → Find common ground → Keep it constructive → Constructive dialogue.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-headphones"></i> Listening Deep Dive (Spoken English)</h2>
+</div>
+<div class="listening-section">
+<h3 class="listening-title">🎧 Spoken English (with fillers, hesitation, discourse markers)</h3>
+<p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;"><strong>Context:</strong> Listen to the dialogues above. Notice the fillers, hesitation, and discourse markers used in navigating political disagreements.</p>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 16px;">Step 1: Full Transcript</h4>
+<div class="transcript-box">
+<p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;"><em>Refer to the dialogues above for the full transcript with spoken English features.</em></p>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 2: Key Phrases Breakdown</h4>
+<div class="deep-dive-grid">
+<div class="deep-dive-item">
+<div class="phrase">"I understand your perspective..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Acknowledges the perspective calmly
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I understand your perspective..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "I see your point..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows composure while acknowledging the perspective
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I can see where you're coming from..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Acknowledges the perspective respectfully
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I can see where you're coming from..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "I see your point..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows respect while acknowledging the perspective
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I see it differently because..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Keeps the conversation constructive
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I see it differently because..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "I see it differently..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows you're keeping the conversation constructive
+</div>
+</div>
+<div class="deep-dive-item">
+<div class="phrase">"I respectfully disagree because..."</div>
+<div class="analysis">
+<span class="arrow">↓</span> <strong>Function:</strong> Keeps the conversation constructive
+<span class="arrow">↓</span> <strong>Native pattern:</strong> "I respectfully disagree because..."
+<span class="arrow">↓</span> <strong>Alternative:</strong> "I respectfully disagree..."
+<span class="arrow">↓</span> <strong>Effect:</strong> Shows you're keeping the conversation constructive
+</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 3: Pronunciation Focus</h4>
+<div class="pronunciation-grid">
+<div class="pronunciation-deep-dive">
+<div class="phrase">1. Calm Tone</div>
+<div class="detail">"I understand your perspective..." (Calm, measured tone - not defensive)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">2. Respectful Intonation</div>
+<div class="detail">"I can see where you're coming from..." (Respectful intonation)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">3. Stress on Key Words</div>
+<div class="detail">"I SEE it DIFFERENTLY because..." (Stress on key words)</div>
+</div>
+<div class="pronunciation-deep-dive">
+<div class="phrase">4. Pause for Impact</div>
+<div class="detail">"I respectfully disagree... (pause) ...because..." (Pause adds weight)</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 4: Listening Strategy (3 passes)</h4>
+<div class="language-notes-grid">
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 1: Nghe Acknowledgment</strong></div>
+<div class="note"><strong>Focus:</strong> "I understand...", "I can see where you're coming from..."</div>
+<div class="note"><strong>Question:</strong> "Where are the acknowledgment structures?"</div>
+<div class="note"><strong>Signal:</strong> Acknowledgment shows respect and understanding</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 2: Nghe Common Ground</strong></div>
+<div class="note"><strong>Focus:</strong> "We both agree that...", "We both want..."</div>
+<div class="note"><strong>Question:</strong> "Where are the common ground structures?"</div>
+<div class="note"><strong>Signal:</strong> Common ground shows maturity and understanding</div>
+</div>
+<div class="language-notes-box">
+<div class="phrase">🧠 Listening Strategy</div>
+<div class="note"><strong>Lần 3: Nghe Constructive</strong></div>
+<div class="note"><strong>Focus:</strong> "I see it differently because...", "I respectfully disagree because..."</div>
+<div class="note"><strong>Question:</strong> "Where are the constructive structures?"</div>
+<div class="note"><strong>Signal:</strong> Constructive shows maturity and understanding</div>
+</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 5: Shadowing Challenge</h4>
+<div class="language-notes-box">
+<div class="phrase">🗣️ Shadowing Challenge</div>
+<div class="note">Copy the spoken English rhythm, not just the words:</div>
+<div class="note">1. Listen to: "I understand your perspective... I can see where you're coming from..."</div>
+<div class="note">2. Shadow: Match the acknowledgment, common ground, constructive</div>
+<div class="note">3. Focus: Stress on "understand", "can see", "see it differently"</div>
+<div class="note">4. Practice: Say it 3 times, each time focusing on different discourse marker</div>
+</div>
+<h4 style="font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--text-primary); margin: 24px 0 16px;">Step 6: Outcome-based Questions</h4>
+<div class="language-notes-box">
+<div class="phrase">✅ Outcome-based Questions</div>
+<div class="note">1. Why did you say "I understand your perspective"?</div>
+<div class="note">✅ To show understanding and respect. Shows you care about the perspective.</div>
+<div class="note">2. What was the strategic goal of saying "I can see where you're coming from"?</div>
+<div class="note">✅ To acknowledge the perspective respectfully. Shows you're respectful.</div>
+<div class="note">3. How did you handle keeping it constructive?</div>
+<div class="note">✅ Said "I see it differently because..." Shows you're keeping the conversation constructive.</div>
+<div class="note">4. What was the trade-off of using acknowledgment structures?</div>
+<div class="note">✅ Shows respect and understanding, but may seem less direct.</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-grammar"></i> Strategic Grammar in Context (5 C1 Patterns)</h2>
+</div>
+<div class="grammar-section">
+<h3 class="grammar-title">📝 Strategic Grammar Toolkit (5 C1 Patterns with explanation, examples, common mistakes, native alternatives)</h3>
+<div class="grammar-patterns">
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-one"></i> Pattern 1: Staying Calm with "I understand your perspective"</h4>
+<div class="explanation">Used to stay calm under pressure. These structures show you understand and care while staying composed.</div>
+<ul class="grammar-examples-list">
+<li>"I understand your perspective."</li>
+<li>"I can see where you're coming from."</li>
+<li>"I understand your perspective, and I can see where you're coming from."</li>
+<li>"I understand your perspective, and I see it differently."</li>
+<li>"I understand your perspective, and I respectfully disagree."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "You're completely wrong!" (Defensive)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I understand your perspective."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-two"></i> Pattern 2: Acknowledging Perspectives with "I can see where you're coming from"</h4>
+<div class="explanation">Used to acknowledge perspectives respectfully. These structures show you're respectful and understanding.</div>
+<ul class="grammar-examples-list">
+<li>"I can see where you're coming from."</li>
+<li>"I can see your point."</li>
+<li>"I can see where you're coming from, and I see it differently."</li>
+<li>"I can see where you're coming from, and I respectfully disagree."</li>
+<li>"I can see where you're coming from, and I see it from a different perspective."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "You don't understand!" (Dismissive)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I can see where you're coming from."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-three"></i> Pattern 3: Finding Common Ground with "We both agree that"</h4>
+<div class="explanation">Used to find common ground. These structures show you're finding common ground.</div>
+<ul class="grammar-examples-list">
+<li>"We both agree that this is important."</li>
+<li>"We both want the same outcome."</li>
+<li>"We both agree that this is important, and we both want the same outcome."</li>
+<li>"We both agree that this is important, and we both want the same thing."</li>
+<li>"We both agree that this is important, and we both want the same result."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "We don't agree." (Focusing on differences)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "We both agree that this is important."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-four"></i> Pattern 4: Keeping it Constructive with "I see it differently because"</h4>
+<div class="explanation">Used to keep it constructive. These structures show you're keeping the conversation constructive.</div>
+<ul class="grammar-examples-list">
+<li>"I see it differently because..."</li>
+<li>"I see it differently because I see it from a different perspective."</li>
+<li>"I see it differently because I see it from a different angle."</div>
+<li>"I see it differently because I see it from a different viewpoint."</li>
+<li>"I see it differently because I see it from a different standpoint."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "You're wrong!" (Argumentative)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I see it differently because..."
+</div>
+</div>
+<div class="grammar-pattern">
+<h4><i class="ph-duotone ph-number-circle-five"></i> Pattern 5: Respecting with "I respectfully disagree"</h4>
+<div class="explanation">Used to respect while disagreeing. These structures show you're respectful while disagreeing.</div>
+<ul class="grammar-examples-list">
+<li>"I respectfully disagree."</li>
+<li>"I respectfully disagree because..."</li>
+<li>"I respectfully disagree because I see it differently."</li>
+<li>"I respectfully disagree because I see it from a different perspective."</li>
+<li>"I respectfully disagree because I see it from a different angle."</li>
+</ul>
+<div class="common-mistake">
+<strong>Common Mistake:</strong> "You're wrong!" (Disrespectful)
+</div>
+<div class="native-alt">
+<strong>Native Alternative:</strong> "I respectfully disagree."
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-chat-circle"></i> Speaking: 4 Scenarios (2-3 rounds each)</h2>
+</div>
+<div class="speaking-section">
+<h3 class="speaking-title">🗣️ Practice Scenarios (2-3 rounds each)</h3>
+<div class="scenario-grid">
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 1: Family Dinner</h3>
+<p class="scenario-context">You're having a family dinner and a political disagreement arises. You need to stay respectful.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Stay Calm + Acknowledge Perspectives</span>
+<span class="response">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Find Common Ground + Keep it Constructive</span>
+<span class="response">"We both agree that this is important, and we both want the same outcome. I respectfully disagree because..."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Getting defensive instead of staying calm.</p>
+</div>
+<div class="scenario-card professional">
+<span class="scenario-badge">Business</span>
+<h3>Scenario 2: Workplace Discussion</h3>
+<p class="scenario-context">You're having a workplace discussion and a political disagreement arises. You need to stay respectful.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Stay Calm + Acknowledge Perspectives</span>
+<span class="response">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Find Common Ground + Keep it Constructive</span>
+<span class="response">"We both agree that this is important, and we both want the same outcome. I respectfully disagree because..."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Avoiding the topic instead of acknowledging perspectives.</p>
+</div>
+<div class="scenario-card casual">
+<span class="scenario-badge">Life</span>
+<h3>Scenario 3: Friend Disagreement</h3>
+<p class="scenario-context">You're having a disagreement with a friend. You need to stay respectful.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Round 1: Stay Calm + Acknowledge Perspectives</span>
+<span class="response">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Round 2: Find Common Ground + Keep it Constructive</span>
+<span class="response">"We both agree that this is important, and we both want the same outcome. I respectfully disagree because..."</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Being argumentative instead of keeping it constructive.</p>
+</div>
+<div class="scenario-card challenge">
+<span class="scenario-badge">Challenge</span>
+<h3>Scenario 4: Double Scenario</h3>
+<p class="scenario-context">Morning: Family dinner. Afternoon: Workplace discussion.</p>
+<div class="scenario-rounds">
+<div class="scenario-round">
+<span class="round-label">Morning (Life - Stay Calm + Acknowledge + Find Common Ground + Keep Constructive)</span>
+<span class="response">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Afternoon (Business - Stay Calm + Acknowledge + Find Common Ground + Keep Constructive)</span>
+<span class="response">"I understand your perspective, and I can see where you're coming from. I see it differently because..."</span>
+</div>
+<div class="scenario-round">
+<span class="round-label">Reflection</span>
+<span class="response">How did your approach change between the two? Life = more emotional. Business = more professional.</span>
+</div>
+</div>
+<p class="scenario-req"><strong>Common Mistake:</strong> Not adapting approach to context.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-target"></i> Reality Task: The Disagreement Challenge</h2>
+</div>
+<div class="task-section">
+<h3 class="task-title">🎯 Practice Tasks</h3>
+<div class="task-grid">
+<div class="task-card easy">
+<div class="task-level">EASY</div>
+<h3>📝 The Disagreement Audit</h3>
+<p class="task-time">⏱️ 15 minutes</p>
+<p class="task-desc">Identify 1 political disagreement situation. Apply the 5 lenses. What decisions are you making? Note the trade-offs.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify the political disagreement situation</li>
+<li>Apply the 5 lenses (Stay Calm, Acknowledge Perspectives, Find Common Ground, Keep it Constructive, Manage Emotions)</li>
+<li>What decisions are you making?</li>
+<li>Note the trade-offs</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Written audit with trade-offs</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"I had a family dinner political disagreement. I stayed calm and said 'I understand your perspective.' I acknowledged perspectives by saying 'I can see where you're coming from.' I found common ground by saying 'We both agree that this is important.' I kept it constructive by saying 'I see it differently because...' I managed my emotions by staying composed throughout the conversation."</p>
+</div>
+</div>
+<div class="task-card standard">
+<div class="task-level">STANDARD</div>
+<h3>🎭 The Disagreement Practice</h3>
+<p class="task-time">⏱️ 30 minutes</p>
+<p class="task-desc">Role-play a political disagreement scenario. Practice the 5-step loop. Get feedback on your composure and constructive dialogue.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Choose a political disagreement scenario</li>
+<li>Practice all 5 steps of the loop</li>
+<li>Get feedback on your composure and constructive dialogue</li>
+<li>Note what worked and what didn't</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Role-play recording with feedback notes</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Role-play: Family dinner political disagreement scenario. I practiced staying calm by saying 'I understand your perspective.' I practiced acknowledging perspectives by saying 'I can see where you're coming from.' I practiced finding common ground by saying 'We both agree that this is important.' I practiced keeping it constructive by saying 'I see it differently because...' Feedback: I stayed calm but could improve my constructive dialogue skills."</p>
+</div>
+</div>
+<div class="task-card challenge">
+<div class="task-level">CHALLENGE</div>
+<h3>🎯 The Real Disagreement</h3>
+<p class="task-time">️ 60 minutes</p>
+<p class="task-desc">This week, handle an actual political disagreement. Use the 5-step framework in real-time. Note what worked, what didn't, and what you learned.</p>
+<div class="task-requirements">
+<h4>Requirements:</h4>
+<ul>
+<li>Identify an actual political disagreement to handle</li>
+<li>Apply the 5-step framework in real-time</li>
+<li>Use the 5-step framework (Stay Calm, Acknowledge Perspectives, Find Common Ground, Keep it Constructive, Manage Emotions)</li>
+<li>Note what worked, what didn't</li>
+<li>What did you learn about your default style?</li>
+</ul>
+</div>
+<p class="task-deliverable"><strong>Deliverable:</strong> Reflection notes with strategic analysis</p>
+<div class="sample-answer">
+<h5>📝 Sample Answer</h5>
+<p class="answer-text">"Real disagreement: Family dinner political disagreement. I applied the 5-step framework: 1) Stayed calm: 'I understand your perspective.' 2) Acknowledged perspectives: 'I can see where you're coming from.' 3) Found common ground: 'We both agree that this is important.' 4) Kept it constructive: 'I see it differently because...' 5) Managed emotions: Stayed composed throughout. What worked: Staying calm helped me keep the conversation constructive. What didn't: I could have kept it more constructive. What I learned: My default style is to stay calm, but I need to improve my constructive dialogue skills."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-check-circle"></i> Disagreement Mastery</h2>
+</div>
+<div class="mastery-section">
+<h3 class="mastery-title">🎯 Mastery Checklist</h3>
+<div class="mastery-grid">
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I stay calm under pressure</h4>
+<p>I stay calm under pressure, not getting defensive or avoiding the topic.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I acknowledge perspectives respectfully</h4>
+<p>I acknowledge perspectives respectfully, not dismissing them.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I find common ground</h4>
+<p>I find common ground, not focusing on differences.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I keep it constructive</h4>
+<p>I keep it constructive, not being argumentative.</p>
+</div>
+<div class="mastery-card">
+<h4><i class="ph-duotone ph-check-circle"></i> I manage emotions professionally</h4>
+<p>I manage emotions professionally, not letting them take over.</p>
+</div>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Continuity Check:</strong> If you can consistently apply the 5-step framework in political disagreements, you are ready for Day 133: Wrapping Up Political Disagreements.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-cards"></i> Flashcard Review</h2>
+</div>
+<div class="flashcard-section">
+<div class="flashcard" onclick="this.querySelector('.flashcard-back').classList.toggle('active')">
+<div class="flashcard-front">
+<p><strong>Situation:</strong> You're having a political disagreement</p>
+<button>Tap to reveal Disagreement Response Loop →</button>
+</div>
+<div class="flashcard-back">
+<p><strong>Wrong Instinct:</strong> "You're completely wrong!"</p>
+<p><strong>C1 Language:</strong> Stay Calm → Acknowledge Perspectives → Find Common Ground → Keep it Constructive → Manage Emotions.</p>
+<p><strong>Trade-off:</strong> Takes more time upfront, but keeps the conversation constructive.</p>
+<div class="flashcard-tip">
+<strong>💡 Tip:</strong> In political disagreements, staying calm keeps the conversation constructive. Acknowledging perspectives keeps the conversation constructive. Finding common ground keeps the conversation constructive. Keeping it constructive keeps the conversation productive. Managing emotions keeps you professional.
+</div>
+</div>
+</div>
+<div class="flashcard-nav">
+<button>← Prev</button>
+<span>1 / 5</span>
+<button>Next →</button>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2 class="section-title"><i class="ph-duotone ph-quiz"></i> Quiz: Navigating Political Disagreements</h2>
+</div>
+<div class="quiz-section">
+<h3 class="quiz-title">📝 Test Your Knowledge</h3>
+<div class="quiz-grid">
+<div class="quiz-question">
+<h4>1. (Judgement) Family dinner. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "I don't want to talk about politics."</div>
+<div class="quiz-option">B. "I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+<div class="quiz-option">C. "You're completely wrong!"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>2. (Judgement) Social media. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "You're completely wrong!"</div>
+<div class="quiz-option">B. "I can see your point, and I understand your perspective. I see it differently because..."</div>
+<div class="quiz-option">C. "You don't understand!"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>3. (Judgement) Workplace discussion. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "You're wrong!"</div>
+<div class="quiz-option">B. "I understand your perspective, and I can see where you're coming from. I respectfully disagree because..."</div>
+<div class="quiz-option">C. "You don't understand!"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>4. (Judgement) Friend disagreement. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "You don't understand!"</div>
+<div class="quiz-option">B. "I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+<div class="quiz-option">C. "You're completely wrong!"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>5. (Judgement) Family gathering. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "I don't want to talk about this."</div>
+<div class="quiz-option">B. "I understand your perspective, and I can see where you're coming from. I see it differently because..."</div>
+<div class="quiz-option">C. "You're completely wrong!"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>6. (Judgement) Workplace meeting. Best approach?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. "You're wrong!"</div>
+<div class="quiz-option">B. "I understand your perspective, and I can see where you're coming from. I respectfully disagree because..."</div>
+<div class="quiz-option">C. "You don't understand!"</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>7. (Trade-off) What is the trade-off of staying calm?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Keeps the conversation constructive, but may seem like you don't care.</div>
+<div class="quiz-option">B. Saves time but prevents constructive dialogue.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>8. (Trade-off) What is the trade-off of finding common ground?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. Keeps the conversation constructive, but may seem like you're compromising too much.</div>
+<div class="quiz-option">B. Saves time but prevents constructive dialogue.</div>
+<div class="quiz-option">C. There is no trade-off.</div>
+</div>
+</div>
+<div class="quiz-question">
+<h4>9. (Vocabulary) Which phrase means "Tôi hiểu quan điểm của bạn"?</h4>
+<div class="quiz-options">
+<div class="quiz-option">A. I understand your perspective</div>
+<div class="quiz-option">B. I can see where you're coming from</div>
+<div class="quiz-option">C. I see it differently</div>
+</div>
+</div>
+</div>
+<button class="check-btn" onclick="checkAnswers()"><i class="ph-duotone ph-check"></i> Check Answers</button>
+</div>
+</section>
+<div class="day-navigation">
+<a href="week-19-day-131.html" class="nav-card">
+<div class="nav-label">← Previous Day</div>
+<div class="nav-title">Day 131: Discussing Politics with People Who Disagree</div>
+</a>
+<a href="week-19-day-133.html" class="nav-card">
+<div class="nav-label">Next Day →</div>
+<div class="nav-title">Day 133: Wrapping Up Political Disagreements</div>
+</a>
+</div>
+<div class="complete-container">
+<button class="complete-btn"><i class="ph-duotone ph-check-circle"></i> Mark Day 132 Complete & Continue to Day 133</button>
+<p class="complete-message">B2 speakers avoid political disagreements. C1 speakers navigate them. 🗳️</p>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="footer-fox">🦊</div>
+<p class="footer-title">Professional Fluency Roadmap</p>
+<p class="footer-tagline">Week 19 · Day 132 · Navigating Political Disagreements</p>
+</div>
+</footer>
+<script>
+let voices = [];
+let selectedVoice = null;
+let currentUtterance = null;
+let isPlaying = false;
+let currentButton = null;
+let shadowingMode = false;
+const textContent = {
+'lens1': 'Lens 1: Staying Calm. How do I stay calm under pressure? I understand your perspective, and I can see where you\'re coming from. I see it differently because...',
+'lens2': 'Lens 2: Acknowledging Perspectives. How do I acknowledge perspectives respectfully? I can see your point, and I understand your perspective. I see it differently because...',
+'lens3': 'Lens 3: Finding Common Ground. How do I find common ground? We both agree that this is important, and we both want the same outcome. I see it differently because...',
+'lens4': 'Lens 4: Keeping it Constructive. How do I keep it constructive? I see it differently because I see it from a different perspective. I respectfully disagree because...',
+'lens5': 'Lens 5: Managing Emotions. How do I manage emotions professionally? I understand this is certainly frustrating, and I appreciate your help in finding a solution. I\'m sure we can work this out together.',
+'political-disagreement': 'political disagreement',
+'see-differently': 'I see it differently',
+'respectfully-disagree': 'I respectfully disagree',
+'understand-perspective': 'I understand your perspective',
+'see-where-coming': 'I can see where you\'re coming from',
+'both-agree': 'We both agree that',
+'different-perspective': 'I see it from a different perspective',
+'same-outcome': 'We both want the same outcome',
+'appreciate-perspective': 'I appreciate your perspective',
+'dialogue1': 'Dialogue 1: Family Dinner. You: I understand your perspective, and I can see where you\'re coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... Family Member: I understand your perspective, and I can see where you\'re coming from. I see it differently because... You: I appreciate your perspective. We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... Family Member: I understand your perspective, and I can see where you\'re coming from. I see it differently because... You: I appreciate your perspective. We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because...',
+'dialogue2': 'Dialogue 2: Workplace Discussion. You: I understand your perspective, and I can see where you\'re coming from. I see it differently because I see it from a different perspective. I respectfully disagree because... Colleague: I understand your perspective, and I can see where you\'re coming from. I see it differently because... You: I appreciate your perspective. We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because... Colleague: I understand your perspective, and I can see where you\'re coming from. I see it differently because... You: I appreciate your perspective. We both agree that this is important, and we both want the same outcome. I see it differently because... I respectfully disagree because...'
+};
+const audioProfiles = {
+vocabulary: { rate: 0.95, pitch: 1.00 },
+reading: { rate: 1.15, pitch: 1.00 },
+dialogue: { rate: 1.25, pitch: 1.00 },
+listening: { rate: 1.15, pitch: 1.00 },
+shadowing: { rate: 1.05, pitch: 1.00 },
+speaking: { rate: 1.25, pitch: 1.00 }
+};
+function scoreVoice(voice) {
+let score = 70;
+const isWindows = navigator.platform.includes('Win');
+const isMac = navigator.platform.includes('Mac');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (voice.name.includes('Neural') || voice.name.includes('Online') || voice.name.includes('Natural') || voice.name.includes('Enhanced')) { score += 20; }
+if (isWindows) {
+if (voice.name.includes('Microsoft Online')) score += 25;
+if (voice.name.includes('Google')) score += 22;
+if (voice.name.includes('Microsoft David')) score += 19;
+if (voice.name.includes('Microsoft Zira')) score += 20;
+} else if (isMac || isIOS) {
+if (voice.name.includes('Siri')) score += 24;
+if (voice.name.includes('Samantha')) score += 18;
+if (voice.name.includes('Alex')) score += 17;
+}
+if (voice.lang === 'en-US') score += 10;
+if (voice.lang.startsWith('en')) score += 5;
+return score;
+}
+function loadVoices() {
+voices = speechSynthesis.getVoices();
+if (voices.length > 0) { selectBestVoice(); }
+}
+function selectBestVoice() {
+const enVoices = voices.filter(v => v.lang.startsWith('en'));
+let bestVoice = null;
+let bestScore = 0;
+enVoices.forEach(voice => {
+const score = scoreVoice(voice);
+if (score > bestScore) { bestScore = score; bestVoice = voice; }
+});
+selectedVoice = bestVoice || enVoices[0];
+if (selectedVoice) { console.log('🎙️ Audio Engine v3 - Selected Voice:', selectedVoice.name, 'Score:', bestScore); }
+else { console.log('🎙️ Audio Engine v3 - No suitable voice found, using default'); }
+}
+if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
+loadVoices();
+function optimizePunctuation(text) {
+text = text.replace(/,/g, ', ...');
+text = text.replace(/\./g, '. ...');
+text = text.replace(/;/g, '; ...');
+text = text.replace(/:/g, ': ...');
+text = text.replace(/\?/g, '? ...');
+text = text.replace(/!/g, '! ...');
+text = text.replace(/\.\.\. \.\.\./g, '...');
+return text;
+}
+function speakText(textId, buttonElement, mode = 'vocabulary') {
+if (isPlaying && currentButton === buttonElement) { stopSpeech(); return; }
+stopSpeech();
+const text = textContent[textId];
+if (!text) return;
+const optimizedText = optimizePunctuation(text);
+currentUtterance = new SpeechSynthesisUtterance(optimizedText);
+if (selectedVoice) {
+currentUtterance.voice = selectedVoice;
+const profile = audioProfiles[mode] || audioProfiles.vocabulary;
+currentUtterance.rate = profile.rate;
+if (mode === 'dialogue') { currentUtterance.pitch = textId.includes('dialogue') ? 1.03 : 0.97; }
+else { currentUtterance.pitch = profile.pitch; }
+} else { currentUtterance.rate = 0.95; currentUtterance.pitch = 1.05; }
+currentUtterance.volume = 1.0;
+currentUtterance.lang = 'en-US';
+isPlaying = true;
+currentButton = buttonElement;
+if (buttonElement) {
+buttonElement.classList.add('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-pause'; }
+}
+currentUtterance.onend = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+if (shadowingMode) { setTimeout(() => { speakText(textId, buttonElement, mode); }, 2000); }
+};
+currentUtterance.onerror = function() {
+isPlaying = false;
+currentButton = null;
+if (buttonElement) {
+buttonElement.classList.remove('playing');
+const icon = buttonElement.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+}
+};
+speechSynthesis.speak(currentUtterance);
+}
+function resetUI() {
+isPlaying = false;
+currentButton = null;
+document.querySelectorAll('.audio-btn.playing, .vocab-audio-btn.playing').forEach(btn => {
+btn.classList.remove('playing');
+const icon = btn.querySelector('i');
+if (icon) { icon.className = 'ph-duotone ph-play'; }
+});
+}
+function stopSpeech() { speechSynthesis.cancel(); resetUI(); }
+function checkAnswers() {
+const options = document.querySelectorAll('.quiz-option');
+options.forEach(option => {
+option.classList.remove('selected', 'correct', 'incorrect');
+if (option.dataset.correct === 'true') { option.classList.add('correct'); }
+else if (option.classList.contains('selected')) { option.classList.add('incorrect'); }
+});
+}
+document.querySelectorAll('.quiz-option').forEach(option => {
+option.addEventListener('click', function() {
+this.parentElement.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('selected'));
+this.classList.add('selected');
+});
+});
+let currentFlashcard = 1;
+const totalFlashcards = 5;
+document.querySelectorAll('.flashcard-nav button').forEach(btn => {
+btn.addEventListener('click', function() {
+if (this.textContent.includes('Next')) { currentFlashcard = Math.min(currentFlashcard + 1, totalFlashcards); }
+else if (this.textContent.includes('Prev')) { currentFlashcard = Math.max(currentFlashcard - 1, 1); }
+document.querySelector('.flashcard-nav span').textContent = currentFlashcard + ' / ' + totalFlashcards;
+});
+});
+</script>
+</body>
+</html>
